@@ -8,4 +8,4 @@ Create a application for creative writers that has all the features of a fully f
 Scheduled to begin in January 2022
 
 ## Research Links
-[Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
+- [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
