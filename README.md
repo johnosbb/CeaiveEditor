@@ -21,3 +21,7 @@ Scheduled to begin in January 2022
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 - [Identifying Different Writing Styles in a Document Intrinsically Using Stylometric Analysis](https://github.com/Hassaan-Elahi/Writing-Styles-Classification-Using-Stylometric-Analysis)
+
+
+## Libraries
+- [The Natural Language Toolkit](https://www.nltk.org/)
