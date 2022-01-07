@@ -25,3 +25,4 @@ Scheduled to begin in January 2022
 
 ## Libraries
 - [The Natural Language Toolkit](https://www.nltk.org/)
+- [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
