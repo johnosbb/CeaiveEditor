@@ -18,6 +18,6 @@ Goal - Create a application for creative writers that has all the features of a 
 Scheduled to begin in January 2022
 
 ## Research Links
-- [Stylometry]([https://en.wikipedia.org/wiki/Stylometry)
+- [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 - [Identifying Different Writing Styles in a Document Intrinsically Using Stylometric Analysis](https://github.com/Hassaan-Elahi/Writing-Styles-Classification-Using-Stylometric-Analysis)
