@@ -29,3 +29,4 @@ Scheduled to begin in January 2022
 
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
+- [PyQT](https://pythonbasics.org/install-pyqt/)
