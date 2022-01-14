@@ -33,4 +33,5 @@ Research Phase began in January 2022
 
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
+  - [Github Reference](https://github.com/Macmillan2004/My-Microsoft-Word)
 - [No2Pads](https://www.pythonguis.com/examples/python-notepad-clone/)
