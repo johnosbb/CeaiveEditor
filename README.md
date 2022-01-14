@@ -24,7 +24,8 @@ Research Phase began in January 2022
 
 
 ## Libraries
-- [The Natural Language Toolkit](https://www.nltk.org/)
+- [The Natural Language Toolkit Python](https://www.nltk.org/)
+- [Natural Language Processing Javascript](https://www.kommunicate.io/blog/nlp-libraries-node-javascript/)
 - [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
 
 ## Development Options
