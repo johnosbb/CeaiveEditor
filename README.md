@@ -30,3 +30,7 @@ Scheduled to begin in January 2022
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
 - [PyQT](https://pythonbasics.org/install-pyqt/)
+
+## Editor References
+- [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
+- [No2Pads](https://www.pythonguis.com/examples/python-notepad-clone/)
