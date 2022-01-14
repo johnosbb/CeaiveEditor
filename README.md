@@ -15,7 +15,7 @@ Goal - Create a application for creative writers that has all the features of a 
 
 
 
-Scheduled to begin in January 2022
+Research Phase began in January 2022
 
 ## Research Links
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
