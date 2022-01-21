@@ -31,6 +31,7 @@ Research Phase began in January 2022
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
 - [PyQT](https://pythonbasics.org/install-pyqt/)
+- [PyQT Documentation](https://doc.qt.io/qtforpython/)
 - [TkInter versus PyQT](https://dm4rnde.com/py-gui-soluts-tkinter-comp-to-pyqt5)
 
 ## Editor References
