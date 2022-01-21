@@ -37,3 +37,6 @@ Research Phase began in January 2022
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
   - [Github Reference](https://github.com/Macmillan2004/My-Microsoft-Word)
 - [No2Pads](https://www.pythonguis.com/examples/python-notepad-clone/)
+
+## Python
+- [Under Score Conventions and Rules in Python](https://ericplayground.com/2019/03/26/underscore-naming-convention-in-python/)
