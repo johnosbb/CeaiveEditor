@@ -31,9 +31,13 @@ Research Phase began in January 2022
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
 - [PyQT](https://pythonbasics.org/install-pyqt/)
+- [PyQT Documentation](https://doc.qt.io/qtforpython/contents.html)
 - [TkInter versus PyQT](https://dm4rnde.com/py-gui-soluts-tkinter-comp-to-pyqt5)
 
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
   - [Github Reference](https://github.com/Macmillan2004/My-Microsoft-Word)
 - [No2Pads](https://www.pythonguis.com/examples/python-notepad-clone/)
+
+## Python
+- [Under Score Conventions and Rules in Python](https://ericplayground.com/2019/03/26/underscore-naming-convention-in-python/)
