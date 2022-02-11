@@ -18,10 +18,20 @@ Goal - Create a application for creative writers that has all the features of a 
 Research Phase began in January 2022
 
 ## Research Links
+
+### Natural Language Programming
+
+#### Tools and Resources
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 - [Identifying Different Writing Styles in a Document Intrinsically Using Stylometric Analysis](https://github.com/Hassaan-Elahi/Writing-Styles-Classification-Using-Stylometric-Analysis)
 
+#### Terminology
+
+| Term | Left Align  |
+| --- | :-- |
+| 
+| Stop Words | A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that we may wish to ignore when processing language. NLTK(Natural Language Toolkit) in python has a list of stopwords stored in 16 different languages. We can use these tables to eliminate these stop words when processing text for some aspects of style analysis.
 
 ## Libraries
 - [The Natural Language Toolkit Python](https://www.nltk.org/)
