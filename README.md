@@ -28,9 +28,8 @@ Research Phase began in January 2022
 
 #### Terminology
 
-| Term | Left Align  |
+| Term | Definition  |
 | --- | :-- |
-| 
 | Stop Words | A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that we may wish to ignore when processing language. NLTK(Natural Language Toolkit) in python has a list of stopwords stored in 16 different languages. We can use these tables to eliminate these stop words when processing text for some aspects of style analysis.
 
 ## Libraries
