@@ -43,6 +43,9 @@ Research Phase began in January 2022
 - [PyQT Documentation](https://doc.qt.io/qtforpython/contents.html)
 - [TkInter versus PyQT](https://dm4rnde.com/py-gui-soluts-tkinter-comp-to-pyqt5)
 
+### QT Designer
+- [Designer Tutorial](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
+
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
   - [Github Reference](https://github.com/Macmillan2004/My-Microsoft-Word)
