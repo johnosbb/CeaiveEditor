@@ -47,6 +47,7 @@ Research Phase began in January 2022
 - [Designer Tutorial](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
 - [Dockable Windows](https://www.tutorialspoint.com/pyqt5/pyqt5_qdockwidget.htm)
 - [Frameless Windows](https://www.youtube.com/watch?v=bJBwSyHUobg)
+- [Layout Options](https://realpython.com/python-pyqt-layout/)
 
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
