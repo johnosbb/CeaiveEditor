@@ -18,10 +18,22 @@ Goal - Create a application for creative writers that has all the features of a 
 Research Phase began in January 2022
 
 ## Research Links
+
+### Natural Language Programming
+
+#### Tools and Resources
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 - [Identifying Different Writing Styles in a Document Intrinsically Using Stylometric Analysis](https://github.com/Hassaan-Elahi/Writing-Styles-Classification-Using-Stylometric-Analysis)
+- [A Framework for Authorship Identification of Online Messages: Writing-Style Features and Classification Techniques](https://www.pages.drexel.edu/~jl622/docs/Jounals/Zheng_2006JASIST_AuthorshipIdentification.pdf)
+- [Text Analysis](https://monkeylearn.com/text-classification/)
 
+
+#### Terminology
+
+| Term | Definition  |
+| --- | :-- |
+| Stop Words | A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that we may wish to ignore when processing language. NLTK(Natural Language Toolkit) in python has a list of stopwords stored in 16 different languages. We can use these tables to eliminate these stop words when processing text for some aspects of style analysis.
 
 ## Libraries
 - [The Natural Language Toolkit Python](https://www.nltk.org/)
@@ -34,6 +46,12 @@ Research Phase began in January 2022
 - [PyQT Documentation](https://doc.qt.io/qtforpython/contents.html)
 - [TkInter versus PyQT](https://dm4rnde.com/py-gui-soluts-tkinter-comp-to-pyqt5)
 
+### QT Designer and Layout
+- [Designer Tutorial](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
+- [Dockable Windows](https://www.tutorialspoint.com/pyqt5/pyqt5_qdockwidget.htm)
+- [Frameless Windows](https://www.youtube.com/watch?v=bJBwSyHUobg)
+- [Layout Options](https://realpython.com/python-pyqt-layout/)
+
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
   - [Github Reference](https://github.com/Macmillan2004/My-Microsoft-Word)
@@ -41,3 +59,5 @@ Research Phase began in January 2022
 
 ## Python
 - [Under Score Conventions and Rules in Python](https://ericplayground.com/2019/03/26/underscore-naming-convention-in-python/)
+- [Source Code for Beginning PyQT](https://github.com/Apress/beginning-pyqt)
+- [Tree Widget and JSON](https://stackoverflow.com/questions/51506378/pyqt-recursively-adding-children-to-treewidget-dynamically)
