@@ -60,3 +60,4 @@ Research Phase began in January 2022
 ## Python
 - [Under Score Conventions and Rules in Python](https://ericplayground.com/2019/03/26/underscore-naming-convention-in-python/)
 - [Source Code for Beginning PyQT](https://github.com/Apress/beginning-pyqt)
+- [Tree Widget and JSON](https://stackoverflow.com/questions/51506378/pyqt-recursively-adding-children-to-treewidget-dynamically)
