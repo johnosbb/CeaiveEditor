@@ -7,6 +7,10 @@ import os
 import sys
 import uuid
 
+
+import style
+import utilities
+
 FONT_SIZES = [7, 8, 9, 10, 11, 12, 13, 14,
               18, 24, 36, 48, 64, 72, 96, 144, 288]
 IMAGE_EXTENSIONS = ['.jpg', '.png', '.bmp']
@@ -15,6 +19,9 @@ HTML_EXTENSIONS = ['.htm', '.html', '.txt']
 
 def hexuuid():
     return uuid.uuid4().hex
+
+# Split the path name into a pair root and ext.
+# Here, ext stands for extension and has the extension portion of the specified path while root is everything except ext part.
 
 
 def splitext(p):
@@ -68,7 +75,7 @@ class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
-        layout = QVBoxLayout()
+        layout = QVBoxLayout()  # The QVBoxLayout class lines up widgets vertically
         # this is using the editor class based on QTextEdit above, this is a new member declaration
         self.editor = TextEdit()
         # Setup the QTextEdit editor configuration
@@ -80,6 +87,15 @@ class MainWindow(QMainWindow):
         # We need to repeat the size to init the current format.
         self.editor.setFontPointSize(12)
 
+        # # enable this for a frameless window
+        # # Borderless window code begins
+        # self.setWindowFlags(Qt.FramelessWindowHint)
+        # self.center()
+        # #self.setFixedSize(320, 450)
+        # self.setStyleSheet(
+        #     "QMainWindow{background-color: darkgray;border: 1px solid black}")
+        # # Borderless window code ends
+
         # self.path holds the path of the currently open file.
         # If none, we haven't got a file open yet (or creating new).
         self.path = None
@@ -87,12 +103,12 @@ class MainWindow(QMainWindow):
         layout.addWidget(self.editor)
 
         container = QWidget()
+
         container.setLayout(layout)
         self.setCentralWidget(container)
 
         self.status = QStatusBar()
         self.setStatusBar(self.status)
-
         self.define_file_toolbar()
         self.define_edit_toolbar()
         self.define_format_toolbar()
@@ -103,7 +119,22 @@ class MainWindow(QMainWindow):
         # Initialize.
         self.update_format()
         self.update_title()
+        self.oldPos = self.pos()
         self.show()
+
+    def center(self):
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
+
+    def mousePressEvent(self, event):
+        self.oldPos = event.globalPos()
+
+    def mouseMoveEvent(self, event):
+        delta = QPoint(event.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x(), self.y() + delta.y())
+        self.oldPos = event.globalPos()
 
     def block_signals(self, objects, b):
         for o in objects:
@@ -113,7 +144,7 @@ class MainWindow(QMainWindow):
 
         # # Adds a format menu option to the top level menu
         format_toolbar = QToolBar("Format")
-        format_toolbar.setIconSize(QSize(16, 16))
+        format_toolbar.setIconSize(QSize(32, 32))
         self.addToolBar(format_toolbar)
         format_menu = self.menuBar().addMenu("&Format")
 
@@ -221,24 +252,26 @@ class MainWindow(QMainWindow):
             self.underline_action,
             # We don't need to disable signals for alignment, as they are paragraph-wide.
         ]
+        return format_toolbar
 
     def define_edit_toolbar(self):
         # The QToolBar class provides a movable panel that contains a set of controls. In this instance we are creating the Edit Toolbar.
         # This will appear on the main application menu.
         edit_toolbar = QToolBar("Edit")
-        edit_toolbar.setIconSize(QSize(16, 16))
+        edit_toolbar.setIconSize(QSize(32, 32))
         self.addToolBar(edit_toolbar)
         # The QMainWindow Class has a menuBar property, the menuBar can contain a collection of menus
         edit_menu = self.menuBar().addMenu("&Edit")
 
         undo_action = QAction(
-            QIcon(os.path.join('images', 'arrow-curve-180-left.png')), "Undo", self)
+            QIcon(os.path.join('images', 'undo.png')), "Undo", self)
         undo_action.setStatusTip("Undo last change")
         undo_action.triggered.connect(self.editor.undo)
+        edit_toolbar.addAction(undo_action)
         edit_menu.addAction(undo_action)
 
         redo_action = QAction(
-            QIcon(os.path.join('images', 'arrow-curve.png')), "Redo", self)
+            QIcon(os.path.join('images', 'redo.png')), "Redo", self)
         redo_action.setStatusTip("Redo last change")
         redo_action.triggered.connect(self.editor.redo)
         edit_toolbar.addAction(redo_action)
@@ -289,7 +322,7 @@ class MainWindow(QMainWindow):
 
     def define_file_toolbar(self):
         file_toolbar = QToolBar("File")
-        file_toolbar.setIconSize(QSize(14, 14))
+        file_toolbar.setIconSize(QSize(32, 32))
         self.addToolBar(file_toolbar)
         file_menu = self.menuBar().addMenu("&File")
 
@@ -297,7 +330,7 @@ class MainWindow(QMainWindow):
         # Actions can be added to menus and toolbars, and will automatically keep them in sync.
         # For example, in a word processor, if the user presses a Bold toolbar button, the Bold menu item will automatically be checked.
         open_file_action = QAction(QIcon(os.path.join(
-            'images', 'blue-folder-open-document.png')), "Open file...", self)
+            'images', 'open-document.png')), "Open file...", self)
         open_file_action.setStatusTip("Open file")
         open_file_action.triggered.connect(self.file_open)
         file_menu.addAction(open_file_action)
@@ -311,7 +344,7 @@ class MainWindow(QMainWindow):
         file_toolbar.addAction(save_file_action)
 
         saveas_file_action = QAction(
-            QIcon(os.path.join('images', 'disk--pencil.png')), "Save As...", self)
+            QIcon(os.path.join('images', 'disk-pencil.png')), "Save As...", self)
         saveas_file_action.setStatusTip("Save current page to specified file")
         saveas_file_action.triggered.connect(self.file_saveas)
         file_menu.addAction(saveas_file_action)
@@ -324,18 +357,58 @@ class MainWindow(QMainWindow):
         file_menu.addAction(print_action)
         file_toolbar.addAction(print_action)
 
+    def get_syllable_count(self):
+        cursor = QTextCursor(self.editor.textCursor())
+        # word = cursor.selectedText() # enable for selected text
+        text = self.editor.toPlainText()
+        if utilities.isNotBlank(text):
+            text = text.lower()
+            #count = style.syllable_count(word)
+            count = style.calculate_average_syllables_per_word(text)
+            self.status.showMessage(
+                "Average Syllable Length: " + str(count), 2000)
+
+    def get_functional_word_count(self):
+        cursor = QTextCursor(self.editor.textCursor())
+        # selection = QTextEdit.ExtraSelection()
+        # selection.cursor = self.editor.textCursor()
+        word = cursor.selectedText()
+        if utilities.isNotBlank(word):
+            word = word.lower()
+            #count = style.syllable_count(word)
+            count = style.count_functional_words(word)
+            self.status.showMessage(
+                "Functional Word Score: " + str(count), 2000)
+
     def define_style_toolbar(self):
         """
         Defines the tools bar and actions associated with style analysis
         """
         style_toolbar = QToolBar("Style")
-        style_toolbar.setIconSize(QSize(16, 16))
+        style_toolbar.setIconSize(QSize(32, 32))
         self.addToolBar(style_toolbar)
-        format_menu = self.menuBar().addMenu("&Style")
+        style_menu = self.menuBar().addMenu("&Style")
 
-        self.fonts = QFontComboBox()
-        self.fonts.currentFontChanged.connect(self.editor.setCurrentFont)
-        style_toolbar.addWidget(self.fonts)
+        count_syllable_action = QAction(
+            QIcon(os.path.join('images', 'length.png')), "Average Syllable Length", self)
+        count_syllable_action.setStatusTip("Average Syllable Length")
+        count_syllable_action.triggered.connect(
+            self.get_syllable_count)
+        style_menu.addAction(count_syllable_action)
+        style_toolbar.addAction(count_syllable_action)
+
+        count_functional_words_action = QAction(
+            QIcon(os.path.join('images', 'length.png')), "Functional Word Count", self)
+        count_functional_words_action.setStatusTip("Functional Word Count")
+        count_functional_words_action.triggered.connect(
+            self.get_functional_word_count)
+        style_menu.addAction(count_functional_words_action)
+        style_toolbar.addAction(count_functional_words_action)
+
+        self.style_dock = QDockWidget("Style", self)
+        self.style_dock.setWidget(style_toolbar)
+        self.style_dock.setFloating(False)
+        self.addDockWidget(Qt.TopDockWidgetArea, self.style_dock)
 
     # When the user selects some text we want the font toolbar to reflect the format of their selection
 
@@ -410,7 +483,7 @@ class MainWindow(QMainWindow):
         if not path:
             # If dialog is cancelled, will return ''
             return
-
+        # Depending on the extension, save as either html or plain text
         text = self.editor.toHtml() if splitext(
             path) in HTML_EXTENSIONS else self.editor.toPlainText()
 
