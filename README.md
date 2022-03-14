@@ -28,7 +28,8 @@ Research Phase began in January 2022
 - [A Framework for Authorship Identification of Online Messages: Writing-Style Features and Classification Techniques](https://www.pages.drexel.edu/~jl622/docs/Jounals/Zheng_2006JASIST_AuthorshipIdentification.pdf)
 - [Text Analysis](https://monkeylearn.com/text-classification/)
 - [Literary Style Classification with Deep Linguistic Analysis Features](https://nlp.stanford.edu/courses/cs224n/2011/reports/mjipeo-evion-wonhong.pdf)
-
+- [Using Natural Language Processing to Categorize Fictional
+Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcontent.cgi?article=2739&context=etd)
 
 
 #### Terminology
