@@ -21,12 +21,14 @@ Research Phase began in January 2022
 
 ### Natural Language Programming
 
-#### Tools and Resources
+#### Academic References
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 - [Identifying Different Writing Styles in a Document Intrinsically Using Stylometric Analysis](https://github.com/Hassaan-Elahi/Writing-Styles-Classification-Using-Stylometric-Analysis)
 - [A Framework for Authorship Identification of Online Messages: Writing-Style Features and Classification Techniques](https://www.pages.drexel.edu/~jl622/docs/Jounals/Zheng_2006JASIST_AuthorshipIdentification.pdf)
 - [Text Analysis](https://monkeylearn.com/text-classification/)
+- [Literary Style Classification with Deep Linguistic Analysis Features](https://nlp.stanford.edu/courses/cs224n/2011/reports/mjipeo-evion-wonhong.pdf)
+
 
 
 #### Terminology
