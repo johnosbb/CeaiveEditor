@@ -54,6 +54,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Dockable Windows](https://www.tutorialspoint.com/pyqt5/pyqt5_qdockwidget.htm)
 - [Frameless Windows](https://www.youtube.com/watch?v=bJBwSyHUobg)
 - [Layout Options](https://realpython.com/python-pyqt-layout/)
+- [Resource files](https://www.pythonguis.com/tutorials/packaging-data-files-pyqt5-with-qresource-system/)
 
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
