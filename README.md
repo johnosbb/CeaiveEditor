@@ -32,6 +32,7 @@ Research Phase began in January 2022
 Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcontent.cgi?article=2739&context=etd)
 
 
+
 #### Terminology
 
 | Term | Definition  |
@@ -42,6 +43,8 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [The Natural Language Toolkit Python](https://www.nltk.org/)
 - [Natural Language Processing Javascript](https://www.kommunicate.io/blog/nlp-libraries-node-javascript/)
 - [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
+- [Grammar Checking](https://www.geeksforgeeks.org/grammar-checker-in-python-using-language-check/)
+- [Spell Checking](https://pyenchant.github.io/pyenchant/)(https://github.com/pyenchant/pyenchant)
 
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
