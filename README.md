@@ -43,8 +43,18 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [The Natural Language Toolkit Python](https://www.nltk.org/)
 - [Natural Language Processing Javascript](https://www.kommunicate.io/blog/nlp-libraries-node-javascript/)
 - [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
+
+### Grammar Checking
 - [Grammar Checking](https://www.geeksforgeeks.org/grammar-checker-in-python-using-language-check/)
-- [Spell Checking](https://pyenchant.github.io/pyenchant/)(https://github.com/pyenchant/pyenchant)
+- [Grammar Checking with Language Check](https://pypi.org/project/language-check/)
+- [Language Tool](https://pypi.org/project/language-tool-python/
+- [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
+- [ Discussion on Stack Overflow](https://stackoverflow.com/questions/10252448/how-to-check-whether-a-sentence-is-correct-simple-grammar-check-in-python)
+- [After The Deadline](https://open.afterthedeadline.com/download/download-source-code/)
+
+### Spell Checking
+- [Spell Checking](https://pyenchant.github.io/pyenchant/)
+- [Github page for Enchant](https://github.com/pyenchant/pyenchant)
 
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
