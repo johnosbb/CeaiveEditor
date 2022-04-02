@@ -68,6 +68,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Frameless Windows](https://www.youtube.com/watch?v=bJBwSyHUobg)
 - [Layout Options](https://realpython.com/python-pyqt-layout/)
 - [Resource files](https://www.pythonguis.com/tutorials/packaging-data-files-pyqt5-with-qresource-system/)
+- [Styling with Style Sheets](https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qpushbutton)
 
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
