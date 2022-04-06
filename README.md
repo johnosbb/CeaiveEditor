@@ -21,12 +21,16 @@ Research Phase began in January 2022
 
 ### Natural Language Programming
 
-#### Tools and Resources
+#### Academic References
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 - [Identifying Different Writing Styles in a Document Intrinsically Using Stylometric Analysis](https://github.com/Hassaan-Elahi/Writing-Styles-Classification-Using-Stylometric-Analysis)
 - [A Framework for Authorship Identification of Online Messages: Writing-Style Features and Classification Techniques](https://www.pages.drexel.edu/~jl622/docs/Jounals/Zheng_2006JASIST_AuthorshipIdentification.pdf)
 - [Text Analysis](https://monkeylearn.com/text-classification/)
+- [Literary Style Classification with Deep Linguistic Analysis Features](https://nlp.stanford.edu/courses/cs224n/2011/reports/mjipeo-evion-wonhong.pdf)
+- [Using Natural Language Processing to Categorize Fictional
+Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcontent.cgi?article=2739&context=etd)
+
 
 
 #### Terminology
@@ -40,6 +44,18 @@ Research Phase began in January 2022
 - [Natural Language Processing Javascript](https://www.kommunicate.io/blog/nlp-libraries-node-javascript/)
 - [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
 
+### Grammar Checking
+- [Grammar Checking](https://www.geeksforgeeks.org/grammar-checker-in-python-using-language-check/)
+- [Grammar Checking with Language Check](https://pypi.org/project/language-check/)
+- [Language Tool](https://pypi.org/project/language-tool-python/
+- [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
+- [ Discussion on Stack Overflow](https://stackoverflow.com/questions/10252448/how-to-check-whether-a-sentence-is-correct-simple-grammar-check-in-python)
+- [After The Deadline](https://open.afterthedeadline.com/download/download-source-code/)
+
+### Spell Checking
+- [Spell Checking](https://pyenchant.github.io/pyenchant/)
+- [Github page for Enchant](https://github.com/pyenchant/pyenchant)
+
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
 - [PyQT](https://pythonbasics.org/install-pyqt/)
@@ -51,6 +67,8 @@ Research Phase began in January 2022
 - [Dockable Windows](https://www.tutorialspoint.com/pyqt5/pyqt5_qdockwidget.htm)
 - [Frameless Windows](https://www.youtube.com/watch?v=bJBwSyHUobg)
 - [Layout Options](https://realpython.com/python-pyqt-layout/)
+- [Resource files](https://www.pythonguis.com/tutorials/packaging-data-files-pyqt5-with-qresource-system/)
+- [Styling with Style Sheets](https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qpushbutton)
 
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
@@ -61,3 +79,10 @@ Research Phase began in January 2022
 - [Under Score Conventions and Rules in Python](https://ericplayground.com/2019/03/26/underscore-naming-convention-in-python/)
 - [Source Code for Beginning PyQT](https://github.com/Apress/beginning-pyqt)
 - [Tree Widget and JSON](https://stackoverflow.com/questions/51506378/pyqt-recursively-adding-children-to-treewidget-dynamically)
+- [Using JSON with Python](https://oxylabs.io/blog/python-parse-json)
+
+# Literature
+
+## Short Stories
+
+- [Short Story Guidelines](https://www.turnerstories.com/blog/2019/3/1/how-to-structure-a-short-story)
