@@ -107,7 +107,8 @@ dist
 # VSCode
 .vscode
 
-
+# Projects Directory
+Projects
 
 # PyCache
 __pycache__

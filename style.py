@@ -1,7 +1,10 @@
+from statistics import mean
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import cmudict
 from nltk.corpus import stopwords
 import nltk
+import logging
+
 
 nltk.download('cmudict')
 nltk.download('stopwords')
@@ -44,9 +47,23 @@ def syllable_count(word):
 
 
 def calculate_average_syllables_per_word(text):
-    chunks = create_sliding_window(text, 10, 10)
+    # step size must not be greater than winsize
+    chunks = create_sliding_window(text, 4, 4)
+    totalSyllables = 0
     for chunk in chunks:
         meanSyllable = avg_syllable_per_Word(chunk)
+        totalSyllables += meanSyllable
+    return totalSyllables/len(chunks)
+
+
+def calculate_functional_word_count(text):
+    # step size must not be greater than winsize
+    chunks = create_sliding_window(text, 4, 4)
+    totalFunctionalWords = 0
+    for chunk in chunks:
+        meanFunctionalWords = count_functional_words(chunk)
+        totalFunctionalWords += meanFunctionalWords
+    return totalFunctionalWords/len(chunks)
 
 
 # GIVES NUMBER OF SYLLABLES PER WORD
@@ -78,10 +95,13 @@ def RemoveSpecialCHs(text):
 
 # takes a paragraph of text and divides it into chunks of specified number of sentences
 # sequence is the input text to chunk
-#
+# winSize is the number of sentences to process in a chunk
+# Step determines the over lap of those sentences, if we have a winsize of 4 and a step of 2, then the second chunk will start with sentence 2
+# If we have a winsize of 4 and a step size of 4, then each chunk has 4 sentences with no overlap.
 
 
 def create_sliding_window(sequence, winSize, step=1):
+
     try:
         it = iter(sequence)
     except TypeError:
@@ -94,17 +114,19 @@ def create_sliding_window(sequence, winSize, step=1):
         raise Exception(
             "**ERROR** winSize must not be larger than sequence length.")
 
-    # sent_tokenize will split text into sentences based on the presence of certain charachters like "!”  “.” and “?”.
+    # sent_tokenize will split text into sentences based on the presence of certain characters like "!”  “.” and “?”.
     sequence = sent_tokenize(sequence)
-
+    sequence_length = len(sequence)  # the number of sentences
     # Pre-compute number of chunks to omit
-    numOfChunks = int(((len(sequence) - winSize) / step) + 1)
-
+    numOfChunks = int(((sequence_length - winSize) / step) + 1)
+    if numOfChunks == 0:
+        numOfChunks = 1
     l = []
     # Do the work
     for i in range(0, numOfChunks * step, step):
         l.append(" ".join(sequence[i:i + winSize]))
-
+    logging.debug("Created Sliding Window - sequence length: %d, number of chunks: %d, window size: %d, step size: %d",
+                  sequence_length, numOfChunks, winSize, step)
     return l
 
 

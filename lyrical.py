@@ -7,14 +7,31 @@ import os
 import sys
 import uuid
 
+from pydantic import DirectoryPath
+
 
 import style
 import utilities
+import logging
+
+import preferencesDialog
+import projectTypeDialog
+import novelPropertiesDialog
+import resources
+
 
 FONT_SIZES = [7, 8, 9, 10, 11, 12, 13, 14,
               18, 24, 36, 48, 64, 72, 96, 144, 288]
 IMAGE_EXTENSIONS = ['.jpg', '.png', '.bmp']
 HTML_EXTENSIONS = ['.htm', '.html', '.txt']
+
+# When creating a QSettings object, you must pass the name of your company or organization as well as the name of your application.
+ORGANIZATION_NAME = 'Lyrical-Editor'
+ORGANIZATION_DOMAIN = 'lyrical-editor.com'
+APPLICATION_NAME = 'Lyrical-Editor'
+SETTINGS_TRAY = 'settings/tray'
+TEST_TEXT = "This is the first sentence. This is the second sentence. This is the third sentence. This is the fourth sentence. \
+This is the fifth sentence. This is the sixth sentence. This is the seventh sentence. This is the eight sentence."
 
 
 def hexuuid():
@@ -30,14 +47,14 @@ def splitext(p):
 
 class TextEdit(QTextEdit):
 
-    def canInsertFromMimeData(self, source):
+    def can_insert_from_mime_data(self, source):
 
         if source.hasImage():
             return True
         else:
-            return super(TextEdit, self).canInsertFromMimeData(source)
+            return super(TextEdit, self).can_insert_from_mime_data(source)
 
-    def insertFromMimeData(self, source):
+    def insert_from_mime_data(self, source):
 
         cursor = self.textCursor()
         document = self.document()
@@ -67,26 +84,30 @@ class TextEdit(QTextEdit):
             cursor.insertImage(uuid)
             return
 
-        super(TextEdit, self).insertFromMimeData(source)
+        super(TextEdit, self).insert_from_mime_data(source)
 
 
 class MainWindow(QMainWindow):
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-
+        self.load_settings()
         layout = QVBoxLayout()  # The QVBoxLayout class lines up widgets vertically
         # this is using the editor class based on QTextEdit above, this is a new member declaration
         self.editor = TextEdit()
         # Setup the QTextEdit editor configuration
         self.editor.setAutoFormatting(QTextEdit.AutoAll)
         self.editor.selectionChanged.connect(self.update_format)
-        # Initialize default font size.
+
+        self.load_font()
+
+        # Initialize default font size for the editor.
         font = QFont('Times', 12)
         self.editor.setFont(font)
+
         # We need to repeat the size to init the current format.
         self.editor.setFontPointSize(12)
-
+        self.projectType = "Novel"
         # # enable this for a frameless window
         # # Borderless window code begins
         # self.setWindowFlags(Qt.FramelessWindowHint)
@@ -115,21 +136,43 @@ class MainWindow(QMainWindow):
 
         self.addToolBarBreak()
         self.define_style_toolbar()
+        self.define_project_explorer()
 
         # Initialize.
         self.update_format()
         self.update_title()
         self.oldPos = self.pos()
+
+        # self.setGeometry(100, 100, 400, 300)
         self.show()
 
-    def center(self):
-        qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
-        qr.moveCenter(cp)
-        self.move(qr.topLeft())
+    def load_font(self):
+        fontId = QFontDatabase.addApplicationFont(
+            ':/fonts/fonts/Amarante-Regular.ttf')
+        if fontId < 0:
+            print('font not loaded')
+        else:
+            self.fontFamilies = QFontDatabase.applicationFontFamilies(fontId)
+            font = QFont(self.fontFamilies[0])
+            # self.setFont(font)
+        # id = QFontDatabase.addApplicationFont("//party.ttf")
+        # _fontstr = QFontDatabase.applicationFontFamilies(id).at(0)
+        # _font = QFont(_fontstr, 8)
+        # _fontstr = QFontDatabase.applicationFontFamilies(id)[0]
+        # app.setFont(font)
 
-    def mousePressEvent(self, event):
-        self.oldPos = event.globalPos()
+    def show_preferences(self, s):
+        print("click", s)
+        self.preferencesDialog = preferencesDialog.PreferencesDialog(self)
+
+        if self.preferencesDialog.exec():
+            self.projectHomeDirectory = self.preferencesDialog.projectHomeDirectoryEdit.text()
+            print("Success! " + self.projectHomeDirectory)
+        else:
+            print("Cancel!")
+
+    # def mouse_press_event(self, event):
+    #     self.oldPos = event.globalPos()
 
     def mouseMoveEvent(self, event):
         delta = QPoint(event.globalPos() - self.oldPos)
@@ -162,8 +205,15 @@ class MainWindow(QMainWindow):
             lambda s: self.editor.setFontPointSize(float(s)))
         format_toolbar.addWidget(self.fontsize)
 
+        # self.bold_action = QAction(
+        #     QIcon(os.path.join('images', 'edit-bold.png')), "Bold", self)
+
+        icon = QIcon()
+        icon.addPixmap(QPixmap(
+            ":/images/images/edit-bold.png"), QIcon.Normal, QIcon.Off)
         self.bold_action = QAction(
-            QIcon(os.path.join('images', 'edit-bold.png')), "Bold", self)
+            icon, "Bold", self)
+
         self.bold_action.setStatusTip("Bold")
         self.bold_action.setShortcut(QKeySequence.Bold)
         self.bold_action.setCheckable(True)
@@ -172,8 +222,10 @@ class MainWindow(QMainWindow):
         format_toolbar.addAction(self.bold_action)
         format_menu.addAction(self.bold_action)
 
+        # self.italic_action = QAction(
+        #    QIcon(os.path.join('images', 'edit-italic.png')), "Italic", self)
         self.italic_action = QAction(
-            QIcon(os.path.join('images', 'edit-italic.png')), "Italic", self)
+            QIcon(":/images/images/edit-italic.png"), "Italic", self)
         self.italic_action.setStatusTip("Italic")
         self.italic_action.setShortcut(QKeySequence.Italic)
         self.italic_action.setCheckable(True)
@@ -182,7 +234,7 @@ class MainWindow(QMainWindow):
         format_menu.addAction(self.italic_action)
 
         self.underline_action = QAction(
-            QIcon(os.path.join('images', 'edit-underline.png')), "Underline", self)
+            QIcon(":/images/images/edit-underline.png"), "Underline", self)
         self.underline_action.setStatusTip("Underline")
         self.underline_action.setShortcut(QKeySequence.Underline)
         self.underline_action.setCheckable(True)
@@ -193,7 +245,7 @@ class MainWindow(QMainWindow):
         format_menu.addSeparator()
 
         self.alignl_action = QAction(
-            QIcon(os.path.join('images', 'edit-alignment.png')), "Align left", self)
+            QIcon(":/images/images/edit-alignment.png"), "Align left", self)
         self.alignl_action.setStatusTip("Align text left")
         self.alignl_action.setCheckable(True)
         self.alignl_action.triggered.connect(
@@ -201,8 +253,8 @@ class MainWindow(QMainWindow):
         format_toolbar.addAction(self.alignl_action)
         format_menu.addAction(self.alignl_action)
 
-        self.alignc_action = QAction(QIcon(os.path.join(
-            'images', 'edit-alignment-center.png')), "Align center", self)
+        self.alignc_action = QAction(
+            QIcon(":/images/images/edit-alignment-center.png"), "Align center", self)
         self.alignc_action.setStatusTip("Align text center")
         self.alignc_action.setCheckable(True)
         self.alignc_action.triggered.connect(
@@ -211,7 +263,7 @@ class MainWindow(QMainWindow):
         format_menu.addAction(self.alignc_action)
 
         self.alignr_action = QAction(
-            QIcon(os.path.join('images', 'edit-alignment-right.png')), "Align right", self)
+            QIcon(":/images/images/edit-alignment-right.png"), "Align right", self)
         self.alignr_action.setStatusTip("Align text right")
         self.alignr_action.setCheckable(True)
         self.alignr_action.triggered.connect(
@@ -220,7 +272,7 @@ class MainWindow(QMainWindow):
         format_menu.addAction(self.alignr_action)
 
         self.alignj_action = QAction(
-            QIcon(os.path.join('images', 'edit-alignment-justify.png')), "Justify", self)
+            QIcon(":/images/images/edit-alignment-justify.png"), "Justify", self)
         self.alignj_action.setStatusTip("Justify text")
         self.alignj_action.setCheckable(True)
         self.alignj_action.triggered.connect(
@@ -264,14 +316,14 @@ class MainWindow(QMainWindow):
         edit_menu = self.menuBar().addMenu("&Edit")
 
         undo_action = QAction(
-            QIcon(os.path.join('images', 'undo.png')), "Undo", self)
+            QIcon(":/images/images/undo.png"), "Undo", self)
         undo_action.setStatusTip("Undo last change")
         undo_action.triggered.connect(self.editor.undo)
         edit_toolbar.addAction(undo_action)
         edit_menu.addAction(undo_action)
 
         redo_action = QAction(
-            QIcon(os.path.join('images', 'redo.png')), "Redo", self)
+            QIcon(":/images/images/redo.png"), "Redo", self)
         redo_action.setStatusTip("Redo last change")
         redo_action.triggered.connect(self.editor.redo)
         edit_toolbar.addAction(redo_action)
@@ -280,7 +332,7 @@ class MainWindow(QMainWindow):
         edit_menu.addSeparator()
 
         cut_action = QAction(
-            QIcon(os.path.join('images', 'scissors.png')), "Cut", self)
+            QIcon(":/images/images/scissors.png"), "Cut", self)
         cut_action.setStatusTip("Cut selected text")
         cut_action.setShortcut(QKeySequence.Cut)
         cut_action.triggered.connect(self.editor.cut)
@@ -288,15 +340,15 @@ class MainWindow(QMainWindow):
         edit_menu.addAction(cut_action)
 
         copy_action = QAction(
-            QIcon(os.path.join('images', 'document-copy.png')), "Copy", self)
+            QIcon(":/images/images/document-copy.png"), "Copy", self)
         copy_action.setStatusTip("Copy selected text")
         cut_action.setShortcut(QKeySequence.Copy)
         copy_action.triggered.connect(self.editor.copy)
         edit_toolbar.addAction(copy_action)
         edit_menu.addAction(copy_action)
 
-        paste_action = QAction(QIcon(os.path.join(
-            'images', 'clipboard-paste-document-text.png')), "Paste", self)
+        paste_action = QAction(
+            QIcon(":/images/images/clipboard-paste-document-text.png"), "Paste", self)
         paste_action.setStatusTip("Paste from clipboard")
         cut_action.setShortcut(QKeySequence.Paste)
         paste_action.triggered.connect(self.editor.paste)
@@ -304,7 +356,7 @@ class MainWindow(QMainWindow):
         edit_menu.addAction(paste_action)
 
         select_action = QAction(
-            QIcon(os.path.join('images', 'selection-input.png')), "Select all", self)
+            QIcon(":/images/images/selection-input.png"), "Select all", self)
         select_action.setStatusTip("Select all text")
         cut_action.setShortcut(QKeySequence.SelectAll)
         select_action.triggered.connect(self.editor.selectAll)
@@ -312,13 +364,20 @@ class MainWindow(QMainWindow):
 
         edit_menu.addSeparator()
 
-        wrap_action = QAction(QIcon(os.path.join(
-            'images', 'arrow-continue.png')), "Wrap text to window", self)
+        wrap_action = QAction(
+            QIcon(":/images/images/arrow-continue.png"), "Wrap text to window", self)
         wrap_action.setStatusTip("Toggle wrap text to window")
         wrap_action.setCheckable(True)
         wrap_action.setChecked(True)
         wrap_action.triggered.connect(self.edit_toggle_wrap)
         edit_menu.addAction(wrap_action)
+
+        preferences_action = QAction(
+            QIcon(":/images/images/preferences.png"), "Lyrical Preferences", self)
+        preferences_action.setStatusTip("Set Your Lyrical Preferences")
+        preferences_action.triggered.connect(self.show_preferences)
+        edit_menu.addAction(preferences_action)
+        edit_toolbar.addAction(preferences_action)
 
     def define_file_toolbar(self):
         file_toolbar = QToolBar("File")
@@ -329,29 +388,43 @@ class MainWindow(QMainWindow):
         # Actions
         # Actions can be added to menus and toolbars, and will automatically keep them in sync.
         # For example, in a word processor, if the user presses a Bold toolbar button, the Bold menu item will automatically be checked.
-        open_file_action = QAction(QIcon(os.path.join(
-            'images', 'open-document.png')), "Open file...", self)
+        open_file_action = QAction(
+            QIcon(":/images/images/open-document.png"), "Open file...", self)
         open_file_action.setStatusTip("Open file")
         open_file_action.triggered.connect(self.file_open)
         file_menu.addAction(open_file_action)
         file_toolbar.addAction(open_file_action)
 
+        new_project_action = QAction(
+            QIcon(":/images/images/new-project.png"), "new Project...", self)
+        # new_project_action = QAction('new Project...', self)
+        new_project_action.triggered.connect(self.create_new_project)
+        file_menu.addAction(new_project_action)
+        file_toolbar.addAction(new_project_action)
+
+        open_project_action = QAction(
+            QIcon(":/images/images/open-project.png"), "Open Project...", self)
+        # open_project_action = QAction('Open Project...', self)
+        open_project_action.triggered.connect(self.choose_directory)
+        file_menu.addAction(open_project_action)
+        file_toolbar.addAction(open_project_action)
+
         save_file_action = QAction(
-            QIcon(os.path.join('images', 'disk.png')), "Save", self)
+            QIcon(":/images/images/disk.png"), "Save", self)
         save_file_action.setStatusTip("Save current page")
         save_file_action.triggered.connect(self.file_save)
         file_menu.addAction(save_file_action)
         file_toolbar.addAction(save_file_action)
 
         saveas_file_action = QAction(
-            QIcon(os.path.join('images', 'disk-pencil.png')), "Save As...", self)
+            QIcon(":/images/images/disk-pencil.png"), "Save As...", self)
         saveas_file_action.setStatusTip("Save current page to specified file")
         saveas_file_action.triggered.connect(self.file_saveas)
         file_menu.addAction(saveas_file_action)
         file_toolbar.addAction(saveas_file_action)
 
         print_action = QAction(
-            QIcon(os.path.join('images', 'printer.png')), "Print...", self)
+            QIcon(":/images/images/printer.png"), "Print...", self)
         print_action.setStatusTip("Print current page")
         print_action.triggered.connect(self.file_print)
         file_menu.addAction(print_action)
@@ -363,22 +436,181 @@ class MainWindow(QMainWindow):
         text = self.editor.toPlainText()
         if utilities.isNotBlank(text):
             text = text.lower()
-            #count = style.syllable_count(word)
+            # count = style.syllable_count(word)
             count = style.calculate_average_syllables_per_word(text)
             self.status.showMessage(
                 "Average Syllable Length: " + str(count), 2000)
+
+    def generate_test_text(self):
+        self.editor.setText(TEST_TEXT)
+
+    def create_novel_structure(self, properties):
+        # create an outline for our novel
+        print("Success! for novel properties Prologue: {} Foreword {}".format(
+            properties.prologue, properties.foreword))
+        # We now need to get the name of the project and properties
+        directory = QFileDialog.getSaveFileName(
+            caption="Create a new Project Directory",
+            directory=self.projectHomeDirectory,
+            filter=""
+        )
+        self.status.showMessage(
+            "New Project Directory: " + str(directory[0]), 2000)
+        try:
+            os.mkdir(str(directory[0]))
+        except OSError as error:
+            self.status.showMessage(
+                "Failed to create: " + str(directory[0]) + " " + str(error), 10000)
+        # create the requested documents
+
+        try:
+            if(properties.foreword):
+                path = os.sep.join([directory[0], 'foreword.txt'])
+                fp = open(path, 'x')
+                fp.close()
+        except OSError as error:
+            self.status.showMessage(
+                "Failed to create foreword: " + str(error), 10000)
+        # self.foreword = False
+        # self.preface = False
+        # self.introduction = False
+        # self.prologue = False
+        # self.epilogue = False
+        # self.numberOfChapters = 20
+        try:
+            if(properties.preface):
+                path = os.sep.join([directory[0], 'preface.txt'])
+                fp = open(path, 'x')
+                fp.close()
+        except OSError as error:
+            self.status.showMessage(
+                "Failed to create preface: " + str(error), 10000)
+        try:
+            if(properties.introduction):
+                path = os.sep.join([directory[0], 'introduction.txt'])
+                fp = open(path, 'x')
+                fp.close()
+        except OSError as error:
+            self.status.showMessage(
+                "Failed to create introduction: " + str(error), 10000)
+        try:
+            if(properties.prologue):
+                path = os.sep.join([directory[0], 'prologue.txt'])
+                fp = open(path, 'x')
+                fp.close()
+        except OSError as error:
+            self.status.showMessage(
+                "Failed to create prologue: " + str(error), 10000)
+        try:
+            if(properties.epilogue):
+                path = os.sep.join([directory[0], 'epilogue.txt'])
+                fp = open(path, 'x')
+                fp.close()
+        except OSError as error:
+            self.status.showMessage(
+                "Failed to create epilogue: " + str(error), 10000)
+        for chapter in range(1, properties.numberOfChapters+1):
+            try:
+                chapterName = "chapter_" + str(chapter) + ".txt"
+                path = os.sep.join([directory[0], chapterName])
+                fp = open(path, 'x')
+                fp.close()
+            except OSError as error:
+                self.status.showMessage(
+                    "Failed to create chapter: " + str(chapter), 10000)
+
+    def create_new_project(self):
+        self.projectTypeDialog = projectTypeDialog.ProjectTypeDialog(self)
+
+        if self.projectTypeDialog.exec():
+            self.projectType = self.projectTypeDialog.project
+            # self.projectHomeDirectory = self.projectTypeDialog.projectHomeDirectoryEdit.text()
+            print("Success! " + self.projectType)
+            self.novelPropertiesDialog = novelPropertiesDialog.NovelPropertiesDialog(
+                self)
+            if self.novelPropertiesDialog.exec():
+                self.create_novel_structure(
+                    self.novelPropertiesDialog.properties)
+            else:
+                print("Canceled! for novel properties {}".format(
+                    self.novelPropertiesDialog.properties))
+        else:
+            print("Cancel! " + self.projectType)
+
+        # Used when we create a new project or open an existing one
+
+    def choose_directory(self):
+        """
+        Select a directory to display.
+        """
+        file_dialog = QFileDialog(self)
+        file_dialog.setFileMode(QFileDialog.Directory)
+        directory = file_dialog.getExistingDirectory(self, "Open Directory",
+                                                     self.projectHomeDirectory, QFileDialog.ShowDirsOnly)
+
+        self.tree.setRootIndex(self.model.index(directory))
+        # update the current project preferences setting
+        self.projectCurrentDirectory = directory
+        self.status.showMessage(
+            "Project Directory: " + str(directory), 2000)
 
     def get_functional_word_count(self):
         cursor = QTextCursor(self.editor.textCursor())
         # selection = QTextEdit.ExtraSelection()
         # selection.cursor = self.editor.textCursor()
-        word = cursor.selectedText()
-        if utilities.isNotBlank(word):
-            word = word.lower()
-            #count = style.syllable_count(word)
-            count = style.count_functional_words(word)
+        # word = cursor.selectedText()
+        text = self.editor.toPlainText()
+        if utilities.isNotBlank(text):
+            text = text.lower()
+            # count = style.syllable_count(word)
+            count = style.calculate_functional_word_count(text)
             self.status.showMessage(
                 "Functional Word Score: " + str(count), 2000)
+
+    # Create a dockable Project Explorer
+
+    def define_project_explorer(self):
+        """
+        Defines the project explorer
+        """
+        """
+        Set up the QTreeView so that it displays the contents
+        of the Project.
+        """
+        self.model = QFileSystemModel()
+
+        # setRootPath
+        # Sets the directory that is being watched by the model to newPath by installing a file system watcher on it.
+        # Any changes to files and directories within this directory will be reflected in the model.
+        # If the path is changed, the rootPathChanged() signal will be emitted.
+        # Note: This function does not change the structure of the model or modify the data available to views.
+        # In other words, the "root" of the model is not changed to include only files and directories within the directory
+        # specified by newPath in the file system.
+        self.model.setRootPath(self.projectHomeDirectory)
+
+        self.tree = QTreeView()
+        self.tree.setIndentation(10)
+        self.tree.setModel(self.model)
+        self.tree.setRootIndex(self.model.index(self.projectHomeDirectory))
+        self.tree.clicked.connect(self.on_treeView_clicked)
+        # Set up container and layout
+        frame = QFrame()  # The QFrame class is used as a container to group and surround widgets, or to act as placeholders in GUI
+        # applications. You can also apply a frame style to a QFrame container to visually separate it from nearbywidgets.
+        frame_v_box = QVBoxLayout()
+        frame_v_box.addWidget(self.tree)
+        frame.setLayout(frame_v_box)
+        # self.setCentralWidget(frame) # The central widget in the center of the window must be set if you are going to use QMainWindow as your
+        # base class. For example, you could use a single QTextEdit widget or create a QWidget object to act as a parent
+        # to a number of other widgets, then use setCentralWidget() , and set your central widget for the main
+        # window.
+        self.explorer_dock = QDockWidget("Explorer", self)
+        self.explorer_dock.setWidget(self.tree)
+        self.explorer_dock.setFloating(False)
+        self.explorer_dock.setAllowedAreas(
+            Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
+        self.addDockWidget(Qt.LeftDockWidgetArea, self.explorer_dock)
+
+    # Create a dockable Style Bar
 
     def define_style_toolbar(self):
         """
@@ -389,8 +621,16 @@ class MainWindow(QMainWindow):
         self.addToolBar(style_toolbar)
         style_menu = self.menuBar().addMenu("&Style")
 
+        generate_text_action = QAction(
+            QIcon(":/images/images/generate-text.png"), "Generate Random Text", self)
+        generate_text_action.setStatusTip("Generate Random Text")
+        generate_text_action.triggered.connect(
+            self.generate_test_text)
+        style_menu.addAction(generate_text_action)
+        style_toolbar.addAction(generate_text_action)
+
         count_syllable_action = QAction(
-            QIcon(os.path.join('images', 'length.png')), "Average Syllable Length", self)
+            QIcon(":/images/images/syllables.png"), "Average Syllable Length", self)
         count_syllable_action.setStatusTip("Average Syllable Length")
         count_syllable_action.triggered.connect(
             self.get_syllable_count)
@@ -398,7 +638,7 @@ class MainWindow(QMainWindow):
         style_toolbar.addAction(count_syllable_action)
 
         count_functional_words_action = QAction(
-            QIcon(os.path.join('images', 'length.png')), "Functional Word Count", self)
+            QIcon(":/images/images/functional-words.png"), "Functional Word Count", self)
         count_functional_words_action.setStatusTip("Functional Word Count")
         count_functional_words_action.triggered.connect(
             self.get_functional_word_count)
@@ -444,12 +684,9 @@ class MainWindow(QMainWindow):
         dlg.setIcon(QMessageBox.Critical)
         dlg.show()
 
-    def file_open(self):
-        path, _ = QFileDialog.getOpenFileName(
-            self, "Open file", "", "HTML documents (*.html);Text documents (*.txt);All files (*.*)")
-
+    def open_file(self, path):
         try:
-            with open(path, 'rU') as f:
+            with open(path, 'r') as f:
                 text = f.read()
 
         except Exception as e:
@@ -460,6 +697,11 @@ class MainWindow(QMainWindow):
             # Qt will automatically try and guess the format as txt/html
             self.editor.setText(text)
             self.update_title()
+
+    def file_open(self):
+        path, _ = QFileDialog.getOpenFileName(
+            self, "Open file", "", "HTML documents (*.html);Text documents (*.txt);All files (*.*)")
+        self.open_file(path)
 
     def file_save(self):
         if self.path is None:
@@ -511,11 +753,76 @@ class MainWindow(QMainWindow):
         self.editor.setLineWrapMode(
             1 if self.editor.lineWrapMode() == 0 else 0)
 
+    def save_settings(self):
+        settings = QSettings()
+        # QSettings stores settings. Each setting consists of a QString that specifies the setting’s name (the key ) and a QVariant that stores the data associated with the key. To write a setting, use setValue()
+        settings.setValue(SETTINGS_TRAY, False)  # self.check_box.isChecked()
+        settings.beginGroup("MainWindow")
+        # the current active project directory within the root
+        settings.setValue("project_current", self.projectCurrentDirectory)
+        mySize = self.size()
+        settings.setValue("size", self.size())
+        myPosition = self.pos()
+        settings.setValue("pos", self.pos())
+        settings.endGroup()
+        settings.beginGroup("Preferences")
+        # the default root directory for all projects
+        settings.setValue("project_home", self.projectHomeDirectory)
+
+        settings.endGroup()
+        settings.sync()
+        logging.info("Saved Lyrical settings")
+
+    def load_settings(self):
+        settings = QSettings()
+        settings.beginGroup("Preferences")
+        self.projectHomeDirectory = settings.value("project_home")
+        settings.endGroup()
+        settings.beginGroup("MainWindow")
+        self.projectCurrentDirectory = settings.value("project_current")
+        self.applicationPosition = settings.value("pos")
+        self.applicationSize = settings.value("size")
+        self.setGeometry(self.applicationPosition.x(), self.applicationPosition.y(
+        ), self.applicationSize.width(), self.applicationSize.height())
+        settings.endGroup()
+        logging.info("Loaded Lyrical settings")
+
+    def closeEvent(self, event):
+        self.save_settings()
+        event.accept()
+# Used to set the project root directory
+
+    def set_directory(self):
+        """
+        Choose the directory.
+        """
+        file_dialog = QFileDialog(self)
+        file_dialog.setFileMode(QFileDialog.Directory)
+        self.directory = file_dialog.getExistingDirectory(self, "Open \
+        Directory", self.projectHomeDirectory, QFileDialog.ShowDirsOnly)
+        if self.directory:
+            self.preferencesDialog.projectHomeDirectoryEdit.setText(
+                self.directory)
+
+    def on_treeView_clicked(self, index):
+        indexItem = self.model.index(index.row(), 0, index.parent())
+        fileName = self.model.fileName(indexItem)
+        filePath = self.model.filePath(indexItem)
+        self.status.showMessage(
+            "Selected File: " + str(filePath) + "   " + str(fileName), 10000)
+        self.open_file(filePath)
+
 
 if __name__ == '__main__':
 
     app = QApplication(sys.argv)  # create the main app
-    app.setApplicationName("Lyrical")
-
+    # When creating a QSettings object, you must pass the name of your company or organization as well as the name of your application.
+    QCoreApplication.setApplicationName(ORGANIZATION_NAME)
+    # When the Internet domain is set, it is used on macOS and iOS instead of the organization name, since macOS and iOS applications conventionally use Internet domains to identify themselves.
+    QCoreApplication.setOrganizationDomain(ORGANIZATION_DOMAIN)
+    QCoreApplication.setApplicationName(APPLICATION_NAME)
+    logging.basicConfig(level=logging.DEBUG, filename="lyrical.log", filemode="a+",
+                        format="%(asctime)-15s %(levelname)-8s %(message)s")
+    logging.info("Starting Lyrical Editor")
     window = MainWindow()
     app.exec_()
