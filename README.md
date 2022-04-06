@@ -56,6 +56,11 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Spell Checking](https://pyenchant.github.io/pyenchant/)
 - [Github page for Enchant](https://github.com/pyenchant/pyenchant)
 
+# Installing Enchant on Ubuntu
+
+- On Ubuntu: sudo apt-get install -y libenchant-dev
+- sudo apt-get -y install enchant
+
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
 - [PyQT](https://pythonbasics.org/install-pyqt/)
