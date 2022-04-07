@@ -85,6 +85,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Source Code for Beginning PyQT](https://github.com/Apress/beginning-pyqt)
 - [Tree Widget and JSON](https://stackoverflow.com/questions/51506378/pyqt-recursively-adding-children-to-treewidget-dynamically)
 - [Using JSON with Python](https://oxylabs.io/blog/python-parse-json)
+- [Example of Syntax High Lighting](https://github.com/baoboa/pyqt5/blob/master/examples/richtext/syntaxhighlighter.py)
 
 # Literature
 
