@@ -55,6 +55,8 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 ### Spell Checking
 - [Spell Checking](https://pyenchant.github.io/pyenchant/)
 - [Github page for Enchant](https://github.com/pyenchant/pyenchant)
+- [Integrating spellchecking into a QTextEdit widget in PyQt5 with enchant](https://nethumlamahewage.medium.com/integrating-spellchecking-into-a-qtextedit-widget-in-pyqt5-with-enchant-f025f4097e5c)
+- [Code for above article](https://gist.github.com/NethumL/264a0468ea8b041c7e51038e23de0752)
 
 # Installing Enchant on Ubuntu
 
