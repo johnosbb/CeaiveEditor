@@ -90,6 +90,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Using JSON with Python](https://oxylabs.io/blog/python-parse-json)
 - [Example of Syntax High Lighting](https://github.com/baoboa/pyqt5/blob/master/examples/richtext/syntaxhighlighter.py)
 - [PYQT5 Examples](https://github.com/baoboa/pyqt5/tree/master/examples)
+- [Python Typing - Type Hints & Annotations](https://www.youtube.com/watch?v=QORvB-_mbZ0)
 
 # Literature
 
