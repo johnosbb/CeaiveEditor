@@ -94,6 +94,9 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 
 # Literature
 
+## Source Material
+[Project Gutenberg catalogue](https://gnikdroy.pythonanywhere.com/docs/#installation-and-setup)
+
 ## Short Stories
 
 - [Short Story Guidelines](https://www.turnerstories.com/blog/2019/3/1/how-to-structure-a-short-story)
