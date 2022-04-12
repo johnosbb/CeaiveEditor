@@ -100,3 +100,6 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 ## Short Stories
 
 - [Short Story Guidelines](https://www.turnerstories.com/blog/2019/3/1/how-to-structure-a-short-story)
+
+# Writers Aids
+[Describing Colour](https://www.writerswrite.co.za/204-words-that-describe-colours/)
