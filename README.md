@@ -48,7 +48,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 ### Grammar Checking
 - [Grammar Checking](https://www.geeksforgeeks.org/grammar-checker-in-python-using-language-check/)
 - [Grammar Checking with Language Check](https://pypi.org/project/language-check/)
-- [Language Tool](https://pypi.org/project/language-tool-python/
+- [Language Tool](https://pypi.org/project/language-tool-python/)
 - [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
 - [ Discussion on Stack Overflow](https://stackoverflow.com/questions/10252448/how-to-check-whether-a-sentence-is-correct-simple-grammar-check-in-python)
 - [After The Deadline](https://open.afterthedeadline.com/download/download-source-code/)
