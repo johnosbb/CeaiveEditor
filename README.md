@@ -98,6 +98,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 [Project Gutenberg catalogue](https://gnikdroy.pythonanywhere.com/docs/#installation-and-setup)
 [WordNet® is a large lexical database of English](https://wordnet.princeton.edu/download)
 [Literary Quotes Research](https://guides.loc.gov/quotations/online)
+[Dictionary of Similes](https://www.bartleby.com/161/)
 
 ## Short Stories
 
