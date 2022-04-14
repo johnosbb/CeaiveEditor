@@ -42,7 +42,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 ## Libraries
 - [The Natural Language Toolkit Python](https://www.nltk.org/)
 - [Natural Language Processing Javascript](https://www.kommunicate.io/blog/nlp-libraries-node-javascript/)
-- [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html
+- [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
 - [NTLK and Wordnet](https://www.nltk.org/howto/wordnet.html)
 
 ### Grammar Checking
