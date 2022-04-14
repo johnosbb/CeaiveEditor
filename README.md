@@ -95,11 +95,11 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 # Literature
 
 ## Source Material
-[Project Gutenberg catalogue](https://gnikdroy.pythonanywhere.com/docs/#installation-and-setup)
-[WordNet® is a large lexical database of English](https://wordnet.princeton.edu/download)
-[Literary Quotes Research](https://guides.loc.gov/quotations/online)
-[Dictionary of Similes](https://www.bartleby.com/161/)
-[Roget’s Thesaurus as a lexical resource](https://arxiv.org/ftp/arxiv/papers/1204/1204.0140.pdf)
+- [Project Gutenberg catalogue](https://gnikdroy.pythonanywhere.com/docs/#installation-and-setup)
+- [WordNet® is a large lexical database of English](https://wordnet.princeton.edu/download)
+- [Literary Quotes Research](https://guides.loc.gov/quotations/online)
+- [Dictionary of Similes](https://www.bartleby.com/161/)
+- [Roget’s Thesaurus as a lexical resource](https://arxiv.org/ftp/arxiv/papers/1204/1204.0140.pdf)
 
 ## Short Stories
 
