@@ -96,6 +96,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 
 ## Source Material
 [Project Gutenberg catalogue](https://gnikdroy.pythonanywhere.com/docs/#installation-and-setup)
+[WordNet® is a large lexical database of English](https://wordnet.princeton.edu/download)
 
 ## Short Stories
 
