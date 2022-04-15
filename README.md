@@ -83,6 +83,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
   - [Github Reference](https://github.com/Macmillan2004/My-Microsoft-Word)
 - [No2Pads](https://www.pythonguis.com/examples/python-notepad-clone/)
+- [Building a Text Editor in Python and QT](https://www.binpress.com/building-text-editor-pyqt-1/)
 
 ## Python
 - [Under Score Conventions and Rules in Python](https://ericplayground.com/2019/03/26/underscore-naming-convention-in-python/)
