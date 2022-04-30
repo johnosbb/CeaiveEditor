@@ -46,9 +46,11 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [NTLK and Wordnet](https://www.nltk.org/howto/wordnet.html)
 
 ### Grammar Checking
+### Language Tool
+Language tool is a commercial service that also offers a limited free option. The API documentation is available [Here](https://languagetool.org/http-api/#/default)
 - [Grammar Checking](https://www.geeksforgeeks.org/grammar-checker-in-python-using-language-check/)
-- [Grammar Checking with Language Check](https://pypi.org/project/language-check/)
-- [Language Tool](https://pypi.org/project/language-tool-python/)
+- [Grammar Checking with Language Check - Python Example](https://pypi.org/project/language-check/)
+- [Language Tool - Python Wrapper for Language Check](https://pypi.org/project/language-tool-python/)
 - [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
 - [ Discussion on Stack Overflow](https://stackoverflow.com/questions/10252448/how-to-check-whether-a-sentence-is-correct-simple-grammar-check-in-python)
 - [After The Deadline](https://open.afterthedeadline.com/download/download-source-code/)
