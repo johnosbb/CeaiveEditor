@@ -118,3 +118,8 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 
 # Writers Aids
 [Describing Colour](https://www.writerswrite.co.za/204-words-that-describe-colours/)
+
+
+# Online Tools
+
+-[The FRee Thesaurus](https://www.freethesaurus.com/picked)
