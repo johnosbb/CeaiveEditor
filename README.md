@@ -122,4 +122,4 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 
 # Online Tools
 
--[The FRee Thesaurus](https://www.freethesaurus.com/picked)
+-[The Free Thesaurus](https://www.freethesaurus.com/picked)
