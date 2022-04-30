@@ -48,11 +48,12 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 ### Grammar Checking
 ### Language Tool
 
-Language tool is a commercial service that also offers a limited free option. The API documentation is available [Here](https://languagetool.org/http-api/#/default)
+LanguageTool is an open source spellchecking platform. It supports a large variety of languages and has advanced grammar support. Language tool is also available as a hosted commercial service that also offers a limited free option. The API documentation is available [Here](https://languagetool.org/http-api/#/default)
 
 - [Grammar Checking](https://www.geeksforgeeks.org/grammar-checker-in-python-using-language-check/)
 - [Grammar Checking with Language Check - Python Example](https://pypi.org/project/language-check/)
 - [Language Tool - Python Wrapper for Language Check](https://pypi.org/project/language-tool-python/)
+- [pyLanguageTool Library](https://github.com/Findus23/pyLanguagetool)
 
 ### Other Checkers 
 - [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
