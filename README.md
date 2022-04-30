@@ -52,6 +52,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
 - [ Discussion on Stack Overflow](https://stackoverflow.com/questions/10252448/how-to-check-whether-a-sentence-is-correct-simple-grammar-check-in-python)
 - [After The Deadline](https://open.afterthedeadline.com/download/download-source-code/)
+- [Parsing English in Python](https://explosion.ai/blog/parsing-english-in-python
 
 ### Spell Checking
 - [Spell Checking](https://pyenchant.github.io/pyenchant/)
