@@ -102,6 +102,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Example of Syntax High Lighting](https://github.com/baoboa/pyqt5/blob/master/examples/richtext/syntaxhighlighter.py)
 - [PYQT5 Examples](https://github.com/baoboa/pyqt5/tree/master/examples)
 - [Python Typing - Type Hints & Annotations](https://www.youtube.com/watch?v=QORvB-_mbZ0)
+- [Vocabulary Bot](https://www.twilio.com/blog/build-vocabulary-bot-whatsapp-python-twilio)
 
 # Literature
 
@@ -125,3 +126,4 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [The Free Thesaurus](https://www.freethesaurus.com/picked)
 - [API to Merriam-Webster](https://dictionaryapi.com/products/json)
 - [Old Python Wrappers for Merriam-Webster API](https://github.com/pfeyz/merriam-webster-api)
+
