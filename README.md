@@ -40,6 +40,8 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 | Stop Words | A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that we may wish to ignore when processing language. NLTK(Natural Language Toolkit) in python has a list of stopwords stored in 16 different languages. We can use these tables to eliminate these stop words when processing text for some aspects of style analysis.
 | Synonym | a word or phrase that means exactly or nearly the same as another word or phrase in the same language, for example shut is a synonym of close.
 | Synset | In Natural Language Processing a Synset or Synonym-set is a grouping of synonymous words that express the same concept. Some of the words have only one Synset and some have several.
+| Stemming | In Natural Language Processing, stemming is the process of reducing inflected (or sometimes derived) words to their word stem, base or root form—generally a written word form. The stem need not be identical to the morphological root of the word; it is usually sufficient that related words map to the same stem, even if this stem is not in itself a valid root.
+| Lemmatisation | Lemmatisation (or lemmatization) in linguistics is the process of grouping together the inflected forms of a word so they can be analysed as a single item, identified by the word's lemma, or dictionary form. Lemmatisation is closely related to stemming. The difference is that a stemmer operates on a single word without knowledge of the context, and therefore cannot discriminate between words which have different meanings depending on part of speech.
 
 
 ## Libraries
@@ -121,7 +123,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Short Story Guidelines](https://www.turnerstories.com/blog/2019/3/1/how-to-structure-a-short-story)
 
 # Writers Aids
-[Describing Colour](https://www.writerswrite.co.za/204-words-that-describe-colours/)
+- [Describing Colour](https://www.writerswrite.co.za/204-words-that-describe-colours/)
 
 
 # Online Tools
