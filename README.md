@@ -38,6 +38,9 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 | Term | Definition  |
 | --- | :-- |
 | Stop Words | A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that we may wish to ignore when processing language. NLTK(Natural Language Toolkit) in python has a list of stopwords stored in 16 different languages. We can use these tables to eliminate these stop words when processing text for some aspects of style analysis.
+| Synonym | a word or phrase that means exactly or nearly the same as another word or phrase in the same language, for example shut is a synonym of close.
+| Synset | In Natural Language Processing a Synset or Synonym-set is a grouping of synonymous words that express the same concept. Some of the words have only one Synset and some have several.
+
 
 ## Libraries
 - [The Natural Language Toolkit Python](https://www.nltk.org/)
