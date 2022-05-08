@@ -132,3 +132,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [API to Merriam-Webster](https://dictionaryapi.com/products/json)
 - [Old Python Wrappers for Merriam-Webster API](https://github.com/pfeyz/merriam-webster-api)
 
+
+# Additional Information
+
+- There is additional information available on the [Wiki](https://github.com/johnosbb/Lyrical/wiki)
