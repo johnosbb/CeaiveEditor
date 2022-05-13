@@ -32,7 +32,6 @@ class ThesaurusWebster:
             url = f"https://www.dictionaryapi.com/api/v3/references/thesaurus/json/{word}?key={api_key}"
             try:
                 response = requests.get(url)
-                #print("Response was " + response)
                 apiResponse = json.loads(response.text)
                 if response.status_code == 200:
                     try:
