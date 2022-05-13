@@ -38,23 +38,45 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 | Term | Definition  |
 | --- | :-- |
 | Stop Words | A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that we may wish to ignore when processing language. NLTK(Natural Language Toolkit) in python has a list of stopwords stored in 16 different languages. We can use these tables to eliminate these stop words when processing text for some aspects of style analysis.
+| Synonym | a word or phrase that means exactly or nearly the same as another word or phrase in the same language, for example shut is a synonym of close.
+| Synset | In Natural Language Processing a Synset or Synonym-set is a grouping of synonymous words that express the same concept. Some of the words have only one Synset and some have several.
+| Stemming | In Natural Language Processing, stemming is the process of reducing inflected (or sometimes derived) words to their word stem, base or root form—generally a written word form. The stem need not be identical to the morphological root of the word; it is usually sufficient that related words map to the same stem, even if this stem is not in itself a valid root.
+| Lemmatisation | Lemmatisation (or lemmatization) in linguistics is the process of grouping together the inflected forms of a word so they can be analysed as a single item, identified by the word's lemma, or dictionary form. Lemmatisation is closely related to stemming. The difference is that a stemmer operates on a single word without knowledge of the context, and therefore cannot discriminate between words which have different meanings depending on part of speech.
+
 
 ## Libraries
 - [The Natural Language Toolkit Python](https://www.nltk.org/)
 - [Natural Language Processing Javascript](https://www.kommunicate.io/blog/nlp-libraries-node-javascript/)
 - [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
+- [NTLK and Wordnet](https://www.nltk.org/howto/wordnet.html)
 
 ### Grammar Checking
+### Language Tool
+
+LanguageTool is an open source spellchecking platform. It supports a large variety of languages and has advanced grammar support. Language tool is also available as a hosted commercial service that also offers a limited free option. The API documentation is available [Here](https://languagetool.org/http-api/#/default)
+
 - [Grammar Checking](https://www.geeksforgeeks.org/grammar-checker-in-python-using-language-check/)
-- [Grammar Checking with Language Check](https://pypi.org/project/language-check/)
-- [Language Tool](https://pypi.org/project/language-tool-python/
+- [Grammar Checking with Language Check - Python Example](https://pypi.org/project/language-check/)
+- [Language Tool - Python Wrapper for Language Check](https://pypi.org/project/language-tool-python/)
+- [pyLanguageTool Library](https://github.com/Findus23/pyLanguagetool)
+
+### Other Checkers 
 - [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
 - [ Discussion on Stack Overflow](https://stackoverflow.com/questions/10252448/how-to-check-whether-a-sentence-is-correct-simple-grammar-check-in-python)
 - [After The Deadline](https://open.afterthedeadline.com/download/download-source-code/)
+- [Parsing English in Python](https://explosion.ai/blog/parsing-english-in-python
 
 ### Spell Checking
 - [Spell Checking](https://pyenchant.github.io/pyenchant/)
 - [Github page for Enchant](https://github.com/pyenchant/pyenchant)
+- [Integrating spellchecking into a QTextEdit widget in PyQt5 with enchant](https://nethumlamahewage.medium.com/integrating-spellchecking-into-a-qtextedit-widget-in-pyqt5-with-enchant-f025f4097e5c)
+- [Code for above article](https://gist.github.com/NethumL/264a0468ea8b041c7e51038e23de0752)
+- [SpellChecker and TextBlob](https://www.askpython.com/python/examples/spell-checker-in-python)
+
+# Installing Enchant on Ubuntu
+
+- On Ubuntu: sudo apt-get install -y libenchant-dev
+- sudo apt-get -y install enchant
 
 ## Development Options
 - [PyInstaller](https://pypi.org/project/pyinstaller/)
@@ -74,15 +96,43 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
   - [Github Reference](https://github.com/Macmillan2004/My-Microsoft-Word)
 - [No2Pads](https://www.pythonguis.com/examples/python-notepad-clone/)
+- [Building a Text Editor in Python and QT](https://www.binpress.com/building-text-editor-pyqt-1/)
+- [Axel Erfurt](https://gist.github.com/Axel-Erfurt/8c84b5e70a1faf894879cd2ab99118c2)
 
 ## Python
 - [Under Score Conventions and Rules in Python](https://ericplayground.com/2019/03/26/underscore-naming-convention-in-python/)
 - [Source Code for Beginning PyQT](https://github.com/Apress/beginning-pyqt)
 - [Tree Widget and JSON](https://stackoverflow.com/questions/51506378/pyqt-recursively-adding-children-to-treewidget-dynamically)
 - [Using JSON with Python](https://oxylabs.io/blog/python-parse-json)
+- [Example of Syntax High Lighting](https://github.com/baoboa/pyqt5/blob/master/examples/richtext/syntaxhighlighter.py)
+- [PYQT5 Examples](https://github.com/baoboa/pyqt5/tree/master/examples)
+- [Python Typing - Type Hints & Annotations](https://www.youtube.com/watch?v=QORvB-_mbZ0)
+- [Vocabulary Bot](https://www.twilio.com/blog/build-vocabulary-bot-whatsapp-python-twilio)
 
 # Literature
+
+## Source Material
+- [Project Gutenberg catalogue](https://gnikdroy.pythonanywhere.com/docs/#installation-and-setup)
+- [WordNet® is a large lexical database of English](https://wordnet.princeton.edu/download)
+- [Literary Quotes Research](https://guides.loc.gov/quotations/online)
+- [Dictionary of Similes](https://www.bartleby.com/161/)
+- [Roget’s Thesaurus as a lexical resource](https://arxiv.org/ftp/arxiv/papers/1204/1204.0140.pdf)
 
 ## Short Stories
 
 - [Short Story Guidelines](https://www.turnerstories.com/blog/2019/3/1/how-to-structure-a-short-story)
+
+# Writers Aids
+- [Describing Colour](https://www.writerswrite.co.za/204-words-that-describe-colours/)
+
+
+# Online Tools
+
+- [The Free Thesaurus](https://www.freethesaurus.com/picked)
+- [API to Merriam-Webster](https://dictionaryapi.com/products/json)
+- [Old Python Wrappers for Merriam-Webster API](https://github.com/pfeyz/merriam-webster-api)
+
+
+# Additional Information
+
+- There is additional information available on the [Wiki](https://github.com/johnosbb/Lyrical/wiki)
