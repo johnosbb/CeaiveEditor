@@ -26,7 +26,7 @@ class ThesaurusWebster:
             if (api_key == "" or (api_key is None)):
                 print(
                     "Could not locate the API Key, you will need to register with www.dictionaryapi.com")
-                #api_key = "e82a0fd3-b01d-4309-8fe6-636a573c026f"
+
             else:
                 print("Found an API Key: " + api_key)
             url = f"https://www.dictionaryapi.com/api/v3/references/thesaurus/json/{word}?key={api_key}"
