@@ -7,7 +7,7 @@ import os
 import sys
 import uuid
 
-from pydantic import DirectoryPath
+#from pydantic import DirectoryPath
 
 
 import style
@@ -17,7 +17,13 @@ import logging
 import preferencesDialog
 import projectTypeDialog
 import novelPropertiesDialog
+import textEditor
 import resources
+import spellCheck
+import thesaurusWordnet
+import thesaurusWebster
+import find
+from correction_action import SpecialAction
 
 
 FONT_SIZES = [7, 8, 9, 10, 11, 12, 13, 14,
@@ -45,60 +51,28 @@ def splitext(p):
     return os.path.splitext(p)[1].lower()
 
 
-class TextEdit(QTextEdit):
-
-    def can_insert_from_mime_data(self, source):
-
-        if source.hasImage():
-            return True
-        else:
-            return super(TextEdit, self).can_insert_from_mime_data(source)
-
-    def insert_from_mime_data(self, source):
-
-        cursor = self.textCursor()
-        document = self.document()
-
-        if source.hasUrls():
-
-            for u in source.urls():
-                file_ext = splitext(str(u.toLocalFile()))
-                if u.isLocalFile() and file_ext in IMAGE_EXTENSIONS:
-                    image = QImage(u.toLocalFile())
-                    document.addResource(QTextDocument.ImageResource, u, image)
-                    cursor.insertImage(u.toLocalFile())
-
-                else:
-                    # If we hit a non-image or non-local URL break the loop and fall out
-                    # to the super call & let Qt handle it
-                    break
-
-            else:
-                # If all were valid images, finish here.
-                return
-
-        elif source.hasImage():
-            image = source.imageData()
-            uuid = hexuuid()
-            document.addResource(QTextDocument.ImageResource, uuid, image)
-            cursor.insertImage(uuid)
-            return
-
-        super(TextEdit, self).insert_from_mime_data(source)
-
-
 class MainWindow(QMainWindow):
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.load_settings()
+        self.word_list_path = "./local_dictionary.txt"
         layout = QVBoxLayout()  # The QVBoxLayout class lines up widgets vertically
         # this is using the editor class based on QTextEdit above, this is a new member declaration
-        self.editor = TextEdit()
+        self.speller = spellCheck.SpellCheck(
+            self.getWords(), self.addToDictionary)
+
+        self.thesaurus = thesaurusWebster.ThesaurusWebster(
+        )
+
+        #self.editor = textEditor.TextEdit()
+        self.editor = textEditor.TextEdit(self.speller, self.thesaurus)
+
+        self.editor.showSuggestionSignal.connect(self.updateSuggestions)
         # Setup the QTextEdit editor configuration
         self.editor.setAutoFormatting(QTextEdit.AutoAll)
         self.editor.selectionChanged.connect(self.update_format)
-
+        self.editor.cursorPositionChanged.connect(self.cursorPosition)
         self.load_font()
 
         # Initialize default font size for the editor.
@@ -128,14 +102,15 @@ class MainWindow(QMainWindow):
         container.setLayout(layout)
         self.setCentralWidget(container)
 
-        self.status = QStatusBar()
-        self.setStatusBar(self.status)
+        self.setup_status_bar()
         self.define_file_toolbar()
         self.define_edit_toolbar()
         self.define_format_toolbar()
 
         self.addToolBarBreak()
         self.define_style_toolbar()
+        self.addToolBarBreak()
+        self.define_suggestions_toolbar()
         self.define_project_explorer()
 
         # Initialize.
@@ -143,8 +118,40 @@ class MainWindow(QMainWindow):
         self.update_title()
         self.oldPos = self.pos()
 
+        # self.editor.selectionChanged(self.updateUi)
+        # self.editor.document().modificationChanged.connect(self.setWindowModified)
+
         # self.setGeometry(100, 100, 400, 300)
         self.show()
+
+    def define_suggestions_toolbar(self):
+        """
+        Defines the tools bar and actions associated with suggestions analysis
+        """
+        self.suggestions_toolbar = QToolBar("suggestions")
+        self.suggestions_toolbar.setIconSize(QSize(32, 32))
+        self.addToolBar(self.suggestions_toolbar)
+        self.suggestions_dock = QDockWidget("Suggestions", self)
+        self.suggestions_dock.setWidget(self.suggestions_toolbar)
+        self.suggestions_dock.setFloating(False)
+        self.addDockWidget(Qt.BottomDockWidgetArea, self.suggestions_dock)
+
+    def update_suggestions_toolbar(self, suggestions):
+        self.suggestions_toolbar.clear()
+        for word in range(len(suggestions)):
+            replace_word_action = SpecialAction(
+                suggestions[word], self)
+            replace_word_action.actionTriggered.connect(
+                self.replace_word_in_editor)
+            self.suggestions_toolbar.addAction(replace_word_action)
+
+    def setup_status_bar(self):
+        self.status = QStatusBar()
+        self.setStatusBar(self.status)
+        self.statusMode = QLabel("Left")
+        self.status.addPermanentWidget(self.statusMode)
+        self.statusContext = QLabel("Context")
+        self.status.addPermanentWidget(self.statusContext)
 
     def load_font(self):
         fontId = QFontDatabase.addApplicationFont(
@@ -161,13 +168,26 @@ class MainWindow(QMainWindow):
         # _fontstr = QFontDatabase.applicationFontFamilies(id)[0]
         # app.setFont(font)
 
+    def getWords(self) -> list[str]:
+        if not os.path.exists(self.word_list_path):
+            open(self.word_list_path, 'w')
+        with open(self.word_list_path, "r") as f:
+            word_list = [line.strip() for line in f]
+        return word_list
+
+    def addToDictionary(self, new_word: str):
+        with open(self.word_list_path, "a") as f:
+            f.write("\n" + new_word)
+
     def show_preferences(self, s):
         print("click", s)
         self.preferencesDialog = preferencesDialog.PreferencesDialog(self)
 
         if self.preferencesDialog.exec():
             self.projectHomeDirectory = self.preferencesDialog.projectHomeDirectoryEdit.text()
-            print("Success! " + self.projectHomeDirectory)
+            self.language = self.preferencesDialog.properties.language
+            self.fileFormat = self.preferencesDialog.properties.fileFormat
+            print("Success! " + self.projectHomeDirectory + " " + self.language)
         else:
             print("Cancel!")
 
@@ -182,6 +202,16 @@ class MainWindow(QMainWindow):
     def block_signals(self, objects, b):
         for o in objects:
             o.blockSignals(b)
+
+    def updateUi(self, arg=None):
+        self.save_file_action.setEnabled(
+            self.editor.document().isModified())
+        self.saveas_file_action.setEnabled(
+            not self.editor.document().isEmpty())
+        enable = self.editor.textCursor().hasSelection()
+        self.copy_action.setEnabled(enable)
+        self.edit_action.setEnabled(enable)
+        self.paste_action.setEnabled(self.editor.canPaste())
 
     def define_format_toolbar(self):
 
@@ -244,14 +274,14 @@ class MainWindow(QMainWindow):
 
         format_menu.addSeparator()
 
-        self.alignl_action = QAction(
+        self.align_left_action = QAction(
             QIcon(":/images/images/edit-alignment.png"), "Align left", self)
-        self.alignl_action.setStatusTip("Align text left")
-        self.alignl_action.setCheckable(True)
-        self.alignl_action.triggered.connect(
+        self.align_left_action.setStatusTip("Align text left")
+        self.align_left_action.setCheckable(True)
+        self.align_left_action.triggered.connect(
             lambda: self.editor.setAlignment(Qt.AlignLeft))
-        format_toolbar.addAction(self.alignl_action)
-        format_menu.addAction(self.alignl_action)
+        format_toolbar.addAction(self.align_left_action)
+        format_menu.addAction(self.align_left_action)
 
         self.alignc_action = QAction(
             QIcon(":/images/images/edit-alignment-center.png"), "Align center", self)
@@ -262,23 +292,23 @@ class MainWindow(QMainWindow):
         format_toolbar.addAction(self.alignc_action)
         format_menu.addAction(self.alignc_action)
 
-        self.alignr_action = QAction(
+        self.align_right_action = QAction(
             QIcon(":/images/images/edit-alignment-right.png"), "Align right", self)
-        self.alignr_action.setStatusTip("Align text right")
-        self.alignr_action.setCheckable(True)
-        self.alignr_action.triggered.connect(
+        self.align_right_action.setStatusTip("Align text right")
+        self.align_right_action.setCheckable(True)
+        self.align_right_action.triggered.connect(
             lambda: self.editor.setAlignment(Qt.AlignRight))
-        format_toolbar.addAction(self.alignr_action)
-        format_menu.addAction(self.alignr_action)
+        format_toolbar.addAction(self.align_right_action)
+        format_menu.addAction(self.align_right_action)
 
-        self.alignj_action = QAction(
+        self.align_justify_action = QAction(
             QIcon(":/images/images/edit-alignment-justify.png"), "Justify", self)
-        self.alignj_action.setStatusTip("Justify text")
-        self.alignj_action.setCheckable(True)
-        self.alignj_action.triggered.connect(
+        self.align_justify_action.setStatusTip("Justify text")
+        self.align_justify_action.setCheckable(True)
+        self.align_justify_action.triggered.connect(
             lambda: self.editor.setAlignment(Qt.AlignJustify))
-        format_toolbar.addAction(self.alignj_action)
-        format_menu.addAction(self.alignj_action)
+        format_toolbar.addAction(self.align_justify_action)
+        format_menu.addAction(self.align_justify_action)
 
         # # In some situations it is useful to group QAction objects together.
         # # For example, if you have a Left Align action, a Right Align action, a Justify action,
@@ -286,10 +316,10 @@ class MainWindow(QMainWindow):
         # # One simple way of achieving this is to group the actions together in an action group.
         format_group = QActionGroup(self)
         format_group.setExclusive(True)
-        format_group.addAction(self.alignl_action)
+        format_group.addAction(self.align_left_action)
         format_group.addAction(self.alignc_action)
-        format_group.addAction(self.alignr_action)
-        format_group.addAction(self.alignj_action)
+        format_group.addAction(self.align_right_action)
+        format_group.addAction(self.align_justify_action)
 
         format_menu.addSeparator()
 
@@ -372,6 +402,14 @@ class MainWindow(QMainWindow):
         wrap_action.triggered.connect(self.edit_toggle_wrap)
         edit_menu.addAction(wrap_action)
 
+        self.findAction = QAction(QIcon(
+            ":/images/images/find-replace.png"), "Find and replace", self)
+        self.findAction.setStatusTip("Find and replace words in your document")
+        self.findAction.setShortcut("Ctrl+F")
+        self.findAction.triggered.connect(find.Find(self).show)
+        edit_menu.addAction(self.findAction)
+        edit_toolbar.addAction(self.findAction)
+
         preferences_action = QAction(
             QIcon(":/images/images/preferences.png"), "Lyrical Preferences", self)
         preferences_action.setStatusTip("Set Your Lyrical Preferences")
@@ -439,7 +477,8 @@ class MainWindow(QMainWindow):
             # count = style.syllable_count(word)
             count = style.calculate_average_syllables_per_word(text)
             self.status.showMessage(
-                "Average Syllable Length: " + str(count), 2000)
+                "Average Syllable Length: " + str(count), 10000)
+            print("Average Syllable Length: {0}".format(count))
 
     def generate_test_text(self):
         self.editor.setText(TEST_TEXT)
@@ -465,7 +504,8 @@ class MainWindow(QMainWindow):
 
         try:
             if(properties.foreword):
-                path = os.sep.join([directory[0], 'foreword.txt'])
+                path = os.sep.join(
+                    [directory[0], 'foreword.' + self.fileFormat])
                 fp = open(path, 'x')
                 fp.close()
         except OSError as error:
@@ -479,7 +519,8 @@ class MainWindow(QMainWindow):
         # self.numberOfChapters = 20
         try:
             if(properties.preface):
-                path = os.sep.join([directory[0], 'preface.txt'])
+                path = os.sep.join(
+                    [directory[0], 'preface.' + self.fileFormat])
                 fp = open(path, 'x')
                 fp.close()
         except OSError as error:
@@ -487,7 +528,8 @@ class MainWindow(QMainWindow):
                 "Failed to create preface: " + str(error), 10000)
         try:
             if(properties.introduction):
-                path = os.sep.join([directory[0], 'introduction.txt'])
+                path = os.sep.join(
+                    [directory[0], 'introduction.' + self.fileFormat])
                 fp = open(path, 'x')
                 fp.close()
         except OSError as error:
@@ -495,7 +537,8 @@ class MainWindow(QMainWindow):
                 "Failed to create introduction: " + str(error), 10000)
         try:
             if(properties.prologue):
-                path = os.sep.join([directory[0], 'prologue.txt'])
+                path = os.sep.join(
+                    [directory[0], 'prologue.' + self.fileFormat])
                 fp = open(path, 'x')
                 fp.close()
         except OSError as error:
@@ -503,7 +546,8 @@ class MainWindow(QMainWindow):
                 "Failed to create prologue: " + str(error), 10000)
         try:
             if(properties.epilogue):
-                path = os.sep.join([directory[0], 'epilogue.txt'])
+                path = os.sep.join(
+                    [directory[0], 'epilogue.' + self.fileFormat])
                 fp = open(path, 'x')
                 fp.close()
         except OSError as error:
@@ -511,7 +555,7 @@ class MainWindow(QMainWindow):
                 "Failed to create epilogue: " + str(error), 10000)
         for chapter in range(1, properties.numberOfChapters+1):
             try:
-                chapterName = "chapter_" + str(chapter) + ".txt"
+                chapterName = "chapter_" + str(chapter) + "." + self.fileFormat
                 path = os.sep.join([directory[0], chapterName])
                 fp = open(path, 'x')
                 fp.close()
@@ -596,9 +640,9 @@ class MainWindow(QMainWindow):
         # Set up container and layout
         frame = QFrame()  # The QFrame class is used as a container to group and surround widgets, or to act as placeholders in GUI
         # applications. You can also apply a frame style to a QFrame container to visually separate it from nearbywidgets.
-        frame_v_box = QVBoxLayout()
-        frame_v_box.addWidget(self.tree)
-        frame.setLayout(frame_v_box)
+        frameLayout = QVBoxLayout()
+        frameLayout.addWidget(self.tree)
+        frame.setLayout(frameLayout)
         # self.setCentralWidget(frame) # The central widget in the center of the window must be set if you are going to use QMainWindow as your
         # base class. For example, you could use a single QTextEdit widget or create a QWidget object to act as a parent
         # to a number of other widgets, then use setCentralWidget() , and set your central widget for the main
@@ -669,11 +713,13 @@ class MainWindow(QMainWindow):
         self.underline_action.setChecked(self.editor.fontUnderline())
         self.bold_action.setChecked(self.editor.fontWeight() == QFont.Bold)
 
-        self.alignl_action.setChecked(self.editor.alignment() == Qt.AlignLeft)
+        self.align_left_action.setChecked(
+            self.editor.alignment() == Qt.AlignLeft)
         self.alignc_action.setChecked(
             self.editor.alignment() == Qt.AlignCenter)
-        self.alignr_action.setChecked(self.editor.alignment() == Qt.AlignRight)
-        self.alignj_action.setChecked(
+        self.align_right_action.setChecked(
+            self.editor.alignment() == Qt.AlignRight)
+        self.align_justify_action.setChecked(
             self.editor.alignment() == Qt.AlignJustify)
 
         self.block_signals(self._format_actions, False)
@@ -764,6 +810,8 @@ class MainWindow(QMainWindow):
         settings.setValue("size", self.size())
         myPosition = self.pos()
         settings.setValue("pos", self.pos())
+        settings.setValue("file_format", self.fileFormat)
+        settings.setValue("language", self.language)
         settings.endGroup()
         settings.beginGroup("Preferences")
         # the default root directory for all projects
@@ -782,9 +830,12 @@ class MainWindow(QMainWindow):
         self.projectCurrentDirectory = settings.value("project_current")
         self.applicationPosition = settings.value("pos")
         self.applicationSize = settings.value("size")
+        self.fileFormat = settings.value("file_format")
+        self.language = settings.value("language")
         self.setGeometry(self.applicationPosition.x(), self.applicationPosition.y(
         ), self.applicationSize.width(), self.applicationSize.height())
         settings.endGroup()
+        print("Checking for api key : " + os.environ.get("API_KEY"))
         logging.info("Loaded Lyrical settings")
 
     def closeEvent(self, event):
@@ -811,6 +862,28 @@ class MainWindow(QMainWindow):
         self.status.showMessage(
             "Selected File: " + str(filePath) + "   " + str(fileName), 10000)
         self.open_file(filePath)
+
+    def updateSuggestions(self, suggestions):
+        self.update_suggestions_toolbar(suggestions)
+
+    def cursorPosition(self):
+        cursor = self.editor.textCursor()
+        # Mortals like 1-indexed things
+        line = cursor.blockNumber() + 1
+        col = cursor.columnNumber()
+        mode = self.editor.overwriteMode()
+        if (not mode):
+            editMode = "Insert"
+        else:
+            editMode = "Over Write"
+        self.statusMode.setText(
+            "Block: {} | Column: {} | Mode: {}".format(line, col, editMode))
+        # self.status.showMessage(
+        #    "Block: {} | Column: {} | Mode: {}".format(line, col, editMode))
+
+    @pyqtSlot(str)
+    def replace_word_in_editor(self, word: str):
+        self.editor.replace_selected_word(word)
 
 
 if __name__ == '__main__':

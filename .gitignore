@@ -112,3 +112,7 @@ Projects
 
 # PyCache
 __pycache__
+
+
+# environment
+environment.sh
