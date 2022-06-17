@@ -14,6 +14,11 @@ class ThesaurusWebster:
         self.synonyms = []
         # self.antonyms = []
 
+    # Returns a unique list with any duplicates removed avoiding the reordering a set operation alone might cause
+    def unique(self, sequence):
+        seen = set()
+        return [x for x in sequence if not (x in seen or seen.add(x))]
+
     def suggestions(self, word: str) -> list[str]:
         """
         Query Webster's Thesaurus API
@@ -23,6 +28,7 @@ class ThesaurusWebster:
         synonymsList = []
         if word is not None:
             api_key = os.environ.get('API_KEY')
+            word = word.lower()
             if (api_key == "" or (api_key is None)):
                 print(
                     "Could not locate the API Key, you will need to register with www.dictionaryapi.com")
@@ -33,10 +39,12 @@ class ThesaurusWebster:
             try:
                 response = requests.get(url)
                 apiResponse = json.loads(response.text)
+                # print(apiResponse)
                 if response.status_code == 200:
                     try:
                         for data in apiResponse:
                             synonyms = ["sorry, no synonyms are available."]
+                            print("data = " + str(data))
                             if word in data["meta"]["id"]:
                                 try:
                                     if len(data["meta"]["syns"]) != 0:
@@ -51,4 +59,5 @@ class ThesaurusWebster:
             except SystemError as error:
                 print("Error :" + error)
 
-        return list(set(synonymsList))
+        # return list(set(synonymsList))
+        return self.unique(synonymsList)

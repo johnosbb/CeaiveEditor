@@ -14,7 +14,7 @@ class SpellCheck:
         self.dictionary = DictWithPWL(  # load the initial default dictionary
             "en_UK",
             self.file.fileName(),
-        )
+        )  # DictWithPWL() is an inbuilt method of enchant module. It is used to combine a language dictionary and a custom dictionary also known as Personal Word List(PSL).
 
         self.addToDictionary = addToDictionary
 

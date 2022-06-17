@@ -22,9 +22,11 @@ import resources
 import spellCheck
 import thesaurusWordnet
 import thesaurusWebster
-import find
+import findDialog
 from correction_action import SpecialAction
 
+
+from wordListManager import WordListManager
 
 FONT_SIZES = [7, 8, 9, 10, 11, 12, 13, 14,
               18, 24, 36, 48, 64, 72, 96, 144, 288]
@@ -122,6 +124,7 @@ class MainWindow(QMainWindow):
         # self.editor.document().modificationChanged.connect(self.setWindowModified)
 
         # self.setGeometry(100, 100, 400, 300)
+
         self.show()
 
     def define_suggestions_toolbar(self):
@@ -406,7 +409,7 @@ class MainWindow(QMainWindow):
             ":/images/images/find-replace.png"), "Find and replace", self)
         self.findAction.setStatusTip("Find and replace words in your document")
         self.findAction.setShortcut("Ctrl+F")
-        self.findAction.triggered.connect(find.Find(self).show)
+        self.findAction.triggered.connect(findDialog.Find(self).show)
         edit_menu.addAction(self.findAction)
         edit_toolbar.addAction(self.findAction)
 
@@ -611,6 +614,10 @@ class MainWindow(QMainWindow):
             self.status.showMessage(
                 "Functional Word Score: " + str(count), 2000)
 
+    def show_beautiful_words(self):
+        wordListManager = WordListManager()
+        wordListManager.createBeautifulWordsList(self)
+
     # Create a dockable Project Explorer
 
     def define_project_explorer(self):
@@ -689,6 +696,24 @@ class MainWindow(QMainWindow):
         style_menu.addAction(count_functional_words_action)
         style_toolbar.addAction(count_functional_words_action)
 
+        beautiful_words_action = QAction(
+            QIcon(":/images/images/functional-words.png"), "Beautiful Words", self)
+        beautiful_words_action.setStatusTip("Beautiful Words")
+        beautiful_words_action.triggered.connect(
+            self.show_beautiful_words)
+        style_menu.addAction(beautiful_words_action)
+        style_toolbar.addAction(beautiful_words_action)
+
+        self.thesaurusLookupLabel = QLabel("  Thesaurus Search")
+        style_toolbar.addWidget(self.thesaurusLookupLabel)
+
+        self.thesaurusLookup = QLineEdit(self)
+        self.thesaurusLookup.setStyleSheet(
+            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        self.thesaurusLookup.setFixedWidth(120)
+        self.thesaurusLookup.returnPressed.connect(self.lookupWord)
+        style_toolbar.addWidget(self.thesaurusLookup)
+
         self.style_dock = QDockWidget("Style", self)
         self.style_dock.setWidget(style_toolbar)
         self.style_dock.setFloating(False)
@@ -729,6 +754,11 @@ class MainWindow(QMainWindow):
         dlg.setText(s)
         dlg.setIcon(QMessageBox.Critical)
         dlg.show()
+
+    def lookupWord(self):
+        print("I was called")
+        suggestions = self.thesaurus.suggestions(self.thesaurusLookup.text())
+        self.updateSuggestions(suggestions)
 
     def open_file(self, path):
         try:
