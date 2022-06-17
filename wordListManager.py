@@ -10,7 +10,7 @@ from typing import Callable
 from wordSelectorDialog import WordSelectorDialog
 
 
-NUMBER_OF_COLUMNS = 3
+NUMBER_OF_COLUMNS = 4
 
 
 class WordListManager:
@@ -22,6 +22,8 @@ class WordListManager:
             numberOfRows, NUMBER_OF_COLUMNS, parent)  # rows columns
         model.setHeaderData(0, Qt.Horizontal, "Word")
         model.setHeaderData(1, Qt.Horizontal, "Meaning")
+        model.setHeaderData(2, Qt.Horizontal, "Tags")
+        model.setHeaderData(3, Qt.Horizontal, "Classification")
         for row, word in enumerate(beautifulWords.wordList):
             model.setData(model.index(
                 row, 0, QModelIndex()), word.word, Qt.DisplayRole)
@@ -32,17 +34,32 @@ class WordListManager:
                 tags = tags + " " + tag
             model.setData(model.index(
                 row, 2, QModelIndex()), tags, Qt.DisplayRole)
+            classifications = ""
+            for number, classification in enumerate(word.classification):
+                classifications = classifications + " " + classification
+            model.setData(model.index(
+                row, 3, QModelIndex()), classifications, Qt.DisplayRole)
         return model
 
     def dumpModel(self, model):
         rowCount = model.rowCount()
-        columnCount = model.columnCount()
         for row in range(rowCount):
-            print(row)
+            self.dumpRow(model, row)
+
+    def dumpRow(self, model, sourceRow):
+        data = ""
+        columnCount = model.columnCount()
+        for column in range(columnCount):
+            index = model.index(
+                sourceRow, column, QModelIndex())
+            rawData = model.data(index)
+            data = data + str(column) + " : " + rawData
+        print(" Row:" + str(sourceRow) + ", Column Count: " +
+              str(columnCount) + "  " + data)
 
     def createBeautifulWordsList(self, parent):
         wordSelector = WordSelectorDialog("Beautiful Words", parent)
         model = self.createModel(wordSelector)
         wordSelector.setSourceModel(model)
-        # self.dumpModel(model)
+        self.dumpModel(model)
         wordSelector.show()

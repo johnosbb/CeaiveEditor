@@ -27,28 +27,44 @@ class SortFilterProxyModel(QSortFilterProxyModel):
 
     def filterAcceptsRow(self, sourceRow, sourceParent):
         # self.dumpModel(sourceParent)
+        # self.dumpRow(sourceParent, sourceRow)
         filterKeyColumn = self.filterKeyColumn()
         if filterKeyColumn == self.parentReference.filterColumn:
             index = self.sourceModel().index(
                 sourceRow, self.parentReference.filterColumn, sourceParent)
             rawData = self.sourceModel().data(index)
             pattern = repr(self.parentReference.filterString)[1:-1]
-            #print("Pattern: " +pattern + ", RawData: " + rawData)
+            # print("Pattern: " +pattern + ", RawData: " + rawData)
             if((rawData is not None) and (not pattern.isspace()) and (pattern != "")):
                 data = rawData.lstrip()
                 # Note that the result raw string has the quote at the beginning and end of the string. To remove them, you can use slices: [1:-1]
-
-                # print(data)
                 if(re.search(pattern, data)):
                     return True
         # Otherwise ignore
         return super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
 
-    def dumpModel(self):
+    def dumpModel(self, sourceParent):
         rowCount = self.sourceModel().rowCount()
         columnCount = self.sourceModel().columnCount()
         for row in range(rowCount):
-            print(row)
+            data = ""
+            for column in range(columnCount):
+                index = self.sourceModel().index(
+                    row, column, sourceParent)
+                rawData = self.sourceModel().data(index)
+                data = data + str(column) + " : " + rawData
+            print(str(row) + " : " + data)
+
+    def dumpRow(self, sourceParent, sourceRow):
+        data = ""
+        columnCount = self.sourceModel().columnCount()
+        for column in range(columnCount):
+            index = self.sourceModel().index(
+                sourceRow, column, sourceParent)
+            rawData = self.sourceModel().data(index)
+            data = data + str(column) + " : " + rawData
+        print(" Row:" + str(sourceRow) + ", Column Count: " +
+              str(columnCount) + "  " + data)
 
 
 class WordSelectorDialog(QDialog):
@@ -83,10 +99,7 @@ class WordSelectorDialog(QDialog):
 
     def initUI(self):
         mainLayout = QVBoxLayout()
-        # headerImage = ":/images/images/WomanReadingHeader.png"
-        # self.headerImageBox = imageBox.ImageBox(
-        #     headerImage, 0, 0, IMAGE_WIDTH, IMAGE_HEIGHT)
-        # mainLayout.addWidget(self.headerImageBox)
+
         self.horizontalLayoutWidget = QWidget(self)
         self.horizontalLayoutWidget.setGeometry(
             QRect(0, 0, DIALOG_WIDTH, IMAGE_HEIGHT))
@@ -163,9 +176,9 @@ class WordSelectorDialog(QDialog):
         self.tagFilter.returnPressed.connect(self.setTagFilter)
         self.tagFilter.setToolTip(
             "Enter a word you like like to find beautiful synonyms for")
-
-        classifications = ["Feelings and Emotions", "Fears", "Colours, Tones, shades", "Sounds", "Texture", "Atmosphere", "Interiors, Furnishings", "Exteriors", "Light, Darkness", "Botany", "Olfactory", "Personalities",
-                           "Love", "Movement", "Music", "Taste", "Touch", "Beauty", "Art", "Culture", "Speech", "Geography", "Relationships", "Travel", "Sensory ", "Education and Development", "Physicality ", "Shape", "Time"]
+        # These classifications need to move into a file that is generated from processing the word list; they should not be hard coded
+        classifications = ["All", "Feelings and Emotions", "Fears", "Colours, Tones, shades", "Sounds", "Texture", "Atmosphere", "Interiors, Furnishings", "Exteriors", "Light, Darkness", "Botany", "Olfactory", "Personalities",
+                           "Love", "Movement", "Music", "Taste", "Touch", "Beauty", "Art", "Culture", "Speech", "Geography", "Relationships", "Travel", "Sensory ", "Education and Development", "Physicality ", "Shape", "Time", "Unknown Classification"]
         self.classificationFilterLabel = QLabel(
             " Classification Filter", headerFrame)
         self.classificationFilter = QComboBox(headerFrame)
@@ -199,15 +212,6 @@ class WordSelectorDialog(QDialog):
         self.setWindowTitle(self.title)
         self.setLayout(mainLayout)
 
-    def setWordFilterString(self, string):
-        self.filterString = "^" + string
-
-    def setMeaningFilterString(self, string):
-        self.filterString = string
-
-    def setTagFilterString(self, string):
-        self.filterString = string
-
     def getItem(self, index):
         mapped_index = self.proxyModel.mapToSource(index)
         row = mapped_index.row()
@@ -216,31 +220,45 @@ class WordSelectorDialog(QDialog):
         print("Row:  " + str(row) + ",Column:  " + str(column) + "  " + data)
 
     def setWordFilter(self):
-        self.setWordFilterString(self.wordFilter.text())
-        self.filterColumn = 0
-        self.filterRegExpChanged()
+        text = self.wordFilter.text()
+        if((text is not None) and (not text.isspace()) and (text != "")):
+            self.filterString = text
+            self.filterColumn = 0
+            self.filterRegExpChanged()
 
     def setMeaningFilter(self):
-        self.setMeaningFilterString(self.meaningFilter.text())
-        self.filterColumn = 1
-        self.filterRegExpChanged()
+        text = self.meaningFilter.text()
+        if((text is not None) and (not text.isspace()) and (text != "")):
+            self.filterString = text
+            self.filterColumn = 1
+            self.filterRegExpChanged()
 
     def setTagFilter(self):
-        self.setTagFilterString(self.tagFilter.text())
-        self.filterColumn = 2
-        self.filterRegExpChanged()
-
-    def setSourceModel(self, model):
-        # the proxy model points to a source model then we create to hold the actual data
-        self.proxyModel.setSourceModel(model)
-        self.sourceView.setModel(model)
+        text = self.tagFilter.text()
+        if((text is not None) and (not text.isspace()) and (text != "")):
+            self.filterString = text
+            self.filterColumn = 2
+            self.filterRegExpChanged()
 
     def setClassificationFilter(self, text):
         """
         Change the combo box value . Values represent the different file
          extensions.
         """
-        self.classificationFilterValue = text
+        if(text != "All"):
+            self.classificationFilterValue = text
+            self.filterString = text
+            self.filterColumn = 3
+            self.filterRegExpChanged()
+        else:
+            self.filterString = ""
+            self.filterColumn = 3
+            self.filterRegExpChanged()
+
+    def setSourceModel(self, model):
+        # the proxy model points to a source model then we create to hold the actual data
+        self.proxyModel.setSourceModel(model)
+        self.sourceView.setModel(model)
 
     def filterRegExpChanged(self):
         syntax = QRegExp.RegExp  # can be one of QRegExp.RegExp2, QRegExp.WildCard, QRegExp.RegExp2 etc, see https://doc.qt.io/qt-5/qregexp.html#PatternSyntax-enum
