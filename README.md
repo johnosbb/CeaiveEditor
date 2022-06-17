@@ -51,7 +51,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [NTLK and Wordnet](https://www.nltk.org/howto/wordnet.html)
 
 ### Grammar Checking
-### Language Tool
+#### Language Tool
 
 LanguageTool is an open source spellchecking platform. It supports a large variety of languages and has advanced grammar support. Language tool is also available as a hosted commercial service that also offers a limited free option. The API documentation is available [Here](https://languagetool.org/http-api/#/default)
 
@@ -60,7 +60,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Language Tool - Python Wrapper for Language Check](https://pypi.org/project/language-tool-python/)
 - [pyLanguageTool Library](https://github.com/Findus23/pyLanguagetool)
 
-### Other Checkers 
+#### Other Checkers 
 - [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
 - [ Discussion on Stack Overflow](https://stackoverflow.com/questions/10252448/how-to-check-whether-a-sentence-is-correct-simple-grammar-check-in-python)
 - [After The Deadline](https://open.afterthedeadline.com/download/download-source-code/)
@@ -72,6 +72,11 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Integrating spellchecking into a QTextEdit widget in PyQt5 with enchant](https://nethumlamahewage.medium.com/integrating-spellchecking-into-a-qtextedit-widget-in-pyqt5-with-enchant-f025f4097e5c)
 - [Code for above article](https://gist.github.com/NethumL/264a0468ea8b041c7e51038e23de0752)
 - [SpellChecker and TextBlob](https://www.askpython.com/python/examples/spell-checker-in-python)
+
+
+### Finding Rhyming Words
+- [Rhymes with NLP](https://www.garysieling.com/blog/rhyming-with-nlp-and-shakespeare/)
+- [Metaphone](https://pypi.org/project/Metaphone/)
 
 # Installing Enchant on Ubuntu
 
