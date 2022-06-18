@@ -21,6 +21,10 @@ Research Phase began in January 2022
 
 ### Natural Language Programming
 
+- [Paraphrasing](https://towardsdatascience.com/how-to-paraphrase-text-using-python-73b40a8b7e66)
+- [Discussion on Paraphrasing](https://stackoverflow.com/questions/63598204/python-rephrasing-paraphrasing-options)
+
+
 #### Academic References
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
