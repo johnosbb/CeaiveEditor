@@ -21,6 +21,10 @@ Research Phase began in January 2022
 
 ### Natural Language Programming
 
+- [Paraphrasing](https://towardsdatascience.com/how-to-paraphrase-text-using-python-73b40a8b7e66)
+- [Discussion on Paraphrasing](https://stackoverflow.com/questions/63598204/python-rephrasing-paraphrasing-options)
+
+
 #### Academic References
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
@@ -136,6 +140,8 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [The Free Thesaurus](https://www.freethesaurus.com/picked)
 - [API to Merriam-Webster](https://dictionaryapi.com/products/json)
 - [Old Python Wrappers for Merriam-Webster API](https://github.com/pfeyz/merriam-webster-api)
+- [Quillbot - API in Python](https://github.com/Anu-bhav/Paraphrasing/blob/master/paraphrasing.py)
+- [Quillbot](https://quillbot.com/)
 
 
 # Additional Information
