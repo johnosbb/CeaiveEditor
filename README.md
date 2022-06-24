@@ -117,6 +117,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [PYQT5 Examples](https://github.com/baoboa/pyqt5/tree/master/examples)
 - [Python Typing - Type Hints & Annotations](https://www.youtube.com/watch?v=QORvB-_mbZ0)
 - [Vocabulary Bot](https://www.twilio.com/blog/build-vocabulary-bot-whatsapp-python-twilio)
+- [Guide to PYQT](https://doc.qt.io/qtforpython/overviews/model-view-programming.html)
 
 # Literature
 
