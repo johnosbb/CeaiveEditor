@@ -1,378 +1,377 @@
-Abundance :  A very large quantity of something.   : Unknown Classification : Noun : teemingness,abundance,copiousness
-Ad Infinitum :  Again and again in the same way; forever.  : Unknown Classification :  : 
-Admirable :  Arousing or deserving respect and approval.  : Unknown Classification : Adjective : admirable
-Adoration :  Deep love and respect.  : Unknown Classification : Noun : latria,idolisation,worship,adoration,idolization
-Affable :  Friendly, good-natured, or easy to talk to.  : Unknown Classification : Adjective : affable,cordial,genial,amiable
-Agility :  Ability to move or think quickly and easily.   : Unknown Classification : Noun : lightness,nimbleness,agility,lightsomeness,legerity
-Ailurophile :  A cat lover.   : Unknown Classification :  : 
-Alacrity :  Brisk and cheerful readiness.   : Unknown Classification : Noun : briskness,alacrity,smartness
-Alluring :  Powerfully and mysteriously attractive or fascinating; seductive.   : Unknown Classification : Adjective : enticing,tempting,alluring,tempt,beguiling,allure
-Aloha :  A Hawaiian word used when greeting or parting from someone.   : Unknown Classification : Noun : ciao,aloha
-Altruism :  The belief in or practise of disinterested and selfless concern for the well-being of others.   : Unknown Classification : Noun : selflessness,altruism
-Amaranthine :  From the Greek word amarantos, meaning immortal or unfading.   : Unknown Classification : Adjective : amaranthine,unfading
-Amiable :  Having or displaying a friendly and pleasant manner.   : Unknown Classification : Adjective : affable,genial,good-humored,cordial,amiable,good-humoured
-Amorous :  Showing, feeling, or relating to sexual desire.   : Unknown Classification :  : amorous,amatory,romantic,amative
-Amorphous :  Without a clearly defined shape or form.   : Unknown Classification : Adjective : uncrystallised,unstructured,uncrystallized,amorphous,formless,shapeless
-Angelic :  An exceptionally beautiful, innocent, or kind person.   : Unknown Classification : Adjective : saintly,beatific,sweet,saintlike,sainted,angelical,seraphic,cherubic,angelic
-Antediluvial :  Of or belonging to the time before the biblical Flood.   : Unknown Classification :  : antediluvian,antediluvial
-Antediluvian :  Ridiculously old-fashioned, Pertaining or belonging to the time prior to Noah's Flood.  : Unknown Classification : Noun,Adjective : antediluvian,archaic,antediluvial,antiquated,ancient,antediluvian_patriarch
-Apotheosis :  The highest point in the development of something; culmination or climax.   : Unknown Classification :  : apotheosis,exaltation,saint,paragon,nonesuch,nonsuch,deification,ideal,nonpareil
-Assemblage :  A collection or gathering of things or people.   : Unknown Classification :  : accumulation,assemblage,hookup,collection,assembly,aggregation,gathering
-Astonishing :  Extremely surprising or impressive; amazing.   : Unknown Classification : Adjective : astonishing,stupefying,amaze,astound,staggering,astonish,amazing,astounding
-Astounding :  Surprisingly impressive or notable.   : Unknown Classification : Adjective : astonishing,stupefying,amaze,astound,staggering,astonish,dumbfounding,dumfounding,astounding
-Ascension :  The act of rising to an important position or a higher level.   : Unknown Classification : Noun : ascending,ascent,Ascension_Day,Ascension_of_the_Lord,Ascension,ascension,rising,rise,Ascension_of_Christ
-Astral :  Of, connected with or resembling the stars.   : Unknown Classification :  : astral,stellar
-Audacious :  Showing a willingness to take surprisingly bold risks.   : Unknown Classification : Adjective : unfearing,brassy,bald-faced,fearless,brave,brazen-faced,barefaced,venturous,hardy,intrepid,bodacious,brazen,daring,dauntless,venturesome,audacious,insolent
-Aurora :  A natural electrical phenomenon characterized by the appearance of streamers of reddish or greenish light in the sky, usually near the northern or southern magnetic pole.   : Unknown Classification : Noun : break_of_the_day,dawn,dawning,daybreak,break_of_day,sunrise,sunup,dayspring,aurora,cockcrow,morning,first_light,Aurora
-Awe :  A feeling of reverential respect mixed with fear or wonder.   : Unknown Classification : Noun,Verb : reverence,fear,veneration,awe
-Beatify :  To make holy or sacred.   : Unknown Classification : Verb : beatify,exalt,inebriate,thrill,exhilarate,tickle_pink
-Beauteous :  Beautiful.   : Unknown Classification : Adjective : beauteous
-Becoming :  Flattering a person's appearance.   : Unknown Classification : Adjective : go,decorous,turn,become,suit,comely,decent,seemly,comme_il_faut,get,becoming
-Beguile :  To charm or enchant (someone), sometimes in a deceptive way.   : Unknown Classification :  : hoodwink,beguile,entrance,fascinate,juggle,catch,enamor,trance,enamour,charm,capture,becharm,enchant,bewitch,captivate
-Belonging :  An affinity for a place or situation.   : Unknown Classification : Noun : belong_to,belong,belonging,go
-Beloved :  Dearly loved.   : Unknown Classification : Noun,Adjective : dear,dearest,love,beloved,darling,honey
-Benefactor :  A person who gives money or other help to a person or cause.   : Unknown Classification : Noun : helper,benefactor
-Benevolence :  The quality of being well meaning; kindness.   : Unknown Classification : Noun : benefaction,benevolence
-Blazing :  To burn fiercely or brightly.   : Unknown Classification : Adjective : blaze,blaze_away,fulgent,conspicuous,glaring,blaze_out,blinding,glary,blatant,dazzling,blazing
-Blessing :  A beneficial thing for which one is grateful; something that brings well-being.   : Unknown Classification : Noun : benediction,bless,grace,consecrate,hallow,boon,thanksgiving,sign,approving,sanctify,blessing,approval
-Bliss :  Perfect happiness; great joy.   : Unknown Classification : Noun : bliss,seventh_heaven,cloud_nine,walking_on_air,blissfulness
-Blossom :  The state or period of flowering.   : Unknown Classification : Verb : bloom,blossom_forth,blossom_out,unfold,efflorescence,heyday,flush,blossom,peak,prime,flower
-Breathtaking :  Astonishing or awe-inspiring in quality, so as to take one's breath away.   : Unknown Classification :  : breathless,breathtaking
-Breeziness :  Fresh and animated; lively.   : Unknown Classification : Noun : jauntiness,breeziness,windiness
-Brilliance :  An intense brightness of light.   : Unknown Classification : Noun : blaze,grandness,glare,grandeur,brilliance,genius,magnificence,splendor,splendour
-Brisk :  Active, fast, and energetic.   : Unknown Classification : Adjective,Verb : rattling,lively,brisk,brisk_up,alert,merry,snappy,spanking,refreshful,tonic,refreshing,zippy,bracing,brisken,fresh
-Bubbling :  Characterized by cheerful high spirits.   : Unknown Classification : Adjective : eruct,gurgle,babble,bubbling,guggle,ripple,scintillating,frothy,bubble,effervescing,effervescent,burp,sparkly,bubbly,foamy,foaming,belch,burble,spumy
-Bucolic :  Relating to the pleasant aspects of the countryside and country life.   : Unknown Classification : Adjective : pastoral,idyl,eclogue,provincial,idyll,peasant,arcadian,bucolic
-Bungalow :  A low house, with a broad front porch, having either no upper floor or upper rooms set in the roof, typically with dormer windows.   : Unknown Classification : Noun : bungalow,cottage
-Buoyancy :  The ability or tendency to float in water or air or some other fluid.   : Unknown Classification : Noun : airiness,buoyancy,irrepressibility,perkiness
-Cadence :  A modulation or inflection of the voice.  : Unknown Classification : Noun : cadence,metre,cadency,measure,beat,meter
+Abundance :  A very large quantity of something.   :    Measurement : Noun : copiousness,teemingness,abundance
+Ad Infinitum :  Again and again in the same way; forever.  :    Measurement :  : 
+Admirable :  Arousing or deserving respect and approval.  :    Personalities : Adjective : admirable
+Adoration :  Deep love and respect.  :    Feelings and Emotions,Love : Noun : latria,idolisation,idolization,adoration,worship
+Affable :  Friendly, good-natured, or easy to talk to.  :    Personalities,Temperament : Adjective : amiable,affable,genial,cordial
+Agility :  Ability to move or think quickly and easily.   :    Movement : Noun : agility,legerity,nimbleness,lightness,lightsomeness
+Ailurophile :  A cat lover.   :    Personalities :  : 
+Alacrity :  Brisk and cheerful readiness.   :    Movement : Noun : briskness,alacrity,smartness
+Alluring :  Powerfully and mysteriously attractive or fascinating; seductive.   :    Beauty : Adjective : tempt,enticing,beguiling,allure,alluring,tempting
+Aloha :  A Hawaiian word used when greeting or parting from someone.   :    Beauty : Noun : ciao,aloha
+Amaranthine :  From the Greek word amarantos, meaning immortal or unfading.   :   Time  : Adjective : amaranthine,unfading
+Amiable :  Having or displaying a friendly and pleasant manner.   :    Personalities,Temperament : Adjective : good-humored,amiable,genial,good-humoured,affable,cordial
+Amorous :  Showing, feeling, or relating to sexual desire.   :    Sexuality,Love,Feelings and Emotions,Relationships :  : amative,amorous,romantic,amatory
+Amorphous :  Without a clearly defined shape or form.   :    Shape,Physicality : Adjective : uncrystallised,unstructured,formless,uncrystallized,amorphous,shapeless
+Angelic :  An exceptionally beautiful, innocent, or kind person.   :    Beauty, Personality : Adjective : angelic,sainted,sweet,beatific,saintly,cherubic,seraphic,angelical,saintlike
+Antediluvial :  Of or belonging to the time before the biblical Flood.   :    Time :  : antediluvian,antediluvial
+Antediluvian :  Ridiculously old-fashioned, Pertaining or belonging to the time prior to Noah's Flood.  :   Time  : Noun,Adjective : antediluvial,antiquated,ancient,antediluvian,antediluvian_patriarch,archaic
+Apotheosis :  The highest point in the development of something; culmination or climax.   :    Culture, Sensory :  : nonesuch,saint,exaltation,paragon,nonsuch,apotheosis,deification,ideal,nonpareil
+Assemblage :  A collection or gathering of things or people.   :    Measurement :  : collection,accumulation,hookup,assembly,aggregation,gathering,assemblage
+Astonishing :  Extremely surprising or impressive; amazing.   :    Beauty : Adjective : astonishing,stupefying,astounding,amazing,astound,staggering,amaze,astonish
+Astounding :  Surprisingly impressive or notable.   :    Beauty : Adjective : dumfounding,astonishing,dumbfounding,astounding,staggering,astound,stupefying,amaze,astonish
+Ascension :  The act of rising to an important position or a higher level.   :    Movement,Spiritual : Noun : Ascension_Day,Ascension_of_the_Lord,ascent,ascending,Ascension,rising,Ascension_of_Christ,rise,ascension
+Astral :  Of, connected with or resembling the stars.   :    Space,Exteriors :  : stellar,astral
+Audacious :  Showing a willingness to take surprisingly bold risks.   :    Personalities,Temperament : Adjective : intrepid,venturesome,insolent,fearless,bodacious,daring,barefaced,venturous,bald-faced,brazen,brazen-faced,dauntless,audacious,brassy,hardy,unfearing,brave
+Aurora :  A natural electrical phenomenon characterized by the appearance of streamers of reddish or greenish light in the sky, usually near the northern or southern magnetic pole.   :    Space,Exteriors : Noun : dawning,sunup,daybreak,morning,dayspring,cockcrow,dawn,aurora,break_of_the_day,first_light,sunrise,break_of_day,Aurora
+Awe :  A feeling of reverential respect mixed with fear or wonder.   :     Feelings and Emotions, Beauty : Verb,Noun : reverence,fear,veneration,awe
+Beatify :  To make holy or sacred.   :    Beauty,Spiritual : Verb : exalt,thrill,inebriate,beatify,tickle_pink,exhilarate
+Beauteous :  Beautiful.   :    Beauty : Adjective : beauteous
+Becoming :  Flattering a person's appearance.   :    Beauty, Physicality  : Adjective : comely,seemly,turn,comme_il_faut,get,decorous,become,becoming,go,suit,decent
+Beguile :  To charm or enchant (someone), sometimes in a deceptive way.   :    Feelings and Emotions,Beauty,Sensory :  : enamour,beguile,entrance,fascinate,captivate,enamor,enchant,catch,charm,juggle,trance,becharm,capture,hoodwink,bewitch
+Belonging :  An affinity for a place or situation.   :    Feelings and Emotions,Geography,Atmosphere : Noun : go,belong,belonging,belong_to
+Beloved :  Dearly loved.   :    Love,Feelings and Emotions,Relationships : Noun,Adjective : beloved,darling,love,dearest,honey,dear
+Benefactor :  A person who gives money or other help to a person or cause.   :    Temperament,Personalities : Noun : benefactor,helper
+Benevolence :  The quality of being well meaning; kindness.   :    Feelings and Emotions,Temperament,Personalities : Noun : benefaction,benevolence
+Blazing :  To burn fiercely or brightly.   :    Light,Sexuality,Feelings and Emotions,Colours Tones Shades : Adjective : blaze,glaring,fulgent,blazing,dazzling,blaze_out,conspicuous,blatant,blaze_away,glary,blinding
+Blessing :  A beneficial thing for which one is grateful; something that brings well-being.   :   Spiritual,Love  : Noun : sanctify,blessing,sign,bless,benediction,thanksgiving,hallow,approving,boon,approval,grace,consecrate
+Bliss :  Perfect happiness; great joy.   :   Feelings and Emotions,Atmosphere,Love,Beauty,Relationships  : Noun : cloud_nine,seventh_heaven,bliss,walking_on_air,blissfulness
+Blossom :  The state or period of flowering.   :    Feelings and Emotions,Beauty,Botany : Verb : bloom,peak,prime,flower,blossom_forth,flush,unfold,blossom,heyday,efflorescence,blossom_out
+Breathtaking :  Astonishing or awe-inspiring in quality, so as to take one's breath away.   :   Feelings and Emotions,Love,Beauty  :  : breathtaking,breathless
+Breeziness :  Fresh and animated; lively.   : Unknown Classification : Noun : windiness,breeziness,jauntiness
+Brilliance :  An intense brightness of light.   : Unknown Classification : Noun : glare,genius,grandness,splendour,grandeur,magnificence,brilliance,splendor,blaze
+Brisk :  Active, fast, and energetic.   : Unknown Classification : Verb,Adjective : brisken,brisk,merry,refreshing,tonic,fresh,bracing,snappy,zippy,alert,refreshful,spanking,rattling,brisk_up,lively
+Bubbling :  Characterized by cheerful high spirits.   : Unknown Classification : Adjective : effervescing,bubble,bubbly,ripple,guggle,burble,frothy,burp,effervescent,sparkly,babble,foamy,foaming,gurgle,bubbling,eruct,spumy,scintillating,belch
+Bucolic :  Relating to the pleasant aspects of the countryside and country life.   : Unknown Classification : Adjective : provincial,idyl,eclogue,pastoral,idyll,bucolic,arcadian,peasant
+Bungalow :  A low house, with a broad front porch, having either no upper floor or upper rooms set in the roof, typically with dormer windows.   : Unknown Classification : Noun : cottage,bungalow
+Buoyancy :  The ability or tendency to float in water or air or some other fluid.   : Unknown Classification : Noun : buoyancy,perkiness,irrepressibility,airiness
+Cadence :  A modulation or inflection of the voice.  : Unknown Classification : Noun : meter,cadency,beat,measure,cadence,metre
 Calcination :  To heat (a substance) to a high temperature but below the melting or fusing point, causing loss of moisture, reduction or oxidation, and the decomposition of carbonates and other compounds.   : Unknown Classification : Noun : calcination
-Calm :  Not showing or feeling nervousness, anger, or other strong emotions.   : Unknown Classification : Adjective,Verb : lull,simmer_down,settle_down,still,quieten,tranquilize,calmness,cool_off,sedate,calm_down,tranquillise,quiet,cool_it,tranquillize,serene,chill_out,calm,becalm,tranquil,unagitated,composure,steady,equanimity,calm_air
-Candor :  The quality of being open and honest in expression; frankness.   : Unknown Classification : Noun : directness,candor,candour,candidness,frankness,forthrightness,fairness,fair-mindedness
-Caprice :  A sudden and unaccountable change of mood or behaviour.   : Unknown Classification : Noun : impulse,caprice,whim
+Calm :  Not showing or feeling nervousness, anger, or other strong emotions.   : Unknown Classification : Verb,Adjective : steady,becalm,still,unagitated,quiet,quieten,settle_down,tranquil,chill_out,tranquillize,sedate,calm_air,calm,calm_down,simmer_down,calmness,equanimity,tranquillise,cool_it,lull,serene,composure,tranquilize,cool_off
+Candor :  The quality of being open and honest in expression; frankness.   : Unknown Classification : Noun : directness,fair-mindedness,frankness,candor,candour,forthrightness,candidness,fairness
+Caprice :  A sudden and unaccountable change of mood or behaviour.   : Unknown Classification : Noun : caprice,whim,impulse
 Carpe Diem :  Latin, ‘seize the day!’, a quotation from Horace.   : Unknown Classification :  : 
-Cascade :  A small waterfall, typically one of several that fall in stages down a steep rocky slope.   : Unknown Classification : Noun,Verb : shower,cascade_down,cascade
-Cashmere :  Fine, soft wool, originally that from the Kashmir goat.   : Unknown Classification : Noun : Kashmir,Cashmere,Jammu_and_Kashmir,cashmere
-Catharsis :  The process of releasing, and thereby providing relief from, strong or repressed emotions.   : Unknown Classification : Noun : katharsis,purgation,catharsis,abreaction
-Celerity :  The swiftness of movement.   : Unknown Classification : Noun : rapidity,celerity,speediness,rapidness,quickness
-Centered :  Well balanced and confident or serene.   : Unknown Classification : Adjective : focus_on,concentrate,pore,center_on,concentrate_on,revolve_about,centre,rivet,centered,revolve_around,focus,center
-Champion :  A person who fights or argues for a cause or on behalf of someone else.   : Unknown Classification : Noun,Adjective,Verb : defend,whiz,booster,protagonist,friend,wiz,superstar,admirer,paladin,hero,virtuoso,hotshot,prizewinning,whizz,fighter,supporter,adept,champion,title-holder,ace,mavin,genius,sensation,maven,wizard,star,champ
-Charisma :  Compelling attractiveness or charm that can inspire devotion in others.   : Unknown Classification : Noun : personal_magnetism,personal_appeal,charisma
-Charm :  The power or quality of giving delight or arousing admiration.   : Unknown Classification : Noun,Verb : spell,enamor,trance,charm,enchant,influence,appealingness,magical_spell,bewitch,captivate,beguile,entrance,appeal,capture,becharm,magic_spell,fascinate,catch,enamour,tempt,good_luck_charm
-Chatoyant :  Of a gem, especially when cut en cabochon, showing a band of bright reflected light caused by aligned inclusions in the stone.   : Unknown Classification :  : chatoyant,iridescent,changeable,shot
-Cheerful :  Noticeably happy and optimistic.   : Unknown Classification : Adjective : cheerful,pollyannaish,upbeat
+Cascade :  A small waterfall, typically one of several that fall in stages down a steep rocky slope.   : Unknown Classification : Verb,Noun : cascade,shower,cascade_down
+Cashmere :  Fine, soft wool, originally that from the Kashmir goat.   : Unknown Classification : Noun : Cashmere,Jammu_and_Kashmir,Kashmir,cashmere
+Catharsis :  The process of releasing, and thereby providing relief from, strong or repressed emotions.   : Unknown Classification : Noun : purgation,katharsis,abreaction,catharsis
+Celerity :  The swiftness of movement.   : Unknown Classification : Noun : rapidity,celerity,quickness,rapidness,speediness
+Centered :  Well balanced and confident or serene.   : Unknown Classification : Adjective : rivet,revolve_around,center_on,centered,revolve_about,focus,centre,concentrate,focus_on,center,pore,concentrate_on
+Champion :  A person who fights or argues for a cause or on behalf of someone else.   : Unknown Classification : Verb,Noun,Adjective : ace,hero,prizewinning,fighter,admirer,champ,maven,mavin,wiz,whiz,sensation,superstar,booster,hotshot,virtuoso,title-holder,genius,whizz,adept,star,supporter,friend,paladin,defend,wizard,champion,protagonist
+Charisma :  Compelling attractiveness or charm that can inspire devotion in others.   : Unknown Classification : Noun : personal_magnetism,charisma,personal_appeal
+Charm :  The power or quality of giving delight or arousing admiration.   : Unknown Classification : Verb,Noun : good_luck_charm,enamour,enamor,magic_spell,appeal,beguile,magical_spell,becharm,capture,fascinate,appealingness,tempt,influence,entrance,captivate,catch,bewitch,enchant,trance,spell,charm
+Chatoyant :  Of a gem, especially when cut en cabochon, showing a band of bright reflected light caused by aligned inclusions in the stone.   : Unknown Classification :  : iridescent,shot,changeable,chatoyant
+Cheerful :  Noticeably happy and optimistic.   : Unknown Classification : Adjective : upbeat,pollyannaish,cheerful
 Chrysalis :  A transitional state.   : Unknown Classification : Noun : chrysalis
 Chromophobia :   An irrational fear of colours.   : Unknown Classification :  : 
-Cinnamon :  An aromatic spice made from the peeled, dried and rolled bark of a Southeast Asian tree.   : Unknown Classification : Noun : Ceylon_cinnamon_tree,Cinnamomum_zeylanicum,cinnamon_bark,cinnamon,Ceylon_cinnamon
-Clarity :  The quality of being coherent and intelligible.   : Unknown Classification : Noun : uncloudedness,pellucidity,lucidity,clarity,clearness,limpidity,lucidness
-Classy :  Stylish and sophisticated.   : Unknown Classification : Adjective : swish,classy,posh
-Clearheaded :  Alert and thinking logically and coherently.   : Unknown Classification : Adjective : clearheaded,clear-thinking
+Cinnamon :  An aromatic spice made from the peeled, dried and rolled bark of a Southeast Asian tree.   : Unknown Classification : Noun : cinnamon,Ceylon_cinnamon_tree,cinnamon_bark,Ceylon_cinnamon,Cinnamomum_zeylanicum
+Clarity :  The quality of being coherent and intelligible.   : Unknown Classification : Noun : clearness,uncloudedness,lucidity,pellucidity,lucidness,clarity,limpidity
+Classy :  Stylish and sophisticated.   : Unknown Classification : Adjective : posh,swish,classy
+Clearheaded :  Alert and thinking logically and coherently.   : Unknown Classification : Adjective : clear-thinking,clearheaded
 Clinomania :  An obsession with bed rest.   : Unknown Classification :  : 
-Coalesce :  Come together to form one mass or whole.   : Unknown Classification : Verb : immix,coalesce,mix,flux,combine,commingle,merge,meld,conflate,blend,fuse
-Comely :  Typically a woman who is pleasant to look at; attractive.   : Unknown Classification :  : fair,decorous,bonny,comely,decent,seemly,comme_il_faut,bonnie,becoming,sightly
-Compassion :  Sympathetic pity and concern for the sufferings or misfortunes of others.   : Unknown Classification : Noun : compassionateness,compassion,pity
-Conflate :  Combine (two or more texts, ideas, etc.) into one.   : Unknown Classification :  : immix,coalesce,mix,flux,combine,commingle,merge,meld,conflate,blend,fuse
-Consciousness :  The state of being awake and aware of one's surroundings.   : Unknown Classification : Noun : knowingness,awareness,cognizance,consciousness,cognisance
+Coalesce :  Come together to form one mass or whole.   : Unknown Classification : Verb : commingle,immix,mix,coalesce,meld,fuse,blend,combine,conflate,flux,merge
+Comely :  Typically a woman who is pleasant to look at; attractive.   : Unknown Classification :  : comely,seemly,fair,comme_il_faut,sightly,decorous,bonny,becoming,bonnie,decent
+Compassion :  Sympathetic pity and concern for the sufferings or misfortunes of others.   : Unknown Classification : Noun : compassion,compassionateness,pity
+Conflate :  Combine (two or more texts, ideas, etc.) into one.   : Unknown Classification :  : commingle,immix,mix,coalesce,meld,fuse,blend,combine,conflate,flux,merge
+Consciousness :  The state of being awake and aware of one's surroundings.   : Unknown Classification : Noun : awareness,cognisance,consciousness,knowingness,cognizance
 Contentment :  A state of happiness and satisfaction.   : Unknown Classification : Noun : contentment
 Coruscate :  Flash or sparkle of light.   : Unknown Classification :  : sparkle,scintillate,coruscate
-Creativity :  The use of the imagination or original ideas, especially in the production of artistic work.   : Unknown Classification : Noun : creative_thinking,creativity,creativeness
+Creativity :  The use of the imagination or original ideas, especially in the production of artistic work.   : Unknown Classification : Noun : creativeness,creative_thinking,creativity
 Crepuscular :  Of, resembling, or relating to twilight.   : Unknown Classification : Adjective : crepuscular
-Crystalline :  Having the structure and form of a crystal; composed of crystals.   : Unknown Classification : Adjective : transparent,pellucid,crystal_clear,lucid,crystalline,limpid
-Cuddle :  Hold close in one's arms as a way of showing love or affection.   : Unknown Classification : Noun,Verb : draw_close,nuzzle,snuggle,nest,nestle,cuddle
+Crystalline :  Having the structure and form of a crystal; composed of crystals.   : Unknown Classification : Adjective : transparent,pellucid,crystalline,limpid,crystal_clear,lucid
+Cuddle :  Hold close in one's arms as a way of showing love or affection.   : Unknown Classification : Verb,Noun : draw_close,snuggle,nuzzle,nestle,nest,cuddle
 Cynosure :  A person or thing that is the centre of attention or admiration.   : Unknown Classification : Noun : cynosure
 Cynefin :  a Welsh word, which is commonly translated into English as `habitat` or `place`, but it means where a person or animal feels it belongs. The place where you feel most at home and welcomed.   : Unknown Classification :  : 
-Dalliance :  A casual romantic or sexual relationship.   : Unknown Classification : Noun : coquetry,dawdling,toying,flirting,flirt,flirtation,trifling,dalliance
-Dandy :  A man unduly devoted to style, neatness, and fashion in dress and appearance.   : Unknown Classification : Noun : swell,bully,dude,corking,slap-up,neat,keen,cracking,smashing,sheik,bang-up,not_bad,clotheshorse,great,beau,fashion_plate,yawl,nifty,gallant,dandy,fop,peachy,groovy
-Dapper :  Typically a man who is neat and trim in dress, appearance, or bearing.   : Unknown Classification : Adjective : rakish,snappy,spiffy,dashing,spruce,raffish,jaunty,natty,dapper
-Dauntless :  Showing fearlessness and determination.   : Unknown Classification :  : unfearing,fearless,brave,hardy,intrepid,dauntless,audacious
-Dazzling :  Extremely bright, especially so as to blind the eyes temporarily.   : Unknown Classification : Adjective : blazing,fulgurous,eye-popping,fulgent,fulgurant,glaring,blinding,daze,glary,dazzling,dazzle,bedazzle
-Debonair :  A man who is confident, stylish, and charming.   : Unknown Classification : Adjective : suave,debonaire,debonair,debonnaire,chipper,jaunty
-Delicate :  Very fine in texture or structure; of intricate workmanship or quality.   : Unknown Classification : Adjective : ticklish,fragile,soft,frail,delicate,finespun,touchy
-Delicious :  Highly pleasant to the taste.   : Unknown Classification : Noun : toothsome,Delicious,delicious,delightful,delectable,scrumptious,yummy,luscious,pleasant-tasting
+Dalliance :  A casual romantic or sexual relationship.   : Unknown Classification : Noun : trifling,coquetry,flirtation,dawdling,dalliance,toying,flirt,flirting
+Dandy :  A man unduly devoted to style, neatness, and fashion in dress and appearance.   : Unknown Classification : Noun : neat,slap-up,beau,swell,fashion_plate,smashing,cracking,dandy,bully,keen,clotheshorse,groovy,peachy,nifty,yawl,dude,fop,not_bad,sheik,great,corking,bang-up,gallant
+Dapper :  Typically a man who is neat and trim in dress, appearance, or bearing.   : Unknown Classification : Adjective : jaunty,spiffy,raffish,rakish,natty,snappy,spruce,dapper,dashing
+Dauntless :  Showing fearlessness and determination.   : Unknown Classification :  : intrepid,fearless,dauntless,audacious,hardy,unfearing,brave
+Dazzling :  Extremely bright, especially so as to blind the eyes temporarily.   : Unknown Classification : Adjective : daze,dazzle,glaring,fulgent,blazing,dazzling,fulgurous,bedazzle,blinding,glary,fulgurant,eye-popping
+Debonair :  A man who is confident, stylish, and charming.   : Unknown Classification : Adjective : jaunty,suave,debonaire,chipper,debonair,debonnaire
+Delicate :  Very fine in texture or structure; of intricate workmanship or quality.   : Unknown Classification : Adjective : touchy,finespun,frail,delicate,soft,ticklish,fragile
+Delicious :  Highly pleasant to the taste.   : Unknown Classification : Noun : luscious,delicious,Delicious,delightful,toothsome,yummy,scrumptious,pleasant-tasting,delectable
 Delightful :  Causing delight; charming.   : Unknown Classification : Adjective : delightful,delicious
-Demesne :  Land attached to a manor and retained for the owner's own use.   : Unknown Classification :  : estate,domain,demesne,landed_estate,land,acres
+Demesne :  Land attached to a manor and retained for the owner's own use.   : Unknown Classification :  : estate,land,acres,domain,landed_estate,demesne
 Demure :  A woman who is reserved, modest, and shy.   : Unknown Classification :  : demure,overmodest,coy
 Denouement :  The final part of a play, movie, or narrative in which the strands of the plot are drawn together and matters are explained or resolved.   : Unknown Classification : Noun : denouement
-Desirable :  Wanted or wished for as being an attractive, useful, or necessary course of action.   : Unknown Classification : Adjective : worthy,desirable,suitable
+Desirable :  Wanted or wished for as being an attractive, useful, or necessary course of action.   : Unknown Classification : Adjective : desirable,worthy,suitable
 Desiderium :  An ardent desire or longing especially, a feeling of loss or grief for something lost.   : Unknown Classification :  : 
 Desuetude :  A state of disuse.   : Unknown Classification : Noun : desuetude
 Desultory :  Lacking a plan, purpose, or enthusiasm.   : Unknown Classification : Adjective : desultory
-Devotion :  Love, loyalty, or enthusiasm for a person, activity, or cause.   : Unknown Classification : Noun : devotedness,cultism,devotion,idolatry,veneration
-Diaphanous :  Light, delicate, and translucent, especially a fabric.   : Unknown Classification : Adjective : gauzy,sheer,transparent,vaporous,gossamer,filmy,see-through,vapourous,cobwebby,gauze-like,diaphanous
-Discombobulate :  To disconcert or confuse someone.   : Unknown Classification :  : confuse,befuddle,fox,discombobulate,bedevil,confound,bewilder,fuddle,bemuse,throw
-Dissemble :  To conceal one's true motives, feelings, or beliefs.   : Unknown Classification : Verb : feign,cloak,affect,pretend,sham,mask,act,dissemble
-Divinity :  The state or quality of being divine.   : Unknown Classification : Noun : divinity_fudge,god,theology,divinity,immortal,deity
-Doting :  Extremely and uncritically fond of someone; adoring.   : Unknown Classification :  : dust,sprinkle,constellate,stud,scatter,fond,dote,adoring,disperse,doting,dot
-Dreamy :  Having a magical or pleasantly unreal quality; dreamlike.   : Unknown Classification : Adjective : lackadaisical,dreamy,languorous,woolgathering,moony,languid
-Dulcet :  A sweet and soothing sound.   : Unknown Classification : Adjective : honeyed,sweet,dulcet,mellifluous,mellisonant
-Earnest :  Resulting from or showing sincere and intense conviction.   : Unknown Classification : Noun,Adjective : dear,sincere,businesslike,heartfelt,solemn,devout,earnest
-Ebullience :  The quality of being cheerful and full of energy; exuberance.   : Unknown Classification :  : enthusiasm,exuberance,ebullience
-Ecstasy :  An overwhelming feeling of great happiness or joyful excitement.   : Unknown Classification : Noun : go,exaltation,cristal,disco_biscuit,raptus,X,rapture,XTC,hug_drug,ecstasy,Adam,transport
-Effervescent :  A liquid giving off bubbles; fizzy.   : Unknown Classification : Adjective : scintillating,sparkling,frothy,sparkly,effervescent,bubbling
-Efflorescence :  A state or time of flowering.   : Unknown Classification : Noun : florescence,bloom,roseola,efflorescence,flowering,inflorescence,skin_rash,blossoming,flush,blossom,anthesis,flower,peak,rash,prime,heyday
-Effortless :  Requiring no physical or mental exertion.   : Unknown Classification : Adjective : casual,effortless
-Elation :  Great happiness and exhilaration.   : Unknown Classification : Noun : lightness,elation,high_spirits
-Elegant :  Pleasingly graceful and stylish in appearance or manner.   : Unknown Classification : Adjective : elegant,graceful,refined
-Elision :  The omission of a sound or syllable when speaking.  : Unknown Classification : Noun : elision,exception,exclusion
-Elixir :  A magical or medicinal potion.   : Unknown Classification : Noun : elixir,philosophers'_stone,philosopher's_stone
+Devotion :  Love, loyalty, or enthusiasm for a person, activity, or cause.   : Unknown Classification : Noun : veneration,devotion,devotedness,cultism,idolatry
+Diaphanous :  Light, delicate, and translucent, especially a fabric.   : Unknown Classification : Adjective : gauzy,cobwebby,sheer,transparent,vapourous,gossamer,diaphanous,gauze-like,filmy,see-through,vaporous
+Discombobulate :  To disconcert or confuse someone.   : Unknown Classification :  : confuse,befuddle,bedevil,bewilder,bemuse,discombobulate,fox,confound,throw,fuddle
+Dissemble :  To conceal one's true motives, feelings, or beliefs.   : Unknown Classification : Verb : affect,act,sham,mask,pretend,feign,dissemble,cloak
+Divinity :  The state or quality of being divine.   : Unknown Classification : Noun : divinity,immortal,deity,god,theology,divinity_fudge
+Doting :  Extremely and uncritically fond of someone; adoring.   : Unknown Classification :  : dote,disperse,doting,adoring,dot,scatter,constellate,stud,dust,sprinkle,fond
+Dreamy :  Having a magical or pleasantly unreal quality; dreamlike.   : Unknown Classification : Adjective : dreamy,languorous,moony,lackadaisical,languid,woolgathering
+Dulcet :  A sweet and soothing sound.   : Unknown Classification : Adjective : honeyed,dulcet,sweet,mellifluous,mellisonant
+Earnest :  Resulting from or showing sincere and intense conviction.   : Unknown Classification : Noun,Adjective : heartfelt,solemn,businesslike,earnest,devout,sincere,dear
+Ebullience :  The quality of being cheerful and full of energy; exuberance.   : Unknown Classification :  : ebullience,enthusiasm,exuberance
+Ecstasy :  An overwhelming feeling of great happiness or joyful excitement.   : Unknown Classification : Noun : hug_drug,raptus,rapture,disco_biscuit,exaltation,XTC,transport,ecstasy,go,cristal,Adam,X
+Effervescent :  A liquid giving off bubbles; fizzy.   : Unknown Classification : Adjective : sparkly,bubbling,frothy,sparkling,scintillating,effervescent
+Efflorescence :  A state or time of flowering.   : Unknown Classification : Noun : peak,bloom,flowering,roseola,skin_rash,inflorescence,blossoming,prime,flower,florescence,flush,blossom,heyday,efflorescence,rash,anthesis
+Effortless :  Requiring no physical or mental exertion.   : Unknown Classification : Adjective : effortless,casual
+Elation :  Great happiness and exhilaration.   : Unknown Classification : Noun : elation,high_spirits,lightness
+Elegant :  Pleasingly graceful and stylish in appearance or manner.   : Unknown Classification : Adjective : refined,elegant,graceful
+Elision :  The omission of a sound or syllable when speaking.  : Unknown Classification : Noun : exception,elision,exclusion
+Elixir :  A magical or medicinal potion.   : Unknown Classification : Noun : elixir,philosopher's_stone,philosophers'_stone
 Eloquence :  Fluent or persuasive speaking or writing.   : Unknown Classification : Noun : fluency,eloquence,smoothness
-Embrocation :  A liquid used for rubbing on the body to relieve pain from sprains and strains.   : Unknown Classification :  : embrocation,liniment
-Emollient :  Having the quality of softening or soothing the skin.   : Unknown Classification :  : emollient,demulcent,cream,ointment,softening,salving
+Embrocation :  A liquid used for rubbing on the body to relieve pain from sprains and strains.   : Unknown Classification :  : liniment,embrocation
+Emollient :  Having the quality of softening or soothing the skin.   : Unknown Classification :  : demulcent,cream,ointment,salving,emollient,softening
 Emulate :  Match or surpass (a person or achievement), typically by imitation.   : Unknown Classification : Verb : emulate
-Enamoured :  To be filled with a feeling of love for someone or something.   : Unknown Classification :  : beguile,entrance,fascinate,catch,enamor,trance,enamour,charm,capture,becharm,enchant,bewitch,captivate
-Enchanted :  Placed under a spell; bewitched.   : Unknown Classification : Adjective : jinx,enrapture,enamor,trance,glamour,charm,enchant,transport,enthrall,enthral,bewitch,delight,captivate,beguile,entrance,enchanted,capture,becharm,ravish,fascinate,catch,enamour,hex,witch
-Enraptured :  Experiencing intense pleasure or joy.   : Unknown Classification :  : enraptured,rapturous,transport,enrapture,ecstatic,enchant,rhapsodic,enthrall,ravish,delight,rapt,enthral
-Enthralled :  Experiencing fascinated attention.   : Unknown Classification :  : beguiled,transport,charmed,entranced,enrapture,enthralled,enchant,captivated,delighted,enthrall,ravish,delight,enthral
-Ephemeral :  Lasting for a very short time.   : Unknown Classification : Adjective : ephemeron,transitory,ephemeral,passing,fugacious,transient,short-lived
-Epiphany :  A moment of sudden revelation or insight.   : Unknown Classification : Noun : Twelfth_day,January_6,epiphany,Three_Kings'_Day,Epiphany_of_Our_Lord,Epiphany
-Equanimity :  Mental calmness, composure, and evenness of temper, especially in a difficult situation.   : Unknown Classification :  : equanimity,composure,calm,calmness
-Equilibrium :  A state in which opposing forces or influences are balanced.   : Unknown Classification : Noun : chemical_equilibrium,counterbalance,labyrinthine_sense,balance,vestibular_sense,sense_of_balance,equipoise,equilibrium,sense_of_equilibrium
-Erstwhile :  Former.   : Unknown Classification : Adjective : old,onetime,quondam,erstwhile,erst,sometime,one-time,once,former,formerly,at_one_time
-Ethereal :  Extremely delicate and light in a way that seems too perfect for this world.   : Unknown Classification : Adjective : aerial,ethereal,aery,aeriform,gossamer,airy,celestial,supernal
+Enamoured :  To be filled with a feeling of love for someone or something.   : Unknown Classification :  : enamour,beguile,entrance,captivate,enamor,enchant,catch,charm,bewitch,trance,becharm,capture,fascinate
+Enchanted :  Placed under a spell; bewitched.   : Unknown Classification : Adjective : glamour,enamour,ravish,enamor,beguile,enthrall,delight,becharm,capture,fascinate,entrance,enchanted,captivate,enthral,catch,bewitch,enchant,trance,hex,enrapture,witch,transport,charm,jinx
+Enraptured :  Experiencing intense pleasure or joy.   : Unknown Classification :  : rapt,rhapsodic,ravish,enthrall,delight,ecstatic,rapturous,transport,enthral,enchant,enraptured,enrapture
+Enthralled :  Experiencing fascinated attention.   : Unknown Classification :  : ravish,enthrall,delight,enthralled,delighted,entranced,transport,enthral,enchant,charmed,captivated,beguiled,enrapture
+Ephemeral :  Lasting for a very short time.   : Unknown Classification : Adjective : ephemeral,fugacious,ephemeron,transient,passing,transitory,short-lived
+Epiphany :  A moment of sudden revelation or insight.   : Unknown Classification : Noun : Twelfth_day,Epiphany,epiphany,Three_Kings'_Day,January_6,Epiphany_of_Our_Lord
+Equanimity :  Mental calmness, composure, and evenness of temper, especially in a difficult situation.   : Unknown Classification :  : equanimity,calmness,composure,calm
+Equilibrium :  A state in which opposing forces or influences are balanced.   : Unknown Classification : Noun : balance,equilibrium,equipoise,sense_of_equilibrium,labyrinthine_sense,chemical_equilibrium,sense_of_balance,vestibular_sense,counterbalance
+Erstwhile :  Former.   : Unknown Classification : Adjective : at_one_time,erst,erstwhile,onetime,one-time,former,sometime,once,old,formerly,quondam
+Ethereal :  Extremely delicate and light in a way that seems too perfect for this world.   : Unknown Classification : Adjective : supernal,airy,aeriform,ethereal,gossamer,aery,celestial,aerial
 Etiquette :  The customary code of polite behaviour in society or among members of a particular profession or group.   : Unknown Classification : Noun : etiquette
-Euphoria :  A feeling or state of intense excitement and happiness.   : Unknown Classification : Noun : euphory,euphoria
+Euphoria :  A feeling or state of intense excitement and happiness.   : Unknown Classification : Noun : euphoria,euphory
 Evanescent :  Soon passing out of sight, memory, or existence; quickly fading or disappearing.   : Unknown Classification : Adjective : evanescent
-Evocative :  Bringing strong images, memories, or feelings to mind.   : Unknown Classification : Adjective : evocative,redolent,reminiscent,remindful,resonant
-Exonerate :  To absolve someone from blame for a fault or wrongdoing, especially after due consideration of the case.   : Unknown Classification :  : assoil,exonerate,clear,discharge,exculpate,acquit
-Exquisite :  Extremely beautiful and, typically, delicate.   : Unknown Classification : Adjective : exquisite,keen,recherche,dainty
-Exuberant :  Filled with or characterized by a lively energy and excitement.   : Unknown Classification : Adjective : ebullient,overweening,luxuriant,exuberant,profuse,lush,extravagant,riotous,excessive,high-spirited
-Fabulous :  Amazingly good; wonderful.   : Unknown Classification : Adjective : fab,mythical,fabulous,mythic,mythological,mythologic
-Faithful :  Loyal, constant, and steadfast.   : Unknown Classification : Noun,Adjective : fold,close,faithful,congregation
-Fascination :  The power to fascinate someone; the quality of being fascinating.   : Unknown Classification : Noun : captivation,enchantment,fascination,enthrallment
-Feasible :  Possible to do easily or conveniently.   : Unknown Classification : Adjective : workable,feasible,viable,executable,practicable
-Feisty :  A person who is relatively small or weak but also lively, determined, and courageous.   : Unknown Classification : Adjective : huffy,feisty,plucky,spunky,thin-skinned,touchy
-Felicity :  Intense happiness.   : Unknown Classification : Noun : felicity,felicitousness,happiness
-Feral :  (especially of an animal) in a wild state, especially after escape from captivity or domestication.   : Unknown Classification : Adjective : feral,ferine,savage
-Festive :  Cheerful and jovially celebratory.   : Unknown Classification :  : festive,merry,gay,festal
-Fetching :  Attractive.   : Unknown Classification : Adjective : fetching,taking,winning,bring,convey,fetch,get,bring_in
-Fidelity :  Faithfulness to a person, cause, or belief, demonstrated by continuing loyalty and support.   : Unknown Classification : Noun : fidelity,faithfulness
-Filament :  A slender threadlike object or fibre, especially one found in animal or plant structures.   : Unknown Classification : Noun : filament,filum,fibril,strand
+Evocative :  Bringing strong images, memories, or feelings to mind.   : Unknown Classification : Adjective : evocative,remindful,redolent,reminiscent,resonant
+Exonerate :  To absolve someone from blame for a fault or wrongdoing, especially after due consideration of the case.   : Unknown Classification :  : clear,exculpate,acquit,exonerate,discharge,assoil
+Exquisite :  Extremely beautiful and, typically, delicate.   : Unknown Classification : Adjective : keen,dainty,recherche,exquisite
+Exuberant :  Filled with or characterized by a lively energy and excitement.   : Unknown Classification : Adjective : lush,overweening,extravagant,profuse,luxuriant,excessive,ebullient,high-spirited,riotous,exuberant
+Fabulous :  Amazingly good; wonderful.   : Unknown Classification : Adjective : mythic,mythologic,mythical,mythological,fab,fabulous
+Faithful :  Loyal, constant, and steadfast.   : Unknown Classification : Noun,Adjective : fold,congregation,faithful,close
+Fascination :  The power to fascinate someone; the quality of being fascinating.   : Unknown Classification : Noun : enchantment,fascination,enthrallment,captivation
+Feasible :  Possible to do easily or conveniently.   : Unknown Classification : Adjective : executable,workable,feasible,practicable,viable
+Feisty :  A person who is relatively small or weak but also lively, determined, and courageous.   : Unknown Classification : Adjective : touchy,thin-skinned,huffy,plucky,spunky,feisty
+Felicity :  Intense happiness.   : Unknown Classification : Noun : happiness,felicitousness,felicity
+Feral :  (especially of an animal) in a wild state, especially after escape from captivity or domestication.   : Unknown Classification : Adjective : savage,feral,ferine
+Festive :  Cheerful and jovially celebratory.   : Unknown Classification :  : gay,festive,merry,festal
+Fetching :  Attractive.   : Unknown Classification : Adjective : bring_in,fetch,winning,get,taking,convey,fetching,bring
+Fidelity :  Faithfulness to a person, cause, or belief, demonstrated by continuing loyalty and support.   : Unknown Classification : Noun : faithfulness,fidelity
+Filament :  A slender threadlike object or fibre, especially one found in animal or plant structures.   : Unknown Classification : Noun : fibril,filum,filament,strand
 Flawless :  Without any blemishes or imperfections; perfect.   : Unknown Classification : Adjective : unflawed,flawless
-Flourish :  To grow or develop in a healthy or vigorous way, especially as the result of a particularly favourable environment.   : Unknown Classification : Noun : expand,tucket,brandish,flourish,fanfare,boom,wave,fly_high,thrive,prosper
-Flowing :  Hanging or draping loosely and gracefully.   : Unknown Classification :  : flowing,run,fall,flux,course,sleek,menstruate,feed,streamlined,aerodynamic,hang,flow
-Forbearance :  Patient self-control; restraint and tolerance.   : Unknown Classification : Noun : forbearance,longanimity,patience
+Flourish :  To grow or develop in a healthy or vigorous way, especially as the result of a particularly favourable environment.   : Unknown Classification : Noun : expand,tucket,boom,fly_high,thrive,wave,flourish,fanfare,prosper,brandish
+Flowing :  Hanging or draping loosely and gracefully.   : Unknown Classification :  : run,course,menstruate,flow,aerodynamic,streamlined,feed,fall,flux,flowing,hang,sleek
+Forbearance :  Patient self-control; restraint and tolerance.   : Unknown Classification : Noun : patience,forbearance,longanimity
 Fortitude :  Courage in pain or adversity.   : Unknown Classification : Noun : fortitude
-Friendship :  The emotions or conduct of friends; the state of being friends.   : Unknown Classification : Noun : friendship,friendly_relationship
-Fugacious :  Tending to disappear; fleeting.   : Unknown Classification :  : transitory,ephemeral,passing,fugacious,transient,short-lived
-Fulfilling :  Making someone satisfied or happy because of fully developing their character or abilities.   : Unknown Classification :  : accomplish,satisfy,carry_out,action,carry_through,live_up_to,fulfil,meet,execute,fulfill,fill
-Furtive :  Attempting to avoid notice or attention, typically because of guilt or a belief that discovery would lead to trouble; secretive.   : Unknown Classification : Adjective : surreptitious,stealthy,sneak,backstair,backstairs,sneaky,furtive
-Gambol :  Run or jump about playfully.   : Unknown Classification :  : sport,gambol,frolic,lark,skylark,play,romp,caper,cavort,run_around,rollick,lark_about,disport,frisk
-Gargantuan :  Enormous.   : Unknown Classification :  : gargantuan,giant,jumbo,elephantine
-Giddy :  Having a sensation of whirling and a tendency to fall or stagger; dizzy.   : Unknown Classification :  : empty-headed,light-headed,giddy,dizzy,vertiginous,lightheaded,silly,airheaded,woozy,featherbrained
-Ginger :  A hot, fragrant spice made from the rhizome of a plant, which may be chopped or powdered for cooking, preserved in syrup, or candied.   : Unknown Classification : Noun,Adjective,Verb : ginger,pep,gingery,peppiness,gingerroot,powdered_ginger
-Glamour :  An attractive or exciting quality that makes certain people or things seem appealing.   : Unknown Classification :  : jinx,glamour,enchant,hex,witch,bewitch,glamor
-Glorious :  Having a striking beauty or splendor that evokes feelings of delighted admiration.   : Unknown Classification : Adjective : brilliant,splendid,magnificent,glorious,resplendent,splendiferous
+Friendship :  The emotions or conduct of friends; the state of being friends.   : Unknown Classification : Noun : friendly_relationship,friendship
+Fugacious :  Tending to disappear; fleeting.   : Unknown Classification :  : ephemeral,fugacious,transient,passing,transitory,short-lived
+Fulfilling :  Making someone satisfied or happy because of fully developing their character or abilities.   : Unknown Classification :  : meet,accomplish,fulfill,carry_through,fulfil,fill,action,execute,live_up_to,satisfy,carry_out
+Furtive :  Attempting to avoid notice or attention, typically because of guilt or a belief that discovery would lead to trouble; secretive.   : Unknown Classification : Adjective : furtive,sneak,surreptitious,backstair,backstairs,sneaky,stealthy
+Gambol :  Run or jump about playfully.   : Unknown Classification :  : sport,play,lark_about,lark,frisk,frolic,rollick,cavort,run_around,caper,romp,skylark,disport,gambol
+Gargantuan :  Enormous.   : Unknown Classification :  : jumbo,elephantine,giant,gargantuan
+Giddy :  Having a sensation of whirling and a tendency to fall or stagger; dizzy.   : Unknown Classification :  : giddy,light-headed,lightheaded,empty-headed,vertiginous,airheaded,dizzy,silly,featherbrained,woozy
+Ginger :  A hot, fragrant spice made from the rhizome of a plant, which may be chopped or powdered for cooking, preserved in syrup, or candied.   : Unknown Classification : Verb,Noun,Adjective : powdered_ginger,ginger,peppiness,gingery,gingerroot,pep
+Glamour :  An attractive or exciting quality that makes certain people or things seem appealing.   : Unknown Classification :  : glamour,witch,bewitch,jinx,enchant,hex,glamor
+Glorious :  Having a striking beauty or splendor that evokes feelings of delighted admiration.   : Unknown Classification : Adjective : resplendent,brilliant,splendid,magnificent,splendiferous,glorious
 Goddess :  A woman who is adored, especially for her beauty.   : Unknown Classification : Noun : goddess
 Gorgeous :  Beautiful; very attractive.   : Unknown Classification : Adjective : gorgeous
-Gossamer :  Used to refer to something very light, thin, and insubstantial or delicate.   : Unknown Classification : Noun : gauzy,sheer,transparent,cobweb,vaporous,ethereal,gossamer,filmy,see-through,vapourous,cobwebby,gauze-like,diaphanous
-Graceful :  Having or showing grace or elegance.   : Unknown Classification : Adjective : elegant,graceful,refined
-Halcyon :  Denoting a period of time in the past that was idyllically happy and peaceful.   : Unknown Classification : Noun,Adjective : prosperous,halcyon,genus_Halcyon,Alcyone,Halcyon,golden
-Handsome :  A good-looking man.   : Unknown Classification :  : well-favoured,freehanded,well-favored,fine-looking,bighearted,big,better-looking,openhanded,good-looking,liberal,bountiful,bounteous,giving,handsome
-Harbinger :  A forerunner of something.   : Unknown Classification : Noun : harbinger,precursor,announce,foretell,annunciate,forerunner,predecessor,herald
-Harmony :  The quality of forming a pleasing and consistent whole.   : Unknown Classification : Noun : concordance,concord,musical_harmony,harmoniousness,harmony
-Heartfelt :  A feeling or its expression that is sincere; deeply and strongly felt.   : Unknown Classification :  : heartfelt,dear,devout,earnest
+Gossamer :  Used to refer to something very light, thin, and insubstantial or delicate.   : Unknown Classification : Noun : gauzy,cobwebby,sheer,transparent,vapourous,ethereal,gossamer,diaphanous,gauze-like,cobweb,filmy,see-through,vaporous
+Graceful :  Having or showing grace or elegance.   : Unknown Classification : Adjective : refined,elegant,graceful
+Halcyon :  Denoting a period of time in the past that was idyllically happy and peaceful.   : Unknown Classification : Noun,Adjective : halcyon,Alcyone,Halcyon,prosperous,genus_Halcyon,golden
+Handsome :  A good-looking man.   : Unknown Classification :  : liberal,well-favoured,better-looking,bounteous,big,good-looking,giving,openhanded,bountiful,well-favored,bighearted,fine-looking,freehanded,handsome
+Harbinger :  A forerunner of something.   : Unknown Classification : Noun : annunciate,predecessor,foretell,herald,precursor,harbinger,forerunner,announce
+Harmony :  The quality of forming a pleasing and consistent whole.   : Unknown Classification : Noun : harmoniousness,harmony,concord,concordance,musical_harmony
+Heartfelt :  A feeling or its expression that is sincere; deeply and strongly felt.   : Unknown Classification :  : devout,heartfelt,dear,earnest
 Heartwarming :  Emotionally rewarding or uplifting.   : Unknown Classification : Adjective : heartwarming
 Heavenly :  Very pleasing; wonderful.   : Unknown Classification : Adjective : heavenly,celestial
-Hilarity :  Extreme amusement, especially when expressed by laughter.   : Unknown Classification : Noun : hilarity,mirth,mirthfulness,gleefulness,glee
-Holiness :  The state of being holy.   : Unknown Classification : Noun : holiness,sanctity,sanctitude
+Hilarity :  Extreme amusement, especially when expressed by laughter.   : Unknown Classification : Noun : gleefulness,mirth,hilarity,mirthfulness,glee
+Holiness :  The state of being holy.   : Unknown Classification : Noun : sanctity,sanctitude,holiness
 Hopefulness :  Having or manifesting hope.   : Unknown Classification : Noun : hopefulness
-Humility :  A modest or low view of ones own importance; humbleness.   : Unknown Classification : Noun : humility,humbleness
+Humility :  A modest or low view of ones own importance; humbleness.   : Unknown Classification : Noun : humbleness,humility
 Idyllic :  A time or place that is extremely happy, peaceful, or picturesque.   : Unknown Classification : Adjective : idyllic
-Illumination :  Lighting or light.   : Unknown Classification : Noun : elucidation,illuminance,clarification,light,illumination,miniature
-Illustrious :  Well known, respected, and admired for past achievements.   : Unknown Classification : Adjective : famous,noted,illustrious,far-famed,renowned,celebrated,notable,famed
-Imbrication :  An overlapping of edges (as of tiles or scales).   : Unknown Classification : Noun : overlapping,lapping,imbrication
+Illumination :  Lighting or light.   : Unknown Classification : Noun : elucidation,light,miniature,illuminance,illumination,clarification
+Illustrious :  Well known, respected, and admired for past achievements.   : Unknown Classification : Adjective : notable,noted,famous,renowned,far-famed,famed,celebrated,illustrious
+Imbrication :  An overlapping of edges (as of tiles or scales).   : Unknown Classification : Noun : overlapping,imbrication,lapping
 Imbroglio :  An extremely confused, complicated, or embarrassing situation.   : Unknown Classification : Noun : embroilment,imbroglio
-Imbue :  To inspire or permeate with a feeling or quality.   : Unknown Classification : Verb : hue,interpenetrate,riddle,penetrate,soak,diffuse,permeate,imbue,pervade
+Imbue :  To inspire or permeate with a feeling or quality.   : Unknown Classification : Verb : diffuse,soak,hue,imbue,penetrate,permeate,interpenetrate,pervade,riddle
 Incandescence :  The light emitted by an incandescent object.   : Unknown Classification : Noun : incandescence,glow
 Incipient :  In an initial stage; beginning to happen or develop.   : Unknown Classification : Adjective : incipient,inchoate
-Ineffable :  Too great or extreme to be expressed or described in words.   : Unknown Classification : Adjective : ineffable,unspeakable,indefinable,indescribable,untellable,unnameable,unutterable
+Ineffable :  Too great or extreme to be expressed or described in words.   : Unknown Classification : Adjective : unutterable,unnameable,indescribable,untellable,ineffable,indefinable,unspeakable
 Ingenue :  An innocent or unsophisticated young woman, especially in a play or film.   : Unknown Classification : Noun : ingenue
 Inglenook :  A space on either side of a large fireplace.   : Unknown Classification :  : inglenook,chimney_corner
-Insouciance :  Casual lack of concern; indifference.   : Unknown Classification :  : insouciance,lightsomeness,carefreeness,lightheartedness
-Intrepid :  Fearless; adventurous (often used for rhetorical or humorous effect).   : Unknown Classification :  : unfearing,fearless,brave,hardy,intrepid,dauntless,audacious
-Inure :  Accustom to something, especially something unpleasant.   : Unknown Classification : Verb : inure,harden,indurate
-Invincible :  Too powerful to be defeated or overcome.   : Unknown Classification : Adjective : unbeatable,unvanquishable,invincible
-Iridescent :  Showing luminous colors that seem to change when seen from different angles.   : Unknown Classification : Adjective : chatoyant,shot,iridescent,nacreous,opalescent,changeable,opaline,pearlescent
-Jaunty :  Having or expressing a lively, cheerful, and self-confident manner.   : Unknown Classification :  : rakish,debonaire,debonair,snappy,spiffy,dashing,spruce,chipper,raffish,jaunty,natty,dapper
-Jocular :  Fond of or characterized by joking; humorous or playful.   : Unknown Classification :  : jocular,joking,jocosely,jocose,jesting
-Jovial :  Cheerful and friendly.   : Unknown Classification :  : jocund,gay,mirthful,merry,jolly,jovial
+Insouciance :  Casual lack of concern; indifference.   : Unknown Classification :  : carefreeness,insouciance,lightheartedness,lightsomeness
+Intrepid :  Fearless; adventurous (often used for rhetorical or humorous effect).   : Unknown Classification :  : intrepid,fearless,dauntless,audacious,hardy,unfearing,brave
+Inure :  Accustom to something, especially something unpleasant.   : Unknown Classification : Verb : indurate,inure,harden
+Invincible :  Too powerful to be defeated or overcome.   : Unknown Classification : Adjective : unbeatable,invincible,unvanquishable
+Iridescent :  Showing luminous colors that seem to change when seen from different angles.   : Unknown Classification : Adjective : nacreous,shot,changeable,opaline,pearlescent,iridescent,chatoyant,opalescent
+Jaunty :  Having or expressing a lively, cheerful, and self-confident manner.   : Unknown Classification :  : jaunty,spiffy,raffish,rakish,natty,snappy,spruce,debonaire,dapper,dashing,chipper,debonair
+Jocular :  Fond of or characterized by joking; humorous or playful.   : Unknown Classification :  : joking,jocosely,jocular,jesting,jocose
+Jovial :  Cheerful and friendly.   : Unknown Classification :  : merry,jolly,jovial,gay,mirthful,jocund
 Joyous :  Feeling,showing,or causing joy; joyful.  : Unknown Classification : Adjective : joyous
-Jubilant :  Feeling or expressing great happiness and triumph.   : Unknown Classification :  : prideful,elated,joyful,exultant,rejoicing,exulting,jubilant,triumphal,gleeful,triumphant
-Judicious :  Having or showing good judgment or sense.   : Unknown Classification : Adjective : wise,heady,judicious
+Jubilant :  Feeling or expressing great happiness and triumph.   : Unknown Classification :  : gleeful,exulting,joyful,triumphal,triumphant,jubilant,rejoicing,elated,exultant,prideful
+Judicious :  Having or showing good judgment or sense.   : Unknown Classification : Adjective : judicious,heady,wise
 Juvenescent :  Becoming young or youthful.   : Unknown Classification :  : 
-Kindred :  Ones family and relations.   : Unknown Classification : Adjective : kin_group,kindred,akin,clan,kin,tribe,kinship_group
-Kindliness :  The quality of being kind, warmhearted, or gentle; kindness.   : Unknown Classification : Noun : kindliness,helpfulness
+Kindred :  Ones family and relations.   : Unknown Classification : Adjective : kindred,kin,kin_group,akin,clan,kinship_group,tribe
+Kindliness :  The quality of being kind, warmhearted, or gentle; kindness.   : Unknown Classification : Noun : helpfulness,kindliness
 Kissable :  Capable of being kissed; inviting to be kissed through attractiveness.   : Unknown Classification :  : 
-Labyrinthine :  A network like a labyrinth; irregular and twisting.   : Unknown Classification : Adjective : labyrinthine,labyrinthian,mazy
+Labyrinthine :  A network like a labyrinth; irregular and twisting.   : Unknown Classification : Adjective : labyrinthian,labyrinthine,mazy
 Lagniappe :  Something given as a bonus or extra gift.   : Unknown Classification : Noun : lagniappe
 Lagoon :  A stretch of salt water separated from the sea by a low sandbank or coral reef.   : Unknown Classification : Noun : lagune,laguna,lagoon
-Languid :  Displaying or having a disinclination for physical exertion or effort; slow and relaxed.   : Unknown Classification :  : lackadaisical,dreamy,languid,languorous
-Languor :  The state or feeling, often pleasant, of tiredness or inertia.   : Unknown Classification : Noun : lassitude,dreaminess,languor,listlessness,phlegm,flatness,lethargy,sluggishness
-Lassitude :  A state of physical or mental weariness; lack of energy.   : Unknown Classification :  : lassitude,slackness,languor,listlessness,inanition,lethargy,sluggishness
-Leisure :  Free time.   : Unknown Classification : Noun : leisure,leisure_time
-Lilt :   A characteristic rising and falling of the voice when speaking; a pleasant gentle accent.   : Unknown Classification : Noun,Verb : lilt,swing
-Lilting :  Speak, sing, or sound with a lilt.   : Unknown Classification : Adjective : tripping,swingy,lilt,lilting,swinging
-Lissome :  A person or their body that is thin, supple, and graceful.   : Unknown Classification : Adjective : lissome,sylphlike,lithesome,slender,svelte,supple,lithe,lissom
-Lithe :  A persons body that is thin, supple, and graceful.   : Unknown Classification :  : lissome,sylphlike,lithesome,slender,svelte,supple,lithe,lissom
-Lovable :  Inspiring or deserving love or affection.   : Unknown Classification : Adjective : lovable,loveable
-Lullaby :  A quiet, gentle song sung to send a child to sleep.   : Unknown Classification : Noun : lullaby,berceuse,cradlesong
-Luminescence :  The emission of light by a substance that has not been heated, as in fluorescence and phosphorescence.   : Unknown Classification : Noun : luminescence,glow
-Luxury :  Sumptuous or extremely comfortable living surroundings.   : Unknown Classification : Noun : sumptuosity,sumptuousness,lavishness,luxury,luxuriousness,opulence
-Magnificent :  Splendid in appearance;grand.   : Unknown Classification :  : magnificent,glorious,brilliant,splendid
-Marvelous :  Causing great wonder; extraordinary.   : Unknown Classification : Adjective : rattling,improbable,tremendous,wonderful,marvellous,fantastic,marvelous,wondrous,terrific,miraculous,tall,grand,howling
-Mercurial :  Subject to sudden or unpredictable changes of mood or mind.   : Unknown Classification : Adjective : Mercurial,erratic,mercurial,fickle,quicksilver
-Mellifluous :  Sweet or musical; pleasant to hear.   : Unknown Classification :  : honeyed,sweet,dulcet,mellifluous,mellisonant
-Mellow :  Pleasantly smooth or soft; free from harshness.   : Unknown Classification : Adjective,Verb : melt,mellow,high,mellowed,mellowly,laid-back,mellow_out
+Languid :  Displaying or having a disinclination for physical exertion or effort; slow and relaxed.   : Unknown Classification :  : dreamy,lackadaisical,languorous,languid
+Languor :  The state or feeling, often pleasant, of tiredness or inertia.   : Unknown Classification : Noun : lethargy,languor,sluggishness,phlegm,dreaminess,lassitude,flatness,listlessness
+Lassitude :  A state of physical or mental weariness; lack of energy.   : Unknown Classification :  : inanition,lethargy,slackness,languor,sluggishness,lassitude,listlessness
+Leisure :  Free time.   : Unknown Classification : Noun : leisure_time,leisure
+Lilt :   A characteristic rising and falling of the voice when speaking; a pleasant gentle accent.   : Unknown Classification : Verb,Noun : lilt,swing
+Lilting :  Speak, sing, or sound with a lilt.   : Unknown Classification : Adjective : lilt,lilting,swingy,swinging,tripping
+Lissome :  A person or their body that is thin, supple, and graceful.   : Unknown Classification : Adjective : slender,lithesome,lissom,supple,sylphlike,svelte,lithe,lissome
+Lithe :  A persons body that is thin, supple, and graceful.   : Unknown Classification :  : slender,lithesome,lissom,supple,sylphlike,svelte,lithe,lissome
+Lovable :  Inspiring or deserving love or affection.   : Unknown Classification : Adjective : loveable,lovable
+Lullaby :  A quiet, gentle song sung to send a child to sleep.   : Unknown Classification : Noun : berceuse,cradlesong,lullaby
+Luminescence :  The emission of light by a substance that has not been heated, as in fluorescence and phosphorescence.   : Unknown Classification : Noun : glow,luminescence
+Luxury :  Sumptuous or extremely comfortable living surroundings.   : Unknown Classification : Noun : lavishness,luxuriousness,opulence,luxury,sumptuousness,sumptuosity
+Magnificent :  Splendid in appearance;grand.   : Unknown Classification :  : glorious,magnificent,splendid,brilliant
+Marvelous :  Causing great wonder; extraordinary.   : Unknown Classification : Adjective : howling,marvellous,fantastic,grand,improbable,terrific,wondrous,marvelous,tremendous,tall,wonderful,rattling,miraculous
+Mercurial :  Subject to sudden or unpredictable changes of mood or mind.   : Unknown Classification : Adjective : quicksilver,mercurial,erratic,fickle,Mercurial
+Mellifluous :  Sweet or musical; pleasant to hear.   : Unknown Classification :  : honeyed,dulcet,sweet,mellifluous,mellisonant
+Mellow :  Pleasantly smooth or soft; free from harshness.   : Unknown Classification : Verb,Adjective : melt,mellow,mellow_out,mellowly,high,mellowed,laid-back
 Mindfulness :  A mental state achieved by focusing ones awareness on the present moment, while calmly acknowledging and accepting ones feelings, thoughts, and bodily sensations, used as a therapeutic technique.   : Unknown Classification : Noun : mindfulness,heedfulness
 Minutiae :  Small or trivial details.   : Unknown Classification :  : minutia
-Moiety :  Each of two parts into which a thing is or can be divided.   : Unknown Classification : Noun : mediety,moiety
+Moiety :  Each of two parts into which a thing is or can be divided.   : Unknown Classification : Noun : moiety,mediety
 Mondegreen :  A misunderstood or misinterpreted word or phrase resulting from a mishearing of the lyrics of a song.   : Unknown Classification :  : 
-Murmurous :  Filled with or characterized by murmurs; low and indistinct.  : Unknown Classification : Adjective : susurrous,murmurous,rustling,soughing
-Nemesis :  A long-standing rival; an archenemy.   : Unknown Classification : Noun : Nemesis,curse,nemesis,scourge,bane
+Murmurous :  Filled with or characterized by murmurs; low and indistinct.  : Unknown Classification : Adjective : soughing,susurrous,murmurous,rustling
+Nemesis :  A long-standing rival; an archenemy.   : Unknown Classification : Noun : bane,scourge,nemesis,Nemesis,curse
 Namaste :  A respectful greeting said when giving a namaskar.   : Unknown Classification :  : 
-Nebulous :  Unclear, vague, or ill-defined concept or idea.   : Unknown Classification : Adjective : cloudy,nebulose,nebulous,unfixed,nebular
-Nirvana :  A transcendent state in which there is neither suffering, desire, nor sense of self, and the subject is released from the effects of karma and the cycle of death and rebirth. It represents the final goal of Buddhism.   : Unknown Classification : Noun : promised_land,enlightenment,Shangri-la,heaven,Eden,paradise,nirvana
-Nourishment :  The food or other substances necessary for growth, health, and good condition.   : Unknown Classification : Noun : victuals,nutrition,sustenance,nourishment,alimentation,aliment,nutriment
-Nurture :  Care for and encourage the growth or development of.   : Unknown Classification :  : bringing_up,rear,nurture,sustain,rearing,raising,breeding,fostering,raise,nourish,foster,upbringing,fosterage,parent,bring_up
-Oblivion :  The state of being unaware or unconscious of what is happening.   : Unknown Classification : Noun : oblivion,obliviousness,limbo
-Omnipotent :  Having unlimited power; able to do anything.   : Unknown Classification :  : all-powerful,omnipotent,almighty
+Nebulous :  Unclear, vague, or ill-defined concept or idea.   : Unknown Classification : Adjective : nebulous,cloudy,unfixed,nebulose,nebular
+Nirvana :  A transcendent state in which there is neither suffering, desire, nor sense of self, and the subject is released from the effects of karma and the cycle of death and rebirth. It represents the final goal of Buddhism.   : Unknown Classification : Noun : promised_land,Eden,Shangri-la,nirvana,heaven,enlightenment,paradise
+Nourishment :  The food or other substances necessary for growth, health, and good condition.   : Unknown Classification : Noun : sustenance,nutrition,nourishment,alimentation,aliment,victuals,nutriment
+Nurture :  Care for and encourage the growth or development of.   : Unknown Classification :  : foster,raising,nurture,parent,nourish,sustain,bringing_up,rearing,raise,rear,bring_up,fosterage,fostering,breeding,upbringing
+Oblivion :  The state of being unaware or unconscious of what is happening.   : Unknown Classification : Noun : limbo,obliviousness,oblivion
+Omnipotent :  Having unlimited power; able to do anything.   : Unknown Classification :  : almighty,omnipotent,all-powerful
 Onomatopoeia :  The formation of a word from a sound associated with what is named.  : Unknown Classification : Noun : onomatopoeia
 Optimistic :  Hopeful and confident about the future.   : Unknown Classification : Adjective : affirmative,optimistic
-Opulent :  Ostentatiously rich and luxurious or lavish.   : Unknown Classification :  : deluxe,gilded,opulent,sumptuous,princely,luxurious,grand
-Pacify :  Quell the anger, agitation, or excitement of.   : Unknown Classification : Verb : lenify,mollify,pacify,gentle,placate,gruntle,conciliate,assuage,appease
+Opulent :  Ostentatiously rich and luxurious or lavish.   : Unknown Classification :  : grand,sumptuous,gilded,princely,deluxe,opulent,luxurious
+Pacify :  Quell the anger, agitation, or excitement of.   : Unknown Classification : Verb : assuage,placate,gruntle,conciliate,appease,mollify,pacify,lenify,gentle
 Palimpsest :  A manuscript or piece of writing material on which the original writing has been effaced to make room for later writing but of which traces remain.   : Unknown Classification : Noun : palimpsest
-Panacea :  A solution or remedy for all difficulties or diseases.   : Unknown Classification : Noun : nostrum,panacea,cure-all,catholicon,Panacea
+Panacea :  A solution or remedy for all difficulties or diseases.   : Unknown Classification : Noun : nostrum,cure-all,panacea,Panacea,catholicon
 Panoply :  A complete or impressive collection of things.   : Unknown Classification : Noun : panoply
-Paradise :  An ideal or idyllic place or state.   : Unknown Classification : Noun : promised_land,Paradise,Shangri-la,heaven,Eden,paradise,nirvana
-Passion :  Strong and barely controllable emotion.   : Unknown Classification : Noun : Passion,passion,love,heat,warmth,Passion_of_Christ,rage,cacoethes,mania,passionateness
+Paradise :  An ideal or idyllic place or state.   : Unknown Classification : Noun : promised_land,Eden,Shangri-la,nirvana,heaven,Paradise,paradise
+Passion :  Strong and barely controllable emotion.   : Unknown Classification : Noun : passion,rage,cacoethes,warmth,Passion_of_Christ,love,passionateness,Passion,mania,heat
 Pastiche :  An artistic work in a style that imitates that of another work, artist, or period.   : Unknown Classification : Noun : medley,potpourri,pastiche
-Persevering :  Persistent; constant in the execution of a purpose.   : Unknown Classification :  : persevering,hold_on,hang_in,hang_on,persevere,persist,diligent
-Perspicacious :  Clear-sighted; mentally perceptive or acute; keen.   : Unknown Classification : Adjective : clear-sighted,sapient,perspicacious,sagacious,clear-eyed
+Persevering :  Persistent; constant in the execution of a purpose.   : Unknown Classification :  : persevere,hang_in,persist,hold_on,diligent,hang_on,persevering
+Perspicacious :  Clear-sighted; mentally perceptive or acute; keen.   : Unknown Classification : Adjective : sapient,perspicacious,clear-sighted,sagacious,clear-eyed
 Petrichor :  A pleasant smell that frequently accompanies the first rain after a long period of warm, dry weather.   : Unknown Classification :  : 
 Phenomenal :  Very remarkable; extraordinary.   : Unknown Classification : Adjective : phenomenal
 Phosphenes :  A ring or spot of light produced by pressure on the eyeball or direct stimulation of the visual system other than by light.   : Unknown Classification :  : 
-Piquancy :  A pleasantly sharp and appetizing flavor.   : Unknown Classification : Noun : zest,tang,piquantness,piquance,piquancy,nip,tanginess
-Plethora :  A large or excessive amount of something.   : Unknown Classification :  : embarrassment,overplus,plethora,superfluity
-Precious :  An object, substance, or resource of great value; not to be wasted or treated carelessly.   : Unknown Classification : Adverb,Adjective : treasured,cherished,precious,wanted,cute,valued,preciously
-Prevarication :  To deviate from the truth , lie,.  : Unknown Classification :  : prevarication,fabrication,lying,evasiveness,lie,equivocation
+Piquancy :  A pleasantly sharp and appetizing flavor.   : Unknown Classification : Noun : piquantness,piquancy,zest,nip,piquance,tang,tanginess
+Plethora :  A large or excessive amount of something.   : Unknown Classification :  : embarrassment,plethora,overplus,superfluity
+Precious :  An object, substance, or resource of great value; not to be wasted or treated carelessly.   : Unknown Classification : Adverb,Adjective : wanted,cute,precious,treasured,cherished,preciously,valued
+Prevarication :  To deviate from the truth , lie,.  : Unknown Classification :  : fabrication,lying,lie,prevarication,evasiveness,equivocation
 Propinquity :  The state of being close to someone or something; proximity.   : Unknown Classification :  : propinquity,proximity
-Prosperity :  The state of being prosperous.   : Unknown Classification : Noun : prosperity,successfulness
+Prosperity :  The state of being prosperous.   : Unknown Classification : Noun : successfulness,prosperity
 Pyrrhic :  A victory won at too great a cost to have been worthwhile for the victor.   : Unknown Classification : Noun,Adjective : dibrach,pyrrhic
-Quaint :  Attractively unusual or old-fashioned.   : Unknown Classification : Adjective : old-time,olde_worlde,quaint
+Quaint :  Attractively unusual or old-fashioned.   : Unknown Classification : Adjective : olde_worlde,old-time,quaint
 Quantum :  A discrete quantity of energy proportional in magnitude to the frequency of the radiation it represents.   : Unknown Classification : Noun : quantum
-Quickening :  To enter into a phase of active growth and development.  : Unknown Classification : Noun : whet,repair,quickening,renovate,quicken,acceleration,speed_up,animate,reanimate,vivify,revivify,recreate,speedup,invigorate,accelerate,revive,speed
+Quickening :  To enter into a phase of active growth and development.  : Unknown Classification : Noun : revivify,speed,renovate,acceleration,reanimate,recreate,invigorate,accelerate,whet,revive,quickening,repair,vivify,quicken,animate,speedup,speed_up
 Quiescent :  In a state or period of inactivity or dormancy.   : Unknown Classification : Adjective : quiescent
-Quietude :  A state of stillness, calmness, and quiet in a person or place.   : Unknown Classification :  : quietude,tranquility,quietness,tranquillity
+Quietude :  A state of stillness, calmness, and quiet in a person or place.   : Unknown Classification :  : tranquility,tranquillity,quietude,quietness
 Quintessential :  Representing the most perfect or typical example of a quality or class.   : Unknown Classification : Adjective : quintessential
-Radiant :  Sending out light; shining or glowing brightly.   : Unknown Classification :  : beaming,radiant,refulgent,effulgent,beamy
-Rapturous :  Characterized by, feeling, or expressing great pleasure or enthusiasm.   : Unknown Classification :  : enraptured,rapturous,ecstatic,rhapsodic,rapt
+Radiant :  Sending out light; shining or glowing brightly.   : Unknown Classification :  : radiant,beaming,effulgent,refulgent,beamy
+Rapturous :  Characterized by, feeling, or expressing great pleasure or enthusiasm.   : Unknown Classification :  : rapt,rhapsodic,rapturous,enraptured,ecstatic
 Ratatouille :  A vegetable dish consisting of onions, zucchini, tomatoes, eggplant, and peppers, fried and stewed in oil and sometimes served cold.   : Unknown Classification : Noun : ratatouille
-Ravel :  Untangle or unravel something.   : Unknown Classification : Noun,Verb : run,ravel,Ravel,knot,Maurice_Ravel,unravel,ladder,ravel_out,tangle
-Ravishing :  Delightful; entrancing.   : Unknown Classification : Adjective : dishonor,assault,dishonour,ravishing,enrapture,outrage,enthrall,violate,rape,enchant,transport,ravish,delight,enthral
-Redolent :  Strongly reminiscent or suggestive of something.   : Unknown Classification : Adjective : evocative,smelling,aromatic,redolent,reminiscent,remindful,resonant
-Rejuvenate :  Make someone or something look or feel younger, fresher, or more lively.   : Unknown Classification : Verb : rejuvenate,restore,regenerate
-Relent :  Abandon or mitigate a harsh intention or cruel treatment.   : Unknown Classification :  : soften,yield,relent
-Repose :  A state of rest, sleep, or tranquility.   : Unknown Classification : Noun,Verb : reside,heartsease,serenity,placidity,rest,quiet,repose,peace_of_mind,recumb,put_down,relaxation,peacefulness,ataraxis,tranquillity,recline,ease,tranquility,peace,lay
-Resilience :  The capacity to recover quickly from difficulties; toughness.   : Unknown Classification : Noun : resiliency,resilience
-Resplendent :  Attractive and impressive through being richly colorful or sumptuous.   : Unknown Classification :  : glorious,resplendent,splendiferous,splendid
-Revelation :  A surprising and previously unknown fact, especially one that is made known in a dramatic way.   : Unknown Classification : Noun : divine_revelation,Revelation,Book_of_Revelation,Apocalypse,disclosure,revealing,Revelation_of_Saint_John_the_Divine,revelation
-Reverence :  Deep respect for someone or something.   : Unknown Classification : Noun,Verb : awe,fear,venerate,revere,reverence,veneration
-Rhapsodic :  Immoderately impassioned or enthusiastic.   : Unknown Classification :  : enraptured,rapturous,ecstatic,rhapsodic,rapt
+Ravel :  Untangle or unravel something.   : Unknown Classification : Verb,Noun : Ravel,run,Maurice_Ravel,unravel,tangle,knot,ladder,ravel_out,ravel
+Ravishing :  Delightful; entrancing.   : Unknown Classification : Adjective : outrage,ravishing,ravish,enthrall,delight,violate,dishonor,transport,enthral,dishonour,enchant,assault,rape,enrapture
+Redolent :  Strongly reminiscent or suggestive of something.   : Unknown Classification : Adjective : evocative,remindful,redolent,smelling,reminiscent,resonant,aromatic
+Rejuvenate :  Make someone or something look or feel younger, fresher, or more lively.   : Unknown Classification : Verb : regenerate,rejuvenate,restore
+Relent :  Abandon or mitigate a harsh intention or cruel treatment.   : Unknown Classification :  : yield,relent,soften
+Repose :  A state of rest, sleep, or tranquility.   : Unknown Classification : Verb,Noun : reside,rest,repose,ataraxis,quiet,ease,put_down,peace_of_mind,tranquillity,peacefulness,relaxation,lay,peace,recumb,recline,serenity,placidity,heartsease,tranquility
+Resilience :  The capacity to recover quickly from difficulties; toughness.   : Unknown Classification : Noun : resilience,resiliency
+Resplendent :  Attractive and impressive through being richly colorful or sumptuous.   : Unknown Classification :  : glorious,splendid,resplendent,splendiferous
+Revelation :  A surprising and previously unknown fact, especially one that is made known in a dramatic way.   : Unknown Classification : Noun : disclosure,Book_of_Revelation,Revelation_of_Saint_John_the_Divine,Revelation,revealing,divine_revelation,revelation,Apocalypse
+Reverence :  Deep respect for someone or something.   : Unknown Classification : Verb,Noun : veneration,awe,revere,fear,venerate,reverence
+Rhapsodic :  Immoderately impassioned or enthusiastic.   : Unknown Classification :  : rapt,rhapsodic,rapturous,enraptured,ecstatic
 Righteousness :  The quality of being morally right or justifiable.   : Unknown Classification : Noun : righteousness
 Riparian :  Relating to or situated on the banks of a river.   : Unknown Classification : Adjective : riparian
-Ripple :  A small wave or series of waves on the surface of water, especially as caused by an object dropping into it or a slight breeze.   : Unknown Classification : Noun,Verb : riffle,ripple,wavelet,undulate,cockle,bubble,gurgle,ruffle,babble,burble,guggle,rippling
-Romance :  A feeling of excitement and mystery associated with love.   : Unknown Classification : Noun,Adjective,Verb : dally,romance,woo,coquet,love_affair,solicit,Latinian_language,coquette,court,romanticism,chat_up,love_story,mash,Romance_language,Romance,butterfly,philander,flirt,Latin
-Sacred :  Connected with God (or the gods) or dedicated to a religious purpose and so deserving veneration.   : Unknown Classification : Adjective : hallowed,consecrated,sanctified,sacred
-Salve :  Something that is soothing or consoling for wounded feelings or an uneasy conscience.   : Unknown Classification : Noun,Verb : salvage,balm,relieve,salve,unction,ointment,save,unguent
-Sapphire :  A transparent precious stone, typically blue, that is a variety of corundum (aluminum oxide).   : Unknown Classification : Noun,Adjective : lazuline,azure,sky-blue,sapphire,cerulean
-Savor :  Enjoy or appreciate something pleasant completely, especially by dwelling on it.   : Unknown Classification : Verb : savor,savour,flavour,smack,relish,sapidity,tang,flavor,enjoy,bask,taste,nip
-Scintilla :  A tiny trace or spark of a specified quality or feeling.   : Unknown Classification : Noun : smidgin,scintilla,smidgen,smidge,shred,whit,smidgeon,tittle,iota
+Ripple :  A small wave or series of waves on the surface of water, especially as caused by an object dropping into it or a slight breeze.   : Unknown Classification : Verb,Noun : gurgle,guggle,cockle,ruffle,burble,wavelet,rippling,riffle,babble,bubble,undulate,ripple
+Romance :  A feeling of excitement and mystery associated with love.   : Unknown Classification : Verb,Noun,Adjective : mash,solicit,dally,flirt,romance,Latin,coquet,woo,philander,Romance_language,Romance,romanticism,coquette,court,love_story,Latinian_language,butterfly,love_affair,chat_up
+Sacred :  Connected with God (or the gods) or dedicated to a religious purpose and so deserving veneration.   : Unknown Classification : Adjective : hallowed,sacred,consecrated,sanctified
+Salve :  Something that is soothing or consoling for wounded feelings or an uneasy conscience.   : Unknown Classification : Verb,Noun : relieve,ointment,unguent,unction,balm,save,salvage,salve
+Sapphire :  A transparent precious stone, typically blue, that is a variety of corundum (aluminum oxide).   : Unknown Classification : Noun,Adjective : sapphire,azure,cerulean,lazuline,sky-blue
+Savor :  Enjoy or appreciate something pleasant completely, especially by dwelling on it.   : Unknown Classification : Verb : savor,enjoy,flavor,smack,nip,savour,tang,taste,flavour,sapidity,bask,relish
+Scintilla :  A tiny trace or spark of a specified quality or feeling.   : Unknown Classification : Noun : scintilla,iota,smidgeon,smidgin,smidge,tittle,whit,smidgen,shred
 Sempiternal :  Eternal and unchanging; everlasting.   : Unknown Classification :  : sempiternal,dateless,endless
-Sequoia :  A redwood tree, especially the California redwood.   : Unknown Classification : Noun : sequoia,redwood
-Seraglio :  A large harem.   : Unknown Classification :  : hareem,serail,seraglio,harem
+Sequoia :  A redwood tree, especially the California redwood.   : Unknown Classification : Noun : redwood,sequoia
+Seraglio :  A large harem.   : Unknown Classification :  : serail,hareem,seraglio,harem
 Serendipity :  The occurrence and development of events by chance in a happy or beneficial way.   : Unknown Classification : Noun : serendipity
-Serenity :  The state of being calm, peaceful, and untroubled.   : Unknown Classification :  : tranquillity,peace_of_mind,placidity,heartsease,tranquility,serenity,peacefulness,quiet,peace,ataraxis,repose
-Silky :  Of or resembling silk, especially in being soft, fine, and lustrous.   : Unknown Classification :  : silklike,silken,sleek,silky,slick,satiny
-Simplicity :  The quality or condition of being easy to understand or do.   : Unknown Classification : Noun : chasteness,restraint,simmpleness,easiness,ease,simplicity,simple_mindedness,simpleness
+Serenity :  The state of being calm, peaceful, and untroubled.   : Unknown Classification :  : serenity,placidity,heartsease,repose,peace,peace_of_mind,ataraxis,quiet,tranquillity,tranquility,peacefulness
+Silky :  Of or resembling silk, especially in being soft, fine, and lustrous.   : Unknown Classification :  : silken,slick,satiny,silky,sleek,silklike
+Simplicity :  The quality or condition of being easy to understand or do.   : Unknown Classification : Noun : restraint,chasteness,simpleness,easiness,simmpleness,ease,simple_mindedness,simplicity
 Solitude :  The state or situation of being alone.   : Unknown Classification : Noun : solitude,purdah
-Somnambulism :  An abnormal condition of sleep in which motor acts (such as walking) are performed.  : Unknown Classification :  : sleepwalking,noctambulism,somnambulism,noctambulation,somnambulation
+Somnambulism :  An abnormal condition of sleep in which motor acts (such as walking) are performed.  : Unknown Classification :  : noctambulism,somnambulation,noctambulation,somnambulism,sleepwalking
 Sonorous :  Capable of producing a deep or ringing sound.   : Unknown Classification :  : heavy,sonorous
 Soulmate :  A person ideally suited to another as a close friend or romantic partner.   : Unknown Classification :  : 
-Spacious :  Having ample space.   : Unknown Classification :  : spacious,broad,wide,roomy
-Spellbound :  Hold the complete attention of someone as though by magic; fascinate.   : Unknown Classification :  : entrance,magnetize,spell-bound,fascinate,spellbind,hypnotized,grip,bewitch,hypnotised,transfix,mesmerise,mesmerised,transfixed,fascinated,mesmerized,spellbound,mesmerize,magnetise
-Spherical :  Shaped like a sphere.   : Unknown Classification : Adjective : orbicular,globular,spheric,global,globose,spherical,ball-shaped
-Splendid :  Magnificent; very impressive.   : Unknown Classification :  : brilliant,splendid,first-class,magnificent,glorious,excellent,fantabulous,resplendent,splendiferous
-Sprightliness :  Marked by a gay lightness and vivacity.   : Unknown Classification :  : spirit,liveliness,sprightliness,life
+Spacious :  Having ample space.   : Unknown Classification :  : roomy,broad,spacious,wide
+Spellbound :  Hold the complete attention of someone as though by magic; fascinate.   : Unknown Classification :  : grip,hypnotized,mesmerise,entrance,mesmerize,mesmerised,fascinated,spellbound,magnetize,magnetise,hypnotised,spell-bound,bewitch,mesmerized,transfixed,transfix,fascinate,spellbind
+Spherical :  Shaped like a sphere.   : Unknown Classification : Adjective : spherical,globose,globular,ball-shaped,orbicular,global,spheric
+Splendid :  Magnificent; very impressive.   : Unknown Classification :  : excellent,fantabulous,resplendent,brilliant,splendid,magnificent,splendiferous,first-class,glorious
+Sprightliness :  Marked by a gay lightness and vivacity.   : Unknown Classification :  : life,liveliness,sprightliness,spirit
 Statuesque :  An attractively tall and dignified woman.   : Unknown Classification :  : stately,statuesque,Junoesque
-Sublime :  Of such excellence, grandeur, or beauty as to inspire great admiration or awe.   : Unknown Classification : Adjective,Verb : exalted,rarified,reverend,grand,empyrean,high-minded,lofty,rarefied,elevated,noble-minded,high-flown,idealistic,sublime,empyreal,sublimate
+Sublime :  Of such excellence, grandeur, or beauty as to inspire great admiration or awe.   : Unknown Classification : Verb,Adjective : idealistic,grand,sublime,high-flown,lofty,empyreal,noble-minded,empyrean,exalted,reverend,rarified,sublimate,rarefied,elevated,high-minded
 Succulent :  Tender, juicy, and tasty food.   : Unknown Classification : Noun : lush,succulent
 Summery :  Characteristic of or suitable for summer.   : Unknown Classification : Adjective : summery
-Sumptuous :  Splendid and expensive-looking.   : Unknown Classification :  : deluxe,gilded,opulent,sumptuous,princely,luxurious,grand
-Supine :  Lying face upward.   : Unknown Classification : Adjective : unresisting,resistless,resupine,supine
-Surreptitious :  Kept secret, especially because it would not be approved of.   : Unknown Classification :  : undercover,surreptitious,clandestine,hush-hush,stealthy,sneak,underground,secret,cloak-and-dagger,hole-and-corner,hugger-mugger,sneaky,furtive
-Susquehanna :  A river 444 miles (714 kilometers) long in the eastern U.S. flowing from central New York south through Pennsylvania and into the Chesapeake Bay in northern Maryland.  : Unknown Classification : Noun : Susquehanna_River,Susquehanna
-Susurrous :  Full of whispering sounds.   : Unknown Classification :  : susurrous,murmurous,rustling,soughing
-Symphony :  Something regarded, typically favorably, as a composition of different elements.   : Unknown Classification : Noun : symphony,philharmonic,symphonic_music,symphony_orchestra
+Sumptuous :  Splendid and expensive-looking.   : Unknown Classification :  : grand,sumptuous,gilded,princely,deluxe,opulent,luxurious
+Supine :  Lying face upward.   : Unknown Classification : Adjective : resistless,unresisting,resupine,supine
+Surreptitious :  Kept secret, especially because it would not be approved of.   : Unknown Classification :  : furtive,sneak,secret,cloak-and-dagger,surreptitious,clandestine,hole-and-corner,undercover,hush-hush,sneaky,underground,hugger-mugger,stealthy
+Susquehanna :  A river 444 miles (714 kilometers) long in the eastern U.S. flowing from central New York south through Pennsylvania and into the Chesapeake Bay in northern Maryland.  : Unknown Classification : Noun : Susquehanna,Susquehanna_River
+Susurrous :  Full of whispering sounds.   : Unknown Classification :  : soughing,susurrous,murmurous,rustling
+Symphony :  Something regarded, typically favorably, as a composition of different elements.   : Unknown Classification : Noun : symphonic_music,symphony_orchestra,symphony,philharmonic
 Talisman :  An object, typically an inscribed ring or stone, that is thought to have magic powers and to bring good luck.   : Unknown Classification :  : talisman,amulet
-Tenacity :  The quality or fact of being able to grip something firmly; grip.   : Unknown Classification :  : persistency,doggedness,tenacity,persistence,pertinacity,perseverance,tenaciousness
-Tender :  Showing gentleness and concern or sympathy.   : Unknown Classification : Noun,Adjective,Verb : offer,fond,tenderize,sore,tippy,attender,crank,bid,legal_tender,cranky,attendant,tender,raw,pinnace,untoughened,lovesome,affectionate,tenderise,ship's_boat,cutter,sensitive,stamp,supply_ship,warm
-Tintinnabulation :  A ringing or tinkling sound.   : Unknown Classification :  : ring,tintinnabulation,ringing
-Tolerance :  The ability or willingness to tolerate something, in particular, the existence of opinions or behavior that one does not necessarily agree with.   : Unknown Classification : Noun : allowance,leeway,permissiveness,margin,tolerance
-Tranquility :  The quality or state of being tranquil; calm.   : Unknown Classification :  : tranquillity,placidity,tranquility,serenity,quiet,quietude,quietness,repose
-Transfiguration :  A complete change of form or appearance into a more beautiful or spiritual state.   : Unknown Classification : Noun : metamorphosis,Transfiguration_Day,Transfiguration,August_6,Transfiguration_of_Jesus,transfiguration
-Triumph :  A great victory or achievement.   : Unknown Classification : Noun : gloat,exuberate,wallow,exult,victory,triumph,jubilate,prevail,rejoice,crow
+Tenacity :  The quality or fact of being able to grip something firmly; grip.   : Unknown Classification :  : tenaciousness,doggedness,pertinacity,perseverance,tenacity,persistence,persistency
+Tender :  Showing gentleness and concern or sympathy.   : Unknown Classification : Verb,Noun,Adjective : legal_tender,raw,untoughened,tenderize,bid,lovesome,warm,fond,attendant,supply_ship,offer,affectionate,cutter,cranky,sore,attender,crank,sensitive,tender,ship's_boat,stamp,tenderise,tippy,pinnace
+Tintinnabulation :  A ringing or tinkling sound.   : Unknown Classification :  : ring,ringing,tintinnabulation
+Tolerance :  The ability or willingness to tolerate something, in particular, the existence of opinions or behavior that one does not necessarily agree with.   : Unknown Classification : Noun : permissiveness,margin,allowance,tolerance,leeway
+Tranquility :  The quality or state of being tranquil; calm.   : Unknown Classification :  : serenity,placidity,quietness,repose,quietude,quiet,tranquillity,tranquility
+Transfiguration :  A complete change of form or appearance into a more beautiful or spiritual state.   : Unknown Classification : Noun : Transfiguration_Day,Transfiguration_of_Jesus,metamorphosis,Transfiguration,transfiguration,August_6
+Triumph :  A great victory or achievement.   : Unknown Classification : Noun : gloat,rejoice,crow,triumph,exuberate,exult,jubilate,victory,wallow,prevail
 Umbrella :  A device consisting of a circular canopy of cloth on a folding metal frame supported by a central rod, used as protection against rain or sometimes sun.   : Unknown Classification : Noun,Adjective : umbrella
 Unabashed :  Not embarrassed, disconcerted, or ashamed.   : Unknown Classification : Adjective : unabashed,unembarrassed
 Unflappable :  Having or showing calmness in a crisis.   : Unknown Classification :  : unflappable,imperturbable
-Unification :  The process of being united or made into a whole.   : Unknown Classification :  : uniting,unification,fusion,merger,conjugation,union,jointure
-Unique :  Being the only one of its kind; unlike anything else.   : Unknown Classification : Adjective : unequalled,unique,singular,unparalleled,alone,unequaled
-Varnish :  Resin dissolved in a liquid for applying on wood, metal, or other materials to form a hard, clear, shiny surface when dry.   : Unknown Classification : Noun,Verb : varnish,seal
-Veneration :  Great respect; reverence.   : Unknown Classification :  : devotion,cultism,awe,fear,reverence,idolatry,veneration
-Verity :  A true principle or belief, especially one of fundamental importance.   : Unknown Classification : Noun : trueness,the_true,truth,verity
+Unification :  The process of being united or made into a whole.   : Unknown Classification :  : union,unification,fusion,jointure,conjugation,merger,uniting
+Unique :  Being the only one of its kind; unlike anything else.   : Unknown Classification : Adjective : unparalleled,alone,singular,unequaled,unequalled,unique
+Varnish :  Resin dissolved in a liquid for applying on wood, metal, or other materials to form a hard, clear, shiny surface when dry.   : Unknown Classification : Verb,Noun : varnish,seal
+Veneration :  Great respect; reverence.   : Unknown Classification :  : veneration,awe,fear,devotion,cultism,idolatry,reverence
+Verity :  A true principle or belief, especially one of fundamental importance.   : Unknown Classification : Noun : the_true,verity,trueness,truth
 Vestigial :  Forming a very small remnant of something that was once much larger or more noticeable.   : Unknown Classification : Adjective : vestigial,rudimentary
-Vibrant :  Full of energy and enthusiasm.   : Unknown Classification : Adjective : vibrant,vivacious
-Victorious :  Having won a victory; triumphant.   : Unknown Classification : Adjective : winning,victorious,triumphant
-Virtuous :  Having or showing high moral standards.   : Unknown Classification : Adjective : pure,virgin,vestal,virtuous,virginal
-Vitality :  The state of being strong and active; energy.   : Unknown Classification : Noun : verve,elan_vital,animation,vitality,life_force,energy,vim,vital_force
-Vitriolic :  Filled with bitter criticism or malice.   : Unknown Classification :  : erosive,acerb,blistering,acerbic,bitter,acid,acrid,sulphurous,mordant,virulent,caustic,sulfurous,corrosive,vitriolic
-Vortex :  A mass of whirling fluid or air, especially a whirlpool or whirlwind.  : Unknown Classification :  : whirl,swirl,whirlpool,maelstrom,vortex,convolution
+Vibrant :  Full of energy and enthusiasm.   : Unknown Classification : Adjective : vivacious,vibrant
+Victorious :  Having won a victory; triumphant.   : Unknown Classification : Adjective : victorious,winning,triumphant
+Virtuous :  Having or showing high moral standards.   : Unknown Classification : Adjective : virginal,virtuous,pure,vestal,virgin
+Vitality :  The state of being strong and active; energy.   : Unknown Classification : Noun : vitality,verve,vital_force,life_force,elan_vital,energy,animation,vim
+Vitriolic :  Filled with bitter criticism or malice.   : Unknown Classification :  : caustic,acerbic,bitter,erosive,sulfurous,virulent,corrosive,mordant,acid,sulphurous,acrid,blistering,vitriolic,acerb
+Vortex :  A mass of whirling fluid or air, especially a whirlpool or whirlwind.  : Unknown Classification :  : whirl,vortex,maelstrom,swirl,convolution,whirlpool
 Vulnerable :  Susceptible to physical or emotional attack or harm.   : Unknown Classification : Adjective : vulnerable
-Waft :  Pass or cause to pass easily or gently through or as if through the air.   : Unknown Classification : Verb : waft,pennant,streamer,pennon
+Waft :  Pass or cause to pass easily or gently through or as if through the air.   : Unknown Classification : Verb : pennon,streamer,pennant,waft
 Wanderlust :  A strong desire to travel.   : Unknown Classification : Noun : itchy_feet,wanderlust
 Warmhearted :  A person or their actions that are sympathetic and kind.   : Unknown Classification : Adjective : warmhearted
 Wherewithal :  The money or other means needed for a particular purpose.   : Unknown Classification : Noun : wherewithal
 Wholesome :  Conducive to or suggestive of good health and physical well-being.   : Unknown Classification : Adjective : wholesome
-Wondrous :  Inspiring a feeling of wonder or delight; marvelous.   : Unknown Classification :  : rattling,wonderfully,tremendous,wonderful,marvellous,fantastic,marvelous,wondrous,toppingly,marvellously,terrific,terrifically,wondrously,grand,marvelously,superbly,howling
-Worship :  The feeling or expression of reverence and adoration for a deity.   : Unknown Classification : Noun,Verb : idolise,worship,hero-worship,adoration,revere,idolize
+Wondrous :  Inspiring a feeling of wonder or delight; marvelous.   : Unknown Classification :  : howling,marvellous,fantastic,grand,superbly,marvellously,terrific,wondrously,wonderfully,wondrous,marvelous,tremendous,wonderful,marvelously,terrifically,rattling,toppingly
+Worship :  The feeling or expression of reverence and adoration for a deity.   : Unknown Classification : Verb,Noun : adoration,revere,idolize,idolise,worship,hero-worship
 Xanadu :  An idealized place of great or idyllic magnificence and beauty.   : Unknown Classification :  : 
 Xenophobia :  Dislike of or prejudice against people from other countries.   : Unknown Classification : Noun : xenophobia
 Xylophone :  A musical instrument played by striking a row of wooden bars of graduated length with one or more small wooden or plastic mallets.   : Unknown Classification :  : marimba,xylophone
-Yearling :  An animal (especially a sheep, calf, or foal) that is a year old or that is in its second year.   : Unknown Classification : Noun : tot,bambino,toddler,yearling
-Yearn :  Have an intense feeling of longing for something, typically something that one has lost or been separated from.   : Unknown Classification : Verb : ache,yen,pine,yearn,languish,long,hanker
-Yesteryear :  Last year or the recent past, especially as nostalgically recalled.   : Unknown Classification :  : past_times,past,yesteryear
+Yearling :  An animal (especially a sheep, calf, or foal) that is a year old or that is in its second year.   : Unknown Classification : Noun : toddler,bambino,yearling,tot
+Yearn :  Have an intense feeling of longing for something, typically something that one has lost or been separated from.   : Unknown Classification : Verb : languish,ache,hanker,pine,yearn,yen,long
+Yesteryear :  Last year or the recent past, especially as nostalgically recalled.   : Unknown Classification :  : past,yesteryear,past_times
 Zealous :  Having or showing zeal.   : Unknown Classification :  : avid,zealous
 Zenith :  The time at which something is most powerful or successful.   : Unknown Classification : Noun : zenith
-Zephyr :  A soft gentle breeze.   : Unknown Classification : Noun : Zephyr,breeze,gentle_wind,zephyr,air
+Zephyr :  A soft gentle breeze.   : Unknown Classification : Noun : zephyr,Zephyr,breeze,air,gentle_wind
 Zestful :  Characterized by great enthusiasm and energy.   : Unknown Classification : Adjective : zestful,zesty,barmy,yeasty
-Zinfandel :  A variety of wine grape grown in California.   : Unknown Classification : Noun : zinfandel,Zinfandel
-Zither :  A musical instrument consisting of a flat wooden soundbox with numerous strings stretched across it placed horizontally and played with the fingers and a plectrum. It is used especially in central European folk music.   : Unknown Classification : Noun : zither,zithern,cither
+Zinfandel :  A variety of wine grape grown in California.   : Unknown Classification : Noun : Zinfandel,zinfandel
+Zither :  A musical instrument consisting of a flat wooden soundbox with numerous strings stretched across it placed horizontally and played with the fingers and a plectrum. It is used especially in central European folk music.   : Unknown Classification : Noun : cither,zither,zithern
 Zoophilic :  Having an attraction to or preference for animals.   : Unknown Classification :  : 
-Amorphous :  Without a clearly defined shape or form.   : Unknown Classification : Adjective : uncrystallised,unstructured,uncrystallized,amorphous,formless,shapeless
+Amorphous :  Without a clearly defined shape or form.   : Unknown Classification : Adjective : uncrystallised,unstructured,formless,uncrystallized,amorphous,shapeless
 Atrament :  A very dark substance, usually liquid.   : Unknown Classification :  : 
 Caliginous :  Misty, dark, obscure.   : Unknown Classification : Adjective : caliginous
 Cimmerian :  A member of a mythical people living in perpetual mist and darkness near the land of the dead.   : Unknown Classification : Adjective : Cimmerian
-Crepuscule :  Twilight. Obscure, doubtful, or uncertain.   : Unknown Classification :  : evenfall,fall,gloam,nightfall,crepuscule,dusk,twilight,crepuscle,gloaming
+Crepuscule :  Twilight. Obscure, doubtful, or uncertain.   : Unknown Classification :  : gloaming,evenfall,crepuscle,nightfall,gloam,crepuscule,fall,twilight,dusk
 Darkling :  Growing dark or characterized by darkness.   : Unknown Classification : Adjective : darkling
 Dystopian :  Relating to an imagined state or society where there is great suffering or injustice.   : Unknown Classification : Adjective : dystopian
 Eigengrau :  The dark grey color that human eyes see in perfect darkness.   : Unknown Classification :  : 
-Gloaming :  Twilight, dusk.   : Unknown Classification :  : evenfall,fall,gloam,nightfall,crepuscule,dusk,twilight,crepuscle,gloaming
+Gloaming :  Twilight, dusk.   : Unknown Classification :  : gloaming,evenfall,crepuscle,nightfall,gloam,crepuscule,fall,twilight,dusk
 Nebulochaotic :  A state of being hazy and confused.   : Unknown Classification :  : 
-Nefarious :  Wicked or criminal.   : Unknown Classification : Adjective : villainous,nefarious
+Nefarious :  Wicked or criminal.   : Unknown Classification : Adjective : nefarious,villainous
 Nyctophilia :  An attraction to darkness or night; finding relaxation or comfort in the darkness.   : Unknown Classification :  : 
-Pernicious :  Having a harmful effect, especially in a gradual or subtle way.   : Unknown Classification :  : insidious,deadly,baneful,pestilent,subtle,pernicious
+Pernicious :  Having a harmful effect, especially in a gradual or subtle way.   : Unknown Classification :  : insidious,pernicious,subtle,deadly,pestilent,baneful
 Photophobic :  Having an extreme sensitivity to light; growing best under reduced illumination.   : Unknown Classification :  : 
-Somber :  Gloomy, sullen, melancholy; solemn in mood.   : Unknown Classification : Adjective : sober,melancholy,drab,somber,sombre
-Stygian :  Extremely dark, gloomy, or forbidding.   : Unknown Classification : Adjective : Acheronian,Acherontic,Stygian
-Tenebrous :  Dark, shadowy, or obscure.   : Unknown Classification : Adjective : tenebrous,tenebrific,tenebrious
+Somber :  Gloomy, sullen, melancholy; solemn in mood.   : Unknown Classification : Adjective : sombre,somber,sober,melancholy,drab
+Stygian :  Extremely dark, gloomy, or forbidding.   : Unknown Classification : Adjective : Acherontic,Stygian,Acheronian
+Tenebrous :  Dark, shadowy, or obscure.   : Unknown Classification : Adjective : tenebrious,tenebrific,tenebrous
 Umbra :  Shadow or darkness. A shaded area.   : Unknown Classification : Noun : umbra
-Woebegone :  Sad or miserable in appearance.  : Unknown Classification : Adjective : decrepit,run-down,flea-bitten,woebegone,woeful,derelict,creaky
+Woebegone :  Sad or miserable in appearance.  : Unknown Classification : Adjective : woebegone,creaky,flea-bitten,woeful,run-down,derelict,decrepit

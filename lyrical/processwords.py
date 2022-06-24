@@ -56,6 +56,10 @@ with open("literary_resources/words.txt", "r") as filestream:
             classification = currentline[2]  # this is a list
             if(classification.isspace()):
                 classification = ["Unknown Classification"]
+            else:
+                classification = classification.replace(
+                    '\n', '', 1).split(',')
+                #classification = classification.split(",")
             pos = find_all_pos_for_word(targetWord)
             tags = find_tags(targetWord)
             newWord = BeautifulWord(
