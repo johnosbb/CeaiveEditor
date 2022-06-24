@@ -629,7 +629,7 @@ class MainWindow(QMainWindow):
         of the Project.
         """
         self.model = QFileSystemModel()
-
+        self.model.setHeaderData(0, Qt.Horizontal, 'Project Contents')
         # setRootPath
         # Sets the directory that is being watched by the model to newPath by installing a file system watcher on it.
         # Any changes to files and directories within this directory will be reflected in the model.
@@ -643,6 +643,10 @@ class MainWindow(QMainWindow):
         self.tree.setIndentation(10)
         self.tree.setModel(self.model)
         self.tree.setRootIndex(self.model.index(self.projectHomeDirectory))
+        self.tree.header().hideSection(1)
+        self.tree.header().hideSection(2)
+        self.tree.header().hideSection(3)
+        self.model.setHeaderData(0, Qt.Horizontal, 'Project Contents')
         self.tree.clicked.connect(self.on_treeView_clicked)
         # Set up container and layout
         frame = QFrame()  # The QFrame class is used as a container to group and surround widgets, or to act as placeholders in GUI
@@ -654,7 +658,7 @@ class MainWindow(QMainWindow):
         # base class. For example, you could use a single QTextEdit widget or create a QWidget object to act as a parent
         # to a number of other widgets, then use setCentralWidget() , and set your central widget for the main
         # window.
-        self.explorer_dock = QDockWidget("Explorer", self)
+        self.explorer_dock = QDockWidget("Project View", self)
         self.explorer_dock.setWidget(self.tree)
         self.explorer_dock.setFloating(False)
         self.explorer_dock.setAllowedAreas(
@@ -697,7 +701,7 @@ class MainWindow(QMainWindow):
         style_toolbar.addAction(count_functional_words_action)
 
         beautiful_words_action = QAction(
-            QIcon(":/images/images/functional-words.png"), "Beautiful Words", self)
+            QIcon(":/images/images/beauty.png"), "Beautiful Words", self)
         beautiful_words_action.setStatusTip("Beautiful Words")
         beautiful_words_action.triggered.connect(
             self.show_beautiful_words)

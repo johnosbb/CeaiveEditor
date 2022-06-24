@@ -150,6 +150,7 @@ class WordSelectorDialog(QDialog):
         # self.setStyleSheet(stylesheet)
         self.lastStart = 0
         self.title = title
+        self.setWindowIcon(QIcon('beauty.png'))
         self.proxyModel = SortFilterProxyModel(self)
         # This property holds whether the proxy model is dynamically sorted and filtered whenever the contents of the source model change
         self.proxyModel.setDynamicSortFilter(True)
