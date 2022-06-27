@@ -1,12 +1,13 @@
 
 
-from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QPushButton,
-                             QTableWidget, QTableWidgetItem, QMenu, QAction, QDialog, QSizePolicy,
-                             QInputDialog, QTableView,  QHeaderView, QLineEdit, QLabel, QFrame, QVBoxLayout, QHBoxLayout, QComboBox)
-from PyQt5.QtGui import QIcon, QStandardItemModel
-from PyQt5.QtCore import Qt, QSortFilterProxyModel, QModelIndex, QRegExp, QRect, QSize
+from PyQt5.QtWidgets import (QWidget, QPushButton,
+                             QMenu, QAction, QDialog, QSizePolicy,
+                             QTableView,  QHeaderView, QLineEdit, QLabel, QFrame, QVBoxLayout, QHBoxLayout, QComboBox)
+from PyQt5.QtGui import QIcon, QCursor
+from PyQt5.QtCore import Qt, QSortFilterProxyModel, QModelIndex, QRegExp, QRect, QSize, QEvent, QPoint
 from typing import Callable
-import imageBox
+import utilities as Utilities
+from pprint import pprint
 import re
 
 DIALOG_WIDTH = 1000
@@ -145,6 +146,7 @@ class WordSelectorDialog(QDialog):
     def __init__(self,  title,  parent=None):
         QDialog.__init__(self,  parent)
         self.parent = parent
+        self._selectedWord = ""
         # stylesheet = 'QMainWindow { background-image: url("' + ":/images/images/WomanReadingABookLongForm.png" + \
         #     '"); background-repeat: no-repeat; background-position: center; } '
         # self.setStyleSheet(stylesheet)
@@ -156,6 +158,7 @@ class WordSelectorDialog(QDialog):
         self.proxyModel.setDynamicSortFilter(True)
         self.sourceView = QTableView()  # where we store the unfiltered list
         self.tableView = QTableView()
+        # self.installEventFilter(self.tableView)
         self.tableView.setAlternatingRowColors(True)
         self.tableView.setModel(self.proxyModel)
         self.tableView.setSortingEnabled(True)
@@ -168,6 +171,7 @@ class WordSelectorDialog(QDialog):
         self.tableView.setSelectionMode(QTableView.SingleSelection)
         self.tableView.setSelectionBehavior(QTableView.SelectRows)
         self.tableView.clicked.connect(self.getItem)
+        # self.tableView.doubleClicked.connect(self.selectItem)
         self.filterString = ""
         self.filterColumn = 0
         self.wordFilterEnabled = False
@@ -175,6 +179,15 @@ class WordSelectorDialog(QDialog):
         self.tagFilterEnabled = False
         self.classificationFilterEnabled = False
         self.initUI()
+
+    def mousePressEvent(self, event):
+        '''re-implemented to suppress Right-Clicks from selecting items.'''
+        if event.type() == QEvent.MouseButtonPress:
+            if event.button() == Qt.RightButton:
+                print("Right button was pressed")
+                return
+            else:
+                super(QDialog, self).mousePressEvent(event)
 
     def clearFilters(self):
         print("Clearing the filters")
@@ -198,11 +211,9 @@ class WordSelectorDialog(QDialog):
 
     def initUI(self):
         mainLayout = QVBoxLayout()
-
         self.horizontalLayoutWidget = QWidget(self)
         self.horizontalLayoutWidget.setGeometry(
             QRect(0, 0, DIALOG_WIDTH, IMAGE_HEIGHT))
-
         self.headerLayout = QHBoxLayout()
         self.headerLayout.setObjectName("self.headerLayout")
         self.headerLayout.setContentsMargins(10, 10, 10, 10)
@@ -216,13 +227,11 @@ class WordSelectorDialog(QDialog):
         headerFrame.setFrameShape(QFrame.StyledPanel)
         headerFrame.setFrameShadow(QFrame.Raised)
         headerFrame.setLayout(self.headerLayout)
-
         self.headerSpacerWidget = QWidget(headerFrame)
         self.headerSpacerWidget.setObjectName("headerSpacerWidget")
         self.headerSpacerWidget.setGeometry(
             QRect(0, 0, SPACER_SIZE, SPACER_SIZE))
         self.headerSpacerWidget.setObjectName("headerSpacerWidget")
-
         self.wordFilter = QLineEdit(headerFrame)
         self.wordFilterLabel = QLabel("  Word Filter", headerFrame)
         self.wordFilterLabel.setBuddy(self.wordFilter)
@@ -242,7 +251,6 @@ class WordSelectorDialog(QDialog):
         self.wordFilter.textChanged.connect(self.setWordFilter)
         self.wordFilter.setToolTip(
             "Enter a starting letter or letters to find beautiful words")
-
         self.meaningFilterLabel = QLabel("  Meaning Filter", headerFrame)
         self.meaningFilter = QLineEdit(headerFrame)
         self.meaningFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
@@ -252,14 +260,12 @@ class WordSelectorDialog(QDialog):
         self.headerLayout.addWidget(self.meaningFilterLabel)
         self.headerLayout.addWidget(self.meaningFilter)
         # self.headerLayout.addStretch()
-
         self.meaningFilter.setStyleSheet(
             "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.meaningFilter.setFixedWidth(120)
         self.meaningFilter.textChanged.connect(self.setMeaningFilter)
         self.meaningFilter.setToolTip(
             "Enter a meaning for which you would like to find a beautiful word")
-
         self.tagFilterLabel = QLabel(" Tag Filter", headerFrame)
         self.tagFilter = QLineEdit(headerFrame)
         self.tagFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
@@ -269,7 +275,6 @@ class WordSelectorDialog(QDialog):
         self.headerLayout.addWidget(self.tagFilterLabel)
         self.headerLayout.addWidget(self.tagFilter)
         # self.headerLayout.addStretch()
-
         self.tagFilter.setStyleSheet(
             "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.tagFilter.setFixedWidth(120)
@@ -292,7 +297,6 @@ class WordSelectorDialog(QDialog):
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
         self.headerLayout.addWidget(self.classificationFilter)
-
         self.AddClearFiltersButton()
         self.headerLayout.addStretch()
         self.classificationFilter.setStyleSheet(
@@ -307,7 +311,6 @@ class WordSelectorDialog(QDialog):
         # mainLayout.addLayout(self.headerLayout)
         mainLayout.addWidget(headerFrame)
         mainLayout.addWidget(self.tableView)
-
         self.setGeometry(300, 300, DIALOG_WIDTH, DIALOG_HEIGHT)
         self.setFixedSize(DIALOG_WIDTH, DIALOG_HEIGHT)
         self.setWindowTitle(self.title)
@@ -318,7 +321,46 @@ class WordSelectorDialog(QDialog):
         row = mapped_index.row()
         column = mapped_index.column()
         data = mapped_index.data()
-        print("Row:  " + str(row) + ",Column:  " + str(column) + "  " + data)
+        #print("Row:  " + str(row) + ",Column:  " + str(column) + "  " + data)
+        self.selectItem(index)
+
+    def selectItem(self, index):
+        mapped_index = self.proxyModel.mapToSource(index)
+        row = mapped_index.row()
+        column = 0
+        data = mapped_index.data()
+        self.selectionMenu = QMenu(self)
+        selectionAction = self.selectionMenu.addAction(
+            'Click to insert this word into your document')
+        selectionAction.triggered.connect(lambda: self.showSelection(data))
+        x = QCursor.pos().x()
+        y = QCursor.pos().y()
+        newPosition = QPoint(x+5, y+5)
+        self.selectionMenu.exec_(newPosition)
+
+        # self.selectionMenu.installEventFilter(self)
+        #print("You selected Data: " + data)
+
+    def showSelection(self, data):
+        self.selectedWord = data
+        self.accept()
+        #print("Selection: " + data)
+
+    # def eventFilter(self, source, event):
+    #     if event.type() == QEvent.ContextMenu:
+    #         if source == self.tableView:
+    #             self.selectionMenu.exec_(event.globalPos())
+    #             return True
+    #         elif source == self.selectionMenu:
+    #             self.subMenu.exec_(event.globalPos())
+    #             return True
+    #     elif event.type() == QEvent.MouseButtonPress:
+    #         if event.button() == Qt.RightButton:
+    #             print("Right button clicked")
+    #     else:
+    #         print("Event: " + str(event.type()) + "  " + str(source))
+    #         Utilities.print_attributes(event)
+    #     return super().eventFilter(source, event)
 
     def setWordFilter(self):
         text = self.wordFilter.text()
@@ -401,4 +443,11 @@ class WordSelectorDialog(QDialog):
         self.proxyModel.setFilterKeyColumn(self.filterColumn)
         self.proxyModel.setFilterRegExp(regExp)
 
+    @ property
+    def selectedWord(self):
+        return self._selectedWord
+
+    @ selectedWord.setter
+    def selectedWord(self, newWord):
+        self._selectedWord = newWord
     # Reference: https://doc.qt.io/archives/qtjambi-4.5.2_01/com/trolltech/qt/qtjambi-customfilter.html

@@ -21,6 +21,7 @@ import textEditor
 import resources
 import spellCheck
 import thesaurusWordnet
+from customFileSystemModel import CustomFileSystemModel
 import thesaurusWebster
 import findDialog
 from correction_action import SpecialAction
@@ -628,7 +629,7 @@ class MainWindow(QMainWindow):
         Set up the QTreeView so that it displays the contents
         of the Project.
         """
-        self.model = QFileSystemModel()
+        self.model = CustomFileSystemModel("Project Contents")
         self.model.setHeaderData(0, Qt.Horizontal, 'Project Contents')
         # setRootPath
         # Sets the directory that is being watched by the model to newPath by installing a file system watcher on it.

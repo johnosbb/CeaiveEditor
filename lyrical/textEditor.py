@@ -160,6 +160,12 @@ class TextEdit(QTextEdit):
         textCursor.insertText(word)
         textCursor.endEditBlock()
 
+    def insert_selected_word(self, word: str):
+        textCursor = self.textCursor()
+        textCursor.beginEditBlock()
+        textCursor.insertText(word)
+        textCursor.endEditBlock()
+
     @ pyqtSlot(str)
     def correct_word(self, word: str):
         self.replace_selected_word(word)
@@ -167,6 +173,10 @@ class TextEdit(QTextEdit):
     @ pyqtSlot(str)
     def replaceWord(self, word: str):
         self.replace_selected_word(word)
+
+    @ pyqtSlot(str)
+    def insertWord(self, word: str):
+        self.insert_selected_word(word)
 
     @ pyqtSlot()
     def addToDictionary(self):

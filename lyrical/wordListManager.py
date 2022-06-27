@@ -66,5 +66,13 @@ class WordListManager:
         wordSelector = WordSelectorDialog("Beautiful Words", parent)
         model = self.createModel(wordSelector)
         wordSelector.setSourceModel(model)
+        if wordSelector.exec():
+            print("Word selected was " +
+                  wordSelector.selectedWord)
+            parent.editor.insert_selected_word(wordSelector.selectedWord)
+        else:
+            print("Canceled! for Beautiful Words {}".format(
+                wordSelector.selectedWord))
+
         # self.dumpModel(model)
-        wordSelector.show()
+        # wordSelector.show()
