@@ -143,22 +143,20 @@ class SortFilterProxyModel(QSortFilterProxyModel):
 
 
 class WordSelectorDialog(QDialog):
-    def __init__(self,  title,  parent=None):
+    def __init__(self,  title, classifications, parent=None,):
         QDialog.__init__(self,  parent)
         self.parent = parent
         self._selectedWord = ""
-        # stylesheet = 'QMainWindow { background-image: url("' + ":/images/images/WomanReadingABookLongForm.png" + \
-        #     '"); background-repeat: no-repeat; background-position: center; } '
-        # self.setStyleSheet(stylesheet)
+        self.classifications = classifications
+
         self.lastStart = 0
         self.title = title
-        self.setWindowIcon(QIcon('beauty.png'))
         self.proxyModel = SortFilterProxyModel(self)
         # This property holds whether the proxy model is dynamically sorted and filtered whenever the contents of the source model change
         self.proxyModel.setDynamicSortFilter(True)
         self.sourceView = QTableView()  # where we store the unfiltered list
         self.tableView = QTableView()
-        # self.installEventFilter(self.tableView)
+
         self.tableView.setAlternatingRowColors(True)
         self.tableView.setModel(self.proxyModel)
         self.tableView.setSortingEnabled(True)
@@ -170,8 +168,8 @@ class WordSelectorDialog(QDialog):
         self.tableView.verticalHeader().hide()
         self.tableView.setSelectionMode(QTableView.SingleSelection)
         self.tableView.setSelectionBehavior(QTableView.SelectRows)
-        self.tableView.clicked.connect(self.getItem)
-        # self.tableView.doubleClicked.connect(self.selectItem)
+        self.tableView.clicked.connect(self.selectItem)
+
         self.filterString = ""
         self.filterColumn = 0
         self.wordFilterEnabled = False
@@ -243,14 +241,14 @@ class WordSelectorDialog(QDialog):
         self.headerLayout.addWidget(self.headerSpacerWidget)
         self.headerLayout.addWidget(self.wordFilterLabel)
         self.headerLayout.addWidget(self.wordFilter)
-        # self.headerLayout.addStretch()
+
         self.wordFilter.setStyleSheet(
             "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.wordFilter.setFixedWidth(120)
-        # self.wordFilter.returnPressed.connect(self.setWordFilter)
+
         self.wordFilter.textChanged.connect(self.setWordFilter)
         self.wordFilter.setToolTip(
-            "Enter a starting letter or letters to find beautiful words")
+            "Enter a starting letter or letters to find words")
         self.meaningFilterLabel = QLabel("  Meaning Filter", headerFrame)
         self.meaningFilter = QLineEdit(headerFrame)
         self.meaningFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
@@ -259,13 +257,13 @@ class WordSelectorDialog(QDialog):
         self.meaningFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
         self.headerLayout.addWidget(self.meaningFilterLabel)
         self.headerLayout.addWidget(self.meaningFilter)
-        # self.headerLayout.addStretch()
+
         self.meaningFilter.setStyleSheet(
             "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.meaningFilter.setFixedWidth(120)
         self.meaningFilter.textChanged.connect(self.setMeaningFilter)
         self.meaningFilter.setToolTip(
-            "Enter a meaning for which you would like to find a beautiful word")
+            "Enter a meaning for which you would like to find a word")
         self.tagFilterLabel = QLabel(" Tag Filter", headerFrame)
         self.tagFilter = QLineEdit(headerFrame)
         self.tagFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
@@ -274,23 +272,21 @@ class WordSelectorDialog(QDialog):
         self.tagFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
         self.headerLayout.addWidget(self.tagFilterLabel)
         self.headerLayout.addWidget(self.tagFilter)
-        # self.headerLayout.addStretch()
+
         self.tagFilter.setStyleSheet(
             "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.tagFilter.setFixedWidth(120)
         self.tagFilter.textChanged.connect(self.setTagFilter)
         self.tagFilter.setToolTip(
-            "Enter a word you like like to find beautiful synonyms for")
+            "Enter a word you like like to find synonyms for")
         # These classifications need to move into a file that is generated from processing the word list; they should not be hard coded
-        classifications = ["All", "Measurement", "Sexuality", "Feelings and Emotions", "Fears", "Colours Tones Shades", "Sounds", "Texture", "Atmosphere", "Interiors, Furnishings", "Exteriors", "Light, Darkness", "Botany", "Olfactory", "Temperament", "Personalities",
-                           "Love", "Movement", "Music", "Taste", "Touch", "Beauty", "Art", "Culture", "Speech", "Geography", "Relationships", "Travel", "Sensory ", "Education and Development", "Physicality ", "Shape", "Time", "Spiritual", "Unknown Classification"]
         self.classificationFilterLabel = QLabel(
             " Classification Filter", headerFrame)
         self.classificationFilter = QComboBox(headerFrame)
         self.classificationFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                                 "background-color: rgb(255, 255, 255);")
-        self.classificationFilter.addItems(classifications)
-        self.classificationFilterValue = classifications[0]
+        self.classificationFilter.addItems(self.classifications)
+        self.classificationFilterValue = self.classifications[0]
         self.classificationFilterLabel.setStyleSheet(
             "color: rgb(255, 255, 255);")
         self.tagFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
@@ -305,24 +301,13 @@ class WordSelectorDialog(QDialog):
         self.classificationFilter.currentTextChanged.connect(
             self.setClassificationFilter)
         self.classificationFilter.setToolTip(
-            "Select a Classification for which you would like to find beautiful words")
-        # self.headerLayout.addSpacing(50)
-        # mainLayout.addChildLayout()
-        # mainLayout.addLayout(self.headerLayout)
+            "Select a Classification for which you would like to find words")
         mainLayout.addWidget(headerFrame)
         mainLayout.addWidget(self.tableView)
         self.setGeometry(300, 300, DIALOG_WIDTH, DIALOG_HEIGHT)
         self.setFixedSize(DIALOG_WIDTH, DIALOG_HEIGHT)
         self.setWindowTitle(self.title)
         self.setLayout(mainLayout)
-
-    def getItem(self, index):
-        mapped_index = self.proxyModel.mapToSource(index)
-        row = mapped_index.row()
-        column = mapped_index.column()
-        data = mapped_index.data()
-        #print("Row:  " + str(row) + ",Column:  " + str(column) + "  " + data)
-        self.selectItem(index)
 
     def selectItem(self, index):
         mapped_index = self.proxyModel.mapToSource(index)
@@ -338,29 +323,9 @@ class WordSelectorDialog(QDialog):
         newPosition = QPoint(x+5, y+5)
         self.selectionMenu.exec_(newPosition)
 
-        # self.selectionMenu.installEventFilter(self)
-        #print("You selected Data: " + data)
-
     def showSelection(self, data):
         self.selectedWord = data
         self.accept()
-        #print("Selection: " + data)
-
-    # def eventFilter(self, source, event):
-    #     if event.type() == QEvent.ContextMenu:
-    #         if source == self.tableView:
-    #             self.selectionMenu.exec_(event.globalPos())
-    #             return True
-    #         elif source == self.selectionMenu:
-    #             self.subMenu.exec_(event.globalPos())
-    #             return True
-    #     elif event.type() == QEvent.MouseButtonPress:
-    #         if event.button() == Qt.RightButton:
-    #             print("Right button clicked")
-    #     else:
-    #         print("Event: " + str(event.type()) + "  " + str(source))
-    #         Utilities.print_attributes(event)
-    #     return super().eventFilter(source, event)
 
     def setWordFilter(self):
         text = self.wordFilter.text()

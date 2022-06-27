@@ -18,10 +18,8 @@ NUMBER_OF_COLUMNS = 4
 
 
 class WordListManager:
-    def createModel(self, parent):
-
+    def createBeautifulWordsModel(self, parent):
         aBeautifulWordsCollection = BeautifulWordsCollection()
-        #aBeautifulWordsCollection = beautifulWordsCollection.BeautifulWordsCollection()
         numberOfRows = aBeautifulWordsCollection.load()
         model = QStandardItemModel(
             numberOfRows, NUMBER_OF_COLUMNS, parent)  # rows columns
@@ -63,16 +61,16 @@ class WordListManager:
               str(columnCount) + "  " + data)
 
     def createBeautifulWordsList(self, parent):
-        wordSelector = WordSelectorDialog("Beautiful Words", parent)
-        model = self.createModel(wordSelector)
+        classifications = ["All", "Measurement", "Sexuality", "Feelings and Emotions", "Fears", "Colours Tones Shades", "Sounds", "Texture", "Atmosphere", "Interiors, Furnishings", "Exteriors", "Light, Darkness", "Botany", "Olfactory", "Temperament", "Personalities",
+                           "Love", "Movement", "Music", "Taste", "Touch", "Beauty", "Art", "Culture", "Speech", "Geography", "Relationships", "Travel", "Sensory ", "Education and Development", "Physicality ", "Shape", "Time", "Spiritual", "Unknown Classification"]
+        wordSelector = WordSelectorDialog(
+            "Beautiful Words", classifications, parent)
+        model = self.createBeautifulWordsModel(wordSelector)
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
             print("Word selected was " +
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
-            print("Canceled! for Beautiful Words {}".format(
+            print("Canceled! Beautiful Words Dialog {}".format(
                 wordSelector.selectedWord))
-
-        # self.dumpModel(model)
-        # wordSelector.show()
