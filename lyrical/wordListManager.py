@@ -11,7 +11,7 @@ from beautifulwords.beautifulWord import BeautifulWord
 
 from PyQt5.QtCore import Qt, QSortFilterProxyModel, QModelIndex, QRegExp
 from typing import Callable
-from wordSelectorDialog import WordSelectorDialog
+from beautifulWordSelectorDialog import BeautifulWordSelectorDialog
 
 
 NUMBER_OF_COLUMNS = 4
@@ -61,9 +61,9 @@ class WordListManager:
               str(columnCount) + "  " + data)
 
     def createBeautifulWordsList(self, parent):
-        classifications = ["All", "Measurement", "Sexuality", "Feelings and Emotions", "Fears", "Colours Tones Shades", "Sounds", "Texture", "Atmosphere", "Interiors, Furnishings", "Exteriors", "Light, Darkness", "Botany", "Olfactory", "Temperament", "Personalities",
-                           "Love", "Movement", "Music", "Taste", "Touch", "Beauty", "Art", "Culture", "Speech", "Geography", "Relationships", "Travel", "Sensory ", "Education and Development", "Physicality ", "Shape", "Time", "Spiritual", "Unknown Classification"]
-        wordSelector = WordSelectorDialog(
+        classifications = ["All", "Measurement", "Sexuality", "Feelings and Emotions", "Inspiration", "Fears", "Colours Tones Shades", "Sounds", "Texture", "Atmosphere", "Interiors", "Furnishings", "Exteriors", "Light, Darkness", "Botany", "Olfactory", "Temperament", "Transformation", "Personalities",
+                           "Love", "Movement", "Music", "Taste", "Touch", "Beauty", "Art", "Culture", "Speech", "Geography", "Relationships", "Travel", "Sensory ", "Education and Development", "Physicality ", "Rhythms", "Shape", "Time", "Spiritual", "Unknown Classification", "Garments"]
+        wordSelector = BeautifulWordSelectorDialog(
             "Beautiful Words", classifications, parent)
         model = self.createBeautifulWordsModel(wordSelector)
         wordSelector.setSourceModel(model)

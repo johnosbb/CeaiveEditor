@@ -1,14 +1,14 @@
 
 
 from PyQt5.QtWidgets import (QWidget, QPushButton,
-                             QMenu, QAction, QDialog, QSizePolicy,
+                             QMenu, QAction, QDialog,
                              QTableView,  QHeaderView, QLineEdit, QLabel, QFrame, QVBoxLayout, QHBoxLayout, QComboBox)
 from PyQt5.QtGui import QIcon, QCursor
-from PyQt5.QtCore import Qt, QSortFilterProxyModel, QModelIndex, QRegExp, QRect, QSize, QEvent, QPoint
-from typing import Callable
-import utilities as Utilities
-from pprint import pprint
-import re
+from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
+
+# import utilities as Utilities
+
+from sortBeautifulWordsFilterProxyModel import SortBeautifulWordsFilterProxyModel
 
 DIALOG_WIDTH = 1000
 DIALOG_HEIGHT = 700
@@ -16,133 +16,12 @@ IMAGE_WIDTH = DIALOG_WIDTH
 IMAGE_HEIGHT = 103
 COLUMN_TO_FILTER = 0
 SPACER_SIZE = 20
-WORD_COLUMN = 0
-MEANING_COLUMN = 1
-TAG_COLUMN = 2
-CLASSIFICATION_COLUMN = 3
 
 
 headers = ["Word", "Meaning", ""]
 
 
-class SortFilterProxyModel(QSortFilterProxyModel):
-    def __init__(self, parent):
-        # the dialog or class that is requesting the filter, in our case the wordSelectorDialog
-        self.parentReference = parent
-        super().__init__()
-
-    def filterAcceptsRow_orig(self, sourceRow, sourceParent):
-        # self.dumpModel(sourceParent)
-        # self.dumpRow(sourceParent, sourceRow)
-        # self.filterKeyColumn is set by self.proxyModel.setFilterKeyColumn()
-        filterKeyColumn = self.filterKeyColumn()
-        if filterKeyColumn == self.parentReference.filterColumn:
-            index = self.sourceModel().index(
-                sourceRow, self.parentReference.filterColumn, sourceParent)
-            rawData = self.sourceModel().data(index)
-            pattern = repr(self.parentReference.filterString)[1:-1]
-            # print("Pattern: " +pattern + ", RawData: " + rawData)
-            if((rawData is not None) and (not pattern.isspace()) and (pattern != "")):
-                data = rawData.lstrip()
-                # Note that the result raw string has the quote at the beginning and end of the string. To remove them, you can use slices: [1:-1]
-                if(re.search(pattern, data)):
-                    return True
-        # Otherwise ignore
-        return super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
-
-    def checkForPattern(self, sourceRow, sourceParent, pattern, column):
-        index = self.sourceModel().index(
-            sourceRow, column, sourceParent)
-        rawData = self.sourceModel().data(index)
-
-        # print("Pattern: " +pattern + ", RawData: " + rawData)
-        if((rawData is not None) and (not pattern.isspace()) and (pattern != "")):
-            data = rawData.lstrip()
-            # Note that the result raw string has the quote at the beginning and end of the string. To remove them, you can use slices: [1:-1]
-            if(re.search(pattern.lower(), data.lower())):
-                return True
-            else:
-                return False
-        else:
-            return False
-
-    def filterAcceptsRow(self, sourceRow, sourceParent):
-        # self.dumpModel(sourceParent)
-        # self.dumpRow(sourceParent, sourceRow)
-        # self.filterKeyColumn is set by self.proxyModel.setFilterKeyColumn()
-        if(self.parentReference.wordFilterEnabled is True):
-            wordFilterFound = self.checkForPattern(
-                sourceRow, sourceParent, self.parentReference.wordFilterPattern, WORD_COLUMN)
-        else:
-            wordFilterFound = False
-        if(self.parentReference.meaningFilterEnabled is True):
-            meaningFilterFound = self.checkForPattern(
-                sourceRow, sourceParent, self.parentReference.meaningFilterPattern, MEANING_COLUMN)
-        else:
-            meaningFilterFound = False
-        if(self.parentReference.tagFilterEnabled is True):
-            tagFilterFound = self.checkForPattern(
-                sourceRow, sourceParent, self.parentReference.tagFilterPattern, TAG_COLUMN)
-        else:
-            tagFilterFound = False
-        if(self.parentReference.classificationFilterEnabled is True):
-            classificationFilterFound = self.checkForPattern(
-                sourceRow, sourceParent, self.parentReference.classificationFilterPattern, CLASSIFICATION_COLUMN)
-        else:
-            classificationFilterFound = False
-        # filterKeyColumn = self.filterKeyColumn()
-        # if filterKeyColumn == self.parentReference.filterColumn:
-        includeWordSearchResults = self.parentReference.wordFilterEnabled and wordFilterFound
-        if(self.parentReference.wordFilterEnabled is True and wordFilterFound is False):
-            includeWordSearchResults = False
-        else:
-            includeWordSearchResults = True
-        includeMeaningSearchResults = self.parentReference.meaningFilterEnabled and meaningFilterFound
-        if(self.parentReference.meaningFilterEnabled is True and meaningFilterFound is False):
-            includeMeaningSearchResults = False
-        else:
-            includeMeaningSearchResults = True
-        if(self.parentReference.tagFilterEnabled is True and tagFilterFound is False):
-            includeTagSearchResults = False
-        else:
-            includeTagSearchResults = True
-        if(self.parentReference.classificationFilterEnabled is True and classificationFilterFound is False):
-            includeClassificationSearchResults = False
-        else:
-            includeClassificationSearchResults = True
-
-        if((includeWordSearchResults is True) and (includeMeaningSearchResults is True) and (includeTagSearchResults is True) and (includeClassificationSearchResults is True)):
-            return True
-        else:
-            return False
-        # Otherwise ignore
-        # return super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
-
-    def dumpModel(self, sourceParent):
-        rowCount = self.sourceModel().rowCount()
-        columnCount = self.sourceModel().columnCount()
-        for row in range(rowCount):
-            data = ""
-            for column in range(columnCount):
-                index = self.sourceModel().index(
-                    row, column, sourceParent)
-                rawData = self.sourceModel().data(index)
-                data = data + str(column) + " : " + rawData
-            print(str(row) + " : " + data)
-
-    def dumpRow(self, sourceParent, sourceRow):
-        data = ""
-        columnCount = self.sourceModel().columnCount()
-        for column in range(columnCount):
-            index = self.sourceModel().index(
-                sourceRow, column, sourceParent)
-            rawData = self.sourceModel().data(index)
-            data = data + str(column) + " : " + rawData
-        print(" Row:" + str(sourceRow) + ", Column Count: " +
-              str(columnCount) + "  " + data)
-
-
-class WordSelectorDialog(QDialog):
+class BeautifulWordSelectorDialog(QDialog):
     def __init__(self,  title, classifications, parent=None,):
         QDialog.__init__(self,  parent)
         self.parent = parent
@@ -151,7 +30,7 @@ class WordSelectorDialog(QDialog):
 
         self.lastStart = 0
         self.title = title
-        self.proxyModel = SortFilterProxyModel(self)
+        self.proxyModel = SortBeautifulWordsFilterProxyModel(self)
         # This property holds whether the proxy model is dynamically sorted and filtered whenever the contents of the source model change
         self.proxyModel.setDynamicSortFilter(True)
         self.sourceView = QTableView()  # where we store the unfiltered list
@@ -172,20 +51,14 @@ class WordSelectorDialog(QDialog):
 
         self.filterString = ""
         self.filterColumn = 0
+        self.resetFilterEnables()
+        self.initUI()
+
+    def resetFilterEnables(self):
         self.wordFilterEnabled = False
         self.meaningFilterEnabled = False
         self.tagFilterEnabled = False
         self.classificationFilterEnabled = False
-        self.initUI()
-
-    def mousePressEvent(self, event):
-        '''re-implemented to suppress Right-Clicks from selecting items.'''
-        if event.type() == QEvent.MouseButtonPress:
-            if event.button() == Qt.RightButton:
-                print("Right button was pressed")
-                return
-            else:
-                super(QDialog, self).mousePressEvent(event)
 
     def clearFilters(self):
         print("Clearing the filters")
@@ -207,31 +80,28 @@ class WordSelectorDialog(QDialog):
         self.clearFiltersButton.setIconSize(QSize(32, 32))
         self.headerLayout.addWidget(self.clearFiltersButton)
 
-    def initUI(self):
-        mainLayout = QVBoxLayout()
-        self.horizontalLayoutWidget = QWidget(self)
-        self.horizontalLayoutWidget.setGeometry(
-            QRect(0, 0, DIALOG_WIDTH, IMAGE_HEIGHT))
+    def createHeader(self):
         self.headerLayout = QHBoxLayout()
         self.headerLayout.setObjectName("self.headerLayout")
         self.headerLayout.setContentsMargins(10, 10, 10, 10)
-        headerFrame = QFrame(self.horizontalLayoutWidget)
-        headerFrame.setMinimumSize(QSize(DIALOG_WIDTH, IMAGE_HEIGHT))
-        headerFrame.setBaseSize(QSize(0, 0))
-        headerFrame.setAutoFillBackground(False)
-        headerFrame.setObjectName("headerFrame")
-        headerFrame.setStyleSheet(
-            "QFrame#headerFrame { background-repeat:no-repeat; background-position: left; background-image: url(:/images/images/WomanReadingHeader.png); }")
-        headerFrame.setFrameShape(QFrame.StyledPanel)
-        headerFrame.setFrameShadow(QFrame.Raised)
-        headerFrame.setLayout(self.headerLayout)
-        self.headerSpacerWidget = QWidget(headerFrame)
+        self.headerFrame = QFrame(self.horizontalLayoutWidget)
+        self.headerFrame.setMinimumSize(QSize(DIALOG_WIDTH, IMAGE_HEIGHT))
+        self.headerFrame.setBaseSize(QSize(0, 0))
+        self.headerFrame.setAutoFillBackground(False)
+        self.headerFrame.setObjectName("HeaderBackgroundImage")
+
+        self.headerFrame.setStyleSheet(
+            "QFrame#HeaderBackgroundImage { background-repeat:no-repeat; background-position: left; background-image: url(:/images/images/WomanReadingHeader.png); }")
+        self.headerFrame.setFrameShape(QFrame.StyledPanel)
+        self.headerFrame.setFrameShadow(QFrame.Raised)
+        self.headerFrame.setLayout(self.headerLayout)
+        self.headerSpacerWidget = QWidget(self.headerFrame)
         self.headerSpacerWidget.setObjectName("headerSpacerWidget")
         self.headerSpacerWidget.setGeometry(
             QRect(0, 0, SPACER_SIZE, SPACER_SIZE))
         self.headerSpacerWidget.setObjectName("headerSpacerWidget")
-        self.wordFilter = QLineEdit(headerFrame)
-        self.wordFilterLabel = QLabel("  Word Filter", headerFrame)
+        self.wordFilter = QLineEdit(self.headerFrame)
+        self.wordFilterLabel = QLabel("  Word Filter", self.headerFrame)
         self.wordFilterLabel.setBuddy(self.wordFilter)
         self.wordFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                       "background-color: rgb(255, 255, 255);")
@@ -249,8 +119,8 @@ class WordSelectorDialog(QDialog):
         self.wordFilter.textChanged.connect(self.setWordFilter)
         self.wordFilter.setToolTip(
             "Enter a starting letter or letters to find words")
-        self.meaningFilterLabel = QLabel("  Meaning Filter", headerFrame)
-        self.meaningFilter = QLineEdit(headerFrame)
+        self.meaningFilterLabel = QLabel("  Meaning Filter", self.headerFrame)
+        self.meaningFilter = QLineEdit(self.headerFrame)
         self.meaningFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                          "background-color: rgb(255, 255, 255);")
         self.meaningFilterLabel.setBuddy(self.meaningFilter)
@@ -264,8 +134,8 @@ class WordSelectorDialog(QDialog):
         self.meaningFilter.textChanged.connect(self.setMeaningFilter)
         self.meaningFilter.setToolTip(
             "Enter a meaning for which you would like to find a word")
-        self.tagFilterLabel = QLabel(" Tag Filter", headerFrame)
-        self.tagFilter = QLineEdit(headerFrame)
+        self.tagFilterLabel = QLabel(" Tag Filter", self.headerFrame)
+        self.tagFilter = QLineEdit(self.headerFrame)
         self.tagFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                      "background-color: rgb(255, 255, 255);")
         self.tagFilterLabel.setBuddy(self.tagFilter)
@@ -281,8 +151,8 @@ class WordSelectorDialog(QDialog):
             "Enter a word you like like to find synonyms for")
         # These classifications need to move into a file that is generated from processing the word list; they should not be hard coded
         self.classificationFilterLabel = QLabel(
-            " Classification Filter", headerFrame)
-        self.classificationFilter = QComboBox(headerFrame)
+            " Classification Filter", self.headerFrame)
+        self.classificationFilter = QComboBox(self.headerFrame)
         self.classificationFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                                 "background-color: rgb(255, 255, 255);")
         self.classificationFilter.addItems(self.classifications)
@@ -302,7 +172,14 @@ class WordSelectorDialog(QDialog):
             self.setClassificationFilter)
         self.classificationFilter.setToolTip(
             "Select a Classification for which you would like to find words")
-        mainLayout.addWidget(headerFrame)
+
+    def initUI(self):
+        mainLayout = QVBoxLayout()
+        self.horizontalLayoutWidget = QWidget(self)
+        self.horizontalLayoutWidget.setGeometry(
+            QRect(0, 0, DIALOG_WIDTH, IMAGE_HEIGHT))
+        self.createHeader()
+        mainLayout.addWidget(self.headerFrame)
         mainLayout.addWidget(self.tableView)
         self.setGeometry(300, 300, DIALOG_WIDTH, DIALOG_HEIGHT)
         self.setFixedSize(DIALOG_WIDTH, DIALOG_HEIGHT)
