@@ -24,7 +24,7 @@ import thesaurusWordnet
 from customFileSystemModel import CustomFileSystemModel
 import thesaurusWebster
 import findDialog
-from correction_action import SpecialAction
+from specialAction import SpecialAction
 
 
 from wordListManager import WordListManager
@@ -615,9 +615,13 @@ class MainWindow(QMainWindow):
             self.status.showMessage(
                 "Functional Word Score: " + str(count), 2000)
 
-    def show_beautiful_words(self):
+    def showBeautifulWords(self):
         wordListManager = WordListManager()
         wordListManager.createBeautifulWordsList(self)
+
+    def showWordsForColor(self):
+        wordListManager = WordListManager()
+        wordListManager.createWordsForColorList(self)
 
     # Create a dockable Project Explorer
 
@@ -705,9 +709,17 @@ class MainWindow(QMainWindow):
             QIcon(":/images/images/beauty.png"), "Beautiful Words", self)
         beautiful_words_action.setStatusTip("Beautiful Words")
         beautiful_words_action.triggered.connect(
-            self.show_beautiful_words)
+            self.showBeautifulWords)
         style_menu.addAction(beautiful_words_action)
         style_toolbar.addAction(beautiful_words_action)
+
+        words_for_color_action = QAction(
+            QIcon(":/images/images/beauty.png"), "Words For Color", self)
+        words_for_color_action.setStatusTip("Words For Color")
+        words_for_color_action.triggered.connect(
+            self.showWordsForColor)
+        style_menu.addAction(words_for_color_action)
+        style_toolbar.addAction(words_for_color_action)
 
         self.thesaurusLookupLabel = QLabel("  Thesaurus Search")
         style_toolbar.addWidget(self.thesaurusLookupLabel)

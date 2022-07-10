@@ -1,20 +1,24 @@
 
-from PyQt5.QtGui import QIcon, QStandardItemModel
+from PyQt5.QtGui import QStandardItemModel, QBrush, QColor
 
 import sys
 from beautifulwords.beautifulWordsCollection import BeautifulWordsCollection
 from beautifulwords.beautifulWord import BeautifulWord
 
+from colours.coloursCollection import ColoursCollection
+from colours.colour import Colour
+
 # import beautifulWordsCollection
 # import beautifulWord
 #import beautifulWord
 
-from PyQt5.QtCore import Qt, QSortFilterProxyModel, QModelIndex, QRegExp
-from typing import Callable
+from PyQt5.QtCore import Qt, QModelIndex
+
 from beautifulWordSelectorDialog import BeautifulWordSelectorDialog
+from colorSelectorDialog import WordForColorSelectorDialog
 
-
-NUMBER_OF_COLUMNS = 4
+NUMBER_OF_BW_COLUMNS = 4
+NUMBER_OF_WFC_COLUMNS = 3
 
 
 class WordListManager:
@@ -22,7 +26,7 @@ class WordListManager:
         aBeautifulWordsCollection = BeautifulWordsCollection()
         numberOfRows = aBeautifulWordsCollection.load()
         model = QStandardItemModel(
-            numberOfRows, NUMBER_OF_COLUMNS, parent)  # rows columns
+            numberOfRows, NUMBER_OF_BW_COLUMNS, parent)  # rows columns
         model.setHeaderData(0, Qt.Horizontal, "Word")
         model.setHeaderData(1, Qt.Horizontal, "Meaning")
         model.setHeaderData(2, Qt.Horizontal, "Tags")
@@ -42,6 +46,36 @@ class WordListManager:
                 classifications = classifications + " " + classification
             model.setData(model.index(
                 row, 3, QModelIndex()), classifications, Qt.DisplayRole)
+        return model
+
+    def createWordsForColourModel(self, parent):
+        aColoursCollection = ColoursCollection()
+        numberOfRows = aColoursCollection.load()
+        model = QStandardItemModel(
+            numberOfRows, NUMBER_OF_WFC_COLUMNS, parent)  # rows columns
+        model.setHeaderData(0, Qt.Horizontal, "Colour")
+        model.setHeaderData(1, Qt.Horizontal, "Swatch")
+        #model.setHeaderData(2, Qt.Horizontal, "Tags")
+        model.setHeaderData(2, Qt.Horizontal, "Classification")
+        for row, colour in enumerate(aColoursCollection.colourList):
+            model.setData(model.index(
+                row, 0, QModelIndex()), colour.colour, Qt.DisplayRole)
+
+            model.setData(model.index(
+                row, 1, QModelIndex()), "                                                                                 ", Qt.DisplayRole)
+            model.setData(model.index(
+                row, 1, QModelIndex()), QBrush(
+                QColor(colour.rgbValue)), Qt.BackgroundRole)
+            # tags = ""
+            # for number, tag in enumerate(colour.tags):
+            #     tags = tags + " " + tag
+            # model.setData(model.index(
+            #     row, 2, QModelIndex()), tags, Qt.DisplayRole)
+            classifications = ""
+            for number, classification in enumerate(colour.classification):
+                classifications = classifications + " " + classification
+            model.setData(model.index(
+                row, 2, QModelIndex()), classifications, Qt.DisplayRole)
         return model
 
     def dumpModel(self, model):
@@ -69,6 +103,21 @@ class WordListManager:
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
             print("Word selected was " +
+                  wordSelector.selectedWord)
+            parent.editor.insert_selected_word(wordSelector.selectedWord)
+        else:
+            print("Canceled! Beautiful Words Dialog {}".format(
+                wordSelector.selectedWord))
+
+    def createWordsForColorList(self, parent):
+        classifications = ["All", "Red", "Blue", "Yellow", "Pink", "Orange",
+                           "Green", "White", "Brown", "Black", "Grey", "Gray", "Silver", "Gold"]
+        wordSelector = WordForColorSelectorDialog(
+            "Words For Color", classifications, parent)
+        model = self.createWordsForColourModel(wordSelector)
+        wordSelector.setSourceModel(model)
+        if wordSelector.exec():
+            print("Colour selected was " +
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:

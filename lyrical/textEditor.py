@@ -4,7 +4,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtPrintSupport import *
 
 
-from correction_action import SpecialAction
+from specialAction import SpecialAction
 from highlighter import SpellCheckHighlighter
 from spellCheck import SpellCheck
 from thesaurusWordnet import ThesaurusWordnet
@@ -22,6 +22,12 @@ class TextEdit(QTextEdit):
             super().__init__(*args[2:])
             self.speller = args[0]
             self.thesaurus = args[1]
+            self.setObjectName("HeaderBackgroundColor")
+            # background-repeat:repeat; background-position: top left; background-origin: content;  background-clip: padding;
+            # self.setStyleSheet(
+            #    "QTextEdit#HeaderBackgroundImage { background-position: top left; background-origin: content;  background-clip: padding; background-image: url(:/images/images/paperbackgrounds1.png); }")
+            self.setStyleSheet(
+                "QTextEdit#HeaderBackgroundColor { background-color: #F1F0E8;}")
         else:
             super().__init__(*args)
 
