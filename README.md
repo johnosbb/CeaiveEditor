@@ -135,6 +135,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 # Writers Aids
 - [Describing Colour](https://www.writerswrite.co.za/204-words-that-describe-colours/)
 - [Encycolorpedia](https://encycolorpedia.com/named)
+- Words for smell
 
 
 # Online Tools
