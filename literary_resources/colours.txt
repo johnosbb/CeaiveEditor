@@ -1,5 +1,11 @@
+Amber : #FFBF00 : Yellow,Brown
+Amethyst : #9966CC : Purple
+Apricot : #FBCEB1 : Orange
 Aquamarine : #7FFFD4	: Blue,Green
+Avocado : #568203 : Green
+Ash : #B2BEB5 : Grey,Gray
 Azure : #F0FFFF	: Blue
+Baby Blue :  #89CFF0 : Blue
 Beige : #F5F5DC : Yellow
 Bisque : #FFE4C4 : Yellow	
 Black : #000000	: Black

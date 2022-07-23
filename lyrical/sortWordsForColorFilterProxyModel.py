@@ -4,8 +4,7 @@ from sortFilterProxyModel import SortFilterProxyModel
 
 COLOUR_COLUMN = 0
 RGB_VALUE_COLUMN = 1
-TAG_COLUMN = 2
-CLASSIFICATION_COLUMN = 3
+CLASSIFICATION_COLUMN = 2
 
 
 class SortWordsForColorFilterProxyModel(SortFilterProxyModel):

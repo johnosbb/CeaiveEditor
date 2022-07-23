@@ -6,6 +6,7 @@ from beautifulwords.beautifulWordsCollection import BeautifulWordsCollection
 from beautifulwords.beautifulWord import BeautifulWord
 
 from colours.coloursCollection import ColoursCollection
+from colourDescriptors.colourDescriptorsCollection import DescriptorsCollection
 from colours.colour import Colour
 
 # import beautifulWordsCollection
@@ -16,6 +17,7 @@ from PyQt5.QtCore import Qt, QModelIndex
 
 from beautifulWordSelectorDialog import BeautifulWordSelectorDialog
 from colorSelectorDialog import WordForColorSelectorDialog
+from colorDescriptorSelectorDialog import WordForColorDescriptorsSelectorDialog
 
 NUMBER_OF_BW_COLUMNS = 4
 NUMBER_OF_WFC_COLUMNS = 3
@@ -78,6 +80,34 @@ class WordListManager:
                 row, 2, QModelIndex()), classifications, Qt.DisplayRole)
         return model
 
+    def createWordsForColourDescriptorsModel(self, parent):
+        aDescriptorsCollection = DescriptorsCollection()
+        numberOfRows = aDescriptorsCollection.load()
+        model = QStandardItemModel(
+            numberOfRows, NUMBER_OF_WFC_COLUMNS, parent)  # rows columns
+        model.setHeaderData(0, Qt.Horizontal, "Colour Descriptor")
+        model.setHeaderData(1, Qt.Horizontal, "Description")
+        #model.setHeaderData(2, Qt.Horizontal, "Tags")
+        model.setHeaderData(2, Qt.Horizontal, "Classification")
+        for row, descriptor in enumerate(aDescriptorsCollection.descriptorList):
+            model.setData(model.index(
+                row, 0, QModelIndex()), descriptor.descriptor, Qt.DisplayRole)
+
+            model.setData(model.index(
+                row, 1, QModelIndex()), descriptor.description, Qt.DisplayRole)
+
+            # tags = ""
+            # for number, tag in enumerate(colour.tags):
+            #     tags = tags + " " + tag
+            # model.setData(model.index(
+            #     row, 2, QModelIndex()), tags, Qt.DisplayRole)
+            classifications = ""
+            for number, classification in enumerate(descriptor.classification):
+                classifications = classifications + " " + classification
+            model.setData(model.index(
+                row, 2, QModelIndex()), classifications, Qt.DisplayRole)
+        return model
+
     def dumpModel(self, model):
         rowCount = model.rowCount()
         for row in range(rowCount):
@@ -121,5 +151,19 @@ class WordListManager:
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
-            print("Canceled! Beautiful Words Dialog {}".format(
+            print("Canceled! Words for Colour Dialog {}".format(
+                wordSelector.selectedWord))
+
+    def createWordsForColorDescriptorsList(self, parent):
+        classifications = ["All", "Qualify Colour", "Qualify Lack of Colour"]
+        wordSelector = WordForColorDescriptorsSelectorDialog(
+            "Words For Color Descriptors", classifications, parent)
+        model = self.createWordsForColourDescriptorsModel(wordSelector)
+        wordSelector.setSourceModel(model)
+        if wordSelector.exec():
+            print("Descriptor selected was " +
+                  wordSelector.selectedWord)
+            parent.editor.insert_selected_word(wordSelector.selectedWord)
+        else:
+            print("Canceled! Colour Descriptor Words Dialog {}".format(
                 wordSelector.selectedWord))

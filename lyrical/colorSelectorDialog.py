@@ -1,7 +1,7 @@
 
 
 from PyQt5.QtWidgets import (QWidget, QPushButton,
-                             QMenu, QAction, QDialog, QGridLayout,
+                             QMenu, QDialog, QGridLayout,
                              QTableView,  QHeaderView, QLineEdit, QLabel, QFrame, QVBoxLayout, QHBoxLayout, QComboBox)
 from PyQt5.QtGui import QIcon, QCursor
 from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
@@ -12,15 +12,12 @@ from sortWordsForColorFilterProxyModel import SortWordsForColorFilterProxyModel
 
 from colorTile import ColorTile
 
-DIALOG_WIDTH = 600
+DIALOG_WIDTH = 620
 DIALOG_HEIGHT = 700
 IMAGE_WIDTH = DIALOG_WIDTH
 IMAGE_HEIGHT = 103
 COLUMN_TO_FILTER = 0
 SPACER_SIZE = 20
-
-
-headers = ["Word", "Meaning", ""]
 
 
 class WordForColorSelectorDialog(QDialog):
@@ -44,6 +41,7 @@ class WordForColorSelectorDialog(QDialog):
         self.setWindowTitle(title)
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeToContents)
+        self.tableView.horizontalHeader().setDefaultAlignment(Qt.AlignLeft)
         self.tableView.setAlternatingRowColors(True)
         self.tableView.setSortingEnabled(True)
         self.tableView.verticalHeader().hide()
@@ -65,9 +63,8 @@ class WordForColorSelectorDialog(QDialog):
     def clearFilters(self):
         print("Clearing the filters")
         self.colourFilter.setText("")
-        self.meaningFilter.setText("")
+        # self.meaningFilter.setText("")
         self.classificationFilter.setCurrentIndex(0)
-        self.tagFilter.setText("")
 
     def AddClearFiltersButton(self):
         self.clearFiltersButton = QPushButton('', self)
@@ -87,13 +84,14 @@ class WordForColorSelectorDialog(QDialog):
         self.headerLayout.setObjectName("self.headerLayout")
         self.headerLayout.setContentsMargins(10, 10, 10, 10)
         self.headerFrame = QFrame(self.horizontalLayoutWidget)
-        self.headerFrame.setMinimumSize(QSize(DIALOG_WIDTH, IMAGE_HEIGHT))
+        self.headerFrame.setMinimumSize(QSize(DIALOG_WIDTH-20, IMAGE_HEIGHT))
+        self.headerFrame.setMaximumSize(QSize(DIALOG_WIDTH-20, IMAGE_HEIGHT))
         self.headerFrame.setBaseSize(QSize(0, 0))
         self.headerFrame.setAutoFillBackground(False)
         self.headerFrame.setObjectName("HeaderBackgroundImage")
 
         self.headerFrame.setStyleSheet(
-            "QFrame#HeaderBackgroundImage { background-repeat:no-repeat; background-position: left; background-image: url(:/images/images/WomanReadingHeader.png); }")
+            "QFrame#HeaderBackgroundImage { background-repeat:no-repeat; background-position: left; background-image: url(:/images/images/WordsForColourLongForm.png); }")
         self.headerFrame.setFrameShape(QFrame.StyledPanel)
         self.headerFrame.setFrameShadow(QFrame.Raised)
         self.headerFrame.setLayout(self.headerLayout)
@@ -105,9 +103,10 @@ class WordForColorSelectorDialog(QDialog):
         self.colourFilter = QLineEdit(self.headerFrame)
         self.colourFilterLabel = QLabel("  Colour Filter", self.headerFrame)
         self.colourFilterLabel.setBuddy(self.colourFilter)
-        self.colourFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                        "background-color: rgb(255, 255, 255);")
-        self.colourFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
+        self.colourFilter.setStyleSheet("QLineEdit { color: rgb(0, 0, 0);\n"
+                                        "background-color: rgb(255, 255, 255); }")
+        self.colourFilterLabel.setStyleSheet(
+            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.colourFilterLabel.setObjectName("colourFilterLabel")
         self.headerLayout.addStretch()
         self.headerLayout.addWidget(self.headerSpacerWidget)
@@ -141,20 +140,21 @@ class WordForColorSelectorDialog(QDialog):
         self.classificationFilterLabel = QLabel(
             " Colour Family Filter", self.headerFrame)
         self.classificationFilter = QComboBox(self.headerFrame)
-        self.classificationFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                                "background-color: rgb(255, 255, 255);")
+        self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
+                                                "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
+
         self.classificationFilter.addItems(self.classifications)
         self.classificationFilterValue = self.classifications[0]
         self.classificationFilterLabel.setStyleSheet(
-            "color: rgb(255, 255, 255);")
+            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
 
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
         self.headerLayout.addWidget(self.classificationFilter)
         self.AddClearFiltersButton()
         self.headerLayout.addStretch()
-        self.classificationFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        # self.classificationFilter.setStyleSheet(
+        #     "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.classificationFilter.setFixedWidth(120)
         self.classificationFilter.currentTextChanged.connect(
             self.setClassificationFilter)
@@ -205,7 +205,7 @@ class WordForColorSelectorDialog(QDialog):
     def setWordFilter(self):
         text = self.colourFilter.text()
         if((text is not None) and (not text.isspace()) and (text != "")):
-            self.filterString = "^" + text
+            self.filterString = "" + text
             self.colourFilterPattern = repr(
                 self.filterString)[1:-1]
             self.filterColumn = 0

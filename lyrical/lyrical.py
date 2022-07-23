@@ -623,6 +623,9 @@ class MainWindow(QMainWindow):
         wordListManager = WordListManager()
         wordListManager.createWordsForColorList(self)
 
+    def showDescriptorsForColor(self):
+        wordListManager = WordListManager()
+        wordListManager.createWordsForColorDescriptorsList(self)
     # Create a dockable Project Explorer
 
     def define_project_explorer(self):
@@ -714,12 +717,20 @@ class MainWindow(QMainWindow):
         style_toolbar.addAction(beautiful_words_action)
 
         words_for_color_action = QAction(
-            QIcon(":/images/images/beauty.png"), "Words For Color", self)
+            QIcon(":/images/images/colour.png"), "Words For Color", self)
         words_for_color_action.setStatusTip("Words For Color")
         words_for_color_action.triggered.connect(
             self.showWordsForColor)
         style_menu.addAction(words_for_color_action)
         style_toolbar.addAction(words_for_color_action)
+
+        color_descriptor_action = QAction(
+            QIcon(":/images/images/colour-descriptors.png"), "Words that Qualify Color", self)
+        color_descriptor_action.setStatusTip("Words For Color")
+        color_descriptor_action.triggered.connect(
+            self.showDescriptorsForColor)
+        style_menu.addAction(color_descriptor_action)
+        style_toolbar.addAction(color_descriptor_action)
 
         self.thesaurusLookupLabel = QLabel("  Thesaurus Search")
         style_toolbar.addWidget(self.thesaurusLookupLabel)

@@ -18,9 +18,6 @@ COLUMN_TO_FILTER = 0
 SPACER_SIZE = 20
 
 
-headers = ["Word", "Meaning", ""]
-
-
 class BeautifulWordSelectorDialog(QDialog):
     def __init__(self,  title, classifications, parent=None,):
         QDialog.__init__(self,  parent)
@@ -42,6 +39,7 @@ class BeautifulWordSelectorDialog(QDialog):
         self.setWindowTitle(title)
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeToContents)
+        self.tableView.horizontalHeader().setDefaultAlignment(Qt.AlignLeft)
         self.tableView.setAlternatingRowColors(True)
         self.tableView.setSortingEnabled(True)
         self.tableView.verticalHeader().hide()
@@ -85,7 +83,8 @@ class BeautifulWordSelectorDialog(QDialog):
         self.headerLayout.setObjectName("self.headerLayout")
         self.headerLayout.setContentsMargins(10, 10, 10, 10)
         self.headerFrame = QFrame(self.horizontalLayoutWidget)
-        self.headerFrame.setMinimumSize(QSize(DIALOG_WIDTH, IMAGE_HEIGHT))
+        self.headerFrame.setMinimumSize(QSize(DIALOG_WIDTH-20, IMAGE_HEIGHT))
+        self.headerFrame.setMaximumSize(QSize(DIALOG_WIDTH-20, IMAGE_HEIGHT))
         self.headerFrame.setBaseSize(QSize(0, 0))
         self.headerFrame.setAutoFillBackground(False)
         self.headerFrame.setObjectName("HeaderBackgroundImage")
@@ -105,7 +104,8 @@ class BeautifulWordSelectorDialog(QDialog):
         self.wordFilterLabel.setBuddy(self.wordFilter)
         self.wordFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                       "background-color: rgb(255, 255, 255);")
-        self.wordFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
+        self.wordFilterLabel.setStyleSheet(
+            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.wordFilterLabel.setObjectName("wordFilterLabel")
         self.headerLayout.addStretch()
         self.headerLayout.addWidget(self.headerSpacerWidget)
@@ -124,7 +124,8 @@ class BeautifulWordSelectorDialog(QDialog):
         self.meaningFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                          "background-color: rgb(255, 255, 255);")
         self.meaningFilterLabel.setBuddy(self.meaningFilter)
-        self.meaningFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
+        self.meaningFilterLabel.setStyleSheet(
+            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.headerLayout.addWidget(self.meaningFilterLabel)
         self.headerLayout.addWidget(self.meaningFilter)
 
@@ -139,7 +140,8 @@ class BeautifulWordSelectorDialog(QDialog):
         self.tagFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                      "background-color: rgb(255, 255, 255);")
         self.tagFilterLabel.setBuddy(self.tagFilter)
-        self.tagFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
+        self.tagFilterLabel.setStyleSheet(
+            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.headerLayout.addWidget(self.tagFilterLabel)
         self.headerLayout.addWidget(self.tagFilter)
 
@@ -154,19 +156,20 @@ class BeautifulWordSelectorDialog(QDialog):
             " Classification Filter", self.headerFrame)
         self.classificationFilter = QComboBox(self.headerFrame)
         self.classificationFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                                "background-color: rgb(255, 255, 255);")
+                                                "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;")
         self.classificationFilter.addItems(self.classifications)
         self.classificationFilterValue = self.classifications[0]
         self.classificationFilterLabel.setStyleSheet(
-            "color: rgb(255, 255, 255);")
-        self.tagFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
+
+            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        self.tagFilterLabel.setStyleSheet(
+            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
         self.headerLayout.addWidget(self.classificationFilter)
         self.AddClearFiltersButton()
         self.headerLayout.addStretch()
-        self.classificationFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+
         self.classificationFilter.setFixedWidth(120)
         self.classificationFilter.currentTextChanged.connect(
             self.setClassificationFilter)
