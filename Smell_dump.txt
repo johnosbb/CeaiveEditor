@@ -1,0 +1,75 @@
+anosmic : General words for smell : 
+antiseptic : General words for smell : 
+aroma : General words for smell : 
+comforting : General words for smell : 
+delicate : General words for smell : 
+evocative : General words for smell : 
+faint : General words for smell : 
+fragrance : General words for smell : 
+heady : General words for smell : 
+heavy : General words for smell : 
+intoxicating : General words for smell : 
+laden : General words for smell : 
+odour/odor : General words for smell : 
+odorous : General words for smell : 
+odourless : General words for smell : 
+piquant : General words for smell : 
+powerful : General words for smell : 
+redolent : General words for smell : 
+reek : General words for smell : 
+scent : General words for smell : 
+whiff : General words for smell : 
+acrid : Unpleasant Smells : 
+damp : Unpleasant Smells : 
+fetid : Unpleasant Smells : 
+frowsty : Unpleasant Smells : 
+funky : Unpleasant Smells : 
+fusty : Unpleasant Smells : 
+high : Unpleasant Smells : 
+malodorous : Unpleasant Smells : 
+musty : Unpleasant Smells : 
+nasty : Unpleasant Smells : 
+nauseating : Unpleasant Smells : 
+noisome : Unpleasant Smells : 
+overpowering : Unpleasant Smells : 
+pungent : Unpleasant Smells : 
+putrid : Unpleasant Smells : 
+rancid : Unpleasant Smells : 
+rank : Unpleasant Smells : 
+ripe : Unpleasant Smells : 
+sickly : Unpleasant Smells : 
+smelly : Unpleasant Smells : 
+sour : Unpleasant Smells : 
+stale : Unpleasant Smells : 
+stench : Unpleasant Smells : 
+stinking : Unpleasant Smells : 
+stuffy : Unpleasant Smells : 
+ambrosial : Pleasant Smells : 
+aromatic : Pleasant Smells : 
+bouquet : Pleasant Smells : 
+delicious : Pleasant Smells : 
+fresh : Pleasant Smells : 
+fragrant : Pleasant Smells : 
+perfumed : Pleasant Smells : 
+rich : General words for smell : 
+savoury/savory : Pleasant Smells : 
+scented : Pleasant Smells : 
+sweet : Pleasant Smells : 
+tangy : Pleasant Smells : 
+citrusy : Words that smell like something : 
+coppery : Words that smell like something : 
+earthy : Words that smell like something : 
+fishy : Words that smell like something : 
+floral : Words that smell like something : 
+flowery : Words that smell like something : 
+fruity : Words that smell like something : 
+gamy : Words that smell like something : 
+garlicky : Words that smell like something : 
+leathery : Words that smell like something : 
+lemony : Words that smell like something : 
+medicinal : Words that smell like something : 
+minty : Words that smell like something : 
+musky : Words that smell like something : 
+peachy : Words that smell like something : 
+smoky : Words that smell like something : 
+woody : Words that smell like something : 

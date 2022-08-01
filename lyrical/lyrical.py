@@ -623,6 +623,10 @@ class MainWindow(QMainWindow):
         wordListManager = WordListManager()
         wordListManager.createWordsForColorList(self)
 
+    def showWordsForSmell(self):
+        wordListManager = WordListManager()
+        wordListManager.createWordsForSmellList(self)
+
     def showDescriptorsForColor(self):
         wordListManager = WordListManager()
         wordListManager.createWordsForColorDescriptorsList(self)
@@ -731,6 +735,14 @@ class MainWindow(QMainWindow):
             self.showDescriptorsForColor)
         style_menu.addAction(color_descriptor_action)
         style_toolbar.addAction(color_descriptor_action)
+
+        words_for_smell_action = QAction(
+            QIcon(":/images/images/smells.png"), "Words For Smell", self)
+        words_for_smell_action.setStatusTip("Words For Smell")
+        words_for_smell_action.triggered.connect(
+            self.showWordsForSmell)
+        style_menu.addAction(words_for_smell_action)
+        style_toolbar.addAction(words_for_smell_action)
 
         self.thesaurusLookupLabel = QLabel("  Thesaurus Search")
         style_toolbar.addWidget(self.thesaurusLookupLabel)
