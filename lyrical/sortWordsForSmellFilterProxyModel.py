@@ -3,7 +3,8 @@ import re
 from sortFilterProxyModel import SortFilterProxyModel
 
 SMELL_COLUMN = 0
-CLASSIFICATION_COLUMN = 1
+DESCRIPTION_COLUMN = 1
+CLASSIFICATION_COLUMN = 2
 
 
 class SortWordsForSmellFilterProxyModel(SortFilterProxyModel):
@@ -36,6 +37,12 @@ class SortWordsForSmellFilterProxyModel(SortFilterProxyModel):
                 sourceRow, sourceParent, self.parentReference.smellFilterPattern, SMELL_COLUMN)
         else:
             smellFilterFound = False
+        if(self.parentReference.descriptionFilterEnabled is True):
+            descriptionFilterFound = self.checkForPattern(
+                sourceRow, sourceParent, self.parentReference.descriptionFilterPattern, DESCRIPTION_COLUMN)
+        else:
+            descriptionFilterFound = False
+        includeDescriptionSearchResults = self.parentReference.descriptionFilterEnabled and descriptionFilterFound
         if(self.parentReference.classificationFilterEnabled is True):
             classificationFilterFound = self.checkForPattern(
                 sourceRow, sourceParent, self.parentReference.classificationFilterPattern, CLASSIFICATION_COLUMN)
@@ -51,7 +58,7 @@ class SortWordsForSmellFilterProxyModel(SortFilterProxyModel):
             includeClassificationSearchResults = False
         else:
             includeClassificationSearchResults = True
-        if((includeSmellSearchResults is True) and (includeClassificationSearchResults is True)):
+        if((includeSmellSearchResults is True) and (includeDescriptionSearchResults is True) and (includeClassificationSearchResults is True)):
             return True
         else:
             return False

@@ -12,7 +12,7 @@ from sortWordsForColorDescriptorFilterProxyModel import SortWordsForColorDescrip
 
 from colorTile import ColorTile
 
-DIALOG_WIDTH = 600
+DIALOG_WIDTH = 800
 DIALOG_HEIGHT = 700
 IMAGE_WIDTH = DIALOG_WIDTH
 IMAGE_HEIGHT = 103

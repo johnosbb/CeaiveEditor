@@ -13,7 +13,7 @@ with open("literary_resources/words_to_describe_smell.txt", "r") as filestream:
         sections = len(currentline)
         if(sections == 3):
             targetSmell = currentline[0].strip()
-            rgbValue = currentline[1].strip()
+            description = currentline[1].strip()
             classification = currentline[2].strip()  # this is a list
             if(classification.isspace()):
                 classification = ["Unknown Classification"]
@@ -23,7 +23,7 @@ with open("literary_resources/words_to_describe_smell.txt", "r") as filestream:
 
             tags = []
             newSmell = Smell(
-                targetSmell, classification, tags)
+                targetSmell, description, classification, tags)
             collection.add(newSmell)
             count = count + 1
         else:

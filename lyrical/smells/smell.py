@@ -2,8 +2,9 @@ import json
 
 
 class Smell():
-    def __init__(self, smell,  smellClass=[], tags=[]):
+    def __init__(self, smell, description, smellClass=[], tags=[]):
         self.__smell = smell
+        self.__description = description
         self.__tags = tags
         self.__classification = smellClass
 
@@ -36,11 +37,20 @@ class Smell():
     @smell.setter
     def smell(self, smell):
         self.__smell = smell
+  
+    @property
+    def description(self):
+        return self.__description
+
+    @description.setter
+    def description(self, description):
+        self.__description = description
         
+                
         
     def __str__(self):
-        return f'{self.smell} : {self.rgbValue}'
+        return f'{self.smell} : {self.description}'
 
     def __repr__(self):
-        return f'smell(smell={self.smell},  tags=[{",".join([(str(item)) for item in self.tags])}])'
+        return f'smell(smell={self.smell}, description={self.description}, tags=[{",".join([(str(item)) for item in self.tags])}])'
     

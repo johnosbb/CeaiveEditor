@@ -46,6 +46,8 @@ class SmellsCollection():
         with open('Smell_dump.txt', 'w') as file:
             for aSmell in self.__smellList:
                 file.write(aSmell.smell + " : ")
+                file.write(','.join(aSmell.description))
+                file.write(" : ")
                 file.write(','.join(aSmell.classification))
                 file.write(" : ")
                 file.write(','.join(aSmell.tags))

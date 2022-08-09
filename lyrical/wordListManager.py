@@ -23,8 +23,10 @@ from colorSelectorDialog import WordForColorSelectorDialog
 from colorDescriptorSelectorDialog import WordForColorDescriptorsSelectorDialog
 from smellSelectorDialog import WordsForSmellSelectorDialog
 
-NUMBER_OF_BW_COLUMNS = 4
+NUMBER_OF_BW_COLUMNS = 2
 NUMBER_OF_WFC_COLUMNS = 3
+NUMBER_OF_WFS_COLUMNS = 3
+NUMBER_OF_SMELL_COLUMNS = 2
 
 
 class WordListManager:
@@ -58,30 +60,29 @@ class WordListManager:
         aSmellWordsCollection = SmellsCollection()
         numberOfRows = aSmellWordsCollection.load()
         model = QStandardItemModel(
-            numberOfRows, NUMBER_OF_BW_COLUMNS, parent)  # rows columns
+            numberOfRows, NUMBER_OF_SMELL_COLUMNS, parent)  # rows columns
         model.setHeaderData(0, Qt.Horizontal, "Smell")
-        model.setHeaderData(2, Qt.Horizontal, "Tags")
-        model.setHeaderData(3, Qt.Horizontal, "Classification")
+        model.setHeaderData(1, Qt.Horizontal, "Classification")
         for row, smell in enumerate(aSmellWordsCollection.smellList):
             model.setData(model.index(
                 row, 0, QModelIndex()), smell.smell, Qt.DisplayRole)
-            tags = ""
-            for number, tag in enumerate(smell.tags):
-                tags = tags + " " + tag
-            model.setData(model.index(
-                row, 1, QModelIndex()), tags, Qt.DisplayRole)
+            # tags = ""
+            # for number, tag in enumerate(smell.tags):
+            #     tags = tags + " " + tag
+            # model.setData(model.index(
+            #     row, 1, QModelIndex()), tags, Qt.DisplayRole)
             classifications = ""
             for number, classification in enumerate(smell.classification):
                 classifications = classifications + " " + classification
             model.setData(model.index(
-                row, 2, QModelIndex()), classifications, Qt.DisplayRole)
+                row, 1, QModelIndex()), classifications, Qt.DisplayRole)
         return model
 
     def createWordsForSoundModel(self, parent):
         aSmellsCollection = SmellsCollection()
         numberOfRows = aSmellsCollection.load()
         model = QStandardItemModel(
-            numberOfRows, NUMBER_OF_WFC_COLUMNS, parent)  # rows columns
+            numberOfRows, NUMBER_OF_WFS_COLUMNS, parent)  # rows columns
         model.setHeaderData(0, Qt.Horizontal, "Smell")
         model.setHeaderData(1, Qt.Horizontal, "Swatch")
         #model.setHeaderData(2, Qt.Horizontal, "Tags")

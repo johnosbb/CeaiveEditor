@@ -1,75 +1,75 @@
-anosmic : General words for smell : 
-antiseptic : General words for smell : 
-aroma : General words for smell : 
-comforting : General words for smell : 
-delicate : General words for smell : 
-evocative : General words for smell : 
-faint : General words for smell : 
-fragrance : General words for smell : 
-heady : General words for smell : 
-heavy : General words for smell : 
-intoxicating : General words for smell : 
-laden : General words for smell : 
-odour/odor : General words for smell : 
-odorous : General words for smell : 
-odourless : General words for smell : 
-piquant : General words for smell : 
-powerful : General words for smell : 
-redolent : General words for smell : 
-reek : General words for smell : 
-scent : General words for smell : 
-whiff : General words for smell : 
-acrid : Unpleasant Smells : 
-damp : Unpleasant Smells : 
-fetid : Unpleasant Smells : 
-frowsty : Unpleasant Smells : 
-funky : Unpleasant Smells : 
-fusty : Unpleasant Smells : 
-high : Unpleasant Smells : 
-malodorous : Unpleasant Smells : 
-musty : Unpleasant Smells : 
-nasty : Unpleasant Smells : 
-nauseating : Unpleasant Smells : 
-noisome : Unpleasant Smells : 
-overpowering : Unpleasant Smells : 
-pungent : Unpleasant Smells : 
-putrid : Unpleasant Smells : 
-rancid : Unpleasant Smells : 
-rank : Unpleasant Smells : 
-ripe : Unpleasant Smells : 
-sickly : Unpleasant Smells : 
-smelly : Unpleasant Smells : 
-sour : Unpleasant Smells : 
-stale : Unpleasant Smells : 
-stench : Unpleasant Smells : 
-stinking : Unpleasant Smells : 
-stuffy : Unpleasant Smells : 
-ambrosial : Pleasant Smells : 
-aromatic : Pleasant Smells : 
-bouquet : Pleasant Smells : 
-delicious : Pleasant Smells : 
-fresh : Pleasant Smells : 
-fragrant : Pleasant Smells : 
-perfumed : Pleasant Smells : 
-rich : General words for smell : 
-savoury/savory : Pleasant Smells : 
-scented : Pleasant Smells : 
-sweet : Pleasant Smells : 
-tangy : Pleasant Smells : 
-citrusy : Words that smell like something : 
-coppery : Words that smell like something : 
-earthy : Words that smell like something : 
-fishy : Words that smell like something : 
-floral : Words that smell like something : 
-flowery : Words that smell like something : 
-fruity : Words that smell like something : 
-gamy : Words that smell like something : 
-garlicky : Words that smell like something : 
-leathery : Words that smell like something : 
-lemony : Words that smell like something : 
-medicinal : Words that smell like something : 
-minty : Words that smell like something : 
-musky : Words that smell like something : 
-peachy : Words that smell like something : 
-smoky : Words that smell like something : 
-woody : Words that smell like something : 
+anosmic : o,d,o,u,r,l,e,s,s,,, ,n,o, ,s,m,e,l,l, ,a,t, ,a,l,l : General words for smell : 
+antiseptic : c,l,e,a,n, ,o,r, ,p,u,r,e, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,b,l,a,n,d, ,a,n, ,c,h,a,r,a,c,t,e,r,l,e,s,s : General words for smell : 
+aroma : a, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,s,t,r,o,n,g, ,b,u,t, ,p,l,e,a,s,a,n,t : General words for smell : 
+comforting : p,l,e,a,s,a,n,t, ,a,r,o,m,a : General words for smell : 
+delicate : s,u,b,t,l,e,,, ,f,a,i,n,t,,, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,n,o,t, ,o,v,e,r,p,o,w,e,r,i,n,g : General words for smell : 
+evocative : a, ,s,m,e,l,l, ,t,h,a,t, ,m,a,k,e,s, ,y,o,u, ,t,h,i,n,k, ,o,f, ,s,o,m,e,t,h,i,n,g,,, ,o,f,t,e,n, ,s,o,m,e,t,h,i,n,g, ,t,h,a,t, ,y,o,u, ,e,x,p,e,r,i,e,n,c,e,d, ,i,n, ,t,h,e, ,p,a,s,t : General words for smell : 
+faint : a, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,n,o,t, ,s,t,r,o,n,g : General words for smell : 
+fragrance : a, ,s,w,e,e,t, ,o,r, ,p,l,e,a,s,a,n,t, ,o,d,o,u,r : General words for smell : 
+heady : s,t,r,o,n,g,l,y, ,a,r,o,m,a,t,i,c,,, ,p,u,n,g,e,n,t,,, ,r,i,c,h,,, ,i,n,t,o,x,i,c,a,t,i,n,g,,, ,s,p,i,c,y,,, ,p,i,q,u,a,n,t,,, ,n,o,t, ,a, ,m,i,l,d, ,s,m,e,l,l : General words for smell : 
+heavy : a, ,s,w,e,e,t, ,a,n,d, ,s,t,r,o,n,g, ,s,m,e,l,l : General words for smell : 
+intoxicating : A, ,s,m,e,l,l, ,t,h,a,t, ,e,x,h,i,l,a,r,a,t,e,s,,, ,d,i,s,o,r,i,e,n,t,s,,, ,o,r, ,e,x,c,i,t,e,s : General words for smell : 
+laden : a, ,l,i,t,e,r,a,r,y, ,w,o,r,d, ,t,h,a,t, ,d,e,s,c,r,i,b,e,s, ,a, ,s,t,r,o,n,g, ,s,m,e,l,l : General words for smell : 
+odour/odor : a, ,s,m,e,l,l : General words for smell : 
+odorous : a, ,s,t,r,o,n,g, ,s,m,e,l,l : General words for smell : 
+odourless : w,i,t,h, ,n,o, ,s,m,e,l,l : General words for smell : 
+piquant : s,t,i,n,g,i,n,g,,, ,p,u,n,g,e,n,t,,, ,a,n, ,a,r,o,m,a, ,t,h,a,t, ,t,i,c,k,l,e,s, ,t,h,e, ,n,o,s,e,. : General words for smell : 
+powerful : a, ,s,t,r,o,n,g, ,s,m,e,l,l : General words for smell : 
+redolent : s,m,e,l,l,i,n,g, ,o,f, ,s,o,m,e,t,h,i,n,g : General words for smell : 
+reek : t,o, ,s,m,e,l,l, ,s,t,r,o,n,g,l,y, ,a,n,d, ,u,n,p,l,e,a,s,a,n,t,l,y : General words for smell : 
+scent : a, ,p,a,r,t,i,c,u,l,a,r, ,s,m,e,l,l,,, ,e,s,p,e,c,i,a,l,l,y, ,a, ,p,l,e,a,s,a,n,t, ,o,n,e : General words for smell : 
+whiff : a, ,s,l,i,g,h,t, ,s,m,e,l,l, ,o,f, ,s,o,m,e,t,h,i,n,g : General words for smell : 
+acrid : a, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,s,t,r,o,n,g,,, ,b,i,t,t,e,r,,, ,a,n,d, ,u,n,p,l,e,a,s,a,n,t, ,i,n, ,y,o,u,r, ,n,o,s,e, ,a,n,d, ,t,h,r,o,a,t : Unpleasant Smells : 
+damp : a, ,w,e,t, ,s,m,e,l,l : Unpleasant Smells : 
+fetid : a,n, ,u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l,,, ,u,s,u,a,l,l,y, ,c,a,u,s,e,d, ,b,y, ,d,e,c,a,y : Unpleasant Smells : 
+frowsty : a,n, ,u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l, ,c,a,u,s,e,d, ,b,y, ,a, ,l,a,c,k, ,o,f, ,f,r,e,s,h, ,a,i,r : Unpleasant Smells : 
+funky : a, ,s,t,r,o,n,g, ,a,n,d, ,u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Unpleasant Smells : 
+fusty : s,m,e,l,l,s, ,o,l,d,,, ,d,u,s,t,y,,, ,o,r, ,d,a,m,p : Unpleasant Smells : 
+high : a,n, ,o,l,d,-,f,a,s,h,i,o,n,e,d, ,w,o,r,d, ,t,h,a,t, ,d,e,s,c,r,i,b,e,s, ,a, ,s,t,r,o,n,g, ,f,l,a,v,o,u,r, ,a,n,d, ,s,m,e,l,l : Unpleasant Smells : 
+malodorous : s,c,e,n,t,e,d,,, ,a,r,o,m,a,t,i,c,,, ,r,e,d,o,l,e,n,t,,, ,f,r,a,g,r,a,n,t,,, ,s,t,i,n,k,i,n,g,. : Unpleasant Smells : 
+musty : u,n,p,l,e,a,s,a,n,t,,, ,s,t,a,l,e,,, ,a,n,d, ,n,o,t, ,f,r,e,s,h : Unpleasant Smells : 
+nasty : u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Unpleasant Smells : 
+nauseating : a, ,s,m,e,l,l, ,t,h,a,t, ,c,a,u,s,e,s, ,d,i,s,g,u,s,t,,, ,l,o,a,t,h,i,n,g,,, ,o,r, ,r,e,v,u,l,s,i,o,n : Unpleasant Smells : 
+noisome : e,x,t,r,e,m,e,l,y, ,u,n,p,l,e,a,s,a,n,t,,, ,e,s,p,e,c,i,a,l,l,y, ,b,e,c,a,u,s,e, ,o,f, ,b,e,i,n,g, ,v,e,r,y, ,d,i,r,t,y, ,o,r, ,h,a,v,i,n,g, ,a, ,b,a,d, ,s,m,e,l,l : Unpleasant Smells : 
+overpowering : v,e,r,y, ,s,t,r,o,n,g, ,s,m,e,l,l : Unpleasant Smells : 
+pungent : a, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,s,t,r,o,n,g, ,a,n,d, ,s,h,a,r,p : Unpleasant Smells : 
+putrid : d,e,c,a,y,i,n,g, ,a,n,d, ,s,m,e,l,l,i,n,g, ,v,e,r,y, ,b,a,d : Unpleasant Smells : 
+rancid : r,a,n,c,i,d, ,f,o,o,d, ,i,s, ,n,o, ,l,o,n,g,e,r, ,f,r,e,s,h, ,a,n,d, ,h,a,s, ,a,n, ,u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Unpleasant Smells : 
+rank : a, ,s,t,r,o,n,g, ,u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l, ,o,r, ,t,a,s,t,e : Unpleasant Smells : 
+ripe : a, ,s,t,r,o,n,g, ,o,r, ,u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Unpleasant Smells : 
+sickly : m,a,k,e,s, ,y,o,u, ,f,e,e,l, ,s,i,c,k : Unpleasant Smells : 
+smelly : a,n, ,u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Unpleasant Smells : 
+sour : a, ,t,a,s,t,e, ,o,r, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,n,o, ,l,o,n,g,e,r, ,f,r,e,s,h : Unpleasant Smells : 
+stale : n,o,t, ,f,r,e,s,h, ,o,r, ,p,l,e,a,s,a,n,t : Unpleasant Smells : 
+stench : a, ,v,e,r,y, ,b,a,d, ,s,m,e,l,l,,, ,e,s,p,e,c,i,a,l,l,y, ,o,f, ,d,e,c,a,y : Unpleasant Smells : 
+stinking : a,n, ,u,n,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Unpleasant Smells : 
+stuffy : a, ,s,m,e,l,l, ,c,a,u,s,e,d, ,b,y, ,a,n, ,a,r,e,a, ,w,i,t,h, ,n,o, ,f,r,e,s,h, ,a,i,r, ,i,n, ,i,t : Unpleasant Smells : 
+ambrosial : s,w,e,e,t, ,s,m,e,l,l,i,n,g,,, ,f,r,a,g,r,a,n,t,,, ,a,r,o,m,a,t,i,c : Pleasant Smells : 
+aromatic : p,e,r,f,u,m,e,d,,, ,f,r,a,g,r,a,n,t,,, ,s,c,e,n,t,e,d,,, ,s,w,e,e,t, ,s,m,e,l,l,i,n,g,,, ,p,u,n,g,e,n,t,,, ,u,s,u,a,l,l,y, ,p,l,e,a,s,i,n,g : Pleasant Smells : 
+bouquet : t,h,e, ,p,a,r,t,i,c,u,l,a,r, ,s,m,e,l,l, ,o,f, ,a, ,w,i,n,e, ,o,r, ,f,l,o,w,e,r : Pleasant Smells : 
+delicious : a, ,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Pleasant Smells : 
+fresh : a, ,p,l,e,a,s,a,n,t,,, ,n,e,w,l,y, ,m,a,d,e, ,s,m,e,l,l, ,t,h,a,t, ,c,a,n, ,b,e, ,c,l,e,a,n,,, ,c,l,e,a,r,,, ,c,o,o,l,,, ,c,r,i,s,p,,, ,r,e,f,r,e,s,h,i,n,g,,, ,s,w,e,e,t,,, ,w,a,r,m : Pleasant Smells : 
+fragrant : w,i,t,h, ,a, ,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Pleasant Smells : 
+perfumed : p,l,e,a,s,a,n,t, ,t,o, ,s,m,e,l,l, ,b,e,c,a,u,s,e, ,p,e,r,f,u,m,e, ,h,a,s, ,b,e,e,n, ,a,d,d,e,d, ,o,r, ,u,s,e,d,,, ,o,r, ,i,t, ,h,a,s, ,a, ,n,a,t,u,r,a,l, ,p,e,r,f,u,m,e : Pleasant Smells : 
+rich : a, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,s,t,r,o,n,g, ,i,n, ,a, ,p,l,e,a,s,a,n,t, ,w,a,y : General words for smell : 
+savoury/savory : (,U,S, ,S,p,e,l,l,i,n,g,),,,p,l,e,a,s,a,n,t, ,t,o, , ,t,a,s,t,e,,, ,s,p,i,c,y,,, ,p,u,n,g,e,n,t,,, ,f,l,a,v,o,u,r,s,o,m,e,,, ,a,n,d, ,a,r,o,m,a,t,i,c,,, ,s,a,l,t,y, ,b,u,t, ,n,o,t, ,s,w,e,e,t : Pleasant Smells : 
+scented : a, ,p,l,e,a,s,a,n,t, ,s,m,e,l,l : Pleasant Smells : 
+sweet : a, ,p,l,e,a,s,a,n,t, ,s,m,e,l,l, ,t,h,a,t, ,i,s, ,s,w,e,e,t : Pleasant Smells : 
+tangy : a, ,s,m,e,l,l, ,o,r, ,t,a,s,t,e, ,t,h,a,t, ,i,s, ,s,t,r,o,n,g, ,a,n,d, ,b,i,t,t,e,r, ,i,n, ,a, ,p,l,e,a,s,a,n,t, ,w,a,y : Pleasant Smells : 
+citrusy : c,h,a,r,a,c,t,e,r,i,s,t,i,c, ,o,f, ,c,i,t,r,u,s, ,f,r,u,i,t, ,i,n, ,s,c,e,n,t : Words that smell like something : 
+coppery : s,m,e,l,l,i,n,g, ,o,f, ,c,o,p,p,e,r : Words that smell like something : 
+earthy : s,m,e,l,l,i,n,g, ,l,i,k,e, ,e,a,r,t,h : Words that smell like something : 
+fishy : s,m,e,l,l,i,n,g, ,l,i,k,e, ,f,i,s,h : Words that smell like something : 
+floral : s,m,e,l,l,i,n,g, ,o,f, ,f,l,o,w,e,r,s : Words that smell like something : 
+flowery : a, ,f,l,o,w,e,r,y, ,s,m,e,l,l, ,r,e,m,i,n,d,s, ,y,o,u, ,o,f, ,f,l,o,w,e,r,s : Words that smell like something : 
+fruity : s,m,e,l,l,i,n,g, ,l,i,k,e, ,f,r,u,i,t : Words that smell like something : 
+gamy : h,a,v,i,n,g, ,t,h,e, ,d,i,s,t,i,n,c,t,i,v,e, ,f,r,a,g,r,a,n,c,e, ,o,f, ,g,a,m,e : Words that smell like something : 
+garlicky : s,m,e,l,l,i,n,g, ,o,f, ,g,a,r,l,i,c : Words that smell like something : 
+leathery : s,m,e,l,l,s, ,l,i,k,e, ,l,e,a,t,h,e,r : Words that smell like something : 
+lemony : s,m,e,l,l,s, ,l,i,k,e, ,l,e,m,o,n : Words that smell like something : 
+medicinal : s,m,e,l,l,s, ,l,i,k,e, ,m,e,d,i,c,i,n,e : Words that smell like something : 
+minty : s,m,e,l,l,i,n,g, ,o,f, ,m,i,n,t : Words that smell like something : 
+musky : s,i,m,i,l,a,r, ,t,o, ,m,u,s,k, ,i,n, ,s,m,e,l,l : Words that smell like something : 
+peachy : s,i,m,i,l,a,r, ,t,o, ,a, ,p,e,a,c,h, ,i,n, ,c,o,l,o,u,r,,, ,t,a,s,t,e,,, ,o,r, ,s,m,e,l,l : Words that smell like something : 
+smoky : s,m,e,l,l,i,n,g, ,o,f, ,s,m,o,k,e : Words that smell like something : 
+woody : a,n, ,e,a,r,t,h,y, ,s,m,e,l,l,,, ,s,m,e,l,l,i,n,g, ,o,f, ,w,o,o,d : Words that smell like something : 

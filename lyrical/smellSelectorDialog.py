@@ -88,7 +88,7 @@ class WordsForSmellSelectorDialog(QDialog):
         self.headerFrame.setObjectName("HeaderBackgroundImage")
 
         self.headerFrame.setStyleSheet(
-            "QFrame#HeaderBackgroundImage { background-repeat:no-repeat; background-position: left; background-image: url(:/images/images/WordsForDescriptorColourLongForm.png); }")
+            "QFrame#HeaderBackgroundImage { background-repeat:no-repeat; background-position: left; background-image: url(:/images/images/WordsForSmellLongForm.png); }")
         self.headerFrame.setFrameShape(QFrame.StyledPanel)
         self.headerFrame.setFrameShadow(QFrame.Raised)
         self.headerFrame.setLayout(self.headerLayout)
@@ -99,7 +99,7 @@ class WordsForSmellSelectorDialog(QDialog):
         self.headerSpacerWidget.setObjectName("headerSpacerWidget")
         self.smellFilter = QLineEdit(self.headerFrame)
         self.smellFilterLabel = QLabel(
-            "  Descriptor Filter", self.headerFrame)
+            "  Smell Filter", self.headerFrame)
         self.smellFilterLabel.setBuddy(self.smellFilter)
         self.smellFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
                                        "background-color: rgb(255, 255, 255);")
