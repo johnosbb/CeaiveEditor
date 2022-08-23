@@ -26,7 +26,7 @@ from smellSelectorDialog import WordsForSmellSelectorDialog
 NUMBER_OF_BW_COLUMNS = 2
 NUMBER_OF_WFC_COLUMNS = 3
 NUMBER_OF_WFS_COLUMNS = 3
-NUMBER_OF_SMELL_COLUMNS = 2
+NUMBER_OF_SMELL_COLUMNS = 3
 
 
 class WordListManager:
@@ -62,10 +62,13 @@ class WordListManager:
         model = QStandardItemModel(
             numberOfRows, NUMBER_OF_SMELL_COLUMNS, parent)  # rows columns
         model.setHeaderData(0, Qt.Horizontal, "Smell")
-        model.setHeaderData(1, Qt.Horizontal, "Classification")
+        model.setHeaderData(1, Qt.Horizontal, "Description")
+        model.setHeaderData(2, Qt.Horizontal, "Classification")
         for row, smell in enumerate(aSmellWordsCollection.smellList):
             model.setData(model.index(
                 row, 0, QModelIndex()), smell.smell, Qt.DisplayRole)
+            model.setData(model.index(
+                row, 1, QModelIndex()), smell.description, Qt.DisplayRole)
             # tags = ""
             # for number, tag in enumerate(smell.tags):
             #     tags = tags + " " + tag
@@ -75,7 +78,7 @@ class WordListManager:
             for number, classification in enumerate(smell.classification):
                 classifications = classifications + " " + classification
             model.setData(model.index(
-                row, 1, QModelIndex()), classifications, Qt.DisplayRole)
+                row, 2, QModelIndex()), classifications, Qt.DisplayRole)
         return model
 
     def createWordsForSoundModel(self, parent):

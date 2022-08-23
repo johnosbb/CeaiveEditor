@@ -37,12 +37,16 @@ class SortWordsForSmellFilterProxyModel(SortFilterProxyModel):
                 sourceRow, sourceParent, self.parentReference.smellFilterPattern, SMELL_COLUMN)
         else:
             smellFilterFound = False
-        if(self.parentReference.descriptionFilterEnabled is True):
+        if(self.parentReference.smellDescriptionFilterEnabled is True):
             descriptionFilterFound = self.checkForPattern(
                 sourceRow, sourceParent, self.parentReference.descriptionFilterPattern, DESCRIPTION_COLUMN)
         else:
             descriptionFilterFound = False
-        includeDescriptionSearchResults = self.parentReference.descriptionFilterEnabled and descriptionFilterFound
+
+        if(self.parentReference.smellDescriptionFilterEnabled is True and descriptionFilterFound is False):
+            includeDescriptionSearchResults = False
+        else:
+            includeDescriptionSearchResults = True
         if(self.parentReference.classificationFilterEnabled is True):
             classificationFilterFound = self.checkForPattern(
                 sourceRow, sourceParent, self.parentReference.classificationFilterPattern, CLASSIFICATION_COLUMN)
@@ -53,7 +57,11 @@ class SortWordsForSmellFilterProxyModel(SortFilterProxyModel):
             includeSmellSearchResults = False
         else:
             includeSmellSearchResults = True
-
+        includeDescriptionSearchResults = self.parentReference.smellDescriptionFilterEnabled and descriptionFilterFound
+        if(self.parentReference.smellDescriptionFilterEnabled is True and descriptionFilterFound is False):
+            includeDescriptionSearchResults = False
+        else:
+            includeDescriptionSearchResults = True
         if(self.parentReference.classificationFilterEnabled is True and classificationFilterFound is False):
             includeClassificationSearchResults = False
         else:

@@ -11,7 +11,7 @@ from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 from sortWordsForSmellFilterProxyModel import SortWordsForSmellFilterProxyModel
 
 
-DIALOG_WIDTH = 600
+DIALOG_WIDTH = 900
 DIALOG_HEIGHT = 700
 IMAGE_WIDTH = DIALOG_WIDTH
 IMAGE_HEIGHT = 103
@@ -54,7 +54,7 @@ class WordsForSmellSelectorDialog(QDialog):
 
     def resetFilterEnables(self):
         self.smellFilterEnabled = False
-        self.meaningFilterEnabled = False
+        self.smellDescriptionFilterEnabled = False
         self.tagFilterEnabled = False
         self.classificationFilterEnabled = False
 
@@ -116,9 +116,28 @@ class WordsForSmellSelectorDialog(QDialog):
             "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.smellFilter.setFixedWidth(120)
 
-        self.smellFilter.textChanged.connect(self.setWordFilter)
+        self.smellFilter.textChanged.connect(self.setSmellFilter)
         self.smellFilter.setToolTip(
             "Enter a starting letter or letters to find colour descriptors")
+
+        self.smellDescriptionFilterLabel = QLabel(
+            "  Description Filter", self.headerFrame)
+        self.smellDescriptionFilter = QLineEdit(self.headerFrame)
+        self.smellDescriptionFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                                  "background-color: rgb(255, 255, 255);")
+        self.smellDescriptionFilterLabel.setBuddy(self.smellDescriptionFilter)
+        self.smellDescriptionFilterLabel.setStyleSheet(
+            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        self.headerLayout.addWidget(self.smellDescriptionFilterLabel)
+        self.headerLayout.addWidget(self.smellDescriptionFilter)
+
+        self.smellDescriptionFilter.setStyleSheet(
+            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        self.smellDescriptionFilter.setFixedWidth(120)
+        self.smellDescriptionFilter.textChanged.connect(
+            self.setSmellDescriptionFilter)
+        self.smellDescriptionFilter.setToolTip(
+            "Enter a description for which you would like to find a word describing smell")
 
         self.classificationFilterLabel = QLabel(
             " Smell Qualifier Filter", self.headerFrame)
@@ -175,7 +194,7 @@ class WordsForSmellSelectorDialog(QDialog):
         self.selectedWord = data
         self.accept()
 
-    def setWordFilter(self):
+    def setSmellFilter(self):
         text = self.smellFilter.text()
         if((text is not None) and (not text.isspace()) and (text != "")):
             self.filterString = "" + text
@@ -191,18 +210,18 @@ class WordsForSmellSelectorDialog(QDialog):
                 self.filterString)[1:-1]
             self.filterRegExpChanged()
 
-    def setMeaningFilter(self):
-        text = self.meaningFilter.text()
+    def setSmellDescriptionFilter(self):
+        text = self.smellDescriptionFilter.text()
         if((text is not None) and (not text.isspace()) and (text != "")):
-            self.meaningFilterPattern = repr(
+            self.descriptionFilterPattern = repr(
                 text)[1:-1]
             self.filterColumn = 1
-            self.meaningFilterEnabled = True
+            self.smellDescriptionFilterEnabled = True
             self.filterRegExpChanged()
         else:
-            self.meaningFilterEnabled = False
+            self.smellDescriptionFilterEnabled = False
             self.filterString = ""
-            self.meaningFilterPattern = repr(
+            self.descriptionFilterPattern = repr(
                 self.filterString)[1:-1]
             self.filterRegExpChanged()
 
