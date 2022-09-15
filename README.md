@@ -145,6 +145,8 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Old Python Wrappers for Merriam-Webster API](https://github.com/pfeyz/merriam-webster-api)
 - [Quillbot - API in Python](https://github.com/Anu-bhav/Paraphrasing/blob/master/paraphrasing.py)
 - [Quillbot](https://quillbot.com/)
+- [Describing Words](https://describingwords.io/)
+- [Gutenberg Project](https://www.gutenberg.org/policy/robot_access.html)
 
 
 # Additional Information
