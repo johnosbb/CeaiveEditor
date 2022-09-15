@@ -76,6 +76,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Integrating spellchecking into a QTextEdit widget in PyQt5 with enchant](https://nethumlamahewage.medium.com/integrating-spellchecking-into-a-qtextedit-widget-in-pyqt5-with-enchant-f025f4097e5c)
 - [Code for above article](https://gist.github.com/NethumL/264a0468ea8b041c7e51038e23de0752)
 - [SpellChecker and TextBlob](https://www.askpython.com/python/examples/spell-checker-in-python)
+- [Pure Python Spell Checking](https://pypi.org/project/pyspellchecker/)
 
 
 ### Finding Rhyming Words
@@ -118,6 +119,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Python Typing - Type Hints & Annotations](https://www.youtube.com/watch?v=QORvB-_mbZ0)
 - [Vocabulary Bot](https://www.twilio.com/blog/build-vocabulary-bot-whatsapp-python-twilio)
 - [Guide to PYQT](https://doc.qt.io/qtforpython/overviews/model-view-programming.html)
+- [Python Environments](https://code.visualstudio.com/docs/python/environments)
 
 # Literature
 
@@ -145,6 +147,8 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Old Python Wrappers for Merriam-Webster API](https://github.com/pfeyz/merriam-webster-api)
 - [Quillbot - API in Python](https://github.com/Anu-bhav/Paraphrasing/blob/master/paraphrasing.py)
 - [Quillbot](https://quillbot.com/)
+- [Describing Words](https://describingwords.io/)
+- [Gutenberg Project](https://www.gutenberg.org/policy/robot_access.html)
 
 
 # Additional Information
