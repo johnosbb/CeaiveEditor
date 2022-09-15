@@ -76,6 +76,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Integrating spellchecking into a QTextEdit widget in PyQt5 with enchant](https://nethumlamahewage.medium.com/integrating-spellchecking-into-a-qtextedit-widget-in-pyqt5-with-enchant-f025f4097e5c)
 - [Code for above article](https://gist.github.com/NethumL/264a0468ea8b041c7e51038e23de0752)
 - [SpellChecker and TextBlob](https://www.askpython.com/python/examples/spell-checker-in-python)
+- [Pure Python Spell Checking](https://pypi.org/project/pyspellchecker/)
 
 
 ### Finding Rhyming Words
