@@ -1,0 +1,20 @@
+acidic : very sour
+astringent : an astringent taste is one that is strong and bitter
+bitter : a strong sharp taste that is not sweet
+bitter-sweet : tasting bitter and sweet at the same time
+brackish : has a slight taste of salt and is therefore not pure
+hot : contains a lot of spices that create a burning feeling in your mouth
+mature : has been left to develop a pleasant strong flavour
+mild : does not have a strong taste
+ripe : has a strong flavour
+robust : has a lot of flavour
+savoury : tasting of salt or spices and not sweet
+seasoned : containing seasonings to improve flavour
+sharp : has a strong and bitter flavour
+sour : with a taste like a lemon
+spicy : has a strong hot flavour
+sweet-and-sour : contains both sweet and sour flavours
+syrupy : thick, sweet, and sticky
+tart : a slightly sour taste
+unsalted : not flavoured with salt
+watery : pale, or not strong

@@ -1,0 +1,105 @@
+audible : a sound that is loud enough to hear : General Words Describing Sounds : 
+broken : a sound that has spaces in it : General Words Describing Sounds : 
+emit : to make a sound : General Words Describing Sounds : 
+grinding : a sound of one hard thing moving against another : General Words Describing Sounds : 
+hushed : a sound that is quiet : General Words Describing Sounds : 
+inaudible : a sound that is difficult to hear : General Words Describing Sounds : 
+monotonous : a sound that is always the same and never gets louder or quieter, or higher or lower : General Words Describing Sounds : 
+muffled : a sound that is not easy to hear because it is blocked by something : General Words Describing Sounds : 
+plaintive : a sound that has a sad quality : General Words Describing Sounds : 
+rhythmic : a sound that has a clear, regular pattern : General Words Describing Sounds : 
+staccato : a sound where each word or sound is clearly separate : General Words Describing Sounds : 
+dulcet : soft and pleasant : Pleasant Sounds : 
+lilting : a sound that has a rising and falling pattern : Pleasant Sounds : 
+listenable : easy to listen to : Pleasant Sounds : 
+mellow : a soft, smooth, pleasant sound : Pleasant Sounds : 
+melodic : beautiful sound : Pleasant Sounds : 
+musical : sounds like music : Pleasant Sounds : 
+pure : a clear, beautiful sound : Pleasant Sounds : 
+rich : a sound that is strong in a pleasant way : Pleasant Sounds : 
+soft : quiet and peaceful : Pleasant Sounds : 
+sonorous : a sound that is deep and strong in a pleasant way : Pleasant Sounds : 
+sweet : a pleasant sound : Pleasant Sounds : 
+at full blast : as loudly as possible : Noisy Sounds : 
+almighty : used for emphasising how loud something is : Noisy Sounds : 
+brassy : a sound that is loud and unpleasant : Noisy Sounds : 
+deafening : a sound so loud you cannot hear anything else : Noisy Sounds : 
+ear-splitting : extremely loud : Noisy Sounds : 
+explosive : a sound that is loud and unexpected : Noisy Sounds : 
+howling : a continuous, low, loud noise : Noisy Sounds : 
+insistent : a continuous, loud, strong noise : Noisy Sounds : 
+loud : a sound that is strong and very easy to hear : Noisy Sounds : 
+noisy : a sound that is full of noise : Noisy Sounds : 
+percussive : a sound that is short, like someone hitting a drum : Noisy Sounds : 
+piercing : a sound that is very  loud, high, and unpleasant : Noisy Sounds : 
+pulsating : strong, regular pattern : Noisy Sounds : 
+raucous : rude, violent, noisy : Noisy Sounds : 
+resounding : a sound that is loud and that continues for a while : Noisy Sounds : 
+riotous : lively and noisy : Noisy Sounds : 
+roaring : a deep, loud noise : Noisy Sounds : 
+rowdy : noisy and causing trouble : Noisy Sounds : 
+sharp : a sound that is sudden and loud : Noisy Sounds : 
+shrill : a sound that is loud, high, and unpleasant : Noisy Sounds : 
+thundering : extremely loud : Noisy Sounds : 
+thunderous : loud : Noisy Sounds : 
+tumultuous : a sound that includes noise, excitement, activity, or violence : Noisy Sounds : 
+uproarious : extremely noisy : Noisy Sounds : 
+babble : a gentle, pleasant sound of water as it moves along in a river : Pleasant Sounds : 
+bang : to move, making loud noises : Noisy Sounds : 
+beep : a short high sound or several short high sounds : Neutral Sounds : 
+blare : to make a loud and unpleasant noise : Noisy Sounds : 
+blast : to make a loud sound with a car horn : Noisy Sounds : 
+bleep : a short high sound or several short high sounds : Neutral Sounds : 
+boom : to make a deep loud sound that continues for some time : Noisy Sounds : 
+caterwaul : an unpleasant loud high noise : Noisy Sounds : 
+chime : a high ringing sound like a bell or set of bells : Pleasant Sounds : 
+chink : a high ringing sound when knocked together, or to make something do this : Pleasant Sounds : 
+clack : to make a short loud sound like one hard object hitting against another : Neutral Sounds : 
+clang : a loud, metallic sound : Noisy Sounds : 
+clank : a short, loud sound : Noisy Sounds : 
+clash : a loud, metallic sound : Noisy Sounds : 
+clatter : a series of short, sharp noises : Noisy Sounds : 
+click : a short sound like the sound when you press a switch : Neutral Sounds : 
+clink : to make the short high sound of glass or metal objects hitting each other : Neutral Sounds : 
+cluck : to make a short, low sound with your tongue : Neutral Sounds : 
+crash : a sudden loud noise, as if something is being hit : Noisy Sounds : 
+creak : Especially something wooden, it makes noise when it moves or when you put weight on it : Neutral Sounds : 
+drone : to make a low continuous noise : Neutral Sounds : 
+fizz : a soft sound that small gas bubbles make when they burst : Neutral Sounds : 
+groan : a long, low, sound : Unpleasant Sounds : 
+growl : a low, unpleasant noise : Unpleasant Sounds : 
+grunt : to make a short low sound in your throat and nose at the same time : Unpleasant Sounds : 
+gurgle : the low sound water makes when it is poured quickly from a bottle : Neutral Sounds : 
+honk : to make a loud noise using a horn, especially the horn of a car : Noisy Sounds : 
+hoot : to make a short loud sound as a warning : Noisy Sounds : 
+mewl : crying with a soft, high sound : Neutral Sounds : 
+moan : a long, low sound : Unpleasant Sounds : 
+neigh : to make a high loud sound like a horse’s neigh : Neutral Sounds : 
+peal : if a bell peals, or if someone peals it, it makes a loud sound : Pleasant Sounds : 
+peep : if a car’s horn peeps, it makes a sound : Neutral Sounds : 
+ping : to make a short high sound like the sound of a small bell : Neutral Sounds : 
+pipe : to make a very high sound, or to speak in a very high voice : Neutral Sounds : 
+pop : a sudden noise like a small explosion : Noisy Sounds : 
+putter : a short, quiet, low sound at a slow speed : Neutral Sounds : 
+ring : to make a bell produce a sound : Neutral Sounds : 
+roar : to make a continuous, very loud noise : Noisy Sounds : 
+rumble : a continuous deep sound : Noisy Sounds : 
+scream : to make a very loud high noise : Noisy Sounds : 
+screech : to make a loud, high, and unpleasant noise : Unpleasant Sounds : 
+scrunch : to make a loud noise like something being crushed : Noisy Sounds : 
+sigh : a long, soft, low sound : Neutral Sounds : 
+squeak : to make a short, high noise : Unpleasant Sounds : 
+squeal : to make a long high sound : Unpleasant Sounds : 
+squee : to make a loud high noise because you are excited or happy : Pleasant Sounds : 
+thrum : to make a low regular noise like one object gently hitting another many times : Noisy Sounds : 
+thud : a dull sound when falling or hitting something : Noisy Sounds : 
+thump : to hit against something with a low loud sound : Noisy Sounds : 
+tinkle : to make a high, ringing sound : Pleasant Sounds : 
+wail : to make a long, high sound : Unpleasant Sounds : 
+wheeze : a high sound, as though a lot of air is being pushed through it : Neutral Sound : 
+whine : a high, loud sound : Unpleasant Sounds : 
+whirr : a fast, repeated, quiet sound : Pleasant Sounds : 
+whisper : to make a quiet, gentle sound : Pleasant Sounds : 
+whistle : to make a high sound by forcing air through your mouth in order to get someone’s attention : Neutral Sounds : 
+yelp : a short, loud, high sound, usually caused by excitement, anger, or pain : Unpleasant Sounds : 
+yowl : a long, loud, unhappy sound or complaint : Unpleasant Sounds : 

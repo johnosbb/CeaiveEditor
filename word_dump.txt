@@ -1,377 +1,209 @@
-Abundance :  A very large quantity of something.   :    Measurement : Noun : copiousness,teemingness,abundance
-Ad Infinitum :  Again and again in the same way; forever.  :    Measurement :  : 
-Admirable :  Arousing or deserving respect and approval.  :    Personalities : Adjective : admirable
-Adoration :  Deep love and respect.  :    Feelings and Emotions,Love : Noun : latria,idolisation,idolization,adoration,worship
-Affable :  Friendly, good-natured, or easy to talk to.  :    Personalities,Temperament : Adjective : amiable,affable,genial,cordial
-Agility :  Ability to move or think quickly and easily.   :    Movement : Noun : agility,legerity,nimbleness,lightness,lightsomeness
-Ailurophile :  A cat lover.   :    Personalities :  : 
-Alacrity :  Brisk and cheerful readiness.   :    Movement : Noun : briskness,alacrity,smartness
-Alluring :  Powerfully and mysteriously attractive or fascinating; seductive.   :    Beauty : Adjective : tempt,enticing,beguiling,allure,alluring,tempting
-Aloha :  A Hawaiian word used when greeting or parting from someone.   :    Beauty : Noun : ciao,aloha
-Amaranthine :  From the Greek word amarantos, meaning immortal or unfading.   :   Time  : Adjective : amaranthine,unfading
-Amiable :  Having or displaying a friendly and pleasant manner.   :    Personalities,Temperament : Adjective : good-humored,amiable,genial,good-humoured,affable,cordial
-Amorous :  Showing, feeling, or relating to sexual desire.   :    Sexuality,Love,Feelings and Emotions,Relationships :  : amative,amorous,romantic,amatory
-Amorphous :  Without a clearly defined shape or form.   :    Shape,Physicality : Adjective : uncrystallised,unstructured,formless,uncrystallized,amorphous,shapeless
-Angelic :  An exceptionally beautiful, innocent, or kind person.   :    Beauty, Personality : Adjective : angelic,sainted,sweet,beatific,saintly,cherubic,seraphic,angelical,saintlike
-Antediluvial :  Of or belonging to the time before the biblical Flood.   :    Time :  : antediluvian,antediluvial
-Antediluvian :  Ridiculously old-fashioned, Pertaining or belonging to the time prior to Noah's Flood.  :   Time  : Noun,Adjective : antediluvial,antiquated,ancient,antediluvian,antediluvian_patriarch,archaic
-Apotheosis :  The highest point in the development of something; culmination or climax.   :    Culture, Sensory :  : nonesuch,saint,exaltation,paragon,nonsuch,apotheosis,deification,ideal,nonpareil
-Assemblage :  A collection or gathering of things or people.   :    Measurement :  : collection,accumulation,hookup,assembly,aggregation,gathering,assemblage
-Astonishing :  Extremely surprising or impressive; amazing.   :    Beauty : Adjective : astonishing,stupefying,astounding,amazing,astound,staggering,amaze,astonish
-Astounding :  Surprisingly impressive or notable.   :    Beauty : Adjective : dumfounding,astonishing,dumbfounding,astounding,staggering,astound,stupefying,amaze,astonish
-Ascension :  The act of rising to an important position or a higher level.   :    Movement,Spiritual : Noun : Ascension_Day,Ascension_of_the_Lord,ascent,ascending,Ascension,rising,Ascension_of_Christ,rise,ascension
-Astral :  Of, connected with or resembling the stars.   :    Space,Exteriors :  : stellar,astral
-Audacious :  Showing a willingness to take surprisingly bold risks.   :    Personalities,Temperament : Adjective : intrepid,venturesome,insolent,fearless,bodacious,daring,barefaced,venturous,bald-faced,brazen,brazen-faced,dauntless,audacious,brassy,hardy,unfearing,brave
-Aurora :  A natural electrical phenomenon characterized by the appearance of streamers of reddish or greenish light in the sky, usually near the northern or southern magnetic pole.   :    Space,Exteriors : Noun : dawning,sunup,daybreak,morning,dayspring,cockcrow,dawn,aurora,break_of_the_day,first_light,sunrise,break_of_day,Aurora
-Awe :  A feeling of reverential respect mixed with fear or wonder.   :     Feelings and Emotions, Beauty : Verb,Noun : reverence,fear,veneration,awe
-Beatify :  To make holy or sacred.   :    Beauty,Spiritual : Verb : exalt,thrill,inebriate,beatify,tickle_pink,exhilarate
-Beauteous :  Beautiful.   :    Beauty : Adjective : beauteous
-Becoming :  Flattering a person's appearance.   :    Beauty, Physicality  : Adjective : comely,seemly,turn,comme_il_faut,get,decorous,become,becoming,go,suit,decent
-Beguile :  To charm or enchant (someone), sometimes in a deceptive way.   :    Feelings and Emotions,Beauty,Sensory :  : enamour,beguile,entrance,fascinate,captivate,enamor,enchant,catch,charm,juggle,trance,becharm,capture,hoodwink,bewitch
-Belonging :  An affinity for a place or situation.   :    Feelings and Emotions,Geography,Atmosphere : Noun : go,belong,belonging,belong_to
-Beloved :  Dearly loved.   :    Love,Feelings and Emotions,Relationships : Noun,Adjective : beloved,darling,love,dearest,honey,dear
-Benefactor :  A person who gives money or other help to a person or cause.   :    Temperament,Personalities : Noun : benefactor,helper
-Benevolence :  The quality of being well meaning; kindness.   :    Feelings and Emotions,Temperament,Personalities : Noun : benefaction,benevolence
-Blazing :  To burn fiercely or brightly.   :    Light,Sexuality,Feelings and Emotions,Colours Tones Shades : Adjective : blaze,glaring,fulgent,blazing,dazzling,blaze_out,conspicuous,blatant,blaze_away,glary,blinding
-Blessing :  A beneficial thing for which one is grateful; something that brings well-being.   :   Spiritual,Love  : Noun : sanctify,blessing,sign,bless,benediction,thanksgiving,hallow,approving,boon,approval,grace,consecrate
-Bliss :  Perfect happiness; great joy.   :   Feelings and Emotions,Atmosphere,Love,Beauty,Relationships  : Noun : cloud_nine,seventh_heaven,bliss,walking_on_air,blissfulness
-Blossom :  The state or period of flowering.   :    Feelings and Emotions,Beauty,Botany : Verb : bloom,peak,prime,flower,blossom_forth,flush,unfold,blossom,heyday,efflorescence,blossom_out
-Breathtaking :  Astonishing or awe-inspiring in quality, so as to take one's breath away.   :   Feelings and Emotions,Love,Beauty  :  : breathtaking,breathless
-Breeziness :  Fresh and animated; lively.   : Unknown Classification : Noun : windiness,breeziness,jauntiness
-Brilliance :  An intense brightness of light.   : Unknown Classification : Noun : glare,genius,grandness,splendour,grandeur,magnificence,brilliance,splendor,blaze
-Brisk :  Active, fast, and energetic.   : Unknown Classification : Verb,Adjective : brisken,brisk,merry,refreshing,tonic,fresh,bracing,snappy,zippy,alert,refreshful,spanking,rattling,brisk_up,lively
-Bubbling :  Characterized by cheerful high spirits.   : Unknown Classification : Adjective : effervescing,bubble,bubbly,ripple,guggle,burble,frothy,burp,effervescent,sparkly,babble,foamy,foaming,gurgle,bubbling,eruct,spumy,scintillating,belch
-Bucolic :  Relating to the pleasant aspects of the countryside and country life.   : Unknown Classification : Adjective : provincial,idyl,eclogue,pastoral,idyll,bucolic,arcadian,peasant
-Bungalow :  A low house, with a broad front porch, having either no upper floor or upper rooms set in the roof, typically with dormer windows.   : Unknown Classification : Noun : cottage,bungalow
-Buoyancy :  The ability or tendency to float in water or air or some other fluid.   : Unknown Classification : Noun : buoyancy,perkiness,irrepressibility,airiness
-Cadence :  A modulation or inflection of the voice.  : Unknown Classification : Noun : meter,cadency,beat,measure,cadence,metre
-Calcination :  To heat (a substance) to a high temperature but below the melting or fusing point, causing loss of moisture, reduction or oxidation, and the decomposition of carbonates and other compounds.   : Unknown Classification : Noun : calcination
-Calm :  Not showing or feeling nervousness, anger, or other strong emotions.   : Unknown Classification : Verb,Adjective : steady,becalm,still,unagitated,quiet,quieten,settle_down,tranquil,chill_out,tranquillize,sedate,calm_air,calm,calm_down,simmer_down,calmness,equanimity,tranquillise,cool_it,lull,serene,composure,tranquilize,cool_off
-Candor :  The quality of being open and honest in expression; frankness.   : Unknown Classification : Noun : directness,fair-mindedness,frankness,candor,candour,forthrightness,candidness,fairness
-Caprice :  A sudden and unaccountable change of mood or behaviour.   : Unknown Classification : Noun : caprice,whim,impulse
-Carpe Diem :  Latin, ‘seize the day!’, a quotation from Horace.   : Unknown Classification :  : 
-Cascade :  A small waterfall, typically one of several that fall in stages down a steep rocky slope.   : Unknown Classification : Verb,Noun : cascade,shower,cascade_down
-Cashmere :  Fine, soft wool, originally that from the Kashmir goat.   : Unknown Classification : Noun : Cashmere,Jammu_and_Kashmir,Kashmir,cashmere
-Catharsis :  The process of releasing, and thereby providing relief from, strong or repressed emotions.   : Unknown Classification : Noun : purgation,katharsis,abreaction,catharsis
-Celerity :  The swiftness of movement.   : Unknown Classification : Noun : rapidity,celerity,quickness,rapidness,speediness
-Centered :  Well balanced and confident or serene.   : Unknown Classification : Adjective : rivet,revolve_around,center_on,centered,revolve_about,focus,centre,concentrate,focus_on,center,pore,concentrate_on
-Champion :  A person who fights or argues for a cause or on behalf of someone else.   : Unknown Classification : Verb,Noun,Adjective : ace,hero,prizewinning,fighter,admirer,champ,maven,mavin,wiz,whiz,sensation,superstar,booster,hotshot,virtuoso,title-holder,genius,whizz,adept,star,supporter,friend,paladin,defend,wizard,champion,protagonist
-Charisma :  Compelling attractiveness or charm that can inspire devotion in others.   : Unknown Classification : Noun : personal_magnetism,charisma,personal_appeal
-Charm :  The power or quality of giving delight or arousing admiration.   : Unknown Classification : Verb,Noun : good_luck_charm,enamour,enamor,magic_spell,appeal,beguile,magical_spell,becharm,capture,fascinate,appealingness,tempt,influence,entrance,captivate,catch,bewitch,enchant,trance,spell,charm
-Chatoyant :  Of a gem, especially when cut en cabochon, showing a band of bright reflected light caused by aligned inclusions in the stone.   : Unknown Classification :  : iridescent,shot,changeable,chatoyant
-Cheerful :  Noticeably happy and optimistic.   : Unknown Classification : Adjective : upbeat,pollyannaish,cheerful
-Chrysalis :  A transitional state.   : Unknown Classification : Noun : chrysalis
-Chromophobia :   An irrational fear of colours.   : Unknown Classification :  : 
-Cinnamon :  An aromatic spice made from the peeled, dried and rolled bark of a Southeast Asian tree.   : Unknown Classification : Noun : cinnamon,Ceylon_cinnamon_tree,cinnamon_bark,Ceylon_cinnamon,Cinnamomum_zeylanicum
-Clarity :  The quality of being coherent and intelligible.   : Unknown Classification : Noun : clearness,uncloudedness,lucidity,pellucidity,lucidness,clarity,limpidity
-Classy :  Stylish and sophisticated.   : Unknown Classification : Adjective : posh,swish,classy
-Clearheaded :  Alert and thinking logically and coherently.   : Unknown Classification : Adjective : clear-thinking,clearheaded
-Clinomania :  An obsession with bed rest.   : Unknown Classification :  : 
-Coalesce :  Come together to form one mass or whole.   : Unknown Classification : Verb : commingle,immix,mix,coalesce,meld,fuse,blend,combine,conflate,flux,merge
-Comely :  Typically a woman who is pleasant to look at; attractive.   : Unknown Classification :  : comely,seemly,fair,comme_il_faut,sightly,decorous,bonny,becoming,bonnie,decent
-Compassion :  Sympathetic pity and concern for the sufferings or misfortunes of others.   : Unknown Classification : Noun : compassion,compassionateness,pity
-Conflate :  Combine (two or more texts, ideas, etc.) into one.   : Unknown Classification :  : commingle,immix,mix,coalesce,meld,fuse,blend,combine,conflate,flux,merge
-Consciousness :  The state of being awake and aware of one's surroundings.   : Unknown Classification : Noun : awareness,cognisance,consciousness,knowingness,cognizance
-Contentment :  A state of happiness and satisfaction.   : Unknown Classification : Noun : contentment
-Coruscate :  Flash or sparkle of light.   : Unknown Classification :  : sparkle,scintillate,coruscate
-Creativity :  The use of the imagination or original ideas, especially in the production of artistic work.   : Unknown Classification : Noun : creativeness,creative_thinking,creativity
-Crepuscular :  Of, resembling, or relating to twilight.   : Unknown Classification : Adjective : crepuscular
-Crystalline :  Having the structure and form of a crystal; composed of crystals.   : Unknown Classification : Adjective : transparent,pellucid,crystalline,limpid,crystal_clear,lucid
-Cuddle :  Hold close in one's arms as a way of showing love or affection.   : Unknown Classification : Verb,Noun : draw_close,snuggle,nuzzle,nestle,nest,cuddle
-Cynosure :  A person or thing that is the centre of attention or admiration.   : Unknown Classification : Noun : cynosure
-Cynefin :  a Welsh word, which is commonly translated into English as `habitat` or `place`, but it means where a person or animal feels it belongs. The place where you feel most at home and welcomed.   : Unknown Classification :  : 
-Dalliance :  A casual romantic or sexual relationship.   : Unknown Classification : Noun : trifling,coquetry,flirtation,dawdling,dalliance,toying,flirt,flirting
-Dandy :  A man unduly devoted to style, neatness, and fashion in dress and appearance.   : Unknown Classification : Noun : neat,slap-up,beau,swell,fashion_plate,smashing,cracking,dandy,bully,keen,clotheshorse,groovy,peachy,nifty,yawl,dude,fop,not_bad,sheik,great,corking,bang-up,gallant
-Dapper :  Typically a man who is neat and trim in dress, appearance, or bearing.   : Unknown Classification : Adjective : jaunty,spiffy,raffish,rakish,natty,snappy,spruce,dapper,dashing
-Dauntless :  Showing fearlessness and determination.   : Unknown Classification :  : intrepid,fearless,dauntless,audacious,hardy,unfearing,brave
-Dazzling :  Extremely bright, especially so as to blind the eyes temporarily.   : Unknown Classification : Adjective : daze,dazzle,glaring,fulgent,blazing,dazzling,fulgurous,bedazzle,blinding,glary,fulgurant,eye-popping
-Debonair :  A man who is confident, stylish, and charming.   : Unknown Classification : Adjective : jaunty,suave,debonaire,chipper,debonair,debonnaire
-Delicate :  Very fine in texture or structure; of intricate workmanship or quality.   : Unknown Classification : Adjective : touchy,finespun,frail,delicate,soft,ticklish,fragile
-Delicious :  Highly pleasant to the taste.   : Unknown Classification : Noun : luscious,delicious,Delicious,delightful,toothsome,yummy,scrumptious,pleasant-tasting,delectable
-Delightful :  Causing delight; charming.   : Unknown Classification : Adjective : delightful,delicious
-Demesne :  Land attached to a manor and retained for the owner's own use.   : Unknown Classification :  : estate,land,acres,domain,landed_estate,demesne
-Demure :  A woman who is reserved, modest, and shy.   : Unknown Classification :  : demure,overmodest,coy
-Denouement :  The final part of a play, movie, or narrative in which the strands of the plot are drawn together and matters are explained or resolved.   : Unknown Classification : Noun : denouement
-Desirable :  Wanted or wished for as being an attractive, useful, or necessary course of action.   : Unknown Classification : Adjective : desirable,worthy,suitable
-Desiderium :  An ardent desire or longing especially, a feeling of loss or grief for something lost.   : Unknown Classification :  : 
-Desuetude :  A state of disuse.   : Unknown Classification : Noun : desuetude
-Desultory :  Lacking a plan, purpose, or enthusiasm.   : Unknown Classification : Adjective : desultory
-Devotion :  Love, loyalty, or enthusiasm for a person, activity, or cause.   : Unknown Classification : Noun : veneration,devotion,devotedness,cultism,idolatry
-Diaphanous :  Light, delicate, and translucent, especially a fabric.   : Unknown Classification : Adjective : gauzy,cobwebby,sheer,transparent,vapourous,gossamer,diaphanous,gauze-like,filmy,see-through,vaporous
-Discombobulate :  To disconcert or confuse someone.   : Unknown Classification :  : confuse,befuddle,bedevil,bewilder,bemuse,discombobulate,fox,confound,throw,fuddle
-Dissemble :  To conceal one's true motives, feelings, or beliefs.   : Unknown Classification : Verb : affect,act,sham,mask,pretend,feign,dissemble,cloak
-Divinity :  The state or quality of being divine.   : Unknown Classification : Noun : divinity,immortal,deity,god,theology,divinity_fudge
-Doting :  Extremely and uncritically fond of someone; adoring.   : Unknown Classification :  : dote,disperse,doting,adoring,dot,scatter,constellate,stud,dust,sprinkle,fond
-Dreamy :  Having a magical or pleasantly unreal quality; dreamlike.   : Unknown Classification : Adjective : dreamy,languorous,moony,lackadaisical,languid,woolgathering
-Dulcet :  A sweet and soothing sound.   : Unknown Classification : Adjective : honeyed,dulcet,sweet,mellifluous,mellisonant
-Earnest :  Resulting from or showing sincere and intense conviction.   : Unknown Classification : Noun,Adjective : heartfelt,solemn,businesslike,earnest,devout,sincere,dear
-Ebullience :  The quality of being cheerful and full of energy; exuberance.   : Unknown Classification :  : ebullience,enthusiasm,exuberance
-Ecstasy :  An overwhelming feeling of great happiness or joyful excitement.   : Unknown Classification : Noun : hug_drug,raptus,rapture,disco_biscuit,exaltation,XTC,transport,ecstasy,go,cristal,Adam,X
-Effervescent :  A liquid giving off bubbles; fizzy.   : Unknown Classification : Adjective : sparkly,bubbling,frothy,sparkling,scintillating,effervescent
-Efflorescence :  A state or time of flowering.   : Unknown Classification : Noun : peak,bloom,flowering,roseola,skin_rash,inflorescence,blossoming,prime,flower,florescence,flush,blossom,heyday,efflorescence,rash,anthesis
-Effortless :  Requiring no physical or mental exertion.   : Unknown Classification : Adjective : effortless,casual
-Elation :  Great happiness and exhilaration.   : Unknown Classification : Noun : elation,high_spirits,lightness
-Elegant :  Pleasingly graceful and stylish in appearance or manner.   : Unknown Classification : Adjective : refined,elegant,graceful
-Elision :  The omission of a sound or syllable when speaking.  : Unknown Classification : Noun : exception,elision,exclusion
-Elixir :  A magical or medicinal potion.   : Unknown Classification : Noun : elixir,philosopher's_stone,philosophers'_stone
-Eloquence :  Fluent or persuasive speaking or writing.   : Unknown Classification : Noun : fluency,eloquence,smoothness
-Embrocation :  A liquid used for rubbing on the body to relieve pain from sprains and strains.   : Unknown Classification :  : liniment,embrocation
-Emollient :  Having the quality of softening or soothing the skin.   : Unknown Classification :  : demulcent,cream,ointment,salving,emollient,softening
-Emulate :  Match or surpass (a person or achievement), typically by imitation.   : Unknown Classification : Verb : emulate
-Enamoured :  To be filled with a feeling of love for someone or something.   : Unknown Classification :  : enamour,beguile,entrance,captivate,enamor,enchant,catch,charm,bewitch,trance,becharm,capture,fascinate
-Enchanted :  Placed under a spell; bewitched.   : Unknown Classification : Adjective : glamour,enamour,ravish,enamor,beguile,enthrall,delight,becharm,capture,fascinate,entrance,enchanted,captivate,enthral,catch,bewitch,enchant,trance,hex,enrapture,witch,transport,charm,jinx
-Enraptured :  Experiencing intense pleasure or joy.   : Unknown Classification :  : rapt,rhapsodic,ravish,enthrall,delight,ecstatic,rapturous,transport,enthral,enchant,enraptured,enrapture
-Enthralled :  Experiencing fascinated attention.   : Unknown Classification :  : ravish,enthrall,delight,enthralled,delighted,entranced,transport,enthral,enchant,charmed,captivated,beguiled,enrapture
-Ephemeral :  Lasting for a very short time.   : Unknown Classification : Adjective : ephemeral,fugacious,ephemeron,transient,passing,transitory,short-lived
-Epiphany :  A moment of sudden revelation or insight.   : Unknown Classification : Noun : Twelfth_day,Epiphany,epiphany,Three_Kings'_Day,January_6,Epiphany_of_Our_Lord
-Equanimity :  Mental calmness, composure, and evenness of temper, especially in a difficult situation.   : Unknown Classification :  : equanimity,calmness,composure,calm
-Equilibrium :  A state in which opposing forces or influences are balanced.   : Unknown Classification : Noun : balance,equilibrium,equipoise,sense_of_equilibrium,labyrinthine_sense,chemical_equilibrium,sense_of_balance,vestibular_sense,counterbalance
-Erstwhile :  Former.   : Unknown Classification : Adjective : at_one_time,erst,erstwhile,onetime,one-time,former,sometime,once,old,formerly,quondam
-Ethereal :  Extremely delicate and light in a way that seems too perfect for this world.   : Unknown Classification : Adjective : supernal,airy,aeriform,ethereal,gossamer,aery,celestial,aerial
-Etiquette :  The customary code of polite behaviour in society or among members of a particular profession or group.   : Unknown Classification : Noun : etiquette
-Euphoria :  A feeling or state of intense excitement and happiness.   : Unknown Classification : Noun : euphoria,euphory
-Evanescent :  Soon passing out of sight, memory, or existence; quickly fading or disappearing.   : Unknown Classification : Adjective : evanescent
-Evocative :  Bringing strong images, memories, or feelings to mind.   : Unknown Classification : Adjective : evocative,remindful,redolent,reminiscent,resonant
-Exonerate :  To absolve someone from blame for a fault or wrongdoing, especially after due consideration of the case.   : Unknown Classification :  : clear,exculpate,acquit,exonerate,discharge,assoil
-Exquisite :  Extremely beautiful and, typically, delicate.   : Unknown Classification : Adjective : keen,dainty,recherche,exquisite
-Exuberant :  Filled with or characterized by a lively energy and excitement.   : Unknown Classification : Adjective : lush,overweening,extravagant,profuse,luxuriant,excessive,ebullient,high-spirited,riotous,exuberant
-Fabulous :  Amazingly good; wonderful.   : Unknown Classification : Adjective : mythic,mythologic,mythical,mythological,fab,fabulous
-Faithful :  Loyal, constant, and steadfast.   : Unknown Classification : Noun,Adjective : fold,congregation,faithful,close
-Fascination :  The power to fascinate someone; the quality of being fascinating.   : Unknown Classification : Noun : enchantment,fascination,enthrallment,captivation
-Feasible :  Possible to do easily or conveniently.   : Unknown Classification : Adjective : executable,workable,feasible,practicable,viable
-Feisty :  A person who is relatively small or weak but also lively, determined, and courageous.   : Unknown Classification : Adjective : touchy,thin-skinned,huffy,plucky,spunky,feisty
-Felicity :  Intense happiness.   : Unknown Classification : Noun : happiness,felicitousness,felicity
-Feral :  (especially of an animal) in a wild state, especially after escape from captivity or domestication.   : Unknown Classification : Adjective : savage,feral,ferine
-Festive :  Cheerful and jovially celebratory.   : Unknown Classification :  : gay,festive,merry,festal
-Fetching :  Attractive.   : Unknown Classification : Adjective : bring_in,fetch,winning,get,taking,convey,fetching,bring
-Fidelity :  Faithfulness to a person, cause, or belief, demonstrated by continuing loyalty and support.   : Unknown Classification : Noun : faithfulness,fidelity
-Filament :  A slender threadlike object or fibre, especially one found in animal or plant structures.   : Unknown Classification : Noun : fibril,filum,filament,strand
-Flawless :  Without any blemishes or imperfections; perfect.   : Unknown Classification : Adjective : unflawed,flawless
-Flourish :  To grow or develop in a healthy or vigorous way, especially as the result of a particularly favourable environment.   : Unknown Classification : Noun : expand,tucket,boom,fly_high,thrive,wave,flourish,fanfare,prosper,brandish
-Flowing :  Hanging or draping loosely and gracefully.   : Unknown Classification :  : run,course,menstruate,flow,aerodynamic,streamlined,feed,fall,flux,flowing,hang,sleek
-Forbearance :  Patient self-control; restraint and tolerance.   : Unknown Classification : Noun : patience,forbearance,longanimity
-Fortitude :  Courage in pain or adversity.   : Unknown Classification : Noun : fortitude
-Friendship :  The emotions or conduct of friends; the state of being friends.   : Unknown Classification : Noun : friendly_relationship,friendship
-Fugacious :  Tending to disappear; fleeting.   : Unknown Classification :  : ephemeral,fugacious,transient,passing,transitory,short-lived
-Fulfilling :  Making someone satisfied or happy because of fully developing their character or abilities.   : Unknown Classification :  : meet,accomplish,fulfill,carry_through,fulfil,fill,action,execute,live_up_to,satisfy,carry_out
-Furtive :  Attempting to avoid notice or attention, typically because of guilt or a belief that discovery would lead to trouble; secretive.   : Unknown Classification : Adjective : furtive,sneak,surreptitious,backstair,backstairs,sneaky,stealthy
-Gambol :  Run or jump about playfully.   : Unknown Classification :  : sport,play,lark_about,lark,frisk,frolic,rollick,cavort,run_around,caper,romp,skylark,disport,gambol
-Gargantuan :  Enormous.   : Unknown Classification :  : jumbo,elephantine,giant,gargantuan
-Giddy :  Having a sensation of whirling and a tendency to fall or stagger; dizzy.   : Unknown Classification :  : giddy,light-headed,lightheaded,empty-headed,vertiginous,airheaded,dizzy,silly,featherbrained,woozy
-Ginger :  A hot, fragrant spice made from the rhizome of a plant, which may be chopped or powdered for cooking, preserved in syrup, or candied.   : Unknown Classification : Verb,Noun,Adjective : powdered_ginger,ginger,peppiness,gingery,gingerroot,pep
-Glamour :  An attractive or exciting quality that makes certain people or things seem appealing.   : Unknown Classification :  : glamour,witch,bewitch,jinx,enchant,hex,glamor
-Glorious :  Having a striking beauty or splendor that evokes feelings of delighted admiration.   : Unknown Classification : Adjective : resplendent,brilliant,splendid,magnificent,splendiferous,glorious
-Goddess :  A woman who is adored, especially for her beauty.   : Unknown Classification : Noun : goddess
-Gorgeous :  Beautiful; very attractive.   : Unknown Classification : Adjective : gorgeous
-Gossamer :  Used to refer to something very light, thin, and insubstantial or delicate.   : Unknown Classification : Noun : gauzy,cobwebby,sheer,transparent,vapourous,ethereal,gossamer,diaphanous,gauze-like,cobweb,filmy,see-through,vaporous
-Graceful :  Having or showing grace or elegance.   : Unknown Classification : Adjective : refined,elegant,graceful
-Halcyon :  Denoting a period of time in the past that was idyllically happy and peaceful.   : Unknown Classification : Noun,Adjective : halcyon,Alcyone,Halcyon,prosperous,genus_Halcyon,golden
-Handsome :  A good-looking man.   : Unknown Classification :  : liberal,well-favoured,better-looking,bounteous,big,good-looking,giving,openhanded,bountiful,well-favored,bighearted,fine-looking,freehanded,handsome
-Harbinger :  A forerunner of something.   : Unknown Classification : Noun : annunciate,predecessor,foretell,herald,precursor,harbinger,forerunner,announce
-Harmony :  The quality of forming a pleasing and consistent whole.   : Unknown Classification : Noun : harmoniousness,harmony,concord,concordance,musical_harmony
-Heartfelt :  A feeling or its expression that is sincere; deeply and strongly felt.   : Unknown Classification :  : devout,heartfelt,dear,earnest
-Heartwarming :  Emotionally rewarding or uplifting.   : Unknown Classification : Adjective : heartwarming
-Heavenly :  Very pleasing; wonderful.   : Unknown Classification : Adjective : heavenly,celestial
-Hilarity :  Extreme amusement, especially when expressed by laughter.   : Unknown Classification : Noun : gleefulness,mirth,hilarity,mirthfulness,glee
-Holiness :  The state of being holy.   : Unknown Classification : Noun : sanctity,sanctitude,holiness
-Hopefulness :  Having or manifesting hope.   : Unknown Classification : Noun : hopefulness
-Humility :  A modest or low view of ones own importance; humbleness.   : Unknown Classification : Noun : humbleness,humility
-Idyllic :  A time or place that is extremely happy, peaceful, or picturesque.   : Unknown Classification : Adjective : idyllic
-Illumination :  Lighting or light.   : Unknown Classification : Noun : elucidation,light,miniature,illuminance,illumination,clarification
-Illustrious :  Well known, respected, and admired for past achievements.   : Unknown Classification : Adjective : notable,noted,famous,renowned,far-famed,famed,celebrated,illustrious
-Imbrication :  An overlapping of edges (as of tiles or scales).   : Unknown Classification : Noun : overlapping,imbrication,lapping
-Imbroglio :  An extremely confused, complicated, or embarrassing situation.   : Unknown Classification : Noun : embroilment,imbroglio
-Imbue :  To inspire or permeate with a feeling or quality.   : Unknown Classification : Verb : diffuse,soak,hue,imbue,penetrate,permeate,interpenetrate,pervade,riddle
-Incandescence :  The light emitted by an incandescent object.   : Unknown Classification : Noun : incandescence,glow
-Incipient :  In an initial stage; beginning to happen or develop.   : Unknown Classification : Adjective : incipient,inchoate
-Ineffable :  Too great or extreme to be expressed or described in words.   : Unknown Classification : Adjective : unutterable,unnameable,indescribable,untellable,ineffable,indefinable,unspeakable
-Ingenue :  An innocent or unsophisticated young woman, especially in a play or film.   : Unknown Classification : Noun : ingenue
-Inglenook :  A space on either side of a large fireplace.   : Unknown Classification :  : inglenook,chimney_corner
-Insouciance :  Casual lack of concern; indifference.   : Unknown Classification :  : carefreeness,insouciance,lightheartedness,lightsomeness
-Intrepid :  Fearless; adventurous (often used for rhetorical or humorous effect).   : Unknown Classification :  : intrepid,fearless,dauntless,audacious,hardy,unfearing,brave
-Inure :  Accustom to something, especially something unpleasant.   : Unknown Classification : Verb : indurate,inure,harden
-Invincible :  Too powerful to be defeated or overcome.   : Unknown Classification : Adjective : unbeatable,invincible,unvanquishable
-Iridescent :  Showing luminous colors that seem to change when seen from different angles.   : Unknown Classification : Adjective : nacreous,shot,changeable,opaline,pearlescent,iridescent,chatoyant,opalescent
-Jaunty :  Having or expressing a lively, cheerful, and self-confident manner.   : Unknown Classification :  : jaunty,spiffy,raffish,rakish,natty,snappy,spruce,debonaire,dapper,dashing,chipper,debonair
-Jocular :  Fond of or characterized by joking; humorous or playful.   : Unknown Classification :  : joking,jocosely,jocular,jesting,jocose
-Jovial :  Cheerful and friendly.   : Unknown Classification :  : merry,jolly,jovial,gay,mirthful,jocund
-Joyous :  Feeling,showing,or causing joy; joyful.  : Unknown Classification : Adjective : joyous
-Jubilant :  Feeling or expressing great happiness and triumph.   : Unknown Classification :  : gleeful,exulting,joyful,triumphal,triumphant,jubilant,rejoicing,elated,exultant,prideful
-Judicious :  Having or showing good judgment or sense.   : Unknown Classification : Adjective : judicious,heady,wise
-Juvenescent :  Becoming young or youthful.   : Unknown Classification :  : 
-Kindred :  Ones family and relations.   : Unknown Classification : Adjective : kindred,kin,kin_group,akin,clan,kinship_group,tribe
-Kindliness :  The quality of being kind, warmhearted, or gentle; kindness.   : Unknown Classification : Noun : helpfulness,kindliness
-Kissable :  Capable of being kissed; inviting to be kissed through attractiveness.   : Unknown Classification :  : 
-Labyrinthine :  A network like a labyrinth; irregular and twisting.   : Unknown Classification : Adjective : labyrinthian,labyrinthine,mazy
-Lagniappe :  Something given as a bonus or extra gift.   : Unknown Classification : Noun : lagniappe
-Lagoon :  A stretch of salt water separated from the sea by a low sandbank or coral reef.   : Unknown Classification : Noun : lagune,laguna,lagoon
-Languid :  Displaying or having a disinclination for physical exertion or effort; slow and relaxed.   : Unknown Classification :  : dreamy,lackadaisical,languorous,languid
-Languor :  The state or feeling, often pleasant, of tiredness or inertia.   : Unknown Classification : Noun : lethargy,languor,sluggishness,phlegm,dreaminess,lassitude,flatness,listlessness
-Lassitude :  A state of physical or mental weariness; lack of energy.   : Unknown Classification :  : inanition,lethargy,slackness,languor,sluggishness,lassitude,listlessness
-Leisure :  Free time.   : Unknown Classification : Noun : leisure_time,leisure
-Lilt :   A characteristic rising and falling of the voice when speaking; a pleasant gentle accent.   : Unknown Classification : Verb,Noun : lilt,swing
-Lilting :  Speak, sing, or sound with a lilt.   : Unknown Classification : Adjective : lilt,lilting,swingy,swinging,tripping
-Lissome :  A person or their body that is thin, supple, and graceful.   : Unknown Classification : Adjective : slender,lithesome,lissom,supple,sylphlike,svelte,lithe,lissome
-Lithe :  A persons body that is thin, supple, and graceful.   : Unknown Classification :  : slender,lithesome,lissom,supple,sylphlike,svelte,lithe,lissome
-Lovable :  Inspiring or deserving love or affection.   : Unknown Classification : Adjective : loveable,lovable
-Lullaby :  A quiet, gentle song sung to send a child to sleep.   : Unknown Classification : Noun : berceuse,cradlesong,lullaby
-Luminescence :  The emission of light by a substance that has not been heated, as in fluorescence and phosphorescence.   : Unknown Classification : Noun : glow,luminescence
-Luxury :  Sumptuous or extremely comfortable living surroundings.   : Unknown Classification : Noun : lavishness,luxuriousness,opulence,luxury,sumptuousness,sumptuosity
-Magnificent :  Splendid in appearance;grand.   : Unknown Classification :  : glorious,magnificent,splendid,brilliant
-Marvelous :  Causing great wonder; extraordinary.   : Unknown Classification : Adjective : howling,marvellous,fantastic,grand,improbable,terrific,wondrous,marvelous,tremendous,tall,wonderful,rattling,miraculous
-Mercurial :  Subject to sudden or unpredictable changes of mood or mind.   : Unknown Classification : Adjective : quicksilver,mercurial,erratic,fickle,Mercurial
-Mellifluous :  Sweet or musical; pleasant to hear.   : Unknown Classification :  : honeyed,dulcet,sweet,mellifluous,mellisonant
-Mellow :  Pleasantly smooth or soft; free from harshness.   : Unknown Classification : Verb,Adjective : melt,mellow,mellow_out,mellowly,high,mellowed,laid-back
-Mindfulness :  A mental state achieved by focusing ones awareness on the present moment, while calmly acknowledging and accepting ones feelings, thoughts, and bodily sensations, used as a therapeutic technique.   : Unknown Classification : Noun : mindfulness,heedfulness
-Minutiae :  Small or trivial details.   : Unknown Classification :  : minutia
-Moiety :  Each of two parts into which a thing is or can be divided.   : Unknown Classification : Noun : moiety,mediety
-Mondegreen :  A misunderstood or misinterpreted word or phrase resulting from a mishearing of the lyrics of a song.   : Unknown Classification :  : 
-Murmurous :  Filled with or characterized by murmurs; low and indistinct.  : Unknown Classification : Adjective : soughing,susurrous,murmurous,rustling
-Nemesis :  A long-standing rival; an archenemy.   : Unknown Classification : Noun : bane,scourge,nemesis,Nemesis,curse
-Namaste :  A respectful greeting said when giving a namaskar.   : Unknown Classification :  : 
-Nebulous :  Unclear, vague, or ill-defined concept or idea.   : Unknown Classification : Adjective : nebulous,cloudy,unfixed,nebulose,nebular
-Nirvana :  A transcendent state in which there is neither suffering, desire, nor sense of self, and the subject is released from the effects of karma and the cycle of death and rebirth. It represents the final goal of Buddhism.   : Unknown Classification : Noun : promised_land,Eden,Shangri-la,nirvana,heaven,enlightenment,paradise
-Nourishment :  The food or other substances necessary for growth, health, and good condition.   : Unknown Classification : Noun : sustenance,nutrition,nourishment,alimentation,aliment,victuals,nutriment
-Nurture :  Care for and encourage the growth or development of.   : Unknown Classification :  : foster,raising,nurture,parent,nourish,sustain,bringing_up,rearing,raise,rear,bring_up,fosterage,fostering,breeding,upbringing
-Oblivion :  The state of being unaware or unconscious of what is happening.   : Unknown Classification : Noun : limbo,obliviousness,oblivion
-Omnipotent :  Having unlimited power; able to do anything.   : Unknown Classification :  : almighty,omnipotent,all-powerful
-Onomatopoeia :  The formation of a word from a sound associated with what is named.  : Unknown Classification : Noun : onomatopoeia
-Optimistic :  Hopeful and confident about the future.   : Unknown Classification : Adjective : affirmative,optimistic
-Opulent :  Ostentatiously rich and luxurious or lavish.   : Unknown Classification :  : grand,sumptuous,gilded,princely,deluxe,opulent,luxurious
-Pacify :  Quell the anger, agitation, or excitement of.   : Unknown Classification : Verb : assuage,placate,gruntle,conciliate,appease,mollify,pacify,lenify,gentle
-Palimpsest :  A manuscript or piece of writing material on which the original writing has been effaced to make room for later writing but of which traces remain.   : Unknown Classification : Noun : palimpsest
-Panacea :  A solution or remedy for all difficulties or diseases.   : Unknown Classification : Noun : nostrum,cure-all,panacea,Panacea,catholicon
-Panoply :  A complete or impressive collection of things.   : Unknown Classification : Noun : panoply
-Paradise :  An ideal or idyllic place or state.   : Unknown Classification : Noun : promised_land,Eden,Shangri-la,nirvana,heaven,Paradise,paradise
-Passion :  Strong and barely controllable emotion.   : Unknown Classification : Noun : passion,rage,cacoethes,warmth,Passion_of_Christ,love,passionateness,Passion,mania,heat
-Pastiche :  An artistic work in a style that imitates that of another work, artist, or period.   : Unknown Classification : Noun : medley,potpourri,pastiche
-Persevering :  Persistent; constant in the execution of a purpose.   : Unknown Classification :  : persevere,hang_in,persist,hold_on,diligent,hang_on,persevering
-Perspicacious :  Clear-sighted; mentally perceptive or acute; keen.   : Unknown Classification : Adjective : sapient,perspicacious,clear-sighted,sagacious,clear-eyed
-Petrichor :  A pleasant smell that frequently accompanies the first rain after a long period of warm, dry weather.   : Unknown Classification :  : 
-Phenomenal :  Very remarkable; extraordinary.   : Unknown Classification : Adjective : phenomenal
-Phosphenes :  A ring or spot of light produced by pressure on the eyeball or direct stimulation of the visual system other than by light.   : Unknown Classification :  : 
-Piquancy :  A pleasantly sharp and appetizing flavor.   : Unknown Classification : Noun : piquantness,piquancy,zest,nip,piquance,tang,tanginess
-Plethora :  A large or excessive amount of something.   : Unknown Classification :  : embarrassment,plethora,overplus,superfluity
-Precious :  An object, substance, or resource of great value; not to be wasted or treated carelessly.   : Unknown Classification : Adverb,Adjective : wanted,cute,precious,treasured,cherished,preciously,valued
-Prevarication :  To deviate from the truth , lie,.  : Unknown Classification :  : fabrication,lying,lie,prevarication,evasiveness,equivocation
-Propinquity :  The state of being close to someone or something; proximity.   : Unknown Classification :  : propinquity,proximity
-Prosperity :  The state of being prosperous.   : Unknown Classification : Noun : successfulness,prosperity
-Pyrrhic :  A victory won at too great a cost to have been worthwhile for the victor.   : Unknown Classification : Noun,Adjective : dibrach,pyrrhic
-Quaint :  Attractively unusual or old-fashioned.   : Unknown Classification : Adjective : olde_worlde,old-time,quaint
-Quantum :  A discrete quantity of energy proportional in magnitude to the frequency of the radiation it represents.   : Unknown Classification : Noun : quantum
-Quickening :  To enter into a phase of active growth and development.  : Unknown Classification : Noun : revivify,speed,renovate,acceleration,reanimate,recreate,invigorate,accelerate,whet,revive,quickening,repair,vivify,quicken,animate,speedup,speed_up
-Quiescent :  In a state or period of inactivity or dormancy.   : Unknown Classification : Adjective : quiescent
-Quietude :  A state of stillness, calmness, and quiet in a person or place.   : Unknown Classification :  : tranquility,tranquillity,quietude,quietness
-Quintessential :  Representing the most perfect or typical example of a quality or class.   : Unknown Classification : Adjective : quintessential
-Radiant :  Sending out light; shining or glowing brightly.   : Unknown Classification :  : radiant,beaming,effulgent,refulgent,beamy
-Rapturous :  Characterized by, feeling, or expressing great pleasure or enthusiasm.   : Unknown Classification :  : rapt,rhapsodic,rapturous,enraptured,ecstatic
-Ratatouille :  A vegetable dish consisting of onions, zucchini, tomatoes, eggplant, and peppers, fried and stewed in oil and sometimes served cold.   : Unknown Classification : Noun : ratatouille
-Ravel :  Untangle or unravel something.   : Unknown Classification : Verb,Noun : Ravel,run,Maurice_Ravel,unravel,tangle,knot,ladder,ravel_out,ravel
-Ravishing :  Delightful; entrancing.   : Unknown Classification : Adjective : outrage,ravishing,ravish,enthrall,delight,violate,dishonor,transport,enthral,dishonour,enchant,assault,rape,enrapture
-Redolent :  Strongly reminiscent or suggestive of something.   : Unknown Classification : Adjective : evocative,remindful,redolent,smelling,reminiscent,resonant,aromatic
-Rejuvenate :  Make someone or something look or feel younger, fresher, or more lively.   : Unknown Classification : Verb : regenerate,rejuvenate,restore
-Relent :  Abandon or mitigate a harsh intention or cruel treatment.   : Unknown Classification :  : yield,relent,soften
-Repose :  A state of rest, sleep, or tranquility.   : Unknown Classification : Verb,Noun : reside,rest,repose,ataraxis,quiet,ease,put_down,peace_of_mind,tranquillity,peacefulness,relaxation,lay,peace,recumb,recline,serenity,placidity,heartsease,tranquility
-Resilience :  The capacity to recover quickly from difficulties; toughness.   : Unknown Classification : Noun : resilience,resiliency
-Resplendent :  Attractive and impressive through being richly colorful or sumptuous.   : Unknown Classification :  : glorious,splendid,resplendent,splendiferous
-Revelation :  A surprising and previously unknown fact, especially one that is made known in a dramatic way.   : Unknown Classification : Noun : disclosure,Book_of_Revelation,Revelation_of_Saint_John_the_Divine,Revelation,revealing,divine_revelation,revelation,Apocalypse
-Reverence :  Deep respect for someone or something.   : Unknown Classification : Verb,Noun : veneration,awe,revere,fear,venerate,reverence
-Rhapsodic :  Immoderately impassioned or enthusiastic.   : Unknown Classification :  : rapt,rhapsodic,rapturous,enraptured,ecstatic
-Righteousness :  The quality of being morally right or justifiable.   : Unknown Classification : Noun : righteousness
-Riparian :  Relating to or situated on the banks of a river.   : Unknown Classification : Adjective : riparian
-Ripple :  A small wave or series of waves on the surface of water, especially as caused by an object dropping into it or a slight breeze.   : Unknown Classification : Verb,Noun : gurgle,guggle,cockle,ruffle,burble,wavelet,rippling,riffle,babble,bubble,undulate,ripple
-Romance :  A feeling of excitement and mystery associated with love.   : Unknown Classification : Verb,Noun,Adjective : mash,solicit,dally,flirt,romance,Latin,coquet,woo,philander,Romance_language,Romance,romanticism,coquette,court,love_story,Latinian_language,butterfly,love_affair,chat_up
-Sacred :  Connected with God (or the gods) or dedicated to a religious purpose and so deserving veneration.   : Unknown Classification : Adjective : hallowed,sacred,consecrated,sanctified
-Salve :  Something that is soothing or consoling for wounded feelings or an uneasy conscience.   : Unknown Classification : Verb,Noun : relieve,ointment,unguent,unction,balm,save,salvage,salve
-Sapphire :  A transparent precious stone, typically blue, that is a variety of corundum (aluminum oxide).   : Unknown Classification : Noun,Adjective : sapphire,azure,cerulean,lazuline,sky-blue
-Savor :  Enjoy or appreciate something pleasant completely, especially by dwelling on it.   : Unknown Classification : Verb : savor,enjoy,flavor,smack,nip,savour,tang,taste,flavour,sapidity,bask,relish
-Scintilla :  A tiny trace or spark of a specified quality or feeling.   : Unknown Classification : Noun : scintilla,iota,smidgeon,smidgin,smidge,tittle,whit,smidgen,shred
-Sempiternal :  Eternal and unchanging; everlasting.   : Unknown Classification :  : sempiternal,dateless,endless
-Sequoia :  A redwood tree, especially the California redwood.   : Unknown Classification : Noun : redwood,sequoia
-Seraglio :  A large harem.   : Unknown Classification :  : serail,hareem,seraglio,harem
-Serendipity :  The occurrence and development of events by chance in a happy or beneficial way.   : Unknown Classification : Noun : serendipity
-Serenity :  The state of being calm, peaceful, and untroubled.   : Unknown Classification :  : serenity,placidity,heartsease,repose,peace,peace_of_mind,ataraxis,quiet,tranquillity,tranquility,peacefulness
-Silky :  Of or resembling silk, especially in being soft, fine, and lustrous.   : Unknown Classification :  : silken,slick,satiny,silky,sleek,silklike
-Simplicity :  The quality or condition of being easy to understand or do.   : Unknown Classification : Noun : restraint,chasteness,simpleness,easiness,simmpleness,ease,simple_mindedness,simplicity
-Solitude :  The state or situation of being alone.   : Unknown Classification : Noun : solitude,purdah
-Somnambulism :  An abnormal condition of sleep in which motor acts (such as walking) are performed.  : Unknown Classification :  : noctambulism,somnambulation,noctambulation,somnambulism,sleepwalking
-Sonorous :  Capable of producing a deep or ringing sound.   : Unknown Classification :  : heavy,sonorous
-Soulmate :  A person ideally suited to another as a close friend or romantic partner.   : Unknown Classification :  : 
-Spacious :  Having ample space.   : Unknown Classification :  : roomy,broad,spacious,wide
-Spellbound :  Hold the complete attention of someone as though by magic; fascinate.   : Unknown Classification :  : grip,hypnotized,mesmerise,entrance,mesmerize,mesmerised,fascinated,spellbound,magnetize,magnetise,hypnotised,spell-bound,bewitch,mesmerized,transfixed,transfix,fascinate,spellbind
-Spherical :  Shaped like a sphere.   : Unknown Classification : Adjective : spherical,globose,globular,ball-shaped,orbicular,global,spheric
-Splendid :  Magnificent; very impressive.   : Unknown Classification :  : excellent,fantabulous,resplendent,brilliant,splendid,magnificent,splendiferous,first-class,glorious
-Sprightliness :  Marked by a gay lightness and vivacity.   : Unknown Classification :  : life,liveliness,sprightliness,spirit
-Statuesque :  An attractively tall and dignified woman.   : Unknown Classification :  : stately,statuesque,Junoesque
-Sublime :  Of such excellence, grandeur, or beauty as to inspire great admiration or awe.   : Unknown Classification : Verb,Adjective : idealistic,grand,sublime,high-flown,lofty,empyreal,noble-minded,empyrean,exalted,reverend,rarified,sublimate,rarefied,elevated,high-minded
-Succulent :  Tender, juicy, and tasty food.   : Unknown Classification : Noun : lush,succulent
-Summery :  Characteristic of or suitable for summer.   : Unknown Classification : Adjective : summery
-Sumptuous :  Splendid and expensive-looking.   : Unknown Classification :  : grand,sumptuous,gilded,princely,deluxe,opulent,luxurious
-Supine :  Lying face upward.   : Unknown Classification : Adjective : resistless,unresisting,resupine,supine
-Surreptitious :  Kept secret, especially because it would not be approved of.   : Unknown Classification :  : furtive,sneak,secret,cloak-and-dagger,surreptitious,clandestine,hole-and-corner,undercover,hush-hush,sneaky,underground,hugger-mugger,stealthy
-Susquehanna :  A river 444 miles (714 kilometers) long in the eastern U.S. flowing from central New York south through Pennsylvania and into the Chesapeake Bay in northern Maryland.  : Unknown Classification : Noun : Susquehanna,Susquehanna_River
-Susurrous :  Full of whispering sounds.   : Unknown Classification :  : soughing,susurrous,murmurous,rustling
-Symphony :  Something regarded, typically favorably, as a composition of different elements.   : Unknown Classification : Noun : symphonic_music,symphony_orchestra,symphony,philharmonic
-Talisman :  An object, typically an inscribed ring or stone, that is thought to have magic powers and to bring good luck.   : Unknown Classification :  : talisman,amulet
-Tenacity :  The quality or fact of being able to grip something firmly; grip.   : Unknown Classification :  : tenaciousness,doggedness,pertinacity,perseverance,tenacity,persistence,persistency
-Tender :  Showing gentleness and concern or sympathy.   : Unknown Classification : Verb,Noun,Adjective : legal_tender,raw,untoughened,tenderize,bid,lovesome,warm,fond,attendant,supply_ship,offer,affectionate,cutter,cranky,sore,attender,crank,sensitive,tender,ship's_boat,stamp,tenderise,tippy,pinnace
-Tintinnabulation :  A ringing or tinkling sound.   : Unknown Classification :  : ring,ringing,tintinnabulation
-Tolerance :  The ability or willingness to tolerate something, in particular, the existence of opinions or behavior that one does not necessarily agree with.   : Unknown Classification : Noun : permissiveness,margin,allowance,tolerance,leeway
-Tranquility :  The quality or state of being tranquil; calm.   : Unknown Classification :  : serenity,placidity,quietness,repose,quietude,quiet,tranquillity,tranquility
-Transfiguration :  A complete change of form or appearance into a more beautiful or spiritual state.   : Unknown Classification : Noun : Transfiguration_Day,Transfiguration_of_Jesus,metamorphosis,Transfiguration,transfiguration,August_6
-Triumph :  A great victory or achievement.   : Unknown Classification : Noun : gloat,rejoice,crow,triumph,exuberate,exult,jubilate,victory,wallow,prevail
-Umbrella :  A device consisting of a circular canopy of cloth on a folding metal frame supported by a central rod, used as protection against rain or sometimes sun.   : Unknown Classification : Noun,Adjective : umbrella
-Unabashed :  Not embarrassed, disconcerted, or ashamed.   : Unknown Classification : Adjective : unabashed,unembarrassed
-Unflappable :  Having or showing calmness in a crisis.   : Unknown Classification :  : unflappable,imperturbable
-Unification :  The process of being united or made into a whole.   : Unknown Classification :  : union,unification,fusion,jointure,conjugation,merger,uniting
-Unique :  Being the only one of its kind; unlike anything else.   : Unknown Classification : Adjective : unparalleled,alone,singular,unequaled,unequalled,unique
-Varnish :  Resin dissolved in a liquid for applying on wood, metal, or other materials to form a hard, clear, shiny surface when dry.   : Unknown Classification : Verb,Noun : varnish,seal
-Veneration :  Great respect; reverence.   : Unknown Classification :  : veneration,awe,fear,devotion,cultism,idolatry,reverence
-Verity :  A true principle or belief, especially one of fundamental importance.   : Unknown Classification : Noun : the_true,verity,trueness,truth
-Vestigial :  Forming a very small remnant of something that was once much larger or more noticeable.   : Unknown Classification : Adjective : vestigial,rudimentary
-Vibrant :  Full of energy and enthusiasm.   : Unknown Classification : Adjective : vivacious,vibrant
-Victorious :  Having won a victory; triumphant.   : Unknown Classification : Adjective : victorious,winning,triumphant
-Virtuous :  Having or showing high moral standards.   : Unknown Classification : Adjective : virginal,virtuous,pure,vestal,virgin
-Vitality :  The state of being strong and active; energy.   : Unknown Classification : Noun : vitality,verve,vital_force,life_force,elan_vital,energy,animation,vim
-Vitriolic :  Filled with bitter criticism or malice.   : Unknown Classification :  : caustic,acerbic,bitter,erosive,sulfurous,virulent,corrosive,mordant,acid,sulphurous,acrid,blistering,vitriolic,acerb
-Vortex :  A mass of whirling fluid or air, especially a whirlpool or whirlwind.  : Unknown Classification :  : whirl,vortex,maelstrom,swirl,convolution,whirlpool
-Vulnerable :  Susceptible to physical or emotional attack or harm.   : Unknown Classification : Adjective : vulnerable
-Waft :  Pass or cause to pass easily or gently through or as if through the air.   : Unknown Classification : Verb : pennon,streamer,pennant,waft
-Wanderlust :  A strong desire to travel.   : Unknown Classification : Noun : itchy_feet,wanderlust
-Warmhearted :  A person or their actions that are sympathetic and kind.   : Unknown Classification : Adjective : warmhearted
-Wherewithal :  The money or other means needed for a particular purpose.   : Unknown Classification : Noun : wherewithal
-Wholesome :  Conducive to or suggestive of good health and physical well-being.   : Unknown Classification : Adjective : wholesome
-Wondrous :  Inspiring a feeling of wonder or delight; marvelous.   : Unknown Classification :  : howling,marvellous,fantastic,grand,superbly,marvellously,terrific,wondrously,wonderfully,wondrous,marvelous,tremendous,wonderful,marvelously,terrifically,rattling,toppingly
-Worship :  The feeling or expression of reverence and adoration for a deity.   : Unknown Classification : Verb,Noun : adoration,revere,idolize,idolise,worship,hero-worship
-Xanadu :  An idealized place of great or idyllic magnificence and beauty.   : Unknown Classification :  : 
-Xenophobia :  Dislike of or prejudice against people from other countries.   : Unknown Classification : Noun : xenophobia
-Xylophone :  A musical instrument played by striking a row of wooden bars of graduated length with one or more small wooden or plastic mallets.   : Unknown Classification :  : marimba,xylophone
-Yearling :  An animal (especially a sheep, calf, or foal) that is a year old or that is in its second year.   : Unknown Classification : Noun : toddler,bambino,yearling,tot
-Yearn :  Have an intense feeling of longing for something, typically something that one has lost or been separated from.   : Unknown Classification : Verb : languish,ache,hanker,pine,yearn,yen,long
-Yesteryear :  Last year or the recent past, especially as nostalgically recalled.   : Unknown Classification :  : past,yesteryear,past_times
-Zealous :  Having or showing zeal.   : Unknown Classification :  : avid,zealous
-Zenith :  The time at which something is most powerful or successful.   : Unknown Classification : Noun : zenith
-Zephyr :  A soft gentle breeze.   : Unknown Classification : Noun : zephyr,Zephyr,breeze,air,gentle_wind
-Zestful :  Characterized by great enthusiasm and energy.   : Unknown Classification : Adjective : zestful,zesty,barmy,yeasty
-Zinfandel :  A variety of wine grape grown in California.   : Unknown Classification : Noun : Zinfandel,zinfandel
-Zither :  A musical instrument consisting of a flat wooden soundbox with numerous strings stretched across it placed horizontally and played with the fingers and a plectrum. It is used especially in central European folk music.   : Unknown Classification : Noun : cither,zither,zithern
-Zoophilic :  Having an attraction to or preference for animals.   : Unknown Classification :  : 
-Amorphous :  Without a clearly defined shape or form.   : Unknown Classification : Adjective : uncrystallised,unstructured,formless,uncrystallized,amorphous,shapeless
-Atrament :  A very dark substance, usually liquid.   : Unknown Classification :  : 
-Caliginous :  Misty, dark, obscure.   : Unknown Classification : Adjective : caliginous
-Cimmerian :  A member of a mythical people living in perpetual mist and darkness near the land of the dead.   : Unknown Classification : Adjective : Cimmerian
-Crepuscule :  Twilight. Obscure, doubtful, or uncertain.   : Unknown Classification :  : gloaming,evenfall,crepuscle,nightfall,gloam,crepuscule,fall,twilight,dusk
-Darkling :  Growing dark or characterized by darkness.   : Unknown Classification : Adjective : darkling
-Dystopian :  Relating to an imagined state or society where there is great suffering or injustice.   : Unknown Classification : Adjective : dystopian
-Eigengrau :  The dark grey color that human eyes see in perfect darkness.   : Unknown Classification :  : 
-Gloaming :  Twilight, dusk.   : Unknown Classification :  : gloaming,evenfall,crepuscle,nightfall,gloam,crepuscule,fall,twilight,dusk
-Nebulochaotic :  A state of being hazy and confused.   : Unknown Classification :  : 
-Nefarious :  Wicked or criminal.   : Unknown Classification : Adjective : nefarious,villainous
-Nyctophilia :  An attraction to darkness or night; finding relaxation or comfort in the darkness.   : Unknown Classification :  : 
-Pernicious :  Having a harmful effect, especially in a gradual or subtle way.   : Unknown Classification :  : insidious,pernicious,subtle,deadly,pestilent,baneful
-Photophobic :  Having an extreme sensitivity to light; growing best under reduced illumination.   : Unknown Classification :  : 
-Somber :  Gloomy, sullen, melancholy; solemn in mood.   : Unknown Classification : Adjective : sombre,somber,sober,melancholy,drab
-Stygian :  Extremely dark, gloomy, or forbidding.   : Unknown Classification : Adjective : Acherontic,Stygian,Acheronian
-Tenebrous :  Dark, shadowy, or obscure.   : Unknown Classification : Adjective : tenebrious,tenebrific,tenebrous
-Umbra :  Shadow or darkness. A shaded area.   : Unknown Classification : Noun : umbra
-Woebegone :  Sad or miserable in appearance.  : Unknown Classification : Adjective : woebegone,creaky,flea-bitten,woeful,run-down,derelict,decrepit
+Abrasive : a substance that abrades or wears down :  Surfaces, Textures : Adjective,Noun : abrasive_material,abradant,abrasive,scratchy,harsh
+Ample : more than enough in size or scope or capacity :  Size : Adjective : ample,plenteous,sizable,copious,sizeable,plentiful,rich
+Angular : measured by an angle or by the rate of change of an angle :  General words for touch : Adjective : angulate,angular
+Bald : grow bald; lose hair on one's head :  Human : Verb,Adjective : denudate,bald-headed,denuded,barefaced,bald,bald-pated
+Barbed : provide with barbs :  Surfaces, Textures : Adjective : mordacious,briary,setaceous,biting,prickly,barb,pungent,barbed,nipping,barbellate,bristled,bristly,burry,thorny,spiny,burred,setose,briery
+Bendable : capable of being bent or flexed or twisted without breaking :  General words for touch  : Adjective : bendable,pliable,waxy,pliant
+Blemished : mar or spoil the appearance of :  General words for touch : Adjective : flawed,deface,disfigure,blemish,blemished,flaw,spot
+Blistered : get blistered :  Surfaces, Textures :  : blister,vesicate,scald,whip
+Bloated : become bloated or swollen or puff up :  Sensations, Size :  : bloat
+Blunt : make less intense :  Sensations : Verb,Adjective : forthright,blunt,free-spoken,point-blank,deaden,plainspoken,numb,stark,frank,benumb,crude,outspoken,straight-from-the-shoulder,dull,candid
+Bristly : very irritable :  Sensations : Adjective : waspish,briary,setaceous,splenetic,prickly,barbed,barbellate,bristly,bristled,burry,thorny,spiny,burred,setose,briery
+Broken : terminate :  General words for touch : Adjective : intermit,get_out,break_in,weaken,transgress,busted,fracture,erupt,stop,get_around,upset,humbled,give,wear,offend,split_up,fall_apart,break_out,breach,go_against,disclose,go_bad,bring_out,ruin,part,low,give_out,wiped_out,crack,break_away,break_off,bust,infract,let_out,conk_out,demote,broken,kick_downstairs,confused,give_way,break_down,founder,wear_out,disordered,interrupt,better,die,divulge,bump,violate,let_on,broken_in,give_away,discontinue,smash,crushed,fail,bankrupt,recrudesce,dampen,discover,humiliated,snap_off,separate,fall_in,break-dance,unwrap,check,collapse,impoverished,break_up,pause,develop,relegate,reveal,unkept,break,split,burst,damp,come_apart,soften,expose,go,cave_in,break_dance,rugged
+Bubbly : a white sparkling wine either produced in Champagne or resembling that produced there :  General words for touch : Adjective : frothy,foaming,spumy,bubbly,bubbling,foamy,champagne,effervescing
+Bulging : swell or protrude outwards :  Size :  : bulge,start,bulgy,pouch,bug_out,bellying,pop,bulk,convex,bulbous,bellied,protrude,bag,bulging,protuberant,bulge_out,pop_out,come_out
+Bulky : of large size for its weight :  Size : Adjective : bulky
+Bumpy : causing or characterized by jolts and irregular movements :  Surfaces, Textures : Adjective : jolting,jumpy,rough,rocky,jolty,bumpy
+Bushy : used of hair; thick and poorly groomed :  General words for touch : Adjective : shaggy,shaggy-haired,bushy,shaggy-coated
+Caked : form a coat over :  Sensations :  : coat,cake
+Carved : form by carving :  Surfaces, Textures : Adjective : carven,cut_up,chip_at,carve,carved
+Chafing : soreness or irritation of the skin caused by friction :  General words for touch : Noun : chafing,nark,irritate,get_to,vex,devil,rub,gravel,annoy,fray,gall,chafe,get_at,rag,bother,rile,excoriate,scratch,nettle,fret
+Chapped : crack due to dehydration :  Surfaces, Textures : Adjective : chap,chapped,roughened,cracked
+Chunky : like or containing small sticky lumps :  Size : Adjective : low-set,chunky,squat,dumpy,stumpy,lumpy,squatty
+Circular : an advertisement (usually printed on a page or in a leaflet) intended for wide distribution :  Shape : Adjective,Noun : orbitual,flyer,broadsheet,handbill,circular,flier,bill,rotary,throwaway,round,broadside
+Clammy : unpleasantly cool and humid :  Human,Sensations : Adjective : clammy,dank
+Clean : a weightlift in which the barbell is lifted to shoulder height and then jerked overhead :  General words for touch : Adverb,Verb,Adjective : houseclean,fresh,uninfected,blank,fair,strip,clean-living,white,unobjectionable,make_clean,scavenge,clean,plum,clean_house,cleanse,clear,unclouded,neat,clean_and_jerk,uncontaminating,sporty,fairly,plumb,pick,sportsmanlike,sporting,light
+Coarse : of textures that are rough to the touch or substances consisting of relatively large particles :  Surfaces, Textures : Adjective : uncouth,rough-cut,common,coarse,harsh,vulgar
+Cold : a mild viral infection involving the nose and respiratory passages (but not the lungs) :   Temperature : Adjective,Noun : frigidness,insensate,coldness,frigidity,common_cold,dusty,moth-eaten,frigid,low_temperature,inhuman,stale,cold,cold-blooded
+Cool : the quality of being at a refreshingly low temperature :  Temperature : Verb,Adjective,Noun : cool,assuredness,chill,cool_down,poise,coolheaded,cool_off,aplomb,sang-froid,nerveless
+Corrugated : fold into ridges :  General words for touch : Adjective : corrugated,corrugate
+Cratered :  :  Surfaces, Textures :  : 
+Crenelated : supply with battlements :  General words for touch :  : crenellate,crenelate,crenel
+Crocheted : create by looping or crocheting :  General words for touch :  : crochet,hook
+Cushioned : protect from impact :  Sensations : Adjective : soften,padded,cushion,buffer,cushiony,cushioned
+Damaged : inflict damage upon :  General words for touch : Adjective : damaged,discredited,damage
+Damp : a slight wetness :  Temperature : Verb,Adjective,Noun : dampen,soften,dampness,mute,moistness,deaden,break,dampish,moist,muffle,tone_down,dull,damp,weaken
+Dehydrated : preserve by removing all water and liquids from :  General words for touch : Adjective : desiccate,dried,dehydrate,desiccated,dry_up,dehydrated,exsiccate
+Dense : permitting little if any light to pass through because of denseness of matter :  General words for touch : Adjective : dumb,dense,impenetrable,obtuse,slow,thick,heavy,dull,dim
+Dented : make a depression into :  Surfaces, Textures :  : dent,crumpled,dented,bent,indent
+Dirty : make soiled, filthy, or dirty :  General words for touch : Verb,Adjective : unsportsmanlike,colly,lousy,grime,pestiferous,muddied,filthy,soil,begrime,foul,contaminating,cheating,unsporting,bemire,marked-up,muddy,dingy,ill-gotten,unclean,dirty,soiled,sordid
+Distended : become wider :  General words for touch :  : distend,dilate
+Distorted : make false by mutilation or addition; as of a message or story :  General words for touch : Adjective : wring,colour,twist,tinge,distort,misrepresented,warp,contort,twisted,twine,strain,ill-shapen,falsify,color,perverted,distorted,deform,garble,malformed,deformed,misshapen
+Doughy : having the consistency of dough because of insufficient leavening or improper cooking :  Sensations,Materials : Adjective : soggy,doughy
+Downy : like down or as soft as down :  Sensations : Adjective : downy,sericeous,flossy,pubescent,puberulent,fluffy,downlike
+Drenched : drench or submerge or be drenched or submerged :  Sensations : Adjective : imbrue,soak,drenched,sop,swamp,drenched_in,souse,douse,dowse,drench
+Dry : a reformer who opposes the use of intoxicating beverages :  General words for touch : Verb,Adjective,Noun : dry_out,ironical,wry,dry,prohibitionist,juiceless,teetotal,ironic
+Dusty : covered with a layer of dust :  General words for touch : Adjective : dusty,moth-eaten,stale,dust-covered,cold
+Embossed : raise in a relief :  General words for touch :  : emboss,embossed,raised,brocaded,stamp,boss
+Enamelled : coat, inlay, or surface with enamel :  Materials, Textures :  : enamel
+Encrusted : cover or coat with a crust :  Surfaces, Textures :  : crusty,beset,crustlike,incrust,encrusted,crusted,encrust
+Engorged : overeat or eat immodestly; make a pig of oneself :  Sensations, Human :  : gorge,gormandize,gourmandize,stuff,overeat,pig_out,overindulge,engorge,englut,glut,congested,gormandise,binge,engorged,scarf_out,overgorge,satiate,ingurgitate
+Engraved : carve, cut, or etch into a material or surface :  General words for touch : Adjective : grave,engraved,scratch,etched,engrave,etch,inscribe,incised,inscribed,graven
+Etched : make an etching of :  Surfaces, Textures :  : engraved,etched,engrave,etch,incised,inscribed,graven
+Even : the latter part of the day (the period of decreasing daylight from late afternoon until nightfall) :  General words for touch : Adverb,Verb,Adjective : still,yet,flush,evening,level,tied,even,eve,regular,fifty-fifty,even_out,eventide
+Fat : a soft greasy substance occurring in organic tissue and consisting of a mixture of lipids (mostly triglycerides) :  Size : Adjective,Noun : plump_out,flesh_out,fat,fatten_out,fatty,fertile,productive,plump,fatness,blubber,avoirdupois,adipose_tissue,fatty_tissue,fatten,juicy,fill_out,rich,fatten_up
+Feathery : resembling or suggesting a feather or feathers :  General words for touch : Adjective : feathery,featherlike,plumy,feathered
+Filmy : so thin as to transmit light :  Sensations :  : gossamer,cobwebby,gauzy,transparent,vaporous,sheer,diaphanous,gauze-like,vapourous,filmy,see-through
+Firm : the members of a business organization that owns or operates one or more establishments :  General words for touch : Adverb,Adjective,Noun : firmly,strong,steadfastly,firm,business_firm,unshakable,steadfast,unbendable,unwavering,unwaveringly,truehearted,tauten,immobile,steady,unfaltering,fast,house,solid,loyal,unfluctuating,stiff
+Flat : a level tract of land :  Surfaces : Adverb,Adjective,Noun : monotone,unconditional,2-dimensional,directly,insipid,matted,vapid,matte,flat_tire,flatcar,straight,categoric,flat,level,mat,apartment,flavourless,compressed,matt,flavorless,two-dimensional,categorical,savorless,bland,flatbed,savourless,monotonic,monotonous,plane,prostrate
+Fleecy : (of fabrics) having soft nap produced by brushing :  Sensations :  : napped,brushed,fleecy
+Flimsy : a thin strong lightweight translucent paper used especially for making carbon copies :  Sensations : Adjective : tenuous,thin,slight,unconvincing,flimsy,onionskin,fragile
+Fluffy : like down or as soft as down :  Sensations :  : flossy,downlike,fluffy,downy
+Fluted : form flutes in :  General words for touch :  : flute
+Fragile : easily broken or damaged or destroyed :  General words for touch : Adjective : frail,tenuous,thin,slight,delicate,flimsy,fragile
+Freezing : the withdrawal of heat to change something from a liquid to a solid :  Temperature :  : freeze,freeze_down,suspend,freeze_out,immobilize,freezing,block,stop_dead,immobilise
+Frigid : sexually unresponsive :  Temperature : Adjective : gelid,polar,arctic,icy,frozen,glacial,frigid,cold,wintry,frosty
+Frothy : emitting or filled with bubbles as from carbonation or fermentation :  Sensations :  : frothy,foaming,spumy,scintillating,bubbly,bubbling,effervescent,sparkly,foamy,effervescing
+Furry : covered with a dense coat of fine silky hairs :  Sensations :  : furred,furry
+Fuzzy : covering with fine light hairs :  General words for touch : Adjective : hazy,blurred,bleary,foggy,fuzzed,muzzy,fuzzy,blurry
+Gelatinous : thick like gelatin :  General words for touch : Adjective : gelatinous,gelatinlike,jellylike
+Glassy : resembling glass in smoothness and shininess and slickness; ; - Willa Cather :  Sensations : Adjective : vitreous,glazed,vitrified,glassy
+Glazed : coat with a glaze :  Sensations : Adjective : glassed,glaze,glaze_over,sugarcoat,shiny,glass_over,glassy,glass,candy,glazed
+Glossy : a magazine printed on good quality paper :  Sensations : Adjective,Noun : slick_magazine,calendered,glossy,shiny,lustrous,shining,sheeny,showy,glistening,slick
+Glutinous : having the sticky properties of an adhesive :  General words for touch :  : pasty,gluey,gummy,mucilaginous,viscid,glutinous,sticky,viscous
+Gnarled : twist into a state of deformity :  General words for touch : Adjective : knotty,mutter,gnarl,croak,gnarled,murmur,knobbed,gnarly,grumble,knotted
+Gooey : soft and sticky :  Sensations,Materials : Adjective : gooey,icky
+Gossamer : a gauze fabric with an extremely fine texture :  General words for touch : Noun : gossamer,cobwebby,gauzy,transparent,vaporous,cobweb,sheer,gauze-like,diaphanous,ethereal,filmy,vapourous,see-through
+Grainy : composed of or covered with particles resembling meal in texture or consistency :  Sensations :  : gritty,grainy,mealy,coarse-grained,granular,granulose,farinaceous
+Granular : composed of or covered with particles resembling meal in texture or consistency :  General words for touch :  : gritty,grainy,chondritic,mealy,coarse-grained,granular,granulose,farinaceous
+Grating : a barrier that has parallel or crossed bars blocking a passage but admitting air :  General words for touch : Adjective : grating,grate,raspy,rough,gravelly,grind,diffraction_grating,rankle,rasping,scratchy,fret,scrape,eat_into
+Gravelly : abounding in small stones :  Sensations : Adjective : grating,raspy,rough,gravelly,pebbly,rasping,scratchy,shingly
+Greasy : containing an unusual amount of grease or oil :  Sensations : Adjective : oleaginous,sebaceous,oily,greasy
+Grimy : thickly covered with ingrained dirt or soot :  Sensations :  : grimy,grungy,grubby,raunchy,dingy,begrimed
+Gritty : composed of or covered with particles resembling meal in texture or consistency :  Sensations :  : gritty,grainy,mettlesome,gamey,spunky,gamy,spirited,mealy,game,coarse-grained,granular,granulose,farinaceous
+Grooved : make a groove in, or provide with a groove :  Surfaces, Textures : Adjective : furrow,groove,rut,well-grooved,grooved
+Grubby : small sculpin of the coast of New England :  General words for touch : Adjective,Noun : Myxocephalus_aenaeus,grimy,grungy,grubby,raunchy,dingy,begrimed
+Hairy : having or covered with hair :  General words for touch, Human : Adjective : haired,hirsute,hairy
+Hard : not easy; requiring great physical or mental effort to accomplish or comprehend or endure :  Surfaces : Adverb,Adjective : firmly,strong,knockout,hard,heavily,operose,punishing,backbreaking,heavy,laborious,intemperate,difficult,tough,toilsome,voiceless,surd,grueling,arduous,gruelling,concentrated,unvoiced,severely,severe,intemperately
+Harsh : unpleasantly stern :  General words for touch : Adjective : abrasive,rough,harsh,coarse
+Hollow : a cavity or space in something :  Sensations : Verb,Adjective,Noun : hollow,dig,hole,empty,excavate,hollow_out,core_out,vacuous,holler
+Hot : used of physical heat; having a high or higher than desirable temperature or giving off heat or feeling or causing a sensation of heat or burning :  Temperature : Adjective : live,hot,blistering,red-hot,raging,spicy
+Icy : devoid of warmth and cordiality; expressive of unfriendliness or disdain :  Temperature : Adjective : gelid,polar,arctic,icy,frozen,glacial,frigid,wintry,frosty
+Impenetrable : not admitting of penetration or passage into or through :  General words for touch : Adjective : impenetrable,heavy,dense
+Imprinted : establish or impress firmly in the mind :  Surfaces :  : imprint,impress,form
+Indented : set in from the margin :  Surfaces :  : indenture,dent,indent
+Inflated : exaggerate or make bigger :  Size :  : balloon,high-sounding,expand,inflate,hyperbolic,high-flown,amplify,inflated,blow_up,billow
+Inlaid : decorate the surface of by inserting wood, stone, and metal :  General words for touch : Adjective : inlay,inlaid
+Inscribed : carve, cut, or etch into a material or surface :  General words for touch : Adjective : encipher,inscribe,enrol,code,inscribed,write_in_code,enter,cypher,engraved,engrave,autograph,cipher,graven,grave,encrypt,scratch,recruit,etched,enroll,incised
+Ironed : press and smooth with a heated iron :  General words for touch : Adjective : iron,ironed,press,iron_out
+Irregular : a member of an irregular armed force that fights a stronger force by sabotage and harassment :  Size : Adjective,Noun : maverick,guerrilla,unorthodox,guerilla,second,unpredictable,irregular,temporary,atypical,insurgent
+Itchy : nervous and unable to relax :  General words for touch : Adjective : itchy,fretful,fidgety,antsy
+Jagged : cut teeth into; make a jagged cutting edge :  General words for touch : Adjective : jaggy,toothed,jag,jagged,notched,scraggy,erose
+Knitted : make (textiles) by knitting :  General words for touch : Adjective : crumple,rumple,knit,cockle,pucker,knitted,entwine
+Layered : make or form a layer :  General words for touch : Adjective : superimposed,layered,layer
+Leathery : resembling or made to resemble leather; tough but pliable :  General words for touch :  : leathery,leathered,coriaceous,leatherlike
+Level : a position on a scale of intensity or amount or quality :  General words for touch : Verb,Adjective,Noun : spirit_level,flush,stratum,take_down,tear_down,even_out,unwavering,stage,degree,pull_down,tier,tied,even,floor,horizontal_surface,level_off,rase,flat,level,point,charge,grade,dismantle,storey,raze,story,layer,plane
+Limp : the uneven manner of walking that results from an injured leg :  Sensations : Verb,Adjective : gimp,wilted,hobble,hitch,limp
+Lined : be in line with; form a line along :  General words for touch : Adjective : seamed,draw,run_along,line,describe,delineate,lined,trace
+Long-haired : with long hair :  General words for touch : Adjective : long-haired
+Loose : grant freedom to; free from confinement :  General words for touch : Adverb,Adjective : wanton,unleash,liberal,free,liberate,release,let_loose,promiscuous,sluttish,on_the_loose,loose,easy,informal,loosen,unloosen,open,relax,escaped,unaffixed,idle,unloose,slack,at_large,lax,light
+Luke-warm :  :  Temperature :  : 
+Lumpy : like or containing small sticky lumps :  Sensations : Adjective : lumpy,chunky
+Malleable : easily influenced :  General words for touch :  : tractile,pliable,malleable,ductile,tensile,pliant
+Metallic : a fabric made of a yarn that is partly or entirely of metal :  Materials : Adjective,Noun : metallic,metal
+Moist : slightly wet :  General words for touch :  : dampish,moist,damp
+Mosaic : art consisting of a design made of small pieces of colored stone or glass :  Materials : Adjective,Noun : photomosaic,mosaic,arial_mosaic,Mosaic
+Mushy : having the consistency of mush :  General words for touch : Adjective : slushy,schmaltzy,drippy,schmalzy,mawkish,bathetic,soppy,mushy,hokey,sentimental,soupy,kitschy,maudlin
+Narrow : a narrow strait connecting two bodies of water :  Size : Verb,Adjective,Noun : nail_down,contract,constrict,specialize,specialise,constringe,narrow-minded,narrow,specify,pin_down,peg_down,narrow_down,minute
+Neat : clean or organized :  General words for touch : Adjective : swell,full-strength,peachy,corking,groovy,bang-up,orderly,cracking,great,clean,bully,straight,refined,smashing,neat,not_bad,keen,nifty,slap-up,tasteful,dandy
+Oily : containing an unusual amount of grease or oil :  Sensations : Adjective : oily,smarmy,oleaginous,soapy,unctuous,buttery,greasy,sebaceous,fulsome
+Ornamented : make more attractive by adding ornament, colour, etc. :  Surfaces, Textures :  : ornament,beautify,adorn,grace,embellish,decorate
+Padded : add details to :  Surfaces, Textures :  : aggrandise,padded,dramatize,plod,embellish,slog,footslog,cushiony,bolster,aggrandize,blow_up,tramp,trudge,fill_out,dramatise,pad,embroider,lard,cushioned
+Patterned : plan or create according to a model or models :  Surfaces, Textures : Adjective : pattern,model,patterned
+Pleated : pleat or gather into a ruffle :  Surfaces, Textures :  : plicate,ruffle,pleat
+Pliable : susceptible to being led or directed :  Materials, Textures :  : tractile,bendable,flexible,pliable,malleable,waxy,elastic,ductile,fictile,tensile,pliant
+Pockmarked : mark with or as if with pockmarks :  Surfaces, Textures :  : pockmark,pocked,pockmarked,potholed
+Pointed : indicate a place, direction, person, or thing; either spatially or figuratively :  General words for touch : Adjective : channelize,head,direct,place,signal,orient,betoken,manoeuvre,designate,maneuver,target,bespeak,repoint,channelise,taper,level,point,aim,luff,charge,indicate,pointed,show,steer,manoeuver,sharpen,guide
+Pointy :  :  General words for touch :  : 
+Polished : make (a surface) shine :  Surfaces : Adjective : shine,fine-tune,milled,smooth,polish_up,refined,brush_up,svelte,round_off,refine,smoothen,polish,polished,urbane,down,dressed,round
+Pot-holed :  :  General words for touch :  : 
+Prickly : very irritable :  Sensations :  : waspish,briary,setaceous,splenetic,prickly,barbed,barbellate,bristly,bristled,burry,thorny,spiny,burred,setose,briery
+Printed : put into print :  General words for touch :  : publish,print,impress
+Pulpy : like a pulp or overripe; not having stiffness :  Sensations : Adjective : squashy,pulpy
+Ragged : treat cruelly :  General words for touch : Adjective : bait,crucify,cod,rebuke,nark,irritate,get_to,take_to_task,vex,devil,twit,gravel,call_down,lambast,call_on_the_carpet,chide,berate,frustrate,annoy,reprimand,razz,tease,have_words,scold,chafe,get_at,ragged,rag,taunt,bother,dun,tantalize,tantalise,rally,trounce,chew_out,reproof,bedevil,rile,chew_up,torment,nettle,lambaste,ride,remonstrate,jaw,dress_down,bawl_out,lecture
+Rasping : uttering in an irritated tone :  General words for touch :  : grating,raspy,rasp,rough,gravelly,rasping,scratchy
+Razor-sharp : very clearly delineated :  Surfaces, Textures : Adjective : razor-sharp
+Refined : improve or perfect by pruning or polishing :  Surfaces, Textures : Adjective : fine-tune,graceful,elegant,elaborate,refined,rarify,neat,svelte,rectify,refine,processed,tasteful,polish,polished,urbane,down,complicate
+Ribbed : form vertical ribs by knitting :  Textures : Adjective : roast,make_fun,ribbed,jest_at,rib,guy,ridicule,laugh_at,costate,poke_fun,blackguard
+Ridged : extend in ridges :  Textures : Adjective : keeled,carinate,ridged,ridge,carinated
+Rigid : incapable of or resistant to bending :  Surfaces, Textures : Adjective : inflexible,unbending,fixed,rigid,set,strict,stiff
+Rough : the part of a golf course bordering the fairway where the grass is not cut short :  Textures : Adjective,Noun : raspy,jumpy,pugnacious,roughly,harsh,rough_out,grating,rocky,rough_in,gravelly,approximate,approximative,rasping,jolty,jolting,uncut,fierce,rough,scratchy,unsmooth,boisterous,crude,bumpy
+Rubbery : having an elastic texture resembling rubber in flexibility or toughness :  Textures : Adjective : gristly,rubbery,cartilaginous,rubberlike
+Rusty : covered with or consisting of rust :  Materials, Textures : Adjective : rusty,rust-brown,hoary,rust,out_of_practice
+Rutted : be in a state of sexual excitement; of male mammals :  Surfaces, Textures : Adjective : furrow,rut,groove,rutted,rutty
+Sandy : of hair color; pale yellowish to yellowish brown :  Surfaces, Textures :  : sandy,flaxen,sandlike,arenaceous
+Saturated : cause (a chemical compound, vapour, solution, magnetic material) to unite with the greatest possible amount of another substance :  General words for touch : Adjective : saturated,saturate,pure,impregnate,concentrated
+Scalding : subject to harsh criticism :  Temperature, Sensations :  : blister,whip,scald
+Scarred : mark with a scar :  General words for touch : Adjective : scar,scarred,pock,mark,marred,pit
+Scored : gain points in a game :  Surfaces, Textures :  : score,mark,hit,tally,seduce,nock,make,grade,rack_up
+Scraped : scratch repeatedly :  Surfaces, Textures :  : scrape_up,grate,scratch_up,altercate,genuflect,scratch,argufy,dispute,quarrel,kowtow,come_up,scrap,trash,skin,scrape,junk
+Scratched : cause friction :  Surfaces, Textures :  : rub,come_up,inscribe,cancel,scratch_up,fray,itch,scrape,call_off,excise,chafe,engrave,strike,scrape_up,grave,scratch,expunge,scrub,fret
+Sculptured : create by shaping stone or wood or any other hard material :  Surfaces, Textures :  : grave,sculptural,sculpted,modeled,sculpt,sculptured,sculpture,sculpturesque,graven
+Serrated : make saw-toothed or jag the edge of :  Surfaces, Textures :  : saw-toothed,toothed,notched,serrated,serrate
+Shaggy : used of hair; thick and poorly groomed :  Sensations :  : shaggy,bushy,shagged,shaggy-coated,shaggy-haired
+Sharp-edged :  :  General words for touch :  : 
+Sheer : turn sharply; change direction abruptly :  Materials, Textures,Sensations : Adverb,Verb : curve,plain,trend,unmixed,transparent,vaporous,downright,slew,out-and-out,diaphanous,slue,perpendicularly,filmy,cobwebby,bluff,unmingled,gossamer,gauzy,rank,swerve,absolute,sheer,veer,cut,bold,gauze-like,vapourous,right-down,see-through
+Silky : having a smooth, gleaming surface reflecting light :  Textures :  : silken,silky,silklike,satiny,sleek,slick
+Slick : a slippery smoothness :  Surfaces : Verb,Adjective,Noun : slipperiness,pat,slick_down,satiny,sleek,cunning,sleek_down,wily,sly,silken,foxy,glossy,slip,slickness,guileful,silky,slick,tricky,slick_magazine,tricksy,silklike,knavish,glib,dodgy,crafty
+Slimy : covered with or resembling slime :  Surfaces, Textures :  : wretched,vile,unworthy,despicable,slimy,slimed,worthless,ugly
+Slippery : causing or tending to cause things to slip or slide :  Surfaces, Textures : Adjective : slippery,slippy,tricky
+Smooth : the act of smoothing :  Surfaces, Textures : Verb,Adjective,Noun : shine,still,smooth,placid,smooth_out,liquid,fluid,quiet,unruffled,bland,legato,smoothen,politic,fluent,polish,tranquil,suave
+Soaked : submerge in a liquid :  Sensations :  : squiffy,plastered,crocked,pissed,dowse,pie-eyed,soaked,inebriate,wet,soused,soak,slopped,tight,imbue,loaded,souse,hit_it_up,gazump,cockeyed,sozzled,hock,hook,sop,surcharge,sloshed,douse,besotted,blind_drunk,fuddled,fleece,plume,pixilated,pluck,pawn,intoxicate,rob,blotto,overcharge,stiff,smashed,drench
+Soapy : resembling or having the qualities of soap :  Sensations :  : oily,smarmy,soapy,oleaginous,saponaceous,unctuous,buttery,fulsome
+Sodden : wet through and through; thoroughly wet :  Sensations : Adjective : sodden,soppy
+Soft : yielding readily to pressure or weight :  Sensations : Adjective : soft,piano,easy,indulgent,balmy,lenient,cushy,flaccid,mild,diffused,sonant,subdued,voiced,gentle,delicate,flabby,easygoing,diffuse
+Soggy : (of soil) soft and watery :  General words for touch :  : waterlogged,soggy,sloppy,inert,squashy,miry,sloughy,mucky,swampy,doughy,boggy,muddy,quaggy,torpid,sluggish,marshy
+Soiled : make soiled, filthy, or dirty :  General words for touch :  : dirty,colly,soiled,soil,begrime,bemire,grime,unclean
+Solid : matter that is solid at room temperature and pressure :  Surfaces, Textures : Adjective,Noun : solid_state,strong,unanimous,substantial,self-colored,solid,upstanding,hearty,satisfying,firm,self-coloured,square,whole,solidness
+Sopping : give a conciliatory gift or bribe to :  Sensations :  : sopping,soak,soaking,dripping,sop,souse,douse,dowse,soak_through,drench
+Spiky : having or as if having especially high-pitched spots :  General words for touch :  : spiky,peaky
+Spiny : having spines :  General words for touch :  : briary,setaceous,prickly,barbed,barbellate,bristled,bristly,burry,thorny,spinous,spiny,burred,setose,briery
+Spongy : easily squashed; resembling a sponge in having soft porous texture and compressibility :  General words for touch : Adjective : squashy,spongelike,squishy,spongy
+Springy : elastic; rebounds readily :  General words for touch : Adjective : live,bouncy,resilient,springy,lively
+Steely : resembling steel as in hardness :  Materials, Textures : Adjective : steely
+Stiff : an ordinary man :   Sensations : Adverb,Adjective,Noun : strong,squiffy,plastered,remains,crocked,pissed,firm,unshakable,pie-eyed,steadfast,soaked,unwavering,unbendable,soused,wet,slopped,tight,loaded,starchy,potent,cockeyed,sozzled,steady,rigid,corpse,unfaltering,stiffly,sloshed,besotted,blind_drunk,fuddled,cadaver,buckram,pixilated,blotto,clay,stiff,smashed
+Sticky : having the sticky properties of an adhesive :  General words for touch : Adjective : awkward,muggy,steamy,pasty,unenviable,embarrassing,gluey,gummy,mucilaginous,viscid,glutinous,sticky,viscous
+Stubbly : having a short growth of beard :  General words for touch :  : stubbly,bestubbled,stubbled
+Stuccoed : decorate with stucco work :  General words for touch :  : stucco
+Sweaty :  :  Human, Sensations :  : 
+Swollen : increase in size, magnitude, number, or intensity :  Size :  : swell_up,puff_up,intumesce,well_up,egotistic,swell,conceited,egotistical,swollen-headed,well,vain,self-conceited,swollen,tumefy,tumesce
+Syrupy : overly sweet :  General words for touch : Adjective : honied,cloying,syrupy,treacly,honeyed,saccharine,viscous
+Thick : the location of something surrounded by other things :  Size : Adverb,Adjective : chummy,duncical,thick,thickly,stocky,boneheaded,wooden-headed,duncish,slurred,thickset,dense,deep,thick-skulled,compact,midst,blockheaded,buddy-buddy,fatheaded,loggerheaded,heavyset,thickheaded
+Thin : lose thickness; become thin or thinner :  Size : Verb,Adjective : slender,reduce,lose_weight,slim,thin,slim_down,lean,tenuous,thinly,cut,fragile,melt_off,slight,dilute,sparse,flimsy,thin_out,slenderize
+Thorny : bristling with perplexities :  General words for touch : Adjective : briary,setaceous,prickly,barbed,barbellate,bristled,bristly,thorny,burry,spiny,burred,setose,briery
+Throbbing : an instance of rapid strong pulsation (of the heart) :  Human,Sensations : Adjective,Noun : pounding,throbbing,shudder,pulsate,shiver,pulse,throb,thrill
+Tiled : cover with tiles :  Materials, Textures : Adjective : tiled,tile
+Tough : someone who learned to fight in the streets rather than being formally trained in the sport of boxing :  General words for touch : Adjective : knotty,thug,sturdy,hoodlum,toughie,yobbo,hard,hood,elusive,hooligan,baffling,ruffian,problematical,tough,bully,street_fighter,yob,toughened,strong-armer,roughneck,rowdy,ruffianly,goon,punk,rugged,problematic,yobo,bad
+Tweedy : of textiles; having a rough surface :  Materials, Textures : Adjective : slubbed,nubby,nubbly,tweedy,homespun
+Unblemished : free from physical or moral spots or stains :  General words for touch : Adjective : unmarred,unblemished,unmutilated
+Unbreakable : impossible to break especially under ordinary usage :  General words for touch : Adjective : unbreakable
+Uncomfortable : conducive to or feeling mental discomfort :  Human : Adjective : uncomfortable
+Uneven : not even or uniform as e.g. in shape or texture :  General words for touch : Adjective : scratchy,uneven,odd,spotty,mismatched
+Unyielding : stubbornly unyielding; ; ; ; - T.S.Eliot :  General words for touch : Adjective : tenacious,pertinacious,unyielding,dour,dogged,persistent
+Varnished : cover with varnish :  Surfaces, Textures :  : stained,varnished,seal,varnish
+Velvety : smooth and soft to sight or hearing or touch or taste :   Sensations, Textures :  : velvety,velvet,velvet-textured
+Veneered : cover with veneer :  Surfaces, Textures :  : veneer
+Vibrating : shake, quiver, or throb; move back and forth rapidly, usually in an uncontrolled manner :   Sensations :  : vibrate,thrill,tickle,resonate,vacillate,hover,oscillate
+Viscous : having a relatively high resistance to flow :  Sensations :  : pasty,syrupy,gluey,gummy,mucilaginous,viscid,glutinous,sticky,viscous
+Warm : get warm or warmer :  Temperature : Verb,Adjective : ardent,strong,quick,tender,fond,lovesome,warm_up,warmly,warm,affectionate
+Waterlogged : (of soil) soft and watery :  Sensations :  : waterlogged,soggy,sloppy,squashy,miry,sloughy,mucky,swampy,boggy,muddy,quaggy,marshy
+Wavy : (of hair) having waves :  General words for touch : Adjective : rippled,crinkly,wavy,wavelike,crinkled
+Wet : wetness caused by water :  Sensations : Verb,Adjective : squiffy,plastered,crocked,pissed,pie-eyed,soaked,wet,soused,slopped,tight,moisture,lactating,loaded,cockeyed,sozzled,sloshed,besotted,blind_drunk,fuddled,pixilated,blotto,stiff,smashed
+Wide : having great (or a certain) extent from one side to the other :  Size : Adverb,Adjective : spacious,wide-eyed,panoptic,wide-cut,wide_of_the_mark,encompassing,all-encompassing,wide,across-the-board,broad,extensive,blanket,widely,all-embracing,astray,all-inclusive,full
+Wiry : lean and sinewy :  General words for touch : Adjective : stringy,wiry
+Withered : wither, as with a loss of moisture :  General words for touch :  : shrivelled,sear,dried-up,withered,wizen,wither,fade,shrink,sere,shrivel_up,wizened,shrunken,shrivel,shriveled
+Woollen : a fabric made from the hair of sheep :  Materials, Textures :  : woollen,woolen,wool
+Woven : interlace by or as if by weaving :  Materials, Textures : Adjective : waver,weave,wander,thread,meander,woven,interweave,wind,tissue
+Wrinkled : gather or contract into wrinkles or folds; pucker :  Surfaces, Textures : Adjective : crumple,scrunch_up,furrow,wrinkly,crinkle,crease,unironed,wrinkle,rumple,wrinkled,ruckle,purse,crisp,scrunch
+Yielding : a verbal act of admitting defeat :  General words for touch : Adjective : bear,concede,grant,relent,render,afford,succumb,ease_up,give_way,give,cede,move_over,conceding,give_in,yield,buckle_under,soften,surrender,pay,return,concession,knuckle_under,giving_up,generate,yielding
+Zigzag : an angular shape characterized by sharp turns in alternating directions :  Surfaces, Textures : Adverb,Verb,Adjective,Noun : zig-zag,zigzag,zag,crank,zig
