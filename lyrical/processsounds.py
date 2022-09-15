@@ -1,7 +1,7 @@
 
 from sounds.sound import Sound
 
-from sounds.soundsCollection import SoundsCollection
+from sounds.soundsCollections import SoundsCollection
 
 import thesaurusWordnet
 from nltk.corpus import wordnet

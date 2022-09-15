@@ -2,9 +2,9 @@ import json
 
 
 class Sound():
-    def __init__(self, sound, rgbValue,  soundClass=[], tags=[]):
+    def __init__(self, sound, description,  soundClass=[], tags=[]):
         self.__sound = sound
-        self.__rgbValue = rgbValue
+        self.__description = description
         self.__tags = tags
         self.__classification = soundClass
 
@@ -39,16 +39,16 @@ class Sound():
         self.__sound = sound
         
     @property
-    def rgbValue(self):
-        return self.__rgbValue
+    def description(self):
+        return self.__description
 
-    @rgbValue.setter
-    def rgbValue(self, rgbValue):
-        self.__rgbValue = rgbValue
+    @description.setter
+    def description(self, description):
+        self.__description = description
         
     def __str__(self):
-        return f'{self.sound} : {self.rgbValue}'
+        return f'{self.sound} : {self.description}'
 
     def __repr__(self):
-        return f'sound(sound={self.sound}, rgbValue={self.rgbValue}, tags=[{",".join([(str(item)) for item in self.tags])}])'
+        return f'sound(sound={self.sound}, description={self.description}, tags=[{",".join([(str(item)) for item in self.tags])}])'
     

@@ -627,6 +627,14 @@ class MainWindow(QMainWindow):
         wordListManager = WordListManager()
         wordListManager.createWordsForSmellList(self)
 
+    def showWordsForSound(self):
+        wordListManager = WordListManager()
+        wordListManager.createWordsForSoundList(self)
+
+    def showWordsForTouch(self):
+        wordListManager = WordListManager()
+        wordListManager.createWordsForTouchDescriptorsList(self)
+
     def showDescriptorsForColor(self):
         wordListManager = WordListManager()
         wordListManager.createWordsForColorDescriptorsList(self)
@@ -743,6 +751,22 @@ class MainWindow(QMainWindow):
             self.showWordsForSmell)
         style_menu.addAction(words_for_smell_action)
         style_toolbar.addAction(words_for_smell_action)
+
+        words_for_sound_action = QAction(
+            QIcon(":/images/images/sounds.png"), "Words For Sound", self)
+        words_for_sound_action.setStatusTip("Words For Sound")
+        words_for_sound_action.triggered.connect(
+            self.showWordsForSound)
+        style_menu.addAction(words_for_sound_action)
+        style_toolbar.addAction(words_for_sound_action)
+
+        words_for_touch_action = QAction(
+            QIcon(":/images/images/touch.png"), "Words For Touch", self)
+        words_for_touch_action.setStatusTip("Words For Touch")
+        words_for_touch_action.triggered.connect(
+            self.showWordsForTouch)
+        style_menu.addAction(words_for_touch_action)
+        style_toolbar.addAction(words_for_touch_action)
 
         self.thesaurusLookupLabel = QLabel("  Thesaurus Search")
         style_toolbar.addWidget(self.thesaurusLookupLabel)

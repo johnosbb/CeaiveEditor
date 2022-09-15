@@ -3,13 +3,16 @@ from PyQt5.QtGui import QStandardItemModel, QBrush, QColor
 
 import sys
 from beautifulwords.beautifulWordsCollection import BeautifulWordsCollection
-from beautifulwords.beautifulWord import BeautifulWord
+from touchDescriptors.touchWord import TouchWord
+from touchDescriptors.touchWordsCollection import TouchWordsCollection
 
 from colours.coloursCollection import ColoursCollection
+from colourDescriptors.colourDescriptorsCollection import DescriptorsCollection
 from colourDescriptors.colourDescriptorsCollection import DescriptorsCollection
 from colours.colour import Colour
 
 from smells.smellsCollections import SmellsCollection
+from sounds.soundsCollections import SoundsCollection
 
 
 # import beautifulWordsCollection
@@ -21,12 +24,15 @@ from PyQt5.QtCore import Qt, QModelIndex
 from beautifulWordSelectorDialog import BeautifulWordSelectorDialog
 from colorSelectorDialog import WordForColorSelectorDialog
 from colorDescriptorSelectorDialog import WordForColorDescriptorsSelectorDialog
+from touchDescriptorSelectorDialog import WordForTouchDescriptorsSelectorDialog
 from smellSelectorDialog import WordsForSmellSelectorDialog
+from soundSelectorDialog import WordsForSoundSelectorDialog
 
 NUMBER_OF_BW_COLUMNS = 2
 NUMBER_OF_WFC_COLUMNS = 3
 NUMBER_OF_WFS_COLUMNS = 3
 NUMBER_OF_SMELL_COLUMNS = 3
+NUMBER_OF_SOUND_COLUMNS = 3
 
 
 class WordListManager:
@@ -69,11 +75,6 @@ class WordListManager:
                 row, 0, QModelIndex()), smell.smell, Qt.DisplayRole)
             model.setData(model.index(
                 row, 1, QModelIndex()), smell.description, Qt.DisplayRole)
-            # tags = ""
-            # for number, tag in enumerate(smell.tags):
-            #     tags = tags + " " + tag
-            # model.setData(model.index(
-            #     row, 1, QModelIndex()), tags, Qt.DisplayRole)
             classifications = ""
             for number, classification in enumerate(smell.classification):
                 classifications = classifications + " " + classification
@@ -82,19 +83,21 @@ class WordListManager:
         return model
 
     def createWordsForSoundModel(self, parent):
-        aSmellsCollection = SmellsCollection()
-        numberOfRows = aSmellsCollection.load()
+        aSoundsCollection = SoundsCollection()
+        numberOfRows = aSoundsCollection.load()
         model = QStandardItemModel(
-            numberOfRows, NUMBER_OF_WFS_COLUMNS, parent)  # rows columns
-        model.setHeaderData(0, Qt.Horizontal, "Smell")
-        model.setHeaderData(1, Qt.Horizontal, "Swatch")
+            numberOfRows, NUMBER_OF_SOUND_COLUMNS, parent)  # rows columns
+        model.setHeaderData(0, Qt.Horizontal, "Sound")
+        model.setHeaderData(1, Qt.Horizontal, "Description")
         #model.setHeaderData(2, Qt.Horizontal, "Tags")
         model.setHeaderData(2, Qt.Horizontal, "Classification")
-        for row, smell in enumerate(aSmellsCollection.smellList):
+        for row, sound in enumerate(aSoundsCollection.soundList):
             model.setData(model.index(
-                row, 0, QModelIndex()), smell.smell, Qt.DisplayRole)
+                row, 0, QModelIndex()), sound.sound, Qt.DisplayRole)
             classifications = ""
-            for number, classification in enumerate(smell.classification):
+            model.setData(model.index(
+                row, 1, QModelIndex()), sound.description, Qt.DisplayRole)
+            for number, classification in enumerate(sound.classification):
                 classifications = classifications + " " + classification
             model.setData(model.index(
                 row, 2, QModelIndex()), classifications, Qt.DisplayRole)
@@ -118,13 +121,30 @@ class WordListManager:
             model.setData(model.index(
                 row, 1, QModelIndex()), QBrush(
                 QColor(colour.rgbValue)), Qt.BackgroundRole)
-            # tags = ""
-            # for number, tag in enumerate(colour.tags):
-            #     tags = tags + " " + tag
-            # model.setData(model.index(
-            #     row, 2, QModelIndex()), tags, Qt.DisplayRole)
             classifications = ""
             for number, classification in enumerate(colour.classification):
+                classifications = classifications + " " + classification
+            model.setData(model.index(
+                row, 2, QModelIndex()), classifications, Qt.DisplayRole)
+        return model
+
+    def createWordsForTouchDescriptorsModel(self, parent):
+        aTouchCollection = TouchWordsCollection()
+        numberOfRows = aTouchCollection.load()
+        model = QStandardItemModel(
+            numberOfRows, NUMBER_OF_WFC_COLUMNS, parent)  # rows columns
+        model.setHeaderData(0, Qt.Horizontal, "Touch Descriptor")
+        model.setHeaderData(1, Qt.Horizontal, "Description")
+        #model.setHeaderData(2, Qt.Horizontal, "Tags")
+        model.setHeaderData(2, Qt.Horizontal, "Classification")
+        for row, descriptor in enumerate(aTouchCollection.wordList):
+            model.setData(model.index(
+                row, 0, QModelIndex()), descriptor.word, Qt.DisplayRole)
+
+            model.setData(model.index(
+                row, 1, QModelIndex()), descriptor.meaning, Qt.DisplayRole)
+            classifications = ""
+            for number, classification in enumerate(descriptor.classification):
                 classifications = classifications + " " + classification
             model.setData(model.index(
                 row, 2, QModelIndex()), classifications, Qt.DisplayRole)
@@ -145,12 +165,6 @@ class WordListManager:
 
             model.setData(model.index(
                 row, 1, QModelIndex()), descriptor.description, Qt.DisplayRole)
-
-            # tags = ""
-            # for number, tag in enumerate(colour.tags):
-            #     tags = tags + " " + tag
-            # model.setData(model.index(
-            #     row, 2, QModelIndex()), tags, Qt.DisplayRole)
             classifications = ""
             for number, classification in enumerate(descriptor.classification):
                 classifications = classifications + " " + classification
@@ -204,6 +218,21 @@ class WordListManager:
             print("Canceled! Words for Smell Dialog {}".format(
                 wordSelector.selectedWord))
 
+    def createWordsForSoundList(self, parent):
+        classifications = ["All", "General Words Describing Sounds", "Unpleasant Sounds",
+                           "Pleasant Sounds", "Neutral Sound", "Noisy Sounds"]
+        wordSelector = WordsForSoundSelectorDialog(
+            "Words For Sound", classifications, parent)
+        model = self.createWordsForSoundModel(wordSelector)
+        wordSelector.setSourceModel(model)
+        if wordSelector.exec():
+            print("Sound selected was " +
+                  wordSelector.selectedWord)
+            parent.editor.insert_selected_word(wordSelector.selectedWord)
+        else:
+            print("Canceled! Words for Sound Dialog {}".format(
+                wordSelector.selectedWord))
+
     def createWordsForColorList(self, parent):
         classifications = ["All", "Red", "Blue", "Yellow", "Pink", "Orange",
                            "Green", "White", "Brown", "Black", "Grey", "Gray", "Silver", "Gold"]
@@ -231,4 +260,19 @@ class WordListManager:
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
             print("Canceled! Colour Descriptor Words Dialog {}".format(
+                wordSelector.selectedWord))
+
+    def createWordsForTouchDescriptorsList(self, parent):
+        classifications = ["All", "Sensations", "Surfaces", "Textures",
+                           "Materials", "General words for touch", "Size"]
+        wordSelector = WordForTouchDescriptorsSelectorDialog(
+            "Words For Touch Descriptors", classifications, parent)
+        model = self.createWordsForTouchDescriptorsModel(wordSelector)
+        wordSelector.setSourceModel(model)
+        if wordSelector.exec():
+            print("Descriptor selected was " +
+                  wordSelector.selectedWord)
+            parent.editor.insert_selected_word(wordSelector.selectedWord)
+        else:
+            print("Canceled! Touch Descriptor Words Dialog {}".format(
                 wordSelector.selectedWord))
