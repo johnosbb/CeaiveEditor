@@ -8,7 +8,7 @@ import os
 import sys
 from PyQt5.QtWidgets import (QApplication, QWidget, QTableView, QVBoxLayout,
                              QMessageBox, QHeaderView)
-
+import logging
 
 class ThesaurusTheo:
 
@@ -41,7 +41,7 @@ class ThesaurusTheo:
         self.database = QSqlDatabase.addDatabase("QSQLITE")
         self.database.setDatabaseName("databases/thesaurus.db")
         if not self.database.open():
-            print("Unable to open data source file.")
+            logging.error("Unable to open data source file.")
             sys.exit(1)  # Error code 1 - signifies error
         # Check if the tables we need exist in the database
         tables_needed = {'theo'}

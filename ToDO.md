@@ -14,19 +14,15 @@
 
 ## Artwork
 
-- New Project Icon - Done
-- Preferences Icon - Done
-- Open Projects Icon - Done
-- Functional Words Icon - Done
+Find and replace dialog needs work
+
+
+## Useability
+
+- Find dialog should make it clear when a word is not found
 ## Writing Aids
 
-- Add a colour selector, most common names for colours with illustrative extracts from classical literature
-  - Pack words into json collections, users need to be able to modify and add words
-  - Basic structure: word : description : primary colour family : tags for context, in this case
-- Beautiful Words Collection
-  - Pack words into json collections, users need to be able to modify and add words
-    - Basic structure: word : meaning : tags for context
-- Associate words collection
+- General word descriptors
 
 - Investigate Spacy to do the style analysis
 

@@ -59,7 +59,7 @@ class BeautifulWordSelectorDialog(QDialog):
         self.classificationFilterEnabled = False
 
     def clearFilters(self):
-        print("Clearing the filters")
+        logging.debug("Clearing the filters")
         self.wordFilter.setText("")
         self.meaningFilter.setText("")
         self.classificationFilter.setCurrentIndex(0)
@@ -195,8 +195,12 @@ class BeautifulWordSelectorDialog(QDialog):
         column = 0
         data = mapped_index.data()
         self.selectionMenu = QMenu(self)
-        selectionAction = self.selectionMenu.addAction(
-            'Click to insert this word into your document')
+        # selectionAction = self.selectionMenu.addAction(
+        #     "<html><b>Hello</b><html>")
+        icon = QIcon(":/images/images/clipboard-paste-document-text.png")
+        selectionAction = self.selectionMenu.addAction(icon,
+            'Click {} to insert this word into your document'.format("here"))
+
         selectionAction.triggered.connect(lambda: self.showSelection(data))
         x = QCursor.pos().x()
         y = QCursor.pos().y()

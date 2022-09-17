@@ -40,7 +40,7 @@ class SoundsCollection():
 
     def filter_by_tag(self):
         # only return sounds that conform to the filter
-        print("---")
+        logging.debug("Tag Filtering has not been implemented")
 
     def dump(self):
         with open('Sound_dump.txt', 'w') as file:

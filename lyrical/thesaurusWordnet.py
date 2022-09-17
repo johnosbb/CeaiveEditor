@@ -1,7 +1,7 @@
 from typing import Callable
 from PyQt5.QtCore import QTemporaryFile
 from nltk.corpus import wordnet as wn
-
+import logging
 
 class ThesaurusWordnet:
 
@@ -15,14 +15,14 @@ class ThesaurusWordnet:
         self.synonyms = []
         if word is not None:
 
-            print("Check Thesaurus for [" + word + "]")
+            logging.debug("Check Thesaurus for [" + word + "]")
             # self.antonyms = []
             for syn in wn.synsets(word, lang="eng"):
                 for l in syn.lemmas():
                     self.synonyms.append(l.name())
                     # if l.antonyms():
                     #     self.antonyms.append(l.antonyms()[0].name())
-            print(set(self.synonyms))
+            logging.debug(set(self.synonyms))
             # print(set(self.antonyms))
         return list(set(self.synonyms))
 

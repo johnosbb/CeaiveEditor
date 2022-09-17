@@ -113,6 +113,7 @@ class Find(QtWidgets.QDialog):
                 self.lastStart = 0
 
                 self.parent.editor.moveCursor(QtGui.QTextCursor.End)
+                self.parent.update_status_bar("No matching text found for {}".format(query))
 
         else:
 
@@ -134,6 +135,7 @@ class Find(QtWidgets.QDialog):
 
                 # We set the cursor to the end if the search was unsuccessful
                 self.parent.editor.moveCursor(QtGui.QTextCursor.End)
+                self.parent.update_status_bar("No matching text found for expression {}".format(pattern))
 
     def replace(self):
 

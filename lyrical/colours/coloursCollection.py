@@ -40,7 +40,7 @@ class ColoursCollection():
 
     def filter_by_tag(self):
         # only return colours that conform to the filter
-        print("---")
+        logging.debug("Tag Filtering has not been implemented")
 
     def dump(self):
         with open('Colour_dump.txt', 'w') as file:

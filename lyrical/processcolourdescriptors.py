@@ -5,6 +5,7 @@ from colourDescriptors.colourDescriptorsCollection import DescriptorsCollection
 
 import thesaurusWordnet
 from nltk.corpus import wordnet
+import logging
 
 collection = DescriptorsCollection()
 count = 0
@@ -28,12 +29,12 @@ with open("literary_resources/words_to_describe_colour.txt", "r") as filestream:
             collection.add(newDescriptor)
             count = count + 1
         else:
-            print(
+            logging.error(
                 "Error: Not enough or too many fields: " + str(sections) + " to create a word entry for entry " + str(count))
-            print(currentLine)
+            logging.error(currentLine)
             break
 
         if __name__ == '__main__':
             collection.save()
             collection.dump()
-            print("Processed " + str(count) + " words")
+            logging.debug("Processed " + str(count) + " words")

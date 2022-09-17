@@ -41,7 +41,7 @@ class DescriptorsCollection():
 
     def filter_by_tag(self):
         # only return descriptors that conform to the filter
-        print("---")
+        logging.debug("Tag Filtering has not been implemented")
 
     def dump(self):
         with open('Descriptor_dump.txt', 'w') as file:

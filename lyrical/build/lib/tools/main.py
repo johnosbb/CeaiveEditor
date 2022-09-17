@@ -5,7 +5,7 @@ from lyrical.beautifulWords.beautifulWordsCollection import BeautifulWordsCollec
 
 import thesaurusWordnet
 from nltk.corpus import wordnet
-
+import logging
 
 def find_tags(target):
     thesaurus = thesaurusWordnet.ThesaurusWordnet()
@@ -63,12 +63,12 @@ with open("../literary_resources/words.txt", "r") as filestream:
             collection.add(newWord)
             count = count + 1
         else:
-            print(
+            logging.error(
                 "Error: Not enough or too many fields: " + str(sections) + " to create a word entry for entry " + str(count))
-            print(currentline)
+            logging.error(currentline)
             break
 
         if __name__ == '__main__':
             collection.save()
             collection.dump()
-            print("Processed " + str(count) + " words")
+            logging.error("Processed " + str(count) + " words")

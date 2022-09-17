@@ -4,6 +4,7 @@ from nltk.corpus import wordnet as wn
 import json
 import requests
 import os
+import logging
 
 
 class ThesaurusWebster:
@@ -30,21 +31,22 @@ class ThesaurusWebster:
             api_key = os.environ.get('API_KEY')
             word = word.lower()
             if (api_key == "" or (api_key is None)):
-                print(
+                logging.debug(
                     "Could not locate the API Key, you will need to register with www.dictionaryapi.com")
-
-            else:
-                print("Found an API Key: " + api_key)
             url = f"https://www.dictionaryapi.com/api/v3/references/thesaurus/json/{word}?key={api_key}"
             try:
                 response = requests.get(url)
-                apiResponse = json.loads(response.text)
+                try:
+                    apiResponse = json.loads(response.text)
+                except json.JSONDecodeError as error:
+                    logging.debug("Error decong json  : {}".format(error))
+                    return []  
                 # print(apiResponse)
                 if response.status_code == 200:
                     try:
                         for data in apiResponse:
                             synonyms = ["sorry, no synonyms are available."]
-                            print("data = " + str(data))
+                            # print("data = " + str(data))
                             if word in data["meta"]["id"]:
                                 try:
                                     if len(data["meta"]["syns"]) != 0:
@@ -52,12 +54,12 @@ class ThesaurusWebster:
                                         for synonym in synonyms:
                                             synonymsList.append(synonym)
                                 except KeyError as e:
-                                    print(e)
+                                    logging.error("Key Error: ".format(e))
                     except TypeError as e:
-                        print(e)
+                        logging.error("Type Error: ".format(e))
 
             except SystemError as error:
-                print("Error :" + error)
+                logging.debug("Error :" + error)
 
         # return list(set(synonymsList))
         return self.unique(synonymsList)

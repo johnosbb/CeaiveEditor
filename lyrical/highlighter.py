@@ -3,8 +3,8 @@ import re
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QSyntaxHighlighter, QTextCharFormat, QFont
 
-from spellCheck import SpellCheck
-
+# from spellCheck import SpellCheck
+from spellCheckWord import SpellCheckWord
 
 class SpellCheckHighlighter(QSyntaxHighlighter):
     wordRegEx = re.compile(r"\b([A-Za-z]{2,})\b")
@@ -30,5 +30,5 @@ class SpellCheckHighlighter(QSyntaxHighlighter):
                     self.misspelledFormat,
                 )
 
-    def setSpeller(self, speller: SpellCheck):
+    def setSpeller(self, speller: SpellCheckWord):
         self.speller = speller

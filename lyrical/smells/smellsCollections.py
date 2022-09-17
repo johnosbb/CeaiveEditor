@@ -1,6 +1,7 @@
 import json
 import jsonpickle
 from smells.smell import Smell
+import logging
 
 SMELLS = "literary_resources/smells.json"
 
@@ -40,7 +41,7 @@ class SmellsCollection():
 
     def filter_by_tag(self):
         # only return smells that conform to the filter
-        print("---")
+        logging.debug("Tag Filtering has not been implemented")
 
     def dump(self):
         with open('Smell_dump.txt', 'w') as file:

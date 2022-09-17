@@ -13,7 +13,7 @@ from colours.colour import Colour
 
 from smells.smellsCollections import SmellsCollection
 from sounds.soundsCollections import SoundsCollection
-
+import logging
 
 # import beautifulWordsCollection
 # import beautifulWord
@@ -196,11 +196,11 @@ class WordListManager:
         model = self.createBeautifulWordsModel(wordSelector)
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
-            print("Word selected was " +
+            logging.debug("Word selected was " +
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
-            print("Canceled! Beautiful Words Dialog {}".format(
+            logging.debug("Canceled! Beautiful Words Dialog {}".format(
                 wordSelector.selectedWord))
 
     def createWordsForSmellList(self, parent):
@@ -211,11 +211,11 @@ class WordListManager:
         model = self.createWordsForSmellModel(wordSelector)
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
-            print("Smell selected was " +
+            logging.debug("Smell selected was " +
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
-            print("Canceled! Words for Smell Dialog {}".format(
+            logging.debug("Canceled! Words for Smell Dialog {}".format(
                 wordSelector.selectedWord))
 
     def createWordsForSoundList(self, parent):
@@ -226,11 +226,11 @@ class WordListManager:
         model = self.createWordsForSoundModel(wordSelector)
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
-            print("Sound selected was " +
+            logging.debug("Sound selected was " +
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
-            print("Canceled! Words for Sound Dialog {}".format(
+            logging.debug("Canceled! Words for Sound Dialog {}".format(
                 wordSelector.selectedWord))
 
     def createWordsForColorList(self, parent):
@@ -241,11 +241,11 @@ class WordListManager:
         model = self.createWordsForColourModel(wordSelector)
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
-            print("Colour selected was " +
+            logging.debug("Colour selected was " +
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
-            print("Canceled! Words for Colour Dialog {}".format(
+            logging.debug("Canceled! Words for Colour Dialog {}".format(
                 wordSelector.selectedWord))
 
     def createWordsForColorDescriptorsList(self, parent):
@@ -255,11 +255,11 @@ class WordListManager:
         model = self.createWordsForColourDescriptorsModel(wordSelector)
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
-            print("Descriptor selected was " +
+            logging.debug("Descriptor selected was " +
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
-            print("Canceled! Colour Descriptor Words Dialog {}".format(
+            logging.debug("Canceled! Colour Descriptor Words Dialog {}".format(
                 wordSelector.selectedWord))
 
     def createWordsForTouchDescriptorsList(self, parent):
@@ -270,9 +270,9 @@ class WordListManager:
         model = self.createWordsForTouchDescriptorsModel(wordSelector)
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
-            print("Descriptor selected was " +
+            logging.debug("Descriptor selected was " +
                   wordSelector.selectedWord)
             parent.editor.insert_selected_word(wordSelector.selectedWord)
         else:
-            print("Canceled! Touch Descriptor Words Dialog {}".format(
+            logging.debug("Canceled! Touch Descriptor Words Dialog {}".format(
                 wordSelector.selectedWord))

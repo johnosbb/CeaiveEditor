@@ -2,11 +2,12 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtPrintSupport import *
-
+import logging
 
 from specialAction import SpecialAction
 from highlighter import SpellCheckHighlighter
-from spellCheck import SpellCheck
+# from spellCheck import SpellCheck
+from spellCheckWord import SpellCheckWord
 from thesaurusWordnet import ThesaurusWordnet
 from thesaurusWebster import ThesaurusWebster
 
@@ -18,7 +19,7 @@ class TextEdit(QTextEdit):
     showSuggestionSignal = pyqtSignal([list])
 
     def __init__(self, *args):
-        if args and type(args[0]) == SpellCheck and type(args[1]) == ThesaurusWebster:
+        if args and type(args[0]) == SpellCheckWord and type(args[1]) == ThesaurusWebster:
             super().__init__(*args[2:])
             self.speller = args[0]
             self.thesaurus = args[1]
@@ -28,6 +29,7 @@ class TextEdit(QTextEdit):
             #    "QTextEdit#HeaderBackgroundImage { background-position: top left; background-origin: content;  background-clip: padding; background-image: url(:/images/images/paperbackgrounds1.png); }")
             self.setStyleSheet(
                 "QTextEdit#HeaderBackgroundColor { background-color: #F1F0E8;}")
+            self.copyAvailable.connect(self.selectedTextChanged)
         else:
             super().__init__(*args)
 
@@ -55,14 +57,28 @@ class TextEdit(QTextEdit):
         super().mousePressEvent(event)
 
     def mouseReleaseEvent(self, event):
-        wordToCheck = self.findSingleSelectedWord()
-        if event.button() == Qt.LeftButton:
-            if (wordToCheck != "") and (wordToCheck is not None):
-                suggestions = self.thesaurus.suggestions(wordToCheck)
-                self.showSuggestionSignal.emit(suggestions)
-            else:
-                self.showSuggestionSignal.emit([])
+        # wordToCheck = self.findSingleSelectedWord()
+        # if event.button() == Qt.LeftButton:
+        #     if (wordToCheck != "") and (wordToCheck is not None):
+        #         suggestions = self.thesaurus.suggestions(wordToCheck)
+        #         self.showSuggestionSignal.emit(suggestions)
+        #     else:
+        #         self.showSuggestionSignal.emit([])
         super().mouseReleaseEvent(event)
+        
+    def selectedTextChanged(self,status):
+        if(status):
+            textCursor = self.textCursor()
+
+            textCursor.select(QTextCursor.WordUnderCursor)
+            selectedText = textCursor.selectedText()
+            if " " not in selectedText:  # we check for spaces in the phrase and if we find none then we assume they have selected an isolated word                
+                if (selectedText != "") and (selectedText is not None):
+                    logging.debug("We selected {}".format(selectedText))
+                    suggestions = self.thesaurus.suggestions(selectedText)
+                    self.showSuggestionSignal.emit(suggestions)
+                else:
+                    self.showSuggestionSignal.emit([])
 
     def addSpellCheckAndThesaurusContext(self, wordToCheck):
         suggestions = self.speller.suggestions(wordToCheck)
@@ -87,7 +103,7 @@ class TextEdit(QTextEdit):
         key = event.key()
 
         if (key == Qt.Key_Insert):
-            print('Overwrite mode: ' + str(self.overwriteMode()))
+            # print('Overwrite mode: ' + str(self.overwriteMode()))
             self.setOverwriteMode(not self.overwriteMode())
         else:
             # release keyrelease for normal behaviors
@@ -108,8 +124,8 @@ class TextEdit(QTextEdit):
             fmt = textCursor.charFormat()
             underline = fmt.fontUnderline()
             colour = fmt.underlineColor()
-            print("underline and colour :" +
-                  str(underline) + "  " + str(colour.name()))
+            # logging.debug("underline and colour :" +
+            #       str(underline) + "  " + str(colour.name()))
             if fmt.fontWeight() >= QFont.Bold:
                 bold = True
             if fmt.fontItalic():
@@ -128,6 +144,7 @@ class TextEdit(QTextEdit):
             textCursor.select(QTextCursor.WordUnderCursor)
             self.setTextCursor(textCursor)
             wordToCheck = textCursor.selectedText()
+            textCursor.clearSelection()
             if wordToCheck != "":
                 return wordToCheck
             else:

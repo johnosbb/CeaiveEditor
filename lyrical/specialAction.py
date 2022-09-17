@@ -16,7 +16,7 @@ class SpecialAction(QAction):
         self.triggered.connect(self.emitTriggered)
 
     def emitTriggered(self):
-        print("Class Name: " + self.name)
+        # print("Class Name: " + self.name)
         # self.dumpObjectInfo()
         # text in this instance will be the descriptive text associated with this action
         self.actionTriggered.emit(self.text())

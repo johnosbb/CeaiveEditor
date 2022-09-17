@@ -7,6 +7,7 @@ import informationalLabel
 import pushButton
 import resources
 import novelProperties
+import logging
 
 
 class NovelPropertiesDialog(QDialog):
@@ -125,49 +126,49 @@ class NovelPropertiesDialog(QDialog):
 
     def set_chapter_count(self):
         self.properties.numberOfChapters = self.numberOfChapters.value()
-        print("Chapters Requested {}".format(self.properties.numberOfChapters))
+        logging.debug("Chapters Requested {}".format(self.properties.numberOfChapters))
 
     def set_foreword_state(self, cb):
         self.properties.foreword = cb.isChecked()
         if (self.properties.foreword == True):
-            print("{} Selected".format(cb.text()))
+            logging.debug("{} Selected".format(cb.text()))
         else:
-            print("{} De-Selected".format(cb.text()))
+            logging.debug("{} De-Selected".format(cb.text()))
 
     def set_prologue_state(self, cb):
         self.properties.prologue = cb.isChecked()
         if (self.properties.prologue == True):
-            print("{} Selected".format(cb.text()))
+            logging.debug("{} Selected".format(cb.text()))
         else:
-            print("{} De-Selected".format(cb.text()))
+            logging.debug("{} De-Selected".format(cb.text()))
 
     def set_epilogue_state(self, cb):
         self.properties.epilogue = cb.isChecked()
         if (self.properties.epilogue == True):
-            print("{} Selected".format(cb.text()))
+            logging.debug("{} Selected".format(cb.text()))
         else:
-            print("{} De-Selected".format(cb.text()))
+            logging.debug("{} De-Selected".format(cb.text()))
 
     def set_preface_state(self, cb):
         self.properties.preface = cb.isChecked()
         if (self.properties.preface == True):
-            print("{} Selected".format(cb.text()))
+            logging.debug("{} Selected".format(cb.text()))
         else:
-            print("{} De-Selected".format(cb.text()))
+            logging.debug("{} De-Selected".format(cb.text()))
 
     def set_introduction_state(self, cb):
         self.properties.introduction = cb.isChecked()
         if (self.properties.introduction == True):
-            print("{} Selected".format(cb.text()))
+            logging.debug("{} Selected".format(cb.text()))
         else:
-            print("{} De-Selected".format(cb.text()))
+            logging.debug("{} De-Selected".format(cb.text()))
 
     def create_button_clicked(self):
-        print("Create button clicked")
+        logging.debug("Create button clicked")
         self.accept()
 
     def cancel_button_clicked(self):
-        print("Create button clicked")
+        logging.debug("Create button clicked")
         self.close()
 
     @ property

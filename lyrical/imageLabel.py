@@ -4,6 +4,7 @@ from PyQt5.QtCore import Qt, pyqtSignal, QObject
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel
 from PyQt5.QtGui import QPixmap
 import resources
+import logging
 
 
 class ImageLabel(QLabel):
@@ -27,4 +28,4 @@ class ImageLabel(QLabel):
             self.move(x, y)
 
         except FileNotFoundError:
-            print("Image not found.")
+            logging.debug("Image not found.")

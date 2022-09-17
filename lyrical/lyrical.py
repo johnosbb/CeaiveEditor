@@ -19,7 +19,7 @@ import projectTypeDialog
 import novelPropertiesDialog
 import textEditor
 import resources
-import spellCheck
+import spellCheckWord
 import thesaurusWordnet
 from customFileSystemModel import CustomFileSystemModel
 import thesaurusWebster
@@ -62,7 +62,7 @@ class MainWindow(QMainWindow):
         self.word_list_path = "./local_dictionary.txt"
         layout = QVBoxLayout()  # The QVBoxLayout class lines up widgets vertically
         # this is using the editor class based on QTextEdit above, this is a new member declaration
-        self.speller = spellCheck.SpellCheck(
+        self.speller = spellCheckWord.SpellCheckWord(
             self.getWords(), self.addToDictionary)
 
         self.thesaurus = thesaurusWebster.ThesaurusWebster(
@@ -156,6 +156,10 @@ class MainWindow(QMainWindow):
         self.status.addPermanentWidget(self.statusMode)
         self.statusContext = QLabel("Context")
         self.status.addPermanentWidget(self.statusContext)
+        
+    def update_status_bar(self,message):
+        self.status.showMessage(
+            "{}".format(message), 2000)    
 
     def load_font(self):
         fontId = QFontDatabase.addApplicationFont(
@@ -184,16 +188,14 @@ class MainWindow(QMainWindow):
             f.write("\n" + new_word)
 
     def show_preferences(self, s):
-        print("click", s)
         self.preferencesDialog = preferencesDialog.PreferencesDialog(self)
 
         if self.preferencesDialog.exec():
             self.projectHomeDirectory = self.preferencesDialog.projectHomeDirectoryEdit.text()
             self.language = self.preferencesDialog.properties.language
             self.fileFormat = self.preferencesDialog.properties.fileFormat
-            print("Success! " + self.projectHomeDirectory + " " + self.language)
         else:
-            print("Cancel!")
+            logging.debug("Canceled Showing Preferences!")
 
     # def mouse_press_event(self, event):
     #     self.oldPos = event.globalPos()
@@ -482,14 +484,14 @@ class MainWindow(QMainWindow):
             count = style.calculate_average_syllables_per_word(text)
             self.status.showMessage(
                 "Average Syllable Length: " + str(count), 10000)
-            print("Average Syllable Length: {0}".format(count))
+            logging.debug("Average Syllable Length: {0}".format(count))
 
     def generate_test_text(self):
         self.editor.setText(TEST_TEXT)
 
     def create_novel_structure(self, properties):
         # create an outline for our novel
-        print("Success! for novel properties Prologue: {} Foreword {}".format(
+        logging.debug("Success! for novel properties Prologue: {} Foreword {}".format(
             properties.prologue, properties.foreword))
         # We now need to get the name of the project and properties
         directory = QFileDialog.getSaveFileName(
@@ -573,17 +575,17 @@ class MainWindow(QMainWindow):
         if self.projectTypeDialog.exec():
             self.projectType = self.projectTypeDialog.project
             # self.projectHomeDirectory = self.projectTypeDialog.projectHomeDirectoryEdit.text()
-            print("Success! " + self.projectType)
+            logging.debug("Success! " + self.projectType)
             self.novelPropertiesDialog = novelPropertiesDialog.NovelPropertiesDialog(
                 self)
             if self.novelPropertiesDialog.exec():
                 self.create_novel_structure(
                     self.novelPropertiesDialog.properties)
             else:
-                print("Canceled! for novel properties {}".format(
+                logging.debug("Canceled! for novel properties {}".format(
                     self.novelPropertiesDialog.properties))
         else:
-            print("Cancel! " + self.projectType)
+            logging.debug("Canceled Novel Properties dialog " + self.projectType)
 
         # Used when we create a new project or open an existing one
 
@@ -929,7 +931,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(self.applicationPosition.x(), self.applicationPosition.y(
         ), self.applicationSize.width(), self.applicationSize.height())
         settings.endGroup()
-        print("Checking for api key : " + os.environ.get("API_KEY"))
+        logging.debug("Checking for api key : " + os.environ.get("API_KEY"))
         logging.info("Loaded Lyrical settings")
 
     def closeEvent(self, event):

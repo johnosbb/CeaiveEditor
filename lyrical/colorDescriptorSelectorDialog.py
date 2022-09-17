@@ -61,7 +61,7 @@ class WordForColorDescriptorsSelectorDialog(QDialog):
         self.classificationFilterEnabled = False
 
     def clearFilters(self):
-        print("Clearing the filters")
+        logging.debug("Clearing the filters")
         self.colourDescriptorFilter.setText("")
         self.classificationFilter.setCurrentIndex(0)
 
@@ -176,8 +176,9 @@ class WordForColorDescriptorsSelectorDialog(QDialog):
         column = 0
         data = mapped_index.data()
         self.selectionMenu = QMenu(self)
-        selectionAction = self.selectionMenu.addAction(
-            'Click to insert this word into your document')
+        icon = QIcon(":/images/images/clipboard-paste-document-text.png")
+        selectionAction = self.selectionMenu.addAction(icon,
+            'Click {} to insert this word into your document'.format("here"))
         selectionAction.triggered.connect(lambda: self.showSelection(data))
         x = QCursor.pos().x()
         y = QCursor.pos().y()
