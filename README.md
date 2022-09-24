@@ -121,6 +121,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Guide to PYQT](https://doc.qt.io/qtforpython/overviews/model-view-programming.html)
 - [Python Environments](https://code.visualstudio.com/docs/python/environments)
 - [Web Scrapping and 403 errors](https://www.pythonpool.com/urllib-error-httperror-http-error-403-forbidden/)
+- [TextBlob - Parts of Speech Processing](https://textblob.readthedocs.io/en/dev/)
 
 # Literature
 
