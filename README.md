@@ -116,6 +116,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Using JSON with Python](https://oxylabs.io/blog/python-parse-json)
 - [Example of Syntax High Lighting](https://github.com/baoboa/pyqt5/blob/master/examples/richtext/syntaxhighlighter.py)
 - [Simple Syntax Highlighting](https://wiki.python.org/moin/PyQt/Python%20syntax%20highlighting)
+- [More detailed discussion on highlighting](https://stackoverflow.com/questions/27716625/qtextedit-change-font-of-individual-paragraph-block)
 - [PYQT5 Examples](https://github.com/baoboa/pyqt5/tree/master/examples)
 - [Python Typing - Type Hints & Annotations](https://www.youtube.com/watch?v=QORvB-_mbZ0)
 - [Vocabulary Bot](https://www.twilio.com/blog/build-vocabulary-bot-whatsapp-python-twilio)
