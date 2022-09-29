@@ -53,6 +53,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Natural Language Processing Javascript](https://www.kommunicate.io/blog/nlp-libraries-node-javascript/)
 - [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
 - [NTLK and Wordnet](https://www.nltk.org/howto/wordnet.html)
+- [Epub Library for Python](https://github.com/aerkalov/ebooklib/tree/master/ebooklib)
 
 ### Grammar Checking
 #### Language Tool
@@ -124,6 +125,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Python Environments](https://code.visualstudio.com/docs/python/environments)
 - [Web Scrapping and 403 errors](https://www.pythonpool.com/urllib-error-httperror-http-error-403-forbidden/)
 - [TextBlob - Parts of Speech Processing](https://textblob.readthedocs.io/en/dev/)
+- [Lector Epub Reader](https://github.com/BasioMeusPuga/Lector/tree/master/lector/readers)
 
 # Literature
 
