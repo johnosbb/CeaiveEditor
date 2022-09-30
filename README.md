@@ -126,6 +126,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Web Scrapping and 403 errors](https://www.pythonpool.com/urllib-error-httperror-http-error-403-forbidden/)
 - [TextBlob - Parts of Speech Processing](https://textblob.readthedocs.io/en/dev/)
 - [Lector Epub Reader](https://github.com/BasioMeusPuga/Lector/tree/master/lector/readers)
+- [pygments - lexer](https://pygments.org/docs/quickstart/)
 
 # Literature
 
