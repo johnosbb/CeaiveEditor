@@ -34,6 +34,7 @@ Research Phase began in January 2022
 - [Literary Style Classification with Deep Linguistic Analysis Features](https://nlp.stanford.edu/courses/cs224n/2011/reports/mjipeo-evion-wonhong.pdf)
 - [Using Natural Language Processing to Categorize Fictional
 Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcontent.cgi?article=2739&context=etd)
+- [Functional Words](https://corpora.files.wordpress.com/2021/03/6-2.e8ab96e88083efbc88tangefbc89e6a99fe883bde8aa9ee383aae382b9e38388.pdf)
 
 
 
