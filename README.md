@@ -95,6 +95,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [PyQT](https://pythonbasics.org/install-pyqt/)
 - [PyQT Documentation](https://doc.qt.io/qtforpython/contents.html)
 - [TkInter versus PyQT](https://dm4rnde.com/py-gui-soluts-tkinter-comp-to-pyqt5)
+- [Guide to Toolbars, Menus and Status Bars](https://realpython.com/python-menus-toolbars/)
 
 ### QT Designer and Layout
 - [Designer Tutorial](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
