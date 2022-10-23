@@ -134,6 +134,9 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Lector Epub Reader](https://github.com/BasioMeusPuga/Lector/tree/master/lector/readers)
 - [pygments - lexer](https://pygments.org/docs/quickstart/)
 
+## Deployment
+- [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
+
 # Literature
 
 ## Source Material
