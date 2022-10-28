@@ -133,6 +133,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [TextBlob - Parts of Speech Processing](https://textblob.readthedocs.io/en/dev/)
 - [Lector Epub Reader](https://github.com/BasioMeusPuga/Lector/tree/master/lector/readers)
 - [pygments - lexer](https://pygments.org/docs/quickstart/)
+- [Reveal Menu bar on hover](https://www.youtube.com/watch?v=67xjxHHZfRw)
 
 ## Deployment
 - [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
