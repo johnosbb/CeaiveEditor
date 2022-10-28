@@ -134,6 +134,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Lector Epub Reader](https://github.com/BasioMeusPuga/Lector/tree/master/lector/readers)
 - [pygments - lexer](https://pygments.org/docs/quickstart/)
 - [Reveal Menu bar on hover](https://www.youtube.com/watch?v=67xjxHHZfRw)
+- [Howver detection in PYQT](https://stackoverflow.com/questions/60566673/in-pyqt5-how-can-i-have-a-hoverenter-event-triggered-on-a-qpushbutton-while-havi)
 
 ## Deployment
 - [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
