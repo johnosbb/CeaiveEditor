@@ -136,6 +136,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Reveal Menu bar on hover](https://www.youtube.com/watch?v=67xjxHHZfRw)
 - [Howver detection in PYQT](https://stackoverflow.com/questions/60566673/in-pyqt5-how-can-i-have-a-hoverenter-event-triggered-on-a-qpushbutton-while-havi)
 - [Using anchors in QTextEdit](https://stackoverflow.com/questions/20678610/qtextedit-set-anchor-and-scroll-to-it)
+- [Create a Custom Widget](https://www.pythonguis.com/tutorials/creating-your-own-custom-widgets/)
 
 ## Deployment
 - [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
