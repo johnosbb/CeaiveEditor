@@ -138,6 +138,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Using anchors in QTextEdit](https://stackoverflow.com/questions/20678610/qtextedit-set-anchor-and-scroll-to-it)
 - [Create a Custom Widget](https://www.pythonguis.com/tutorials/creating-your-own-custom-widgets/)
 - [Creating Composite Widgets](https://www.pythonstudio.us/pyqt-programming/creating-composite-widgets.html)
+- [Fitting Widgets to Layouts](https://stackoverflow.com/questions/61451279/how-does-setcolumnstretch-and-setrowstretch-works)
 
 ## Deployment
 - [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
