@@ -26,6 +26,7 @@ Research Phase began in January 2022
 
 
 #### Academic References
+- [Text style-transfer using GPT-3](https://www.gwern.net/GPT-3#prompts-as-programming)
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 - [Identifying Different Writing Styles in a Document Intrinsically Using Stylometric Analysis](https://github.com/Hassaan-Elahi/Writing-Styles-Classification-Using-Stylometric-Analysis)
