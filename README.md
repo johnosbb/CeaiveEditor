@@ -88,6 +88,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 
 ### Finding Rhyming Words
 - [Rhymes with NLP](https://www.garysieling.com/blog/rhyming-with-nlp-and-shakespeare/)
+- [Rhyme with NLTK](https://stackoverflow.com/questions/25714531/find-rhyme-using-nltk-in-python)
 - [Metaphone](https://pypi.org/project/Metaphone/)
 
 # Installing Enchant on Ubuntu
