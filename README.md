@@ -26,6 +26,7 @@ Research Phase began in January 2022
 
 
 #### Academic References
+- [Text style-transfer using GPT-3](https://www.gwern.net/GPT-3#prompts-as-programming)
 - [Stylometry](https://en.wikipedia.org/wiki/Stylometry)
 - [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 - [Identifying Different Writing Styles in a Document Intrinsically Using Stylometric Analysis](https://github.com/Hassaan-Elahi/Writing-Styles-Classification-Using-Stylometric-Analysis)
@@ -34,6 +35,7 @@ Research Phase began in January 2022
 - [Literary Style Classification with Deep Linguistic Analysis Features](https://nlp.stanford.edu/courses/cs224n/2011/reports/mjipeo-evion-wonhong.pdf)
 - [Using Natural Language Processing to Categorize Fictional
 Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcontent.cgi?article=2739&context=etd)
+- [Functional Words](https://corpora.files.wordpress.com/2021/03/6-2.e8ab96e88083efbc88tangefbc89e6a99fe883bde8aa9ee383aae382b9e38388.pdf)
 
 
 
@@ -53,6 +55,7 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Natural Language Processing Javascript](https://www.kommunicate.io/blog/nlp-libraries-node-javascript/)
 - [Scikit-Learn, Tools for predictive data analysis](https://scikit-learn.org/stable/index.html)
 - [NTLK and Wordnet](https://www.nltk.org/howto/wordnet.html)
+- [Epub Library for Python](https://github.com/aerkalov/ebooklib/tree/master/ebooklib)
 
 ### Grammar Checking
 #### Language Tool
@@ -63,6 +66,10 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Grammar Checking with Language Check - Python Example](https://pypi.org/project/language-check/)
 - [Language Tool - Python Wrapper for Language Check](https://pypi.org/project/language-tool-python/)
 - [pyLanguageTool Library](https://github.com/Findus23/pyLanguagetool)
+- [language_tool_python](https://github.com/jxmorris12/language_tool_python)
+- [language tool python some examples](https://predictivehacks.com/languagetool-grammar-and-spell-checker-in-python/)
+- [Adding a private dictionary to language tool](https://github.com/jxmorris12/language_tool_python/issues/21)
+- [Highlighting with language tool](https://blog.ouseful.info/2021/09/06/code-fragment-highlighting-typos/)
 
 #### Other Checkers 
 - [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
@@ -81,6 +88,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 
 ### Finding Rhyming Words
 - [Rhymes with NLP](https://www.garysieling.com/blog/rhyming-with-nlp-and-shakespeare/)
+- [Rhyme with NLTK](https://stackoverflow.com/questions/25714531/find-rhyme-using-nltk-in-python)
 - [Metaphone](https://pypi.org/project/Metaphone/)
 
 # Installing Enchant on Ubuntu
@@ -93,6 +101,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [PyQT](https://pythonbasics.org/install-pyqt/)
 - [PyQT Documentation](https://doc.qt.io/qtforpython/contents.html)
 - [TkInter versus PyQT](https://dm4rnde.com/py-gui-soluts-tkinter-comp-to-pyqt5)
+- [Guide to Toolbars, Menus and Status Bars](https://realpython.com/python-menus-toolbars/)
 
 ### QT Designer and Layout
 - [Designer Tutorial](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
@@ -115,11 +124,26 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Tree Widget and JSON](https://stackoverflow.com/questions/51506378/pyqt-recursively-adding-children-to-treewidget-dynamically)
 - [Using JSON with Python](https://oxylabs.io/blog/python-parse-json)
 - [Example of Syntax High Lighting](https://github.com/baoboa/pyqt5/blob/master/examples/richtext/syntaxhighlighter.py)
+- [Simple Syntax Highlighting](https://wiki.python.org/moin/PyQt/Python%20syntax%20highlighting)
+- [More detailed discussion on highlighting](https://stackoverflow.com/questions/27716625/qtextedit-change-font-of-individual-paragraph-block)
 - [PYQT5 Examples](https://github.com/baoboa/pyqt5/tree/master/examples)
 - [Python Typing - Type Hints & Annotations](https://www.youtube.com/watch?v=QORvB-_mbZ0)
 - [Vocabulary Bot](https://www.twilio.com/blog/build-vocabulary-bot-whatsapp-python-twilio)
 - [Guide to PYQT](https://doc.qt.io/qtforpython/overviews/model-view-programming.html)
 - [Python Environments](https://code.visualstudio.com/docs/python/environments)
+- [Web Scrapping and 403 errors](https://www.pythonpool.com/urllib-error-httperror-http-error-403-forbidden/)
+- [TextBlob - Parts of Speech Processing](https://textblob.readthedocs.io/en/dev/)
+- [Lector Epub Reader](https://github.com/BasioMeusPuga/Lector/tree/master/lector/readers)
+- [pygments - lexer](https://pygments.org/docs/quickstart/)
+- [Reveal Menu bar on hover](https://www.youtube.com/watch?v=67xjxHHZfRw)
+- [Howver detection in PYQT](https://stackoverflow.com/questions/60566673/in-pyqt5-how-can-i-have-a-hoverenter-event-triggered-on-a-qpushbutton-while-havi)
+- [Using anchors in QTextEdit](https://stackoverflow.com/questions/20678610/qtextedit-set-anchor-and-scroll-to-it)
+- [Create a Custom Widget](https://www.pythonguis.com/tutorials/creating-your-own-custom-widgets/)
+- [Creating Composite Widgets](https://www.pythonstudio.us/pyqt-programming/creating-composite-widgets.html)
+- [Fitting Widgets to Layouts](https://stackoverflow.com/questions/61451279/how-does-setcolumnstretch-and-setrowstretch-works)
+
+## Deployment
+- [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
 
 # Literature
 
