@@ -11,7 +11,7 @@ from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 from sortWordsForTouchDescriptorFilterProxyModel import SortWordsForTouchDescriptorFilterProxyModel
 
 
-DIALOG_WIDTH = 800
+DIALOG_WIDTH = 1000
 DIALOG_HEIGHT = 700
 IMAGE_WIDTH = DIALOG_WIDTH
 IMAGE_HEIGHT = 103

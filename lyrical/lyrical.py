@@ -18,15 +18,15 @@ import preferencesDialog
 import projectTypeDialog
 import novelPropertiesDialog
 import textEditor
-import resources
 import spellCheckWord
-import thesaurusWordnet
 from customFileSystemModel import CustomFileSystemModel
 import thesaurusWebster
+import describeWord
 import findDialog
 from specialAction import SpecialAction
-
-
+from PyQt5.QtCore import QEvent
+from grammarCheckWindow import GrammarCorrectionWindow
+import language_tool_python
 from wordListManager import WordListManager
 
 FONT_SIZES = [7, 8, 9, 10, 11, 12, 13, 14,
@@ -58,6 +58,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
+        self.languageTool = language_tool_python.LanguageTool('en-GB')
         self.load_settings()
         self.word_list_path = "./local_dictionary.txt"
         layout = QVBoxLayout()  # The QVBoxLayout class lines up widgets vertically
@@ -68,16 +69,22 @@ class MainWindow(QMainWindow):
         self.thesaurus = thesaurusWebster.ThesaurusWebster(
         )
 
+        self.compliment = describeWord.DescribeWord(
+        )
+
         #self.editor = textEditor.TextEdit()
-        self.editor = textEditor.TextEdit(self.speller, self.thesaurus)
+        self.editor = textEditor.TextEdit(
+            self.speller, self.thesaurus, self.compliment)
 
         self.editor.showSuggestionSignal.connect(self.updateSuggestions)
+        self.editor.updateStatusSignal.connect(self.update_status_bar)
         # Setup the QTextEdit editor configuration
         self.editor.setAutoFormatting(QTextEdit.AutoAll)
         self.editor.selectionChanged.connect(self.update_format)
         self.editor.cursorPositionChanged.connect(self.cursorPosition)
+        self.editor.installEventFilter(self)
         self.load_font()
-
+        self.grammarCheck = GrammarCorrectionWindow(self.languageTool)
         # Initialize default font size for the editor.
         font = QFont('Times', 12)
         self.editor.setFont(font)
@@ -97,7 +104,7 @@ class MainWindow(QMainWindow):
         # self.path holds the path of the currently open file.
         # If none, we haven't got a file open yet (or creating new).
         self.path = None
-
+        self.originalFormat = self.editor.currentCharFormat()
         layout.addWidget(self.editor)
 
         container = QWidget()
@@ -112,6 +119,7 @@ class MainWindow(QMainWindow):
 
         self.addToolBarBreak()
         self.define_style_toolbar()
+        self.define_word_list_toolbar()
         self.addToolBarBreak()
         self.define_suggestions_toolbar()
         self.define_project_explorer()
@@ -140,6 +148,16 @@ class MainWindow(QMainWindow):
         self.suggestions_dock.setFloating(False)
         self.addDockWidget(Qt.BottomDockWidgetArea, self.suggestions_dock)
 
+    def eventFilter(self, source, event):
+        # if (event.type() == QEvent.FocusOut):
+        #     print("{}  {}  {}\n".format(utilities.eventLookup[str(event.type())],source,self.editor.toPlainText()))
+        # else:
+        #     print("{}  {}\n".format(utilities.eventLookup[str(event.type())],source))
+        if (event.type() == QEvent.FocusOut and source is self.editor and (len(self.editor.toPlainText()) > 0)):
+            self.file_save()
+        # return true here to bypass default behaviour
+        return super(MainWindow, self).eventFilter(source, event)
+
     def update_suggestions_toolbar(self, suggestions):
         self.suggestions_toolbar.clear()
         for word in range(len(suggestions)):
@@ -156,10 +174,10 @@ class MainWindow(QMainWindow):
         self.status.addPermanentWidget(self.statusMode)
         self.statusContext = QLabel("Context")
         self.status.addPermanentWidget(self.statusContext)
-        
-    def update_status_bar(self,message):
+
+    def update_status_bar(self, message):
         self.status.showMessage(
-            "{}".format(message), 2000)    
+            "{}".format(message), 2000)
 
     def load_font(self):
         fontId = QFontDatabase.addApplicationFont(
@@ -197,9 +215,6 @@ class MainWindow(QMainWindow):
         else:
             logging.debug("Canceled Showing Preferences!")
 
-    # def mouse_press_event(self, event):
-    #     self.oldPos = event.globalPos()
-
     def mouseMoveEvent(self, event):
         delta = QPoint(event.globalPos() - self.oldPos)
         self.move(self.x() + delta.x(), self.y() + delta.y())
@@ -218,6 +233,34 @@ class MainWindow(QMainWindow):
         self.copy_action.setEnabled(enable)
         self.edit_action.setEnabled(enable)
         self.paste_action.setEnabled(self.editor.canPaste())
+
+    def highlightWordYellow(self):
+        color = QColor(Qt.yellow).lighter()
+        format = QTextCharFormat()
+        format.setBackground(QBrush(color))
+        cursor = self.editor.textCursor()
+        if not cursor.hasSelection():
+            cursor.select(QTextCursor.WordUnderCursor)
+        cursor.mergeCharFormat(format)
+
+    def highlightWordRed(self):
+        color = QColor(Qt.red)
+        format = QTextCharFormat()
+        format.setBackground(QBrush(color))
+        cursor = self.editor.textCursor()
+        if not cursor.hasSelection():
+            cursor.select(QTextCursor.WordUnderCursor)
+        cursor.mergeCharFormat(format)
+
+    def unHighlightWord(self):
+        color = self.editor.getBackgroundColor()
+        color = QColor(241, 240, 232)
+        format = QTextCharFormat()
+        format.setBackground(QBrush(color))
+        cursor = self.editor.textCursor()
+        if not cursor.hasSelection():
+            cursor.select(QTextCursor.WordUnderCursor)
+        cursor.setCharFormat(format)
 
     def define_format_toolbar(self):
 
@@ -277,6 +320,35 @@ class MainWindow(QMainWindow):
         self.underline_action.toggled.connect(self.editor.setFontUnderline)
         format_toolbar.addAction(self.underline_action)
         format_menu.addAction(self.underline_action)
+
+        self.highlight_action = QAction(
+            QIcon(":/images/images/edit-highlight-clear.png"), "Highlight", self)
+        self.highlight_action_yellow = QAction(
+            QIcon(":/images/images/edit-highlight-yellow.png"), "Highlight in Yellow", self)
+        self.highlight_action_red = QAction(
+            QIcon(":/images/images/edit-highlight-red.png"), "Highlight in Red", self)
+        self.highlight_action_clear = QAction(
+            QIcon(":/images/images/edit-highlight-clear.png"), "Clear Highlighting", self)
+        self.highlight_action.setStatusTip("Select a highlight style")
+        self.highlight_action_yellow.setStatusTip("Highlight in Yellow")
+        self.highlight_action_red.setStatusTip("Highlight in Red")
+        self.highlight_action_red.setStatusTip("Clear Highlighting")
+        # self.highlight_action.setShortcut(QKeySequence.Highlight)
+        self.highlight_action.setCheckable(False)
+        self.highlightMenu = QMenu()
+        self.highlightMenu.addAction(self.highlight_action_yellow)
+        self.highlightMenu.addAction(self.highlight_action_red)
+        self.highlightMenu.addAction(self.highlight_action_clear)
+        self.highlight_action.setMenu(self.highlightMenu)
+        self.highlight_action_yellow.setCheckable(True)
+        self.highlight_action_red.setCheckable(True)
+        self.highlight_action_clear.setCheckable(True)
+        # self.highlight_action.toggled.connect(self.highlightWord)
+        self.highlight_action_yellow.toggled.connect(self.highlightWordYellow)
+        self.highlight_action_red.toggled.connect(self.highlightWordRed)
+        self.highlight_action_clear.toggled.connect(self.unHighlightWord)
+        format_toolbar.addAction(self.highlight_action)
+        format_menu.addAction(self.highlight_action)
 
         format_menu.addSeparator()
 
@@ -416,6 +488,94 @@ class MainWindow(QMainWindow):
         edit_menu.addAction(self.findAction)
         edit_toolbar.addAction(self.findAction)
 
+        self.findAndReplaceLabel = QLabel("  Find ")
+        edit_toolbar.addWidget(self.findAndReplaceLabel)
+
+        self.findLineEdit = QLineEdit(self)
+        self.findLineEdit.setStyleSheet(
+            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        self.findLineEdit.setFixedWidth(120)
+        self.findLineEdit.returnPressed.connect(self.findWord)
+        edit_toolbar.addWidget(self.findLineEdit)
+
+        # self.toolButton = QToolButton(edit_toolbar)
+        # icon = QIcon()
+        # icon.addPixmap(QPixmap(":/images/images/case_16.png"),
+        #                                   QIcon.Normal, QIcon.Off)
+
+        # # adding icon to the toolbutton
+        # self.toolButton.setIcon(icon)
+        # self.toolButton.setFixedSize(16,16)
+        # self.toolButton.setChecked(True)
+        self.caseCheckBox = QCheckBox()
+        pixmap = QPixmap(":/images/images/case_16.png")
+        self.caseLabel = QLabel()
+        self.caseLabel.setPixmap(pixmap)
+
+        self.regexCheckBox = QCheckBox()
+        pixmap = QPixmap(":/images/images/regex_16.png")
+        self.regexLabel = QLabel()
+        self.regexLabel.setPixmap(pixmap)
+
+        self.replaceAllCheckBox = QCheckBox()
+        pixmap = QPixmap(":/images/images/replace-all_16.png")
+        self.replaceAllLabel = QLabel()
+        self.replaceAllLabel.setPixmap(pixmap)
+
+        # self.enableCaseAction = QAction(
+        #     QIcon(":/images/images/case_16.png"), "Case Sensitive", self)
+        # self.enableRegExpressionAction = QAction(
+        #     QIcon(":/images/images/regex_16.png"), "Use Regular Expression", self)
+        # self.enableReplaceAllAction = QAction(
+        #     QIcon(":/images/images/regex_16.png"), "Replace All", self)
+
+        # self.enableCaseAction.setCheckable(True)
+        # self.enableRegExpressionAction.setCheckable(True)
+        # self.enableReplaceAllAction.setCheckable(True)
+        # self.enableCaseAction.toggled.connect(self.findWord)
+
+        # self.NextButton = QToolButton()
+        # self.NextButton.setArrowType(Qt.RightArrow)
+        # self.NextButton.setFixedWidth(10)
+        # self.NextButton.clicked.connect(self.findWord)
+        # edit_toolbar.addWidget(self.caseLabel)
+        # edit_toolbar.addWidget(self.caseCheckBox)
+        # edit_toolbar.addWidget(self.regexLabel)
+        # edit_toolbar.addWidget(self.regexCheckBox)
+        # edit_toolbar.addWidget(self.replaceAllLabel)
+        # edit_toolbar.addWidget(self.replaceAllCheckBox)
+
+        find_options_toolbar = QToolBar()
+        find_options_toolbar.setIconSize(QSize(16, 16))
+        self.enableCaseAction = QAction(
+            QIcon(":/images/images/case_16.png"), "Case Sensitive", self)
+        self.enableCaseAction.setCheckable(True)
+        find_options_toolbar.addAction(self.enableCaseAction)
+        self.enableRegExpressionAction = QAction(
+            QIcon(":/images/images/regex_16.png"), "Use Regular Expression", self)
+        self.enableRegExpressionAction.setCheckable(True)
+        find_options_toolbar.addAction(self.enableRegExpressionAction)
+        # find_options_toolbar.addWidget(self.caseLabel)
+        # find_options_toolbar.addWidget(self.caseCheckBox)
+        # find_options_toolbar.addWidget(self.regexLabel)
+        # find_options_toolbar.addWidget(self.regexCheckBox)
+        # find_options_toolbar.addWidget(self.replaceAllLabel)
+        # find_options_toolbar.addWidget(self.replaceAllCheckBox)
+        find_options_toolbar.setOrientation(Qt.Horizontal)
+        find_options_toolbar.setOrientation(Qt.Vertical)
+        edit_toolbar.addWidget(find_options_toolbar)
+        # edit_toolbar.addAction(self.enableCaseAction)
+        # edit_toolbar.addAction(self.enableRegExpressionAction)
+        # edit_toolbar.addAction(self.enableReplaceAllAction)
+        # edit_toolbar.addWidget(self.NextButton)
+
+        self.replaceLineEdit = QLineEdit(self)
+        self.replaceLineEdit.setStyleSheet(
+            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        self.replaceLineEdit.setFixedWidth(120)
+        self.replaceLineEdit.returnPressed.connect(self.replaceWord)
+        edit_toolbar.addWidget(self.replaceLineEdit)
+
         preferences_action = QAction(
             QIcon(":/images/images/preferences.png"), "Lyrical Preferences", self)
         preferences_action.setStatusTip("Set Your Lyrical Preferences")
@@ -485,6 +645,51 @@ class MainWindow(QMainWindow):
             self.status.showMessage(
                 "Average Syllable Length: " + str(count), 10000)
             logging.debug("Average Syllable Length: {0}".format(count))
+
+    def findEchoes(self):
+        cursor = QTextCursor(self.editor.textCursor())
+        selectedText = cursor.selectedText()  # enable for selected text
+        blockNumber = cursor.blockNumber()
+        cursorStart = cursor.selectionStart()
+        cursorEnd = cursor.selectionEnd()
+        # selectedText = self.editor.toPlainText()
+        if utilities.isNotBlank(selectedText):
+            selectedText = selectedText.lower()
+            result = ""
+            # count = style.syllable_count(word)
+            word_counts = style.findEchoes(selectedText)
+            for word in word_counts:
+                result = result + \
+                    "{} is  repeated {} times, ". format(
+                        word, word_counts[word])
+            self.status.showMessage(
+                "Repeats : {}".format(result), 10000)
+            self.editor.highlightEchoes(
+                selectedText, word_counts, blockNumber, cursorStart, cursorEnd)
+            logging.debug(
+                "Found {0} echoes in the selected text".format(len(word_counts)))
+
+    def checkGrammar(self):
+        cursor = QTextCursor(self.editor.textCursor())
+        selectedText = cursor.selectedText()  # enable for selected text
+        blockNumber = cursor.blockNumber()
+        cursorStart = cursor.selectionStart()
+        cursorEnd = cursor.selectionEnd()
+        # selectedText = self.editor.toPlainText()
+        if utilities.isNotBlank(selectedText):
+            # selectedText = selectedText.lower()
+            if(self.grammarCheck):
+                self.grammarCheck.check(selectedText)
+                self.grammarCheck.show()
+                if self.grammarCheck.exec():
+                    logging.debug("Grammar Check get corrected text here {}".format(
+                        self.grammarCheck.correctedText))
+                    self.editor.replaceSelectedWord(
+                        self.grammarCheck.correctedText)
+
+                    # parent.editor.insert_selected_word(wordSelector.selectedWord)
+                else:
+                    logging.debug("Canceled! Grammar check")
 
     def generate_test_text(self):
         self.editor.setText(TEST_TEXT)
@@ -585,7 +790,8 @@ class MainWindow(QMainWindow):
                 logging.debug("Canceled! for novel properties {}".format(
                     self.novelPropertiesDialog.properties))
         else:
-            logging.debug("Canceled Novel Properties dialog " + self.projectType)
+            logging.debug("Canceled Novel Properties dialog " +
+                          self.projectType)
 
         # Used when we create a new project or open an existing one
 
@@ -714,6 +920,22 @@ class MainWindow(QMainWindow):
         style_menu.addAction(count_syllable_action)
         style_toolbar.addAction(count_syllable_action)
 
+        findEchoesAction = QAction(
+            QIcon(":/images/images/echoes.png"), "Word Echoes", self)
+        findEchoesAction.setStatusTip("Find Word Echoes")
+        findEchoesAction.triggered.connect(
+            self.findEchoes)
+        style_menu.addAction(findEchoesAction)
+        style_toolbar.addAction(findEchoesAction)
+
+        checkGrammarAction = QAction(
+            QIcon(":/images/images/grammar.png"), "Grammar Check", self)
+        checkGrammarAction.setStatusTip("Find Grammatical Errors")
+        checkGrammarAction.triggered.connect(
+            self.checkGrammar)
+        style_menu.addAction(checkGrammarAction)
+        style_toolbar.addAction(checkGrammarAction)
+
         count_functional_words_action = QAction(
             QIcon(":/images/images/functional-words.png"), "Functional Word Count", self)
         count_functional_words_action.setStatusTip("Functional Word Count")
@@ -721,54 +943,6 @@ class MainWindow(QMainWindow):
             self.get_functional_word_count)
         style_menu.addAction(count_functional_words_action)
         style_toolbar.addAction(count_functional_words_action)
-
-        beautiful_words_action = QAction(
-            QIcon(":/images/images/beauty.png"), "Beautiful Words", self)
-        beautiful_words_action.setStatusTip("Beautiful Words")
-        beautiful_words_action.triggered.connect(
-            self.showBeautifulWords)
-        style_menu.addAction(beautiful_words_action)
-        style_toolbar.addAction(beautiful_words_action)
-
-        words_for_color_action = QAction(
-            QIcon(":/images/images/colour.png"), "Words For Color", self)
-        words_for_color_action.setStatusTip("Words For Color")
-        words_for_color_action.triggered.connect(
-            self.showWordsForColor)
-        style_menu.addAction(words_for_color_action)
-        style_toolbar.addAction(words_for_color_action)
-
-        color_descriptor_action = QAction(
-            QIcon(":/images/images/colour-descriptors.png"), "Words that Qualify Color", self)
-        color_descriptor_action.setStatusTip("Words For Color")
-        color_descriptor_action.triggered.connect(
-            self.showDescriptorsForColor)
-        style_menu.addAction(color_descriptor_action)
-        style_toolbar.addAction(color_descriptor_action)
-
-        words_for_smell_action = QAction(
-            QIcon(":/images/images/smells.png"), "Words For Smell", self)
-        words_for_smell_action.setStatusTip("Words For Smell")
-        words_for_smell_action.triggered.connect(
-            self.showWordsForSmell)
-        style_menu.addAction(words_for_smell_action)
-        style_toolbar.addAction(words_for_smell_action)
-
-        words_for_sound_action = QAction(
-            QIcon(":/images/images/sounds.png"), "Words For Sound", self)
-        words_for_sound_action.setStatusTip("Words For Sound")
-        words_for_sound_action.triggered.connect(
-            self.showWordsForSound)
-        style_menu.addAction(words_for_sound_action)
-        style_toolbar.addAction(words_for_sound_action)
-
-        words_for_touch_action = QAction(
-            QIcon(":/images/images/touch.png"), "Words For Touch", self)
-        words_for_touch_action.setStatusTip("Words For Touch")
-        words_for_touch_action.triggered.connect(
-            self.showWordsForTouch)
-        style_menu.addAction(words_for_touch_action)
-        style_toolbar.addAction(words_for_touch_action)
 
         self.thesaurusLookupLabel = QLabel("  Thesaurus Search")
         style_toolbar.addWidget(self.thesaurusLookupLabel)
@@ -785,6 +959,68 @@ class MainWindow(QMainWindow):
         self.style_dock.setFloating(False)
         self.addDockWidget(Qt.TopDockWidgetArea, self.style_dock)
 
+    def define_word_list_toolbar(self):
+        """
+        Defines the tools bar and actions associated with word_list analysis
+        """
+        word_list_toolbar = QToolBar("Word Lists")
+        word_list_toolbar.setIconSize(QSize(32, 32))
+        self.addToolBar(word_list_toolbar)
+        word_list_menu = self.menuBar().addMenu("&WordLists")
+
+        beautiful_words_action = QAction(
+            QIcon(":/images/images/beauty.png"), "Beautiful Words", self)
+        beautiful_words_action.setStatusTip("Beautiful Words")
+        beautiful_words_action.triggered.connect(
+            self.showBeautifulWords)
+        word_list_menu.addAction(beautiful_words_action)
+        word_list_toolbar.addAction(beautiful_words_action)
+
+        words_for_color_action = QAction(
+            QIcon(":/images/images/colour.png"), "Words For Color", self)
+        words_for_color_action.setStatusTip("Words For Color")
+        words_for_color_action.triggered.connect(
+            self.showWordsForColor)
+        word_list_menu.addAction(words_for_color_action)
+        word_list_toolbar.addAction(words_for_color_action)
+
+        color_descriptor_action = QAction(
+            QIcon(":/images/images/colour-descriptors.png"), "Words that Qualify Color", self)
+        color_descriptor_action.setStatusTip("Words For Color")
+        color_descriptor_action.triggered.connect(
+            self.showDescriptorsForColor)
+        word_list_menu.addAction(color_descriptor_action)
+        word_list_toolbar.addAction(color_descriptor_action)
+
+        words_for_smell_action = QAction(
+            QIcon(":/images/images/smells.png"), "Words For Smell", self)
+        words_for_smell_action.setStatusTip("Words For Smell")
+        words_for_smell_action.triggered.connect(
+            self.showWordsForSmell)
+        word_list_menu.addAction(words_for_smell_action)
+        word_list_toolbar.addAction(words_for_smell_action)
+
+        words_for_sound_action = QAction(
+            QIcon(":/images/images/sounds.png"), "Words For Sound", self)
+        words_for_sound_action.setStatusTip("Words For Sound")
+        words_for_sound_action.triggered.connect(
+            self.showWordsForSound)
+        word_list_menu.addAction(words_for_sound_action)
+        word_list_toolbar.addAction(words_for_sound_action)
+
+        words_for_touch_action = QAction(
+            QIcon(":/images/images/touch.png"), "Words For Touch", self)
+        words_for_touch_action.setStatusTip("Words For Touch")
+        words_for_touch_action.triggered.connect(
+            self.showWordsForTouch)
+        word_list_menu.addAction(words_for_touch_action)
+        word_list_toolbar.addAction(words_for_touch_action)
+
+        self.word_list_dock = QDockWidget("Word Lists", self)
+        self.word_list_dock.setWidget(word_list_toolbar)
+        self.word_list_dock.setFloating(False)
+        self.addDockWidget(Qt.TopDockWidgetArea, self.word_list_dock)
+
     # When the user selects some text we want the font toolbar to reflect the format of their selection
 
     def update_format(self):
@@ -799,7 +1035,7 @@ class MainWindow(QMainWindow):
         self.fonts.setCurrentFont(self.editor.currentFont())
         # Nasty, but we get the font-size as a float but want it was an int
         self.fontsize.setCurrentText(str(int(self.editor.fontPointSize())))
-
+        current_format = self.editor.currentCharFormat()
         self.italic_action.setChecked(self.editor.fontItalic())
         self.underline_action.setChecked(self.editor.fontUnderline())
         self.bold_action.setChecked(self.editor.fontWeight() == QFont.Bold)
@@ -822,9 +1058,16 @@ class MainWindow(QMainWindow):
         dlg.show()
 
     def lookupWord(self):
-        print("I was called")
+        print("lookupWord was called")
         suggestions = self.thesaurus.suggestions(self.thesaurusLookup.text())
         self.updateSuggestions(suggestions)
+
+    def findWord(self):
+        print("findWord was called: {}".format(self.findLineEdit.text()))
+        self.editor.find(self.findLineEdit.text(), "Normal")
+
+    def replaceWord(self):
+        print("replaceWord was called: {}".format(self.replaceLineEdit.text()))
 
     def open_file(self, path):
         try:
@@ -955,6 +1198,7 @@ class MainWindow(QMainWindow):
         indexItem = self.model.index(index.row(), 0, index.parent())
         fileName = self.model.fileName(indexItem)
         filePath = self.model.filePath(indexItem)
+
         self.status.showMessage(
             "Selected File: " + str(filePath) + "   " + str(fileName), 10000)
         self.open_file(filePath)

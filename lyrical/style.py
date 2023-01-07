@@ -4,6 +4,7 @@ from nltk.corpus import cmudict
 from nltk.corpus import stopwords
 import nltk
 import logging
+import collections
 
 
 nltk.download('cmudict')
@@ -13,6 +14,80 @@ cmuDictionary = None
 
 # ---------------------------------------------------------------------
 
+functional_words_ewl = """
+the which still although forty
+and up last past nobody
+of out being himself unless
+to would must seven mine
+a when another eight anybody
+I your between along till
+in will might round herself
+you their both several twelve
+that who five someone fifteen
+it some four whatever beyond
+for two around among whom
+he because while across below
+on how each behind none
+we other under million nor
+they could away outside more
+be our every nine most
+with into next thousand
+this these anything shall
+have than few myself
+but any though themselves
+as where since itself
+not over against somebody
+at back second upon
+what first nothing thirty
+so much without third
+there down during above
+or its six therefore
+one should enough everybody
+by after once towards
+from those however thus
+all may half everyone
+she something yet near
+no three whether inside
+his little everything nineteen
+do many until yourself
+can why hundred fifty
+if before within whose
+about such ten anyone
+my off twenty per
+her through either except 
+"""
+
+functional_words = """a between in nor some upon
+    about both including nothing somebody us
+    above but inside of someone used
+    after by into off something via
+    all can is on such we
+    although cos it once than what
+    am do its one that whatever
+    among down latter onto the when
+    an each less opposite their where
+    and either like or them whether
+    another enough little our these which
+    any every lots outside they while
+    anybody everybody many over this who
+    anyone everyone me own those whoever
+    anything everything more past though whom
+    are few most per through whose
+    around following much plenty till will
+    as for must plus to with
+    at from my regarding toward within
+    be have near same towards without
+    because he need several under worth however
+    before her neither she unless would
+    behind him no unlike yes
+    below i nobody since until you
+    beside if none so up your 
+    be is am are hav has do does did get got was were
+    may might can could  will would shall should
+    """
+
+functionalWords = functional_words.split()    
+    
 
 def syllable_count_Manual(word):
     word = word.lower()
@@ -65,6 +140,21 @@ def calculate_functional_word_count(text):
         totalFunctionalWords += meanFunctionalWords
     return totalFunctionalWords/len(chunks)
 
+
+    
+
+
+def findEchoes(selectedText):
+    words = selectedText.split()
+    word_counts = collections.Counter(words)
+    filteredList = {}
+    for word, count in sorted(word_counts.items()):
+        if(count > 1 and not isFunctionalWord(word)):
+            key = "{}".format(word)
+            if(key not in filteredList):
+                print('"%s" is  repeated %d time%s.' % (word, count, "s" if count > 1 else "")) 
+                filteredList[key] = count            
+    return filteredList
 
 # GIVES NUMBER OF SYLLABLES PER WORD
 # Return an integer sum of the average syllable count for the text
@@ -135,39 +225,18 @@ def create_sliding_window(sequence, winSize, step=1):
 # See: https://www.pages.drexel.edu/~jl622/docs/Jounals/Zheng_2006JASIST_AuthorshipIdentification.pdf
 
 def count_functional_words(text):
-    functional_words = """a between in nor some upon
-    about both including nothing somebody us
-    above but inside of someone used
-    after by into off something via
-    all can is on such we
-    although cos it once than what
-    am do its one that whatever
-    among down latter onto the when
-    an each less opposite their where
-    and either like or them whether
-    another enough little our these which
-    any every lots outside they while
-    anybody everybody many over this who
-    anyone everyone me own those whoever
-    anything everything more past though whom
-    are few most per through whose
-    around following much plenty till will
-    as for must plus to with
-    at from my regarding toward within
-    be have near same towards without
-    because he need several under worth
-    before her neither she unless would
-    behind him no should unlike yes
-    below i nobody since until you
-    beside if none so up your
-    """
 
-    functional_words = functional_words.split()
     words = RemoveSpecialCHs(text)
     count = 0
 
     for i in text:
-        if i in functional_words:
+        if i in functionalWords:
             count += 1
 
     return count / len(words)
+
+def isFunctionalWord(wordToCheck):
+    if wordToCheck in functionalWords:
+        return True
+    else:
+        return False

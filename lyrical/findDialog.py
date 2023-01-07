@@ -109,7 +109,7 @@ class Find(QtWidgets.QDialog):
 
             else:
 
-                # Make the next search start from the begining again
+                # Make the next search start from the beginning again
                 self.lastStart = 0
 
                 self.parent.editor.moveCursor(QtGui.QTextCursor.End)
