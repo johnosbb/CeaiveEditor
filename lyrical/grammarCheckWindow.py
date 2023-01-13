@@ -3,7 +3,7 @@ import sys
 from PyQt5.QtWidgets import (QApplication, QWidget, QLabel,  QLineEdit, QPushButton, QStatusBar,
                              QVBoxLayout, QMainWindow, QDialog, QScrollArea, qApp, QTextEdit)
 from PyQt5.QtCore import Qt, QThread, pyqtSignal, pyqtSlot
-from PyQt5.QtGui import QTextBlockUserData, QTextDocument
+from PyQt5.QtGui import QTextBlockUserData, QTextDocument, QPalette, QColor
 from grammarHighlighter import GrammarHighlighter
 from grammarCheck import GrammarCheck
 from correctorTextEdit import CorrectorTextEdit
@@ -60,6 +60,9 @@ class GrammarCorrectionWindow(QDialog):
         # self.vboxLayoutContainingWidget.setLayout(self.vboxLayout)
         self.vboxLayout.addWidget(self.txtMain)
         # self.setCentralWidget(self.scroll)
+        palette = QPalette()
+        palette.setColor(QPalette.Window, QColor(53, 53, 53))
+        self.setPalette(palette)
         self.SetupControls()
         # self.show()
 

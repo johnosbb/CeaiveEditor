@@ -14,18 +14,22 @@
 
 ## Artwork
 
-Find and replace dialog needs work
+- Find and replace dialog needs work. It looks ugly.
 
 
 ## Useability
 
 - Find dialog should make it clear when a word is not found
-## Writing Aids
 
-- General word descriptors
+## Writing Aids
 
 - Investigate Spacy to do the style analysis
 
-## Localisation
+## General Features
 
-- Investigate locaisation for wordnet - Done
+- Add syntax highlighter for simple highlighting of text
+- 
+
+## Research Tools
+
+- Adjective collector using TextBlob

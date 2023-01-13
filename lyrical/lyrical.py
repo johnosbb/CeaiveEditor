@@ -18,6 +18,7 @@ import preferencesDialog
 import projectTypeDialog
 import novelPropertiesDialog
 import textEditor
+import resources
 import spellCheckWord
 from customFileSystemModel import CustomFileSystemModel
 import thesaurusWebster
@@ -28,6 +29,11 @@ from PyQt5.QtCore import QEvent
 from grammarCheckWindow import GrammarCorrectionWindow
 import language_tool_python
 from wordListManager import WordListManager
+
+
+white = QColor(255, 255, 255)
+red = QColor(255, 0, 0)
+black = QColor(0, 0, 0)
 
 FONT_SIZES = [7, 8, 9, 10, 11, 12, 13, 14,
               18, 24, 36, 48, 64, 72, 96, 144, 288]
@@ -693,6 +699,7 @@ class MainWindow(QMainWindow):
 
     def generate_test_text(self):
         self.editor.setText(TEST_TEXT)
+        print("Position is {} {}".format(self.pos().x(), self.pos().y()))
 
     def create_novel_structure(self, properties):
         # create an outline for our novel
@@ -1149,6 +1156,7 @@ class MainWindow(QMainWindow):
         settings.setValue("size", self.size())
         myPosition = self.pos()
         settings.setValue("pos", self.pos())
+        print("Position is {} {}".format(self.pos().x(), self.pos().y()))
         settings.setValue("file_format", self.fileFormat)
         settings.setValue("language", self.language)
         settings.endGroup()
@@ -1171,6 +1179,11 @@ class MainWindow(QMainWindow):
         self.applicationSize = settings.value("size")
         self.fileFormat = settings.value("file_format")
         self.language = settings.value("language")
+        if(self.applicationPosition.x() < 0):
+            self.applicationPosition.setX(0)
+        if(self.applicationPosition.y() < 0):
+            self.applicationPosition.setY(0)
+        # These next lines appear to break the menu system  if the position becomes negative
         self.setGeometry(self.applicationPosition.x(), self.applicationPosition.y(
         ), self.applicationSize.width(), self.applicationSize.height())
         settings.endGroup()
@@ -1226,6 +1239,45 @@ class MainWindow(QMainWindow):
         self.editor.replace_selected_word(word)
 
 
+def dark():
+    dark_palette = QPalette()
+    dark_palette.setColor(QPalette.Window, QColor(53, 53, 53))
+    dark_palette.setColor(QPalette.WindowText, white)
+    dark_palette.setColor(QPalette.Base, QColor(25, 25, 25))
+    dark_palette.setColor(QPalette.AlternateBase,
+                          QColor(53, 53, 53))
+    dark_palette.setColor(QPalette.ToolTipBase, white)
+    dark_palette.setColor(QPalette.ToolTipText, white)
+    dark_palette.setColor(QPalette.Text, white)
+    dark_palette.setColor(QPalette.Button, QColor(53, 53, 53))
+    dark_palette.setColor(QPalette.ButtonText, white)
+    dark_palette.setColor(QPalette.BrightText, red)
+    dark_palette.setColor(QPalette.Link, QColor(42, 130, 218))
+    dark_palette.setColor(QPalette.Highlight, QColor(42, 130, 218))
+    dark_palette.setColor(QPalette.HighlightedText, black)
+    return dark_palette
+
+
+def grey():
+    palette = QPalette()
+    palette.setColor(QPalette.Window, QColor(53, 53, 53))
+    palette.setColor(QPalette.WindowText, Qt.white)
+    palette.setColor(QPalette.Base, QColor(15, 15, 15))
+    palette.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
+    palette.setColor(QPalette.ToolTipBase, Qt.white)
+    palette.setColor(QPalette.ToolTipText, Qt.white)
+    palette.setColor(QPalette.Text, Qt.white)
+    palette.setColor(QPalette.Button, QColor(53, 53, 53))
+    palette.setColor(QPalette.ButtonText, Qt.white)
+    palette.setColor(QPalette.BrightText, Qt.red)
+    palette.setColor(QPalette.Highlight, QColor(45, 197, 45).lighter())
+    palette.setColor(QPalette.HighlightedText, Qt.black)
+    palette.setColor(QPalette.Disabled, QPalette.Text, Qt.darkGray)
+    palette.setColor(QPalette.Disabled, QPalette.ButtonText, Qt.darkGray)
+    palette.setColor(QPalette.Disabled, QPalette.WindowText, Qt.darkGray)
+    return palette
+
+
 if __name__ == '__main__':
 
     app = QApplication(sys.argv)  # create the main app
@@ -1237,5 +1289,7 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG, filename="lyrical.log", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     logging.info("Starting Lyrical Editor")
+    # app.setStyle("fusion")
+    # app.setPalette(grey())
     window = MainWindow()
     app.exec_()
