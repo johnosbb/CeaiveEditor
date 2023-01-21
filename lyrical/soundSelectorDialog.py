@@ -10,6 +10,7 @@ from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 
 from sortWordsForSoundFilterProxyModel import SortWordsForSoundFilterProxyModel
 import logging
+import globals
 
 DIALOG_WIDTH = 900
 DIALOG_HEIGHT = 700
@@ -101,19 +102,20 @@ class WordsForSoundSelectorDialog(QDialog):
         self.soundFilterLabel = QLabel(
             "  Sound Filter", self.headerFrame)
         self.soundFilterLabel.setBuddy(self.soundFilter)
-        self.soundFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                       "background-color: rgb(255, 255, 255);")
-        self.soundFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.soundFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                           "background-color: rgb(255, 255, 255);")
+            self.soundFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.soundFilterLabel.setObjectName(
             "soundFilterLabel")
         self.headerLayout.addStretch()
         self.headerLayout.addWidget(self.headerSpacerWidget)
         self.headerLayout.addWidget(self.soundFilterLabel)
         self.headerLayout.addWidget(self.soundFilter)
-
-        self.soundFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.soundFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.soundFilter.setFixedWidth(120)
 
         self.soundFilter.textChanged.connect(self.setSoundFilter)
@@ -123,16 +125,18 @@ class WordsForSoundSelectorDialog(QDialog):
         self.soundDescriptionFilterLabel = QLabel(
             "  Description Filter", self.headerFrame)
         self.soundDescriptionFilter = QLineEdit(self.headerFrame)
-        self.soundDescriptionFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                                  "background-color: rgb(255, 255, 255);")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.soundDescriptionFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                                      "background-color: rgb(255, 255, 255);")
         self.soundDescriptionFilterLabel.setBuddy(self.soundDescriptionFilter)
-        self.soundDescriptionFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.soundDescriptionFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.headerLayout.addWidget(self.soundDescriptionFilterLabel)
         self.headerLayout.addWidget(self.soundDescriptionFilter)
-
-        self.soundDescriptionFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.soundDescriptionFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.soundDescriptionFilter.setFixedWidth(120)
         self.soundDescriptionFilter.textChanged.connect(
             self.setSoundDescriptionFilter)
@@ -142,22 +146,22 @@ class WordsForSoundSelectorDialog(QDialog):
         self.classificationFilterLabel = QLabel(
             " Sound Qualifier Filter", self.headerFrame)
         self.classificationFilter = QComboBox(self.headerFrame)
-
-        self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
-                                                "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
+                                                    "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
 
         self.classificationFilter.addItems(self.classifications)
         self.classificationFilterValue = self.classifications[0]
-        self.classificationFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
 
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
         self.headerLayout.addWidget(self.classificationFilter)
         self.AddClearFiltersButton()
         self.headerLayout.addStretch()
-        # self.classificationFilter.setStyleSheet(
-        #     "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+
         self.classificationFilter.setFixedWidth(120)
         self.classificationFilter.currentTextChanged.connect(
             self.setClassificationFilter)
@@ -184,7 +188,7 @@ class WordsForSoundSelectorDialog(QDialog):
         self.selectionMenu = QMenu(self)
         icon = QIcon(":/images/images/clipboard-paste-document-text.png")
         selectionAction = self.selectionMenu.addAction(icon,
-            'Click {} to insert this word into your document'.format("here"))
+                                                       'Click {} to insert this word into your document'.format("here"))
         selectionAction.triggered.connect(lambda: self.showSelection(data))
         x = QCursor.pos().x()
         y = QCursor.pos().y()

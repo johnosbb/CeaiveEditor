@@ -19,6 +19,7 @@ class TextEdit(QTextEdit):
 
     showSuggestionSignal = pyqtSignal([list])
     updateStatusSignal = pyqtSignal(str)
+
     def __init__(self, *args):
         if args and type(args[0]) == SpellCheckWord and type(args[1]) == ThesaurusWebster and type(args[2]) == DescribeWord:
             super().__init__(*args[3:])
@@ -27,13 +28,10 @@ class TextEdit(QTextEdit):
             self.compliment = args[2]
             self.lastFindStart = 0
             self.grammarCheckSet = False
+            palette = self.palette()
+            self.backGroundColor = palette.color(QPalette.Base)
+            print(self.backGroundColor.name())
             self.setObjectName("HeaderBackgroundColor")
-            # background-repeat:repeat; background-position: top left; background-origin: content;  background-clip: padding;
-            # self.setStyleSheet(
-            #    "QTextEdit#HeaderBackgroundImage { background-position: top left; background-origin: content;  background-clip: padding; background-image: url(:/images/images/paperbackgrounds1.png); }")
-            self.setStyleSheet(
-                "QTextEdit#HeaderBackgroundColor { background-color: #F1F0E8;}")
-            self.backGroundColor = self.textBackgroundColor() 
             self.copyAvailable.connect(self.selectedTextChanged)
         else:
             super().__init__(*args)
@@ -41,17 +39,9 @@ class TextEdit(QTextEdit):
         self.highlighter = Highlighter(self.document())
         if hasattr(self, "speller"):
             self.highlighter.setSpeller(self.speller)
-            
+
     def getBackgroundColor(self):
-        return self.backGroundColor    
-
-    # def setSpeller(self, speller):
-    #     self.speller = speller
-    #     self.highlighter.setSpeller(self.speller)
-
-    # def setThesaurus(self, thesaurus):
-    #     self.thesaurus = thesaurus
-    #     self.highlighter.setThesaurus(self.thesaurus)
+        return self.backGroundColor
 
     def mousePressEvent(self, event: QMouseEvent) -> None:
         if event.button() == Qt.RightButton:
@@ -73,14 +63,14 @@ class TextEdit(QTextEdit):
         #     else:
         #         self.showSuggestionSignal.emit([])
         super().mouseReleaseEvent(event)
-        
-    def selectedTextChanged(self,status):
+
+    def selectedTextChanged(self, status):
         if(status):
             textCursor = self.textCursor()
 
             textCursor.select(QTextCursor.WordUnderCursor)
             selectedText = textCursor.selectedText()
-            if " " not in selectedText:  # we check for spaces in the phrase and if we find none then we assume they have selected an isolated word                
+            if " " not in selectedText:  # we check for spaces in the phrase and if we find none then we assume they have selected an isolated word
                 if (selectedText != "") and (selectedText is not None):
                     logging.debug("We selected {}".format(selectedText))
                     suggestions = self.thesaurus.suggestions(selectedText)
@@ -147,13 +137,11 @@ class TextEdit(QTextEdit):
             if all((bold, italic, underline)):
                 # all formats are set, no need for further checking
                 break
-     
-     
-     
-    def find(self,query,findType):
+
+    def find(self, query, findType):
         text = self.toPlainText()
         format = QTextCharFormat()
-        format.setBackground(QBrush(QColor("green").lighter(250)))
+        # format.setBackground(QBrush(QColor("green").lighter(250)))
         if findType == "Normal":
             # Use normal string search to find the query from the
             # last starting position
@@ -168,14 +156,15 @@ class TextEdit(QTextEdit):
                 cursor.movePosition(QTextCursor.EndOfWord, 1)
                 cursor.mergeCharFormat(format)
                 self.ensureCursorVisible()
-                self.setTextCursor(cursor)                
+                self.setTextCursor(cursor)
             else:
                 # Make the next search start from the beginning again
                 self.lastFindStart = 0
                 self.moveCursor(QTextCursor.End)
-                self.updateStatusSignal.emit("No matching text found for {}".format(query))
+                self.updateStatusSignal.emit(
+                    "No matching text found for {}".format(query))
 
-        else: # this is a regular expression
+        else:  # this is a regular expression
             # Compile the pattern
             pattern = re.compile(query)
             # The actual search
@@ -187,15 +176,15 @@ class TextEdit(QTextEdit):
                 self.lastFindStart = 0
                 # We set the cursor to the end if the search was unsuccessful
                 self.parent.editor.moveCursor(QTextCursor.End)
-                self.updateStatusSignal.emit("No matching text found for expression {}".format(query))
-        
-            
-    def highlightEchoes(self,text,echoes,blockNumber,start,end):
+                self.updateStatusSignal.emit(
+                    "No matching text found for expression {}".format(query))
+
+    def highlightEchoes(self, text, echoes, blockNumber, start, end):
         self.highlighter.setEchoDictionary(echoes)
-        self.highlighter.setTargetBlockNumber(blockNumber,start,end) 
+        self.highlighter.setTargetBlockNumber(blockNumber, start, end)
         self.highlighter.setTypeOfCheck("echoes")
         self.highlighter.rehighlight()
-        self.highlighter.setEchoDictionary({})   
+        self.highlighter.setEchoDictionary({})
         self.highlighter.resetTypeOfCheck()  # reset it to default
 
     def findSingleSelectedWord(self) -> None:
@@ -219,8 +208,6 @@ class TextEdit(QTextEdit):
         if wordToCheck != "":
             self.addHelperContexts(wordToCheck)
         self.contextMenu.exec_(event.globalPos())
-        
-
 
     def createSuggestionsMenu(self, suggestions: list[str]):
         suggestionsMenu = QMenu("Change to", self)
@@ -229,7 +216,7 @@ class TextEdit(QTextEdit):
             action.actionTriggered.connect(self.correctWord)
             suggestionsMenu.addAction(action)
         return suggestionsMenu
-    
+
     def createGrammarCorrectionMenu(self, suggestions: list[str]):
         suggestionsMenu = QMenu("Change to", self)
         for word in suggestions:
@@ -237,7 +224,7 @@ class TextEdit(QTextEdit):
             action.actionTriggered.connect(self.correctWord)
             suggestionsMenu.addAction(action)
         return suggestionsMenu
-    
+
     def createComplimentsMenu(self, compliments: list[str]):
         complimentsMenu = QMenu("Find complimentary word", self)
         for word in compliments:

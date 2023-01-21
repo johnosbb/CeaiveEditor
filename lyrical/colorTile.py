@@ -4,6 +4,7 @@ from PyQt5.QtCore import Qt, pyqtSignal, QObject
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel
 from PyQt5.QtGui import QPixmap
 import resources
+import globals
 
 
 class ColorTile(QLabel):
@@ -14,10 +15,11 @@ class ColorTile(QLabel):
 
     def __init__(self, x, y, w, h, color):
         super().__init__()
-        stylesheet = "background-color: {}; border: 3px solid #314B4A;".format(
-            color)
-        self.setStyleSheet(
-            stylesheet)
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            stylesheet = "background-color: {}; border: 3px solid #314B4A;".format(
+                color)
+            self.setStyleSheet(
+                stylesheet)
         self.createTile(x, y, w, h)
 
     # def enterEvent(self, event):

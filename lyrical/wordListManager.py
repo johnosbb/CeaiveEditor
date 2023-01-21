@@ -197,8 +197,8 @@ class WordListManager:
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
             logging.debug("Word selected was " +
-                  wordSelector.selectedWord)
-            parent.editor.insert_selected_word(wordSelector.selectedWord)
+                          wordSelector.selectedWord)
+            parent.editor.insertSelectedWord(wordSelector.selectedWord)
         else:
             logging.debug("Canceled! Beautiful Words Dialog {}".format(
                 wordSelector.selectedWord))
@@ -212,8 +212,8 @@ class WordListManager:
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
             logging.debug("Smell selected was " +
-                  wordSelector.selectedWord)
-            parent.editor.insert_selected_word(wordSelector.selectedWord)
+                          wordSelector.selectedWord)
+            parent.editor.insertSelectedWord(wordSelector.selectedWord)
         else:
             logging.debug("Canceled! Words for Smell Dialog {}".format(
                 wordSelector.selectedWord))
@@ -227,8 +227,8 @@ class WordListManager:
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
             logging.debug("Sound selected was " +
-                  wordSelector.selectedWord)
-            parent.editor.insert_selected_word(wordSelector.selectedWord)
+                          wordSelector.selectedWord)
+            parent.editor.insertSelectedWord(wordSelector.selectedWord)
         else:
             logging.debug("Canceled! Words for Sound Dialog {}".format(
                 wordSelector.selectedWord))
@@ -242,8 +242,8 @@ class WordListManager:
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
             logging.debug("Colour selected was " +
-                  wordSelector.selectedWord)
-            parent.editor.insert_selected_word(wordSelector.selectedWord)
+                          wordSelector.selectedWord)
+            parent.editor.insertSelectedWord(wordSelector.selectedWord)
         else:
             logging.debug("Canceled! Words for Colour Dialog {}".format(
                 wordSelector.selectedWord))
@@ -256,8 +256,8 @@ class WordListManager:
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
             logging.debug("Descriptor selected was " +
-                  wordSelector.selectedWord)
-            parent.editor.insert_selected_word(wordSelector.selectedWord)
+                          wordSelector.selectedWord)
+            parent.editor.insertSelectedWord(wordSelector.selectedWord)
         else:
             logging.debug("Canceled! Colour Descriptor Words Dialog {}".format(
                 wordSelector.selectedWord))
@@ -271,8 +271,8 @@ class WordListManager:
         wordSelector.setSourceModel(model)
         if wordSelector.exec():
             logging.debug("Descriptor selected was " +
-                  wordSelector.selectedWord)
-            parent.editor.insert_selected_word(wordSelector.selectedWord)
+                          wordSelector.selectedWord)
+            parent.editor.insertSelectedWord(wordSelector.selectedWord)
         else:
             logging.debug("Canceled! Touch Descriptor Words Dialog {}".format(
                 wordSelector.selectedWord))

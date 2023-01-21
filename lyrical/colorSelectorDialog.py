@@ -7,9 +7,9 @@ from PyQt5.QtGui import QIcon, QCursor
 from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 
 # import utilities as Utilities
-
+import globals
 from sortWordsForColorFilterProxyModel import SortWordsForColorFilterProxyModel
-
+import globals
 from colorTile import ColorTile
 
 DIALOG_WIDTH = 620
@@ -68,11 +68,12 @@ class WordForColorSelectorDialog(QDialog):
 
     def AddClearFiltersButton(self):
         self.clearFiltersButton = QPushButton('', self)
-        self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(0, 0, 0); }\n"
-                                              "QPushButton:pressed { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(47,79,79); }\n"
-                                              "QPushButton { border: none; }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(0, 0, 0); }\n"
+                                                  "QPushButton:pressed { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(47,79,79); }\n"
+                                                  "QPushButton { border: none; }")
         self.clearFiltersButton.clicked.connect(self.clearFilters)
         self.clearFiltersButton.setIcon(
             QIcon(":/images/images/clearAll.png"))
@@ -103,50 +104,38 @@ class WordForColorSelectorDialog(QDialog):
         self.colourFilter = QLineEdit(self.headerFrame)
         self.colourFilterLabel = QLabel("  Colour Filter", self.headerFrame)
         self.colourFilterLabel.setBuddy(self.colourFilter)
-        self.colourFilter.setStyleSheet("QLineEdit { color: rgb(0, 0, 0);\n"
-                                        "background-color: rgb(255, 255, 255); }")
-        self.colourFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.colourFilter.setStyleSheet("QLineEdit { color: rgb(0, 0, 0);\n"
+                                            "background-color: rgb(255, 255, 255); }")
+            self.colourFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.colourFilterLabel.setObjectName("colourFilterLabel")
         self.headerLayout.addStretch()
         self.headerLayout.addWidget(self.headerSpacerWidget)
         self.headerLayout.addWidget(self.colourFilterLabel)
         self.headerLayout.addWidget(self.colourFilter)
-
-        self.colourFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.colourFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.colourFilter.setFixedWidth(120)
 
         self.colourFilter.textChanged.connect(self.setWordFilter)
         self.colourFilter.setToolTip(
             "Enter a starting letter or letters to find colours")
 
-        # self.tagFilterLabel = QLabel(" Tag Filter", self.headerFrame)
-        # self.tagFilter = QLineEdit(self.headerFrame)
-        # self.tagFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-        #                              "background-color: rgb(255, 255, 255);")
-        # self.tagFilterLabel.setBuddy(self.tagFilter)
-        # self.tagFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
-        # self.headerLayout.addWidget(self.tagFilterLabel)
-        # self.headerLayout.addWidget(self.tagFilter)
-        # self.tagFilterLabel.setStyleSheet("color: rgb(255, 255, 255);")
-        # self.tagFilter.setStyleSheet(
-        #     "background-color: #FFFFFF; padding:1px 1px 1px 1px")
-        # self.tagFilter.setFixedWidth(120)
-        # self.tagFilter.textChanged.connect(self.setTagFilter)
-        # self.tagFilter.setToolTip(
-        #     "Enter a word you like like to find synonyms for")
         # These classifications need to move into a file that is generated from processing the word list; they should not be hard coded
         self.classificationFilterLabel = QLabel(
             " Colour Family Filter", self.headerFrame)
         self.classificationFilter = QComboBox(self.headerFrame)
-        self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
-                                                "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
+                                                    "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
 
         self.classificationFilter.addItems(self.classifications)
         self.classificationFilterValue = self.classifications[0]
-        self.classificationFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
 
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
@@ -192,7 +181,7 @@ class WordForColorSelectorDialog(QDialog):
         self.selectionMenu = QMenu(self)
         icon = QIcon(":/images/images/clipboard-paste-document-text.png")
         selectionAction = self.selectionMenu.addAction(icon,
-            'Click {} to insert this word into your document'.format("here"))
+                                                       'Click {} to insert this word into your document'.format("here"))
         selectionAction.triggered.connect(lambda: self.showSelection(data))
         x = QCursor.pos().x()
         y = QCursor.pos().y()

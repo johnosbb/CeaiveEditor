@@ -9,6 +9,9 @@ from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 # import utilities as Utilities
 
 from sortBeautifulWordsFilterProxyModel import SortBeautifulWordsFilterProxyModel
+import globals
+import logging
+
 
 DIALOG_WIDTH = 1000
 DIALOG_HEIGHT = 700
@@ -67,11 +70,12 @@ class BeautifulWordSelectorDialog(QDialog):
 
     def AddClearFiltersButton(self):
         self.clearFiltersButton = QPushButton('', self)
-        self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(0, 0, 0); }\n"
-                                              "QPushButton:pressed { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(47,79,79); }\n"
-                                              "QPushButton { border: none; }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(0, 0, 0); }\n"
+                                                  "QPushButton:pressed { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(47,79,79); }\n"
+                                                  "QPushButton { border: none; }")
         self.clearFiltersButton.clicked.connect(self.clearFilters)
         self.clearFiltersButton.setIcon(
             QIcon(":/images/images/clearAll.png"))
@@ -88,7 +92,6 @@ class BeautifulWordSelectorDialog(QDialog):
         self.headerFrame.setBaseSize(QSize(0, 0))
         self.headerFrame.setAutoFillBackground(False)
         self.headerFrame.setObjectName("HeaderBackgroundImage")
-
         self.headerFrame.setStyleSheet(
             "QFrame#HeaderBackgroundImage { background-repeat:no-repeat; background-position: left; background-image: url(:/images/images/WomanReadingHeader.png); }")
         self.headerFrame.setFrameShape(QFrame.StyledPanel)
@@ -102,18 +105,19 @@ class BeautifulWordSelectorDialog(QDialog):
         self.wordFilter = QLineEdit(self.headerFrame)
         self.wordFilterLabel = QLabel("  Word Filter", self.headerFrame)
         self.wordFilterLabel.setBuddy(self.wordFilter)
-        self.wordFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                      "background-color: rgb(255, 255, 255);")
-        self.wordFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.wordFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                          "background-color: rgb(255, 255, 255);")
+            self.wordFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.wordFilterLabel.setObjectName("wordFilterLabel")
         self.headerLayout.addStretch()
         self.headerLayout.addWidget(self.headerSpacerWidget)
         self.headerLayout.addWidget(self.wordFilterLabel)
         self.headerLayout.addWidget(self.wordFilter)
-
-        self.wordFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.wordFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.wordFilter.setFixedWidth(120)
 
         self.wordFilter.textChanged.connect(self.setWordFilter)
@@ -121,32 +125,35 @@ class BeautifulWordSelectorDialog(QDialog):
             "Enter a starting letter or letters to find words")
         self.meaningFilterLabel = QLabel("  Meaning Filter", self.headerFrame)
         self.meaningFilter = QLineEdit(self.headerFrame)
-        self.meaningFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                         "background-color: rgb(255, 255, 255);")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.meaningFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                             "background-color: rgb(255, 255, 255);")
         self.meaningFilterLabel.setBuddy(self.meaningFilter)
         self.meaningFilterLabel.setStyleSheet(
             "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.headerLayout.addWidget(self.meaningFilterLabel)
         self.headerLayout.addWidget(self.meaningFilter)
-
-        self.meaningFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.meaningFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.meaningFilter.setFixedWidth(120)
         self.meaningFilter.textChanged.connect(self.setMeaningFilter)
         self.meaningFilter.setToolTip(
             "Enter a meaning for which you would like to find a word")
         self.tagFilterLabel = QLabel(" Tag Filter", self.headerFrame)
         self.tagFilter = QLineEdit(self.headerFrame)
-        self.tagFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                     "background-color: rgb(255, 255, 255);")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.tagFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                         "background-color: rgb(255, 255, 255);")
         self.tagFilterLabel.setBuddy(self.tagFilter)
-        self.tagFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.tagFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.headerLayout.addWidget(self.tagFilterLabel)
         self.headerLayout.addWidget(self.tagFilter)
-
-        self.tagFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.tagFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.tagFilter.setFixedWidth(120)
         self.tagFilter.textChanged.connect(self.setTagFilter)
         self.tagFilter.setToolTip(
@@ -155,15 +162,17 @@ class BeautifulWordSelectorDialog(QDialog):
         self.classificationFilterLabel = QLabel(
             " Classification Filter", self.headerFrame)
         self.classificationFilter = QComboBox(self.headerFrame)
-        self.classificationFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                                "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                                    "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;")
         self.classificationFilter.addItems(self.classifications)
         self.classificationFilterValue = self.classifications[0]
-        self.classificationFilterLabel.setStyleSheet(
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilterLabel.setStyleSheet(
 
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
-        self.tagFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+            self.tagFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
         self.headerLayout.addWidget(self.classificationFilter)
@@ -199,7 +208,7 @@ class BeautifulWordSelectorDialog(QDialog):
         #     "<html><b>Hello</b><html>")
         icon = QIcon(":/images/images/clipboard-paste-document-text.png")
         selectionAction = self.selectionMenu.addAction(icon,
-            'Click {} to insert this word into your document'.format("here"))
+                                                       'Click {} to insert this word into your document'.format("here"))
 
         selectionAction.triggered.connect(lambda: self.showSelection(data))
         x = QCursor.pos().x()

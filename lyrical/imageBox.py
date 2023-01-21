@@ -5,6 +5,8 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel
 from PyQt5.QtGui import QPixmap
 import resources
 import logging
+import globals
+
 
 class ImageBox(QLabel):
     """

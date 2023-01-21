@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import (QWidget, QPushButton,
                              QTableView,  QHeaderView, QLineEdit, QLabel, QFrame, QVBoxLayout, QHBoxLayout, QComboBox)
 from PyQt5.QtGui import QIcon, QCursor
 from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
+import globals
 
 # import utilities as Utilities
 
@@ -66,11 +67,12 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
 
     def AddClearFiltersButton(self):
         self.clearFiltersButton = QPushButton('', self)
-        self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(0, 0, 0); }\n"
-                                              "QPushButton:pressed { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(47,79,79); }\n"
-                                              "QPushButton { border: none; }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(0, 0, 0); }\n"
+                                                  "QPushButton:pressed { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(47,79,79); }\n"
+                                                  "QPushButton { border: none; }")
         self.clearFiltersButton.clicked.connect(self.clearFilters)
         self.clearFiltersButton.setIcon(
             QIcon(":/images/images/clearAll.png"))
@@ -102,10 +104,11 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
         self.touchDescriptorFilterLabel = QLabel(
             "  Descriptor Filter", self.headerFrame)
         self.touchDescriptorFilterLabel.setBuddy(self.touchDescriptorFilter)
-        self.touchDescriptorFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                                 "background-color: rgb(255, 255, 255);")
-        self.touchDescriptorFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.touchDescriptorFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                                     "background-color: rgb(255, 255, 255);")
+            self.touchDescriptorFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.touchDescriptorFilterLabel.setObjectName(
             "touchDescriptorFilterLabel")
         self.headerLayout.addStretch()
@@ -124,22 +127,22 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
         self.classificationFilterLabel = QLabel(
             " Touch Qualifier Filter", self.headerFrame)
         self.classificationFilter = QComboBox(self.headerFrame)
-
-        self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
-                                                "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
+                                                    "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
 
         self.classificationFilter.addItems(self.classifications)
         self.classificationFilterValue = self.classifications[0]
-        self.classificationFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
 
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
         self.headerLayout.addWidget(self.classificationFilter)
         self.AddClearFiltersButton()
         self.headerLayout.addStretch()
-        # self.classificationFilter.setStyleSheet(
-        #     "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+
         self.classificationFilter.setFixedWidth(120)
         self.classificationFilter.currentTextChanged.connect(
             self.setClassificationFilter)
@@ -169,7 +172,7 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
         self.selectionMenu = QMenu(self)
         icon = QIcon(":/images/images/clipboard-paste-document-text.png")
         selectionAction = self.selectionMenu.addAction(icon,
-            'Click {} to insert this word into your document'.format("here"))
+                                                       'Click {} to insert this word into your document'.format("here"))
         selectionAction.triggered.connect(lambda: self.showSelection(data))
         x = QCursor.pos().x()
         y = QCursor.pos().y()

@@ -6,7 +6,7 @@ import imageBox
 import pushButton
 from PyQt5 import QtGui, QtCore
 from PyQt5.QtCore import Qt
-
+import globals
 import re
 
 
@@ -51,8 +51,9 @@ class Find(QtWidgets.QDialog):
         self.searchImageBox = imageBox.ImageBox(
             searchImage, 0, 0, IMAGE_WIDTH, IMAGE_HEIGHT)
         self.findField = QtWidgets.QTextEdit(self)
-        self.findField.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.findField.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.findField.resize(250, 50)
 
         # The field into which to type the text to replace the
@@ -61,11 +62,13 @@ class Find(QtWidgets.QDialog):
         self.replaceImageBox = imageBox.ImageBox(
             replaceImage, 0, 0, IMAGE_WIDTH, IMAGE_HEIGHT)
         self.replaceField = QtWidgets.QTextEdit(self)
-        self.replaceField.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.replaceField.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.replaceField.resize(250, 50)
-        self.setStyleSheet(
-            "background-color: #E6E9CC; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.setStyleSheet(
+                "background-color: #E6E9CC; padding:1px 1px 1px 1px")
         layout = QtWidgets.QGridLayout()
         # addWidget(widget, row,column, rowSpan, columnSpan,alignment)
         layout.addWidget(self.searchImageBox, 1, 0, 1, 1)
@@ -113,7 +116,8 @@ class Find(QtWidgets.QDialog):
                 self.lastStart = 0
 
                 self.parent.editor.moveCursor(QtGui.QTextCursor.End)
-                self.parent.update_status_bar("No matching text found for {}".format(query))
+                self.parent.update_status_bar(
+                    "No matching text found for {}".format(query))
 
         else:
 
@@ -135,7 +139,8 @@ class Find(QtWidgets.QDialog):
 
                 # We set the cursor to the end if the search was unsuccessful
                 self.parent.editor.moveCursor(QtGui.QTextCursor.End)
-                self.parent.update_status_bar("No matching text found for expression {}".format(pattern))
+                self.parent.update_status_bar(
+                    "No matching text found for expression {}".format(pattern))
 
     def replace(self):
 

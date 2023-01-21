@@ -8,6 +8,7 @@ import pushButton
 import resources
 import novelProperties
 import logging
+import globals
 
 
 class NovelPropertiesDialog(QDialog):
@@ -26,8 +27,9 @@ class NovelPropertiesDialog(QDialog):
         # this will hide the title bar
         # self.setWindowFlag(Qt.FramelessWindowHint)
         self.setGeometry(100, 100, 255, 322)  # X,Y, Width, Height
-        self.setStyleSheet(
-            "background-color: #E6E9CC; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.setStyleSheet(
+                "background-color: #E6E9CC; padding:1px 1px 1px 1px")
 
         self.mainLayout = QVBoxLayout()
 
@@ -50,20 +52,12 @@ class NovelPropertiesDialog(QDialog):
         self.ButtonFrame.setSizePolicy(size_policy)
         self.ButtonFrame.setFrameShape(QFrame.Box)
         self.ButtonFrame.setFrameShadow(QFrame.Raised)
-        self.ButtonFrame.setStyleSheet("background-color: #223232;")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.ButtonFrame.setStyleSheet("background-color: #223232;")
         self.ButtonFrame.setLineWidth(1)
 
         self.PropertiesFrame = QFrame(self)  # Create QFrame object
-        # size_policy = QSizePolicy(QSizePolicy.Expanding,
-        #                           QSizePolicy.Preferred)
-        # self.PropertiesFrame.setSizePolicy(size_policy)
-        # self.PropertiesFrame.setFrameShape(QFrame.Box)
-        # self.PropertiesFrame.setFrameShadow(QFrame.Raised)
-        # self.PropertiesFrame.setStyleSheet("background-color: #223232;")
-        # self.PropertiesFrame.setLineWidth(1)
 
-        # self.ButtonFrame.setLineWidth(3)
-        # self.ButtonFrame.setMidLineWidth(5)
         self.buttonPanelLayout = QHBoxLayout(self.ButtonFrame)
 
         self.buttonPanelLayout.addWidget(self.createButton)
@@ -126,7 +120,8 @@ class NovelPropertiesDialog(QDialog):
 
     def set_chapter_count(self):
         self.properties.numberOfChapters = self.numberOfChapters.value()
-        logging.debug("Chapters Requested {}".format(self.properties.numberOfChapters))
+        logging.debug("Chapters Requested {}".format(
+            self.properties.numberOfChapters))
 
     def set_foreword_state(self, cb):
         self.properties.foreword = cb.isChecked()

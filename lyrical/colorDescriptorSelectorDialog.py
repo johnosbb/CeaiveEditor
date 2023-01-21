@@ -9,7 +9,7 @@ from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 # import utilities as Utilities
 
 from sortWordsForColorDescriptorFilterProxyModel import SortWordsForColorDescriptorFilterProxyModel
-
+import globals
 from colorTile import ColorTile
 
 DIALOG_WIDTH = 800
@@ -67,11 +67,12 @@ class WordForColorDescriptorsSelectorDialog(QDialog):
 
     def AddClearFiltersButton(self):
         self.clearFiltersButton = QPushButton('', self)
-        self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(0, 0, 0); }\n"
-                                              "QPushButton:pressed { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(47,79,79); }\n"
-                                              "QPushButton { border: none; }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(0, 0, 0); }\n"
+                                                  "QPushButton:pressed { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(47,79,79); }\n"
+                                                  "QPushButton { border: none; }")
         self.clearFiltersButton.clicked.connect(self.clearFilters)
         self.clearFiltersButton.setIcon(
             QIcon(":/images/images/clearAll.png"))
@@ -103,19 +104,20 @@ class WordForColorDescriptorsSelectorDialog(QDialog):
         self.colourDescriptorFilterLabel = QLabel(
             "  Descriptor Filter", self.headerFrame)
         self.colourDescriptorFilterLabel.setBuddy(self.colourDescriptorFilter)
-        self.colourDescriptorFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                                  "background-color: rgb(255, 255, 255);")
-        self.colourDescriptorFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.colourDescriptorFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                                      "background-color: rgb(255, 255, 255);")
+            self.colourDescriptorFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.colourDescriptorFilterLabel.setObjectName(
             "colourDescriptorFilterLabel")
         self.headerLayout.addStretch()
         self.headerLayout.addWidget(self.headerSpacerWidget)
         self.headerLayout.addWidget(self.colourDescriptorFilterLabel)
         self.headerLayout.addWidget(self.colourDescriptorFilter)
-
-        self.colourDescriptorFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.colourDescriptorFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.colourDescriptorFilter.setFixedWidth(120)
 
         self.colourDescriptorFilter.textChanged.connect(self.setWordFilter)
@@ -125,14 +127,15 @@ class WordForColorDescriptorsSelectorDialog(QDialog):
         self.classificationFilterLabel = QLabel(
             " Colour Qualifier Filter", self.headerFrame)
         self.classificationFilter = QComboBox(self.headerFrame)
-
-        self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
-                                                "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
+                                                    "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
 
         self.classificationFilter.addItems(self.classifications)
         self.classificationFilterValue = self.classifications[0]
-        self.classificationFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
 
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
@@ -178,7 +181,7 @@ class WordForColorDescriptorsSelectorDialog(QDialog):
         self.selectionMenu = QMenu(self)
         icon = QIcon(":/images/images/clipboard-paste-document-text.png")
         selectionAction = self.selectionMenu.addAction(icon,
-            'Click {} to insert this word into your document'.format("here"))
+                                                       'Click {} to insert this word into your document'.format("here"))
         selectionAction.triggered.connect(lambda: self.showSelection(data))
         x = QCursor.pos().x()
         y = QCursor.pos().y()

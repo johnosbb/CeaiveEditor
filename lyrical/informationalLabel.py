@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtPrintSupport import *
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel
-
+import globals
 import resources
 
 
@@ -14,8 +14,9 @@ class InformationalLabel(QLabel):
         super().__init__()
         fontId = QFontDatabase.addApplicationFont(
             ':/fonts/fonts/Amarante-Regular.ttf')
-        self.setStyleSheet(
-            "background-color: #C99958; border: 1px solid #5F8A77; padding:4px 4px;")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.setStyleSheet(
+                "background-color: #C99958; border: 1px solid #5F8A77; padding:4px 4px;")
 
         self.fontFamilies = QFontDatabase.applicationFontFamilies(fontId)
         font = QFont(self.fontFamilies[0])

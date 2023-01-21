@@ -7,7 +7,7 @@ from PyQt5.QtGui import QIcon, QCursor
 from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 import logging
 # import utilities as Utilities
-
+import globals
 from sortWordsForSmellFilterProxyModel import SortWordsForSmellFilterProxyModel
 
 
@@ -65,11 +65,12 @@ class WordsForSmellSelectorDialog(QDialog):
 
     def AddClearFiltersButton(self):
         self.clearFiltersButton = QPushButton('', self)
-        self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(0, 0, 0); }\n"
-                                              "QPushButton:pressed { color: rgb(255, 255, 255);\n"
-                                              "background-color: rgb(47,79,79); }\n"
-                                              "QPushButton { border: none; }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.clearFiltersButton.setStyleSheet("QPushButton { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(0, 0, 0); }\n"
+                                                  "QPushButton:pressed { color: rgb(255, 255, 255);\n"
+                                                  "background-color: rgb(47,79,79); }\n"
+                                                  "QPushButton { border: none; }")
         self.clearFiltersButton.clicked.connect(self.clearFilters)
         self.clearFiltersButton.setIcon(
             QIcon(":/images/images/clearAll.png"))
@@ -86,7 +87,6 @@ class WordsForSmellSelectorDialog(QDialog):
         self.headerFrame.setBaseSize(QSize(0, 0))
         self.headerFrame.setAutoFillBackground(False)
         self.headerFrame.setObjectName("HeaderBackgroundImage")
-
         self.headerFrame.setStyleSheet(
             "QFrame#HeaderBackgroundImage { background-repeat:no-repeat; background-position: left; background-image: url(:/images/images/WordsForSmellLongForm.png); }")
         self.headerFrame.setFrameShape(QFrame.StyledPanel)
@@ -101,19 +101,20 @@ class WordsForSmellSelectorDialog(QDialog):
         self.smellFilterLabel = QLabel(
             "  Smell Filter", self.headerFrame)
         self.smellFilterLabel.setBuddy(self.smellFilter)
-        self.smellFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                       "background-color: rgb(255, 255, 255);")
-        self.smellFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.smellFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                           "background-color: rgb(255, 255, 255);")
+            self.smellFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.smellFilterLabel.setObjectName(
             "smellFilterLabel")
         self.headerLayout.addStretch()
         self.headerLayout.addWidget(self.headerSpacerWidget)
         self.headerLayout.addWidget(self.smellFilterLabel)
         self.headerLayout.addWidget(self.smellFilter)
-
-        self.smellFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.smellFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.smellFilter.setFixedWidth(120)
 
         self.smellFilter.textChanged.connect(self.setSmellFilter)
@@ -123,16 +124,18 @@ class WordsForSmellSelectorDialog(QDialog):
         self.smellDescriptionFilterLabel = QLabel(
             "  Description Filter", self.headerFrame)
         self.smellDescriptionFilter = QLineEdit(self.headerFrame)
-        self.smellDescriptionFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
-                                                  "background-color: rgb(255, 255, 255);")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.smellDescriptionFilter.setStyleSheet("color: rgb(0, 0, 0);\n"
+                                                      "background-color: rgb(255, 255, 255);")
         self.smellDescriptionFilterLabel.setBuddy(self.smellDescriptionFilter)
-        self.smellDescriptionFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.smellDescriptionFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
         self.headerLayout.addWidget(self.smellDescriptionFilterLabel)
         self.headerLayout.addWidget(self.smellDescriptionFilter)
-
-        self.smellDescriptionFilter.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.smellDescriptionFilter.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.smellDescriptionFilter.setFixedWidth(120)
         self.smellDescriptionFilter.textChanged.connect(
             self.setSmellDescriptionFilter)
@@ -142,22 +145,22 @@ class WordsForSmellSelectorDialog(QDialog):
         self.classificationFilterLabel = QLabel(
             " Smell Qualifier Filter", self.headerFrame)
         self.classificationFilter = QComboBox(self.headerFrame)
-
-        self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
-                                                "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilter.setStyleSheet("QComboBox { color: rgb(0, 0, 0);\n"
+                                                    "background-color: rgb(255, 255, 255); padding:1px 1px 1px 1px;}")
 
         self.classificationFilter.addItems(self.classifications)
         self.classificationFilterValue = self.classifications[0]
-        self.classificationFilterLabel.setStyleSheet(
-            "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.classificationFilterLabel.setStyleSheet(
+                "QLabel { color: rgb(255, 255, 255); font-weight:600 }")
 
         self.classificationFilterLabel.setBuddy(self.classificationFilter)
         self.headerLayout.addWidget(self.classificationFilterLabel)
         self.headerLayout.addWidget(self.classificationFilter)
         self.AddClearFiltersButton()
         self.headerLayout.addStretch()
-        # self.classificationFilter.setStyleSheet(
-        #     "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+
         self.classificationFilter.setFixedWidth(120)
         self.classificationFilter.currentTextChanged.connect(
             self.setClassificationFilter)
@@ -184,7 +187,7 @@ class WordsForSmellSelectorDialog(QDialog):
         self.selectionMenu = QMenu(self)
         icon = QIcon(":/images/images/clipboard-paste-document-text.png")
         selectionAction = self.selectionMenu.addAction(icon,
-            'Click {} to insert this word into your document'.format("here"))
+                                                       'Click {} to insert this word into your document'.format("here"))
         selectionAction.triggered.connect(lambda: self.showSelection(data))
         x = QCursor.pos().x()
         y = QCursor.pos().y()

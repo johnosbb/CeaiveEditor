@@ -4,6 +4,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtPrintSupport import *
 import imageBox
 import resources
+import globals
 
 
 class ProjectTypeDialog(QDialog):
@@ -32,7 +33,8 @@ class ProjectTypeDialog(QDialog):
             essayImage, 260, 0, 255, 322)
         self.imageBoxNovel = imageBox.ImageBox(
             novelImage, 520, 0, 255, 322)
-        self.setStyleSheet("background-color: #E6E9CC;")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.setStyleSheet("background-color: #E6E9CC;")
         self.projectSelectorMainLayout.addWidget(self.imageBoxShortStory)
         self.projectSelectorMainLayout.addWidget(self.imageBoxEssay)
         self.projectSelectorMainLayout.addWidget(self.imageBoxNovel)

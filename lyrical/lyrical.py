@@ -13,7 +13,7 @@ import uuid
 import style
 import utilities
 import logging
-
+import palettes
 import preferencesDialog
 import projectTypeDialog
 import novelPropertiesDialog
@@ -29,11 +29,7 @@ from PyQt5.QtCore import QEvent
 from grammarCheckWindow import GrammarCorrectionWindow
 import language_tool_python
 from wordListManager import WordListManager
-
-
-white = QColor(255, 255, 255)
-red = QColor(255, 0, 0)
-black = QColor(0, 0, 0)
+import globals
 
 FONT_SIZES = [7, 8, 9, 10, 11, 12, 13, 14,
               18, 24, 36, 48, 64, 72, 96, 144, 288]
@@ -78,7 +74,6 @@ class MainWindow(QMainWindow):
         self.compliment = describeWord.DescribeWord(
         )
 
-        #self.editor = textEditor.TextEdit()
         self.editor = textEditor.TextEdit(
             self.speller, self.thesaurus, self.compliment)
 
@@ -135,11 +130,6 @@ class MainWindow(QMainWindow):
         self.update_title()
         self.oldPos = self.pos()
 
-        # self.editor.selectionChanged(self.updateUi)
-        # self.editor.document().modificationChanged.connect(self.setWindowModified)
-
-        # self.setGeometry(100, 100, 400, 300)
-
         self.show()
 
     def define_suggestions_toolbar(self):
@@ -155,10 +145,6 @@ class MainWindow(QMainWindow):
         self.addDockWidget(Qt.BottomDockWidgetArea, self.suggestions_dock)
 
     def eventFilter(self, source, event):
-        # if (event.type() == QEvent.FocusOut):
-        #     print("{}  {}  {}\n".format(utilities.eventLookup[str(event.type())],source,self.editor.toPlainText()))
-        # else:
-        #     print("{}  {}\n".format(utilities.eventLookup[str(event.type())],source))
         if (event.type() == QEvent.FocusOut and source is self.editor and (len(self.editor.toPlainText()) > 0)):
             self.file_save()
         # return true here to bypass default behaviour
@@ -193,12 +179,6 @@ class MainWindow(QMainWindow):
         else:
             self.fontFamilies = QFontDatabase.applicationFontFamilies(fontId)
             font = QFont(self.fontFamilies[0])
-            # self.setFont(font)
-        # id = QFontDatabase.addApplicationFont("//party.ttf")
-        # _fontstr = QFontDatabase.applicationFontFamilies(id).at(0)
-        # _font = QFont(_fontstr, 8)
-        # _fontstr = QFontDatabase.applicationFontFamilies(id)[0]
-        # app.setFont(font)
 
     def getWords(self) -> list[str]:
         if not os.path.exists(self.word_list_path):
@@ -260,7 +240,8 @@ class MainWindow(QMainWindow):
 
     def unHighlightWord(self):
         color = self.editor.getBackgroundColor()
-        color = QColor(241, 240, 232)
+        # needs to be fixed and linked to QPalette
+        # color = QColor(241, 240, 232)
         format = QTextCharFormat()
         format.setBackground(QBrush(color))
         cursor = self.editor.textCursor()
@@ -498,8 +479,9 @@ class MainWindow(QMainWindow):
         edit_toolbar.addWidget(self.findAndReplaceLabel)
 
         self.findLineEdit = QLineEdit(self)
-        self.findLineEdit.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.findLineEdit.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.findLineEdit.setFixedWidth(120)
         self.findLineEdit.returnPressed.connect(self.findWord)
         edit_toolbar.addWidget(self.findLineEdit)
@@ -576,8 +558,9 @@ class MainWindow(QMainWindow):
         # edit_toolbar.addWidget(self.NextButton)
 
         self.replaceLineEdit = QLineEdit(self)
-        self.replaceLineEdit.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.replaceLineEdit.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.replaceLineEdit.setFixedWidth(120)
         self.replaceLineEdit.returnPressed.connect(self.replaceWord)
         edit_toolbar.addWidget(self.replaceLineEdit)
@@ -693,7 +676,7 @@ class MainWindow(QMainWindow):
                     self.editor.replaceSelectedWord(
                         self.grammarCheck.correctedText)
 
-                    # parent.editor.insert_selected_word(wordSelector.selectedWord)
+                    # parent.editor.insertSelectedWord(wordSelector.selectedWord)
                 else:
                     logging.debug("Canceled! Grammar check")
 
@@ -955,8 +938,9 @@ class MainWindow(QMainWindow):
         style_toolbar.addWidget(self.thesaurusLookupLabel)
 
         self.thesaurusLookup = QLineEdit(self)
-        self.thesaurusLookup.setStyleSheet(
-            "background-color: #FFFFFF; padding:1px 1px 1px 1px")
+        if(globals.USE_STYLESHEETS_FOR_COLOR):
+            self.thesaurusLookup.setStyleSheet(
+                "background-color: #FFFFFF; padding:1px 1px 1px 1px")
         self.thesaurusLookup.setFixedWidth(120)
         self.thesaurusLookup.returnPressed.connect(self.lookupWord)
         style_toolbar.addWidget(self.thesaurusLookup)
@@ -1239,45 +1223,6 @@ class MainWindow(QMainWindow):
         self.editor.replace_selected_word(word)
 
 
-def dark():
-    dark_palette = QPalette()
-    dark_palette.setColor(QPalette.Window, QColor(53, 53, 53))
-    dark_palette.setColor(QPalette.WindowText, white)
-    dark_palette.setColor(QPalette.Base, QColor(25, 25, 25))
-    dark_palette.setColor(QPalette.AlternateBase,
-                          QColor(53, 53, 53))
-    dark_palette.setColor(QPalette.ToolTipBase, white)
-    dark_palette.setColor(QPalette.ToolTipText, white)
-    dark_palette.setColor(QPalette.Text, white)
-    dark_palette.setColor(QPalette.Button, QColor(53, 53, 53))
-    dark_palette.setColor(QPalette.ButtonText, white)
-    dark_palette.setColor(QPalette.BrightText, red)
-    dark_palette.setColor(QPalette.Link, QColor(42, 130, 218))
-    dark_palette.setColor(QPalette.Highlight, QColor(42, 130, 218))
-    dark_palette.setColor(QPalette.HighlightedText, black)
-    return dark_palette
-
-
-def grey():
-    palette = QPalette()
-    palette.setColor(QPalette.Window, QColor(53, 53, 53))
-    palette.setColor(QPalette.WindowText, Qt.white)
-    palette.setColor(QPalette.Base, QColor(15, 15, 15))
-    palette.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
-    palette.setColor(QPalette.ToolTipBase, Qt.white)
-    palette.setColor(QPalette.ToolTipText, Qt.white)
-    palette.setColor(QPalette.Text, Qt.white)
-    palette.setColor(QPalette.Button, QColor(53, 53, 53))
-    palette.setColor(QPalette.ButtonText, Qt.white)
-    palette.setColor(QPalette.BrightText, Qt.red)
-    palette.setColor(QPalette.Highlight, QColor(45, 197, 45).lighter())
-    palette.setColor(QPalette.HighlightedText, Qt.black)
-    palette.setColor(QPalette.Disabled, QPalette.Text, Qt.darkGray)
-    palette.setColor(QPalette.Disabled, QPalette.ButtonText, Qt.darkGray)
-    palette.setColor(QPalette.Disabled, QPalette.WindowText, Qt.darkGray)
-    return palette
-
-
 if __name__ == '__main__':
 
     app = QApplication(sys.argv)  # create the main app
@@ -1289,7 +1234,7 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG, filename="lyrical.log", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     logging.info("Starting Lyrical Editor")
-    # app.setStyle("fusion")
-    # app.setPalette(grey())
+    app.setStyle("fusion")
+    app.setPalette(palettes.light())
     window = MainWindow()
     app.exec_()
