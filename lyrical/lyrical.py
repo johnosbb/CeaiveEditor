@@ -132,6 +132,10 @@ class MainWindow(QMainWindow):
 
         self.show()
 
+    @staticmethod
+    def restart():
+        MainWindow.singleton = MainWindow()
+
     def define_suggestions_toolbar(self):
         """
         Defines the tools bar and actions associated with suggestions analysis
@@ -198,6 +202,7 @@ class MainWindow(QMainWindow):
             self.projectHomeDirectory = self.preferencesDialog.projectHomeDirectoryEdit.text()
             self.language = self.preferencesDialog.properties.language
             self.fileFormat = self.preferencesDialog.properties.fileFormat
+            self.theme = self.preferencesDialog.properties.theme
         else:
             logging.debug("Canceled Showing Preferences!")
 
@@ -684,11 +689,11 @@ class MainWindow(QMainWindow):
         self.editor.setText(TEST_TEXT)
         print("Position is {} {}".format(self.pos().x(), self.pos().y()))
 
-    def create_novel_structure(self, properties):
+    def create_novel_structure(self, novelProperties):
         # create an outline for our novel
-        logging.debug("Success! for novel properties Prologue: {} Foreword {}".format(
-            properties.prologue, properties.foreword))
-        # We now need to get the name of the project and properties
+        logging.debug("Success! for  novelProperties Prologue: {} Foreword {}".format(
+            novelProperties.prologue, novelProperties.foreword))
+        # We now need to get the name of the project and novelProperties
         directory = QFileDialog.getSaveFileName(
             caption="Create a new Project Directory",
             directory=self.projectHomeDirectory,
@@ -704,7 +709,7 @@ class MainWindow(QMainWindow):
         # create the requested documents
 
         try:
-            if(properties.foreword):
+            if(novelProperties.foreword):
                 path = os.sep.join(
                     [directory[0], 'foreword.' + self.fileFormat])
                 fp = open(path, 'x')
@@ -719,7 +724,7 @@ class MainWindow(QMainWindow):
         # self.epilogue = False
         # self.numberOfChapters = 20
         try:
-            if(properties.preface):
+            if(novelProperties.preface):
                 path = os.sep.join(
                     [directory[0], 'preface.' + self.fileFormat])
                 fp = open(path, 'x')
@@ -728,7 +733,7 @@ class MainWindow(QMainWindow):
             self.status.showMessage(
                 "Failed to create preface: " + str(error), 10000)
         try:
-            if(properties.introduction):
+            if(novelProperties.introduction):
                 path = os.sep.join(
                     [directory[0], 'introduction.' + self.fileFormat])
                 fp = open(path, 'x')
@@ -737,7 +742,7 @@ class MainWindow(QMainWindow):
             self.status.showMessage(
                 "Failed to create introduction: " + str(error), 10000)
         try:
-            if(properties.prologue):
+            if(novelProperties.prologue):
                 path = os.sep.join(
                     [directory[0], 'prologue.' + self.fileFormat])
                 fp = open(path, 'x')
@@ -746,7 +751,7 @@ class MainWindow(QMainWindow):
             self.status.showMessage(
                 "Failed to create prologue: " + str(error), 10000)
         try:
-            if(properties.epilogue):
+            if(novelProperties.epilogue):
                 path = os.sep.join(
                     [directory[0], 'epilogue.' + self.fileFormat])
                 fp = open(path, 'x')
@@ -754,7 +759,7 @@ class MainWindow(QMainWindow):
         except OSError as error:
             self.status.showMessage(
                 "Failed to create epilogue: " + str(error), 10000)
-        for chapter in range(1, properties.numberOfChapters+1):
+        for chapter in range(1, novelProperties.numberOfChapters+1):
             try:
                 chapterName = "chapter_" + str(chapter) + "." + self.fileFormat
                 path = os.sep.join([directory[0], chapterName])
@@ -1142,6 +1147,8 @@ class MainWindow(QMainWindow):
         settings.setValue("pos", self.pos())
         print("Position is {} {}".format(self.pos().x(), self.pos().y()))
         settings.setValue("file_format", self.fileFormat)
+        settings.setValue("theme", self.theme)
+        print("Saving the {} theme from settings ".format(self.theme))
         settings.setValue("language", self.language)
         settings.endGroup()
         settings.beginGroup("Preferences")
@@ -1159,9 +1166,19 @@ class MainWindow(QMainWindow):
         settings.endGroup()
         settings.beginGroup("MainWindow")
         self.projectCurrentDirectory = settings.value("project_current")
-        self.applicationPosition = settings.value("pos")
+        if(self.applicationPosition == None):
+            self.applicationPosition = QPoint(0, 0)
         self.applicationSize = settings.value("size")
+        if(self.applicationSize == None):
+            self.applicationSize = QSize(1400, 700)
         self.fileFormat = settings.value("file_format")
+        if(self.fileFormat == None):
+            self.applicationPosition = "html"
+        self.language = settings.value("language")
+        if(self.language == None):
+            self.language = "enu"
+        self.theme = settings.value("theme")
+        print("Loading the {} theme from settings ".format(self.theme))
         self.language = settings.value("language")
         if(self.applicationPosition.x() < 0):
             self.applicationPosition.setX(0)
@@ -1226,15 +1243,21 @@ class MainWindow(QMainWindow):
 if __name__ == '__main__':
 
     app = QApplication(sys.argv)  # create the main app
+    # MainWindow.restart()
     # When creating a QSettings object, you must pass the name of your company or organization as well as the name of your application.
     QCoreApplication.setApplicationName(ORGANIZATION_NAME)
     # When the Internet domain is set, it is used on macOS and iOS instead of the organization name, since macOS and iOS applications conventionally use Internet domains to identify themselves.
     QCoreApplication.setOrganizationDomain(ORGANIZATION_DOMAIN)
     QCoreApplication.setApplicationName(APPLICATION_NAME)
     logging.basicConfig(level=logging.DEBUG, filename="lyrical.log", filemode="a+",
-                        format="%(asctime)-15s %(levelname)-8s %(message)s")
+                        format="%(asctime)-15s %(levelname)-8s %(message)s", force=True)
     logging.info("Starting Lyrical Editor")
+
     app.setStyle("fusion")
     app.setPalette(palettes.light())
     window = MainWindow()
+    if(window.theme == "light"):
+        app.setPalette(palettes.light())
+    else:
+        app.setPalette(palettes.grey())
     app.exec_()

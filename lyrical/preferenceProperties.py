@@ -4,3 +4,4 @@ class PreferenceProperties():
         self.language = "eng"
         self.projectHomeDirectory = "./"
         self.fileFormat = "html"
+        self.theme = "light"

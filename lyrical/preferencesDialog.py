@@ -19,13 +19,25 @@ class PreferencesDialog(QDialog):
     def setSelectedFileFormat(self, format):
         self.properties.fileFormat = format
 
+    def setSelectedTheme(self, theme):
+        print("Setting selected {} theme from settings: current theme {}".format(
+            theme, self.parent.theme))
+        if(theme != self.parent.theme):
+            self.properties.theme = theme
+            msg = QMessageBox()
+            msg.setIcon(QMessageBox.Information)
+            msg.setText(
+                "You will need to restart the application to load the new theme")
+            retval = msg.exec_()
+
     def __init__(self, parent):
         super().__init__()
         # font = QFont(parent.fontFamilies[0])
         # self.setFont(font)
+        self.parent = parent
         self._properties = preferenceProperties.PreferenceProperties()
         self.setWindowTitle("Lyrical Preferences")
-        self.setGeometry(100, 100, 400, 200)  # X,Y, Width, Height
+        self.setGeometry(100, 100, 600, 200)  # X,Y, Width, Height
         QBtn = QDialogButtonBox.Cancel | QDialogButtonBox.Save
 
         self.buttonBox = QDialogButtonBox(QBtn)
@@ -58,13 +70,26 @@ class PreferencesDialog(QDialog):
 
         fileFormatOptions = ["html", "text"]
         self.languageSelect.setCurrentText(parent.fileFormat)
+
         self.fileFormatLayout = QHBoxLayout()
         self.fileFormatSelect = QComboBox()
         self.fileFormatSelect.currentTextChanged.connect(
             self.setSelectedFileFormat)
         self.fileFormatSelect.addItems(fileFormatOptions)
         self.fileFormatSelect.setCurrentText(parent.language)
-        self.fileFormatLabel = QLabel("fileFormat")
+        self.fileFormatLabel = QLabel("File Format")
+
+        themeSelectOptions = ["dark", "light"]
+        self.themeSelectLayout = QHBoxLayout()
+        self.themeSelect = QComboBox()
+        self.themeSelect.addItems(themeSelectOptions)
+        self.themeSelect.setCurrentText(parent.theme)
+        self.themeSelect.currentTextChanged.connect(
+            self.setSelectedTheme)
+
+        self.themeSelectLabel = QLabel("Theme")
+        self.themeSelectLayout.addWidget(self.themeSelectLabel)
+        self.themeSelectLayout.addWidget(self.themeSelect)
 
         self.directoryLayout = QHBoxLayout()
         self.preferencesMainLayout = QVBoxLayout()
@@ -78,6 +103,7 @@ class PreferencesDialog(QDialog):
         self.fileFormatLayout.addWidget(self.fileFormatSelect)
         self.preferencesMainLayout.addLayout(self.languageLayout)
         self.preferencesMainLayout.addLayout(self.fileFormatLayout)
+        self.preferencesMainLayout.addLayout(self.themeSelectLayout)
         self.preferencesMainLayout.addStretch()
         self.preferencesMainLayout.addWidget(self.buttonBox)
         self.setLayout(self.preferencesMainLayout)
