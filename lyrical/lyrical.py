@@ -1174,7 +1174,7 @@ class MainWindow(QMainWindow):
             self.applicationSize = QSize(1400, 700)
         self.fileFormat = settings.value("file_format")
         if(self.fileFormat == None):
-            self.applicationPosition = "html"
+            self.fileFormat = "html"
         self.language = settings.value("language")
         if(self.language == None):
             self.language = "enu"
