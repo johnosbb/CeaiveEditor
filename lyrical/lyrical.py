@@ -1178,6 +1178,8 @@ class MainWindow(QMainWindow):
         if(self.language == None):
             self.language = "enu"
         self.theme = settings.value("theme")
+        if(self.theme == None):
+            self.theme = "light"
         print("Loading the {} theme from settings ".format(self.theme))
         self.language = settings.value("language")
         if(self.applicationPosition.x() < 0):
