@@ -10,9 +10,11 @@ import logging
 class ThesaurusWebster:
 
     def __init__(
-        self
+        self, APIKey
+
     ):
         self.synonyms = []
+        self.apiKey = APIKey
         # self.antonyms = []
 
     # Returns a unique list with any duplicates removed avoiding the reordering a set operation alone might cause
@@ -28,7 +30,7 @@ class ThesaurusWebster:
         """
         synonymsList = []
         if word is not None:
-            api_key = os.environ.get('API_KEY')
+            api_key = self.apiKey  # os.environ.get('API_KEY')
             word = word.lower()
             if (api_key == "" or (api_key is None)):
                 logging.debug(
@@ -40,7 +42,7 @@ class ThesaurusWebster:
                     apiResponse = json.loads(response.text)
                 except json.JSONDecodeError as error:
                     logging.debug("Error decong json  : {}".format(error))
-                    return []  
+                    return []
                 # print(apiResponse)
                 if response.status_code == 200:
                     try:

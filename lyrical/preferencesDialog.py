@@ -16,6 +16,9 @@ class PreferencesDialog(QDialog):
     def setSelectedLanguage(self, language):
         self.properties.language = language
 
+    def setAPIKey(self, apiKey):
+        self.properties.websterAPIKey = apiKey
+
     def setSelectedFileFormat(self, format):
         self.properties.fileFormat = format
 
@@ -47,7 +50,7 @@ class PreferencesDialog(QDialog):
         self.projectHomeDirectorylabel = QLabel("Projects Home")
         self.projectHomeDirectoryEdit = QLineEdit()
         self.projectHomeDirectoryEdit.setText(parent.projectHomeDirectory)
-
+        self.properties.projectHomeDirectory = parent.projectHomeDirectory
         self.directoryButton = QPushButton(self)
         self.directoryButton.setText("...")  # text
         # self.directoryButton.setIcon(QIcon("close.png")) #icon
@@ -57,11 +60,21 @@ class PreferencesDialog(QDialog):
             "Select the Project Directory")  # Tool tip
         #self.directoryButton.move(100, 100)
 
+        self.APIKeyLayout = QHBoxLayout()
+        self.APIKeyEdit = QLineEdit()
+        self.properties.websterAPIKey = parent.websterAPIkey
+        self.APIKeyEdit.setText(parent.websterAPIkey)
+        self.APIKeyEdit.textChanged.connect(
+            self.setAPIKey)
+        self.APIKeyLabel = QLabel("API Key")
+        self.APIKeyLayout.addWidget(self.APIKeyLabel)
+        self.APIKeyLayout.addWidget(self.APIKeyEdit)
+
         languageOptions = ["enu", "eng"]
 
         self.languageLayout = QHBoxLayout()
         self.languageSelect = QComboBox()
-
+        self.properties.language = parent.language
         self.languageSelect.currentTextChanged.connect(
             self.setSelectedLanguage)
         self.languageSelect.addItems(languageOptions)
@@ -73,6 +86,7 @@ class PreferencesDialog(QDialog):
 
         self.fileFormatLayout = QHBoxLayout()
         self.fileFormatSelect = QComboBox()
+        self.properties.fileFormat = parent.fileFormat
         self.fileFormatSelect.currentTextChanged.connect(
             self.setSelectedFileFormat)
         self.fileFormatSelect.addItems(fileFormatOptions)
@@ -82,6 +96,7 @@ class PreferencesDialog(QDialog):
         themeSelectOptions = ["dark", "light"]
         self.themeSelectLayout = QHBoxLayout()
         self.themeSelect = QComboBox()
+        self.properties.theme = parent.theme
         self.themeSelect.addItems(themeSelectOptions)
         self.themeSelect.setCurrentText(parent.theme)
         self.themeSelect.currentTextChanged.connect(
@@ -101,6 +116,7 @@ class PreferencesDialog(QDialog):
         self.languageLayout.addWidget(self.languageSelect)
         self.fileFormatLayout.addWidget(self.fileFormatLabel)
         self.fileFormatLayout.addWidget(self.fileFormatSelect)
+        self.preferencesMainLayout.addLayout(self.APIKeyLayout)
         self.preferencesMainLayout.addLayout(self.languageLayout)
         self.preferencesMainLayout.addLayout(self.fileFormatLayout)
         self.preferencesMainLayout.addLayout(self.themeSelectLayout)

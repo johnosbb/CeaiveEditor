@@ -30,7 +30,7 @@ class TextEdit(QTextEdit):
             self.grammarCheckSet = False
             palette = self.palette()
             self.backGroundColor = palette.color(QPalette.Base)
-            print(self.backGroundColor.name())
+            # print(self.backGroundColor.name())
             self.setObjectName("HeaderBackgroundColor")
             self.copyAvailable.connect(self.selectedTextChanged)
         else:

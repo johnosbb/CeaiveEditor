@@ -5,3 +5,4 @@ class PreferenceProperties():
         self.projectHomeDirectory = "./"
         self.fileFormat = "html"
         self.theme = "light"
+        self.websterAPIKey = ""

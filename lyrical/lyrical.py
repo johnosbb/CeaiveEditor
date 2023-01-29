@@ -68,8 +68,8 @@ class MainWindow(QMainWindow):
         self.speller = spellCheckWord.SpellCheckWord(
             self.getWords(), self.addToDictionary)
 
-        self.thesaurus = thesaurusWebster.ThesaurusWebster(
-        )
+        self.thesaurus = thesaurusWebster.ThesaurusWebster(self.websterAPIkey
+                                                           )
 
         self.compliment = describeWord.DescribeWord(
         )
@@ -203,6 +203,7 @@ class MainWindow(QMainWindow):
             self.language = self.preferencesDialog.properties.language
             self.fileFormat = self.preferencesDialog.properties.fileFormat
             self.theme = self.preferencesDialog.properties.theme
+            self.websterAPIkey = self.preferencesDialog.properties.websterAPIKey
         else:
             logging.debug("Canceled Showing Preferences!")
 
@@ -1141,9 +1142,8 @@ class MainWindow(QMainWindow):
         settings.beginGroup("MainWindow")
         # the current active project directory within the root
         settings.setValue("project_current", self.projectCurrentDirectory)
-        mySize = self.size()
+        settings.setValue("webster_api_key", self.websterAPIkey)
         settings.setValue("size", self.size())
-        myPosition = self.pos()
         settings.setValue("pos", self.pos())
         print("Position is {} {}".format(self.pos().x(), self.pos().y()))
         settings.setValue("file_format", self.fileFormat)
@@ -1166,6 +1166,9 @@ class MainWindow(QMainWindow):
         settings.endGroup()
         settings.beginGroup("MainWindow")
         self.projectCurrentDirectory = settings.value("project_current")
+        self.websterAPIkey = settings.value("webster_api_key")
+        if(self.websterAPIkey == None):
+            self.websterAPIkey = "Get an API Key at www.dictionaryapi.com"
         self.applicationPosition = settings.value("pos")
         if(self.applicationPosition == None):
             self.applicationPosition = QPoint(0, 0)
@@ -1191,7 +1194,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(self.applicationPosition.x(), self.applicationPosition.y(
         ), self.applicationSize.width(), self.applicationSize.height())
         settings.endGroup()
-        logging.debug("Checking for api key : " + os.environ.get("API_KEY"))
+        #logging.debug("Checking for api key : " + os.environ.get("API_KEY"))
         logging.info("Loaded Lyrical settings")
 
     def closeEvent(self, event):
