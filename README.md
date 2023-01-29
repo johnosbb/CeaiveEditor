@@ -143,6 +143,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Fitting Widgets to Layouts](https://stackoverflow.com/questions/61451279/how-does-setcolumnstretch-and-setrowstretch-works)
 
 ## Deployment
+- To generate requirements => pip install pipreqs then pipreqs /path/to/project
 - [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
 
 # Literature
