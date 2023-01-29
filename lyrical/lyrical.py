@@ -7,7 +7,7 @@ import os
 import sys
 import uuid
 
-#from pydantic import DirectoryPath
+# from pydantic import DirectoryPath
 
 
 import style
@@ -123,7 +123,7 @@ class MainWindow(QMainWindow):
         self.define_word_list_toolbar()
         self.addToolBarBreak()
         self.define_suggestions_toolbar()
-        self.define_project_explorer()
+        self.define_project_APIKey()
 
         # Initialize.
         self.update_format()
@@ -842,11 +842,11 @@ class MainWindow(QMainWindow):
     def showDescriptorsForColor(self):
         wordListManager = WordListManager()
         wordListManager.createWordsForColorDescriptorsList(self)
-    # Create a dockable Project Explorer
+    # Create a dockable Project APIKey
 
-    def define_project_explorer(self):
+    def define_project_APIKey(self):
         """
-        Defines the project explorer
+        Defines the project APIKey
         """
         """
         Set up the QTreeView so that it displays the contents
@@ -882,12 +882,12 @@ class MainWindow(QMainWindow):
         # base class. For example, you could use a single QTextEdit widget or create a QWidget object to act as a parent
         # to a number of other widgets, then use setCentralWidget() , and set your central widget for the main
         # window.
-        self.explorer_dock = QDockWidget("Project View", self)
-        self.explorer_dock.setWidget(self.tree)
-        self.explorer_dock.setFloating(False)
-        self.explorer_dock.setAllowedAreas(
+        self.APIKey_dock = QDockWidget("Project View", self)
+        self.APIKey_dock.setWidget(self.tree)
+        self.APIKey_dock.setFloating(False)
+        self.APIKey_dock.setAllowedAreas(
             Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
-        self.addDockWidget(Qt.LeftDockWidgetArea, self.explorer_dock)
+        self.addDockWidget(Qt.LeftDockWidgetArea, self.APIKey_dock)
 
     # Create a dockable Style Bar
 
@@ -1194,7 +1194,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(self.applicationPosition.x(), self.applicationPosition.y(
         ), self.applicationSize.width(), self.applicationSize.height())
         settings.endGroup()
-        #logging.debug("Checking for api key : " + os.environ.get("API_KEY"))
+        # logging.debug("Checking for api key : " + os.environ.get("API_KEY"))
         logging.info("Loaded Lyrical settings")
 
     def closeEvent(self, event):
@@ -1218,10 +1218,10 @@ class MainWindow(QMainWindow):
         indexItem = self.model.index(index.row(), 0, index.parent())
         fileName = self.model.fileName(indexItem)
         filePath = self.model.filePath(indexItem)
-
-        self.status.showMessage(
-            "Selected File: " + str(filePath) + "   " + str(fileName), 10000)
-        self.open_file(filePath)
+        if(os.path.isfile(filePath)):
+            self.status.showMessage(
+                "Selected File: " + str(filePath) + "   " + str(fileName), 10000)
+            self.open_file(filePath)
 
     def updateSuggestions(self, suggestions):
         self.update_suggestions_toolbar(suggestions)
@@ -1241,7 +1241,7 @@ class MainWindow(QMainWindow):
         # self.status.showMessage(
         #    "Block: {} | Column: {} | Mode: {}".format(line, col, editMode))
 
-    @pyqtSlot(str)
+    @ pyqtSlot(str)
     def replace_word_in_editor(self, word: str):
         self.editor.replace_selected_word(word)
 
