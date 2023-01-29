@@ -1166,6 +1166,7 @@ class MainWindow(QMainWindow):
         settings.endGroup()
         settings.beginGroup("MainWindow")
         self.projectCurrentDirectory = settings.value("project_current")
+        self.applicationPosition = settings.value("pos")
         if(self.applicationPosition == None):
             self.applicationPosition = QPoint(0, 0)
         self.applicationSize = settings.value("size")
