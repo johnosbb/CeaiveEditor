@@ -27,9 +27,10 @@ class GrammarCorrectionWindow(QDialog):
     def reportProgress(self, n):
         logging.debug("Progress Update {}".format(n))
 
-    def check(self, text):
-        self.textToCorrect = text
-        self.txtMain.setText(self.textToCorrect)
+    def check(self, selection):
+        self.selection = selection
+
+        self.txtMain.setHtml(self.selection.toHtml())
         self.createThreadedCheck()
 
     def createThreadedCheck(self):
@@ -85,7 +86,7 @@ class GrammarCorrectionWindow(QDialog):
         print("Removing active rule, rules remaining {}".format(len(rules)))
 
     def acceptCorrections(self):
-        self._correctedText = self.txtMain.toPlainText()
+        self._correctedText = self.txtMain.toHtml()
         self.accept()
 
     def SetupControls(self):

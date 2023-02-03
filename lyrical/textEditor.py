@@ -28,9 +28,6 @@ class TextEdit(QTextEdit):
             self.compliment = args[2]
             self.lastFindStart = 0
             self.grammarCheckSet = False
-            palette = self.palette()
-            self.backGroundColor = palette.color(QPalette.Base)
-            # print(self.backGroundColor.name())
             self.setObjectName("HeaderBackgroundColor")
             self.copyAvailable.connect(self.selectedTextChanged)
         else:
@@ -246,6 +243,13 @@ class TextEdit(QTextEdit):
         textCursor.beginEditBlock()
         textCursor.removeSelectedText()
         textCursor.insertText(word)
+        textCursor.endEditBlock()
+
+    def replaceSelectedText(self, text):
+        textCursor = self.textCursor()
+        textCursor.beginEditBlock()
+        textCursor.removeSelectedText()
+        textCursor.insertHtml(text)
         textCursor.endEditBlock()
 
     def insertSelectedWord(self, word: str):

@@ -58,10 +58,14 @@ def splitext(p):
 
 class MainWindow(QMainWindow):
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, appContext, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.languageTool = language_tool_python.LanguageTool('en-GB')
         self.load_settings()
+        if(self.theme == "light"):
+            appContext.setPalette(palettes.light())
+        else:
+            appContext.setPalette(palettes.grey())
         self.word_list_path = "./local_dictionary.txt"
         layout = QVBoxLayout()  # The QVBoxLayout class lines up widgets vertically
         # this is using the editor class based on QTextEdit above, this is a new member declaration
@@ -245,11 +249,8 @@ class MainWindow(QMainWindow):
         cursor.mergeCharFormat(format)
 
     def unHighlightWord(self):
-        color = self.editor.getBackgroundColor()
-        # needs to be fixed and linked to QPalette
-        # color = QColor(241, 240, 232)
         format = QTextCharFormat()
-        format.setBackground(QBrush(color))
+        format.clearBackground()
         cursor = self.editor.textCursor()
         if not cursor.hasSelection():
             cursor.select(QTextCursor.WordUnderCursor)
@@ -667,6 +668,7 @@ class MainWindow(QMainWindow):
     def checkGrammar(self):
         cursor = QTextCursor(self.editor.textCursor())
         selectedText = cursor.selectedText()  # enable for selected text
+        selection = cursor.selection()
         blockNumber = cursor.blockNumber()
         cursorStart = cursor.selectionStart()
         cursorEnd = cursor.selectionEnd()
@@ -674,12 +676,12 @@ class MainWindow(QMainWindow):
         if utilities.isNotBlank(selectedText):
             # selectedText = selectedText.lower()
             if(self.grammarCheck):
-                self.grammarCheck.check(selectedText)
+                self.grammarCheck.check(selection)
                 self.grammarCheck.show()
                 if self.grammarCheck.exec():
                     logging.debug("Grammar Check get corrected text here {}".format(
                         self.grammarCheck.correctedText))
-                    self.editor.replaceSelectedWord(
+                    self.editor.replaceSelectedText(
                         self.grammarCheck.correctedText)
 
                     # parent.editor.insertSelectedWord(wordSelector.selectedWord)
@@ -1260,10 +1262,6 @@ if __name__ == '__main__':
     logging.info("Starting Lyrical Editor")
 
     app.setStyle("fusion")
-    app.setPalette(palettes.light())
-    window = MainWindow()
-    if(window.theme == "light"):
-        app.setPalette(palettes.light())
-    else:
-        app.setPalette(palettes.grey())
+    # app.setPalette(palettes.light())
+    window = MainWindow(app)
     app.exec_()
