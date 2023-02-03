@@ -1,4 +1,8 @@
 
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+
+
 class PreferenceProperties():
     def __init__(self):
         self.language = "eng"

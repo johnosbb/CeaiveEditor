@@ -91,9 +91,11 @@ class MainWindow(QMainWindow):
         self.load_font()
         self.grammarCheck = GrammarCorrectionWindow(self.languageTool)
         # Initialize default font size for the editor.
-        font = QFont('Times', 12)
-        self.editor.setFont(font)
-
+        # font = QFont('Times', 12)
+        self.defaultFont = QFont()
+        self.defaultFont.setFamily(self.defaultFont.defaultFamily())
+        self.editor.setFont(self.defaultFont)
+        print("Default font set to {}".format(self.defaultFont.toString()))
         # We need to repeat the size to init the current format.
         self.editor.setFontPointSize(12)
         self.projectType = "Novel"
@@ -256,6 +258,9 @@ class MainWindow(QMainWindow):
             cursor.select(QTextCursor.WordUnderCursor)
         cursor.setCharFormat(format)
 
+    def setSelectedFont(self, font):
+        self.editor.setCurrentFont(font)
+
     def define_format_toolbar(self):
 
         # # Adds a format menu option to the top level menu
@@ -266,17 +271,18 @@ class MainWindow(QMainWindow):
 
         # # We need references to these actions/settings to update as selection changes, so attach to self.
         self.fonts = QFontComboBox()
-        self.fonts.currentFontChanged.connect(self.editor.setCurrentFont)
+        self.fonts.setWritingSystem(QFontDatabase.Latin)
+        self.fonts.currentFontChanged.connect(self.setSelectedFont)
         format_toolbar.addWidget(self.fonts)
 
-        self.fontsize = QComboBox()
-        self.fontsize.addItems([str(s) for s in FONT_SIZES])
+        self.fontSize = QComboBox()
+        self.fontSize.addItems([str(s) for s in FONT_SIZES])
 
         # # Connect to the signal producing the text of the current selection. Convert the string to float
         # # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.
-        self.fontsize.currentIndexChanged[str].connect(
+        self.fontSize.currentIndexChanged[str].connect(
             lambda s: self.editor.setFontPointSize(float(s)))
-        format_toolbar.addWidget(self.fontsize)
+        format_toolbar.addWidget(self.fontSize)
 
         # self.bold_action = QAction(
         #     QIcon(os.path.join('images', 'edit-bold.png')), "Bold", self)
@@ -400,7 +406,7 @@ class MainWindow(QMainWindow):
         # A list of all format-related widgets/actions, so we can disable/enable signals when updating.
         self._format_actions = [
             self.fonts,
-            self.fontsize,
+            self.fontSize,
             self.bold_action,
             self.italic_action,
             self.underline_action,
@@ -1024,16 +1030,26 @@ class MainWindow(QMainWindow):
 
     def update_format(self):
         """
-        Update the font format toolbar/actions when a new text selection is made. This is neccessary to keep
+        Update the font format toolbar/actions when a new text selection is made. This is required to keep
         toolbars/etc. in sync with the current edit state.
         :return:
         """
         # Disable signals for all format widgets, so changing values here does not trigger further formatting.
         self.block_signals(self._format_actions, True)
-
-        self.fonts.setCurrentFont(self.editor.currentFont())
+        self.supportedFontFamilies = QFontDatabase().families()
+        # for font in self.supportedFontFamilies:
+        #     print("Family {}".format(font))
+        currentFont = self.editor.currentFont()
+        if(currentFont.exactMatch()):
+            print("Found match for this font {}".format(currentFont.toString()))
+            print("Current font is {}".format(currentFont.toString()))
+            self.fonts.setCurrentFont(currentFont)
+        else:
+            print("Found no match for this font {}, using default font for this system {}".format(
+                currentFont.toString(), self.defaultFont.toString()))
+            self.fonts.setCurrentFont(self.defaultFont)
         # Nasty, but we get the font-size as a float but want it was an int
-        self.fontsize.setCurrentText(str(int(self.editor.fontPointSize())))
+        self.fontSize.setCurrentText(str(int(self.editor.fontPointSize())))
         current_format = self.editor.currentCharFormat()
         self.italic_action.setChecked(self.editor.fontItalic())
         self.underline_action.setChecked(self.editor.fontUnderline())
