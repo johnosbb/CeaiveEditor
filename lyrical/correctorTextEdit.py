@@ -31,12 +31,13 @@ class CorrectorTextEdit(QTextEdit):
             newPosition = cursor.position()
             blockPosition = textCursor.positionInBlock()
             blockNumber = textCursor.blockNumber()
-            print("Cursor position {} {}".format(position, blockPosition))
+            # print("Cursor position {} {}".format(position, blockPosition))
             rule = self.findAssociatedRule(blockNumber, blockPosition)
             if rule:
                 self.addHelperContexts(rule, blockNumber)
             else:
-                print("No rules found for this word")
+                logging.debug(
+                    "CorrectTextEdit - MousePressEvent: No rules found for this text")
             self.contextMenu.exec_(event.globalPos())
 
     def createContextMenu(self):
@@ -93,7 +94,7 @@ class CorrectorTextEdit(QTextEdit):
 
     def findAssociatedRule(self, blockNumber, currentPosition):
         # we only want to check single isolated words.
-        print("Finding rules for position {}\n".format(
+        logging.debug("Finding rules for position {}\n".format(
             currentPosition))
         block = self.document().findBlockByNumber(blockNumber)
         if(block.userData().value):
@@ -102,9 +103,9 @@ class CorrectorTextEdit(QTextEdit):
                 ruleStart = (rule.offset)
                 ruleEnd = (rule.errorLength+rule.offset)
                 if((currentPosition >= ruleStart) and (currentPosition <= ruleEnd)):
-                    print(" Position: {} - RS {} - RE {} ".format(
+                    logging.debug(" Position: {} - RS {} - RE {} ".format(
                         currentPosition, ruleStart,  ruleEnd))
                     self.rule = rule
                     return rule
-        print("Could not find a rule for {}".format(currentPosition))
+        logging.debug("Could not find a rule for {}".format(currentPosition))
         return None

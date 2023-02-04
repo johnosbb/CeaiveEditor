@@ -2,6 +2,7 @@ from typing import Callable
 import language_tool_python
 from PyQt5.QtCore import pyqtSignal, QObject, pyqtSlot
 from PyQt5.QtGui import QTextDocument, QTextBlockUserData
+import logging
 
 
 # background worker
@@ -45,24 +46,24 @@ class GrammarCheck(QObject):
     @pyqtSlot(QTextDocument)
     def checkDocument(self, document):
         for blockIndex in range(document.blockCount()):
-            print("Finding rules for block {}".format(blockIndex))
+            logging.debug("Finding rules for block {}".format(blockIndex))
             block = document.findBlockByNumber(blockIndex)
-            print("Block Text: {}".format(block.text()))
+            logging.debug("Block Text: {}".format(block.text()))
             self.checkSection(block, blockIndex)
         self.result.emit()
 
     def checkSection(self, block, blockIndex):
-        print("Checking Section: {}".format(block.text()))
+        logging.debug("grammarCheck: Checking Section: {}".format(block.text()))
         self.content = block.text()
         if(self.content != ""):
             self.__matches = self.__tool.check(self.content)
-            print("checking Section: found {} rules for block {} ".format(
+            logging.debug("grammarCheck: checking Section: found {} rules for block {} ".format(
                 self.__matches, blockIndex))
             userData = QTextBlockUserData()
             userData.value = self.__matches
             block.setUserData(userData)
         else:
-            print("checkSection: Nothing to check")
+            logging.debug("grammarCheck: checkSection: Nothing to check")
 
         # we will now have a set of matches and each of these relates to a section of text in the given text block.
         # We can return these as a collection of corrections

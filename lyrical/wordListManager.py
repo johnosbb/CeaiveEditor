@@ -185,8 +185,8 @@ class WordListManager:
                 sourceRow, column, QModelIndex())
             rawData = model.data(index)
             data = data + str(column) + " : " + rawData
-        print(" Row:" + str(sourceRow) + ", Column Count: " +
-              str(columnCount) + "  " + data)
+        logging.debug("wordListManager: Row:" + str(sourceRow) + ", Column Count: " +
+                      str(columnCount) + "  " + data)
 
     def createBeautifulWordsList(self, parent):
         classifications = ["All", "Measurement", "Sexuality", "Feelings and Emotions", "Inspiration", "Fears", "Colours Tones Shades", "Sounds", "Texture", "Atmosphere", "Interiors", "Furnishings", "Exteriors", "Light, Darkness", "Botany", "Olfactory", "Temperament", "Transformation", "Personalities",

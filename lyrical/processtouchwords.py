@@ -4,7 +4,8 @@ from touchDescriptors.touchWord import TouchWord
 from touchDescriptors.touchWordsCollection import TouchWordsCollection
 
 import thesaurusWordnet
-from nltk.corpus import wordnet
+# from nltk.corpus import wordnet
+import logging
 
 
 def find_tags(target):
@@ -75,12 +76,13 @@ with open("literary_resources/words_for_touch.txt", "r") as filestream:
             collection.add(newWord)
             count = count + 1
         else:
-            print(
-                "Error: Not enough or too many fields: [" + str(sections) + "] to create a touch record for entry: " + str(count) + " " + line)
-            print(currentline)
+            logging.debug("processtouchwords: Error: Not enough or too many fields: [" + str(
+                sections) + "] to create a touch record for entry: " + str(count) + " " + line)
+            logging.debug("processtouchwords: {}".format(currentline))
             break
 
         if __name__ == '__main__':
             collection.save()
             collection.dump()
-            print("Processed " + str(count) + " words")
+            logging.debug("processtouchwords: Processed " +
+                          str(count) + " words")

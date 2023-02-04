@@ -3,7 +3,8 @@ from smells.smell import Smell
 
 from smells.smellsCollections import SmellsCollection
 
-from nltk.corpus import wordnet
+# from nltk.corpus import wordnet
+import logging
 
 collection = SmellsCollection()
 count = 0
@@ -27,12 +28,12 @@ with open("literary_resources/words_to_describe_smell.txt", "r") as filestream:
             collection.add(newSmell)
             count = count + 1
         else:
-            print(
-                "Error: Not enough or too many fields: " + str(sections) + " to create a word entry for entry " + str(count))
-            print(currentline)
+            logging.debug("processsmells: Error: Not enough or too many fields: " +
+                          str(sections) + " to create a word entry for entry " + str(count))
+            logging.debug("processsmells: {}".format(currentline))
             break
 
         if __name__ == '__main__':
             collection.save()
             collection.dump()
-            print("Processed " + str(count) + " words")
+            logging.debug("processsmells: Processed " + str(count) + " words")

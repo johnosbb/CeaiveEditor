@@ -86,8 +86,8 @@ functional_words = """a between in nor some upon
     may might can could  will would shall should
     """
 
-functionalWords = functional_words.split()    
-    
+functionalWords = functional_words.split()
+
 
 def syllable_count_Manual(word):
     word = word.lower()
@@ -141,9 +141,6 @@ def calculate_functional_word_count(text):
     return totalFunctionalWords/len(chunks)
 
 
-    
-
-
 def findEchoes(selectedText):
     words = selectedText.split()
     word_counts = collections.Counter(words)
@@ -152,12 +149,15 @@ def findEchoes(selectedText):
         if(count > 1 and not isFunctionalWord(word)):
             key = "{}".format(word)
             if(key not in filteredList):
-                print('"%s" is  repeated %d time%s.' % (word, count, "s" if count > 1 else "")) 
-                filteredList[key] = count            
+                logging.debug('"%s" is  repeated %d time%s.' %
+                              (word, count, "s" if count > 1 else ""))
+                filteredList[key] = count
     return filteredList
 
 # GIVES NUMBER OF SYLLABLES PER WORD
 # Return an integer sum of the average syllable count for the text
+
+
 def avg_syllable_per_Word(text):
 
     tokens = word_tokenize(text, language='english')
@@ -215,7 +215,7 @@ def create_sliding_window(sequence, winSize, step=1):
     # Do the work
     for i in range(0, numOfChunks * step, step):
         l.append(" ".join(sequence[i:i + winSize]))
-    logging.debug("Created Sliding Window - sequence length: %d, number of chunks: %d, window size: %d, step size: %d",
+    logging.debug("style: Created Sliding Window - sequence length: %d, number of chunks: %d, window size: %d, step size: %d",
                   sequence_length, numOfChunks, winSize, step)
     return l
 
@@ -234,6 +234,7 @@ def count_functional_words(text):
             count += 1
 
     return count / len(words)
+
 
 def isFunctionalWord(wordToCheck):
     if wordToCheck in functionalWords:

@@ -95,7 +95,8 @@ class MainWindow(QMainWindow):
         self.defaultFont = QFont()
         self.defaultFont.setFamily(self.defaultFont.defaultFamily())
         self.editor.setFont(self.defaultFont)
-        print("Default font set to {}".format(self.defaultFont.toString()))
+        logging.debug("lyrical: Default font set to {}".format(
+            self.defaultFont.toString()))
         # We need to repeat the size to init the current format.
         self.editor.setFontPointSize(12)
         self.projectType = "Novel"
@@ -211,7 +212,7 @@ class MainWindow(QMainWindow):
             self.theme = self.preferencesDialog.properties.theme
             self.websterAPIkey = self.preferencesDialog.properties.websterAPIKey
         else:
-            logging.debug("Canceled Showing Preferences!")
+            logging.debug("lyrical :Canceled Showing Preferences!")
 
     def mouseMoveEvent(self, event):
         delta = QPoint(event.globalPos() - self.oldPos)
@@ -646,7 +647,8 @@ class MainWindow(QMainWindow):
             count = style.calculate_average_syllables_per_word(text)
             self.status.showMessage(
                 "Average Syllable Length: " + str(count), 10000)
-            logging.debug("Average Syllable Length: {0}".format(count))
+            logging.debug(
+                "lyrical :Average Syllable Length: {0}".format(count))
 
     def findEchoes(self):
         cursor = QTextCursor(self.editor.textCursor())
@@ -685,22 +687,23 @@ class MainWindow(QMainWindow):
                 self.grammarCheck.check(selection)
                 self.grammarCheck.show()
                 if self.grammarCheck.exec():
-                    logging.debug("Grammar Check get corrected text here {}".format(
+                    logging.debug("lyrical :Grammar Check get corrected text here {}".format(
                         self.grammarCheck.correctedText))
                     self.editor.replaceSelectedText(
                         self.grammarCheck.correctedText)
 
                     # parent.editor.insertSelectedWord(wordSelector.selectedWord)
                 else:
-                    logging.debug("Canceled! Grammar check")
+                    logging.debug("lyrical :Canceled! Grammar check")
 
     def generate_test_text(self):
         self.editor.setText(TEST_TEXT)
-        print("Position is {} {}".format(self.pos().x(), self.pos().y()))
+        logging.debug("lyrical: Position is {} {}".format(
+            self.pos().x(), self.pos().y()))
 
     def create_novel_structure(self, novelProperties):
         # create an outline for our novel
-        logging.debug("Success! for  novelProperties Prologue: {} Foreword {}".format(
+        logging.debug("lyrical :Success! for  novelProperties Prologue: {} Foreword {}".format(
             novelProperties.prologue, novelProperties.foreword))
         # We now need to get the name of the project and novelProperties
         directory = QFileDialog.getSaveFileName(
@@ -784,17 +787,17 @@ class MainWindow(QMainWindow):
         if self.projectTypeDialog.exec():
             self.projectType = self.projectTypeDialog.project
             # self.projectHomeDirectory = self.projectTypeDialog.projectHomeDirectoryEdit.text()
-            logging.debug("Success! " + self.projectType)
+            logging.debug("lyrical :Success! " + self.projectType)
             self.novelPropertiesDialog = novelPropertiesDialog.NovelPropertiesDialog(
                 self)
             if self.novelPropertiesDialog.exec():
                 self.create_novel_structure(
                     self.novelPropertiesDialog.properties)
             else:
-                logging.debug("Canceled! for novel properties {}".format(
+                logging.debug("lyrical :Canceled! for novel properties {}".format(
                     self.novelPropertiesDialog.properties))
         else:
-            logging.debug("Canceled Novel Properties dialog " +
+            logging.debug("lyrical :Canceled Novel Properties dialog " +
                           self.projectType)
 
         # Used when we create a new project or open an existing one
@@ -1038,14 +1041,16 @@ class MainWindow(QMainWindow):
         self.block_signals(self._format_actions, True)
         self.supportedFontFamilies = QFontDatabase().families()
         # for font in self.supportedFontFamilies:
-        #     print("Family {}".format(font))
+        #     logging.debug("lyrical: Family {}".format(font))
         currentFont = self.editor.currentFont()
         if(currentFont.exactMatch()):
-            print("Found match for this font {}".format(currentFont.toString()))
-            print("Current font is {}".format(currentFont.toString()))
+            logging.debug("lyrical :Found match for this font {}".format(
+                currentFont.toString()))
+            logging.debug("lyrical :Current font is {}".format(
+                currentFont.toString()))
             self.fonts.setCurrentFont(currentFont)
         else:
-            print("Found no match for this font {}, using default font for this system {}".format(
+            logging.debug("lyrical : Found no match for this font {}, using default font for this system {}".format(
                 currentFont.toString(), self.defaultFont.toString()))
             self.fonts.setCurrentFont(self.defaultFont)
         # Nasty, but we get the font-size as a float but want it was an int
@@ -1073,16 +1078,18 @@ class MainWindow(QMainWindow):
         dlg.show()
 
     def lookupWord(self):
-        print("lookupWord was called")
+        logging.debug("lyrical: lookupWord was called")
         suggestions = self.thesaurus.suggestions(self.thesaurusLookup.text())
         self.updateSuggestions(suggestions)
 
     def findWord(self):
-        print("findWord was called: {}".format(self.findLineEdit.text()))
+        logging.debug("lyrical: findWord was called: {}".format(
+            self.findLineEdit.text()))
         self.editor.find(self.findLineEdit.text(), "Normal")
 
     def replaceWord(self):
-        print("replaceWord was called: {}".format(self.replaceLineEdit.text()))
+        logging.debug("lyrical: replaceWord was called: {}".format(
+            self.replaceLineEdit.text()))
 
     def open_file(self, path):
         try:
@@ -1163,10 +1170,12 @@ class MainWindow(QMainWindow):
         settings.setValue("webster_api_key", self.websterAPIkey)
         settings.setValue("size", self.size())
         settings.setValue("pos", self.pos())
-        print("Position is {} {}".format(self.pos().x(), self.pos().y()))
+        logging.debug("lyrical: Position is {} {}".format(
+            self.pos().x(), self.pos().y()))
         settings.setValue("file_format", self.fileFormat)
         settings.setValue("theme", self.theme)
-        print("Saving the {} theme from settings ".format(self.theme))
+        logging.debug(
+            "lyrical: Saving the {} theme from settings ".format(self.theme))
         settings.setValue("language", self.language)
         settings.endGroup()
         settings.beginGroup("Preferences")
@@ -1175,7 +1184,7 @@ class MainWindow(QMainWindow):
 
         settings.endGroup()
         settings.sync()
-        logging.info("Saved Lyrical settings")
+        logging.info("lyrical: Saved Lyrical settings")
 
     def load_settings(self):
         settings = QSettings()
@@ -1202,7 +1211,8 @@ class MainWindow(QMainWindow):
         self.theme = settings.value("theme")
         if(self.theme == None):
             self.theme = "light"
-        print("Loading the {} theme from settings ".format(self.theme))
+        logging.debug(
+            "lyrical: Loading the {} theme from settings ".format(self.theme))
         self.language = settings.value("language")
         if(self.applicationPosition.x() < 0):
             self.applicationPosition.setX(0)
@@ -1212,8 +1222,8 @@ class MainWindow(QMainWindow):
         self.setGeometry(self.applicationPosition.x(), self.applicationPosition.y(
         ), self.applicationSize.width(), self.applicationSize.height())
         settings.endGroup()
-        # logging.debug("Checking for api key : " + os.environ.get("API_KEY"))
-        logging.info("Loaded Lyrical settings")
+        # logging.debug("lyrical :Checking for api key : " + os.environ.get("API_KEY"))
+        logging.info("lyrical: Loaded Lyrical settings")
 
     def closeEvent(self, event):
         self.save_settings()
@@ -1275,7 +1285,7 @@ if __name__ == '__main__':
     QCoreApplication.setApplicationName(APPLICATION_NAME)
     logging.basicConfig(level=logging.DEBUG, filename="lyrical.log", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s", force=True)
-    logging.info("Starting Lyrical Editor")
+    logging.info("lyrical: Starting Lyrical Editor")
 
     app.setStyle("fusion")
     # app.setPalette(palettes.light())

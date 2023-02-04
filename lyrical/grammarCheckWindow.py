@@ -47,7 +47,7 @@ class GrammarCorrectionWindow(QDialog):
 
     @pyqtSlot()
     def checkFinished(self):
-        print("Check finished")
+        logging.debug("grammarCheckWindow: Check finished")
         self.txtMain.grammarHighlighter.rehighlight()
         self.status.showMessage("{}".format(
             "Grammar Review Complete"), 2000)
@@ -68,7 +68,7 @@ class GrammarCorrectionWindow(QDialog):
         # self.show()
 
     def wordReplaced(self, rule, block, offsetAdjustment):
-        print("A word was replaced rule offset: {} offset adjustment {} ".format(
+        logging.debug("grammarCheckWindow: A word was replaced rule offset: {} offset adjustment {} ".format(
             rule.offset, offsetAdjustment))
         self.textToCorrect = self.txtMain.toPlainText()
         if(block.userData().value):
@@ -79,11 +79,12 @@ class GrammarCorrectionWindow(QDialog):
     def updateRuleOffsets(self, activeRule, rules, offsetAdjustment):
         for rule in rules:
             if(rule.offset > activeRule.offset):
-                print("Adjusting rule offset at {}, new offset is {}".format(
+                logging.debug("grammarCheckWindow: Adjusting rule offset at {}, new offset is {}".format(
                     rule.offset, rule.offset + offsetAdjustment))
                 rule.offset = rule.offset + offsetAdjustment
         rules.remove(activeRule)
-        print("Removing active rule, rules remaining {}".format(len(rules)))
+        logging.debug(
+            "grammarCheckWindow: Removing active rule, rules remaining {}".format(len(rules)))
 
     def acceptCorrections(self):
         self._correctedText = self.txtMain.toHtml()

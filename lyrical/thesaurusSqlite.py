@@ -10,6 +10,7 @@ from PyQt5.QtWidgets import (QApplication, QWidget, QTableView, QVBoxLayout,
                              QMessageBox, QHeaderView)
 import logging
 
+
 class ThesaurusTheo:
 
     def __init__(
@@ -29,7 +30,7 @@ class ThesaurusTheo:
                 self.synonyms.append(l.name())
                 # if l.antonyms():
                 #     self.antonyms.append(l.antonyms()[0].name())
-        print(set(self.synonyms))
+        logging.debug("thesaurusSqlite {}".format(set(self.synonyms)))
         # print(set(self.antonyms))
         return self.synonyms
 

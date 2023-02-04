@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtPrintSupport import *
 import preferenceProperties
+import logging
 
 
 class PreferencesDialog(QDialog):
@@ -23,7 +24,7 @@ class PreferencesDialog(QDialog):
         self.properties.fileFormat = format
 
     def setSelectedTheme(self, theme):
-        print("Setting selected {} theme from settings: current theme {}".format(
+        logging.debug("preferencesDialog: Setting selected {} theme from settings: current theme {}".format(
             theme, self.parent.theme))
         if(theme != self.parent.theme):
             self.properties.theme = theme

@@ -69,7 +69,7 @@ class TextEdit(QTextEdit):
             selectedText = textCursor.selectedText()
             if " " not in selectedText:  # we check for spaces in the phrase and if we find none then we assume they have selected an isolated word
                 if (selectedText != "") and (selectedText is not None):
-                    logging.debug("We selected {}".format(selectedText))
+                    # logging.debug("We selected {}".format(selectedText))
                     suggestions = self.thesaurus.suggestions(selectedText)
                     self.showSuggestionSignal.emit(suggestions)
                 else:

@@ -1,6 +1,7 @@
 from PyQt5.QtCore import Qt, QSortFilterProxyModel
-from pprint import pprint
+# from pprint import pprint
 import re
+import logging
 
 WORD_COLUMN = 0
 MEANING_COLUMN = 1
@@ -51,7 +52,7 @@ class SortFilterProxyModel(QSortFilterProxyModel):
                     row, column, sourceParent)
                 rawData = self.sourceModel().data(index)
                 data = data + str(column) + " : " + rawData
-            print(str(row) + " : " + data)
+            logging.debug("sortFilterProxyModel:" + str(row) + " : " + data)
 
     def dumpRow(self, sourceParent, sourceRow):
         data = ""
@@ -61,5 +62,5 @@ class SortFilterProxyModel(QSortFilterProxyModel):
                 sourceRow, column, sourceParent)
             rawData = self.sourceModel().data(index)
             data = data + str(column) + " : " + rawData
-        print(" Row:" + str(sourceRow) + ", Column Count: " +
-              str(columnCount) + "  " + data)
+        logging.debug("sortFilterProxyModel:  Row:" + str(sourceRow) + ", Column Count: " +
+                      str(columnCount) + "  " + data)
