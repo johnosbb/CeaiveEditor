@@ -130,7 +130,7 @@ class MainWindow(QMainWindow):
         self.define_word_list_toolbar()
         self.addToolBarBreak()
         self.define_suggestions_toolbar()
-        self.define_project_APIKey()
+        self.defineFileExplorerTreeView()
 
         # Initialize.
         self.update_format()
@@ -259,7 +259,10 @@ class MainWindow(QMainWindow):
             cursor.select(QTextCursor.WordUnderCursor)
         cursor.setCharFormat(format)
 
+    # sets the currently selected Font to the editor
     def setSelectedFont(self, font):
+        logging.debug(
+            "setSelectedFont: font has changed: setting the editor font to {}".format(font.toString()))
         self.editor.setCurrentFont(font)
 
     def define_format_toolbar(self):
@@ -811,7 +814,8 @@ class MainWindow(QMainWindow):
         directory = file_dialog.getExistingDirectory(self, "Open Directory",
                                                      self.projectHomeDirectory, QFileDialog.ShowDirsOnly)
 
-        self.tree.setRootIndex(self.model.index(directory))
+        self.fileTreeView.setRootIndex(
+            self.projectExplorerModel.index(directory))
         # update the current project preferences setting
         self.projectCurrentDirectory = directory
         self.status.showMessage(
@@ -855,16 +859,165 @@ class MainWindow(QMainWindow):
         wordListManager.createWordsForColorDescriptorsList(self)
     # Create a dockable Project APIKey
 
-    def define_project_APIKey(self):
+    def openMenu(self, position):
+        level = 0
+        # This convenience function returns a list of all selected and non-hidden item indexes in the view. The list contains no duplicates, and is not sorted
+        indexes = self.fileTreeView.selectedIndexes()
+        if len(indexes) > 0:
+            level = 0
+            index = indexes[0]
+            fileName = self.projectExplorerModel.fileName(index)
+            filePath = self.projectExplorerModel.filePath(index)
+            info = self.projectExplorerModel.fileInfo(index)
+            isFile = info.isFile()
+            if(isFile):
+                print("this is a file")
+            else:
+                print("This is a directory")
+            print("Indexes {} level {} row {} column {} filename {} filepath  {} info {}".format(len(indexes),
+                                                                                                 level, index.row(), index.column(), fileName, filePath, info))
+            menu = QMenu()
+            if not isFile:
+                addDocumentAction = SpecialAction(
+                    "Add New Document", menu
+                )
+                addDocumentAction.triggered.connect(
+                    lambda: self.addDocument(index))
+                menu.addAction(addDocumentAction)
+                renameProjectAction = SpecialAction(
+                    "Rename Project Document", menu
+                )
+                renameProjectAction.triggered.connect(
+                    lambda: self.renameProject(index))
+                menu.addAction(renameProjectAction)
+            else:
+                deleteAction = SpecialAction(
+                    "Delete Document", menu
+                )
+                deleteAction.triggered.connect(
+                    lambda: self.deleteDocument(index))
+                menu.addAction(deleteAction)
+                duplicateAction = SpecialAction(
+                    "Duplicate Document", menu
+                )
+                duplicateAction.triggered.connect(self.duplicateDocument)
+                menu.addAction(duplicateAction)
+                renameAction = SpecialAction(
+                    "Rename Document", menu
+                )
+                renameAction.triggered.connect(
+                    lambda: self.renameDocument(index))
+                menu.addAction(renameAction)
+            menu.exec_(self.fileTreeView.viewport().mapToGlobal(position))
+
+        # Returns true if this model index is valid; otherwise returns false. A valid index belongs to a model, and has non-negative row and column numbers.
+        # while index.parent().isValid():
+        #     index = index.parent()
+        #     fileName = self.projectExplorerModel.fileName(index)
+        #     filePath = self.projectExplorerModel.filePath(index)
+        #     print("-- level {} row {} column {} filename {} filepath  {}".format(
+        #         level, index.row(), index.column(), fileName, filePath))
+        #     level += 1
+
+    def renameProject(self, index):
+        if(index):
+            print("Renaming the project")
+            if not index.isValid():
+                return
+            model = index.model()
+            old_name = model.fileName(index)
+            wasReadOnly = model.isReadOnly()
+            model.setReadOnly(False)
+            name, ok = QInputDialog.getText(
+                self, "New Name", "Enter a project name", QLineEdit.Normal, old_name)
+            if ok and name and name != old_name:
+                model.setData(index, name)
+            model.setReadOnly(wasReadOnly)
+        else:
+            return
+
+    def renameDocument(self, index):
+        if(index):
+            print("Renaming the document")
+            if not index.isValid():
+                return
+            model = index.model()
+            old_name = model.fileName(index)
+            wasReadOnly = model.isReadOnly()
+            model.setReadOnly(False)
+            name, ok = QInputDialog.getText(
+                self, "New Name", "Enter a file name", QLineEdit.Normal, old_name)
+            if ok and name and name != old_name:
+                model.setData(index, name)
+            model.setReadOnly(wasReadOnly)
+        else:
+            return
+
+    def deleteDocument(self, index):
+        if(index):
+            print("Deleting the document")
+            if not index.isValid():
+                return
+            model = index.model()
+            old_name = model.fileName(index)
+            wasReadOnly = model.isReadOnly()
+            model.setReadOnly(False)
+            ok = self.showDeleteConfirmationDialog()
+            if ok:
+                model.remove(index)
+            model.setReadOnly(wasReadOnly)
+        else:
+            return
+
+    def duplicateDocument(self):
+        print("Duplicating the document")
+
+    def addDocument(self, index):
+        print("Adding a document")
+        try:
+            projectPath = self.projectExplorerModel.filePath(index)
+            name, ok = QInputDialog.getText(
+                self, "Document Name", "Enter a name for the document", QLineEdit.Normal, "new_document")
+            if ok and name and name != "new_document":
+                nameParts = name.split('.')
+                path = os.sep.join(
+                    [projectPath, nameParts[0] + "." + self.fileFormat])
+                fp = open(path, 'x')
+                fp.close()
+            else:
+                self.status.showMessage(
+                    "We did not create a new document. Please enter a valid name", 10000)
+        except OSError as error:
+            self.status.showMessage(
+                "Failed to create new Document: " + str(error), 10000)
+
+    def msgButtonClick(self, i):
+        print("Button clicked is:", i.text())
+
+    def showDeleteConfirmationDialog(self):
+        msgBox = QMessageBox()
+        msgBox.setIcon(QMessageBox.Information)
+        msgBox.setText("Are you sure you want to delete this document?")
+        msgBox.setWindowTitle("Delete Project Document")
+        msgBox.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
+        msgBox.buttonClicked.connect(self.msgButtonClick)
+        returnValue = msgBox.exec()
+        if returnValue == QMessageBox.Ok:
+            return True
+        else:
+            return False
+
+    def defineFileExplorerTreeView(self):
         """
-        Defines the project APIKey
+        Defines the file explorer tree view
         """
         """
         Set up the QTreeView so that it displays the contents
         of the Project.
         """
-        self.model = CustomFileSystemModel("Project Contents")
-        self.model.setHeaderData(0, Qt.Horizontal, 'Project Contents')
+        self.projectExplorerModel = CustomFileSystemModel("Project Contents")
+        self.projectExplorerModel.setHeaderData(
+            0, Qt.Horizontal, 'Project Contents')
         # setRootPath
         # Sets the directory that is being watched by the model to newPath by installing a file system watcher on it.
         # Any changes to files and directories within this directory will be reflected in the model.
@@ -872,33 +1025,37 @@ class MainWindow(QMainWindow):
         # Note: This function does not change the structure of the model or modify the data available to views.
         # In other words, the "root" of the model is not changed to include only files and directories within the directory
         # specified by newPath in the file system.
-        self.model.setRootPath(self.projectHomeDirectory)
+        self.projectExplorerModel.setRootPath(self.projectHomeDirectory)
 
-        self.tree = QTreeView()
-        self.tree.setIndentation(10)
-        self.tree.setModel(self.model)
-        self.tree.setRootIndex(self.model.index(self.projectHomeDirectory))
-        self.tree.header().hideSection(1)
-        self.tree.header().hideSection(2)
-        self.tree.header().hideSection(3)
-        self.model.setHeaderData(0, Qt.Horizontal, 'Project Contents')
-        self.tree.clicked.connect(self.on_treeView_clicked)
+        self.fileTreeView = QTreeView()
+        self.fileTreeView.setIndentation(10)
+        self.fileTreeView.setModel(self.projectExplorerModel)
+        self.fileTreeView.setRootIndex(
+            self.projectExplorerModel.index(self.projectHomeDirectory))
+        self.fileTreeView.header().hideSection(1)
+        self.fileTreeView.header().hideSection(2)
+        self.fileTreeView.header().hideSection(3)
+        self.projectExplorerModel.setHeaderData(
+            0, Qt.Horizontal, 'Project Contents')
+        self.fileTreeView.clicked.connect(self.onFileExplorerTreeViewClicked)
+        self.fileTreeView.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.fileTreeView.customContextMenuRequested.connect(self.openMenu)
         # Set up container and layout
         frame = QFrame()  # The QFrame class is used as a container to group and surround widgets, or to act as placeholders in GUI
         # applications. You can also apply a frame style to a QFrame container to visually separate it from nearbywidgets.
         frameLayout = QVBoxLayout()
-        frameLayout.addWidget(self.tree)
+        frameLayout.addWidget(self.fileTreeView)
         frame.setLayout(frameLayout)
         # self.setCentralWidget(frame) # The central widget in the center of the window must be set if you are going to use QMainWindow as your
         # base class. For example, you could use a single QTextEdit widget or create a QWidget object to act as a parent
         # to a number of other widgets, then use setCentralWidget() , and set your central widget for the main
         # window.
-        self.APIKey_dock = QDockWidget("Project View", self)
-        self.APIKey_dock.setWidget(self.tree)
-        self.APIKey_dock.setFloating(False)
-        self.APIKey_dock.setAllowedAreas(
+        self.projectExplorerDock = QDockWidget("Project View", self)
+        self.projectExplorerDock.setWidget(self.fileTreeView)
+        self.projectExplorerDock.setFloating(False)
+        self.projectExplorerDock.setAllowedAreas(
             Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
-        self.addDockWidget(Qt.LeftDockWidgetArea, self.APIKey_dock)
+        self.addDockWidget(Qt.LeftDockWidgetArea, self.projectExplorerDock)
 
     # Create a dockable Style Bar
 
@@ -1029,30 +1186,40 @@ class MainWindow(QMainWindow):
         self.word_list_dock.setFloating(False)
         self.addDockWidget(Qt.TopDockWidgetArea, self.word_list_dock)
 
-    # When the user selects some text we want the font toolbar to reflect the format of their selection
+    def showFontFamilies(self):
+        self.supportedFontFamilies = QFontDatabase().families()
+        for font in self.supportedFontFamilies:
+            logging.debug("Font: {}".format(font))
+
+    # When the user selects some text we want the Font toolbar to reflect the format of their selection
 
     def update_format(self):
         """
-        Update the font format toolbar/actions when a new text selection is made. This is required to keep
+        Update the Font format toolbar/actions when a new text selection is made. This is required to keep
         toolbars/etc. in sync with the current edit state.
         :return:
         """
         # Disable signals for all format widgets, so changing values here does not trigger further formatting.
         self.block_signals(self._format_actions, True)
-        self.supportedFontFamilies = QFontDatabase().families()
+
+        # self.showFontFamilies()
         # for font in self.supportedFontFamilies:
         #     logging.debug("lyrical: Family {}".format(font))
         currentFont = self.editor.currentFont()
-        if(currentFont.exactMatch()):
-            logging.debug("lyrical :Found match for this font {}".format(
-                currentFont.toString()))
-            logging.debug("lyrical :Current font is {}".format(
-                currentFont.toString()))
-            self.fonts.setCurrentFont(currentFont)
-        else:
-            logging.debug("lyrical : Found no match for this font {}, using default font for this system {}".format(
-                currentFont.toString(), self.defaultFont.toString()))
-            self.fonts.setCurrentFont(self.defaultFont)
+        currentFontName = currentFont.toString().split(",")
+        logging.debug("lyrical : Update Format: Current font is {}".format(
+            currentFont.toString()))
+        self.defaultFont.setFamily(currentFontName[0])
+        self.fonts.setCurrentFont(currentFont)
+        # exactMatch is failing to match most fonts even though they exist on the system
+        # if(currentFont.exactMatch()):
+        #     logging.debug("lyrical : Update Format: Found match for this font {}".format(
+        #         currentFont.toString()))
+        #     self.fonts.setCurrentFont(currentFont)
+        # else:
+        #     logging.debug("lyrical : Update Format: Found no match for this font {}, using default font for this system {}".format(
+        #         currentFont.toString(), self.defaultFont.toString()))
+        #     self.fonts.setCurrentFont(self.defaultFont)
         # Nasty, but we get the font-size as a float but want it was an int
         self.fontSize.setCurrentText(str(int(self.editor.fontPointSize())))
         current_format = self.editor.currentCharFormat()
@@ -1242,10 +1409,11 @@ class MainWindow(QMainWindow):
             self.preferencesDialog.projectHomeDirectoryEdit.setText(
                 self.directory)
 
-    def on_treeView_clicked(self, index):
-        indexItem = self.model.index(index.row(), 0, index.parent())
-        fileName = self.model.fileName(indexItem)
-        filePath = self.model.filePath(indexItem)
+    def onFileExplorerTreeViewClicked(self, index):
+        indexItem = self.projectExplorerModel.index(
+            index.row(), 0, index.parent())
+        fileName = self.projectExplorerModel.fileName(indexItem)
+        filePath = self.projectExplorerModel.filePath(indexItem)
         if(os.path.isfile(filePath)):
             self.status.showMessage(
                 "Selected File: " + str(filePath) + "   " + str(fileName), 10000)
