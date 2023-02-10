@@ -88,15 +88,16 @@ class MainWindow(QMainWindow):
         self.editor.selectionChanged.connect(self.update_format)
         self.editor.cursorPositionChanged.connect(self.cursorPosition)
         self.editor.installEventFilter(self)
-        self.load_font()
+        # self.load_font()
         self.grammarCheck = GrammarCorrectionWindow(self.languageTool)
+        # For some reason setting a default font seems very problematic, it causes the documents to have a mix of fonts in one paragraph
         # Initialize default font size for the editor.
         # font = QFont('Times', 12)
-        self.defaultFont = QFont()
-        self.defaultFont.setFamily(self.defaultFont.defaultFamily())
-        self.editor.setFont(self.defaultFont)
-        logging.debug("lyrical: Default font set to {}".format(
-            self.defaultFont.toString()))
+        # self.defaultFont = QFont()
+        # self.defaultFont.setFamily(self.defaultFont.defaultFamily())
+        # self.editor.setFont(self.defaultFont)
+        # logging.debug("lyrical: Default font set to {}".format(
+        #     self.defaultFont.toString()))
         # We need to repeat the size to init the current format.
         self.editor.setFontPointSize(12)
         self.projectType = "Novel"
@@ -1206,11 +1207,11 @@ class MainWindow(QMainWindow):
         # for font in self.supportedFontFamilies:
         #     logging.debug("lyrical: Family {}".format(font))
         currentFont = self.editor.currentFont()
-        currentFontName = currentFont.toString().split(",")
-        logging.debug("lyrical : Update Format: Current font is {}".format(
-            currentFont.toString()))
-        self.defaultFont.setFamily(currentFontName[0])
-        self.fonts.setCurrentFont(currentFont)
+        # currentFontName = currentFont.toString().split(",")
+        # logging.debug("lyrical : Update Format: Current font is {}".format(
+        #     currentFont.toString()))
+        # self.defaultFont.setFamily(currentFontName[0])
+        # self.fonts.setCurrentFont(currentFont)
         # exactMatch is failing to match most fonts even though they exist on the system
         # if(currentFont.exactMatch()):
         #     logging.debug("lyrical : Update Format: Found match for this font {}".format(
@@ -1221,6 +1222,7 @@ class MainWindow(QMainWindow):
         #         currentFont.toString(), self.defaultFont.toString()))
         #     self.fonts.setCurrentFont(self.defaultFont)
         # Nasty, but we get the font-size as a float but want it was an int
+        self.fonts.setCurrentFont(currentFont)
         self.fontSize.setCurrentText(str(int(self.editor.fontPointSize())))
         current_format = self.editor.currentCharFormat()
         self.italic_action.setChecked(self.editor.fontItalic())
