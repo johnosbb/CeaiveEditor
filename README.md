@@ -144,6 +144,8 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 
 ## PyQT
 - [PyQT Resources](https://build-system.fman.io/pyqt6-book)
+- [fbs Build System](https://build-system.fman.io/docs/)
+- [PyQT Tutorials](https://build-system.fman.io/docs/)
 
 ## Deployment
 - To generate requirements => pip install pipreqs then pipreqs /path/to/project
