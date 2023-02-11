@@ -265,6 +265,7 @@ class MainWindow(QMainWindow):
         logging.debug(
             "setSelectedFont: font has changed: setting the editor font to {}".format(font.toString()))
         self.editor.setCurrentFont(font)
+        self.editor.setFocus(Qt.NoFocusReason)
 
     def setFont(self):
         font, ok = QFontDialog.getFont(self.editor.currentFont(), self)
@@ -311,13 +312,13 @@ class MainWindow(QMainWindow):
         format_toolbar.addAction(self.bold_action)
         format_menu.addAction(self.bold_action)
 
-        fontSelectAction = QAction(
-            QIcon(":/images/images/echoes.png"), "Font Selection", self)
-        fontSelectAction.setStatusTip("Select a Font")
-        fontSelectAction.triggered.connect(
-            self.setFont)
-        format_toolbar.addAction(fontSelectAction)
-        format_toolbar.addAction(fontSelectAction)
+        # fontSelectAction = QAction(
+        #     QIcon(":/images/images/echoes.png"), "Font Selection", self)
+        # fontSelectAction.setStatusTip("Select a Font")
+        # fontSelectAction.triggered.connect(
+        #     self.setFont)
+        # format_toolbar.addAction(fontSelectAction)
+        # format_toolbar.addAction(fontSelectAction)
 
         # self.italic_action = QAction(
         #    QIcon(os.path.join('images', 'edit-italic.png')), "Italic", self)
@@ -1452,8 +1453,12 @@ class MainWindow(QMainWindow):
             currentFont = self.editor.currentFont().toString().split(",")
         else:
             currentFont = "none"
+        if(self.editor.document().defaultFont()):
+            defaultFont = self.editor.document().defaultFont().toString().split(",")
+        else:
+            defaultFont = "none"
         self.statusMode.setText(
-            "Font: {} | Block: {} | Column: {} | Mode: {}".format(currentFont[0], line, col, editMode))
+            "Current Font: {} | Default Font: {} | Block: {} | Column: {} | Mode: {}".format(currentFont[0], defaultFont[0], line, col, editMode))
         # self.status.showMessage(
         #    "Block: {} | Column: {} | Mode: {}".format(line, col, editMode))
 
