@@ -142,6 +142,9 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Creating Composite Widgets](https://www.pythonstudio.us/pyqt-programming/creating-composite-widgets.html)
 - [Fitting Widgets to Layouts](https://stackoverflow.com/questions/61451279/how-does-setcolumnstretch-and-setrowstretch-works)
 
+## PyQT
+- [PyQT Resources](https://build-system.fman.io/pyqt6-book)
+
 ## Deployment
 - To generate requirements => pip install pipreqs then pipreqs /path/to/project
 - [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
