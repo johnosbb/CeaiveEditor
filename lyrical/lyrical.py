@@ -99,7 +99,7 @@ class MainWindow(QMainWindow):
         # logging.debug("lyrical: Default font set to {}".format(
         #     self.defaultFont.toString()))
         # We need to repeat the size to init the current format.
-        self.editor.setFontPointSize(12)
+        # self.editor.setFontPointSize(12)
         self.projectType = "Novel"
         # # enable this for a frameless window
         # # Borderless window code begins
@@ -266,6 +266,11 @@ class MainWindow(QMainWindow):
             "setSelectedFont: font has changed: setting the editor font to {}".format(font.toString()))
         self.editor.setCurrentFont(font)
 
+    def setFont(self):
+        font, ok = QFontDialog.getFont(self.editor.currentFont(), self)
+        if ok:
+            self.editor.setCurrentFont(font)
+
     def define_format_toolbar(self):
 
         # # Adds a format menu option to the top level menu
@@ -306,6 +311,14 @@ class MainWindow(QMainWindow):
         format_toolbar.addAction(self.bold_action)
         format_menu.addAction(self.bold_action)
 
+        fontSelectAction = QAction(
+            QIcon(":/images/images/echoes.png"), "Font Selection", self)
+        fontSelectAction.setStatusTip("Select a Font")
+        fontSelectAction.triggered.connect(
+            self.setFont)
+        format_toolbar.addAction(fontSelectAction)
+        format_toolbar.addAction(fontSelectAction)
+
         # self.italic_action = QAction(
         #    QIcon(os.path.join('images', 'edit-italic.png')), "Italic", self)
         self.italic_action = QAction(
@@ -315,7 +328,7 @@ class MainWindow(QMainWindow):
         self.italic_action.setCheckable(True)
         self.italic_action.toggled.connect(self.editor.setFontItalic)
         format_toolbar.addAction(self.italic_action)
-        format_menu.addAction(self.italic_action)
+        format_toolbar.addAction(self.italic_action)
 
         self.underline_action = QAction(
             QIcon(":/images/images/edit-underline.png"), "Underline", self)
@@ -655,6 +668,7 @@ class MainWindow(QMainWindow):
                 "lyrical :Average Syllable Length: {0}".format(count))
 
     def findEchoes(self):
+
         cursor = QTextCursor(self.editor.textCursor())
         selectedText = cursor.selectedText()  # enable for selected text
         blockNumber = cursor.blockNumber()
@@ -1434,8 +1448,12 @@ class MainWindow(QMainWindow):
             editMode = "Insert"
         else:
             editMode = "Over Write"
+        if(self.editor.currentFont):
+            currentFont = self.editor.currentFont().toString().split(",")
+        else:
+            currentFont = "none"
         self.statusMode.setText(
-            "Block: {} | Column: {} | Mode: {}".format(line, col, editMode))
+            "Font: {} | Block: {} | Column: {} | Mode: {}".format(currentFont[0], line, col, editMode))
         # self.status.showMessage(
         #    "Block: {} | Column: {} | Mode: {}".format(line, col, editMode))
 
