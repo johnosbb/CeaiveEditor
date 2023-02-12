@@ -263,8 +263,8 @@ class MainWindow(QMainWindow):
 
     def removeMultipleFonts(self):
         html = self.editor.document().toHtml()
-        result = re.sub(r"(font-family:)('.+'),('.+')", r'\1\3', html)
-        self.editor.document().setHtml(html)
+        htmlTransformed = re.sub(r"(font-family:)('.+'),('.+')", r'\1\3', html)
+        self.editor.document().setHtml(htmlTransformed)
 
     # sets the currently selected Font to the editor
 
@@ -272,7 +272,7 @@ class MainWindow(QMainWindow):
         logging.debug(
             "setSelectedFont: font has changed: setting the editor font to {}".format(font.toString()))
         self.editor.setCurrentFont(font)
-        # self.removeMultipleFonts()
+        self.removeMultipleFonts()
         self.editor.setFocus()
 
     def setFont(self):
@@ -1309,7 +1309,7 @@ class MainWindow(QMainWindow):
     def file_save(self):
         if self.path is None:
             # If we do not have a path, we need to use Save As.
-            # self.removeMultipleFonts()
+            self.removeMultipleFonts()
             return self.file_saveas()
 
         text = self.editor.toHtml() if splitext(
