@@ -2,6 +2,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtPrintSupport import *
+import re
 
 import os
 import sys
@@ -215,10 +216,10 @@ class MainWindow(QMainWindow):
         else:
             logging.debug("lyrical :Canceled Showing Preferences!")
 
-    def mouseMoveEvent(self, event):
-        delta = QPoint(event.globalPos() - self.oldPos)
-        self.move(self.x() + delta.x(), self.y() + delta.y())
-        self.oldPos = event.globalPos()
+    # def mouseMoveEvent(self, event):
+    #     delta = QPoint(event.globalPos() - self.oldPos)
+    #     self.move(self.x() + delta.x(), self.y() + delta.y())
+    #     self.oldPos = event.globalPos()
 
     def block_signals(self, objects, b):
         for o in objects:
@@ -260,16 +261,24 @@ class MainWindow(QMainWindow):
             cursor.select(QTextCursor.WordUnderCursor)
         cursor.setCharFormat(format)
 
+    def removeMultipleFonts(self):
+        html = self.editor.document().toHtml()
+        result = re.sub(r"(font-family:)('.+'),('.+')", r'\1\3', html)
+        self.editor.document().setHtml(html)
+
     # sets the currently selected Font to the editor
+
     def setSelectedFont(self, font):
         logging.debug(
             "setSelectedFont: font has changed: setting the editor font to {}".format(font.toString()))
         self.editor.setCurrentFont(font)
-        self.editor.setFocus(Qt.NoFocusReason)
+        # self.removeMultipleFonts()
+        self.editor.setFocus()
 
     def setFont(self):
         font, ok = QFontDialog.getFont(self.editor.currentFont(), self)
         if ok:
+            # sets the font of the current format
             self.editor.setCurrentFont(font)
 
     def define_format_toolbar(self):
@@ -1221,7 +1230,9 @@ class MainWindow(QMainWindow):
         # self.showFontFamilies()
         # for font in self.supportedFontFamilies:
         #     logging.debug("lyrical: Family {}".format(font))
-        currentFont = self.editor.currentFont()
+        logging.debug("editor current font {}".format(
+            self.editor.currentFont().toString()))
+        self.fonts.setCurrentFont(self.editor.currentFont())
         # currentFontName = currentFont.toString().split(",")
         # logging.debug("lyrical : Update Format: Current font is {}".format(
         #     currentFont.toString()))
@@ -1237,9 +1248,10 @@ class MainWindow(QMainWindow):
         #         currentFont.toString(), self.defaultFont.toString()))
         #     self.fonts.setCurrentFont(self.defaultFont)
         # Nasty, but we get the font-size as a float but want it was an int
-        self.fonts.setCurrentFont(currentFont)
+        # sets the font of the current format
+        # self.fonts.setCurrentFont(currentFont)
         self.fontSize.setCurrentText(str(int(self.editor.fontPointSize())))
-        current_format = self.editor.currentCharFormat()
+        #currentCharformat = self.editor.currentCharFormat()
         self.italic_action.setChecked(self.editor.fontItalic())
         self.underline_action.setChecked(self.editor.fontUnderline())
         self.bold_action.setChecked(self.editor.fontWeight() == QFont.Bold)
@@ -1297,6 +1309,7 @@ class MainWindow(QMainWindow):
     def file_save(self):
         if self.path is None:
             # If we do not have a path, we need to use Save As.
+            # self.removeMultipleFonts()
             return self.file_saveas()
 
         text = self.editor.toHtml() if splitext(
@@ -1439,6 +1452,16 @@ class MainWindow(QMainWindow):
     def updateSuggestions(self, suggestions):
         self.update_suggestions_toolbar(suggestions)
 
+    def debugFontDetails(self):
+        currentEditorFont = self.editor.currentFont().toString().split(
+            ",")  # font of the current format
+        documentDefaultFont = self.editor.document().defaultFont(
+        ).toString().split(",")  # documents default font
+        # QTextEditor.setFont sets the font for the underlying QTextWidget, QWidget only has one font type at a time
+        # QTextEdit exposes an interface to set the font for different parts of the text via QTextCharFormat
+        # QTextEditor.setCurrentFont allows one set the font for the active QTextCharFormat
+        # for format in self.editor.document().allFormats():
+
     def cursorPosition(self):
         cursor = self.editor.textCursor()
         # Mortals like 1-indexed things
@@ -1449,7 +1472,7 @@ class MainWindow(QMainWindow):
             editMode = "Insert"
         else:
             editMode = "Over Write"
-        if(self.editor.currentFont):
+        if(self.editor.currentFont()):
             currentFont = self.editor.currentFont().toString().split(",")
         else:
             currentFont = "none"
