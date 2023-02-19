@@ -9,6 +9,7 @@ import collections
 
 nltk.download('cmudict')
 nltk.download('stopwords')
+nltk.download('punkt')
 
 cmuDictionary = None
 
