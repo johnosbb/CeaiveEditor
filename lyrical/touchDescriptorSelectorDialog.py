@@ -34,7 +34,7 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
         self.proxyModel.setDynamicSortFilter(True)
         self.sourceView = QTableView()  # where we store the unfiltered list
         self.tableView = QTableView()
-
+        self.selectedWord = None
         self.tableView.setAlternatingRowColors(True)
         self.tableView.setModel(self.proxyModel)
         self.tableView.setSortingEnabled(True)
@@ -46,7 +46,7 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
         self.tableView.setSortingEnabled(True)
         self.tableView.verticalHeader().hide()
         self.tableView.setSelectionMode(QTableView.SingleSelection)
-        self.tableView.setSelectionBehavior(QTableView.SelectRows)
+        self.tableView.setSelectionBehavior(QTableView.SelectItems)
         self.tableView.clicked.connect(self.selectItem)
 
         self.filterString = ""
@@ -155,10 +155,15 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
         self.horizontalLayoutWidget.setGeometry(
             QRect(0, 0, DIALOG_WIDTH, IMAGE_HEIGHT))
         self.createHeader()
+        self.acceptButton = QPushButton("Insert Selected Word", self)
+        self.acceptButton.setToolTip(
+            'Insert the selected word into your document')
+        self.acceptButton.clicked.connect(
+            lambda: self.acceptSelection(self.selectedWord))
+        self.acceptButton.setEnabled(False)
         mainLayout.addWidget(self.headerFrame)
         mainLayout.addWidget(self.tableView)
-        # self.createTouchPanel()
-        # mainLayout.addLayout(self.mainGrid)
+        mainLayout.addWidget(self.acceptButton)
         self.setGeometry(300, 300, DIALOG_WIDTH, DIALOG_HEIGHT)
         self.setFixedSize(DIALOG_WIDTH, DIALOG_HEIGHT)
         self.setWindowTitle(self.title)
@@ -166,22 +171,26 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
 
     def selectItem(self, index):
         mapped_index = self.proxyModel.mapToSource(index)
+        model = mapped_index.model()
         row = mapped_index.row()
-        column = 0
-        data = mapped_index.data()
-        self.selectionMenu = QMenu(self)
-        icon = QIcon(":/images/images/clipboard-paste-document-text.png")
-        selectionAction = self.selectionMenu.addAction(icon,
-                                                       'Click {} to insert this word into your document'.format("here"))
-        selectionAction.triggered.connect(lambda: self.showSelection(data))
-        x = QCursor.pos().x()
-        y = QCursor.pos().y()
-        newPosition = QPoint(x+5, y+5)
-        self.selectionMenu.exec_(newPosition)
+        column = mapped_index.column()
+        standardItem = model.item(row, 0)
+        modelIndex = standardItem.index()
+        self.selectedWord = modelIndex.data(0)
+        self.acceptButton.setEnabled(True)
+        selectionModel = self.tableView.selectionModel()
+        # newIndex = self.tableView.model().index(row, 0)
+        # selectionModel.select(newIndex, QItemSelectionModel.ClearAndSelect)
+        # self.selectionMenu = QMenu(self)
+        # icon = QIcon(":/images/images/clipboard-paste-document-text.png")
+        # selectionAction = self.selectionMenu.addAction(icon,
+        #                                                'Click {} to insert this word into your document'.format("here"))
 
-    def showSelection(self, data):
-        self.selectedWord = data
-        self.accept()
+
+    def acceptSelection(self, data):
+        if(data):
+            self.selectedWord = data
+            self.accept()
 
     def setWordFilter(self):
         text = self.touchDescriptorFilter.text()
