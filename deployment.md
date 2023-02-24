@@ -7,7 +7,7 @@
 - [FBS Deployment Documentation](https://build-system.fman.io/manual/)
 - [PPG Appears unmaintained and problematic](https://github.com/runesc/PPG)
 
-### PyInstaller
+## PyInstaller
 
 For QT5 support on Linux we need
 
@@ -30,3 +30,8 @@ cp -r ./dist/lyrical/* build/lyrical
 But I am not sure why this is required
 
 - [Youtube video on Pyinstaller](https://www.youtube.com/watch?v=gI_WXyY-PrA)
+
+
+## Nuitka
+
+- [Home Page](https://www.nuitka.net/)
