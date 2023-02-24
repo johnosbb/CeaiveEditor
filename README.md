@@ -152,7 +152,11 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
 - [Build System FBS - requires commercial license](https://build-system.fman.io/pyqt5-tutorial)
 - [FBS Deployment Documentation](https://build-system.fman.io/manual/)
-- [PPG](https://github.com/runesc/PPG)
+- [PPG Appears unmaintained and problematic](https://github.com/runesc/PPG)
+
+### PyInstaller
+
+- [Youtube video on Pyinstaller](https://www.youtube.com/watch?v=gI_WXyY-PrA)
 
 # Literature
 
