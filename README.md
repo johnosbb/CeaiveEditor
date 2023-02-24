@@ -147,6 +147,9 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [fbs Build System](https://build-system.fman.io/docs/)
 - [PyQT Tutorials](https://build-system.fman.io/docs/)
 
+## Deployment
+
+[see](deployment.md)
 
 # Literature
 
