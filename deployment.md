@@ -15,6 +15,12 @@ For QT5 support on Linux we need
 sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake
 ```
 
+Up update to the latest
+
+```sh
+pip install --upgrade pyinstaller
+```
+
 We may need to do
 
 ```sh
