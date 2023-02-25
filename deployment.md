@@ -39,8 +39,9 @@ If you are getting ModuleNotFoundError: No module named ... errors and you:
 
 This can be fixed by:
 
-- calling PyInstaller from the same directory as your main script OR removing any __init__.py files (empty __init__.py files are not required in Python 3.3+) 
-OR using PyInstaller's paths flag to specify a path to search for imports. E.g. if you are calling PyInstaller from a parent folder to your main script, and your script lives in subfolder, then call PyInstaller as such:
+- Calling PyInstaller from the same directory as your main script OR 
+- Removing any __init__.py files (empty __init__.py files are not required in Python 3.3+) OR
+- Using PyInstaller's paths flag to specify a path to search for imports. E.g. if you are calling PyInstaller from a parent folder to your main script, and your script lives in subfolder, then call PyInstaller as such:
 
 ```sh
 pyinstaller --paths=subfolder subfolder/script.py.
