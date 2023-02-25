@@ -62,4 +62,4 @@ pip install nuitka
 
 ```sh
 python3 -m nuitka --follow-imports main.py
-```sh
+```
