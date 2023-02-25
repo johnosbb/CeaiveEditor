@@ -75,7 +75,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Stanford Parser](https://nlp.stanford.edu/software/lex-parser.shtml)
 - [ Discussion on Stack Overflow](https://stackoverflow.com/questions/10252448/how-to-check-whether-a-sentence-is-correct-simple-grammar-check-in-python)
 - [After The Deadline](https://open.afterthedeadline.com/download/download-source-code/)
-- [Parsing English in Python](https://explosion.ai/blog/parsing-english-in-python
+- [Parsing English in Python](https://explosion.ai/blog/parsing-english-in-python)
 
 ### Spell Checking
 - [Spell Checking](https://pyenchant.github.io/pyenchant/)
@@ -148,10 +148,8 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [PyQT Tutorials](https://build-system.fman.io/docs/)
 
 ## Deployment
-- To generate requirements => pip install pipreqs then pipreqs /path/to/project
-- [Deploying PyQt Applications](https://wiki.python.org/moin/PyQt/Deploying_PyQt_Applications)
-- [Build System FBS](https://build-system.fman.io/pyqt5-tutorial)
-- [FBS Deployment Documentation](https://build-system.fman.io/manual/)
+
+[see](deployment.md)
 
 # Literature
 
