@@ -32,6 +32,20 @@ But I am not sure why this is required
 - [Youtube video on Pyinstaller](https://www.youtube.com/watch?v=gI_WXyY-PrA)
 
 
+### Resolving Issues
+
+If you are getting ModuleNotFoundError: No module named ... errors and you:
+- call PyInstaller from a directory other than your main script's directory use relative imports in your script then your executable can have trouble finding the relative imports.
+
+This can be fixed by:
+
+- calling PyInstaller from the same directory as your main script OR removing any __init__.py files (empty __init__.py files are not required in Python 3.3+) 
+OR using PyInstaller's paths flag to specify a path to search for imports. E.g. if you are calling PyInstaller from a parent folder to your main script, and your script lives in subfolder, then call PyInstaller as such:
+
+```sh
+pyinstaller --paths=subfolder subfolder/script.py.
+```
+
 ## Nuitka
 
 - [Home Page](https://www.nuitka.net/)
