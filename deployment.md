@@ -50,3 +50,16 @@ pyinstaller --paths=subfolder subfolder/script.py.
 ## Nuitka
 
 - [Home Page](https://www.nuitka.net/)
+
+```sh
+conda install libpython-static
+```
+
+```sh
+pip install nuitka
+```
+
+
+```sh
+python3 -m nuitka --follow-imports main.py
+```sh
