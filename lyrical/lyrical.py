@@ -15,6 +15,7 @@ import style
 import utilities
 import logging
 import palettes
+from theme import Theme
 import preferencesDialog
 import projectTypeDialog
 import novelPropertiesDialog
@@ -63,10 +64,19 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.languageTool = language_tool_python.LanguageTool('en-GB')
         self.load_settings()
+        self.colorTheme = Theme()
+        self.setWindowIcon(QIcon(":/images/images/icon.ico"))
+        # if(self.theme == "light"):
+        #     self.theme = theme.lightPalette
+        #     appContext.setPalette(palettes.light())
+        # else:
+        #     appContext.setPalette(palettes.grey())
         if(self.theme == "light"):
-            appContext.setPalette(palettes.light())
+            self.palette = self.colorTheme.lightPalette
+            appContext.setPalette(self.palette)
         else:
-            appContext.setPalette(palettes.grey())
+            self.palette = self.colorTheme.darkPalette
+            appContext.setPalette(self.palette)
         self.word_list_path = "./local_dictionary.txt"
         layout = QVBoxLayout()  # The QVBoxLayout class lines up widgets vertically
         # this is using the editor class based on QTextEdit above, this is a new member declaration

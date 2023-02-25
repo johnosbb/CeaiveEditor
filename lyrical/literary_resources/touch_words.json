@@ -1,0 +1,4637 @@
+[
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Abrasive",
+        "_TouchWord__meaning": "a substance that abrades or wears down",
+        "_TouchWord__tags": [
+            "abrasive_material",
+            "abradant",
+            "abrasive",
+            "scratchy",
+            "harsh"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Ample",
+        "_TouchWord__meaning": "more than enough in size or scope or capacity",
+        "_TouchWord__tags": [
+            "ample",
+            "plenteous",
+            "sizable",
+            "copious",
+            "sizeable",
+            "plentiful",
+            "rich"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Angular",
+        "_TouchWord__meaning": "measured by an angle or by the rate of change of an angle",
+        "_TouchWord__tags": [
+            "angulate",
+            "angular"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bald",
+        "_TouchWord__meaning": "grow bald; lose hair on one's head",
+        "_TouchWord__tags": [
+            "denudate",
+            "bald-headed",
+            "denuded",
+            "barefaced",
+            "bald",
+            "bald-pated"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Human"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Barbed",
+        "_TouchWord__meaning": "provide with barbs",
+        "_TouchWord__tags": [
+            "mordacious",
+            "briary",
+            "setaceous",
+            "biting",
+            "prickly",
+            "barb",
+            "pungent",
+            "barbed",
+            "nipping",
+            "barbellate",
+            "bristled",
+            "bristly",
+            "burry",
+            "thorny",
+            "spiny",
+            "burred",
+            "setose",
+            "briery"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bendable",
+        "_TouchWord__meaning": "capable of being bent or flexed or twisted without breaking",
+        "_TouchWord__tags": [
+            "bendable",
+            "pliable",
+            "waxy",
+            "pliant"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch "
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Blemished",
+        "_TouchWord__meaning": "mar or spoil the appearance of",
+        "_TouchWord__tags": [
+            "flawed",
+            "deface",
+            "disfigure",
+            "blemish",
+            "blemished",
+            "flaw",
+            "spot"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Blistered",
+        "_TouchWord__meaning": "get blistered",
+        "_TouchWord__tags": [
+            "blister",
+            "vesicate",
+            "scald",
+            "whip"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bloated",
+        "_TouchWord__meaning": "become bloated or swollen or puff up",
+        "_TouchWord__tags": [
+            "bloat"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations",
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Blunt",
+        "_TouchWord__meaning": "make less intense",
+        "_TouchWord__tags": [
+            "forthright",
+            "blunt",
+            "free-spoken",
+            "point-blank",
+            "deaden",
+            "plainspoken",
+            "numb",
+            "stark",
+            "frank",
+            "benumb",
+            "crude",
+            "outspoken",
+            "straight-from-the-shoulder",
+            "dull",
+            "candid"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bristly",
+        "_TouchWord__meaning": "very irritable",
+        "_TouchWord__tags": [
+            "waspish",
+            "briary",
+            "setaceous",
+            "splenetic",
+            "prickly",
+            "barbed",
+            "barbellate",
+            "bristly",
+            "bristled",
+            "burry",
+            "thorny",
+            "spiny",
+            "burred",
+            "setose",
+            "briery"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Broken",
+        "_TouchWord__meaning": "terminate",
+        "_TouchWord__tags": [
+            "intermit",
+            "get_out",
+            "break_in",
+            "weaken",
+            "transgress",
+            "busted",
+            "fracture",
+            "erupt",
+            "stop",
+            "get_around",
+            "upset",
+            "humbled",
+            "give",
+            "wear",
+            "offend",
+            "split_up",
+            "fall_apart",
+            "break_out",
+            "breach",
+            "go_against",
+            "disclose",
+            "go_bad",
+            "bring_out",
+            "ruin",
+            "part",
+            "low",
+            "give_out",
+            "wiped_out",
+            "crack",
+            "break_away",
+            "break_off",
+            "bust",
+            "infract",
+            "let_out",
+            "conk_out",
+            "demote",
+            "broken",
+            "kick_downstairs",
+            "confused",
+            "give_way",
+            "break_down",
+            "founder",
+            "wear_out",
+            "disordered",
+            "interrupt",
+            "better",
+            "die",
+            "divulge",
+            "bump",
+            "violate",
+            "let_on",
+            "broken_in",
+            "give_away",
+            "discontinue",
+            "smash",
+            "crushed",
+            "fail",
+            "bankrupt",
+            "recrudesce",
+            "dampen",
+            "discover",
+            "humiliated",
+            "snap_off",
+            "separate",
+            "fall_in",
+            "break-dance",
+            "unwrap",
+            "check",
+            "collapse",
+            "impoverished",
+            "break_up",
+            "pause",
+            "develop",
+            "relegate",
+            "reveal",
+            "unkept",
+            "break",
+            "split",
+            "burst",
+            "damp",
+            "come_apart",
+            "soften",
+            "expose",
+            "go",
+            "cave_in",
+            "break_dance",
+            "rugged"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bubbly",
+        "_TouchWord__meaning": "a white sparkling wine either produced in Champagne or resembling that produced there",
+        "_TouchWord__tags": [
+            "frothy",
+            "foaming",
+            "spumy",
+            "bubbly",
+            "bubbling",
+            "foamy",
+            "champagne",
+            "effervescing"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bulging",
+        "_TouchWord__meaning": "swell or protrude outwards",
+        "_TouchWord__tags": [
+            "bulge",
+            "start",
+            "bulgy",
+            "pouch",
+            "bug_out",
+            "bellying",
+            "pop",
+            "bulk",
+            "convex",
+            "bulbous",
+            "bellied",
+            "protrude",
+            "bag",
+            "bulging",
+            "protuberant",
+            "bulge_out",
+            "pop_out",
+            "come_out"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bulky",
+        "_TouchWord__meaning": "of large size for its weight",
+        "_TouchWord__tags": [
+            "bulky"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bumpy",
+        "_TouchWord__meaning": "causing or characterized by jolts and irregular movements",
+        "_TouchWord__tags": [
+            "jolting",
+            "jumpy",
+            "rough",
+            "rocky",
+            "jolty",
+            "bumpy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Bushy",
+        "_TouchWord__meaning": "used of hair; thick and poorly groomed",
+        "_TouchWord__tags": [
+            "shaggy",
+            "shaggy-haired",
+            "bushy",
+            "shaggy-coated"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Caked",
+        "_TouchWord__meaning": "form a coat over",
+        "_TouchWord__tags": [
+            "coat",
+            "cake"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Carved",
+        "_TouchWord__meaning": "form by carving",
+        "_TouchWord__tags": [
+            "carven",
+            "cut_up",
+            "chip_at",
+            "carve",
+            "carved"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Chafing",
+        "_TouchWord__meaning": "soreness or irritation of the skin caused by friction",
+        "_TouchWord__tags": [
+            "chafing",
+            "nark",
+            "irritate",
+            "get_to",
+            "vex",
+            "devil",
+            "rub",
+            "gravel",
+            "annoy",
+            "fray",
+            "gall",
+            "chafe",
+            "get_at",
+            "rag",
+            "bother",
+            "rile",
+            "excoriate",
+            "scratch",
+            "nettle",
+            "fret"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Chapped",
+        "_TouchWord__meaning": "crack due to dehydration",
+        "_TouchWord__tags": [
+            "chap",
+            "chapped",
+            "roughened",
+            "cracked"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Chunky",
+        "_TouchWord__meaning": "like or containing small sticky lumps",
+        "_TouchWord__tags": [
+            "low-set",
+            "chunky",
+            "squat",
+            "dumpy",
+            "stumpy",
+            "lumpy",
+            "squatty"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Circular",
+        "_TouchWord__meaning": "an advertisement (usually printed on a page or in a leaflet) intended for wide distribution",
+        "_TouchWord__tags": [
+            "orbitual",
+            "flyer",
+            "broadsheet",
+            "handbill",
+            "circular",
+            "flier",
+            "bill",
+            "rotary",
+            "throwaway",
+            "round",
+            "broadside"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Shape"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Clammy",
+        "_TouchWord__meaning": "unpleasantly cool and humid",
+        "_TouchWord__tags": [
+            "clammy",
+            "dank"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Human",
+            "Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Clean",
+        "_TouchWord__meaning": "a weightlift in which the barbell is lifted to shoulder height and then jerked overhead",
+        "_TouchWord__tags": [
+            "houseclean",
+            "fresh",
+            "uninfected",
+            "blank",
+            "fair",
+            "strip",
+            "clean-living",
+            "white",
+            "unobjectionable",
+            "make_clean",
+            "scavenge",
+            "clean",
+            "plum",
+            "clean_house",
+            "cleanse",
+            "clear",
+            "unclouded",
+            "neat",
+            "clean_and_jerk",
+            "uncontaminating",
+            "sporty",
+            "fairly",
+            "plumb",
+            "pick",
+            "sportsmanlike",
+            "sporting",
+            "light"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Coarse",
+        "_TouchWord__meaning": "of textures that are rough to the touch or substances consisting of relatively large particles",
+        "_TouchWord__tags": [
+            "uncouth",
+            "rough-cut",
+            "common",
+            "coarse",
+            "harsh",
+            "vulgar"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Cold",
+        "_TouchWord__meaning": "a mild viral infection involving the nose and respiratory passages (but not the lungs)",
+        "_TouchWord__tags": [
+            "frigidness",
+            "insensate",
+            "coldness",
+            "frigidity",
+            "common_cold",
+            "dusty",
+            "moth-eaten",
+            "frigid",
+            "low_temperature",
+            "inhuman",
+            "stale",
+            "cold",
+            "cold-blooded"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            "  Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Cool",
+        "_TouchWord__meaning": "the quality of being at a refreshingly low temperature",
+        "_TouchWord__tags": [
+            "cool",
+            "assuredness",
+            "chill",
+            "cool_down",
+            "poise",
+            "coolheaded",
+            "cool_off",
+            "aplomb",
+            "sang-froid",
+            "nerveless"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Corrugated",
+        "_TouchWord__meaning": "fold into ridges",
+        "_TouchWord__tags": [
+            "corrugated",
+            "corrugate"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Cratered",
+        "_TouchWord__meaning": "",
+        "_TouchWord__tags": [],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Crenelated",
+        "_TouchWord__meaning": "supply with battlements",
+        "_TouchWord__tags": [
+            "crenellate",
+            "crenelate",
+            "crenel"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Crocheted",
+        "_TouchWord__meaning": "create by looping or crocheting",
+        "_TouchWord__tags": [
+            "crochet",
+            "hook"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Cushioned",
+        "_TouchWord__meaning": "protect from impact",
+        "_TouchWord__tags": [
+            "soften",
+            "padded",
+            "cushion",
+            "buffer",
+            "cushiony",
+            "cushioned"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Damaged",
+        "_TouchWord__meaning": "inflict damage upon",
+        "_TouchWord__tags": [
+            "damaged",
+            "discredited",
+            "damage"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Damp",
+        "_TouchWord__meaning": "a slight wetness",
+        "_TouchWord__tags": [
+            "dampen",
+            "soften",
+            "dampness",
+            "mute",
+            "moistness",
+            "deaden",
+            "break",
+            "dampish",
+            "moist",
+            "muffle",
+            "tone_down",
+            "dull",
+            "damp",
+            "weaken"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Dehydrated",
+        "_TouchWord__meaning": "preserve by removing all water and liquids from",
+        "_TouchWord__tags": [
+            "desiccate",
+            "dried",
+            "dehydrate",
+            "desiccated",
+            "dry_up",
+            "dehydrated",
+            "exsiccate"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Dense",
+        "_TouchWord__meaning": "permitting little if any light to pass through because of denseness of matter",
+        "_TouchWord__tags": [
+            "dumb",
+            "dense",
+            "impenetrable",
+            "obtuse",
+            "slow",
+            "thick",
+            "heavy",
+            "dull",
+            "dim"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Dented",
+        "_TouchWord__meaning": "make a depression into",
+        "_TouchWord__tags": [
+            "dent",
+            "crumpled",
+            "dented",
+            "bent",
+            "indent"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Dirty",
+        "_TouchWord__meaning": "make soiled, filthy, or dirty",
+        "_TouchWord__tags": [
+            "unsportsmanlike",
+            "colly",
+            "lousy",
+            "grime",
+            "pestiferous",
+            "muddied",
+            "filthy",
+            "soil",
+            "begrime",
+            "foul",
+            "contaminating",
+            "cheating",
+            "unsporting",
+            "bemire",
+            "marked-up",
+            "muddy",
+            "dingy",
+            "ill-gotten",
+            "unclean",
+            "dirty",
+            "soiled",
+            "sordid"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Distended",
+        "_TouchWord__meaning": "become wider",
+        "_TouchWord__tags": [
+            "distend",
+            "dilate"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Distorted",
+        "_TouchWord__meaning": "make false by mutilation or addition; as of a message or story",
+        "_TouchWord__tags": [
+            "wring",
+            "colour",
+            "twist",
+            "tinge",
+            "distort",
+            "misrepresented",
+            "warp",
+            "contort",
+            "twisted",
+            "twine",
+            "strain",
+            "ill-shapen",
+            "falsify",
+            "color",
+            "perverted",
+            "distorted",
+            "deform",
+            "garble",
+            "malformed",
+            "deformed",
+            "misshapen"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Doughy",
+        "_TouchWord__meaning": "having the consistency of dough because of insufficient leavening or improper cooking",
+        "_TouchWord__tags": [
+            "soggy",
+            "doughy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations",
+            "Materials"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Downy",
+        "_TouchWord__meaning": "like down or as soft as down",
+        "_TouchWord__tags": [
+            "downy",
+            "sericeous",
+            "flossy",
+            "pubescent",
+            "puberulent",
+            "fluffy",
+            "downlike"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Drenched",
+        "_TouchWord__meaning": "drench or submerge or be drenched or submerged",
+        "_TouchWord__tags": [
+            "imbrue",
+            "soak",
+            "drenched",
+            "sop",
+            "swamp",
+            "drenched_in",
+            "souse",
+            "douse",
+            "dowse",
+            "drench"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Dry",
+        "_TouchWord__meaning": "a reformer who opposes the use of intoxicating beverages",
+        "_TouchWord__tags": [
+            "dry_out",
+            "ironical",
+            "wry",
+            "dry",
+            "prohibitionist",
+            "juiceless",
+            "teetotal",
+            "ironic"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Dusty",
+        "_TouchWord__meaning": "covered with a layer of dust",
+        "_TouchWord__tags": [
+            "dusty",
+            "moth-eaten",
+            "stale",
+            "dust-covered",
+            "cold"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Embossed",
+        "_TouchWord__meaning": "raise in a relief",
+        "_TouchWord__tags": [
+            "emboss",
+            "embossed",
+            "raised",
+            "brocaded",
+            "stamp",
+            "boss"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Enamelled",
+        "_TouchWord__meaning": "coat, inlay, or surface with enamel",
+        "_TouchWord__tags": [
+            "enamel"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Encrusted",
+        "_TouchWord__meaning": "cover or coat with a crust",
+        "_TouchWord__tags": [
+            "crusty",
+            "beset",
+            "crustlike",
+            "incrust",
+            "encrusted",
+            "crusted",
+            "encrust"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Engorged",
+        "_TouchWord__meaning": "overeat or eat immodestly; make a pig of oneself",
+        "_TouchWord__tags": [
+            "gorge",
+            "gormandize",
+            "gourmandize",
+            "stuff",
+            "overeat",
+            "pig_out",
+            "overindulge",
+            "engorge",
+            "englut",
+            "glut",
+            "congested",
+            "gormandise",
+            "binge",
+            "engorged",
+            "scarf_out",
+            "overgorge",
+            "satiate",
+            "ingurgitate"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations",
+            " Human"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Engraved",
+        "_TouchWord__meaning": "carve, cut, or etch into a material or surface",
+        "_TouchWord__tags": [
+            "grave",
+            "engraved",
+            "scratch",
+            "etched",
+            "engrave",
+            "etch",
+            "inscribe",
+            "incised",
+            "inscribed",
+            "graven"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Etched",
+        "_TouchWord__meaning": "make an etching of",
+        "_TouchWord__tags": [
+            "engraved",
+            "etched",
+            "engrave",
+            "etch",
+            "incised",
+            "inscribed",
+            "graven"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Even",
+        "_TouchWord__meaning": "the latter part of the day (the period of decreasing daylight from late afternoon until nightfall)",
+        "_TouchWord__tags": [
+            "still",
+            "yet",
+            "flush",
+            "evening",
+            "level",
+            "tied",
+            "even",
+            "eve",
+            "regular",
+            "fifty-fifty",
+            "even_out",
+            "eventide"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Fat",
+        "_TouchWord__meaning": "a soft greasy substance occurring in organic tissue and consisting of a mixture of lipids (mostly triglycerides)",
+        "_TouchWord__tags": [
+            "plump_out",
+            "flesh_out",
+            "fat",
+            "fatten_out",
+            "fatty",
+            "fertile",
+            "productive",
+            "plump",
+            "fatness",
+            "blubber",
+            "avoirdupois",
+            "adipose_tissue",
+            "fatty_tissue",
+            "fatten",
+            "juicy",
+            "fill_out",
+            "rich",
+            "fatten_up"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Feathery",
+        "_TouchWord__meaning": "resembling or suggesting a feather or feathers",
+        "_TouchWord__tags": [
+            "feathery",
+            "featherlike",
+            "plumy",
+            "feathered"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Filmy",
+        "_TouchWord__meaning": "so thin as to transmit light",
+        "_TouchWord__tags": [
+            "gossamer",
+            "cobwebby",
+            "gauzy",
+            "transparent",
+            "vaporous",
+            "sheer",
+            "diaphanous",
+            "gauze-like",
+            "vapourous",
+            "filmy",
+            "see-through"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Firm",
+        "_TouchWord__meaning": "the members of a business organization that owns or operates one or more establishments",
+        "_TouchWord__tags": [
+            "firmly",
+            "strong",
+            "steadfastly",
+            "firm",
+            "business_firm",
+            "unshakable",
+            "steadfast",
+            "unbendable",
+            "unwavering",
+            "unwaveringly",
+            "truehearted",
+            "tauten",
+            "immobile",
+            "steady",
+            "unfaltering",
+            "fast",
+            "house",
+            "solid",
+            "loyal",
+            "unfluctuating",
+            "stiff"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Flat",
+        "_TouchWord__meaning": "a level tract of land",
+        "_TouchWord__tags": [
+            "monotone",
+            "unconditional",
+            "2-dimensional",
+            "directly",
+            "insipid",
+            "matted",
+            "vapid",
+            "matte",
+            "flat_tire",
+            "flatcar",
+            "straight",
+            "categoric",
+            "flat",
+            "level",
+            "mat",
+            "apartment",
+            "flavourless",
+            "compressed",
+            "matt",
+            "flavorless",
+            "two-dimensional",
+            "categorical",
+            "savorless",
+            "bland",
+            "flatbed",
+            "savourless",
+            "monotonic",
+            "monotonous",
+            "plane",
+            "prostrate"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Fleecy",
+        "_TouchWord__meaning": "(of fabrics) having soft nap produced by brushing",
+        "_TouchWord__tags": [
+            "napped",
+            "brushed",
+            "fleecy"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Flimsy",
+        "_TouchWord__meaning": "a thin strong lightweight translucent paper used especially for making carbon copies",
+        "_TouchWord__tags": [
+            "tenuous",
+            "thin",
+            "slight",
+            "unconvincing",
+            "flimsy",
+            "onionskin",
+            "fragile"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Fluffy",
+        "_TouchWord__meaning": "like down or as soft as down",
+        "_TouchWord__tags": [
+            "flossy",
+            "downlike",
+            "fluffy",
+            "downy"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Fluted",
+        "_TouchWord__meaning": "form flutes in",
+        "_TouchWord__tags": [
+            "flute"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Fragile",
+        "_TouchWord__meaning": "easily broken or damaged or destroyed",
+        "_TouchWord__tags": [
+            "frail",
+            "tenuous",
+            "thin",
+            "slight",
+            "delicate",
+            "flimsy",
+            "fragile"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Freezing",
+        "_TouchWord__meaning": "the withdrawal of heat to change something from a liquid to a solid",
+        "_TouchWord__tags": [
+            "freeze",
+            "freeze_down",
+            "suspend",
+            "freeze_out",
+            "immobilize",
+            "freezing",
+            "block",
+            "stop_dead",
+            "immobilise"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Frigid",
+        "_TouchWord__meaning": "sexually unresponsive",
+        "_TouchWord__tags": [
+            "gelid",
+            "polar",
+            "arctic",
+            "icy",
+            "frozen",
+            "glacial",
+            "frigid",
+            "cold",
+            "wintry",
+            "frosty"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Frothy",
+        "_TouchWord__meaning": "emitting or filled with bubbles as from carbonation or fermentation",
+        "_TouchWord__tags": [
+            "frothy",
+            "foaming",
+            "spumy",
+            "scintillating",
+            "bubbly",
+            "bubbling",
+            "effervescent",
+            "sparkly",
+            "foamy",
+            "effervescing"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Furry",
+        "_TouchWord__meaning": "covered with a dense coat of fine silky hairs",
+        "_TouchWord__tags": [
+            "furred",
+            "furry"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Fuzzy",
+        "_TouchWord__meaning": "covering with fine light hairs",
+        "_TouchWord__tags": [
+            "hazy",
+            "blurred",
+            "bleary",
+            "foggy",
+            "fuzzed",
+            "muzzy",
+            "fuzzy",
+            "blurry"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Gelatinous",
+        "_TouchWord__meaning": "thick like gelatin",
+        "_TouchWord__tags": [
+            "gelatinous",
+            "gelatinlike",
+            "jellylike"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Glassy",
+        "_TouchWord__meaning": "resembling glass in smoothness and shininess and slickness; ; - Willa Cather",
+        "_TouchWord__tags": [
+            "vitreous",
+            "glazed",
+            "vitrified",
+            "glassy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Glazed",
+        "_TouchWord__meaning": "coat with a glaze",
+        "_TouchWord__tags": [
+            "glassed",
+            "glaze",
+            "glaze_over",
+            "sugarcoat",
+            "shiny",
+            "glass_over",
+            "glassy",
+            "glass",
+            "candy",
+            "glazed"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Glossy",
+        "_TouchWord__meaning": "a magazine printed on good quality paper",
+        "_TouchWord__tags": [
+            "slick_magazine",
+            "calendered",
+            "glossy",
+            "shiny",
+            "lustrous",
+            "shining",
+            "sheeny",
+            "showy",
+            "glistening",
+            "slick"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Glutinous",
+        "_TouchWord__meaning": "having the sticky properties of an adhesive",
+        "_TouchWord__tags": [
+            "pasty",
+            "gluey",
+            "gummy",
+            "mucilaginous",
+            "viscid",
+            "glutinous",
+            "sticky",
+            "viscous"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Gnarled",
+        "_TouchWord__meaning": "twist into a state of deformity",
+        "_TouchWord__tags": [
+            "knotty",
+            "mutter",
+            "gnarl",
+            "croak",
+            "gnarled",
+            "murmur",
+            "knobbed",
+            "gnarly",
+            "grumble",
+            "knotted"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Gooey",
+        "_TouchWord__meaning": "soft and sticky",
+        "_TouchWord__tags": [
+            "gooey",
+            "icky"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations",
+            "Materials"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Gossamer",
+        "_TouchWord__meaning": "a gauze fabric with an extremely fine texture",
+        "_TouchWord__tags": [
+            "gossamer",
+            "cobwebby",
+            "gauzy",
+            "transparent",
+            "vaporous",
+            "cobweb",
+            "sheer",
+            "gauze-like",
+            "diaphanous",
+            "ethereal",
+            "filmy",
+            "vapourous",
+            "see-through"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Grainy",
+        "_TouchWord__meaning": "composed of or covered with particles resembling meal in texture or consistency",
+        "_TouchWord__tags": [
+            "gritty",
+            "grainy",
+            "mealy",
+            "coarse-grained",
+            "granular",
+            "granulose",
+            "farinaceous"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Granular",
+        "_TouchWord__meaning": "composed of or covered with particles resembling meal in texture or consistency",
+        "_TouchWord__tags": [
+            "gritty",
+            "grainy",
+            "chondritic",
+            "mealy",
+            "coarse-grained",
+            "granular",
+            "granulose",
+            "farinaceous"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Grating",
+        "_TouchWord__meaning": "a barrier that has parallel or crossed bars blocking a passage but admitting air",
+        "_TouchWord__tags": [
+            "grating",
+            "grate",
+            "raspy",
+            "rough",
+            "gravelly",
+            "grind",
+            "diffraction_grating",
+            "rankle",
+            "rasping",
+            "scratchy",
+            "fret",
+            "scrape",
+            "eat_into"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Gravelly",
+        "_TouchWord__meaning": "abounding in small stones",
+        "_TouchWord__tags": [
+            "grating",
+            "raspy",
+            "rough",
+            "gravelly",
+            "pebbly",
+            "rasping",
+            "scratchy",
+            "shingly"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Greasy",
+        "_TouchWord__meaning": "containing an unusual amount of grease or oil",
+        "_TouchWord__tags": [
+            "oleaginous",
+            "sebaceous",
+            "oily",
+            "greasy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Grimy",
+        "_TouchWord__meaning": "thickly covered with ingrained dirt or soot",
+        "_TouchWord__tags": [
+            "grimy",
+            "grungy",
+            "grubby",
+            "raunchy",
+            "dingy",
+            "begrimed"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Gritty",
+        "_TouchWord__meaning": "composed of or covered with particles resembling meal in texture or consistency",
+        "_TouchWord__tags": [
+            "gritty",
+            "grainy",
+            "mettlesome",
+            "gamey",
+            "spunky",
+            "gamy",
+            "spirited",
+            "mealy",
+            "game",
+            "coarse-grained",
+            "granular",
+            "granulose",
+            "farinaceous"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Grooved",
+        "_TouchWord__meaning": "make a groove in, or provide with a groove",
+        "_TouchWord__tags": [
+            "furrow",
+            "groove",
+            "rut",
+            "well-grooved",
+            "grooved"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Grubby",
+        "_TouchWord__meaning": "small sculpin of the coast of New England",
+        "_TouchWord__tags": [
+            "Myxocephalus_aenaeus",
+            "grimy",
+            "grungy",
+            "grubby",
+            "raunchy",
+            "dingy",
+            "begrimed"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Hairy",
+        "_TouchWord__meaning": "having or covered with hair",
+        "_TouchWord__tags": [
+            "haired",
+            "hirsute",
+            "hairy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch",
+            " Human"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Hard",
+        "_TouchWord__meaning": "not easy; requiring great physical or mental effort to accomplish or comprehend or endure",
+        "_TouchWord__tags": [
+            "firmly",
+            "strong",
+            "knockout",
+            "hard",
+            "heavily",
+            "operose",
+            "punishing",
+            "backbreaking",
+            "heavy",
+            "laborious",
+            "intemperate",
+            "difficult",
+            "tough",
+            "toilsome",
+            "voiceless",
+            "surd",
+            "grueling",
+            "arduous",
+            "gruelling",
+            "concentrated",
+            "unvoiced",
+            "severely",
+            "severe",
+            "intemperately"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Harsh",
+        "_TouchWord__meaning": "unpleasantly stern",
+        "_TouchWord__tags": [
+            "abrasive",
+            "rough",
+            "harsh",
+            "coarse"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Hollow",
+        "_TouchWord__meaning": "a cavity or space in something",
+        "_TouchWord__tags": [
+            "hollow",
+            "dig",
+            "hole",
+            "empty",
+            "excavate",
+            "hollow_out",
+            "core_out",
+            "vacuous",
+            "holler"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Hot",
+        "_TouchWord__meaning": "used of physical heat; having a high or higher than desirable temperature or giving off heat or feeling or causing a sensation of heat or burning",
+        "_TouchWord__tags": [
+            "live",
+            "hot",
+            "blistering",
+            "red-hot",
+            "raging",
+            "spicy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Icy",
+        "_TouchWord__meaning": "devoid of warmth and cordiality; expressive of unfriendliness or disdain",
+        "_TouchWord__tags": [
+            "gelid",
+            "polar",
+            "arctic",
+            "icy",
+            "frozen",
+            "glacial",
+            "frigid",
+            "wintry",
+            "frosty"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Impenetrable",
+        "_TouchWord__meaning": "not admitting of penetration or passage into or through",
+        "_TouchWord__tags": [
+            "impenetrable",
+            "heavy",
+            "dense"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Imprinted",
+        "_TouchWord__meaning": "establish or impress firmly in the mind",
+        "_TouchWord__tags": [
+            "imprint",
+            "impress",
+            "form"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Indented",
+        "_TouchWord__meaning": "set in from the margin",
+        "_TouchWord__tags": [
+            "indenture",
+            "dent",
+            "indent"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Inflated",
+        "_TouchWord__meaning": "exaggerate or make bigger",
+        "_TouchWord__tags": [
+            "balloon",
+            "high-sounding",
+            "expand",
+            "inflate",
+            "hyperbolic",
+            "high-flown",
+            "amplify",
+            "inflated",
+            "blow_up",
+            "billow"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Inlaid",
+        "_TouchWord__meaning": "decorate the surface of by inserting wood, stone, and metal",
+        "_TouchWord__tags": [
+            "inlay",
+            "inlaid"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Inscribed",
+        "_TouchWord__meaning": "carve, cut, or etch into a material or surface",
+        "_TouchWord__tags": [
+            "encipher",
+            "inscribe",
+            "enrol",
+            "code",
+            "inscribed",
+            "write_in_code",
+            "enter",
+            "cypher",
+            "engraved",
+            "engrave",
+            "autograph",
+            "cipher",
+            "graven",
+            "grave",
+            "encrypt",
+            "scratch",
+            "recruit",
+            "etched",
+            "enroll",
+            "incised"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Ironed",
+        "_TouchWord__meaning": "press and smooth with a heated iron",
+        "_TouchWord__tags": [
+            "iron",
+            "ironed",
+            "press",
+            "iron_out"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Irregular",
+        "_TouchWord__meaning": "a member of an irregular armed force that fights a stronger force by sabotage and harassment",
+        "_TouchWord__tags": [
+            "maverick",
+            "guerrilla",
+            "unorthodox",
+            "guerilla",
+            "second",
+            "unpredictable",
+            "irregular",
+            "temporary",
+            "atypical",
+            "insurgent"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Itchy",
+        "_TouchWord__meaning": "nervous and unable to relax",
+        "_TouchWord__tags": [
+            "itchy",
+            "fretful",
+            "fidgety",
+            "antsy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Jagged",
+        "_TouchWord__meaning": "cut teeth into; make a jagged cutting edge",
+        "_TouchWord__tags": [
+            "jaggy",
+            "toothed",
+            "jag",
+            "jagged",
+            "notched",
+            "scraggy",
+            "erose"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Knitted",
+        "_TouchWord__meaning": "make (textiles) by knitting",
+        "_TouchWord__tags": [
+            "crumple",
+            "rumple",
+            "knit",
+            "cockle",
+            "pucker",
+            "knitted",
+            "entwine"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Layered",
+        "_TouchWord__meaning": "make or form a layer",
+        "_TouchWord__tags": [
+            "superimposed",
+            "layered",
+            "layer"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Leathery",
+        "_TouchWord__meaning": "resembling or made to resemble leather; tough but pliable",
+        "_TouchWord__tags": [
+            "leathery",
+            "leathered",
+            "coriaceous",
+            "leatherlike"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Level",
+        "_TouchWord__meaning": "a position on a scale of intensity or amount or quality",
+        "_TouchWord__tags": [
+            "spirit_level",
+            "flush",
+            "stratum",
+            "take_down",
+            "tear_down",
+            "even_out",
+            "unwavering",
+            "stage",
+            "degree",
+            "pull_down",
+            "tier",
+            "tied",
+            "even",
+            "floor",
+            "horizontal_surface",
+            "level_off",
+            "rase",
+            "flat",
+            "level",
+            "point",
+            "charge",
+            "grade",
+            "dismantle",
+            "storey",
+            "raze",
+            "story",
+            "layer",
+            "plane"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Limp",
+        "_TouchWord__meaning": "the uneven manner of walking that results from an injured leg",
+        "_TouchWord__tags": [
+            "gimp",
+            "wilted",
+            "hobble",
+            "hitch",
+            "limp"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Lined",
+        "_TouchWord__meaning": "be in line with; form a line along",
+        "_TouchWord__tags": [
+            "seamed",
+            "draw",
+            "run_along",
+            "line",
+            "describe",
+            "delineate",
+            "lined",
+            "trace"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Long-haired",
+        "_TouchWord__meaning": "with long hair",
+        "_TouchWord__tags": [
+            "long-haired"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Loose",
+        "_TouchWord__meaning": "grant freedom to; free from confinement",
+        "_TouchWord__tags": [
+            "wanton",
+            "unleash",
+            "liberal",
+            "free",
+            "liberate",
+            "release",
+            "let_loose",
+            "promiscuous",
+            "sluttish",
+            "on_the_loose",
+            "loose",
+            "easy",
+            "informal",
+            "loosen",
+            "unloosen",
+            "open",
+            "relax",
+            "escaped",
+            "unaffixed",
+            "idle",
+            "unloose",
+            "slack",
+            "at_large",
+            "lax",
+            "light"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Luke-warm",
+        "_TouchWord__meaning": "",
+        "_TouchWord__tags": [],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Lumpy",
+        "_TouchWord__meaning": "like or containing small sticky lumps",
+        "_TouchWord__tags": [
+            "lumpy",
+            "chunky"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Malleable",
+        "_TouchWord__meaning": "easily influenced",
+        "_TouchWord__tags": [
+            "tractile",
+            "pliable",
+            "malleable",
+            "ductile",
+            "tensile",
+            "pliant"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Metallic",
+        "_TouchWord__meaning": "a fabric made of a yarn that is partly or entirely of metal",
+        "_TouchWord__tags": [
+            "metallic",
+            "metal"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Materials"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Moist",
+        "_TouchWord__meaning": "slightly wet",
+        "_TouchWord__tags": [
+            "dampish",
+            "moist",
+            "damp"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Mosaic",
+        "_TouchWord__meaning": "art consisting of a design made of small pieces of colored stone or glass",
+        "_TouchWord__tags": [
+            "photomosaic",
+            "mosaic",
+            "arial_mosaic",
+            "Mosaic"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Materials"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Mushy",
+        "_TouchWord__meaning": "having the consistency of mush",
+        "_TouchWord__tags": [
+            "slushy",
+            "schmaltzy",
+            "drippy",
+            "schmalzy",
+            "mawkish",
+            "bathetic",
+            "soppy",
+            "mushy",
+            "hokey",
+            "sentimental",
+            "soupy",
+            "kitschy",
+            "maudlin"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Narrow",
+        "_TouchWord__meaning": "a narrow strait connecting two bodies of water",
+        "_TouchWord__tags": [
+            "nail_down",
+            "contract",
+            "constrict",
+            "specialize",
+            "specialise",
+            "constringe",
+            "narrow-minded",
+            "narrow",
+            "specify",
+            "pin_down",
+            "peg_down",
+            "narrow_down",
+            "minute"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Neat",
+        "_TouchWord__meaning": "clean or organized",
+        "_TouchWord__tags": [
+            "swell",
+            "full-strength",
+            "peachy",
+            "corking",
+            "groovy",
+            "bang-up",
+            "orderly",
+            "cracking",
+            "great",
+            "clean",
+            "bully",
+            "straight",
+            "refined",
+            "smashing",
+            "neat",
+            "not_bad",
+            "keen",
+            "nifty",
+            "slap-up",
+            "tasteful",
+            "dandy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Oily",
+        "_TouchWord__meaning": "containing an unusual amount of grease or oil",
+        "_TouchWord__tags": [
+            "oily",
+            "smarmy",
+            "oleaginous",
+            "soapy",
+            "unctuous",
+            "buttery",
+            "greasy",
+            "sebaceous",
+            "fulsome"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Ornamented",
+        "_TouchWord__meaning": "make more attractive by adding ornament, colour, etc.",
+        "_TouchWord__tags": [
+            "ornament",
+            "beautify",
+            "adorn",
+            "grace",
+            "embellish",
+            "decorate"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Padded",
+        "_TouchWord__meaning": "add details to",
+        "_TouchWord__tags": [
+            "aggrandise",
+            "padded",
+            "dramatize",
+            "plod",
+            "embellish",
+            "slog",
+            "footslog",
+            "cushiony",
+            "bolster",
+            "aggrandize",
+            "blow_up",
+            "tramp",
+            "trudge",
+            "fill_out",
+            "dramatise",
+            "pad",
+            "embroider",
+            "lard",
+            "cushioned"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Patterned",
+        "_TouchWord__meaning": "plan or create according to a model or models",
+        "_TouchWord__tags": [
+            "pattern",
+            "model",
+            "patterned"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Pleated",
+        "_TouchWord__meaning": "pleat or gather into a ruffle",
+        "_TouchWord__tags": [
+            "plicate",
+            "ruffle",
+            "pleat"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Pliable",
+        "_TouchWord__meaning": "susceptible to being led or directed",
+        "_TouchWord__tags": [
+            "tractile",
+            "bendable",
+            "flexible",
+            "pliable",
+            "malleable",
+            "waxy",
+            "elastic",
+            "ductile",
+            "fictile",
+            "tensile",
+            "pliant"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Pockmarked",
+        "_TouchWord__meaning": "mark with or as if with pockmarks",
+        "_TouchWord__tags": [
+            "pockmark",
+            "pocked",
+            "pockmarked",
+            "potholed"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Pointed",
+        "_TouchWord__meaning": "indicate a place, direction, person, or thing; either spatially or figuratively",
+        "_TouchWord__tags": [
+            "channelize",
+            "head",
+            "direct",
+            "place",
+            "signal",
+            "orient",
+            "betoken",
+            "manoeuvre",
+            "designate",
+            "maneuver",
+            "target",
+            "bespeak",
+            "repoint",
+            "channelise",
+            "taper",
+            "level",
+            "point",
+            "aim",
+            "luff",
+            "charge",
+            "indicate",
+            "pointed",
+            "show",
+            "steer",
+            "manoeuver",
+            "sharpen",
+            "guide"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Pointy",
+        "_TouchWord__meaning": "",
+        "_TouchWord__tags": [],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Polished",
+        "_TouchWord__meaning": "make (a surface) shine",
+        "_TouchWord__tags": [
+            "shine",
+            "fine-tune",
+            "milled",
+            "smooth",
+            "polish_up",
+            "refined",
+            "brush_up",
+            "svelte",
+            "round_off",
+            "refine",
+            "smoothen",
+            "polish",
+            "polished",
+            "urbane",
+            "down",
+            "dressed",
+            "round"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Pot-holed",
+        "_TouchWord__meaning": "",
+        "_TouchWord__tags": [],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Prickly",
+        "_TouchWord__meaning": "very irritable",
+        "_TouchWord__tags": [
+            "waspish",
+            "briary",
+            "setaceous",
+            "splenetic",
+            "prickly",
+            "barbed",
+            "barbellate",
+            "bristly",
+            "bristled",
+            "burry",
+            "thorny",
+            "spiny",
+            "burred",
+            "setose",
+            "briery"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Printed",
+        "_TouchWord__meaning": "put into print",
+        "_TouchWord__tags": [
+            "publish",
+            "print",
+            "impress"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Pulpy",
+        "_TouchWord__meaning": "like a pulp or overripe; not having stiffness",
+        "_TouchWord__tags": [
+            "squashy",
+            "pulpy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Ragged",
+        "_TouchWord__meaning": "treat cruelly",
+        "_TouchWord__tags": [
+            "bait",
+            "crucify",
+            "cod",
+            "rebuke",
+            "nark",
+            "irritate",
+            "get_to",
+            "take_to_task",
+            "vex",
+            "devil",
+            "twit",
+            "gravel",
+            "call_down",
+            "lambast",
+            "call_on_the_carpet",
+            "chide",
+            "berate",
+            "frustrate",
+            "annoy",
+            "reprimand",
+            "razz",
+            "tease",
+            "have_words",
+            "scold",
+            "chafe",
+            "get_at",
+            "ragged",
+            "rag",
+            "taunt",
+            "bother",
+            "dun",
+            "tantalize",
+            "tantalise",
+            "rally",
+            "trounce",
+            "chew_out",
+            "reproof",
+            "bedevil",
+            "rile",
+            "chew_up",
+            "torment",
+            "nettle",
+            "lambaste",
+            "ride",
+            "remonstrate",
+            "jaw",
+            "dress_down",
+            "bawl_out",
+            "lecture"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Rasping",
+        "_TouchWord__meaning": "uttering in an irritated tone",
+        "_TouchWord__tags": [
+            "grating",
+            "raspy",
+            "rasp",
+            "rough",
+            "gravelly",
+            "rasping",
+            "scratchy"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Razor-sharp",
+        "_TouchWord__meaning": "very clearly delineated",
+        "_TouchWord__tags": [
+            "razor-sharp"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Refined",
+        "_TouchWord__meaning": "improve or perfect by pruning or polishing",
+        "_TouchWord__tags": [
+            "fine-tune",
+            "graceful",
+            "elegant",
+            "elaborate",
+            "refined",
+            "rarify",
+            "neat",
+            "svelte",
+            "rectify",
+            "refine",
+            "processed",
+            "tasteful",
+            "polish",
+            "polished",
+            "urbane",
+            "down",
+            "complicate"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Ribbed",
+        "_TouchWord__meaning": "form vertical ribs by knitting",
+        "_TouchWord__tags": [
+            "roast",
+            "make_fun",
+            "ribbed",
+            "jest_at",
+            "rib",
+            "guy",
+            "ridicule",
+            "laugh_at",
+            "costate",
+            "poke_fun",
+            "blackguard"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Ridged",
+        "_TouchWord__meaning": "extend in ridges",
+        "_TouchWord__tags": [
+            "keeled",
+            "carinate",
+            "ridged",
+            "ridge",
+            "carinated"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Rigid",
+        "_TouchWord__meaning": "incapable of or resistant to bending",
+        "_TouchWord__tags": [
+            "inflexible",
+            "unbending",
+            "fixed",
+            "rigid",
+            "set",
+            "strict",
+            "stiff"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Rough",
+        "_TouchWord__meaning": "the part of a golf course bordering the fairway where the grass is not cut short",
+        "_TouchWord__tags": [
+            "raspy",
+            "jumpy",
+            "pugnacious",
+            "roughly",
+            "harsh",
+            "rough_out",
+            "grating",
+            "rocky",
+            "rough_in",
+            "gravelly",
+            "approximate",
+            "approximative",
+            "rasping",
+            "jolty",
+            "jolting",
+            "uncut",
+            "fierce",
+            "rough",
+            "scratchy",
+            "unsmooth",
+            "boisterous",
+            "crude",
+            "bumpy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Rubbery",
+        "_TouchWord__meaning": "having an elastic texture resembling rubber in flexibility or toughness",
+        "_TouchWord__tags": [
+            "gristly",
+            "rubbery",
+            "cartilaginous",
+            "rubberlike"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Rusty",
+        "_TouchWord__meaning": "covered with or consisting of rust",
+        "_TouchWord__tags": [
+            "rusty",
+            "rust-brown",
+            "hoary",
+            "rust",
+            "out_of_practice"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Rutted",
+        "_TouchWord__meaning": "be in a state of sexual excitement; of male mammals",
+        "_TouchWord__tags": [
+            "furrow",
+            "rut",
+            "groove",
+            "rutted",
+            "rutty"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Sandy",
+        "_TouchWord__meaning": "of hair color; pale yellowish to yellowish brown",
+        "_TouchWord__tags": [
+            "sandy",
+            "flaxen",
+            "sandlike",
+            "arenaceous"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Saturated",
+        "_TouchWord__meaning": "cause (a chemical compound, vapour, solution, magnetic material) to unite with the greatest possible amount of another substance",
+        "_TouchWord__tags": [
+            "saturated",
+            "saturate",
+            "pure",
+            "impregnate",
+            "concentrated"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Scalding",
+        "_TouchWord__meaning": "subject to harsh criticism",
+        "_TouchWord__tags": [
+            "blister",
+            "whip",
+            "scald"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Temperature",
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Scarred",
+        "_TouchWord__meaning": "mark with a scar",
+        "_TouchWord__tags": [
+            "scar",
+            "scarred",
+            "pock",
+            "mark",
+            "marred",
+            "pit"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Scored",
+        "_TouchWord__meaning": "gain points in a game",
+        "_TouchWord__tags": [
+            "score",
+            "mark",
+            "hit",
+            "tally",
+            "seduce",
+            "nock",
+            "make",
+            "grade",
+            "rack_up"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Scraped",
+        "_TouchWord__meaning": "scratch repeatedly",
+        "_TouchWord__tags": [
+            "scrape_up",
+            "grate",
+            "scratch_up",
+            "altercate",
+            "genuflect",
+            "scratch",
+            "argufy",
+            "dispute",
+            "quarrel",
+            "kowtow",
+            "come_up",
+            "scrap",
+            "trash",
+            "skin",
+            "scrape",
+            "junk"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Scratched",
+        "_TouchWord__meaning": "cause friction",
+        "_TouchWord__tags": [
+            "rub",
+            "come_up",
+            "inscribe",
+            "cancel",
+            "scratch_up",
+            "fray",
+            "itch",
+            "scrape",
+            "call_off",
+            "excise",
+            "chafe",
+            "engrave",
+            "strike",
+            "scrape_up",
+            "grave",
+            "scratch",
+            "expunge",
+            "scrub",
+            "fret"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Sculptured",
+        "_TouchWord__meaning": "create by shaping stone or wood or any other hard material",
+        "_TouchWord__tags": [
+            "grave",
+            "sculptural",
+            "sculpted",
+            "modeled",
+            "sculpt",
+            "sculptured",
+            "sculpture",
+            "sculpturesque",
+            "graven"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Serrated",
+        "_TouchWord__meaning": "make saw-toothed or jag the edge of",
+        "_TouchWord__tags": [
+            "saw-toothed",
+            "toothed",
+            "notched",
+            "serrated",
+            "serrate"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Shaggy",
+        "_TouchWord__meaning": "used of hair; thick and poorly groomed",
+        "_TouchWord__tags": [
+            "shaggy",
+            "bushy",
+            "shagged",
+            "shaggy-coated",
+            "shaggy-haired"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Sharp-edged",
+        "_TouchWord__meaning": "",
+        "_TouchWord__tags": [],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Sheer",
+        "_TouchWord__meaning": "turn sharply; change direction abruptly",
+        "_TouchWord__tags": [
+            "curve",
+            "plain",
+            "trend",
+            "unmixed",
+            "transparent",
+            "vaporous",
+            "downright",
+            "slew",
+            "out-and-out",
+            "diaphanous",
+            "slue",
+            "perpendicularly",
+            "filmy",
+            "cobwebby",
+            "bluff",
+            "unmingled",
+            "gossamer",
+            "gauzy",
+            "rank",
+            "swerve",
+            "absolute",
+            "sheer",
+            "veer",
+            "cut",
+            "bold",
+            "gauze-like",
+            "vapourous",
+            "right-down",
+            "see-through"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Verb"
+        ],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures",
+            "Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Silky",
+        "_TouchWord__meaning": "having a smooth, gleaming surface reflecting light",
+        "_TouchWord__tags": [
+            "silken",
+            "silky",
+            "silklike",
+            "satiny",
+            "sleek",
+            "slick"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Slick",
+        "_TouchWord__meaning": "a slippery smoothness",
+        "_TouchWord__tags": [
+            "slipperiness",
+            "pat",
+            "slick_down",
+            "satiny",
+            "sleek",
+            "cunning",
+            "sleek_down",
+            "wily",
+            "sly",
+            "silken",
+            "foxy",
+            "glossy",
+            "slip",
+            "slickness",
+            "guileful",
+            "silky",
+            "slick",
+            "tricky",
+            "slick_magazine",
+            "tricksy",
+            "silklike",
+            "knavish",
+            "glib",
+            "dodgy",
+            "crafty"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Slimy",
+        "_TouchWord__meaning": "covered with or resembling slime",
+        "_TouchWord__tags": [
+            "wretched",
+            "vile",
+            "unworthy",
+            "despicable",
+            "slimy",
+            "slimed",
+            "worthless",
+            "ugly"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Slippery",
+        "_TouchWord__meaning": "causing or tending to cause things to slip or slide",
+        "_TouchWord__tags": [
+            "slippery",
+            "slippy",
+            "tricky"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Smooth",
+        "_TouchWord__meaning": "the act of smoothing",
+        "_TouchWord__tags": [
+            "shine",
+            "still",
+            "smooth",
+            "placid",
+            "smooth_out",
+            "liquid",
+            "fluid",
+            "quiet",
+            "unruffled",
+            "bland",
+            "legato",
+            "smoothen",
+            "politic",
+            "fluent",
+            "polish",
+            "tranquil",
+            "suave"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Soaked",
+        "_TouchWord__meaning": "submerge in a liquid",
+        "_TouchWord__tags": [
+            "squiffy",
+            "plastered",
+            "crocked",
+            "pissed",
+            "dowse",
+            "pie-eyed",
+            "soaked",
+            "inebriate",
+            "wet",
+            "soused",
+            "soak",
+            "slopped",
+            "tight",
+            "imbue",
+            "loaded",
+            "souse",
+            "hit_it_up",
+            "gazump",
+            "cockeyed",
+            "sozzled",
+            "hock",
+            "hook",
+            "sop",
+            "surcharge",
+            "sloshed",
+            "douse",
+            "besotted",
+            "blind_drunk",
+            "fuddled",
+            "fleece",
+            "plume",
+            "pixilated",
+            "pluck",
+            "pawn",
+            "intoxicate",
+            "rob",
+            "blotto",
+            "overcharge",
+            "stiff",
+            "smashed",
+            "drench"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Soapy",
+        "_TouchWord__meaning": "resembling or having the qualities of soap",
+        "_TouchWord__tags": [
+            "oily",
+            "smarmy",
+            "soapy",
+            "oleaginous",
+            "saponaceous",
+            "unctuous",
+            "buttery",
+            "fulsome"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Sodden",
+        "_TouchWord__meaning": "wet through and through; thoroughly wet",
+        "_TouchWord__tags": [
+            "sodden",
+            "soppy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Soft",
+        "_TouchWord__meaning": "yielding readily to pressure or weight",
+        "_TouchWord__tags": [
+            "soft",
+            "piano",
+            "easy",
+            "indulgent",
+            "balmy",
+            "lenient",
+            "cushy",
+            "flaccid",
+            "mild",
+            "diffused",
+            "sonant",
+            "subdued",
+            "voiced",
+            "gentle",
+            "delicate",
+            "flabby",
+            "easygoing",
+            "diffuse"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Soggy",
+        "_TouchWord__meaning": "(of soil) soft and watery",
+        "_TouchWord__tags": [
+            "waterlogged",
+            "soggy",
+            "sloppy",
+            "inert",
+            "squashy",
+            "miry",
+            "sloughy",
+            "mucky",
+            "swampy",
+            "doughy",
+            "boggy",
+            "muddy",
+            "quaggy",
+            "torpid",
+            "sluggish",
+            "marshy"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Soiled",
+        "_TouchWord__meaning": "make soiled, filthy, or dirty",
+        "_TouchWord__tags": [
+            "dirty",
+            "colly",
+            "soiled",
+            "soil",
+            "begrime",
+            "bemire",
+            "grime",
+            "unclean"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Solid",
+        "_TouchWord__meaning": "matter that is solid at room temperature and pressure",
+        "_TouchWord__tags": [
+            "solid_state",
+            "strong",
+            "unanimous",
+            "substantial",
+            "self-colored",
+            "solid",
+            "upstanding",
+            "hearty",
+            "satisfying",
+            "firm",
+            "self-coloured",
+            "square",
+            "whole",
+            "solidness"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Sopping",
+        "_TouchWord__meaning": "give a conciliatory gift or bribe to",
+        "_TouchWord__tags": [
+            "sopping",
+            "soak",
+            "soaking",
+            "dripping",
+            "sop",
+            "souse",
+            "douse",
+            "dowse",
+            "soak_through",
+            "drench"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Spiky",
+        "_TouchWord__meaning": "having or as if having especially high-pitched spots",
+        "_TouchWord__tags": [
+            "spiky",
+            "peaky"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Spiny",
+        "_TouchWord__meaning": "having spines",
+        "_TouchWord__tags": [
+            "briary",
+            "setaceous",
+            "prickly",
+            "barbed",
+            "barbellate",
+            "bristled",
+            "bristly",
+            "burry",
+            "thorny",
+            "spinous",
+            "spiny",
+            "burred",
+            "setose",
+            "briery"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Spongy",
+        "_TouchWord__meaning": "easily squashed; resembling a sponge in having soft porous texture and compressibility",
+        "_TouchWord__tags": [
+            "squashy",
+            "spongelike",
+            "squishy",
+            "spongy"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Springy",
+        "_TouchWord__meaning": "elastic; rebounds readily",
+        "_TouchWord__tags": [
+            "live",
+            "bouncy",
+            "resilient",
+            "springy",
+            "lively"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Steely",
+        "_TouchWord__meaning": "resembling steel as in hardness",
+        "_TouchWord__tags": [
+            "steely"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Stiff",
+        "_TouchWord__meaning": "an ordinary man",
+        "_TouchWord__tags": [
+            "strong",
+            "squiffy",
+            "plastered",
+            "remains",
+            "crocked",
+            "pissed",
+            "firm",
+            "unshakable",
+            "pie-eyed",
+            "steadfast",
+            "soaked",
+            "unwavering",
+            "unbendable",
+            "soused",
+            "wet",
+            "slopped",
+            "tight",
+            "loaded",
+            "starchy",
+            "potent",
+            "cockeyed",
+            "sozzled",
+            "steady",
+            "rigid",
+            "corpse",
+            "unfaltering",
+            "stiffly",
+            "sloshed",
+            "besotted",
+            "blind_drunk",
+            "fuddled",
+            "cadaver",
+            "buckram",
+            "pixilated",
+            "blotto",
+            "clay",
+            "stiff",
+            "smashed"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            "  Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Sticky",
+        "_TouchWord__meaning": "having the sticky properties of an adhesive",
+        "_TouchWord__tags": [
+            "awkward",
+            "muggy",
+            "steamy",
+            "pasty",
+            "unenviable",
+            "embarrassing",
+            "gluey",
+            "gummy",
+            "mucilaginous",
+            "viscid",
+            "glutinous",
+            "sticky",
+            "viscous"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Stubbly",
+        "_TouchWord__meaning": "having a short growth of beard",
+        "_TouchWord__tags": [
+            "stubbly",
+            "bestubbled",
+            "stubbled"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Stuccoed",
+        "_TouchWord__meaning": "decorate with stucco work",
+        "_TouchWord__tags": [
+            "stucco"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Sweaty",
+        "_TouchWord__meaning": "",
+        "_TouchWord__tags": [],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Human",
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Swollen",
+        "_TouchWord__meaning": "increase in size, magnitude, number, or intensity",
+        "_TouchWord__tags": [
+            "swell_up",
+            "puff_up",
+            "intumesce",
+            "well_up",
+            "egotistic",
+            "swell",
+            "conceited",
+            "egotistical",
+            "swollen-headed",
+            "well",
+            "vain",
+            "self-conceited",
+            "swollen",
+            "tumefy",
+            "tumesce"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Syrupy",
+        "_TouchWord__meaning": "overly sweet",
+        "_TouchWord__tags": [
+            "honied",
+            "cloying",
+            "syrupy",
+            "treacly",
+            "honeyed",
+            "saccharine",
+            "viscous"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Thick",
+        "_TouchWord__meaning": "the location of something surrounded by other things",
+        "_TouchWord__tags": [
+            "chummy",
+            "duncical",
+            "thick",
+            "thickly",
+            "stocky",
+            "boneheaded",
+            "wooden-headed",
+            "duncish",
+            "slurred",
+            "thickset",
+            "dense",
+            "deep",
+            "thick-skulled",
+            "compact",
+            "midst",
+            "blockheaded",
+            "buddy-buddy",
+            "fatheaded",
+            "loggerheaded",
+            "heavyset",
+            "thickheaded"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Thin",
+        "_TouchWord__meaning": "lose thickness; become thin or thinner",
+        "_TouchWord__tags": [
+            "slender",
+            "reduce",
+            "lose_weight",
+            "slim",
+            "thin",
+            "slim_down",
+            "lean",
+            "tenuous",
+            "thinly",
+            "cut",
+            "fragile",
+            "melt_off",
+            "slight",
+            "dilute",
+            "sparse",
+            "flimsy",
+            "thin_out",
+            "slenderize"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Thorny",
+        "_TouchWord__meaning": "bristling with perplexities",
+        "_TouchWord__tags": [
+            "briary",
+            "setaceous",
+            "prickly",
+            "barbed",
+            "barbellate",
+            "bristled",
+            "bristly",
+            "thorny",
+            "burry",
+            "spiny",
+            "burred",
+            "setose",
+            "briery"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Throbbing",
+        "_TouchWord__meaning": "an instance of rapid strong pulsation (of the heart)",
+        "_TouchWord__tags": [
+            "pounding",
+            "throbbing",
+            "shudder",
+            "pulsate",
+            "shiver",
+            "pulse",
+            "throb",
+            "thrill"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Human",
+            "Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Tiled",
+        "_TouchWord__meaning": "cover with tiles",
+        "_TouchWord__tags": [
+            "tiled",
+            "tile"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Tough",
+        "_TouchWord__meaning": "someone who learned to fight in the streets rather than being formally trained in the sport of boxing",
+        "_TouchWord__tags": [
+            "knotty",
+            "thug",
+            "sturdy",
+            "hoodlum",
+            "toughie",
+            "yobbo",
+            "hard",
+            "hood",
+            "elusive",
+            "hooligan",
+            "baffling",
+            "ruffian",
+            "problematical",
+            "tough",
+            "bully",
+            "street_fighter",
+            "yob",
+            "toughened",
+            "strong-armer",
+            "roughneck",
+            "rowdy",
+            "ruffianly",
+            "goon",
+            "punk",
+            "rugged",
+            "problematic",
+            "yobo",
+            "bad"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Tweedy",
+        "_TouchWord__meaning": "of textiles; having a rough surface",
+        "_TouchWord__tags": [
+            "slubbed",
+            "nubby",
+            "nubbly",
+            "tweedy",
+            "homespun"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Unblemished",
+        "_TouchWord__meaning": "free from physical or moral spots or stains",
+        "_TouchWord__tags": [
+            "unmarred",
+            "unblemished",
+            "unmutilated"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Unbreakable",
+        "_TouchWord__meaning": "impossible to break especially under ordinary usage",
+        "_TouchWord__tags": [
+            "unbreakable"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Uncomfortable",
+        "_TouchWord__meaning": "conducive to or feeling mental discomfort",
+        "_TouchWord__tags": [
+            "uncomfortable"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Human"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Uneven",
+        "_TouchWord__meaning": "not even or uniform as e.g. in shape or texture",
+        "_TouchWord__tags": [
+            "scratchy",
+            "uneven",
+            "odd",
+            "spotty",
+            "mismatched"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Unyielding",
+        "_TouchWord__meaning": "stubbornly unyielding; ; ; ; - T.S.Eliot",
+        "_TouchWord__tags": [
+            "tenacious",
+            "pertinacious",
+            "unyielding",
+            "dour",
+            "dogged",
+            "persistent"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Varnished",
+        "_TouchWord__meaning": "cover with varnish",
+        "_TouchWord__tags": [
+            "stained",
+            "varnished",
+            "seal",
+            "varnish"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Velvety",
+        "_TouchWord__meaning": "smooth and soft to sight or hearing or touch or taste",
+        "_TouchWord__tags": [
+            "velvety",
+            "velvet",
+            "velvet-textured"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            "  Sensations",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Veneered",
+        "_TouchWord__meaning": "cover with veneer",
+        "_TouchWord__tags": [
+            "veneer"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Vibrating",
+        "_TouchWord__meaning": "shake, quiver, or throb; move back and forth rapidly, usually in an uncontrolled manner",
+        "_TouchWord__tags": [
+            "vibrate",
+            "thrill",
+            "tickle",
+            "resonate",
+            "vacillate",
+            "hover",
+            "oscillate"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            "  Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Viscous",
+        "_TouchWord__meaning": "having a relatively high resistance to flow",
+        "_TouchWord__tags": [
+            "pasty",
+            "syrupy",
+            "gluey",
+            "gummy",
+            "mucilaginous",
+            "viscid",
+            "glutinous",
+            "sticky",
+            "viscous"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Warm",
+        "_TouchWord__meaning": "get warm or warmer",
+        "_TouchWord__tags": [
+            "ardent",
+            "strong",
+            "quick",
+            "tender",
+            "fond",
+            "lovesome",
+            "warm_up",
+            "warmly",
+            "warm",
+            "affectionate"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Temperature"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Waterlogged",
+        "_TouchWord__meaning": "(of soil) soft and watery",
+        "_TouchWord__tags": [
+            "waterlogged",
+            "soggy",
+            "sloppy",
+            "squashy",
+            "miry",
+            "sloughy",
+            "mucky",
+            "swampy",
+            "boggy",
+            "muddy",
+            "quaggy",
+            "marshy"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Wavy",
+        "_TouchWord__meaning": "(of hair) having waves",
+        "_TouchWord__tags": [
+            "rippled",
+            "crinkly",
+            "wavy",
+            "wavelike",
+            "crinkled"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Wet",
+        "_TouchWord__meaning": "wetness caused by water",
+        "_TouchWord__tags": [
+            "squiffy",
+            "plastered",
+            "crocked",
+            "pissed",
+            "pie-eyed",
+            "soaked",
+            "wet",
+            "soused",
+            "slopped",
+            "tight",
+            "moisture",
+            "lactating",
+            "loaded",
+            "cockeyed",
+            "sozzled",
+            "sloshed",
+            "besotted",
+            "blind_drunk",
+            "fuddled",
+            "pixilated",
+            "blotto",
+            "stiff",
+            "smashed"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Verb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Sensations"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Wide",
+        "_TouchWord__meaning": "having great (or a certain) extent from one side to the other",
+        "_TouchWord__tags": [
+            "spacious",
+            "wide-eyed",
+            "panoptic",
+            "wide-cut",
+            "wide_of_the_mark",
+            "encompassing",
+            "all-encompassing",
+            "wide",
+            "across-the-board",
+            "broad",
+            "extensive",
+            "blanket",
+            "widely",
+            "all-embracing",
+            "astray",
+            "all-inclusive",
+            "full"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Size"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Wiry",
+        "_TouchWord__meaning": "lean and sinewy",
+        "_TouchWord__tags": [
+            "stringy",
+            "wiry"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Withered",
+        "_TouchWord__meaning": "wither, as with a loss of moisture",
+        "_TouchWord__tags": [
+            "shrivelled",
+            "sear",
+            "dried-up",
+            "withered",
+            "wizen",
+            "wither",
+            "fade",
+            "shrink",
+            "sere",
+            "shrivel_up",
+            "wizened",
+            "shrunken",
+            "shrivel",
+            "shriveled"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Woollen",
+        "_TouchWord__meaning": "a fabric made from the hair of sheep",
+        "_TouchWord__tags": [
+            "woollen",
+            "woolen",
+            "wool"
+        ],
+        "_TouchWord__partOfSpeech": [],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Woven",
+        "_TouchWord__meaning": "interlace by or as if by weaving",
+        "_TouchWord__tags": [
+            "waver",
+            "weave",
+            "wander",
+            "thread",
+            "meander",
+            "woven",
+            "interweave",
+            "wind",
+            "tissue"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Materials",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Wrinkled",
+        "_TouchWord__meaning": "gather or contract into wrinkles or folds; pucker",
+        "_TouchWord__tags": [
+            "crumple",
+            "scrunch_up",
+            "furrow",
+            "wrinkly",
+            "crinkle",
+            "crease",
+            "unironed",
+            "wrinkle",
+            "rumple",
+            "wrinkled",
+            "ruckle",
+            "purse",
+            "crisp",
+            "scrunch"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Yielding",
+        "_TouchWord__meaning": "a verbal act of admitting defeat",
+        "_TouchWord__tags": [
+            "bear",
+            "concede",
+            "grant",
+            "relent",
+            "render",
+            "afford",
+            "succumb",
+            "ease_up",
+            "give_way",
+            "give",
+            "cede",
+            "move_over",
+            "conceding",
+            "give_in",
+            "yield",
+            "buckle_under",
+            "soften",
+            "surrender",
+            "pay",
+            "return",
+            "concession",
+            "knuckle_under",
+            "giving_up",
+            "generate",
+            "yielding"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adjective"
+        ],
+        "_TouchWord__classification": [
+            " General words for touch"
+        ]
+    },
+    {
+        "py/object": "touchDescriptors.touchWord.TouchWord",
+        "_TouchWord__word": "Zigzag",
+        "_TouchWord__meaning": "an angular shape characterized by sharp turns in alternating directions",
+        "_TouchWord__tags": [
+            "zig-zag",
+            "zigzag",
+            "zag",
+            "crank",
+            "zig"
+        ],
+        "_TouchWord__partOfSpeech": [
+            "Adverb",
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "_TouchWord__classification": [
+            " Surfaces",
+            " Textures"
+        ]
+    }
+]

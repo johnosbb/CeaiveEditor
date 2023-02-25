@@ -1,0 +1,141 @@
+Amber : #FFBF00 : Yellow,Brown
+Amethyst : #9966CC : Purple
+Apricot : #FBCEB1 : Orange
+Aquamarine : #7FFFD4	: Blue,Green
+Avocado : #568203 : Green
+Ash : #B2BEB5 : Grey,Gray
+Azure : #F0FFFF	: Blue
+Baby Blue :  #89CFF0 : Blue
+Beige : #F5F5DC : Yellow
+Bisque : #FFE4C4 : Yellow	
+Black : #000000	: Black
+Blanche Dalmond : #FFEBCD : Yellow
+Blue : #0000FF	: Blue
+Blue Violet : #8A2BE2	: Blue,Red
+Brown : #A52A2A : Brown
+Burlywood : #DEB887	: Brown
+Cadet Blue : #5F9EA0	: Blue
+Chartreuse : #7FFF00 : Green
+Chocolate : #D2691E	: Brown
+Coral : #FF7F50	: Orange,Red
+Cornflower Blue : #6495ED : Blue
+Cornsilk : #FFF8DC	: White,Yellow
+Crimson : #DC143C	: Red
+Cyan : #00FFFF : Blue
+Dark Blue : #00008B	 : Blue
+Dark Cyan : #008B8B	: Blue
+Dark Goldenrod : #B8860B Brown:Yellow
+Dark Gray : #A9A9A9	: Grey,Gray
+Dark Green : #006400	: Green
+Dark khaki : #BDB76B : Green
+Dark Magenta : #8B008B	: Purple
+Dark Olive Green : #556B2F	: Green
+Dark Orange : #FF8C00 : Orange
+Dark Orchid : #9932CC	: Purple
+Dark Red : #8B0000	: Red
+Dark Salmon : #E9967A : Red
+Dark Seagreen : #8DBC8F	: Green
+Dark Slate Blue : #483D8B	: Blue
+Dark Slate Gray : #2F4F4F : Grey,Gray
+Dark Turquoise : #00DED1	: Blue
+Dark Violet : #9400D3	: Purple
+Deep Pink : #FF1493 : Pink
+Deep Sky Blue : #00BFFF	: Blue
+Dim Gray : #696969	: Grey,Gray
+Dodger Blue : #1E90FF : Blue
+Firebrick : #B22222	: Red,Brown
+Floral White : #FFFAF0	: White
+Forest Green : #228B22 : Green
+Fuchsia : #FF00FF	: Purple
+Gainsboro : #DCDCDC	: Grey,Gray
+Ghost White : #F8F8FF : White
+Gold : #FFD700	: Yellow
+Goldenrod : #DAA520	: Yellow,Brown
+Gray : #808080 : Grey,Gray
+Green : #008000	: Green
+Green Yellow : #ADFF2F	: Green
+Honeydew : #F0FFF0 : Green
+Hot Pink : #FF69B4	: Pink
+Indian Red : #CD5C5C : Red	
+Indigo : #4B0082 : Purple
+Ivory : #FFFFF0	: White
+Khaki : #F0E68C	: Green,Yellow
+Lavender : #E6E6FA : Blue
+Lavender Blush : #FFF0F5 : Pink	
+Lawngreen : #7CFC00	: Green
+Lemon chiffon : #FFFACD : Yellow
+Light Blue : #ADD8E6	: Blue
+Light Coral : #F08080	: Red,Pink
+Light Cyan : #E0FFFF : Blue
+Light Goldenrod Yellow : #FAFAD2 : Yellow	
+Light Green : #90EE90	: Green
+Light Grey : #D3D3D3 : Grey
+Light Pink : #FFB6C1	: Pink
+Light Salmon : #FFA07A	: Pink
+Light Seagreen : #20B2AA : Green
+Light Sky Blue : #87CEFA	: Blue
+Light Slate Gray : #778899	: Blue,Grey,Gray
+Light Steel Blue : #B0C4DE : Blue
+Light Yellow : #FFFFE0	: Yellow
+Lime : #00FF00	: Green
+Lime Green : #32CD32 : Green
+Linen : #FAF0E6	: White
+Magenta : #FF00FF	: Purple
+Maroon : #800000 : Red
+Medium Aquamarine : #66CDAA	: Blue,Green
+Medium Blue : #0000CD	: Blue
+Medium Orchid : #BA55D3 : Purple
+Medium purple : #9370DB	: Purple
+Medium Sea Green : #3CB371	 : Green
+Medium Slate Blue : #7B68EE : Green
+Medium spring Green : #00FA9A	 : Green
+Medium Turquoise : #48D1CC	: Blue
+Medium Violet Red : #C71585 : Pink,Red
+Midnight Blue : #191970	: Blue
+Mint Cream : #F5FFFA	: White,Green
+Misty Rose : #FFE4E1 : White,Red
+Moccasin : #FFE4B5	: Yellow,White
+Navajo White : #FFDEAD	: White
+Navy : #000080 : Blue
+Old lace : #FDF5E6	: White
+Olive Drab : #6B8E23	 : Green
+Orange : #FFA500 : Orange
+Orange Red : #FF4500 : Orange,Red	
+Orchid : #DA70D6	: Pink
+Pale Goldenrod : #EEE8AA : Yellow
+Pale Green : #98FB98	: Green
+Pale Turquoise : #AFEEEE	: Blue
+Pale Violet Red : #DB7093 : Pink,Red
+Papaya Whip : #FFEFD5	: Brown,Yellow
+Peach Puff : #FFDAB9 : Brown
+Peru : #CD853F : Brown
+Pink : #FFC8CB	: Pink
+Plum : #DDA0DD	: Purple
+Powder Blue : #B0E0E6 : Blue
+Purple : #800080	: Purple
+Red : #FF0000	: Red
+Rosy Brown : #BC8F8F : Brown
+Royal Blue : #4169E1	: Blue
+Saddle Brown : #8B4513	: Brown
+Salmon : #FA8072 : Pink,Red
+Sandy Brown : #F4A460	: Brown
+Sea Green : #2E8B57	: Green
+Sea Shell : #FFF5EE : White
+Sienna : #A0522D	: Brown
+Silver : #C0C0C0	: Silver
+Sky Blue : #87CEEB : Blue
+Slate Blue : #6A5ACD	 : Blue
+Snow : #FFFAFA	: White
+Spring Green : #00FF7F : Green
+Steelblue : #4682B4	: Blue
+Tan : #D2B48C	: Brown
+Teal : #008080 : Blue
+Thistle : #D8BFD8	: Purple
+Tomato : #FF6347	: Red
+Turquoise : #40E0D0 : Blue,Green
+Violet : #EE82EE	: Purple
+Wheat : #F5DEB3	: Yellow,Brown
+White : #FFFFFF : White
+Whitesmoke : #F5F5F5	: White
+Yellow : #FFFF00	: Yellow
+Yellow Green : #9ACD32 : Green,Yellow

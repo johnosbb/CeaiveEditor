@@ -7,6 +7,7 @@ import thesaurusWordnet
 from nltk.corpus import wordnet
 import logging
 
+
 def find_tags(target):
     thesaurus = thesaurusWordnet.ThesaurusWordnet()
     tags = thesaurus.suggestions(target)
@@ -45,7 +46,7 @@ def find_all_pos_for_word(target):
 
 collection = BeautifulWordsCollection()
 count = 0
-with open("../literary_resources/words.txt", "r") as filestream:
+with open("literary_resources/words.txt", "r") as filestream:
     for line in filestream:
         currentline = line.split(":")
         sections = len(currentline)
