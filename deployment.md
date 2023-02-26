@@ -54,6 +54,11 @@ python -m PyInstaller lyrical.py
 ```
 
 
+### Issues packaging SpellChecker
+
+https://stackoverflow.com/questions/46474588/pyinstaller-how-to-include-data-files-from-an-external-package-that-was-install
+
+
 ## Nuitka
 
 - [Home Page](https://www.nuitka.net/)
