@@ -62,4 +62,5 @@ pip install nuitka
 
 ```sh
 python3 -m nuitka --follow-imports main.py
+python.exe -m nuitka --standalone --onefile --enable-plugin=pyqt5 lyrical.py
 ```
