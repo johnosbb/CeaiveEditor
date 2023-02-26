@@ -47,6 +47,13 @@ This can be fixed by:
 pyinstaller --paths=subfolder subfolder/script.py.
 ```
 
+On Windows 11
+
+```sh
+python -m PyInstaller lyrical.py
+```
+
+
 ## Nuitka
 
 - [Home Page](https://www.nuitka.net/)
