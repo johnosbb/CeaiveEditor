@@ -59,6 +59,12 @@ On Linux with SpellChecker
 python -m PyInstaller --add-binary="spellchecker/resources/en.json.gz:spellchecker/resources" main.py
 ```
 
+```sh
+python -m PyInstaller --add-binary="spellchecker/resources/en.json.gz;spellchecker/resources" main.py
+```
+
+__Note__: that on windows we use the ; instead of the :
+
 ### Issues packaging SpellChecker
 
 - https://stackoverflow.com/questions/46474588/pyinstaller-how-to-include-data-files-from-an-external-package-that-was-install
