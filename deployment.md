@@ -64,6 +64,8 @@ On Windows 11
 
 ```sh
 python -m PyInstaller --add-binary="spellchecker/resources/en.json.gz;spellchecker/resources" main.py
+# or create a spec file
+pyi-makespec --add-binary="spellchecker/resources/en.json.gz;spellchecker/resources" main.py
 ```
 
 __Note__: that on windows we use the ; instead of the :
