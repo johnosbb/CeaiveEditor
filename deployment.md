@@ -53,6 +53,11 @@ On Windows 11
 python -m PyInstaller lyrical.py
 ```
 
+On Linux with SpellChecker
+
+```sh
+python -m PyInstaller --add-binary="spellchecker/resources/en.json.gz:spellchecker/resources" main.py
+```
 
 ### Issues packaging SpellChecker
 
