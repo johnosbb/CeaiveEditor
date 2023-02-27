@@ -70,6 +70,8 @@ pyi-makespec --add-binary="spellchecker/resources/en.json.gz;spellchecker/resour
 
 __Note__: that on windows we use the ; instead of the :
 
+- [Adding binaries and resources](https://plainenglish.io/blog/packaging-data-files-to-pyinstaller-binaries-6ed63aa20538)
+
 ### Issues packaging SpellChecker
 
 - https://stackoverflow.com/questions/46474588/pyinstaller-how-to-include-data-files-from-an-external-package-that-was-install
