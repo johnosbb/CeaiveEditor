@@ -59,6 +59,9 @@ On Linux with SpellChecker
 python -m PyInstaller --add-binary="spellchecker/resources/en.json.gz:spellchecker/resources" main.py
 ```
 
+On Windows 11
+
+
 ```sh
 python -m PyInstaller --add-binary="spellchecker/resources/en.json.gz;spellchecker/resources" main.py
 ```
