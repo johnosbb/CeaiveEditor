@@ -47,6 +47,37 @@ This can be fixed by:
 pyinstaller --paths=subfolder subfolder/script.py.
 ```
 
+On Windows 11
+
+```sh
+python -m PyInstaller lyrical.py
+```
+
+On Linux with SpellChecker
+
+```sh
+python -m PyInstaller --onefile --clean --add-binary="spellchecker/resources/en.json.gz:spellchecker/resources" main.py
+```
+
+On Windows 11
+
+
+```sh
+python -m PyInstaller --add-binary="spellchecker/resources/en.json.gz;spellchecker/resources" main.py
+# or create a spec file
+pyi-makespec --add-binary="spellchecker/resources/en.json.gz;spellchecker/resources" main.py
+```
+
+__Note__: that on windows we use the ; instead of the :
+
+- [Adding binaries and resources](https://plainenglish.io/blog/packaging-data-files-to-pyinstaller-binaries-6ed63aa20538)
+
+### Issues packaging SpellChecker
+
+- https://stackoverflow.com/questions/46474588/pyinstaller-how-to-include-data-files-from-an-external-package-that-was-install
+- https://github.com/barrust/pyspellchecker/issues/64
+
+
 ## Nuitka
 
 - [Home Page](https://www.nuitka.net/)
@@ -62,4 +93,5 @@ pip install nuitka
 
 ```sh
 python3 -m nuitka --follow-imports main.py
+python.exe -m nuitka --standalone --onefile --enable-plugin=pyqt5 lyrical.py
 ```

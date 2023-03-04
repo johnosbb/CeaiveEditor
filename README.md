@@ -110,6 +110,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Layout Options](https://realpython.com/python-pyqt-layout/)
 - [Resource files](https://www.pythonguis.com/tutorials/packaging-data-files-pyqt5-with-qresource-system/)
 - [Styling with Style Sheets](https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qpushbutton)
+- [SplashScreens](https://www.youtube.com/watch?v=TsatZJfzb_Q&t=162s)
 
 ## Editor References
 - [Python Rich Text Editor](https://www.pythonguis.com/examples/python-rich-text-editor/)
