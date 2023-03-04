@@ -2,13 +2,15 @@ import json
 import jsonpickle
 from smells.smell import Smell
 import logging
+import os
 
 SMELLS = "literary_resources/smells.json"
 
 
 class SmellsCollection():
-    def __init__(self):
+    def __init__(self, resourcePath=""):
         self.__smellList = []
+        self.__resourcePath = os.path.join(resourcePath, SMELLS)
 
     @property
     def smellList(self):
@@ -27,14 +29,14 @@ class SmellsCollection():
 
     def save(self):
         # saves the smells to a file
-        with open(SMELLS, "w") as outfile:
+        with open(self.__resourcePath, "w") as outfile:
             jsonObj = jsonpickle.encode(self.smellList, keys=True)
             outfile.write(jsonObj)
 
     def load(self):
         # loads the smells from a file
         # Opening JSON file
-        with open(SMELLS, 'r') as infile:
+        with open(self.__resourcePath, 'r') as infile:
             smells = infile.read()
             self.smellList = jsonpickle.decode(smells, keys=True)
         return len(self.smellList)

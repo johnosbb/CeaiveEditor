@@ -1,13 +1,15 @@
 import json
 import jsonpickle
 from colours.colour import Colour
-
+import os
+import logging
 COLOURS = "literary_resources/colours.json"
 
 
 class ColoursCollection():
-    def __init__(self):
+    def __init__(self, resourcePath):
         self.__colourList = []
+        self.__resourcePath = os.path.join(resourcePath, COLOURS)
 
     @property
     def colourList(self):
@@ -26,14 +28,14 @@ class ColoursCollection():
 
     def save(self):
         # saves the colours to a file
-        with open(COLOURS, "w") as outfile:
+        with open(self.__resourcePath, "w") as outfile:
             jsonObj = jsonpickle.encode(self.colourList, keys=True)
             outfile.write(jsonObj)
 
     def load(self):
         # loads the colours from a file
         # Opening JSON file
-        with open(COLOURS, 'r') as infile:
+        with open(self.__resourcePath, 'r') as infile:
             colours = infile.read()
             self.colourList = jsonpickle.decode(colours, keys=True)
         return len(self.colourList)

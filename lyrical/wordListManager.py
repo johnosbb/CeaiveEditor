@@ -36,8 +36,13 @@ NUMBER_OF_SOUND_COLUMNS = 3
 
 
 class WordListManager:
+
+    def __init__(self, resourcePath=""):
+        self.__resourcePath = resourcePath
+
     def createBeautifulWordsModel(self, parent):
-        aBeautifulWordsCollection = BeautifulWordsCollection()
+        aBeautifulWordsCollection = BeautifulWordsCollection(
+            self.__resourcePath)
         numberOfRows = aBeautifulWordsCollection.load()
         model = QStandardItemModel(
             numberOfRows, NUMBER_OF_BW_COLUMNS, parent)  # rows columns
@@ -63,7 +68,7 @@ class WordListManager:
         return model
 
     def createWordsForSmellModel(self, parent):
-        aSmellWordsCollection = SmellsCollection()
+        aSmellWordsCollection = SmellsCollection(self.__resourcePath)
         numberOfRows = aSmellWordsCollection.load()
         model = QStandardItemModel(
             numberOfRows, NUMBER_OF_SMELL_COLUMNS, parent)  # rows columns
@@ -83,7 +88,7 @@ class WordListManager:
         return model
 
     def createWordsForSoundModel(self, parent):
-        aSoundsCollection = SoundsCollection()
+        aSoundsCollection = SoundsCollection(self.__resourcePath)
         numberOfRows = aSoundsCollection.load()
         model = QStandardItemModel(
             numberOfRows, NUMBER_OF_SOUND_COLUMNS, parent)  # rows columns
@@ -104,7 +109,7 @@ class WordListManager:
         return model
 
     def createWordsForColourModel(self, parent):
-        aColoursCollection = ColoursCollection()
+        aColoursCollection = ColoursCollection(self.__resourcePath)
         numberOfRows = aColoursCollection.load()
         model = QStandardItemModel(
             numberOfRows, NUMBER_OF_WFC_COLUMNS, parent)  # rows columns
@@ -129,7 +134,7 @@ class WordListManager:
         return model
 
     def createWordsForTouchDescriptorsModel(self, parent):
-        aTouchCollection = TouchWordsCollection()
+        aTouchCollection = TouchWordsCollection(self.__resourcePath)
         numberOfRows = aTouchCollection.load()
         model = QStandardItemModel(
             numberOfRows, NUMBER_OF_WFC_COLUMNS, parent)  # rows columns
@@ -151,7 +156,7 @@ class WordListManager:
         return model
 
     def createWordsForColourDescriptorsModel(self, parent):
-        aDescriptorsCollection = DescriptorsCollection()
+        aDescriptorsCollection = DescriptorsCollection(self.__resourcePath)
         numberOfRows = aDescriptorsCollection.load()
         model = QStandardItemModel(
             numberOfRows, NUMBER_OF_WFC_COLUMNS, parent)  # rows columns

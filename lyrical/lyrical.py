@@ -58,19 +58,31 @@ def splitext(p):
     return os.path.splitext(p)[1].lower()
 
 
+class SplashScreen(QSplashScreen):
+    def __init__(self):
+        super(QSplashScreen, self).__init__()
+        self.setWindowFlag(Qt.WindowStaysOnTopHint)
+        pixmap = QPixmap("splash.png")
+        self.setPixmap(pixmap)
+
+    def closeSplash(self):
+        self.close()
+
+    def delayedClose(self):
+        QTimer.singleShot(2000, self.closeSplash)
+
+
 class MainWindow(QMainWindow):
 
     def __init__(self, appContext, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-        self.languageTool = language_tool_python.LanguageTool('en-GB')
         self.load_settings()
         self.colorTheme = Theme()
         self.setWindowIcon(QIcon(":/images/images/icon.ico"))
-        # if(self.theme == "light"):
-        #     self.theme = theme.lightPalette
-        #     appContext.setPalette(palettes.light())
-        # else:
-        #     appContext.setPalette(palettes.grey())
+        self.resourcePath = getattr(
+            sys, '_MEIPASS', os.path.abspath(os.path.dirname(__file__)))
+        logging.debug(
+            "The resource path is located at {}".format(self.resourcePath))
         if(self.theme == "light"):
             self.palette = self.colorTheme.lightPalette
             appContext.setPalette(self.palette)
@@ -82,16 +94,12 @@ class MainWindow(QMainWindow):
         # this is using the editor class based on QTextEdit above, this is a new member declaration
         self.speller = spellCheckWord.SpellCheckWord(
             self.getWords(), self.addToDictionary)
-
         self.thesaurus = thesaurusWebster.ThesaurusWebster(self.websterAPIkey
                                                            )
-
         self.compliment = describeWord.DescribeWord(
         )
-
         self.editor = textEditor.TextEdit(
             self.speller, self.thesaurus, self.compliment)
-
         self.editor.showSuggestionSignal.connect(self.updateSuggestions)
         self.editor.updateStatusSignal.connect(self.update_status_bar)
         # Setup the QTextEdit editor configuration
@@ -99,18 +107,6 @@ class MainWindow(QMainWindow):
         self.editor.selectionChanged.connect(self.update_format)
         self.editor.cursorPositionChanged.connect(self.cursorPosition)
         self.editor.installEventFilter(self)
-        # self.load_font()
-        self.grammarCheck = GrammarCorrectionWindow(self.languageTool)
-        # For some reason setting a default font seems very problematic, it causes the documents to have a mix of fonts in one paragraph
-        # Initialize default font size for the editor.
-        # font = QFont('Times', 12)
-        # self.defaultFont = QFont()
-        # self.defaultFont.setFamily(self.defaultFont.defaultFamily())
-        # self.editor.setFont(self.defaultFont)
-        # logging.debug("lyrical: Default font set to {}".format(
-        #     self.defaultFont.toString()))
-        # We need to repeat the size to init the current format.
-        # self.editor.setFontPointSize(12)
         self.projectType = "Novel"
         # # enable this for a frameless window
         # # Borderless window code begins
@@ -120,40 +116,45 @@ class MainWindow(QMainWindow):
         # self.setStyleSheet(
         #     "QMainWindow{background-color: darkgray;border: 1px solid black}")
         # # Borderless window code ends
-
         # self.path holds the path of the currently open file.
         # If none, we haven't got a file open yet (or creating new).
         self.path = None
         self.originalFormat = self.editor.currentCharFormat()
         layout.addWidget(self.editor)
-
         container = QWidget()
-
         container.setLayout(layout)
         self.setCentralWidget(container)
-
         self.setup_status_bar()
         self.define_file_toolbar()
         self.define_edit_toolbar()
         self.define_format_toolbar()
-
         self.addToolBarBreak()
         self.define_style_toolbar()
         self.define_word_list_toolbar()
         self.addToolBarBreak()
         self.define_suggestions_toolbar()
         self.defineFileExplorerTreeView()
-
         # Initialize.
         self.update_format()
         self.update_title()
         self.oldPos = self.pos()
+        self.setWindowFlag(Qt.WindowStaysOnTopHint)
+        # print("Loading language tool")
+        # self.languageTool = language_tool_python.LanguageTool('en-GB')
+        # print("Loaded language tool")
+        # self.grammarCheck = GrammarCorrectionWindow(self.languageTool)
 
-        self.show()
+        # self.show()
 
     @staticmethod
     def restart():
         MainWindow.singleton = MainWindow()
+
+    def loadInBackground(self):
+        print("Loading language tool")
+        self.languageTool = language_tool_python.LanguageTool('en-GB')
+        print("Loaded language tool")
+        self.grammarCheck = GrammarCorrectionWindow(self.languageTool)
 
     def define_suggestions_toolbar(self):
         """
@@ -870,27 +871,27 @@ class MainWindow(QMainWindow):
                 "Functional Word Score: " + str(count), 2000)
 
     def showBeautifulWords(self):
-        wordListManager = WordListManager()
+        wordListManager = WordListManager(self.resourcePath)
         wordListManager.createBeautifulWordsList(self)
 
     def showWordsForColor(self):
-        wordListManager = WordListManager()
+        wordListManager = WordListManager(self.resourcePath)
         wordListManager.createWordsForColorList(self)
 
     def showWordsForSmell(self):
-        wordListManager = WordListManager()
+        wordListManager = WordListManager(self.resourcePath)
         wordListManager.createWordsForSmellList(self)
 
     def showWordsForSound(self):
-        wordListManager = WordListManager()
+        wordListManager = WordListManager(self.resourcePath)
         wordListManager.createWordsForSoundList(self)
 
     def showWordsForTouch(self):
-        wordListManager = WordListManager()
+        wordListManager = WordListManager(self.resourcePath)
         wordListManager.createWordsForTouchDescriptorsList(self)
 
     def showDescriptorsForColor(self):
-        wordListManager = WordListManager()
+        wordListManager = WordListManager(self.resourcePath)
         wordListManager.createWordsForColorDescriptorsList(self)
     # Create a dockable Project APIKey
 
@@ -1503,6 +1504,8 @@ class MainWindow(QMainWindow):
 if __name__ == '__main__':
 
     app = QApplication(sys.argv)  # create the main app
+    splash = SplashScreen()
+    splash.show()
     # MainWindow.restart()
     # When creating a QSettings object, you must pass the name of your company or organization as well as the name of your application.
     QCoreApplication.setApplicationName(ORGANIZATION_NAME)
@@ -1512,8 +1515,16 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG, filename="lyrical.log", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s", force=True)
     logging.info("lyrical: Starting Lyrical Editor")
-
     app.setStyle("fusion")
-    # app.setPalette(palettes.light())
+    try:
+        if getattr(sys, 'frozen', False):
+            pyi_splash.close()
+    except Exception as error:
+        logging.info("Not running as a pyinstaller executable")
     window = MainWindow(app)
+    window.loadInBackground()
+    splash.delayedClose()
+    print("Starting to show")
+    window.show()
+    style.updates()
     app.exec_()

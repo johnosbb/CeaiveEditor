@@ -1,14 +1,16 @@
 import json
 import jsonpickle
-
+import logging
 from touchDescriptors.touchWord import TouchWord
+import os
 
-BEAUTIFUL_WORDS = "literary_resources/touch_words.json"
+TOUCH_WORDS = "literary_resources/touch_words.json"
 
 
 class TouchWordsCollection():
-    def __init__(self):
+    def __init__(self, resourcePath=""):
         self.__wordList = []
+        self.__resourcePath = os.path.join(resourcePath, TOUCH_WORDS)
 
     @property
     def wordList(self):
@@ -27,14 +29,14 @@ class TouchWordsCollection():
 
     def save(self):
         # saves the words to a file
-        with open(BEAUTIFUL_WORDS, "w") as outfile:
+        with open(self.__resourcePath, "w") as outfile:
             jsonObj = jsonpickle.encode(self.wordList, keys=True)
             outfile.write(jsonObj)
 
     def load(self):
         # loads the words from a file
         # Opening JSON file
-        with open(BEAUTIFUL_WORDS, 'r') as infile:
+        with open(self.__resourcePath, 'r') as infile:
             words = infile.read()
             self.wordList = jsonpickle.decode(words, keys=True)
         return len(self.wordList)

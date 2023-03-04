@@ -1,13 +1,16 @@
 import json
 import jsonpickle
 from sounds.sound import Sound
+import os
+import logging
 
 SOUNDS = "literary_resources/sounds.json"
 
 
 class SoundsCollection():
-    def __init__(self):
+    def __init__(self, resourcePath=""):
         self.__soundList = []
+        self.__resourcePath = os.path.join(resourcePath, SOUNDS)
 
     @property
     def soundList(self):
@@ -26,14 +29,14 @@ class SoundsCollection():
 
     def save(self):
         # saves the sounds to a file
-        with open(SOUNDS, "w") as outfile:
+        with open(self.__resourcePath, "w") as outfile:
             jsonObj = jsonpickle.encode(self.soundList, keys=True)
             outfile.write(jsonObj)
 
     def load(self):
         # loads the sounds from a file
         # Opening JSON file
-        with open(SOUNDS, 'r') as infile:
+        with open(self.__resourcePath, 'r') as infile:
             sounds = infile.read()
             self.soundList = jsonpickle.decode(sounds, keys=True)
         return len(self.soundList)

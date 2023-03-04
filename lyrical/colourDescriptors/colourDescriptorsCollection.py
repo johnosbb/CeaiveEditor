@@ -1,13 +1,16 @@
 import json
 import jsonpickle
 from colourDescriptors.colourDescriptor import ColourDescriptor
+import os
+import logging
 
 COLOUR_DESCRIPTORS = "literary_resources/descriptors.json"
 
 
 class DescriptorsCollection():
-    def __init__(self):
+    def __init__(self, resourcePath=""):
         self.__descriptorList = []
+        self.__resourcePath = os.path.join(resourcePath, COLOUR_DESCRIPTORS)
 
     @property
     def descriptorList(self):
@@ -34,7 +37,7 @@ class DescriptorsCollection():
     def load(self):
         # loads the descriptors from a file
         # Opening JSON file
-        with open(COLOUR_DESCRIPTORS, 'r') as infile:
+        with open(self.__resourcePath, 'r') as infile:
             descriptors = infile.read()
             self.descriptorList = jsonpickle.decode(descriptors, keys=True)
         return len(self.descriptorList)

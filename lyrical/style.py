@@ -7,10 +7,6 @@ import logging
 import collections
 
 
-nltk.download('cmudict')
-nltk.download('stopwords')
-nltk.download('punkt')
-
 cmuDictionary = None
 
 # ---------------------------------------------------------------------
@@ -88,6 +84,12 @@ functional_words = """a between in nor some upon
     """
 
 functionalWords = functional_words.split()
+
+
+def updates():
+    nltk.download('cmudict')
+    nltk.download('stopwords')
+    nltk.download('punkt')
 
 
 def syllable_count_Manual(word):
