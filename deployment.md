@@ -56,7 +56,7 @@ python -m PyInstaller lyrical.py
 On Linux with SpellChecker
 
 ```sh
-python -m PyInstaller --onefile --clean --add-binary="spellchecker/resources/en.json.gz:spellchecker/resources" main.py
+python -m PyInstaller --onefile --clean --add-binary="spellchecker/resources/en.json.gz:spellchecker/resources" --splash "splash.png" main.py
 ```
 
 On Windows 11
