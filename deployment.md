@@ -81,7 +81,7 @@ __Note__: that on windows we use the ; instead of the :
 
 #### Reference
 
-- [Adding a Splash Screen](https://coderslegacy.com/python/splash-screen-for-pyinstaller-exe/https://coderslegacy.com/python/splash-screen-for-pyinstaller-exe/
+- [Adding a Splash Screen](https://coderslegacy.com/python/splash-screen-for-pyinstaller-exe/https://coderslegacy.com/python/splash-screen-for-pyinstaller-exe/)
 
 ```sh
 --splash "C:/Users/CodersLegacy/Splash.png"
