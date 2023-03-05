@@ -47,6 +47,19 @@ TEST_TEXT = "This is the first sentence. This is the second sentence. This is th
 This is the fifth sentence. This is the sixth sentence. This is the seventh sentence. This is the eight sentence."
 
 
+# Get logger
+logger = logging.getLogger("my logger")
+
+# Create a handler
+c_handler = logging.StreamHandler()
+
+# link handler to logger
+logger.addHandler(c_handler)
+
+# Set logging level to the logger
+logger.setLevel(logging.DEBUG)
+
+
 def hexuuid():
     return uuid.uuid4().hex
 
@@ -1372,7 +1385,7 @@ class MainWindow(QMainWindow):
         settings.setValue("webster_api_key", self.websterAPIkey)
         settings.setValue("size", self.size())
         settings.setValue("pos", self.pos())
-        logging.debug("lyrical: Position is {} {}".format(
+        logging.debug("lyrical save_settings: Position is {} {}".format(
             self.pos().x(), self.pos().y()))
         settings.setValue("file_format", self.fileFormat)
         settings.setValue("theme", self.theme)
@@ -1399,6 +1412,8 @@ class MainWindow(QMainWindow):
         if(self.websterAPIkey == None):
             self.websterAPIkey = "Get an API Key at www.dictionaryapi.com"
         self.applicationPosition = settings.value("pos")
+        logging.debug("lyrical load_settings: Position is {} {}".format(
+            self.applicationPosition.x(), self.applicationPosition.y()))
         if(self.applicationPosition == None):
             self.applicationPosition = QPoint(0, 0)
         self.applicationSize = settings.value("size")
