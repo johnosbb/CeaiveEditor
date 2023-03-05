@@ -56,7 +56,7 @@ python -m PyInstaller lyrical.py
 On Linux with SpellChecker
 
 ```sh
-python -m PyInstaller --onefile --clean --add-binary="spellchecker/resources/en.json.gz:spellchecker/resources" main.py
+python -m PyInstaller --onefile --clean --add-binary="spellchecker/resources/en.json.gz:spellchecker/resources" --splash "splash.png" main.py
 ```
 
 On Windows 11
@@ -76,6 +76,17 @@ __Note__: that on windows we use the ; instead of the :
 
 - https://stackoverflow.com/questions/46474588/pyinstaller-how-to-include-data-files-from-an-external-package-that-was-install
 - https://github.com/barrust/pyspellchecker/issues/64
+
+### Adding a splash screen
+
+#### Reference
+
+- [Adding a Splash Screen](https://coderslegacy.com/python/splash-screen-for-pyinstaller-exe/https://coderslegacy.com/python/splash-screen-for-pyinstaller-exe/)
+
+```sh
+--splash "C:/Users/CodersLegacy/Splash.png"
+```
+
 
 
 ## Nuitka
