@@ -138,13 +138,7 @@ class MainWindow(QMainWindow):
         self.update_format()
         self.update_title()
         self.oldPos = self.pos()
-        self.setWindowFlag(Qt.WindowStaysOnTopHint)
-        # print("Loading language tool")
-        # self.languageTool = language_tool_python.LanguageTool('en-GB')
-        # print("Loaded language tool")
-        # self.grammarCheck = GrammarCorrectionWindow(self.languageTool)
-
-        # self.show()
+        # self.setWindowFlag(Qt.WindowStaysOnTopHint)
 
     @staticmethod
     def restart():
@@ -1502,10 +1496,12 @@ class MainWindow(QMainWindow):
 
 
 if __name__ == '__main__':
-
+    print("Application starting")
     app = QApplication(sys.argv)  # create the main app
     splash = SplashScreen()
+    print("Application Showing Splash Screen")
     splash.show()
+    app.processEvents()
     # MainWindow.restart()
     # When creating a QSettings object, you must pass the name of your company or organization as well as the name of your application.
     QCoreApplication.setApplicationName(ORGANIZATION_NAME)
@@ -1517,8 +1513,18 @@ if __name__ == '__main__':
     logging.info("lyrical: Starting Lyrical Editor")
     app.setStyle("fusion")
     try:
-        if getattr(sys, 'frozen', False):
-            pyi_splash.close()
+        import importlib
+        have_pyi_splash = importlib.util.find_spec("pyi_splash")
+        if(have_pyi_splash):
+            logging.info("using pyi_splash")
+            if '_PYIBoot_SPLASH' in os.environ:
+                logging.info("Detected _PYIBoot_SPLASH in enviroment")
+                import pyi_splash
+                # pyi_splash.update_text('UI Loaded ...')
+                pyi_splash.close()
+            else:
+                logging.info(
+                    "Did not detect _PYIBoot_SPLASH in environment {}".format(os.environ))
     except Exception as error:
         logging.info("Not running as a pyinstaller executable")
     window = MainWindow(app)
@@ -1527,4 +1533,5 @@ if __name__ == '__main__':
     print("Starting to show")
     window.show()
     style.updates()
+    window.raise_()
     app.exec_()
