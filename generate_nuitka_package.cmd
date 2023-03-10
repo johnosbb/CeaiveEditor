@@ -1,0 +1,1 @@
+python.exe -m nuitka --standalone  --include-data-file=literary_resources/*.json=./literary_resources/ --include-data-file=resources/*.gz=./spellchecker/resources/  --enable-plugin=pyqt5 lyrical.py

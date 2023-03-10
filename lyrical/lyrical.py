@@ -1439,7 +1439,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(self.applicationPosition.x(), self.applicationPosition.y(
         ), self.applicationSize.width(), self.applicationSize.height())
         logging.debug("lyrical load_settings: Setting Position is {} {} width {} height {}".format(
-            self.applicationPosition.x(), self.applicationPosition.y(),self.applicationSize.width(),self.applicationSize.height()))
+            self.applicationPosition.x(), self.applicationPosition.y(), self.applicationSize.width(), self.applicationSize.height()))
         settings.endGroup()
         # logging.debug("lyrical :Checking for api key : " + os.environ.get("API_KEY"))
         logging.info("lyrical: Loaded Lyrical settings")
