@@ -93,6 +93,7 @@ __Note__: that on windows we use the ; instead of the :
 
 - [Home Page](https://www.nuitka.net/)
 - [Configuration File](https://nuitka.net/doc/nuitka-package-config.html#where-else-to-look)
+- [Youtube Tutorial](https://www.youtube.com/watch?v=JiXGo_sgsH8)
 
 ```sh
 conda install libpython-static
