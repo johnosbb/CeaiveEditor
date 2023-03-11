@@ -108,3 +108,7 @@ pip install nuitka
 python3 -m nuitka --follow-imports main.py
 python.exe -m nuitka --standalone --onefile --enable-plugin=pyqt5 lyrical.py
 ```
+
+```sh
+python.exe -m nuitka --standalone  --onefile --include-data-file=literary_resources/*.json=./literary_resources/ --include-data-file=resources/*.gz=./spellchecker/resources/  --enable-plugin=pyqt5 lyrical.py
+```
