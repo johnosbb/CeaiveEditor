@@ -91,7 +91,7 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.load_settings()
         self.colorTheme = Theme()
-        self.setWindowIcon(QIcon(":/images/images/icon.ico"))
+        self.setWindowIcon(QIcon(":/images/images/logo.png"))
         self.resourcePath = getattr(
             sys, '_MEIPASS', os.path.abspath(os.path.dirname(__file__)))
         logging.debug(
