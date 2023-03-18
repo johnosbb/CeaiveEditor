@@ -1519,7 +1519,6 @@ if __name__ == '__main__':
     print("Application Showing Splash Screen")
     splash.show()
     app.processEvents()
-    # MainWindow.restart()
     # When creating a QSettings object, you must pass the name of your company or organization as well as the name of your application.
     QCoreApplication.setApplicationName(ORGANIZATION_NAME)
     # When the Internet domain is set, it is used on macOS and iOS instead of the organization name, since macOS and iOS applications conventionally use Internet domains to identify themselves.
