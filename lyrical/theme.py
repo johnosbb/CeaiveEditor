@@ -23,7 +23,7 @@ class Theme():
         self.__darkPalette.setColor(QPalette.AlternateBase,
                                     QColor(53, 53, 53))  # a dark grey, almost black Used as the alternate background color in views with alternating row colors
         self.__darkPalette.setColor(QPalette.ToolTipBase, Qt.white)
-        self.__darkPalette.setColor(QPalette.ToolTipText, Qt.white)
+        self.__darkPalette.setColor(QPalette.ToolTipText, Qt.black)
         # The foreground color used with Base. This is usually the same as the WindowText, in which case it must provide good contrast with Window and Base.
         self.__darkPalette.setColor(QPalette.Text, Qt.white)
         self.__darkPalette.setColor(QPalette.Button, QColor(
@@ -51,7 +51,7 @@ class Theme():
         self.__lightPalette.setColor(QPalette.ToolTipBase, QColor(
             53, 53, 53))  # a dark grey, almost black
         self.__lightPalette.setColor(QPalette.ToolTipText, QColor(
-            53, 53, 53))  # a dark grey, almost black
+            202, 202, 202))  # a dark grey, almost black
         self.__lightPalette.setColor(QPalette.Text, QColor(
             53, 53, 53))  # a dark grey, almost black
         self.__lightPalette.setColor(QPalette.Button, QColor(

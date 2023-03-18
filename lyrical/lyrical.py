@@ -254,9 +254,11 @@ class MainWindow(QMainWindow):
         self.paste_action.setEnabled(self.editor.canPaste())
 
     def highlightWordYellow(self):
-        color = QColor(Qt.yellow).lighter()
+        backGroundColor = QColor(Qt.yellow).lighter()
+        foreGroundColor = QColor(Qt.blue)
         format = QTextCharFormat()
-        format.setBackground(QBrush(color))
+        format.setBackground(QBrush(backGroundColor))
+        format.setForeground(QBrush(foreGroundColor))
         cursor = self.editor.textCursor()
         if not cursor.hasSelection():
             cursor.select(QTextCursor.WordUnderCursor)
@@ -274,6 +276,7 @@ class MainWindow(QMainWindow):
     def unHighlightWord(self):
         format = QTextCharFormat()
         format.clearBackground()
+        format.clearForeground()
         cursor = self.editor.textCursor()
         if not cursor.hasSelection():
             cursor.select(QTextCursor.WordUnderCursor)
@@ -682,6 +685,13 @@ class MainWindow(QMainWindow):
         file_menu.addAction(print_action)
         file_toolbar.addAction(print_action)
 
+        exit_action = QAction(
+            QIcon(":/images/images/exit.png"), "Exit...", self)
+        exit_action.setStatusTip("Close the application")
+        exit_action.triggered.connect(self.exit_application)
+        file_menu.addAction(exit_action)
+        file_toolbar.addAction(exit_action)
+
     def get_syllable_count(self):
         cursor = QTextCursor(self.editor.textCursor())
         # word = cursor.selectedText() # enable for selected text
@@ -718,6 +728,9 @@ class MainWindow(QMainWindow):
                 selectedText, word_counts, blockNumber, cursorStart, cursorEnd)
             logging.debug(
                 "Found {0} echoes in the selected text".format(len(word_counts)))
+        else:
+            self.status.showMessage(
+                "You must make a selection first", 20000)
 
     def checkGrammar(self):
         cursor = QTextCursor(self.editor.textCursor())
@@ -741,6 +754,9 @@ class MainWindow(QMainWindow):
                     # parent.editor.insertSelectedWord(wordSelector.selectedWord)
                 else:
                     logging.debug("lyrical :Canceled! Grammar check")
+        else:
+            self.status.showMessage(
+                "You must make a selection first", 20000)
 
     def generate_test_text(self):
         self.editor.setText(TEST_TEXT)
@@ -1244,32 +1260,10 @@ class MainWindow(QMainWindow):
         """
         # Disable signals for all format widgets, so changing values here does not trigger further formatting.
         self.block_signals(self._format_actions, True)
-
-        # self.showFontFamilies()
-        # for font in self.supportedFontFamilies:
-        #     logging.debug("lyrical: Family {}".format(font))
         logging.debug("editor current font {}".format(
             self.editor.currentFont().toString()))
         self.fonts.setCurrentFont(self.editor.currentFont())
-        # currentFontName = currentFont.toString().split(",")
-        # logging.debug("lyrical : Update Format: Current font is {}".format(
-        #     currentFont.toString()))
-        # self.defaultFont.setFamily(currentFontName[0])
-        # self.fonts.setCurrentFont(currentFont)
-        # exactMatch is failing to match most fonts even though they exist on the system
-        # if(currentFont.exactMatch()):
-        #     logging.debug("lyrical : Update Format: Found match for this font {}".format(
-        #         currentFont.toString()))
-        #     self.fonts.setCurrentFont(currentFont)
-        # else:
-        #     logging.debug("lyrical : Update Format: Found no match for this font {}, using default font for this system {}".format(
-        #         currentFont.toString(), self.defaultFont.toString()))
-        #     self.fonts.setCurrentFont(self.defaultFont)
-        # Nasty, but we get the font-size as a float but want it was an int
-        # sets the font of the current format
-        # self.fonts.setCurrentFont(currentFont)
         self.fontSize.setCurrentText(str(int(self.editor.fontPointSize())))
-        #currentCharformat = self.editor.currentCharFormat()
         self.italic_action.setChecked(self.editor.fontItalic())
         self.underline_action.setChecked(self.editor.fontUnderline())
         self.bold_action.setChecked(self.editor.fontWeight() == QFont.Bold)
@@ -1366,6 +1360,10 @@ class MainWindow(QMainWindow):
         dlg = QPrintDialog()
         if dlg.exec_():
             self.editor.print_(dlg.printer())
+
+    def exit_application(self):
+        self.save_settings()
+        sys.exit()
 
     def update_title(self):
         self.setWindowTitle(
