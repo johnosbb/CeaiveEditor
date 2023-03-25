@@ -891,7 +891,7 @@ class MainWindow(QMainWindow):
             # count = style.syllable_count(word)
             count = style.calculate_functional_word_count(text)
             self.status.showMessage(
-                "Functional Word Score: " + str(count), 2000)
+                "Functional Word Score: " + str(count), 6000)
 
     def showBeautifulWords(self):
         wordListManager = WordListManager(self.resourcePath)
@@ -1127,13 +1127,13 @@ class MainWindow(QMainWindow):
         self.addToolBar(style_toolbar)
         style_menu = self.menuBar().addMenu("&Style")
 
-        generate_text_action = QAction(
-            QIcon(":/images/images/generate-text.png"), "Generate Random Text", self)
-        generate_text_action.setStatusTip("Generate Random Text")
-        generate_text_action.triggered.connect(
-            self.generate_test_text)
-        style_menu.addAction(generate_text_action)
-        style_toolbar.addAction(generate_text_action)
+        # generate_text_action = QAction(
+        #     QIcon(":/images/images/generate-text.png"), "Generate Random Text", self)
+        # generate_text_action.setStatusTip("Generate Random Text")
+        # generate_text_action.triggered.connect(
+        #     self.generate_test_text)
+        # style_menu.addAction(generate_text_action)
+        # style_toolbar.addAction(generate_text_action)
 
         count_syllable_action = QAction(
             QIcon(":/images/images/syllables.png"), "Average Syllable Length", self)
