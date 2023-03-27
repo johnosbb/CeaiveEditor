@@ -28,6 +28,7 @@ class TextEdit(QTextEdit):
             self.compliment = args[2]
             self.lastFindStart = 0
             self.grammarCheckSet = False
+            self.acceptRichText = False
             self.setObjectName("HeaderBackgroundColor")
             self.copyAvailable.connect(self.selectedTextChanged)
         else:
@@ -36,6 +37,15 @@ class TextEdit(QTextEdit):
         self.highlighter = Highlighter(self.document())
         if hasattr(self, "speller"):
             self.highlighter.setSpeller(self.speller)
+
+    # this allows us to customise pasting actions :paste
+
+    def insertFromMimeData(self, mime_data):
+        if mime_data.hasUrls():
+            for url in mime_data.urls():
+                self.insertPlainText(url.toLocalFile() + '\n')
+        else:
+            super().insertFromMimeData(mime_data)
 
     def getBackgroundColor(self):
         return self.backGroundColor

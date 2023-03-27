@@ -280,6 +280,9 @@ class MainWindow(QMainWindow):
         cursor = self.editor.textCursor()
         if not cursor.hasSelection():
             cursor.select(QTextCursor.WordUnderCursor)
+        # font = currentFormat.font().family()
+        font = self.editor.currentFont()
+        format.setFont(font)
         cursor.setCharFormat(format)
 
     def removeMultipleFonts(self):
