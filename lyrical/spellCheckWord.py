@@ -24,9 +24,12 @@ class SpellCheckWord:
     def suggestions(self, word: str) -> list[str]:
         if word is not None:
             candidates_s = self.dictionary.candidates(word)
-            candidates = list(candidates_s)
-            candidates.insert(0,self.correction(word))
-            return candidates
+            if(candidates_s):
+                candidates = list(candidates_s)
+                candidates.insert(0, self.correction(word))
+                return candidates
+            else:
+                return []
         else:
             return []
 
@@ -43,7 +46,7 @@ class SpellCheckWord:
 
     def check(self, word: str) -> bool:
         if(word is not None):
-            result = self.dictionary.known([word])   
+            result = self.dictionary.known([word])
             if len(result):
                 return True
         else:
