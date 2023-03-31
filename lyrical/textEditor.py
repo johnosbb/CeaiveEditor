@@ -41,14 +41,39 @@ class TextEdit(QTextEdit):
     # this allows us to customise pasting actions :paste
 
     def insertFromMimeData(self, mime_data):
-        if mime_data.hasUrls():
-            for url in mime_data.urls():
-                self.insertPlainText(url.toLocalFile() + '\n')
-        else:
-            super().insertFromMimeData(mime_data)
+        if mime_data.hasText():
+            text = mime_data.text()
+            cursor = self.textCursor()
+            cursor.insertText(text)
 
     def getBackgroundColor(self):
         return self.backGroundColor
+
+    def paste(self):
+        clipboard = QApplication.clipboard()
+        mime_data = clipboard.mimeData()
+        if mime_data.hasText():
+            text = mime_data.text()
+            cursor = self.textCursor()
+            cursor.insertText(text)
+
+    def showKeyEvents(self, event):
+        print("keyPressEvent received:")
+        print("    key:", event.key())
+        print("    modifiers:")
+        modifiers = event.modifiers()
+        if modifiers & Qt.ShiftModifier:
+            print("        Shift")
+        if modifiers & Qt.ControlModifier:
+            print("        Ctrl")
+        if modifiers & Qt.AltModifier:
+            print("        Alt")
+        if modifiers & Qt.MetaModifier:
+            print("        Meta")
+        print("    text:", event.text())
+        print("    count:", event.count())
+        print("    isAutoRepeat:", event.isAutoRepeat())
+        print("    Native Scan Code", event.nativeScanCode())
 
     def mousePressEvent(self, event: QMouseEvent) -> None:
         if event.button() == Qt.RightButton:
@@ -293,35 +318,3 @@ class TextEdit(QTextEdit):
             return True
         else:
             return super(TextEdit, self).canInsertFromMimeData(source)
-
-    def insertFromMimeData(self, source):
-
-        cursor = self.textCursor()
-        document = self.document()
-
-        if source.hasUrls():
-
-            for u in source.urls():
-                file_ext = splitext(str(u.toLocalFile()))
-                if u.isLocalFile() and file_ext in IMAGE_EXTENSIONS:
-                    image = QImage(u.toLocalFile())
-                    document.addResource(QTextDocument.ImageResource, u, image)
-                    cursor.insertImage(u.toLocalFile())
-
-                else:
-                    # If we hit a non-image or non-local URL break the loop and fall out
-                    # to the super call & let Qt handle it
-                    break
-
-            else:
-                # If all were valid images, finish here.
-                return
-
-        elif source.hasImage():
-            image = source.imageData()
-            uuid = hexuuid()
-            document.addResource(QTextDocument.ImageResource, uuid, image)
-            cursor.insertImage(uuid)
-            return
-
-        super(TextEdit, self).insertFromMimeData(source)
