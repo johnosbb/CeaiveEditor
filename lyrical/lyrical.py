@@ -33,6 +33,8 @@ import language_tool_python
 from wordListManager import WordListManager
 import globals
 
+from aboutDialog import AboutDialog
+
 FONT_SIZES = [7, 8, 9, 10, 11, 12, 13, 14,
               18, 24, 36, 48, 64, 72, 96, 144, 288]
 IMAGE_EXTENSIONS = ['.jpg', '.png', '.bmp']
@@ -144,6 +146,7 @@ class MainWindow(QMainWindow):
         self.addToolBarBreak()
         self.define_style_toolbar()
         self.define_word_list_toolbar()
+        self.define_about_toolbar()
         self.addToolBarBreak()
         self.define_suggestions_toolbar()
         self.defineFileExplorerTreeView()
@@ -694,6 +697,12 @@ class MainWindow(QMainWindow):
         exit_action.triggered.connect(self.exit_application)
         file_menu.addAction(exit_action)
         file_toolbar.addAction(exit_action)
+
+    def define_about_toolbar(self):
+        help_menu = self.menuBar().addMenu("&Help")
+        about_action = QAction('&About', self)
+        about_action.triggered.connect(self.show_about_dialog)
+        help_menu.addAction(about_action)
 
     def get_syllable_count(self):
         cursor = QTextCursor(self.editor.textCursor())
@@ -1449,6 +1458,10 @@ class MainWindow(QMainWindow):
         self.save_settings()
         event.accept()
 # Used to set the project root directory
+
+    def show_about_dialog(self):
+        about_dialog = AboutDialog(self)
+        about_dialog.exec_()
 
     def set_directory(self):
         """
