@@ -92,6 +92,11 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Rhyme with NLTK](https://stackoverflow.com/questions/25714531/find-rhyme-using-nltk-in-python)
 - [Metaphone](https://pypi.org/project/Metaphone/)
 
+
+### Prose Linting
+
+- [proselint](https://github.com/amperser/proselint)
+
 # Installing Enchant on Ubuntu
 
 - On Ubuntu: sudo apt-get install -y libenchant-dev
