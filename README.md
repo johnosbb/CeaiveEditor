@@ -37,6 +37,7 @@ Research Phase began in January 2022
 Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcontent.cgi?article=2739&context=etd)
 - [Functional Words](https://corpora.files.wordpress.com/2021/03/6-2.e8ab96e88083efbc88tangefbc89e6a99fe883bde8aa9ee383aae382b9e38388.pdf)
 - [introduction-to-stylometry-with-python](https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python)
+- [What makes Hemingway Style](https://www.litcharts.com/blog/analitics/what-makes-hemingway/)
 
 
 #### Terminology
