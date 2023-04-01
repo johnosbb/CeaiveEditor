@@ -162,6 +162,10 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [Dictionary of Similes](https://www.bartleby.com/161/)
 - [Roget’s Thesaurus as a lexical resource](https://arxiv.org/ftp/arxiv/papers/1204/1204.0140.pdf)
 
+## Academic References on Style and Writing Structure
+
+- [Teaching Creative Writing with Design in Mind](https://scholarworks.rit.edu/cgi/viewcontent.cgi?article=1039&context=jcws)
+
 ## Short Stories
 
 - [Short Story Guidelines](https://www.turnerstories.com/blog/2019/3/1/how-to-structure-a-short-story)
