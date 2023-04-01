@@ -166,6 +166,10 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 
 - [Teaching Creative Writing with Design in Mind](https://scholarworks.rit.edu/cgi/viewcontent.cgi?article=1039&context=jcws)
 
+## Information Blogs
+
+- [How to write a long sentence](https://www.enchantingmarketing.com/how-to-write-a-long-sentence/)
+
 ## Short Stories
 
 - [Short Story Guidelines](https://www.turnerstories.com/blog/2019/3/1/how-to-structure-a-short-story)
