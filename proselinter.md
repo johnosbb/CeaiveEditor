@@ -62,15 +62,15 @@ Proselint returns:
 
 where
 
-cliches.garner is the check
-"'thinking outside the box.' is cliché." is the message
-The line number is 0
-7 is the column (the start of the word thinking).
-7 is the index in the text where the error starts (the start of the word thinking).
-32 in the index in the text where the error ends. (after the full stop)
-25 is the extent or length of the error (the length of the phrase: "thinking outside the box" in this case)
-It is a warning
-There are no suggested replacements
+Index[0] -  cliches.garner is the check
+Index[1] -  "'thinking outside the box.' is cliché." is the message
+Index[2] -  The line number is 0
+Index[3] -  7 is the column (the start of the word thinking).
+Index[4] -  7 is the index in the text where the error starts (the start of the word thinking).
+Index[5] -  32 in the index in the text where the error ends. (after the full stop)
+Index[6] -  25 is the extent or length of the error (the length of the phrase: "thinking outside the box" in this case)
+Index[7] -  It is a warning
+Index[8] -  There are no suggested replacements
 
 ```
 
