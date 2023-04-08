@@ -54,7 +54,7 @@ Proselint returns a suggestion with the following properties
 }
 ```
 
-As an example, for the line:
+As an example, for the line: "He was thinking outside the box."
 
 Proselint returns:
 ```txt
@@ -62,6 +62,14 @@ Proselint returns:
 
 where
 
-
+cliches.garner is the check
+"'thinking outside the box.' is cliché." is the message
+The line number is 0
+7 is the column (the start of the word thinking).
+7 is the index in the text where the error starts (the start of the word thinking).
+32 in the index in the text where the error ends. (after the full stop)
+25 is the extent or length of the error (the length of the phrase: "thinking outside the box" in this case)
+It is a warning
+There are no suggested replacements
 
 ```
