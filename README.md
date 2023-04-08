@@ -69,6 +69,7 @@ LanguageTool is an open source spellchecking platform. It supports a large varie
 - [pyLanguageTool Library](https://github.com/Findus23/pyLanguagetool)
 - [language_tool_python](https://github.com/jxmorris12/language_tool_python)
 - [language tool python some examples](https://predictivehacks.com/languagetool-grammar-and-spell-checker-in-python/)
+- [Notes on using LanguageTool in Python](languagetool.md)
 - [Adding a private dictionary to language tool](https://github.com/jxmorris12/language_tool_python/issues/21)
 - [Highlighting with language tool](https://blog.ouseful.info/2021/09/06/code-fragment-highlighting-typos/)
 
