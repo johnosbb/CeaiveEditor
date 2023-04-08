@@ -73,3 +73,35 @@ It is a warning
 There are no suggested replacements
 
 ```
+
+
+## More examples
+
+```pyhton
+String: He was thinking outside the box. -> Suggestions: [('cliches.garner', "'thinking outside the box.' is cliché.", 0, 7, 7, 32, 25, 'warning', None)]
+
+
+String: under the weather. -> Suggestions: [('cliches.write_good', "'under the weather.' is a cliché.", 0, 1, 1, 18, 17, 'warning', None)]
+
+
+String: She swam by a bunch of oysters. -> Suggestions: [('oxford.venery_terms', "The venery term is 'a bed of oysters'.", 0, 12, 12, 31, 19, 'warning', 'a bed of oysters')]
+
+
+String: A girl with colitis goes by. -> Suggestions: []
+
+
+String: The building is deceptively large. -> Suggestions: [('skunked_terms.misc', "'deceptively' is a bit of a skunked term, impossible to use without issue. Find some other way to say it.", 0, 16, 16, 28, 12, 'warning', None)]
+
+
+String: and so I said PLEASE STOP YELLING! -> Suggestions: [('leonard.exclamation.30ppm', 'More than 30 ppm of exclamations. Keep them under control.', 0, 33, 33, 34, 1, 'warning', None)]
+
+
+String: He was academicly superior. -> Suggestions: [('spelling.ally_ly', "-ally vs. -ly. 'academically' is the correct spelling.", 0, 7, 7, 18, 11, 'warning', 'academically'), ('spelling.misc', "Misspelling. 'academically' is the preferred spelling.", 0, 7, 7, 18, 11, 'warning', 'academically')]
+
+
+String: Get ready: button your seatbelts. -> Suggestions: [('mixed_metaphors.misc.misc', "Mixed metaphor. Try 'fasten your seatbelts'.", 0, 11, 11, 33, 22, 'warning', 'fasten your seatbelts')]
+
+
+String: There were approximately about 5 atm machines. -> Suggestions: [('redundancy.garner', "Redundancy. Use 'approximately' instead of 'approximately about'.", 0, 11, 11, 31, 20, 'warning', 'approximately')]
+
+```
