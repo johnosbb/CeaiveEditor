@@ -105,3 +105,13 @@ String: Get ready: button your seatbelts. -> Suggestions: [('mixed_metaphors.mis
 String: There were approximately about 5 atm machines. -> Suggestions: [('redundancy.garner', "Redundancy. Use 'approximately' instead of 'approximately about'.", 0, 11, 11, 31, 20, 'warning', 'approximately')]
 
 ```
+## Installing the updated package
+
+```sh
+# To build
+./utils build
+
+# To install
+pip install -I dist/proselint-0.13.0.tar.gz
+```
+
