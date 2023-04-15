@@ -45,6 +45,7 @@ class GrammarHighlighter(QSyntaxHighlighter):
         if(rules):
             if(len(rules) > 0):
                 for rule in rules:
+                    print("This rule is of type: {}".format(type(rule)))
                     startPosition = rule.offset
                     count = rule.errorLength
                     self.updateSyntax(startPosition, count)

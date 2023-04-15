@@ -45,10 +45,11 @@ class CorrectorTextEdit(QTextEdit):
 
     def addHelperContexts(self, rule, blockNumber):
         suggestions = rule.replacements
-        if len(suggestions) > 0:
-            self.contextMenu.addSeparator()
-            self.contextMenu.addMenu(
-                self.createSuggestionsMenu(suggestions, rule, blockNumber))
+        if(suggestions):
+            if len(suggestions) > 0:
+                self.contextMenu.addSeparator()
+                self.contextMenu.addMenu(
+                    self.createSuggestionsMenu(suggestions, rule, blockNumber))
 
     def setRule(self, rule):
         self.rule = rule
@@ -84,12 +85,74 @@ class CorrectorTextEdit(QTextEdit):
         self.replaceSelectedWord(word, rule, blockNumber)
 
     def createSuggestionsMenu(self, suggestions: list[str], rule, blockNumber):
-        suggestionsMenu = QMenu("Change to", self)
-        for word in suggestions:
-            action = SpecialActionBlock(
-                word, self.contextMenu, rule, blockNumber)
+        if(rule.ruleId == -1):
+            if(rule.category in ["cliches.garner", "cliches.write_good"]):
+                logging.debug(
+                    "correctorTextEdit: Cliche detected {}".format(rule.message))
+                suggestionsMenu = QMenu("{}".format(rule.ruleIssueType), self)
+                suggestionsClicheAction = QAction(
+                    "I suggest you replace with a more original alternative.", self)
+                suggestionsClicheAction.setDisabled(True)
+                suggestionsMenu.addAction(suggestionsClicheAction)
+            elif(rule.category in ["typography.symbols.multiplication_symbol", "skunked_terms.misc", "mixed_metaphors.misc.bottleneck", "uncomparables.misc", "misc.illogic.coin", "misc.suddenly", "leonard.hell", "dates_times.dates", "dates_times.am_pm.midnight_noon", "lexical_illusions.misc", "redundancy.nordquist", "pinker.scare_quotes", "hyperbolic.misc"]):
+                logging.debug(
+                    "correctorTextEdit: Issue detected {}".format(rule.message))
+                suggestionsMenu = QMenu("{}".format(rule.ruleIssueType), self)
+                suggestionsClicheAction = QAction(
+                    "I suggest you revise.", self)
+                suggestionsClicheAction.setDisabled(True)
+            elif(rule.category in ["oxford.venery_terms", "garner.preferred_forms"]):
+                logging.debug(
+                    "correctorTextEdit: venery or preferred terms issue detected {}".format(rule.message))
+                suggestionsMenu = QMenu("{}".format(rule.ruleIssueType), self)
+                suggestionsAction = QAction(
+                    "I suggest you replace with: {}".format(rule.replacements), self)
+                suggestionsAction.setDisabled(False)
+                suggestionsMenu.addAction(suggestionsAction)
+                action = SpecialActionBlock(
+                    suggestions, self.contextMenu, rule, blockNumber)
+                action.actionTriggered.connect(self.correctWord)
+                suggestionsMenu.addAction(action)
+            elif(rule.category == "misc.mondegreens"):
+                logging.debug(
+                    "correctorTextEdit: Possible mondegreens detected {}".format(rule.message))
+                suggestionsMenu = QMenu("{}".format(rule.ruleIssueType), self)
+                suggestionsAction = QAction(
+                    "Did you mean: {}".format(rule.replacements), self)
+                suggestionsAction.setDisabled(False)
+                suggestionsMenu.addAction(suggestionsAction)
+                action = SpecialActionBlock(
+                    suggestions, self.contextMenu, rule, blockNumber)
+                action.actionTriggered.connect(self.correctWord)
+                suggestionsMenu.addAction(action)
+            else:
+                logging.debug(
+                    "correctorTextEdit: Issues detected {}".format(rule.message))
+                suggestionsMenu = QMenu("{}".format(rule.ruleIssueType), self)
+                suggestionsAction = QAction(
+                    "I suggest you replace with: {}".format(rule.replacements), self)
+                suggestionsAction.setDisabled(False)
+                suggestionsMenu.addAction(suggestionsAction)
+                if type(suggestions) == list:
+                    for suggestion in suggestions:
+                        action = SpecialActionBlock(
+                            suggestion, self.contextMenu, rule, blockNumber)
+                elif type(suggestions) == str:
+                    action = SpecialActionBlock(
+                        suggestions, self.contextMenu, rule, blockNumber)
+                action.actionTriggered.connect(self.correctWord)
+                suggestionsMenu.addAction(action)
+        else:
+            logging.debug(
+                "correctorTextEdit: Issue detected {}".format(rule.message))
+            suggestionsMenu = QMenu("Change to", self)
+            for word in suggestions:
+                action = SpecialActionBlock(
+                    word, self.contextMenu, rule, blockNumber)
             action.actionTriggered.connect(self.correctWord)
             suggestionsMenu.addAction(action)
+            # suggestionsMenu = QMenu("{}".format(rule.ruleIssueType), self)
+        # oxford.venery_terms
         return suggestionsMenu
 
     def findAssociatedRule(self, blockNumber, currentPosition):
@@ -100,11 +163,13 @@ class CorrectorTextEdit(QTextEdit):
         if(block.userData().value):
             rules = block.userData().value
             for rule in rules:
+                logging.debug(
+                    "correctorTextEdit: Checking rule {} for text {} at position {}".format(rule.message, block.text(), currentPosition))
                 ruleStart = (rule.offset)
                 ruleEnd = (rule.errorLength+rule.offset)
                 if((currentPosition >= ruleStart) and (currentPosition <= ruleEnd)):
-                    logging.debug(" Position: {} - RS {} - RE {} ".format(
-                        currentPosition, ruleStart,  ruleEnd))
+                    logging.debug("CorrectorTextEdit: Found Rule {} at position: {} - RS {} - RE {} ".format(
+                        rule.message, currentPosition, ruleStart,  ruleEnd))
                     self.rule = rule
                     return rule
         logging.debug("Could not find a rule for {}".format(currentPosition))

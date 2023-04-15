@@ -29,6 +29,7 @@ import findDialog
 from specialAction import SpecialAction
 from PyQt5.QtCore import QEvent
 from grammarCheckWindow import GrammarCorrectionWindow
+from lintCheckWindow import LintCorrectionWindow
 import language_tool_python
 from wordListManager import WordListManager
 import globals
@@ -165,6 +166,7 @@ class MainWindow(QMainWindow):
         self.languageTool = language_tool_python.LanguageTool('en-GB')
         print("Loaded language tool")
         self.grammarCheck = GrammarCorrectionWindow(self.languageTool)
+        self.lintCheck = LintCorrectionWindow()
 
     def define_suggestions_toolbar(self):
         """
@@ -770,6 +772,32 @@ class MainWindow(QMainWindow):
             self.status.showMessage(
                 "You must make a selection first", 20000)
 
+    def checkLint(self):
+        cursor = QTextCursor(self.editor.textCursor())
+        selectedText = cursor.selectedText()  # enable for selected text
+        selection = cursor.selection()
+        blockNumber = cursor.blockNumber()
+        cursorStart = cursor.selectionStart()
+        cursorEnd = cursor.selectionEnd()
+        # selectedText = self.editor.toPlainText()
+        if utilities.isNotBlank(selectedText):
+            # selectedText = selectedText.lower()
+            if(self.lintCheck):
+                self.lintCheck.check(selection)
+                self.lintCheck.show()
+                if self.lintCheck.exec():
+                    logging.debug("lyrical :Lint Check get corrected text here {}".format(
+                        self.lintCheck.correctedText))
+                    self.editor.replaceSelectedText(
+                        self.lintCheck.correctedText)
+
+                    # parent.editor.insertSelectedWord(wordSelector.selectedWord)
+                else:
+                    logging.debug("lyrical :Canceled! Lint check")
+        else:
+            self.status.showMessage(
+                "You must make a selection first", 20000)
+
     def generate_test_text(self):
         self.editor.setText(TEST_TEXT)
         logging.debug("lyrical: Position is {} {}".format(
@@ -1170,6 +1198,14 @@ class MainWindow(QMainWindow):
             self.checkGrammar)
         style_menu.addAction(checkGrammarAction)
         style_toolbar.addAction(checkGrammarAction)
+
+        checkLintAction = QAction(
+            QIcon(":/images/images/linting.png"), "Lint Check", self)
+        checkLintAction.setStatusTip("Find common usage errors")
+        checkLintAction.triggered.connect(
+            self.checkLint)
+        style_menu.addAction(checkLintAction)
+        style_toolbar.addAction(checkLintAction)
 
         count_functional_words_action = QAction(
             QIcon(":/images/images/functional-words.png"), "Functional Word Count", self)

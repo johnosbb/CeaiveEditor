@@ -67,22 +67,22 @@ class Highlighter(QSyntaxHighlighter):
                                 word_object.end() - word_object.start(),
                                 self.echoFormat,
                             )
-            if(self.typeOfCheck == "grammar"):
-                if(self.currentBlock().contains(startOfBlock) or self.currentBlock().contains(endOfBlock)):
-                    # we could pass a collection of grammar errors with their starting and ending position
-                    # this would be enough to high light the errors using setFormat
-                    # But we also need to present the error to the user and then offer them the possibility
-                    # of correcting the error.
-                    # Ideally we could present a dialog which shows the error, the suggested replacement and a button to affect the replacement
-                    # clicking outside the window will cause it to disappear.
-                    if(len(self.echoDictionary) > 0):   # if we have a dictionary of echoed words
-                        if wordToCheck in self.echoDictionary:  # check to see if the word is an echo
-                            self.setFormat(    # if it is not we underline it using the style shown above
-                                word_object.start(),  # index of first letter of match
-                                # index of last letter - index of first letter= length
-                                word_object.end() - word_object.start(),
-                                self.echoFormat,
-                            )
+            # if(self.typeOfCheck == "grammar"):
+            #     if(self.currentBlock().contains(startOfBlock) or self.currentBlock().contains(endOfBlock)):
+            #         # we could pass a collection of grammar errors with their starting and ending position
+            #         # this would be enough to high light the errors using setFormat
+            #         # But we also need to present the error to the user and then offer them the possibility
+            #         # of correcting the error.
+            #         # Ideally we could present a dialog which shows the error, the suggested replacement and a button to affect the replacement
+            #         # clicking outside the window will cause it to disappear.
+            #         if(len(self.echoDictionary) > 0):   # if we have a dictionary of echoed words
+            #             if wordToCheck in self.echoDictionary:  # check to see if the word is an echo
+            #                 self.setFormat(    # if it is not we underline it using the style shown above
+            #                     word_object.start(),  # index of first letter of match
+            #                     # index of last letter - index of first letter= length
+            #                     word_object.end() - word_object.start(),
+            #                     self.echoFormat,
+            #                 )
 
     # We can set the echoes here. The pool of echoed words form the reference dictionary for our check
 
