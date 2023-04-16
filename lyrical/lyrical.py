@@ -14,7 +14,6 @@ import uuid
 import style
 import utilities
 import logging
-import palettes
 from theme import Theme
 import preferencesDialog
 import projectTypeDialog
@@ -101,6 +100,9 @@ class MainWindow(QMainWindow):
             "The resource path is located at {}".format(self.resourcePath))
         if(self.theme == "light"):
             self.palette = self.colorTheme.lightPalette
+            appContext.setPalette(self.palette)
+        elif(self.theme == "lyrical"):
+            self.palette = self.colorTheme.lyricalPalette
             appContext.setPalette(self.palette)
         else:
             self.palette = self.colorTheme.darkPalette
@@ -337,8 +339,12 @@ class MainWindow(QMainWindow):
         #     QIcon(os.path.join('images', 'edit-bold.png')), "Bold", self)
 
         icon = QIcon()
-        icon.addPixmap(QPixmap(
-            ":/images/images/edit-bold.png"), QIcon.Normal, QIcon.Off)
+        if(self.theme == "dark"):
+            icon.addPixmap(QPixmap(
+                ":/images/images/edit-bold-dark.png"), QIcon.Normal, QIcon.Off)
+        else:
+            icon.addPixmap(QPixmap(
+                ":/images/images/edit-bold-light.png"), QIcon.Normal, QIcon.Off)
         self.bold_action = QAction(
             icon, "Bold", self)
 
@@ -360,8 +366,12 @@ class MainWindow(QMainWindow):
 
         # self.italic_action = QAction(
         #    QIcon(os.path.join('images', 'edit-italic.png')), "Italic", self)
-        self.italic_action = QAction(
-            QIcon(":/images/images/edit-italic.png"), "Italic", self)
+        if(self.theme == "dark"):
+            self.italic_action = QAction(
+                QIcon(":/images/images/edit-italic-dark.png"), "Italic", self)
+        else:
+            self.italic_action = QAction(
+                QIcon(":/images/images/edit-italic-light.png"), "Italic", self)
         self.italic_action.setStatusTip("Italic")
         self.italic_action.setShortcut(QKeySequence.Italic)
         self.italic_action.setCheckable(True)
@@ -369,8 +379,12 @@ class MainWindow(QMainWindow):
         format_toolbar.addAction(self.italic_action)
         format_toolbar.addAction(self.italic_action)
 
-        self.underline_action = QAction(
-            QIcon(":/images/images/edit-underline.png"), "Underline", self)
+        if(self.theme == "dark"):
+            self.underline_action = QAction(
+                QIcon(":/images/images/edit-underline-dark.png"), "Underline", self)
+        else:
+            self.underline_action = QAction(
+                QIcon(":/images/images/edit-underline-light.png"), "Underline", self)
         self.underline_action.setStatusTip("Underline")
         self.underline_action.setShortcut(QKeySequence.Underline)
         self.underline_action.setCheckable(True)
@@ -378,14 +392,30 @@ class MainWindow(QMainWindow):
         format_toolbar.addAction(self.underline_action)
         format_menu.addAction(self.underline_action)
 
-        self.highlight_action = QAction(
-            QIcon(":/images/images/edit-highlight-clear.png"), "Highlight", self)
-        self.highlight_action_yellow = QAction(
-            QIcon(":/images/images/edit-highlight-yellow.png"), "Highlight in Yellow", self)
-        self.highlight_action_red = QAction(
-            QIcon(":/images/images/edit-highlight-red.png"), "Highlight in Red", self)
-        self.highlight_action_clear = QAction(
-            QIcon(":/images/images/edit-highlight-clear.png"), "Clear Highlighting", self)
+        if(self.theme == "dark"):
+            self.highlight_action = QAction(
+                QIcon(":/images/images/edit-highlight-clear-dark.png"), "Highlight", self)
+        else:
+            self.highlight_action = QAction(
+                QIcon(":/images/images/edit-highlight-clear-light.png"), "Highlight", self)
+        if(self.theme == "dark"):
+            self.highlight_action_yellow = QAction(
+                QIcon(":/images/images/edit-highlight-yellow-dark.png"), "Highlight in Yellow", self)
+        else:
+            self.highlight_action_yellow = QAction(
+                QIcon(":/images/images/edit-highlight-yellow-light.png"), "Highlight in Yellow", self)
+        if(self.theme == "dark"):
+            self.highlight_action_red = QAction(
+                QIcon(":/images/images/edit-highlight-red-dark.png"), "Highlight in Red", self)
+        else:
+            self.highlight_action_red = QAction(
+                QIcon(":/images/images/edit-highlight-red-light.png"), "Highlight in Red", self)
+        if(self.theme == "dark"):
+            self.highlight_action_clear = QAction(
+                QIcon(":/images/images/edit-highlight-clear-dar.png"), "Clear Highlighting", self)
+        else:
+            self.highlight_action_clear = QAction(
+                QIcon(":/images/images/edit-highlight-clear-light.png"), "Clear Highlighting", self)
         self.highlight_action.setStatusTip("Select a highlight style")
         self.highlight_action_yellow.setStatusTip("Highlight in Yellow")
         self.highlight_action_red.setStatusTip("Highlight in Red")

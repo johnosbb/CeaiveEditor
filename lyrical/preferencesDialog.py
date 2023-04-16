@@ -94,7 +94,7 @@ class PreferencesDialog(QDialog):
         self.fileFormatSelect.setCurrentText(parent.language)
         self.fileFormatLabel = QLabel("File Format")
 
-        themeSelectOptions = ["dark", "light"]
+        themeSelectOptions = ["dark", "light", "lyrical"]
         self.themeSelectLayout = QHBoxLayout()
         self.themeSelect = QComboBox()
         self.properties.theme = parent.theme

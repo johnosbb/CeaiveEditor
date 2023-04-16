@@ -191,7 +191,7 @@ class LintCheck(QObject):
                 userData.value = self.__rules
                 block.setUserData(userData)
             else:
-                print("No suggestions found for text")
+                print("No suggestions found for this text section")
         else:
             logging.debug("lintCheck: checkSection: Nothing to check")
 
