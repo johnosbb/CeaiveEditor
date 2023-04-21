@@ -59,6 +59,11 @@ Literature in an Unsupervised Manner](https://digitalcommons.du.edu/cgi/viewcont
 - [Epub Library for Python](https://github.com/aerkalov/ebooklib/tree/master/ebooklib)
 
 ### Grammar Checking
+
+#### Sentence Classification
+
+- [Sentence Classification](https://github.com/lettergram/sentence-classification)
+
 #### Language Tool
 
 LanguageTool is an open source spellchecking platform. It supports a large variety of languages and has advanced grammar support. Language tool is also available as a hosted commercial service that also offers a limited free option. The API documentation is available [Here](https://languagetool.org/http-api/#/default)
