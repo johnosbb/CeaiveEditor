@@ -11,6 +11,7 @@ from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 from sortWordsForColorDescriptorFilterProxyModel import SortWordsForColorDescriptorFilterProxyModel
 import globals
 from colorTile import ColorTile
+import logging
 
 DIALOG_WIDTH = 800
 DIALOG_HEIGHT = 700

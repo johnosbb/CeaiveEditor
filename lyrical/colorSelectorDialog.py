@@ -10,6 +10,7 @@ from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 import globals
 from sortWordsForColorFilterProxyModel import SortWordsForColorFilterProxyModel
 import globals
+import logging
 from colorTile import ColorTile
 
 DIALOG_WIDTH = 620

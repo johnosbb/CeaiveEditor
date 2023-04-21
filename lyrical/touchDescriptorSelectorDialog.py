@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import (QWidget, QPushButton,
 from PyQt5.QtGui import QIcon, QCursor
 from PyQt5.QtCore import Qt, QRegExp, QRect, QSize,  QPoint
 import globals
+import logging
 
 # import utilities as Utilities
 
@@ -185,7 +186,6 @@ class WordForTouchDescriptorsSelectorDialog(QDialog):
         # icon = QIcon(":/images/images/clipboard-paste-document-text.png")
         # selectionAction = self.selectionMenu.addAction(icon,
         #                                                'Click {} to insert this word into your document'.format("here"))
-
 
     def acceptSelection(self, data):
         if(data):
