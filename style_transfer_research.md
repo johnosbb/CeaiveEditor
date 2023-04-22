@@ -36,12 +36,12 @@ These projects provide examples of how style transfer can be applied to literary
 
 "Controllable Unsupervised Text Attribute Transfer via Editing Entangled Latent Representation": https://arxiv.org/abs/1905.10671
 
-"Style Transfer from Non-Parallel Text by Cross-Alignment": https://arxiv.org/abs/1705.09655
-
+- [Style Transfer from Non-Parallel Text by Cross-Alignment](https://arxiv.org/abs/1705.09655)
+- [Unsupervised Poem Style Transfer with Reinforcement Learning](https://www.aclweb.org/anthology/P19-1227/)
 
 ### Basic Approaches
 
 - [Text-Classification-Pytorch](https://github.com/prakashpandey9/Text-Classification-Pytorch)
+- [Text-Classification](https://github.com/Renovamen/Text-Classification)
 
 
-"Unsupervised Poem Style Transfer with Reinforcement Learning": https://www.aclweb.org/anthology/P19-1227/
