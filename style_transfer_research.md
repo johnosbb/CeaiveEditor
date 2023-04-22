@@ -39,7 +39,9 @@ These projects provide examples of how style transfer can be applied to literary
 "Style Transfer from Non-Parallel Text by Cross-Alignment": https://arxiv.org/abs/1705.09655
 
 
+### Basic Approaches
 
+- [Text-Classification-Pytorch](https://github.com/prakashpandey9/Text-Classification-Pytorch)
 
 
 "Unsupervised Poem Style Transfer with Reinforcement Learning": https://www.aclweb.org/anthology/P19-1227/
