@@ -17,7 +17,9 @@ Goal - Create a application for creative writers that has all the features of a 
 
 Research Phase began in January 2022
 
-- [Literary Research](litterary_research.md)
+- [General Research, approaches, technologies, python](research.md)
+- [Literary Research](literary_research.md)
+- [Style Transfer Research](style_research.md)
 
 
 # Additional Information
