@@ -19,7 +19,7 @@ Research Phase began in January 2022
 
 - [General Research, approaches, technologies, python](research.md)
 - [Literary Research](literary_research.md)
-- [Style Transfer Research](style_research.md)
+- [Style Transfer Research](style_transfer_research.md)
 
 
 # Additional Information
