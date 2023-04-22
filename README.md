@@ -17,6 +17,8 @@ Goal - Create a application for creative writers that has all the features of a 
 
 Research Phase began in January 2022
 
+- [Literary Research](litterary_research.md)
+
 
 # Additional Information
 
