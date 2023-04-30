@@ -41,9 +41,9 @@ These projects provide examples of how style transfer can be applied to literary
 
 ## Python3 examples
 
-- [Style Transfer Through Back-Translation by Prabhumoye et al.](Code available on GitHub at https://github.com/shrimai/Back-Translation-Style-Transfer)
-- [Unpaired Text Style Transfer Using Adversarial Training by Shen et al.](Code available on GitHub at https://github.com/imkevinxu/style-transfer)
-- [Style Transfer for Texts: Retrain or Adapt? by Fu et al.](Code available on GitHub at https://github.com/fuzihaofzh/Style-Transfer-for-Texts)
+- [Style Transfer Through Back-Translation by Prabhumoye et al.](https://github.com/shrimai/Back-Translation-Style-Transfer)
+- [Unpaired Text Style Transfer Using Adversarial Training by Shen et al.](https://github.com/imkevinxu/style-transfer)
+- [Style Transfer for Texts: Retrain or Adapt? by Fu et al.](https://github.com/fuzihaofzh/Style-Transfer-for-Texts)
 
 ### Basic Approaches
 
