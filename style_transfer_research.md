@@ -34,10 +34,10 @@ These projects provide examples of how style transfer can be applied to literary
 
 ## Additional References
 
-"Controllable Unsupervised Text Attribute Transfer via Editing Entangled Latent Representation": https://arxiv.org/abs/1905.10671
-
+- [Controllable Unsupervised Text Attribute Transfer via Editing Entangled Latent Representation](https://arxiv.org/abs/1905.10671)
 - [Style Transfer from Non-Parallel Text by Cross-Alignment](https://arxiv.org/abs/1705.09655)
 - [Unsupervised Poem Style Transfer with Reinforcement Learning](https://www.aclweb.org/anthology/P19-1227/)
+- [Multiple-attribute Text Rewriting - paper](https://openreview.net/pdf?id=H1g2NhC5KQ)
 
 ## Python3 examples
 
