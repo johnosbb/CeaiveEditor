@@ -47,6 +47,7 @@ These projects provide examples of how style transfer can be applied to literary
 - [Language style transfer pytorch](https://github.com/kaletap/language-style-transfer-pytorch)
 - [Linguistic style transfer pytorch](https://github.com/h3lio5/linguistic-style-transfer-pytorch)
 - [Github projects on Text Style Transfer](https://github.com/topics/text-style-transfer)
+- [Style Transfer: List of relevant papers and projects ](https://github.com/fuzhenxin/Style-Transfer-in-Text/blob/master/README.md)
 
 ### Basic Approaches to Text Classification
 
