@@ -55,3 +55,7 @@ These projects provide examples of how style transfer can be applied to literary
 - [Text-Classification](https://github.com/Renovamen/Text-Classification)
 
 
+
+## Frameworks
+
+- [Texar](https://texar-pytorch.readthedocs.io/en/latest/)
