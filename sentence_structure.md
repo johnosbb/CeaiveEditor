@@ -96,3 +96,11 @@ In this sentence, "with the beard" is a prepositional phrase that modifies the n
 In this sentence, "wearing a red dress" is a participial phrase that modifies the noun "girl." The phrase acts as an adjective by providing more information about the girl's appearance.
 
 Overall, an adjectival strategy involves using adjectives to modify and describe nouns in a sentence, which can help to add detail and specificity to the sentence.
+
+
+## An Adjectival Strategy for better sentences
+
+Generally speaking, the more we can reduce the incidence of subordinate clauses introduced by pronouns such as who, that, or which, the more we minimize possible confusion or uncertainty about the noun that that pronoun refers to, and in doing this we buy ourselves the opportunity to add useful information to the sentence without as much risk that the sentence will become hard to follow.
+
+Not all propositions can be effectively boiled down to single modifying words or short modifying phrases, but many can, and this boiling down process allows us to pack more information into each sentence.
+
