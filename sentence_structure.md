@@ -51,7 +51,7 @@ In this example, "Although she is busy" is the dependent clause, and "she always
 
 A kernel sentence is a type of sentence that is often used in linguistic analysis as a basis for examining sentence structure and meaning. It is the simplest and most basic form of a sentence that expresses a complete thought and contains a subject and a predicate. The subject usually comes first, followed by the predicate, and there are no subordinate clauses or phrases. For example, "The cat sat" is a kernel sentence, which can be expanded into more complex sentences by adding additional words, phrases, or clauses. Kernel sentences are often used as a starting point for analyzing sentence structure and syntax, and they can be useful for identifying the key elements of a sentence and understanding how they relate to one another.
 
-## Straegies for Building Sentences
+## Strategies for Building Sentences
 
 ### Connective Strategy
 
