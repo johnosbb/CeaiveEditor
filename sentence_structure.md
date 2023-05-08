@@ -29,3 +29,20 @@ Complex sentences, on the other hand, contain one independent clause and at leas
 - Example: When she finished her work, she went home.
 
 In this example, "she went home" is the independent clause, and "When she finished her work" is the dependent clause. The dependent clause cannot stand alone as a complete sentence because it is dependent on the independent clause.
+
+### Compound sentences
+
+These sentences contain two or more independent clauses joined together by a conjunction or a semicolon.
+
+- Example: She is going to the party, but he is staying home.
+
+In this example, "She is going to the party" and "he is staying home" are both independent clauses joined together by the conjunction "but."
+
+### Complex-compound sentences
+
+These sentences contain two or more independent clauses and at least one dependent clause.
+
+- Example: Although she is busy, she always finds time for her friends, and she never forgets a birthday.
+
+In this example, "Although she is busy" is the dependent clause, and "she always finds time for her friends" and "she never forgets a birthday" are both independent clauses.
+
