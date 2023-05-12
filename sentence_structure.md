@@ -175,12 +175,6 @@ For example, in the sentence "He quickly ran to the store," the adverbial modifi
 
 
 
-
-
-
-Regenerate response
-
-
 ### Modifying Clauses
 
 A subordinative strategy involves breaking down long sentences into shorter ones and using modifying phrases instead of long noun phrases or bound modifiers in prepositional phrases. Start with a simple base clause and add modifying phrases to build longer sentences that are easier to follow.
