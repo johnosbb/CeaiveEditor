@@ -117,6 +117,13 @@ A bound modifier is a modifier that is directly attached to a specific word in a
 - "The movie, __which was directed by Steven Spielberg__, won several awards." - The bound modifier in this sentence is "which was directed by Steven Spielberg," which modifies the noun "movie."
 - "He ate the pizza with anchovies, __his favorite topping__." - The bound modifier in this sentence is "his favorite topping," which modifies the noun "anchovies."
 
+
+### Types of Bound Modifier
+
+#### Appositional Modifier
+
+An appositional modifier is a noun or noun phrase that renames or explains another noun or noun phrase. For example, in the sentence "My friend John, __a doctor__, is coming over tonight", the noun phrase "a doctor" is in apposition to "John".
+
 ### Free Modifiers
 
 A free modifier is a word, phrase, or clause that can be moved around in a sentence without changing its grammatical role or meaning. Free modifiers are not essential to the sentence's meaning, but they provide additional information that can clarify or enhance the sentence's meaning. Unlike bound modifiers, free modifiers are not attached to a specific word or phrase in the sentence. Instead, they can be placed almost anywhere in the sentence and still make sense. Examples of free modifiers include adverbs, adverbial phrases, and absolute phrases.
