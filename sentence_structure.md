@@ -109,6 +109,43 @@ Generally speaking, the more we can reduce the incidence of subordinate clauses 
 
 Not all propositions can be effectively boiled down to single modifying words or short modifying phrases, but many can, and this boiling down process allows us to pack more information into each sentence.
 
+### Free Modifiers
+
+A free modifier is a word, phrase, or clause that can be moved around in a sentence without changing its grammatical role or meaning. Free modifiers are not essential to the sentence's meaning, but they provide additional information that can clarify or enhance the sentence's meaning. Unlike bound modifiers, free modifiers are not attached to a specific word or phrase in the sentence. Instead, they can be placed almost anywhere in the sentence and still make sense. Examples of free modifiers include adverbs, adverbial phrases, and absolute phrases.
+
+Examine the three sentences below and observer that the modifiers shown in bold can be moved without changing the meaning of the sentence.
+
+- __Exhausted from the long day__, Maria collapsed on the couch.
+- __With a smile on her face__, Jane answered the phone.
+- __Excited about the news__, John jumped up and down.
+
+For example, we can modify the sentence
+
+- __Exhausted from the long day__, Maria collapsed on the couch.
+
+to become
+
+- Maria collapsed on the couch, __exhausted from the long day__.
+
+
+Now the sentence starts with the independent clause "Maria collapsed on the couch" followed by a comma, then a participial phrase "exhausted from the long day" that functions as a free modifier providing additional information about Maria's state when she collapsed.
+
+Consider this sentence from Charles Dickens:
+
+```txt
+The room was fragrant with the smell of punch, a tumbler of which grateful compound stood upon a small round table, convenient to the hand of Mr. Mould; so deftly mixed that as his eye looked down into the cool transparent drink, another eye, peering brightly from behind the crisp lemon-peel, looked up at him, and twinkled like a star. 
+```
+This has a number of free modifiers:
+
+- "fragrant with the smell of punch"
+- "a tumbler of which grateful compound stood upon a small round table"
+- "convenient to the hand of Mr. Mould"
+- "deftly mixed"
+- "as his eye looked down into the cool transparent drink"
+- "peering brightly from behind the crisp lemon-peel"
+- "looked up at him"
+- "and twinkled like a star"
+
 ### Modifying Clauses
 
 A subordinative strategy involves breaking down long sentences into shorter ones and using modifying phrases instead of long noun phrases or bound modifiers in prepositional phrases. Start with a simple base clause and add modifying phrases to build longer sentences that are easier to follow.
