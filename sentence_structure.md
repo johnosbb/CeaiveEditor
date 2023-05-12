@@ -118,12 +118,6 @@ A bound modifier is a modifier that is directly attached to a specific word in a
 - "He ate the pizza with anchovies, __his favorite topping__." - The bound modifier in this sentence is "his favorite topping," which modifies the noun "anchovies."
 
 
-### Types of Bound Modifier
-
-#### Appositional Modifier
-
-An appositional modifier is a noun or noun phrase that renames or explains another noun or noun phrase. For example, in the sentence "My friend John, __a doctor__, is coming over tonight", the noun phrase "a doctor" is in apposition to "John".
-
 ### Free Modifiers
 
 A free modifier is a word, phrase, or clause that can be moved around in a sentence without changing its grammatical role or meaning. Free modifiers are not essential to the sentence's meaning, but they provide additional information that can clarify or enhance the sentence's meaning. Unlike bound modifiers, free modifiers are not attached to a specific word or phrase in the sentence. Instead, they can be placed almost anywhere in the sentence and still make sense. Examples of free modifiers include adverbs, adverbial phrases, and absolute phrases.
@@ -160,6 +154,32 @@ This has a number of free modifiers:
 - "peering brightly from behind the crisp lemon-peel"
 - "looked up at him"
 - "and twinkled like a star"
+
+### Types of Modifier
+
+#### Appositional Modifier
+
+An appositional modifier is a noun or noun phrase that renames or explains another noun or noun phrase. For example, in the sentence "My friend John, __a doctor__, is coming over tonight", the noun phrase "a doctor" is in apposition to "John".
+
+An appositional modifier is typically considered a bound modifier, as it is directly linked to and modifies the noun it is attached to.
+
+#### Adverbial modifier
+
+An adverbial modifier, which is a word or phrase that modifies the meaning of a verb, adjective, or other adverb by providing additional information about time, manner, degree, or frequency.
+
+An adverbial modifier can be either a free modifier or a bound modifier, depending on its position in the sentence and its relationship to other elements.
+
+In general, an adverbial modifier provides more information about the verb in the sentence, describing how, when, where, or why the action is being performed. When an adverbial modifier is positioned at the beginning or end of the sentence and does not closely modify any other specific element in the sentence, it is more likely to be a free modifier. On the other hand, when an adverbial modifier is positioned closer to the verb or is more closely linked to a specific noun or pronoun in the sentence, it is more likely to be a bound modifier.
+
+For example, in the sentence "He quickly ran to the store," the adverbial modifier "quickly" could be considered a free modifier because it is not closely linked to any specific noun or pronoun in the sentence. However, in the sentence "He quickly ran to the store to buy some milk," the adverbial modifier "quickly" is more closely linked to the verb "ran" and to the purpose of the action, so it could be considered a bound modifier.
+
+
+
+
+
+
+Regenerate response
+
 
 ### Modifying Clauses
 
