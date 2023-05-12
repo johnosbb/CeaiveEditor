@@ -83,21 +83,17 @@ Adjectives can also be used in a series to modify a single noun, as in the sente
 
 An adjectival strategy can also involve modifying phrases. In this case, a modifying phrase acts as an adjective and provides more information about a noun or pronoun in a sentence. For example:
 
-```txt
-The book on the shelf is mine.
-```
+- The book on the shelf is mine.
 
 In this sentence, "on the shelf" is a prepositional phrase that modifies the noun "book." The phrase tells us which book is being referred to, and it acts as an adjective by providing additional information about the book.
 
-```txt
-The man with the beard is my uncle.
-```
+- The man with the beard is my uncle.
+
 
 In this sentence, "with the beard" is a prepositional phrase that modifies the noun "man." The phrase acts as an adjective by providing more information about the man's appearance.
 
-```txt
-The girl wearing a red dress is my sister.
-```
+- The girl wearing a red dress is my sister.
+
 In this sentence, "wearing a red dress" is a participial phrase that modifies the noun "girl." The phrase acts as an adjective by providing more information about the girl's appearance.
 
 Overall, an adjectival strategy involves using adjectives to modify and describe nouns in a sentence, which can help to add detail and specificity to the sentence.
