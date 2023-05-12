@@ -151,7 +151,17 @@ This has a number of free modifiers:
 - "looked up at him"
 - "and twinkled like a star"
 
-### Types of Modifier
+### Types of Modifiers
+
+#### Adjectival Modifier
+
+An adjectival modifier is an adjective that modifies the noun it is attached to.
+
+For example, in the sentence:
+
+- The __red__ apple is delicious
+
+In this sentence "red" is an adjectival modifier of "apple."
 
 #### Appositional Modifier
 
@@ -171,7 +181,7 @@ For example, in the sentence "He quickly ran to the store," the adverbial modifi
 
 #### Participial Modifier
 
-A participial modifier is a type of adjectival phrase that is formed from a verb's present participle (-ing form) or past participle (-ed form) and functions as an adjective in a sentence. partmod is short for "participial modifier".
+A participial modifier is a type of adjectival phrase that is formed from a verb's present participle (-ing form) or past participle (-ed form) and functions as an adjective in a sentence. It is considered a type of free modifier, meaning it is not directly attached to a particular word or phrase in the sentence.
 
 - The __exhausted__ runner, panting heavily, crossed the finish line first.
 
