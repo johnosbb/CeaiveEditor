@@ -1,3 +1,44 @@
+# Parts of Speech
+
+## Determiners
+
+A determiner is a word that is used before a noun to indicate which thing or things are being referred to. Examples of determiners include "a," "an," "the," "this," "that," "these," and "those."
+
+## Adpositions
+
+An adposition is a word that typically combines with a noun phrase to form a prepositional phrase, indicating spatial or temporal relationships between entities. Examples of adpositions include "in", "on", "at", "from", "to", "with", and "by".
+
+## Verbs
+
+A verb is a word that describes an action, occurrence, or state of being. It is one of the main parts of speech and is used to convey a predicate in a sentence, which tells us what the subject is doing or what is happening to it. Verbs can be inflected to show tense, aspect, voice, and other grammatical categories. Examples of verbs include "run," "eat," "jump," "be," and "think.
+
+### Auxilary Verbs
+
+An auxiliary verbs are used in combination with other verbs to express tense, mood, or voice. For example, "is" in the sentence "He is running" is an auxiliary verb.
+
+## Adjectives
+
+An adjective is a part of speech that describes or modifies a noun or pronoun by providing additional information about its qualities, states, or attributes. For example, in the phrase "the red car," "red" is an adjective that describes the noun "car." Adjectives can indicate the color, size, shape, age, or other qualities of the noun or pronoun they modify.
+
+## Adverbs
+
+An adverb is a part of speech that modifies or describes a verb, adjective, or other adverb. It typically provides information about time, manner, place, degree, or frequency, and often ends in "-ly" (e.g., quickly, slowly, loudly, softly). Adverbs can be used to indicate how an action is performed, to what extent, when, where, or why it is performed. For example, in the sentence "She sings beautifully," the adverb "beautifully" modifies the verb "sings" and indicates how the singing is performed.
+
+## Nouns
+
+A noun is a part of speech that denotes a person, place, thing, idea, or concept. It is a word that is used to name a person, animal, place, thing, or abstract idea, such as an event or quality. In English, nouns can be singular or plural, and they can be used as subjects of sentences, objects of verbs or prepositions, and in various other grammatical contexts.
+
+### Noun Types
+
+- Common nouns: Nouns that refer to general things, such as "book," "dog," or "city."
+- Proper nouns: Nouns that refer to specific, named things, such as "Jane," "Rover," or "New York City."
+- Collective nouns: Nouns that refer to a group of things, such as "herd," "team," or "family."
+- Abstract nouns: Nouns that refer to intangible concepts or ideas, such as "love," "justice," or "freedom."
+- Concrete nouns: Nouns that refer to physical, tangible objects, such as "table," "car," or "tree."
+- Countable nouns: Nouns that can be counted, such as "book," "chair," or "cookie."
+- Uncountable nouns: Nouns that cannot be counted, such as "water," "rice," or "advice."
+- Possessive nouns: Nouns that indicate possession or ownership, such as "Sara's book," "the company's profits," or "the cat's toy."
+
 # Sentence Structure
 
 ## Parts of a sentence
