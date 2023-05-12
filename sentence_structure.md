@@ -173,7 +173,19 @@ In general, an adverbial modifier provides more information about the verb in th
 
 For example, in the sentence "He quickly ran to the store," the adverbial modifier "quickly" could be considered a free modifier because it is not closely linked to any specific noun or pronoun in the sentence. However, in the sentence "He quickly ran to the store to buy some milk," the adverbial modifier "quickly" is more closely linked to the verb "ran" and to the purpose of the action, so it could be considered a bound modifier.
 
+#### Participial Modifier
 
+A participial modifier is a type of adjectival phrase that is formed from a verb's present participle (-ing form) or past participle (-ed form) and functions as an adjective in a sentence. partmod is short for "participial modifier".
+
+- "The __exhausted__ runner, panting heavily, crossed the finish line first."
+
+In this sentence, "exhausted" is a participial modifier that modifies "runner". It is formed from the present participle of the verb "exhaust", and functions as an adjective to describe the runner.
+
+Another example could be:
+
+- "John, __fascinated__ by the book, spent the entire weekend reading it."
+
+In this sentence, "fascinated" is a participial modifier that modifies "John". It is formed from the past participle of the verb "fascinate", and functions as an adjective to describe John's state of mind.
 
 ### Modifying Clauses
 
