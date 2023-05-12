@@ -109,6 +109,14 @@ Generally speaking, the more we can reduce the incidence of subordinate clauses 
 
 Not all propositions can be effectively boiled down to single modifying words or short modifying phrases, but many can, and this boiling down process allows us to pack more information into each sentence.
 
+### Bound Modifiers
+
+A bound modifier is a modifier that is directly attached to a specific word in a sentence, and cannot be moved to another position in the sentence without changing its meaning or creating a grammatically incorrect sentence. Bound modifiers can include adjectives, adverbs, and prepositional phrases.
+
+- "She wore a dress __that was made of silk__." - The bound modifier in this sentence is "that was made of silk," which modifies the noun "dress."
+- "The movie, __which was directed by Steven Spielberg__, won several awards." - The bound modifier in this sentence is "which was directed by Steven Spielberg," which modifies the noun "movie."
+- "He ate the pizza with anchovies, __his favorite topping__." - The bound modifier in this sentence is "his favorite topping," which modifies the noun "anchovies."
+
 ### Free Modifiers
 
 A free modifier is a word, phrase, or clause that can be moved around in a sentence without changing its grammatical role or meaning. Free modifiers are not essential to the sentence's meaning, but they provide additional information that can clarify or enhance the sentence's meaning. Unlike bound modifiers, free modifiers are not attached to a specific word or phrase in the sentence. Instead, they can be placed almost anywhere in the sentence and still make sense. Examples of free modifiers include adverbs, adverbial phrases, and absolute phrases.
