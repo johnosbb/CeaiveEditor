@@ -173,13 +173,13 @@ For example, in the sentence "He quickly ran to the store," the adverbial modifi
 
 A participial modifier is a type of adjectival phrase that is formed from a verb's present participle (-ing form) or past participle (-ed form) and functions as an adjective in a sentence. partmod is short for "participial modifier".
 
-- "The __exhausted__ runner, panting heavily, crossed the finish line first."
+- The __exhausted__ runner, panting heavily, crossed the finish line first.
 
 In this sentence, "exhausted" is a participial modifier that modifies "runner". It is formed from the present participle of the verb "exhaust", and functions as an adjective to describe the runner.
 
 Another example could be:
 
-- "John, __fascinated__ by the book, spent the entire weekend reading it."
+- John, __fascinated__ by the book, spent the entire weekend reading it.
 
 In this sentence, "fascinated" is a participial modifier that modifies "John". It is formed from the past participle of the verb "fascinate", and functions as an adjective to describe John's state of mind.
 
@@ -189,10 +189,8 @@ A subordinative strategy involves breaking down long sentences into shorter ones
 
 For example:
 
-```txt
-Base clause: The dog barked.
 
-Modifier added before the base clause: In the middle of the night, the dog barked.
+- Base clause: The dog barked.
+- Modifier added before the base clause: In the middle of the night, the dog barked.
+- Modifier added after the base clause: The dog barked, waking up the entire neighborhood.
 
-Modifier added after the base clause: The dog barked, waking up the entire neighborhood.
-```
