@@ -137,9 +137,9 @@ Now the sentence starts with the independent clause "Maria collapsed on the couc
 
 Consider this sentence from Charles Dickens:
 
-```txt
-The room was fragrant with the smell of punch, a tumbler of which grateful compound stood upon a small round table, convenient to the hand of Mr. Mould; so deftly mixed that as his eye looked down into the cool transparent drink, another eye, peering brightly from behind the crisp lemon-peel, looked up at him, and twinkled like a star. 
-```
+
+- The room was fragrant with the smell of punch, a tumbler of which grateful compound stood upon a small round table, convenient to the hand of Mr. Mould; so deftly mixed that as his eye looked down into the cool transparent drink, another eye, peering brightly from behind the crisp lemon-peel, looked up at him, and twinkled like a star. 
+
 This has a number of free modifiers:
 
 - "fragrant with the smell of punch"
