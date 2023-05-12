@@ -83,16 +83,21 @@ Adjectives can also be used in a series to modify a single noun, as in the sente
 
 An adjectival strategy can also involve modifying phrases. In this case, a modifying phrase acts as an adjective and provides more information about a noun or pronoun in a sentence. For example:
 
-- The book on the shelf is mine.
+```txt
+The book on the shelf is mine.
+```
 
 In this sentence, "on the shelf" is a prepositional phrase that modifies the noun "book." The phrase tells us which book is being referred to, and it acts as an adjective by providing additional information about the book.
 
-- The man with the beard is my uncle.
+```txt
+The man with the beard is my uncle.
+```
 
 In this sentence, "with the beard" is a prepositional phrase that modifies the noun "man." The phrase acts as an adjective by providing more information about the man's appearance.
 
-- The girl wearing a red dress is my sister.
-
+```txt
+The girl wearing a red dress is my sister.
+```
 In this sentence, "wearing a red dress" is a participial phrase that modifies the noun "girl." The phrase acts as an adjective by providing more information about the girl's appearance.
 
 Overall, an adjectival strategy involves using adjectives to modify and describe nouns in a sentence, which can help to add detail and specificity to the sentence.
@@ -104,3 +109,16 @@ Generally speaking, the more we can reduce the incidence of subordinate clauses 
 
 Not all propositions can be effectively boiled down to single modifying words or short modifying phrases, but many can, and this boiling down process allows us to pack more information into each sentence.
 
+### Modifying Clauses
+
+A subordinative strategy involves breaking down long sentences into shorter ones and using modifying phrases instead of long noun phrases or bound modifiers in prepositional phrases. Start with a simple base clause and add modifying phrases to build longer sentences that are easier to follow.
+
+For example:
+
+```txt
+Base clause: The dog barked.
+
+Modifier added before the base clause: In the middle of the night, the dog barked.
+
+Modifier added after the base clause: The dog barked, waking up the entire neighborhood.
+```
