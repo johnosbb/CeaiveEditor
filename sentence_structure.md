@@ -256,3 +256,20 @@ Here is an example of a cumulative sentence:
 -The sun was setting behind the mountains, casting a warm orange glow over the valley, illuminating the trees with shades of gold and red, and creating long shadows that stretched across the fields.
 
 In this sentence, the main idea is "The sun was setting behind the mountains." The subsequent phrases that follow, such as "casting a warm orange glow over the valley," "illuminating the trees with shades of gold and red," and "creating long shadows that stretched across the fields," all add more detail and contribute to the overall image being conveyed.
+
+A more elaborate example:
+
+- The chef prepared the fish, carefully, stuffing it with wild rice, sautéing it briely, its sweet aroma blending smoothly with the other enticing odors in the kitchen, the fish 
+becoming more than a food item, ascending to the status of art.
+
+In this sentence we have the following modifiers:
+
+| Modifier | Type |
+| ------ | ------ |
+| "carefully" | adverbial modifier, modifies the verb "prepared" |
+| "stuffing it with wild rice" | participial phrase functioning as an adverbial modifier, modifies the verb "prepared" |
+| "sautéing it briefly" | participial phrase functioning as an adverbial modifier, modifies the verb "prepared" |
+| "its sweet aroma blending smoothly with the other enticing odors in the kitchen" | non-finite clause functioning as an adjectival modifier, modifies the noun "fish" |
+| "becoming more than a food item" | non-finite clause and functions as a subject complement or predicative nominative, modifies the noun "fish" |
+| "ascending to the status of art" | noun clause  functioning as a predicate nominative, modifies the noun "fish"|
+
