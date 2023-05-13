@@ -245,3 +245,14 @@ For example:
 - Modifier added before the base clause: In the middle of the night, the dog barked.
 - Modifier added after the base clause: The dog barked, waking up the entire neighborhood.
 
+## Types of Sentences
+
+### Cumulative Sentence
+
+A cumulative sentence, also known as a loose sentence, is a type of sentence structure in which the main idea or independent clause is presented at the beginning, followed by a string of subordinate elements, such as phrases or clauses, that modify or add detail to the main idea. In other words, a cumulative sentence starts with a basic statement and then builds up additional details or information. The subordinate elements can be added in any order and can be of varying lengths and types, making cumulative sentences flexible and versatile.
+
+Here is an example of a cumulative sentence:
+
+-The sun was setting behind the mountains, casting a warm orange glow over the valley, illuminating the trees with shades of gold and red, and creating long shadows that stretched across the fields.
+
+In this sentence, the main idea is "The sun was setting behind the mountains." The subsequent phrases that follow, such as "casting a warm orange glow over the valley," "illuminating the trees with shades of gold and red," and "creating long shadows that stretched across the fields," all add more detail and contribute to the overall image being conveyed.
