@@ -25,3 +25,8 @@ Research Phase began in January 2022
 # Additional Information
 
 - There is additional information available on the [Wiki](https://github.com/johnosbb/Lyrical/wiki)
+
+
+## Similar Apps
+
+- [Calmly Writer](https://www.calmlywriter.com/online/)
