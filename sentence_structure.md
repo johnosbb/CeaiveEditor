@@ -88,6 +88,12 @@ These sentences contain two or more independent clauses and at least one depende
 In this example, "Although she is busy" is the dependent clause, and "she always finds time for her friends" and "she never forgets a birthday" are both independent clauses.
 
 
+### Phrases and Clauses
+
+A phrase is a group of words that function as a unit in a sentence, but it does not have both a subject and a verb. Phrases can function as nouns, adjectives, adverbs, or prepositions in a sentence. Examples of phrases include prepositional phrases ("in the park"), infinitive phrases ("to run"), and participial phrases ("smiling at the camera").
+
+A clause, on the other hand, is a group of words that contains a subject and a verb and can function as an independent sentence or as part of a larger sentence. There are two types of clauses: independent clauses and dependent clauses. Independent clauses express a complete thought and can stand alone as a sentence, while dependent clauses cannot stand alone and must be connected to an independent clause. Examples of dependent clauses include relative clauses ("which I found in the attic"), adverbial clauses ("because I was tired"), and noun clauses ("what she said").
+
 ## Analysing Sentence Structure
 
 A kernel sentence is a type of sentence that is often used in linguistic analysis as a basis for examining sentence structure and meaning. It is the simplest and most basic form of a sentence that expresses a complete thought and contains a subject and a predicate. The subject usually comes first, followed by the predicate, and there are no subordinate clauses or phrases. For example, "The cat sat" is a kernel sentence, which can be expanded into more complex sentences by adding additional words, phrases, or clauses. Kernel sentences are often used as a starting point for analyzing sentence structure and syntax, and they can be useful for identifying the key elements of a sentence and understanding how they relate to one another.
@@ -273,3 +279,12 @@ In this sentence we have the following modifiers:
 | "becoming more than a food item" | non-finite clause and functions as a subject complement or predicative nominative, modifies the noun "fish" |
 | "ascending to the status of art" | noun clause  functioning as a predicate nominative, modifies the noun "fish"|
 
+### Left and Right Branching Sentences
+
+The terms right-branching and left-branching refer to the direction of dependency relationships between words in a sentence. In a right-branching sentence, the dependencies move to the right of the sentence's main subject or verb, while in a left-branching sentence, the dependencies move to the left of the main subject or verb.
+
+In a right-branching sentence, the subject and main verb come at the beginning, and the modifiers follow. For example, "The cat, who was hungry, sat on the mat." Here, "The cat" is the subject, "sat" is the main verb, and "who was hungry" is a relative clause modifying "cat."
+
+In a left-branching sentence, the subject and main verb come at the end, and the modifiers precede them. For example, "On the mat sat the cat, who was hungry." Here, "on the mat" is a prepositional phrase, "sat" is the main verb, and "who was hungry" is a relative clause modifying "cat."
+
+The choice of left-branching or right-branching syntax can have implications for the way a sentence is perceived and understood. In general, left-branching sentences tend to place more emphasis on the modifiers, while right-branching sentences place more emphasis on the main subject and verb.
