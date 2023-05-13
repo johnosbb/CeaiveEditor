@@ -94,6 +94,23 @@ A phrase is a group of words that function as a unit in a sentence, but it does 
 
 A clause, on the other hand, is a group of words that contains a subject and a verb and can function as an independent sentence or as part of a larger sentence. There are two types of clauses: independent clauses and dependent clauses. Independent clauses express a complete thought and can stand alone as a sentence, while dependent clauses cannot stand alone and must be connected to an independent clause. Examples of dependent clauses include relative clauses ("which I found in the attic"), adverbial clauses ("because I was tired"), and noun clauses ("what she said").
 
+#### Types of Phrases
+
+- Participial phrases: Participial phrases are made up of a participle (a verb form that can function as an adjective) and any associated modifiers and objects. They can be used to modify a noun or a pronoun, and are often used to add description to a sentence. Example: "The horse, galloping across the field, was a beautiful sight."
+- Gerund phrases: Gerund phrases are made up of a gerund (a verb form ending in "-ing" that functions as a noun) and any associated modifiers and objects. They can be used as subjects, objects, or complements in a sentence. Example: "Running every day is good for your health."
+- Infinitive phrases: Infinitive phrases are made up of an infinitive (the base form of a verb preceded by "to") and any associated modifiers and objects. They can be used as subjects, objects, or complements in a sentence. For example: "To be or not to be, that is the question."
+- Prepositional phrases: Prepositional phrases are made up of a preposition, its object, and any associated modifiers. They can be used to indicate location, time, manner, or other relationships in a sentence. Example: "The book on the shelf is mine."
+- Appositive phrase: An appositive phrase is a noun or pronoun that renames or explains another noun or pronoun right beside it in a sentence. It is usually set off by commas, dashes, or parentheses. Example: __My friend Jane, a doctor, is coming to visit me.__ In this sentence, "a doctor" is an appositive phrase that renames "Jane".
+- An absolute phrase: An absolute phrase is a phrase that modifies the entire sentence. It contains a noun or pronoun and a participle, but it does not function as a typical adjective or adverb. It is usually set off by a comma. Example: __The sun having set, we made our way back home.__ In this sentence, "the sun having set" is an absolute phrase that modifies the entire sentence by giving context to the action that follows. It contains the noun "sun" and the participle "having set".
+- Adverbial phrase: A phrase that functions as an adverb in a sentence, providing information about time, place, manner, degree, etc. Example: "After dinner, she went for a walk."
+- Adjectival phrase: A phrase that functions as an adjective in a sentence, modifying a noun or pronoun. Example: __The man in the blue shirt is my uncle.__
+- Noun phrase: A phrase that functions as a noun in a sentence, either as the subject, object, or complement. Example: __My favorite hobby is playing basketball.__
+
+
+
+Verb phrase: A phrase that includes the main verb and any auxiliary verbs, and sometimes includes other elements such as adverbs or prepositions. Example: "She is singing a song."
+Note that these categories can overlap or be used in combination in various ways. 
+
 ## Analysing Sentence Structure
 
 A kernel sentence is a type of sentence that is often used in linguistic analysis as a basis for examining sentence structure and meaning. It is the simplest and most basic form of a sentence that expresses a complete thought and contains a subject and a predicate. The subject usually comes first, followed by the predicate, and there are no subordinate clauses or phrases. For example, "The cat sat" is a kernel sentence, which can be expanded into more complex sentences by adding additional words, phrases, or clauses. Kernel sentences are often used as a starting point for analyzing sentence structure and syntax, and they can be useful for identifying the key elements of a sentence and understanding how they relate to one another.
