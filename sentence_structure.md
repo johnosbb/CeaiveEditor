@@ -347,6 +347,9 @@ We can mix these two patterns by adding subordinate levels to coordinate pattern
 
 Here is an example of a mixed pattern:
 
-- The chef, known for his signature dish of grilled salmon, sautéed vegetables, and roasted potatoes, opened his own restaurant last month, after years of working in Michelin-starred kitchens, and has already received rave reviews from diners.
+- __The chef__, known for his signature dish of grilled salmon, sautéed vegetables, and roasted potatoes, __opened his own restaurant last month__, after years of working in Michelin-starred kitchens, and has already received rave reviews from diners.
 
-In this sentence, the first modifying phrase "known for his signature dish of grilled salmon, sautéed vegetables, and roasted potatoes" is in a coordinate pattern and refers to the base clause "the chef opened his own restaurant last month". The second modifying phrase "after years of working in Michelin-starred kitchens" is in a subordinate pattern and refers to the first modifying phrase. Finally, the third modifying phrase "and has already received rave reviews from diners" is in a coordinate pattern and refers to the base clause. This mixed pattern cumulative sentence allows for the sentence to move forward in time, while maintaining focus and intensity.
+In this sentence the base clause can  be identified as "The chef opened his own restaurant last month" because it is the main clause that contains the main subject and verb, and provides the basic information that the sentence conveys. All of the other phrases in the sentence modify or add additional information to this base clause.
+
+The first modifying phrase "known for his signature dish of grilled salmon, sautéed vegetables, and roasted potatoes" is in a coordinate pattern and refers to the base clause "the chef opened his own restaurant last month". The second modifying phrase "after years of working in Michelin-starred kitchens" is in a subordinate pattern and refers to the first modifying phrase. Finally, the third modifying phrase "and has already received rave reviews from diners" is in a coordinate pattern and refers to the base clause. This mixed pattern cumulative sentence allows for the sentence to move forward in time, while maintaining focus and intensity.
+
