@@ -315,12 +315,36 @@ In a left-branching sentence, the subject and main verb come at the end, and the
 
 The choice of left-branching or right-branching syntax can have implications for the way a sentence is perceived and understood. In general, left-branching sentences tend to place more emphasis on the modifiers, while right-branching sentences place more emphasis on the main subject and verb.
 
-Francis Christensen’s used an alternative set of positional terms to describe the possible position within the cumulative sentence of these unbound modifiers. 
-- Initial 
-- Medial
-- Final
+Francis Christensen (American educator, linguist, and scholar) used an alternative set of positional terms to describe the possible position within the cumulative sentence of these unbound modifiers. 
+- Initial - In the opening position before the subject and the verb.
+- Medial - In the middle of the sentence between the subject and the verb.
+- Final - Always after the base clause.
 
 The cumulative sentence is most typical and probably appears most frequently with the modifying phrase or phrases in the final position, since the whole idea behind the cumulative sentence is that it quickly posits a somewhat stark or kernel-like base clause (subject and verb, or subject, verb, object), then presents much more information about that base clause 
 in subsequent modifying phrases. Accordingly, to give any sentence more of a cumulative form, simply replace its period with a comma and start adding modifying phrases
 
+### Patterns of Cumulative Sentences
+
+When we employ more than a single modifying phrase in a cumulative sentence, we can choose to combine them in patterns that are coordinate, subordinate, or mixed. Generally speaking, one mark of inexperienced or ineffective writing is that it relies heavily on sentences of only one or two levels. Just adding one new level of information to our sentences means that our sentences will contain more information, more detail, and a better explanation.
+
+
+#### Co-ordinate Patterns
+
+In coordinate patterns, all modifying phrases refer to the base clause. Example:
+
+- __Having completed all questions on his exam paper__, the elated boy left the exam hall.
+
+In this sentence "__Having completed all questions on his exam paper__" modifies the base clause of "the elated boy left the exam hall"
+
+#### Subordinate Pattern
+
+In subordinate patterns, each modifying phrase refers to the preceding clause or phrase. Subordinate levels move the focus of the sentence forward, moving from general to specific, zooming in like a camera panning across the modifiers.  Example:
+
+- The elated boy left the exam hall,__having completed all questions on his exam__, __handing up his paper__, __and quietly leaving the hall__.
+
+In this sentence the three modifiers that follow the base clause "the elated boy left the exam hall" are in subordinate positions.
+
+#### Mixed Patterns
+
+We can mix these two patterns by adding subordinate levels to coordinate patterns or coordinate levels to subordinate patterns, with one or the other pattern predominating. The main appeal of mixed cumulative construction is that it combines the strength of both the coordinate and subordinate forms, allowing the sentence to move forward in time and open up new ideas, while maintaining intensity and focus.
 
