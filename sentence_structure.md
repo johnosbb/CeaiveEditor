@@ -322,8 +322,7 @@ in subsequent modifying phrases. Accordingly, to give any sentence more of a cum
 
 ### Patterns of Cumulative Sentences
 
-When we employ more than a single modifying phrase in a cumulative sentence, we can choose to combine them in patterns that are coordinate, subordinate, or mixed. Generally speaking, one mark of inexperienced or ineffective writing is that it relies heavily on sentences of only one or two levels. Just adding one new level of information to our sentences means that our sentences will contain more information, more detail, and a better explanation.
-
+When we employ more than a single modifying phrase in a cumulative sentence, we can choose to combine them in patterns that are coordinate, subordinate, or mixed. Generally speaking, one mark of inexperienced or ineffective writing is that it relies heavily on sentences of only one or two levels. Just adding one new level of information to our sentences means that our sentences will contain more information, more detail, and a better explanation. 
 
 #### Co-ordinate Pattern
 
@@ -332,6 +331,13 @@ In coordinate patterns, all modifying phrases refer to the base clause. Example:
 - __Having completed all questions on his exam paper__, the elated boy left the exam hall.
 
 In this sentence "__Having completed all questions on his exam paper__" modifies the base clause of "the elated boy left the exam hall"
+
+
+Another example:
+
+- __This room looks like a disaster area__, its ratty carpet stained and worn thin in many spots, its sheetrock walls pocked with cracks and holes, its broken and splintered furniture good only for firewood.
+
+In this sentence the base clause "This room looks like a disaster area" is modified by each of the phrases that follow it.
 
 #### Subordinate Pattern
 
@@ -353,3 +359,6 @@ In this sentence the base clause can  be identified as "The chef opened his own 
 
 The first modifying phrase "known for his signature dish of grilled salmon, sautéed vegetables, and roasted potatoes" is in a coordinate pattern and refers to the base clause "the chef opened his own restaurant last month". The second modifying phrase "after years of working in Michelin-starred kitchens" is in a subordinate pattern and refers to the first modifying phrase. Finally, the third modifying phrase "and has already received rave reviews from diners" is in a coordinate pattern and refers to the base clause. This mixed pattern cumulative sentence allows for the sentence to move forward in time, while maintaining focus and intensity.
 
+### The Effective Cumulative Sentence
+
+If a sentence only takes a single cumulative step, it can’t really be said to be either coordinate or subordinate, since we need at least two modifying phrases before we can make that determination. When writers add a third modifying phrase to their sentences, their prose becomes even more effective, their control of syntax even more impressive. One of the most effective moves writers can make in cumulative sentences with three or more modifying phrases is to make the final phrase either a kind of summation or make it a simile or metaphor that nails down or drives home the idea the preceding phrases build toward.
