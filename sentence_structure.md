@@ -293,7 +293,7 @@ In this sentence we have the following modifiers:
 | "becoming more than a food item" | non-finite clause and functions as a subject complement or predicative nominative, modifies the noun "fish" |
 | "ascending to the status of art" | noun clause  functioning as a predicate nominative, modifies the noun "fish"|
 
-The distinction between a clause and a phrase is crucial to understanding the cumulative sentence; students trying to write cumulatives for the first time often produce comma splices.
+The distinction between a clause and a phrase is crucial to understanding the cumulative sentence; people trying to write cumulatives for the first time often produce comma splices.
 A comma splice occurs when two independent clauses are joined together with only a comma, which is not grammatically correct.
 
 For example, a student attempting to write a cumulative sentence might write: "She went to the store, she bought some milk." In this sentence, "She went to the store" is an independent clause that can stand alone as a sentence. "She bought some milk" is also an independent clause. However, the student has joined the two independent clauses with only a comma, which is incorrect.
