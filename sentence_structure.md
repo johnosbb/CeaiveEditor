@@ -325,7 +325,7 @@ in subsequent modifying phrases. Accordingly, to give any sentence more of a cum
 When we employ more than a single modifying phrase in a cumulative sentence, we can choose to combine them in patterns that are coordinate, subordinate, or mixed. Generally speaking, one mark of inexperienced or ineffective writing is that it relies heavily on sentences of only one or two levels. Just adding one new level of information to our sentences means that our sentences will contain more information, more detail, and a better explanation.
 
 
-#### Co-ordinate Patterns
+#### Co-ordinate Pattern
 
 In coordinate patterns, all modifying phrases refer to the base clause. Example:
 
