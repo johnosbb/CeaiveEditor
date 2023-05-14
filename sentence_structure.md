@@ -385,3 +385,70 @@ In the following mixed pattern sentence we see the potential for rythm that this
 ### The Effective Cumulative Sentence
 
 If a sentence only takes a single cumulative step, it can’t really be said to be either coordinate or subordinate, since we need at least two modifying phrases before we can make that determination. When writers add a third modifying phrase to their sentences, their prose becomes even more effective, their control of syntax even more impressive. One of the most effective moves writers can make in cumulative sentences with three or more modifying phrases is to make the final phrase either a kind of summation or make it a simile or metaphor that nails down or drives home the idea the preceding phrases build toward.
+
+### Strategies for Creating Cumulative sentences
+
+There are a number of strategies for adding second-level modifying phrases to the base clause of a sentence.
+
+- Begin the modifying phrase with a verbal:
+  -The runner, having completed the marathon, collapsed at the finish line.
+- Begin the modifying level with a verbal plus another modifier:
+  - The bird, soaring gracefully through the sky, caught the attention of the watching crowd.
+- Begin the modifying phrase with an article plus one of the nouns (subject or object) from the base clause:
+  - The cat, a stray that had been wandering the neighborhood for days, finally found a home with a kind-hearted family.
+- Begin the modifying phrase with an article plus an adjective plus one of the base clause nouns:
+  - The woman, an experienced lawyer, confidently argued her case in court.
+- Begin the modifying phrase with an article plus an adjective plus almost any noun followed by a prepositional phrase:
+  - The car, a vintage model from the 1960s, was carefully restored by its owner over a period of several years.
+- Begin the modifying phrase with an article plus an appositive for one of the base clause nouns or a noun phrase appositive for the action of the clause:
+  - The painting, a masterpiece by Leonardo da Vinci, sold for a record-breaking price at auction.
+- Begin the modifying phrase with a possessive pronoun referring to either subject, object, or to the sense of the entire base clause:
+  - The actress, her performance a tour de force, received a standing ovation from the audience.
+- Begin the modifying phrase with an adverb or an article plus an adverb:
+  - The speaker, clearly nervous, stumbled over her words during the presentation.
+- Begin the modifying phrase with an article plus entirely new information, including even relative non sequiturs:
+  - The garden, a riot of colors and scents, was a favorite spot for the elderly couple to relax.
+- Begin the modifying phrase with almost anything followed by a simile or metaphor that details all or part of the base clause:
+  - The athlete, a blur of motion and speed, sprinted towards the finish line.
+
+
+#### Similes and Metaphores
+
+Both simile and metaphor are figures of speech used to make a comparison between two things that are seemingly unrelated. The difference between them lies in the way they make the comparison.
+
+A simile is a comparison between two things that are similar in some way, using the words "like" or "as" to make the comparison. For example: "Her hair was like a golden halo," or "He sings like an angel."
+
+A metaphor, on the other hand, is a direct comparison between two things that are not literally the same. Instead of using "like" or "as," a metaphor states that one thing is another. For example: "Her eyes were stars," or "Life is a journey."
+
+We can use similes and metaphors to extend cumulative sentences
+
+- Simile:
+- The sun set behind the mountain, __painting the sky with colors as vibrant as a freshly picked bouquet of wildflowers__.
+
+- Metaphor:
+- The car engine roared to life, __a beast awakening from its slumber__.
+
+In both examples, the simile and metaphor are used to extend the cumulative sentence by adding a descriptive phrase that provides more detail and imagery. These figurative language devices allow the reader to visualize and experience the scene more vividly.
+
+#### Heuristic Prompts and Prompts of Explanation
+
+Heuristic prompts and prompts of explanation can help us create more effective cumulative sentences. The most common forms of these use the words:
+
+- because
+- perhaps
+- possibly
+- due to
+
+Some examples of these follow:
+
+- The team,__because__ their star player was injured, lost the championship
+- The company's profits,__perhaps__ due to increased competition, have decreased.
+- The concert, possibly due to bad weather, was cancelled.
+
+In each of these examples, the base clause is extended or modified using one of the heuristic prompts to provide additional information or speculation. The use of "because" adds a causal relationship between two clauses, while "perhaps" and "possibly" introduce more tentative or speculative language.
+
+
+
+
+
+
