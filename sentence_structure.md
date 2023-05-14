@@ -105,10 +105,7 @@ A clause, on the other hand, is a group of words that contains a subject and a v
 - Adverbial phrase: A phrase that functions as an adverb in a sentence, providing information about time, place, manner, degree, etc. Example: "After dinner, she went for a walk."
 - Adjectival phrase: A phrase that functions as an adjective in a sentence, modifying a noun or pronoun. Example: __The man in the blue shirt is my uncle.__
 - Noun phrase: A phrase that functions as a noun in a sentence, either as the subject, object, or complement. Example: __My favorite hobby is playing basketball.__
-
-
-
-Verb phrase: A phrase that includes the main verb and any auxiliary verbs, and sometimes includes other elements such as adverbs or prepositions. Example: "She is singing a song."
+- Verb phrase: A phrase that includes the main verb and any auxiliary verbs, and sometimes includes other elements such as adverbs or prepositions. Example: "She is singing a song."
 Note that these categories can overlap or be used in combination in various ways. 
 
 ## Analysing Sentence Structure
