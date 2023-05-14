@@ -341,7 +341,7 @@ In subordinate patterns, each modifying phrase refers to the preceding clause or
 
 In this sentence the three modifiers that follow the base clause "the elated boy left the exam hall" are in subordinate positions.
 
-#### Mixed Patterns
+#### Mixed Pattern
 
 We can mix these two patterns by adding subordinate levels to coordinate patterns or coordinate levels to subordinate patterns, with one or the other pattern predominating. The main appeal of mixed cumulative construction is that it combines the strength of both the coordinate and subordinate forms, allowing the sentence to move forward in time and open up new ideas, while maintaining intensity and focus.
 
