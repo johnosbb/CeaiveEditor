@@ -345,3 +345,8 @@ In this sentence the three modifiers that follow the base clause "the elated boy
 
 We can mix these two patterns by adding subordinate levels to coordinate patterns or coordinate levels to subordinate patterns, with one or the other pattern predominating. The main appeal of mixed cumulative construction is that it combines the strength of both the coordinate and subordinate forms, allowing the sentence to move forward in time and open up new ideas, while maintaining intensity and focus.
 
+Here is an example of a mixed pattern:
+
+- The chef, known for his signature dish of grilled salmon, sautéed vegetables, and roasted potatoes, opened his own restaurant last month, after years of working in Michelin-starred kitchens, and has already received rave reviews from diners.
+
+In this sentence, the first modifying phrase "known for his signature dish of grilled salmon, sautéed vegetables, and roasted potatoes" is in a coordinate pattern and refers to the base clause "the chef opened his own restaurant last month". The second modifying phrase "after years of working in Michelin-starred kitchens" is in a subordinate pattern and refers to the first modifying phrase. Finally, the third modifying phrase "and has already received rave reviews from diners" is in a coordinate pattern and refers to the base clause. This mixed pattern cumulative sentence allows for the sentence to move forward in time, while maintaining focus and intensity.
