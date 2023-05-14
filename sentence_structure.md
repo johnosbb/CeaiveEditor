@@ -347,6 +347,25 @@ In subordinate patterns, each modifying phrase refers to the preceding clause or
 
 In this sentence the three modifiers that follow the base clause "the elated boy left the exam hall" are in subordinate positions.
 
+The most striking characteristic of the subordinate cumulative sentence is that none of its modifying phrases after the second level will make sense if placed directly before or after the base clause. Consider this example:
+
+"While jogging in the park, __Sarah suddenly tripped over a rock__, causing her to stumble into a nearby tree and startle a group of birds, who took off into the sky in a flurry of feathers and chirps."
+
+In this sentence, the base clause is "Sarah suddenly tripped over a rock." The modifying phrases are:
+
+"While jogging in the park"
+"causing her to stumble into a nearby tree"
+"and startle a group of birds"
+"who took off into the sky in a flurry of feathers and chirps"
+
+If we were to move any of these modifying phrases to the beginning or end of the sentence, they would no longer make sense in the context of the sentence. For example, if we move "who took off into the sky in a flurry of feathers and chirps" to the beginning of the sentence, it would be unclear who or what is being referred to:
+
+"Who took off into the sky in a flurry of feathers and chirps, while jogging in the park, Sarah suddenly tripped over a rock, causing her to stumble into a nearby tree and startle a group of birds."
+
+Similarly, if we move "While jogging in the park" to the end of the sentence, it would also be unclear what it is modifying:
+
+"Sarah suddenly tripped over a rock, causing her to stumble into a nearby tree and startle a group of birds who took off into the sky in a flurry of feathers and chirps while jogging in the park."
+
 #### Mixed Pattern
 
 We can mix these two patterns by adding subordinate levels to coordinate patterns or coordinate levels to subordinate patterns, with one or the other pattern predominating. The main appeal of mixed cumulative construction is that it combines the strength of both the coordinate and subordinate forms, allowing the sentence to move forward in time and open up new ideas, while maintaining intensity and focus.
@@ -358,6 +377,10 @@ Here is an example of a mixed pattern:
 In this sentence the base clause can  be identified as "The chef opened his own restaurant last month" because it is the main clause that contains the main subject and verb, and provides the basic information that the sentence conveys. All of the other phrases in the sentence modify or add additional information to this base clause.
 
 The first modifying phrase "known for his signature dish of grilled salmon, sautéed vegetables, and roasted potatoes" is in a coordinate pattern and refers to the base clause "the chef opened his own restaurant last month". The second modifying phrase "after years of working in Michelin-starred kitchens" is in a subordinate pattern and refers to the first modifying phrase. Finally, the third modifying phrase "and has already received rave reviews from diners" is in a coordinate pattern and refers to the base clause. This mixed pattern cumulative sentence allows for the sentence to move forward in time, while maintaining focus and intensity.
+
+In the following mixed pattern sentence we see the potential for rythm that this form can bring:
+
+- They drove carefully, he with hands on the wheel in his familiar position at ten and two, his eyes focused to the road, a road almost invisible beyond the sheets of rain that pelted the windshield, she checking and rechecking the map, calling out town names and possible landmarks, landmarks neither could possibly see, both growing more tense and worried by the minute, neither able to say anything.
 
 ### The Effective Cumulative Sentence
 
