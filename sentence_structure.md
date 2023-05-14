@@ -438,6 +438,10 @@ Heuristic prompts and prompts of explanation can help us create more effective c
 - perhaps
 - possibly
 - due to
+- for
+- as
+- seems
+- appears
 
 Some examples of these follow:
 
@@ -446,6 +450,8 @@ Some examples of these follow:
 - The concert, possibly due to bad weather, was cancelled.
 
 In each of these examples, the base clause is extended or modified using one of the heuristic prompts to provide additional information or speculation. The use of "because" adds a causal relationship between two clauses, while "perhaps" and "possibly" introduce more tentative or speculative language.
+
+The final step of a cumulative sentence is an ideal place for for speculation about motive or likely consequences or cause—speculation signaled by because, possibly, or perhaps. Its position at the end all benefits from the natural emphasis of that position in the sentence.
 
 
 
