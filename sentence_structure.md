@@ -305,6 +305,8 @@ In contrast, a correctly written cumulative sentence might look like this: "She 
 
 ### Left and Right Branching Sentences
 
+The main feature the cumulative sentence pattern is that it packages modifiers as unbound words or phrases—in ways that usually allow them to appear in the sentences in different positions, rather than bound to the words they modify.
+
 The terms right-branching and left-branching refer to the direction of dependency relationships between words in a sentence. In a right-branching sentence, the dependencies move to the right of the sentence's main subject or verb, while in a left-branching sentence, the dependencies move to the left of the main subject or verb.
 
 In a right-branching sentence, the subject and main verb come at the beginning, and the modifiers follow. For example, "The cat, who was hungry, sat on the mat." Here, "The cat" is the subject, "sat" is the main verb, and "who was hungry" is a relative clause modifying "cat."
@@ -312,3 +314,13 @@ In a right-branching sentence, the subject and main verb come at the beginning, 
 In a left-branching sentence, the subject and main verb come at the end, and the modifiers precede them. For example, "On the mat sat the cat, who was hungry." Here, "on the mat" is a prepositional phrase, "sat" is the main verb, and "who was hungry" is a relative clause modifying "cat."
 
 The choice of left-branching or right-branching syntax can have implications for the way a sentence is perceived and understood. In general, left-branching sentences tend to place more emphasis on the modifiers, while right-branching sentences place more emphasis on the main subject and verb.
+
+Francis Christensen’s used an alternative set of positional terms to describe the possible position within the cumulative sentence of these unbound modifiers. 
+- Initial 
+- Medial
+- Final
+
+The cumulative sentence is most typical and probably appears most frequently with the modifying phrase or phrases in the final position, since the whole idea behind the cumulative sentence is that it quickly posits a somewhat stark or kernel-like base clause (subject and verb, or subject, verb, object), then presents much more information about that base clause 
+in subsequent modifying phrases. Accordingly, to give any sentence more of a cumulative form, simply replace its period with a comma and start adding modifying phrases
+
+
