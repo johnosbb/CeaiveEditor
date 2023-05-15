@@ -454,7 +454,28 @@ In each of these examples, the base clause is extended or modified using one of 
 The final step of a cumulative sentence is an ideal place for for speculation about motive or likely consequences or cause—speculation signaled by because, possibly, or perhaps. Its position at the end all benefits from the natural emphasis of that position in the sentence.
 
 
+#### Cumulative Sentences and Rythm
 
+Writers who use cumulative modifying levels will frequently alternate between long and short modifying levels for dramatic effect. Consider the following example from the Great Gatsby:
+
+- Slenderly, languidly, their hands set lightly on their hips, the two young women preceded us out onto a rosy-colored porch, open toward the sunset, where four candles flickered on the table in the diminished wind.
+
+
+#### Loose and Periodic Sentences
+
+A loose sentence and a periodic sentence are two types of sentence structures that differ in the placement of the main idea or independent clause within the sentence.
+
+A loose sentence, also known as a cumulative sentence, is a sentence structure where the main idea or independent clause is presented at the beginning of the sentence, followed by additional information or modifiers. The additional information provides further details or expands on the main idea. In a loose sentence, the main idea is presented first, and the sentence may be grammatically complete even if it is interrupted by the modifiers. Here's an example:
+
+- __John went to the store__, bought some groceries, and met his friend for coffee.
+
+In this example, the main idea is "John went to the store." The subsequent phrases, "bought some groceries" and "met his friend for coffee," provide additional information but do not change the meaning of the main idea. The sentence could end after the main idea and still make sense.
+
+On the other hand, a periodic sentence is a sentence structure where the main idea or independent clause is intentionally delayed or held until the end of the sentence. The sentence begins with introductory phrases or subordinate clauses, building anticipation and suspense, and culminates with the main idea or independent clause. Here's an example:
+
+- After a long day at work, feeling exhausted and drained, with the weight of the world on his shoulders, __John finally made it home__.
+
+In this example, the main idea or independent clause, "John finally made it home," is placed at the end of the sentence, following the introductory phrases and subordinate clauses. The sentence is structured in a way that creates suspense or builds up to the main point.
 
 
 
