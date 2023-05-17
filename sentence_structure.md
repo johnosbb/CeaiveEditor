@@ -471,11 +471,13 @@ A loose sentence, also known as a cumulative sentence, is a sentence structure w
 
 In this example, the main idea is "John went to the store." The subsequent phrases, "bought some groceries" and "met his friend for coffee," provide additional information but do not change the meaning of the main idea. The sentence could end after the main idea and still make sense.
 
-On the other hand, a periodic sentence is a sentence structure where the main idea or independent clause is intentionally delayed or held until the end of the sentence. The sentence begins with introductory phrases or subordinate clauses, building anticipation and suspense, and culminates with the main idea or independent clause. Here's an example:
+On the other hand, a periodic sentence (often referred to as the suspensive sentence) is a sentence structure where the main idea or independent clause is intentionally delayed or held until the end of the sentence. The sentence begins with introductory phrases or subordinate clauses, building anticipation and suspense, and culminates with the main idea or independent clause. Here's an example:
 
 - After a long day at work, feeling exhausted and drained, with the weight of the world on his shoulders, __John finally made it home__.
 
 In this example, the main idea or independent clause, "John finally made it home," is placed at the end of the sentence, following the introductory phrases and subordinate clauses. The sentence is structured in a way that creates suspense or builds up to the main point.
 
+The periodic sentence seems particularly useful in situations where “if … then” constructions are frequently found. 
 
+- __If__ you work hard, stay focused, and never give up, __then__ you can achieve your goals and turn your dreams into reality.
 
