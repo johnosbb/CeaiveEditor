@@ -490,4 +490,5 @@ as final—only when joined with or reassessed in light of information in the ba
 - Although she had studied diligently for months, pouring over textbooks and attending review sessions, the complexity of the exam questions caught her off guard, leaving her with a sense of uncertainty and a flicker of doubt in her mind.
 - Even in the face of adversity and seemingly insurmountable challenges, he persevered with unwavering determination, drawing strength from within and inspiring those around him to rise above their own limitations.
 - If we dare to dream big and embrace the unknown, venturing outside our comfort zones and taking risks, we may discover new horizons and unlock the boundless potential that lies within us.
+- Looking back at the eight of eighty-eight over the fifty seven years of my political work in England, knowing what I aimed at and the results, meditating on the history of Britain and the world since 1914, I see clearly that I achieved practically nothing. - Leonard Woolf
 
