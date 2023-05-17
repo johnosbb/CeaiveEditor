@@ -491,4 +491,6 @@ as final—only when joined with or reassessed in light of information in the ba
 - Even in the face of adversity and seemingly insurmountable challenges, he persevered with unwavering determination, drawing strength from within and inspiring those around him to rise above their own limitations.
 - If we dare to dream big and embrace the unknown, venturing outside our comfort zones and taking risks, we may discover new horizons and unlock the boundless potential that lies within us.
 - Looking back at the eight of eighty-eight over the fifty seven years of my political work in England, knowing what I aimed at and the results, meditating on the history of Britain and the world since 1914, I see clearly that I achieved practically nothing. - Leonard Woolf
+- Under the shadow of Boston State House, turning its back on the house of John Hancock, the little passage called Hancock Avenue runs, or ran, from Beacon Street, skirting the State House grounds, to Mount Vernon Street, on the summit of Beacon Hill; and there, in the third house below Mount Vernon Place, February 16, 1838, a child was born, and christened later by his uncle, the minister of the First Church after the tenets of Boston Unitarianism, as Henry Brooks Adams. - Henry Adams, The Education 
+of Henry Adams.
 
