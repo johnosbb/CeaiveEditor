@@ -39,6 +39,10 @@ A noun is a part of speech that denotes a person, place, thing, idea, or concept
 - Uncountable nouns: Nouns that cannot be counted, such as "water," "rice," or "advice."
 - Possessive nouns: Nouns that indicate possession or ownership, such as "Sara's book," "the company's profits," or "the cat's toy."
 
+### Adversative conjunctions
+
+Adversative conjunctions are conjunctions that show contrast or opposition between two clauses or ideas. They indicate a contradiction, counterpoint, or unexpected relationship between the clauses. Examples of adversative conjunctions include "however," "nonetheless," "but," "yet," "still," and "nevertheless."
+
 # Sentence Structure
 
 ## Parts of a sentence
@@ -494,3 +498,14 @@ as final—only when joined with or reassessed in light of information in the ba
 - Under the shadow of Boston State House, turning its back on the house of John Hancock, the little passage called Hancock Avenue runs, or ran, from Beacon Street, skirting the State House grounds, to Mount Vernon Street, on the summit of Beacon Hill; and there, in the third house below Mount Vernon Place, February 16, 1838, a child was born, and christened later by his uncle, the minister of the First Church after the tenets of Boston Unitarianism, as Henry Brooks Adams. - Henry Adams, The Education 
 of Henry Adams.
 
+
+#### Using Colons and Semi-Colons for Delay
+
+The use of a semi-colon facilitates a type of balancing act where a second clause is set against a first clause. This is the classic structure of the balanced sentence. The great majority of longer suspensive sentences would be impossible to parse without relying heavily on the semicolon and the colon.
+
+The semicolon is essential for those of us who want to write long suspensive or balanced sentences; it helps prevent confusion in sentences with many commas. When used between clauses in a compound sentence, a semicolon indicates a contradiction, counterpoint, or unexpected relationship between the clauses and may frequently use conjunctions like "however," "nonetheless," "but," "yet," "still," and "nevertheless."
+
+Some examples of the use of a colon in a balanced sentence:
+
+- The book provided a unique perspective: it challenged conventional wisdom and presented a fresh interpretation of historical events.
+- The debate had two opposing viewpoints: some argued for stricter regulations, while others advocated for more lenient policies.
