@@ -509,3 +509,23 @@ Some examples of the use of a colon in a balanced sentence:
 
 - The book provided a unique perspective: it challenged conventional wisdom and presented a fresh interpretation of historical events.
 - The debate had two opposing viewpoints: some argued for stricter regulations, while others advocated for more lenient policies.
+
+When a sentence begins with words like "if," "even," "when," "because," "since," or similar expressions that introduce a condition before specifying an action or result, then it will create a sense of suspensive as the sentence unfolds.
+
+
+### Balanced sentences
+
+A balanced sentence is a type of sentence structure in which two or more parts of the sentence are parallel in terms of their structure, length, or meaning. These parts are usually connected by coordinating conjunctions or punctuation marks like colons or semicolons. Balanced sentences are characterized by their symmetry and rhythm, and they often create a sense of harmony and emphasis.
+
+#### Using Colons and Semi-Colons for Delay in a Balanced Sentence
+
+The use of a semi-colon facilitates a type of balancing act where a second clause is set against a first clause. This is the classic structure of the balanced sentence. The great majority of longer suspensive sentences would be impossible to parse without relying heavily on the semicolon and the colon.
+
+The semicolon is essential for those of us who want to write long suspensive or balanced sentences; it helps prevent confusion in sentences with many commas. When used between clauses in a compound sentence, a semicolon indicates a contradiction, counterpoint, or unexpected relationship between the clauses and may frequently use conjunctions like "however," "nonetheless," "but," "yet," "still," and "nevertheless."
+
+Some examples of the use of a colon in a balanced sentence:
+
+- The book provided a unique perspective: it challenged conventional wisdom and presented a fresh interpretation of historical events.
+- The debate had two opposing viewpoints: some argued for stricter regulations, while others advocated for more lenient policies.
+
+When a sentence begins with words like "if," "even," "when," "because," "since," or similar expressions that introduce a condition before specifying an action or result, then it will create a sense of suspensive as the sentence unfolds.
