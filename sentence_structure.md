@@ -526,6 +526,8 @@ The semicolon is essential for those of us who want to write long suspensive or 
 Some examples of the use of the semi-colon in a balanced sentence:
 
 - Ask not what your country can do for you; ask what you can do for your country.
+- In his blue gardens men and girls came and went like moths among the whisperings and the champagne and the stars; at high tide in the afternoon I watched his guests diving from the tower of his raft, or taking the sun on the hot sand of his beach while his two motor-boats slit the waters of the Sound, drawing aquaplanes over cataracts of foam.
+- To be, or not to be; that is the question.
 
 Some examples of the use of a colon in a balanced sentence:
 
