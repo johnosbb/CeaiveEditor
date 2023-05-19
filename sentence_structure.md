@@ -529,3 +529,11 @@ Some examples of the use of a colon in a balanced sentence:
 - The debate had two opposing viewpoints: some argued for stricter regulations, while others advocated for more lenient policies.
 
 When a sentence begins with words like "if," "even," "when," "because," "since," or similar expressions that introduce a condition before specifying an action or result, then it will create a sense of suspensive as the sentence unfolds.
+
+### Parallel Constructions
+Parallel construction refers to the repetition of a grammatical structure or pattern in a sentence. It involves using the same form or structure for multiple elements in a sentence, such as verbs, nouns, phrases, or clauses.
+
+An example of parallel constructions:
+
+- She enjoys reading, writing, and painting.
+- It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair.
