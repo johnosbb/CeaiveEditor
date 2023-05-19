@@ -523,6 +523,10 @@ The use of a semi-colon facilitates a type of balancing act where a second claus
 
 The semicolon is essential for those of us who want to write long suspensive or balanced sentences; it helps prevent confusion in sentences with many commas. When used between clauses in a compound sentence, a semicolon indicates a contradiction, counterpoint, or unexpected relationship between the clauses and may frequently use conjunctions like "however," "nonetheless," "but," "yet," "still," and "nevertheless."
 
+Some examples of the use of the semi-colon in a balanced sentence:
+
+- Ask not what your country can do for you; ask what you can do for your country.
+
 Some examples of the use of a colon in a balanced sentence:
 
 - The book provided a unique perspective: it challenged conventional wisdom and presented a fresh interpretation of historical events.
@@ -531,9 +535,41 @@ Some examples of the use of a colon in a balanced sentence:
 When a sentence begins with words like "if," "even," "when," "because," "since," or similar expressions that introduce a condition before specifying an action or result, then it will create a sense of suspensive as the sentence unfolds.
 
 ### Parallel Constructions
-Parallel construction refers to the repetition of a grammatical structure or pattern in a sentence. It involves using the same form or structure for multiple elements in a sentence, such as verbs, nouns, phrases, or clauses.
+Parallel construction refers to the repetition of a grammatical structure or pattern in a sentence. It involves using the same form or structure for multiple elements in a sentence, such as verbs, nouns, phrases, or clauses. 
 
 An example of parallel constructions:
 
-- She enjoys reading, writing, and painting.
-- It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair.
+- She enjoys reading, writing, and painting. - In the this sentence the three verb forms ending in ing create the parallelism.
+- It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair. - Dickens famous opening sentence show the repetition of a grammatical structure throughout the sentence.
+
+ 
+With Coordinating Conjunctions
+
+- Not Parallel:
+  - My best friend took me dancing and to a show.
+ Parallel:
+  -  My best friend took me to __a dance__ and __a show__. 
+
+With Correlative Conjunctions
+
+- Not Parallel:
+  - My dog not only likes to play fetch, but also chase cars.
+ -  Parallel:
+  - My dog not only __likes to play fetch__, but he also __likes to chase cars__.
+  - My dog likes not only __to play fetch__, but also __to chase cars__. 
+
+With Phrases or Clauses of Comparison
+
+- Not Parallel:
+  - I would rather pay for my education than financial aid.
+- Parallel:
+  - I would rather pay for my education than receive financial aid.
+
+With Lists
+
+- Not Parallel:
+  - John Taylor Gatto criticizes public schools because they are compulsory, funded  by the government, and destroy students' humanity.
+- Parallel:
+  - John Taylor Gatto criticizes public schools because they are compulsory, government funded, and normalizing.
+  OR
+  - John Taylor Gatto criticizes public schools because they require students to attend, receive money from the government, and destroy students' humanity.
