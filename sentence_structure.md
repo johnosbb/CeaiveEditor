@@ -1,3 +1,57 @@
+# Glossary
+
+- action verb: A verb that expresses an action.
+- base clause: The subject-verb core of a cumulative sentence that could stand alone as a sentence.
+- bound modifier: A modifier that is bound to what it modifies by a relative pronoun such as that, which, or who.
+- clause: A subject-verb combination that can stand alone in a sentence because the verb is inÀ ected in relation to person and time.
+- comma splice: Two clauses joined by a comma.
+- connective: A strategy for building sentences by using conjunctions to add information.
+- coordinate: A cumulative sentence in which there is more than one second-level modifying phrase, all pointing back to the base clause and free to move.
+- cumulative sentence: A sentence made up of a base clause to which free modifiers have been added.
+- cumulative syntax: The syntax that adds information to a base clause by adding free modifiers.
+- dangling modifier: A modi¿ er that appears in a sentence without anything in the sentence that it modifes.
+- dominantly subordinate: A mix of coordinate and subordinate cumulative modifying phrases in which there is more subordination than coordination.
+- ethos: The appeal of a piece of writing that is based on the character of the writer.
+- figurative language: Language that uses metaphors and similes.
+- final: Placement of a modifying phrase at the end of a sentence.
+- finite verb: A verb that occurs in a base clause and is inÀ ected in relation to person and tense.
+- free modifier: A modifier that can be placed in any syntactic position relative to the base clause.
+- gerund phrase: A phrase that begins with a gerund (a verb that has been turned into a noun with an -ing ending).
+- heuristic: Having the characteristic of readily suggesting or generating a solution to a problem.
+- initial: Placement of a modifying phrase at the start of a sentence.
+- intransitive verb: A verb that does not require a direct object.
+- kernel sentence: The initial sentence to which more information is to be added in the form of modifiers.
+- left-branching sentence: A sentence in which the modifying phrase or phrases are placed to the left of the base clause.
+- linking verb: A verb that expresses a state of being.
+- logos: The appeal of a piece of writing that is based on reason and logic.
+- loose syntax: Syntax in which the modifying phrases are more free to move around.
+- medial: Placement of a modifying phrase in the middle of a sentence.
+- metaphor: A description of one thing in terms used to describe another.
+- misplaced modifier: A modifying phrase that, because of its placement, is unclear about what it modi¿ es.
+- mixed syntax: A cumulative syntax in which there is a mix of both coordinate and subordinate modifacation.
+- noun phrase: A phrase that can act in a sentence as if it is a noun.
+- paradigmatic: Related to the choice of words or phrases in a sentence and their level of abstraction.
+- parallelism: In a sentence, a balance of two or more words, phrases, or clauses.
+- participial phrase: A phrase that begins with a present participle (a verb that ends in -ing) or a past participle (a verb that ends in -d, -ed, -en, -t, or -n).
+- pathos: The appeal of a piece of writing that is based on emotion.
+- periodic sentence: A sentence that delays or suspends the completion of its subject-verb clause until the very end (see also suspensive sentence).
+- phrase: A combination of words that functions as a single syntactical unit in a sentence but does not contain a finite verb and therefore cannot stand alone.
+- predicate: The part of a sentence that consists of what is said about the subject of the sentence.
+- prepositional phrase: A phrase that begins with a preposition and contains the object of the preposition and any modi¿ ers of the object.
+- proposition: A statement in which the subject is affirmed or denied by the predicate.
+- pure subordinate: A sequence of modi¿ ers, each modifying the phrase that immediately precedes it.
+- relative clause: A clause that begins with a relative pronoun such as that, which, or who.
+- right-branching sentence: A sentence in which the modifying phrase or phrases are placed to the right of the base clause.
+- simile: A description of one thing in terms of its similarity to another.
+- speculative phrase: A modifying phrase in a cumulative sentence that begins with a speculative expression such as perhaps or as if.
+- subordinate: In a cumulative sentence, a sequence of modifying phrases in which each phrase modi¿ es the phrase that precedes it, moving the sentence toward more levels of specifi city.
+- suspension: The deferring of the completion of a base clause to the very end of the sentence.
+- suspensive sentence: A sentence that saves the completion of the base clause till the very end (see also periodic sentence).
+- syntagmatic: Related to the order in which words or phrases are placed in a sentence.
+- transitive verb: A verb that requires a direct object.
+- vers libre: Verse that is not written in a regular metrical pattern.
+
+
 # Parts of Speech
 
 ## Determiners
@@ -575,3 +629,13 @@ With Lists
   - John Taylor Gatto criticizes public schools because they are compulsory, government funded, and normalizing.
   OR
   - John Taylor Gatto criticizes public schools because they require students to attend, receive money from the government, and destroy students' humanity.
+
+
+### Three Part Serial Constructions
+
+
+- I came, I saw, I conquered. - Julius Caesar by William Shakespeare
+- Friends, Romans, countrymen, lend me your ears. - Julius Caesar by William Shakespeare
+- Government of the people, by the people, for the people, shall not perish from the earth. - Abraham Lincoln, Gettysburg Address
+- I came, I listened, I left. - Kurt Vonnegut, Slaughterhouse-Five
+
