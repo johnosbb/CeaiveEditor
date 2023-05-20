@@ -677,3 +677,21 @@ With Lists
 
 - It was in the books while it was still in the sky. - John Updike tells us what it was like to see Ted Williams—the Kid, the Splendid Splinter—hit a home run in his last at bat in Fenway Park on September 28, 1960.
 - I was already on the second floor when I heard about the box.
+
+## Using Templates and Forms to Escape Established Patterns of Sentence Writing
+
+Forms and templates often have a generative quality, prompting one to evaluate new ways of writing. Starting with a basic sentence in the present tense, it is often instructive to add 
+clauses that reference the past and present. For example:
+
+- I ate fish for dinner.
+- After I had arrived home from school, I ate fish for dinner and wondered where I would find some dessert.
+
+Other prompts that are useful in constructing sentences are:
+
+-  "Had I."
+-  "Even though,"
+-  "Were I to,"
+-  "Notwithstanding that,"
+-  "Depending on whether,"
+-  "In the event that."
+
