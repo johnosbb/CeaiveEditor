@@ -54,9 +54,26 @@
 
 # Parts of Speech
 
+## Basic Parts of Speech
+
+The basic parts of speech in English are:
+
+- Noun: A word that represents a person, place, thing, or idea (e.g., cat, city, love).
+- Pronoun: A word that replaces a noun or refers to a noun (e.g., he, she, it).
+- Verb: A word that expresses an action, occurrence, or state of being (e.g., run, eat, is).
+- Adjective: A word that describes or modifies a noun or pronoun (e.g., happy, blue, tall).
+- Adverb: A word that describes or modifies a verb, adjective, or other adverb (e.g., quickly, very, well).
+- Preposition: A word that shows the relationship between a noun/pronoun and other words in a sentence (e.g., in, on, at).
+- Conjunction: A word that connects words, phrases, or clauses (e.g., and, but, or).
+- Interjection: A word or phrase that expresses strong emotion or surprise (e.g., oh, wow, oops).
+
+__Note__: A definite article (such as "the") is not considered one of the basic parts of speech; it is more specifically categorized as a determiner, which is a subcategory of adjectives. The basic parts of speech typically refer to the fundamental categories into which words can be classified based on their grammatical function and meaning.
+
+The basic parts of speech include nouns, verbs, adjectives, adverbs, pronouns, prepositions, conjunctions, and interjections. These categories cover the essential building blocks of language and provide a framework for understanding how words function within sentences.
+
 ## Determiners
 
-A determiner is a word that is used before a noun to indicate which thing or things are being referred to. Examples of determiners include "a," "an," "the," "this," "that," "these," and "those."
+A determiner is a word that is used before a noun to indicate which thing or things are being referred to. Examples of determiners include "a," "an," "the," "this," "that," "these," and "those".
 
 ## Adpositions
 
@@ -100,6 +117,22 @@ Adversative conjunctions are conjunctions that show contrast or opposition betwe
 # Sentence Structure
 
 ## Parts of a sentence
+
+The basic elements of a sentence are:
+
+- The person or thing performing an action
+- The action being performed
+- The recipient or object of the action.
+
+These elements are not always obvious; consider the sentence:
+
+- Helping old ladies cross the street prevents accidents.
+
+- In this sentence the compound phrase "Helping old ladies cross the street" is the subject. It is the thing that does the action.
+- The action in this sentence is "prevents"
+- The object of the sentence is "accidents"
+
+The key part of analysing sentences is in uderstanding the relationships and dependencies between the parts.
 
 
 ### Subject
@@ -639,3 +672,8 @@ With Lists
 - Government of the people, by the people, for the people, shall not perish from the earth. - Abraham Lincoln, Gettysburg Address
 - I came, I listened, I left. - Kurt Vonnegut, Slaughterhouse-Five
 
+
+### The Short Sentence
+
+- It was in the books while it was still in the sky. - John Updike tells us what it was like to see Ted Williams—the Kid, the Splendid Splinter—hit a home run in his last at bat in Fenway Park on September 28, 1960.
+- I was already on the second floor when I heard about the box.
