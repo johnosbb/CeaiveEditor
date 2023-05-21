@@ -267,17 +267,23 @@ Adverb clauses answer the following questions:
 - Adverb clauses answer the question, Under what conditions something happens.
 
 
-Another example:
+The noun clause is a subordinate clause that acts like a noun. Noun clauses begin with words such as: how, that, what, whatever, when, where, whether, which, whichever, who, whoever, whom, whomever, and why. Noun clauses can act as subjects, direct objects, indirect objects, predicate nominatives, or objects of a preposition.
 
-- It was the books I read in high school rather than those I was assigned in college that influenced the choices I find myself making today.
-
-Strictly speaking this sentence is a complex sentence that contains subordinate clauses, but it does not have a main clause and a subordinate clause connected by a subordinating conjunction. Instead, it consists of two noun clauses connected by the coordinating conjunction "rather than."
+- __Whoever came up with that plan__ is a fool. - Here the noun clause "Whoever came up with that plan" is the subject of the sentence.
+- On Sundays, we are free to do __what we want__. - Here "what we want" is a acting as the object of the sentence.
+- The focus of our work is __how we can serve our customers most effectively__. - The clause acts as a predicate nominative in the sentence, identifying focus.
 
 #### Subordinate Examples from Literature
 
 - He wanted to cry quietly but not for himself: for the words, so beautiful and sad, like music." - Markus Zusak, "The Book Thief.
   - This sentence is a subordinating sentence because it contains a subordinate clause introduced by the conjunction "for." The subordinate clause "for the words, so beautiful and sad, like music" provides the reason or explanation for why the subject wanted to cry.
-  - 
+- Whenever you feel like criticizing any one... just remember that all the people in this world haven't had the advantages that you've had. - F. Scott Fitzgerald, "The Great Gatsby"
+  - This sentence is a subordinating sentence because it begins with the subordinating conjunction "Whenever," which introduces a dependent clause. The dependent clause "Whenever you feel like criticizing any one" sets the condition for the main clause that follows.
+- I have been bent and broken, but - I hope - into a better shape. - Charles Dickens, "Great Expectations"
+  - This sentence is a subordinating sentence because it contains a parenthetical clause introduced by the coordinating conjunction "but." The parenthetical clause "I hope" provides additional information or a commentary on the preceding statement.
+- I can't go back to yesterday because I was a different person then. - Lewis Carroll, "Alice's Adventures in Wonderland"
+  - This sentence is a subordinating sentence because it contains a subordinate clause introduced by the subordinating conjunction "because." The subordinate clause "because I was a different person then" provides the reason or explanation for why the subject can't go back to yesterday.
+
 
 ### Adjectival Strategy
 
@@ -678,6 +684,7 @@ Some examples of the use of a colon in a balanced sentence:
 When a sentence begins with words like "if," "even," "when," "because," "since," or similar expressions that introduce a condition before specifying an action or result, then it will create a sense of suspensive as the sentence unfolds.
 
 ### Parallel Constructions
+
 Parallel construction refers to the repetition of a grammatical structure or pattern in a sentence. It involves using the same form or structure for multiple elements in a sentence, such as verbs, nouns, phrases, or clauses. 
 
 An example of parallel constructions:
