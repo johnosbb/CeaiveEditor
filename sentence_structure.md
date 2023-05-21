@@ -225,6 +225,60 @@ For example, consider the following sentence: "I went to bed early because I had
 
 Subordinative strategy allows writers to add detail, explanation, and complexity to their sentences by introducing subordinate clauses that provide additional information. These clauses can add nuance and subtlety to the meaning of a sentence, and can help to vary sentence structure and create more engaging writing. However, writers must be careful not to overuse subordinating conjunctions or create overly complex sentences that are difficult for readers to follow.
 
+The subordinating style of sentence orders its components in relationships of causality (one event or state is caused by another), temporality (events and states are prior or subsequent to one another), and precedence (events and states are arranged in hierarchies of importance). 
+
+
+#### The Subordinate Clause
+
+A subordinate clause cannot stand alone. It is not independent. A subordinate clause has a subject and a verb, but it cannot stand alone as a complete sentence. For example:
+
+- __If you study hard__, I will buy you a new video game.
+- __Since the sun will shine today__, we will go to the beach later.
+- __When she was ill__, her teacher gave her friend her homework.
+- __Because dad requested__, I apologized to my brother.
+
+
+A subordinate clause can act as an adjective, adverb, or noun. 
+
+##### Adjective clauses
+
+The adjective clause can also be referred to as a ‘relative clause’. An adjective clause begins with a relative pronoun or a relative adverb. The relative pronoun or relative adverb may function as the subject of the clause. Some relative pronouns are: who, whom, which, that, whose
+
+- The man __who lives at the end of our street__ is my uncle. - The subaordinate clause answers the question __who?__
+- The mobile phone __that is on the counter top__ belongs to Andrès. - The subaordinate clause answers the question __that?__
+- The moment __when the car crashed__ was terrifying! - This adjective clause gives more information about ‘the moment’.
+- 
+
+##### Adverbial Clauses
+
+The adverbial clause is a subordinate clause that acts as an adverb! An adverb clause may tell us the place, time, cause, or purpose of an action. They can also indicate condition. An adverb clause may answer the question: Where?, when?, why?, and under what conditions?
+
+- __Wherever there is a lot of drink involved__, people will be prone to fight. - The subaordinate clause answers the question __where?__
+- __If you know where they live__, you can go and vists. - The subaordinate clause answers the question __where?__
+- __When the tide is high__, the boats will leave. - The subaordinate clause answers the question __when?__
+- __If you work very hard__, you will achieve your goal in life. - The subaordinate clause answers the question __why?__
+- __Unless you hurry__, you will miss the bus. - The subaordinate clause answers the question __why?__
+
+Adverb clauses answer the following questions:
+
+- Adverb clauses answer the question about __where__ something happens.
+- Adverb clauses answer the question about __when__ something happens.
+- Adverb clauses answer the question as to __why__ something happens.
+- Adverb clauses answer the question, Under what conditions something happens.
+
+
+Another example:
+
+- It was the books I read in high school rather than those I was assigned in college that influenced the choices I find myself making today.
+
+Strictly speaking this sentence is a complex sentence that contains subordinate clauses, but it does not have a main clause and a subordinate clause connected by a subordinating conjunction. Instead, it consists of two noun clauses connected by the coordinating conjunction "rather than."
+
+#### Subordinate Examples from Literature
+
+- He wanted to cry quietly but not for himself: for the words, so beautiful and sad, like music." - Markus Zusak, "The Book Thief.
+  - This sentence is a subordinating sentence because it contains a subordinate clause introduced by the conjunction "for." The subordinate clause "for the words, so beautiful and sad, like music" provides the reason or explanation for why the subject wanted to cry.
+  - 
+
 ### Adjectival Strategy
 
 An adjectival strategy is a way of building sentences by using adjectives to modify nouns. Adjectives are words that describe or modify nouns and pronouns. In an adjectival strategy, adjectives are used to provide additional information about the noun in the sentence. This can help to add detail and specificity to the sentence.
