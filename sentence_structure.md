@@ -302,6 +302,11 @@ In this sentence, the clauses "hiking in the mountains," "swimming in the clear 
 
 In this famous opening line, Jane Austen uses additive construction with the phrase "that a single man in possession of a good fortune" and adds the idea "must be in want of a wife." The use of "that" introduces an additional element to the sentence, building upon the initial statement.
 
+- If you really want to hear about it, the first thing you’ll probably want to know is where I was born, and what my lousy childhood was like, and how my parents were occupied and all before they had me, and all that David Copperfield kind of crap, but I don’t feel like going into it, if you want to know the truth. - J. D. Salinger’s Catcher in the Rye.
+
+The sentence lists the information it won’t provide, stringing the items it will withhold with a series of conjunctions. 
+
+
 ### Adjectival Strategy
 
 An adjectival strategy is a way of building sentences by using adjectives to modify nouns. Adjectives are words that describe or modify nouns and pronouns. In an adjectival strategy, adjectives are used to provide additional information about the noun in the sentence. This can help to add detail and specificity to the sentence.
