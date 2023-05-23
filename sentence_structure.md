@@ -284,6 +284,23 @@ The noun clause is a subordinate clause that acts like a noun. Noun clauses begi
 - I can't go back to yesterday because I was a different person then. - Lewis Carroll, "Alice's Adventures in Wonderland"
   - This sentence is a subordinating sentence because it contains a subordinate clause introduced by the subordinating conjunction "because." The subordinate clause "because I was a different person then" provides the reason or explanation for why the subject can't go back to yesterday.
 
+### Additive Strategy
+
+The additive style of sentence construction involves adding information or elements to a sentence in a cumulative or sequential manner. It emphasizes the accumulation of details, ideas, or examples to convey a sense of expansion or elaboration.
+
+In additive sentences, clauses or phrases are linked together using coordinating conjunctions like "and," "also," "furthermore," "moreover," or similar words. These conjunctions serve to connect similar or related ideas, reinforcing the main point or presenting additional information.
+
+Additive style can be effective for building momentum, emphasizing a series of points, or creating a sense of progression. It allows writers to present multiple ideas or examples in a coherent and connected manner, enhancing the flow and readability of the text.
+
+An example of an additive sentence:
+
+- I enjoy hiking in the mountains, swimming in the clear lakes, exploring new trails, and discovering hidden waterfalls.
+
+In this sentence, the clauses "hiking in the mountains," "swimming in the clear lakes," "exploring new trails," and "discovering hidden waterfalls" are connected using the coordinating conjunction "and." 
+
+- It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. - Jane Austen, Pride and Prejudice
+
+In this famous opening line, Jane Austen uses additive construction with the phrase "that a single man in possession of a good fortune" and adds the idea "must be in want of a wife." The use of "that" introduces an additional element to the sentence, building upon the initial statement.
 
 ### Adjectival Strategy
 
