@@ -306,6 +306,13 @@ In this famous opening line, Jane Austen uses additive construction with the phr
 
 The sentence lists the information it won’t provide, stringing the items it will withhold with a series of conjunctions. 
 
+- A large white yacht was coming into the harbor and seven miles out on the horizon you could see a tanker, small and neat in profile against the blue sea, hugging the reef as she made to the westward to keep from wasting fuel against the stream. - Ernest Hemingway
+
+The sentence starts with the statement "A large white yacht was coming into the harbor" and then adds the information about the tanker "seven miles out on the horizon" and its position "hugging the reef as she made to the westward to keep from wasting fuel against the stream." This cumulative addition of details enhances the imagery and provides a richer description of the scene.
+
+- Anyhow, there you have the picture, the immensely tall trees, elms most of them, towering and feathering away up into the black mistiness that trees seem to gather about them at night, the silhouettes of those two upon the seat, the beams of light coming from the casino, the woman all in black peeping with fear behind the tree trunk. - The Good Soldier, Ford Madox Ford
+
+The reader is told in advance what is going to happen: the words will paint a picture, adding detail to detail.
 
 ### Adjectival Strategy
 
