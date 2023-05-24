@@ -785,3 +785,19 @@ Other prompts that are useful in constructing sentences are:
 -  "Depending on whether,"
 -  "In the event that."
 
+
+### The First Sentence
+
+- In the afternoons it was the custom of Miss Jane Marple to unfold her second newspaper. - Agatha Christie's Miss Marple.
+- One day Karen DeCilia put a few observations together and realized her husband Frank was sleeping with a real estate woman in Boca. - Elmore Leonard’s Gold Coast.
+- The first time I saw Brenda she asked me to hold her glasses. - Philip Roth’s Goodbye, Columbus.
+- One summer, at a honeymoon resort in the Catskill mountains, I saw a young woman named Sheila Kahn fall in love with her waiter. - Leonard Michaels short story "Honeymoon".
+
+
+### The Last Sentence
+
+- It is a far, far better thing that I do than I have ever done before; it is a far, far better rest that I go to, than I have ever known. - Dickens’s A Tale of Two Cities.
+- So we beat on, boats against the current, borne back ceaselessly into the past - Fitzgerald’s The Great Gatsby.
+- The offing was barred by a black bank of clouds, and the tranquil waterway leading to the utmost ends of the earth flowed somber under an overcast sky—seemed to lead into the heart of an immense darkness. - Joseph Conrad’s Heart of Darkness.
+- I lingered round them, under that benign sky, watched the moths fluttering among the heath and harebells, listened to the soft wind breathing through the grass, and wondered how any one could ever imagine unquiet slumbers for the sleepers in that quiet earth. - Emily Brontë’s Wuthering Heights
+
