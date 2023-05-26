@@ -3,7 +3,7 @@
 - action verb: A verb that expresses an action.
 - base clause: The subject-verb core of a cumulative sentence that could stand alone as a sentence.
 - bound modifier: A modifier that is bound to what it modifies by a relative pronoun such as that, which, or who.
-- clause: A subject-verb combination that can stand alone in a sentence because the verb is inÀ ected in relation to person and time.
+- clause: A clause is a grammatical unit that contains a subject and a predicate. It is a group of words that expresses a complete thought and can function as a sentence or as part of a sentence.
 - comma splice: Two clauses joined by a comma.
 - connective: A strategy for building sentences by using conjunctions to add information.
 - coordinate: A cumulative sentence in which there is more than one second-level modifying phrase, all pointing back to the base clause and free to move.
