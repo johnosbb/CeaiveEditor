@@ -114,6 +114,98 @@ A noun is a part of speech that denotes a person, place, thing, idea, or concept
 
 Adversative conjunctions are conjunctions that show contrast or opposition between two clauses or ideas. They indicate a contradiction, counterpoint, or unexpected relationship between the clauses. Examples of adversative conjunctions include "however," "nonetheless," "but," "yet," "still," and "nevertheless."
 
+
+
+### Co-Ordinating Conjunctions
+
+Coordinating conjunctions are used to connect words, phrases, or clauses that have equal importance in a sentence.
+The main co-ordinating conjunctions are: 
+
+- For
+- And
+- Nor
+- But
+- Or
+- Yet
+- So
+
+### Subordinating conjunctions
+
+Subordinating conjunctions are used to introduce subordinate clauses, which cannot stand alone as complete sentences but rely on the main clause for their meaning.
+Subordinating conjunction relegate information to less critical status. 
+
+The main subordinating conjunctions are:
+
+- After
+- Although
+- As
+- Because
+- Before
+- If
+- Since
+- Though
+- Unless
+- Until
+- When
+- While
+- Whether or not
+- In order that
+- Even if
+- As long as
+- As long as
+- Even though
+
+
+- __After working for twenty-five years as an accountant__, Mike robbed a bank.
+
+Used incorrectly subordinating conjunctions can distract from the main message of the sentence. 
+
+### Prepositions
+
+Prepositions are used to show relationships between words in a sentence, indicating location, time, direction, manner, and other aspects.
+
+- About
+- Above
+- Across
+- After
+- Against
+- Along
+- Among
+- Around
+- At
+- Before
+- Behind
+- Below
+- Beneath
+- Beside
+- Between
+- Beyond
+- By
+- Down
+- During
+- For
+- From
+- In
+- Inside
+- Into
+- Near
+- Of
+- Off
+- On
+- Onto
+- Out
+- Outside
+- Over
+- Through
+- To
+- Towards
+- Under
+- Until
+- Up
+- With
+- Within
+
+
 # Sentence Structure
 
 ## Parts of a sentence
@@ -217,7 +309,7 @@ Additionally, we can use conjunctive adverbs such as "however", "therefore", "mo
 
 In all cases, the goal is to create a sentence that flows logically and coherently by linking related ideas using connective words or phrases.
 
-### Subordiinate Strategy
+### Subordinate Strategy
 
 In a subordinative strategy, a dependent clause is added to the main clause to create a more complex sentence. The dependent clause cannot stand alone as a sentence because it is dependent on the main clause to give it context and meaning. The dependent clause is introduced by a subordinating conjunction (such as "because," "although," "when," "if," etc.) that indicates the relationship between the two clauses.
 
