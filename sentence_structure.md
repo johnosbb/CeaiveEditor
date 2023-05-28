@@ -340,6 +340,21 @@ The adjective clause can also be referred to as a ‘relative clause’. An adje
 - The mobile phone __that is on the counter top__ belongs to Andrès. - The subaordinate clause answers the question __that?__
 - The moment __when the car crashed__ was terrifying! - This adjective clause gives more information about ‘the moment’.
 
+__Restrictive Relative Clause__:
+
+- A restrictive relative clause provides essential information about the noun it modifies. Without the restrictive relative clause, the sentence's meaning would be significantly altered or incomplete. Restrictive relative clauses are not set off by commas.
+
+- The book _that I borrowed from the library__ is excellent.
+
+In this example, the restrictive relative clause "that I borrowed from the library" specifies which book is being referred to. It is essential information because it distinguishes the specific book from others. Removing the restrictive clause would leave the sentence vague and incomplete.
+
+__Non-Restrictive Relative Clause__:
+
+- A non-restrictive relative clause provides additional, non-essential information about the noun it modifies. The sentence's core meaning remains intact even if the non-restrictive relative clause is removed. Non-restrictive relative clauses are set off by commas.
+
+- The car, __which is parked in front of the house__, belongs to my friend.
+
+In this example, the non-restrictive relative clause "which is parked in front of the house" provides additional information about the car but is not necessary to identify which car is being referred to. The sentence still conveys the main idea, even without the non-restrictive clause.
 
 ##### Adverbial Clauses
 
