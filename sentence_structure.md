@@ -893,3 +893,20 @@ Other prompts that are useful in constructing sentences are:
 - The offing was barred by a black bank of clouds, and the tranquil waterway leading to the utmost ends of the earth flowed somber under an overcast sky—seemed to lead into the heart of an immense darkness. - Joseph Conrad’s Heart of Darkness.
 - I lingered round them, under that benign sky, watched the moths fluttering among the heath and harebells, listened to the soft wind breathing through the grass, and wondered how any one could ever imagine unquiet slumbers for the sleepers in that quiet earth. - Emily Brontë’s Wuthering Heights
 
+
+### Vague Words
+
+| Vague words | Specific Words |
+| ---------- | ---------- |
+| Food       | Sandwich   |
+| Impact       | Benefit   |
+| Proceed      | Walk   |
+| Interact       | Flirt   |
+| Items    | Groceries   |
+| Effect    | Negative side effect   |
+| Weapon    | Firearm   |
+| Noise    | Holler   |
+| Structure    | House   |
+| Person    | Old man   |
+
+
