@@ -9,7 +9,7 @@
 - coordinate: A cumulative sentence in which there is more than one second-level modifying phrase, all pointing back to the base clause and free to move.
 - cumulative sentence: A sentence made up of a base clause to which free modifiers have been added.
 - cumulative syntax: The syntax that adds information to a base clause by adding free modifiers.
-- dangling modifier: A modi¿ er that appears in a sentence without anything in the sentence that it modifes.
+- dangling modifier: A modifier that appears in a sentence without anything in the sentence that it modifes.
 - dominantly subordinate: A mix of coordinate and subordinate cumulative modifying phrases in which there is more subordination than coordination.
 - ethos: The appeal of a piece of writing that is based on the character of the writer.
 - figurative language: Language that uses metaphors and similes.
@@ -908,5 +908,55 @@ Other prompts that are useful in constructing sentences are:
 | Noise    | Holler   |
 | Structure    | House   |
 | Person    | Old man   |
+
+
+
+
+
+### Adverbs
+
+Adverbs answer the questions
+
+- __when?__ I'll see you __tomorrow__.
+- __where?__ Go play __outside__.
+- __in what manner?__ Sue ran __quickly__.
+- __how much or how often?__ You're __very__ early. You're __rarely__ late.
+
+Adverbs also give commentary on whole sentences:
+
+- __Frankly__, my dear, I don't give a damn.  - Those are called sentence adverbs. And they can create a link to the previous sentence: 
+- __Consequently__, the engine exploded. - Those are called conjunctive adverbs.
+- Adverbs can modify verbs (Mark whistles __happily__), adjectives (Betty is __extremely__ tall), other adverbs (Mark whistles __extremely happily__), or whole sentences (__However__, I don't care).
+
+#### Avoiding Manner Adverbs
+
+A manner adverb is a type of adverb that provides information about how an action is performed or the manner in which something happens. It adds detail or description to a verb, indicating the way in which an action is carried out. Manner adverbs typically answer the question "how?"
+
+Here are some examples of manner adverbs:
+
+- He walked __slowly__.
+- She spoke __softly__.
+- They ate __eagerly__.
+- The car drove __smoothly__.
+- The dog barked __loudly__.
+
+In these examples, "slowly," "softly," "eagerly," "smoothly," and "loudly" are all manner adverbs that modify the verbs "walked," "spoke," "ate," "drove," and "barked," respectively, providing information about the manner or way in which the actions are performed.
+
+Manner adverbs are often redundant, as shown in the following examples:
+
+- John Smith is the author of two books on writing and has __previously__ written three children's books. - has written implies "previously"
+- Yuri was __formerly__ a dancer with the Bolshoi ballet for eleven years. - was implies "formally"
+
+Adverbs of manner can often distract from the impact of a sentence:
+
+- "I want you," Aileen purred sexily. - __sexily__ is unecessary and distracts from the sentence's impact.
+
+Consider this example:
+
+- I brutally killed him. I truly didn't want to. But he ultimately gave me absolutely no choice.
+- I killed him. I didn't want to. He gave me no choice.
+
+Here the removal of the adverbs actually increase the immediacy and intensity of the sentence.
+
 
 
