@@ -339,7 +339,7 @@ The adjective clause can also be referred to as a ‘relative clause’. An adje
 - The man __who lives at the end of our street__ is my uncle. - The subaordinate clause answers the question __who?__
 - The mobile phone __that is on the counter top__ belongs to Andrès. - The subaordinate clause answers the question __that?__
 - The moment __when the car crashed__ was terrifying! - This adjective clause gives more information about ‘the moment’.
-- 
+
 
 ##### Adverbial Clauses
 
