@@ -356,6 +356,7 @@ __Non-Restrictive Relative Clause__:
 
 In this example, the non-restrictive relative clause "which is parked in front of the house" provides additional information about the car but is not necessary to identify which car is being referred to. The sentence still conveys the main idea, even without the non-restrictive clause.
 
+
 ##### Adverbial Clauses
 
 The adverbial clause is a subordinate clause that acts as an adverb! An adverb clause may tell us the place, time, cause, or purpose of an action. They can also indicate condition. An adverb clause may answer the question: Where?, when?, why?, and under what conditions?
