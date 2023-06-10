@@ -30,6 +30,7 @@
 - misplaced modifier: A modifying phrase that, because of its placement, is unclear about what it modi¿ es.
 - mixed syntax: A cumulative syntax in which there is a mix of both coordinate and subordinate modifacation.
 - noun phrase: A phrase that can act in a sentence as if it is a noun.
+- nominalization: a form of a verb or an adjective that functions as a noun. 
 - paradigmatic: Related to the choice of words or phrases in a sentence and their level of abstraction.
 - parallelism: In a sentence, a balance of two or more words, phrases, or clauses.
 - participial phrase: A phrase that begins with a present participle (a verb that ends in -ing) or a past participle (a verb that ends in -d, -ed, -en, -t, or -n).
@@ -542,6 +543,19 @@ Another example could be:
 
 In this sentence, "fascinated" is a participial modifier that modifies "John". It is formed from the past participle of the verb "fascinate", and functions as an adjective to describe John's state of mind.
 
+
+#### Misplaced Modifiers
+
+- Antique desk suitable for lady with thick legs and large drawers.
+
+People usually expect them to modify the closest possible word, not one that's farther away in the sentence. So the solution to the issues of misplaced or dangling modifiers is to move the modifier closer to the thing it modifies.
+
+- They said it's going to rain on the radio.
+  -  Solution: Move the prepositional phrase on the radio closer to the verb it modifies: said.
+- They said on the radio that it's going to rain.  
+
+
+
 ### Modifying Clauses
 
 A subordinative strategy involves breaking down long sentences into shorter ones and using modifying phrases instead of long noun phrases or bound modifiers in prepositional phrases. Start with a simple base clause and add modifying phrases to build longer sentences that are easier to follow.
@@ -976,3 +990,15 @@ Here the removal of the adverbs actually increase the immediacy and intensity of
 
 
 
+## Passive Voice
+
+Passive voice occurs when the object of an action is made the grammatical subject of a sentence. 
+
+- Sandra made the tea.
+- The tea was made by Sandra.
+
+
+
+## References
+
+- [Grammar Underground - Jane Casgrande](https://www.grammarunderground.com/)

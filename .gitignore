@@ -126,6 +126,13 @@ lyrical.log
 
 
 # packaging  directories
-build
-dist
+build/
+dist/
+lyrical.build/
+lyrical.dist/
+lyrical/lyrical.onefile-build/
 
+
+# Executables
+
+lyrical.exe

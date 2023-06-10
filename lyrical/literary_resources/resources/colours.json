@@ -1,0 +1,1244 @@
+[
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Aquamarine",
+        "_Colour__rgbValue": "#7FFFD4",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue",
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Azure",
+        "_Colour__rgbValue": "#F0FFFF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Beige",
+        "_Colour__rgbValue": "#F5F5DC",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Bisque",
+        "_Colour__rgbValue": "#FFE4C4",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Black",
+        "_Colour__rgbValue": "#000000",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Black"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Blanche Dalmond",
+        "_Colour__rgbValue": "#FFEBCD",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Blue",
+        "_Colour__rgbValue": "#0000FF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Blue Violet",
+        "_Colour__rgbValue": "#8A2BE2",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue",
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Brown",
+        "_Colour__rgbValue": "#A52A2A",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Burlywood",
+        "_Colour__rgbValue": "#DEB887",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Cadet Blue",
+        "_Colour__rgbValue": "#5F9EA0",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Chartreuse",
+        "_Colour__rgbValue": "#7FFF00",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Chocolate",
+        "_Colour__rgbValue": "#D2691E",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Coral",
+        "_Colour__rgbValue": "#FF7F50",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Orange",
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Cornflower Blue",
+        "_Colour__rgbValue": "#6495ED",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Cornsilk",
+        "_Colour__rgbValue": "#FFF8DC",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White",
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Crimson",
+        "_Colour__rgbValue": "#DC143C",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Cyan",
+        "_Colour__rgbValue": "#00FFFF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Blue",
+        "_Colour__rgbValue": "#00008B",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Cyan",
+        "_Colour__rgbValue": "#008B8B",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Goldenrod",
+        "_Colour__rgbValue": "#B8860B Brown",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Gray",
+        "_Colour__rgbValue": "#A9A9A9",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Grey",
+            "Gray"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Green",
+        "_Colour__rgbValue": "#006400",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark khaki",
+        "_Colour__rgbValue": "#BDB76B",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Magenta",
+        "_Colour__rgbValue": "#8B008B",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Olive Green",
+        "_Colour__rgbValue": "#556B2F",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Orange",
+        "_Colour__rgbValue": "#FF8C00",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Orange"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Orchid",
+        "_Colour__rgbValue": "#9932CC",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Red",
+        "_Colour__rgbValue": "#8B0000",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Salmon",
+        "_Colour__rgbValue": "#E9967A",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Seagreen",
+        "_Colour__rgbValue": "#8DBC8F",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Slate Blue",
+        "_Colour__rgbValue": "#483D8B",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Slate Gray",
+        "_Colour__rgbValue": "#2F4F4F",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Grey",
+            "Gray"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Turquoise",
+        "_Colour__rgbValue": "#00DED1",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dark Violet",
+        "_Colour__rgbValue": "#9400D3",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Deep Pink",
+        "_Colour__rgbValue": "#FF1493",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Deep Sky Blue",
+        "_Colour__rgbValue": "#00BFFF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dim Gray",
+        "_Colour__rgbValue": "#696969",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Grey",
+            "Gray"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Dodger Blue",
+        "_Colour__rgbValue": "#1E90FF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Firebrick",
+        "_Colour__rgbValue": "#B22222",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red",
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Floral White",
+        "_Colour__rgbValue": "#FFFAF0",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Forest Green",
+        "_Colour__rgbValue": "#228B22",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Fuchsia",
+        "_Colour__rgbValue": "#FF00FF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Gainsboro",
+        "_Colour__rgbValue": "#DCDCDC",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Grey",
+            "Gray"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Ghost White",
+        "_Colour__rgbValue": "#F8F8FF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Gold",
+        "_Colour__rgbValue": "#FFD700",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Goldenrod",
+        "_Colour__rgbValue": "#DAA520",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow",
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Gray",
+        "_Colour__rgbValue": "#808080",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Grey",
+            "Gray"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Green",
+        "_Colour__rgbValue": "#008000",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Green Yellow",
+        "_Colour__rgbValue": "#ADFF2F",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Honeydew",
+        "_Colour__rgbValue": "#F0FFF0",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Hot Pink",
+        "_Colour__rgbValue": "#FF69B4",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Indian Red",
+        "_Colour__rgbValue": "#CD5C5C",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Indigo",
+        "_Colour__rgbValue": "#4B0082",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Ivory",
+        "_Colour__rgbValue": "#FFFFF0",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Khaki",
+        "_Colour__rgbValue": "#F0E68C",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green",
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Lavender",
+        "_Colour__rgbValue": "#E6E6FA",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Lavender Blush",
+        "_Colour__rgbValue": "#FFF0F5",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Lawngreen",
+        "_Colour__rgbValue": "#7CFC00",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Lemon chiffon",
+        "_Colour__rgbValue": "#FFFACD",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Blue",
+        "_Colour__rgbValue": "#ADD8E6",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Coral",
+        "_Colour__rgbValue": "#F08080",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red",
+            "Pink"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Cyan",
+        "_Colour__rgbValue": "#E0FFFF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Goldenrod Yellow",
+        "_Colour__rgbValue": "#FAFAD2",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Green",
+        "_Colour__rgbValue": "#90EE90",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Grey",
+        "_Colour__rgbValue": "#D3D3D3",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Grey"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Pink",
+        "_Colour__rgbValue": "#FFB6C1",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Salmon",
+        "_Colour__rgbValue": "#FFA07A",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Seagreen",
+        "_Colour__rgbValue": "#20B2AA",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Sky Blue",
+        "_Colour__rgbValue": "#87CEFA",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Slate Gray",
+        "_Colour__rgbValue": "#778899",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue",
+            "Grey",
+            "Gray"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Steel Blue",
+        "_Colour__rgbValue": "#B0C4DE",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Light Yellow",
+        "_Colour__rgbValue": "#FFFFE0",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Lime",
+        "_Colour__rgbValue": "#00FF00",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Lime Green",
+        "_Colour__rgbValue": "#32CD32",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Linen",
+        "_Colour__rgbValue": "#FAF0E6",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Magenta",
+        "_Colour__rgbValue": "#FF00FF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Maroon",
+        "_Colour__rgbValue": "#800000",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium Aquamarine",
+        "_Colour__rgbValue": "#66CDAA",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue",
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium Blue",
+        "_Colour__rgbValue": "#0000CD",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium Orchid",
+        "_Colour__rgbValue": "#BA55D3",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium purple",
+        "_Colour__rgbValue": "#9370DB",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium Sea Green",
+        "_Colour__rgbValue": "#3CB371",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium Slate Blue",
+        "_Colour__rgbValue": "#7B68EE",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium spring Green",
+        "_Colour__rgbValue": "#00FA9A",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium Turquoise",
+        "_Colour__rgbValue": "#48D1CC",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Medium Violet Red",
+        "_Colour__rgbValue": "#C71585",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink",
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Midnight Blue",
+        "_Colour__rgbValue": "#191970",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Mint Cream",
+        "_Colour__rgbValue": "#F5FFFA",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White",
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Misty Rose",
+        "_Colour__rgbValue": "#FFE4E1",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White",
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Moccasin",
+        "_Colour__rgbValue": "#FFE4B5",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow",
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Navajo White",
+        "_Colour__rgbValue": "#FFDEAD",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Navy",
+        "_Colour__rgbValue": "#000080",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Old lace",
+        "_Colour__rgbValue": "#FDF5E6",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Olive Drab",
+        "_Colour__rgbValue": "#6B8E23",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Orange",
+        "_Colour__rgbValue": "#FFA500",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Orange"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Orange Red",
+        "_Colour__rgbValue": "#FF4500",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Orange",
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Orchid",
+        "_Colour__rgbValue": "#DA70D6",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Pale Goldenrod",
+        "_Colour__rgbValue": "#EEE8AA",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Pale Green",
+        "_Colour__rgbValue": "#98FB98",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Pale Turquoise",
+        "_Colour__rgbValue": "#AFEEEE",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Pale Violet Red",
+        "_Colour__rgbValue": "#DB7093",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink",
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Papaya Whip",
+        "_Colour__rgbValue": "#FFEFD5",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown",
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Peach Puff",
+        "_Colour__rgbValue": "#FFDAB9",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Peru",
+        "_Colour__rgbValue": "#CD853F",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Pink",
+        "_Colour__rgbValue": "#FFC8CB",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Plum",
+        "_Colour__rgbValue": "#DDA0DD",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Powder Blue",
+        "_Colour__rgbValue": "#B0E0E6",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Purple",
+        "_Colour__rgbValue": "#800080",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Red",
+        "_Colour__rgbValue": "#FF0000",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Rosy Brown",
+        "_Colour__rgbValue": "#BC8F8F",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Royal Blue",
+        "_Colour__rgbValue": "#4169E1",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Saddle Brown",
+        "_Colour__rgbValue": "#8B4513",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Salmon",
+        "_Colour__rgbValue": "#FA8072",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Pink",
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Sandy Brown",
+        "_Colour__rgbValue": "#F4A460",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Sea Green",
+        "_Colour__rgbValue": "#2E8B57",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Sea Shell",
+        "_Colour__rgbValue": "#FFF5EE",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Sienna",
+        "_Colour__rgbValue": "#A0522D",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Silver",
+        "_Colour__rgbValue": "#C0C0C0",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Silver"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Sky Blue",
+        "_Colour__rgbValue": "#87CEEB",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Slate Blue",
+        "_Colour__rgbValue": "#6A5ACD",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Snow",
+        "_Colour__rgbValue": "#FFFAFA",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Spring Green",
+        "_Colour__rgbValue": "#00FF7F",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Steelblue",
+        "_Colour__rgbValue": "#4682B4",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Tan",
+        "_Colour__rgbValue": "#D2B48C",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Teal",
+        "_Colour__rgbValue": "#008080",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Thistle",
+        "_Colour__rgbValue": "#D8BFD8",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Tomato",
+        "_Colour__rgbValue": "#FF6347",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Red"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Turquoise",
+        "_Colour__rgbValue": "#40E0D0",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Blue",
+            "Green"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Violet",
+        "_Colour__rgbValue": "#EE82EE",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Purple"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Wheat",
+        "_Colour__rgbValue": "#F5DEB3",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow",
+            "Brown"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "White",
+        "_Colour__rgbValue": "#FFFFFF",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Whitesmoke",
+        "_Colour__rgbValue": "#F5F5F5",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "White"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Yellow",
+        "_Colour__rgbValue": "#FFFF00",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Yellow"
+        ]
+    },
+    {
+        "py/object": "colours.colour.Colour",
+        "_Colour__colour": "Yellow Green",
+        "_Colour__rgbValue": "#9ACD32",
+        "_Colour__tags": [],
+        "_Colour__classification": [
+            "Green",
+            "Yellow"
+        ]
+    }
+]
