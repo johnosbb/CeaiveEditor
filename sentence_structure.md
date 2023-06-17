@@ -271,6 +271,13 @@ These sentences contain two or more independent clauses and at least one depende
 
 In this example, "Although she is busy" is the dependent clause, and "she always finds time for her friends" and "she never forgets a birthday" are both independent clauses.
 
+### Imperative Form
+
+An imperative sentence is a sentence that expresses a direct command, request, invitations, warning, or instruction. Imperative sentences do not have a subject; instead, a directive is given to an implied second person.  
+
+- "Screw you!"
+- "Eat something!"
+- "Wash the dinner plates"
 
 ### Phrases and Clauses
 
