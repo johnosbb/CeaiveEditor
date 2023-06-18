@@ -221,11 +221,11 @@ These elements are not always obvious; consider the sentence:
 
 - Helping old ladies cross the street prevents accidents.
 
-- In this sentence the compound phrase "Helping old ladies cross the street" is the subject. It is the thing that does the action.
+- In this sentence, the compound phrase "Helping old ladies cross the street" is the subject. It is the thing that does the action.
 - The action in this sentence is "prevents"
 - The object of the sentence is "accidents"
 
-The key part of analysing sentences is in uderstanding the relationships and dependencies between the parts.
+The key part of analysing sentences is in understanding the relationships and dependencies between the parts.
 
 
 ### Subject
@@ -279,6 +279,9 @@ An imperative sentence is a sentence that expresses a direct command, request, i
 - "Eat something!"
 - "Wash the dinner plates"
 
+- [Imperative Mood](https://www.scribbr.com/verbs/imperative-mood)
+
+  
 ### Phrases and Clauses
 
 A phrase is a group of words that function as a unit in a sentence, but it does not have both a subject and a verb. Phrases can function as nouns, adjectives, adverbs, or prepositions in a sentence. Examples of phrases include prepositional phrases ("in the park"), infinitive phrases ("to run"), and participial phrases ("smiling at the camera").
