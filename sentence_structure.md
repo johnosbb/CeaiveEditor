@@ -113,9 +113,17 @@ A noun is a part of speech that denotes a person, place, thing, idea, or concept
 
 ### Adversative conjunctions
 
-Adversative conjunctions are conjunctions that show contrast or opposition between two clauses or ideas. They indicate a contradiction, counterpoint, or unexpected relationship between the clauses. Examples of adversative conjunctions include "however," "nonetheless," "but," "yet," "still," and "nevertheless."
+Adversative conjunctions are conjunctions that show contrast, or an unexpected element, or opposition between two clauses or ideas. They indicate a contradiction, counterpoint, or unexpected relationship between the clauses. Examples of adversative conjunctions include "however," "nonetheless," "but," "yet," "still," and "nevertheless."
 
+#### Examples
 
+- I was tired, nevertheless, I decided to go for a run.
+- He wasn't feeling well; nevertheless, he went to the meeting.
+- She was tired, yet she kept pushing herself to finish the race.
+- I studied hard; however, I still failed the test.
+- The weather was unfavorable for outdoor activities; nonetheless, they decided to proceed with their plans.
+- He had all the qualifications for the job, yet he was not selected.
+- She worked hard on her presentation; yet, she didn't receive the recognition she deserved.
 
 ### Co-Ordinating Conjunctions
 
@@ -157,7 +165,11 @@ The main subordinating conjunctions are:
 - Even though
 
 
+#### Examples
+
+- I'll go to the store __after I finish my homework__.
 - __After working for twenty-five years as an accountant__, Mike robbed a bank.
+- He couldn't sleep __unless the room was completely dark__.
 
 Used incorrectly subordinating conjunctions can distract from the main message of the sentence. 
 
