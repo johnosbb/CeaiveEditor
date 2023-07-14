@@ -225,9 +225,10 @@ Prepositions are used to show relationships between words in a sentence, indicat
 
 The basic elements of a sentence are:
 
-- The person or thing performing an action
-- The action being performed
-- The recipient or object of the action.
+- The Subject: The person or thing performing an action
+- The Verb: The action being performed
+- The Object: The recipient or object of the action.
+- The Indirect Object: An indirect object is a grammatical term that refers to a noun or pronoun that indicates to or for whom the action of a verb is done. It typically answers the question "to/for whom" or "to/for what" after a verb.
 
 These elements are not always obvious; consider the sentence:
 
@@ -239,6 +240,16 @@ These elements are not always obvious; consider the sentence:
 
 The key part of analysing sentences is in understanding the relationships and dependencies between the parts.
 
+
+### Examples:
+
+- She gave him a book - In this sentence, __She__ is the subject, __gave__ is the verb, __a book__ is the object and __him__ is an indirect object.
+
+### Dative Case
+
+ The dative case refers to a grammatical case that indicates the indirect object of a verb. It is used to show to whom or for whom an action is done. In English, the dative case is typically marked using prepositions such as "to" or "for."
+
+ For example, consider the sentence "I gave a gift to my friend." Here, __my friend__ is the indirect object and is in the dative case, indicating the recipient of the action of giving.
 
 ### Subject
 
@@ -307,10 +318,10 @@ A clause, on the other hand, is a group of words that contains a subject and a v
 - Infinitive phrases: Infinitive phrases are made up of an infinitive (the base form of a verb preceded by "to") and any associated modifiers and objects. They can be used as subjects, objects, or complements in a sentence. For example: "To be or not to be, that is the question."
 - Prepositional phrases: Prepositional phrases are made up of a preposition, its object, and any associated modifiers. They can be used to indicate location, time, manner, or other relationships in a sentence. Example: "The book on the shelf is mine."
 - Appositive phrase: An appositive phrase is a noun or pronoun that renames or explains another noun or pronoun right beside it in a sentence. It is usually set off by commas, dashes, or parentheses. Example: __My friend Jane, a doctor, is coming to visit me.__ In this sentence, "a doctor" is an appositive phrase that renames "Jane".
-- An absolute phrase: An absolute phrase is a phrase that modifies the entire sentence. It contains a noun or pronoun and a participle, but it does not function as a typical adjective or adverb. It is usually set off by a comma. Example: __The sun having set, we made our way back home.__ In this sentence, "the sun having set" is an absolute phrase that modifies the entire sentence by giving context to the action that follows. It contains the noun "sun" and the participle "having set".
+- An absolute phrase: An absolute phrase is a phrase that modifies the entire sentence. It contains a noun or pronoun and a participle, but it does not function as a typical adjective or adverb. It is usually set off by a comma. Example: ___The sun having set__, we made our way back home. In this sentence, "the sun having set" is an absolute phrase that modifies the entire sentence by giving context to the action that follows. It contains the noun "sun" and the participle "having set".
 - Adverbial phrase: A phrase that functions as an adverb in a sentence, providing information about time, place, manner, degree, etc. Example: "After dinner, she went for a walk."
-- Adjectival phrase: A phrase that functions as an adjective in a sentence, modifying a noun or pronoun. Example: __The man in the blue shirt is my uncle.__
-- Noun phrase: A phrase that functions as a noun in a sentence, either as the subject, object, or complement. Example: __My favorite hobby is playing basketball.__
+- Adjectival phrase: A phrase that functions as an adjective in a sentence, modifying a noun or pronoun. Example: __The man in the blue shirt__ is my uncle.
+- Noun phrase: A phrase that functions as a noun in a sentence, either as the subject, object, or complement. Example: __My favorite hobby__ is playing basketball.
 - Verb phrase: A phrase that includes the main verb and any auxiliary verbs, and sometimes includes other elements such as adverbs or prepositions. Example: "She is singing a song."
 Note that these categories can overlap or be used in combination in various ways. 
 
@@ -623,6 +634,19 @@ A comma splice occurs when two independent clauses are joined together with only
 For example, a student attempting to write a cumulative sentence might write: "She went to the store, she bought some milk." In this sentence, "She went to the store" is an independent clause that can stand alone as a sentence. "She bought some milk" is also an independent clause. However, the student has joined the two independent clauses with only a comma, which is incorrect.
 
 In contrast, a correctly written cumulative sentence might look like this: "She went to the store, picking up some milk and bread on the way home, where she made a delicious dinner." In this sentence, "She went to the store" is the independent clause, and the phrases "picking up some milk and bread on the way home" and "where she made a delicious dinner" modify or add information to the main clause. None of the phrases can stand alone as a sentence, so a comma splice is not possible.
+
+#### Examples of Cululative Sentences
+
+- She walked into the room, greeted everyone with a smile, sat down on the couch, and began to share her story.
+- The sun was setting, casting a warm glow over the fields while the birds were chirping in the trees, and a gentle breeze rustled the leaves.
+- He opened the box, took out a shiny silver key, inserted it into the lock, turned it clockwise, and heard the satisfying click of the door unlocking.
+- He wept silently, after the custom of shamed and angry men, so that when the pursuit party came tumbling, pounding, scrabbling down the trail, past the fold in which he and Hillel stood concealed, he could hear the creak and rattle of their leather armor. - Michael Chabon: Gentlemen of the Road: A Tale of Adventure.
+- I am with the Eskimos on the tundra who are running after the click-footed caribou, running sleepless and dazed for days, running spread out in scraggling lines across the glacier-ground hummocks and reindeer moss, in sight of the ocean, under the long-shadowed pale sun, running silent all night long. -  Annie Dillard: Pilgrim at Tinker Creek.
+- The unwieldy provision carts, draught horses, and heavily armed knights kept the advance down to nine miles a day, the huge horde moving in three parallel columns, cutting broad highways of litter and devastation through an already abandoned countryside, many of the adventurers now travelling on foot, having sold their horses for bread or having slaughtered them for meat. - John Gardner: Life and Times of Chaucer.
+- The San Bernardino Valley lies only an hour east of Los Angeles by the San Bernardino Freeway but is in certain ways an alien place: Not the coastal California of the subtropical twilights and the soft westerlies off the Pacific but a harsher California, haunted by the Mojave just beyond the mountains, devastated by the hot dry Santa Ana wind that comes down through the passes at 100 miles an hour and whines through the eucalyptus windbreaks and works on the nerves. - Some Dreamers of the Golden Dream by Joan Didion.
+
+
+
 
 ### Left and Right Branching Sentences
 
@@ -1019,7 +1043,94 @@ Passive voice occurs when the object of an action is made the grammatical subjec
 - Sandra made the tea.
 - The tea was made by Sandra.
 
+## Sentence Transitions
 
+### Transitions of Addition
+
+- also
+- indeed
+- and
+- in fact
+- besides
+- moreover
+- furthermore
+- so too
+- in addition
+- elaboration
+
+### Transitions of Elaboration
+- actually
+- to put it another way
+- by extension
+- to put it bluntly
+- in other words
+- to put it succinctly
+- in short
+- ultimately
+- that is
+
+### Transitions of Example
+- after all
+- for instance
+- as an illustration
+- specifically
+- consider
+- to take
+- a case in point
+- for example
+
+### Transitions of Cause and Effect
+- accordingly
+- so
+- as a result
+- then
+- consequently
+- therefore
+- hence
+- thus
+- since
+
+### Transitions of Comparison
+- along the same lines
+- likewise
+- in the same way
+- similarly
+
+### Transitionis of Contrast
+- although
+- nevertheless
+- but nonetheless
+- by contrast
+- on the contrary
+- conversely
+- on the other hand
+- despite
+- regardless
+- even though
+- whereas
+- however
+- while yet
+- in contrast
+
+### Transitions of Concession
+- admittedly
+- naturally
+- although it is true
+- of course
+- granted
+- to be sure
+
+## Transitions of Conclusion
+- as a result
+- in sum
+- consequently
+-  therefore
+- hence
+- thus
+- in conclusion
+- to sum up
+- in short
+- to summarize
 
 ## References
 
