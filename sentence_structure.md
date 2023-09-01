@@ -1135,3 +1135,4 @@ Passive voice occurs when the object of an action is made the grammatical subjec
 ## References
 
 - [Grammar Underground - Jane Casgrande](https://www.grammarunderground.com/)
+- [Glossary of English Grammar](https://glossary.sil.org/term)
