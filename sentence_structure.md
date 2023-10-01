@@ -261,6 +261,41 @@ The predicate, on the other hand, is the part of the sentence that contains the 
 
 Together, the subject and predicate form a complete sentence, expressing a complete thought.
 
+### Active voice 
+
+Active voice is the standard subject–verb–object sentence structure:
+
+```txt
+In 1776, Washington crossed the Delaware.
+```
+
+
+When a clause is in active voice:
+- the agent—whoever or whatever is performing the action—is the subject ("Washington");
+- the verb tells us what the agent is doing ("crossed");
+- and the recipient of the action comes after the verb, as the object ("the Delaware").
+
+Here’s that same event in passive voice:
+
+```txt
+In 1776, the Delaware was crossed by Washington.
+```
+
+
+Note the crisscrossing positions of the sentence elements. That’s because, when a clause is in passive voice,
+
+- the entity receiving the action is the subject of the sentence;
+- the agent performing the action appears in a prepositional phrase, after the word “by”; and
+- the verb changes to reflect these new roles.
+
+
+In particular, every passive-voice verb has two telltale features:
+
+A form of the verb “be” or “get” (in our example, “was”)
+The past participle of some verb (“crossed”)
+The past participle is a fixed form of the verb used to create various tenses; just look for a verb that appears to be in the past tense.
+
+Every passive-voice verb will have these two components. If a verb does not have these components, it’s not in passive voice.
 
 
 ## A Note on Case and Mood
