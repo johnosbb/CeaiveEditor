@@ -346,9 +346,36 @@ These sentences contain two or more independent clauses and at least one depende
 
 In this example, "Although she is busy" is the dependent clause, and "she always finds time for her friends" and "she never forgets a birthday" are both independent clauses.
 
+
+### Cleft Sentences
+
+A sentence in which an element is emphasized by being put in a separate clause, with the use of an empty introductory word such as it or that, e.g. it's money we want ; it was today that I saw him ; that was the King you were talking to.
+
+Cleft sentences involve a rearrangement of the sentence to emphasize a particular element, making the direct object less prominent.
+- Original: "She wrote a letter."
+- Cleft: "It was a letter that she wrote.
+
+### Extraposed Constructions
+
+In extraposed constructions, the direct object is placed later in the sentence.
+Original: "It is important that we address this issue."
+Extraposed: "That we address this issue is important."
+
+### Sentences with Infinitive Phrases
+
+Infinitive phrases can also involve less straightforward identification of the direct object.
+Original: "He wanted to sing a song."
+Infinitive Phrase: "He wanted to sing."
+
+### Sentences with Prepositional Phrases
+
+Sometimes, the main action is associated with a prepositional phrase, and the direct object is found within that phrase.
+Original: "She talked with a smile."
+Prepositional Phrase: "With a smile, she talked."
+
 ### Imperative Form
 
-An imperative sentence is a sentence that expresses a direct command, request, invitations, warning, or instruction. Imperative sentences do not have a subject; instead, a directive is given to an implied second person.  
+An imperative sentence is a sentence that expresses a direct command, request, invitations, warning, or instruction. Imperative sentences do not have a subject; instead, a directive is given to an implied second person.   
 
 - "Screw you!"
 - "Eat something!"
