@@ -38,9 +38,9 @@
 - periodic sentence: A sentence that delays or suspends the completion of its subject-verb clause until the very end (see also suspensive sentence).
 - phrase: A combination of words that functions as a single syntactical unit in a sentence but does not contain a finite verb and therefore cannot stand alone.
 - predicate: The part of a sentence that consists of what is said about the subject of the sentence. It is the grammatical term for the words in a sentence or clause that describe the action but not the subject. In other words, the predicate explains what the subject does. For all intents and purposes, a predicate includes all the words in a sentence or clause except the subject (and words that modify the subject). 
-- prepositional phrase: A phrase that begins with a preposition and contains the object of the preposition and any modi¿ ers of the object.
+- prepositional phrase: A phrase that begins with a preposition and contains the object of the preposition and any modifiers of the object.
 - proposition: A statement in which the subject is affirmed or denied by the predicate.
-- pure subordinate: A sequence of modi¿ ers, each modifying the phrase that immediately precedes it.
+- pure subordinate: A sequence of modifiers, each modifying the phrase that immediately precedes it.
 - relative clause: A clause that begins with a relative pronoun such as that, which, or who.
 - right-branching sentence: A sentence in which the modifying phrase or phrases are placed to the right of the base clause.
 - simile: A description of one thing in terms of its similarity to another.
